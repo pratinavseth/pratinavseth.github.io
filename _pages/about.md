@@ -19,19 +19,21 @@ redirect_from:
 
 (WEBSITE UNDER CONSTRUCTION)
 
-Hi I am Pratinav, nice to e-meet you!
+Welcome to my corner of the web. I'm Pratinav Seth, a data science student and aspiring AI researcher, passionate about using technology to tackle real-world challenges.
 
-I am a recent Data Science undergraduate with a passion for applying artificial intelligence to solve real-world problems across various domains.
+As I approach the end of my undergraduate studies at Manipal Institute of Technology, I've had the privilege of working on projects in computer vision, deep learning, and natural language processing. From addressing climate change to improving healthcare, I'm continually inspired by AI's potential to make a positive impact.
 
-My journey includes working at Mila on deep learning for geospatial applications focused on climate change, researching Diffusion Models for vision-based AI at Bosch Research for autonomous driving, and analyzing medical imagery during my internship at IIT Kharagpur. These experiences have deepened my passion for AI and real-world problem-solving. 
+My internships at Mila Quebec AI Institute, Bosch Research, and KLIV Lab IIT Kharagpur have been invaluable, teaching me how much there is to learn in this rapidly evolving field. I'm grateful for the mentors and collaborators who've guided me, and for the opportunities to contribute to research in areas such as: using satellite imagery to detect abandoned oil wells, enhancing autonomous driving systems, incorporating domain knowledge in neural networks for medical image analysis, and analyzing the Explainability of modern deep neural networks.
 
-My research interests lie in Computer Vision, Natural Language Processing, and Applied AI, and I have published papers at top international AI conferences <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+Recently, I have been developing NLP solutions for agricultural query resolution and exploring multi-modal model architectures for super-resolution and segmentation in a parameter-efficient manner, with applications across various domains.
 
-With experience presenting research at international conferences like NeurIPS, ICLR, MICCAI, AAAI, CVPR, EMNLP, WACV, and ACL, I have honed my skills in Machine Learning, Deep Learning, Computer Vision, Generative AI, Multimodal AI, and Trustworthy AI. 
+A significant part of my journey has been shaped by my involvement in student organizations at Manipal. As a researcher with Mars Rover Manipal, I have worked on diverse problem statements, co-led a AI research group, and mentored undergraduate students. Co-founding The Data Alchemists allowed me to share my passion for AI and data science with fellow students. As Co-President of the Research Society, I've worked to foster a culture of undergraduate research across various technical domains.
 
-I have received honors such as the AAAI Undergraduate Consortium (AAAI-UC) Scholarship 2023 and the MAHE Research Grant 2023. 
+While I'm proud of my accomplishments, including publications at AI conferences <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>, I know this is just the beginning of my journey. There is so much more to discover and many brilliant minds pushing the boundaries of what's possible with AI.
 
-Eager to learn new technologies and collaborate on multidisciplinary projects. Feel free to reach out for collaborations.
+I created this site to share my projects and experiences, hoping they might be useful to fellow students or anyone curious about AI's applications. I'm always eager to learn from others and explore new ideas in this fascinating field.
+
+Thank you for stopping by. I hope you find something interesting here, and I welcome any thoughts or questions you might have.
 
 (PS : Open to Full-Time Role in Machine Learning, Data Science, and AI Research and Research Colaboratorions)
 
