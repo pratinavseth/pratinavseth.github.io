@@ -8,7 +8,7 @@
 # Site Settings
 title                    : "Pratinav Seth"
 description              : "AI explorer in computer vision, NLP, and deep learning. Passionate about healthcare, remote sensing, and resource-efficient models. Feel free to say hii!"
-repository               : "ptnv-s/ptnv-s.github.io"
+repository               : "pratinavseth/pratinavseth.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -37,7 +37,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "ptnv-s"
+  github           : "pratinavseth"
   google_plus      :
   keybase          :
   instagram        :
@@ -51,7 +51,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "ptnv_s"
+  twitter          : "pratinavseth"
   vine             :
   weibo            :
   xing             :
