@@ -18,27 +18,25 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 (WEBSITE UNDER CONSTRUCTION)
+Feel free to say hii!
 
-Welcome to my corner of the web. I'm Pratinav Seth, a data science student and aspiring AI researcher, passionate about using technology to tackle real-world challenges.
+Welcome to my corner of the web! I'm Pratinav Seth, an AI explorer specializing in computer vision, NLP, and deep learning.
 
-As I approach the end of my undergraduate studies at Manipal Institute of Technology, I've had the privilege of working on projects in computer vision, deep learning, and natural language processing. From addressing climate change to improving healthcare, I'm continually inspired by AI's potential to make a positive impact.
+My passion lies in applying deep learning to healthcare and remote sensing, where I design task-specific, resource-efficient models by integrating domain knowledge while ensuring the explainability and confidence of predictions. I'm also dedicated to using AI for social impact, particularly in addressing climate change and improving medical diagnoses.
 
-My internships at Mila Quebec AI Institute, Bosch Research, and KLIV Lab IIT Kharagpur have been invaluable, teaching me how much there is to learn in this rapidly evolving field. I'm grateful for the mentors and collaborators who've guided me, and for the opportunities to contribute to research in areas such as: using satellite imagery to detect abandoned oil wells, enhancing autonomous driving systems, incorporating domain knowledge in neural networks for medical image analysis, and analyzing the Explainability of modern deep neural networks.
+In July 2024, I graduated with a major in Data Science from the Manipal Institute of Technology. Throughout my studies, I had the privilege of working at esteemed institutions like Mila Quebec AI Institute (utilizing satellite imagery to detect abandoned oil wells), Bosch Research (enhancing autonomous driving systems through controlled generation), and KLIV Lab at IIT Kharagpur (integrating domain knowledge in neural networks for medical image analysis and examining the explainability of modern deep neural networks). These experiences have been invaluable, showing me the vastness of this rapidly evolving field.
 
-Recently, I have been developing NLP solutions for agricultural query resolution and exploring multi-modal model architectures for super-resolution and segmentation in a parameter-efficient manner, with applications across various domains.
-
-A significant part of my journey has been shaped by my involvement in student organizations at Manipal. As a researcher with Mars Rover Manipal, I have worked on diverse problem statements, co-led a AI research group, and mentored undergraduate students. Co-founding The Data Alchemists allowed me to share my passion for AI and data science with fellow students. As Co-President of the Research Society, I've worked to foster a culture of undergraduate research across various technical domains.
+A significant part of my journey has been shaped by my involvement in student organizations. As a researcher with Mars Rover Manipal, I tackled diverse problems, co-led an AI research group, and mentored undergraduate students. Co-founding The Data Alchemists allowed me to share my enthusiasm for AI and data science with fellow students. Additionally, as Co-President of the Research Society, I worked to promote a culture of undergraduate research across various technical domains.
 
 While I'm proud of my accomplishments, including publications at AI conferences <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>, I know this is just the beginning of my journey. There is so much more to discover and many brilliant minds pushing the boundaries of what's possible with AI.
 
-I created this site to share my projects and experiences, hoping they might be useful to fellow students or anyone curious about AI's applications. I'm always eager to learn from others and explore new ideas in this fascinating field.
+ I'm always eager to learn from others and explore new ideas in this fascinating field.Thank you for stopping by. I hope you find something interesting here, and I welcome any thoughts or questions you might have.
 
-Thank you for stopping by. I hope you find something interesting here, and I welcome any thoughts or questions you might have.
-
-(PS : Open to Full-Time Role in Machine Learning, Data Science, and AI Research and Research Colaboratorions)
+(PS : Open to AI Research and Research collaborations)
 
 
 # 🔥 News
+- *2024.07*: &nbsp;🎉 Started as a Research Scientist at Arya.ai working on XAI and Interpretable AI in finance!
 - *2024.06*: &nbsp;🎉 AgriLLM accepted to KDD UC-24!
 - *2024.02*: &nbsp;🎉 Sailing Through Spectra accepted to ICLR Tiny Papers!
 - *2024.01*: &nbsp;🎉🎉 Started my Internship (as a part of my Bachelor Thesis) at Mila Quebec AI Institute (Remotely).
