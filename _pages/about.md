@@ -17,7 +17,6 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-(WEBSITE UNDER CONSTRUCTION)
 Feel free to say hii!
 
 Welcome to my corner of the web! I'm Pratinav Seth, an AI explorer specializing in computer vision, NLP, and deep learning.
@@ -32,11 +31,13 @@ While I'm proud of my accomplishments, including publications at AI conferences 
 
  I'm always eager to learn from others and explore new ideas in this fascinating field.Thank you for stopping by. I hope you find something interesting here, and I welcome any thoughts or questions you might have.
 
+(WEBSITE UNDER CONSTRUCTION)
+
 (PS : Open to AI Research and Research collaborations)
 
 
 # 🔥 News
-- *2024.07*: &nbsp;🎉 Started as a Research Scientist at Arya.ai working on XAI and Interpretable AI in finance!
+- *2024.07*: &nbsp;🎉 Started as a Research Scientist at Arya.ai working on XAI and Interpretable AI for Regutable ML!
 - *2024.06*: &nbsp;🎉 AgriLLM accepted to KDD UC-24!
 - *2024.02*: &nbsp;🎉 Sailing Through Spectra accepted to ICLR Tiny Papers!
 - *2024.01*: &nbsp;🎉🎉 Started my Internship (as a part of my Bachelor Thesis) at Mila Quebec AI Institute (Remotely).
@@ -95,13 +96,11 @@ Aditya Kasliwal, Aryan Kamani, Ishaan Gakhar, **Pratinav Seth**, Sriya Rallaband
 
 - [ReFuSeg: Regularized Multi-Modal Fusion for Precise Brain Tumour Segmentation](https://arxiv.org/pdf/2308.13883), Aditya Kasliwal, Sankarshanaa Sagaram, Laven Srivastava, **Pratinav Seth**, Adil Khan, **9th Edition of the Brain Lesion (BrainLes) workshop, MICCAI 2023.** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:Y0pCki6q_DkC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
-
 - [UATTA-ENS: Uncertainty Aware Test Time Augmented Ensemble for PIRC Diabetic Retinopathy Detection](https://arxiv.org/pdf/2211.03148), **Pratinav Seth**, Adil Khan, Ananya Gupta, Saurabh Kumar Mishra, Akshat Bhandhari, **Medical Imaging meets NeurIPS Workshop, NeurIPS 2022.** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:u-x6o8ySG0sC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
 - [UATTA-EB: Uncertainty-Aware Test-Time Augmented Ensemble of BERTs for Classifying Common Mental Illnesses on Social Media Posts](https://arxiv.org/pdf/2304.04539), **Pratinav Seth  (†)**, Mihir Agarwal  (†), **1st Tiny Paper Track at ICLR 2023.** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:IjCSPb-OGe4C) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
 - [Evaluating Predictive Uncertainty and Robustness to Distributional Shift Using Real World Data](https://arxiv.org/abs/2111.04665), Kumud Lakara (†), Akshat Bhandari (†), **Pratinav Seth (†)**, Ujjwal Verma, **Bayesian Deep Learning Workshop, NeurIPS 2021.** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:u5HHmVD_uO8C) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-
 
 - [SSS at SemEval-2023 Task 10: Explainable Detection of Online Sexism using Majority Voted Fine-Tuned Transformers](https://aclanthology.org/2023.semeval-1.171/), Sriya Rallabandi, Sanchit Singhal, **Pratinav Seth**, **Proceedings of the 17th International Workshop on Semantic Evaluation (SemEval-2023), ACL 2023** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:zYLM7Y9cAGgC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
@@ -112,22 +111,23 @@ Aditya Kasliwal, Aryan Kamani, Ishaan Gakhar, **Pratinav Seth**, Sriya Rallaband
 - [Analyzing Effects of Fake Training Data on the Performance of Deep Learning Systems](https://arxiv.org/pdf/2303.01268),**Pratinav Seth  (†)**, Akshat Bhandari (†), Kumud Lakara (†), **Pre-Print** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:qjMakFHDy7sC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
 # 💻 Past Experiences
-- *2024.01 - 2024.06*, [Research Intern, Mila Quebec AI Institute](https://github.com/), Remote.
-- *2021.03 - 2024.01*, [Researcher, Mars Rover Manipal](https://github.com/), Remote.
-- *2023.12 - 2024.01*, [Research Colaborator, with Dr. Amit Agarwal (Wells Fargo)](https://github.com/), Remote.
-- *2022.05 - 2023.12*, [Research Intern, KLIV IIT Kharagpur](https://github.com/), Remote.
-- *2023.06 - 2023.10*, [Computer Vision Research Intern (Student Trainee), Bosch Corporate Research](https://github.com/), Robert Bosch Research and Technology Center India, Bangalore, India.
-- *2023.04 - 2023.12*, [Research Assistant under Dr. Abhilash K. Pai, Dept. of DSCA, MIT MAHE](https://github.com/), Remote.
-- *2022.09 - 2023.09*, [Co-President & Mentor AI Research, Research Society MIT Manipal](https://github.com/), Remote.
-- *2022.11 - 2023.08*, [Co-founder & Head of Artificial Intelligence,  The Data Alchemists](https://github.com/), Remote.
-- *2022.10 - 2023.03*, [Research Colaborator, IIT Roorkee](https://github.com/), Remote.
-- *2022.06 - 2022.09*, [Research Assistant under Dr.Vidya Rao & Dr. Poornima P.K., Dept. of DSCA, MIT MAHE](https://github.com/), Remote.
-- *2022.03 - 2022.05*, [Machine Learning Intern, Eedge.ai](https://github.com/), Remote.
-- *2022.01 - 2022.02*, [Data Science (NLP) Intern, CUREYA](https://github.com/), Remote.
+
+- *2024.01 - 2024.06*, [Research Intern, Rolnick Lab, Mila Quebec AI Institute](https://davidrolnick.com/lab/), Remote.
+- *2021.03 - 2024.01*, [Researcher (Trainee; Junior; Senior; Mentor), Mars Rover Manipal.](https://www.marsrovermanipal.com/research), Remote & Manipal,India.
+- *2023.12 - 2024.01*, [Research Collaborator, with Dr. Amit Agarwal (Wells Fargo AI COE)](https://arxiv.org/abs/2407.04721), Remote.
+- *2022.05 - 2023.12*, [Research Intern (Mentor - Mr. Rakshith Satish), KLIV Lab (Dr. Debdoot Sheet), IIT Kharagpur.](https://www.linkedin.com/in/pratinav-seth/), Remote.
+- *2023.06 - 2023.10*, [Computer Vision Research Intern (Mentor - Mr. Kaustav Mullick (CR/RTC-2)), Robert Bosch Research and Technology Center India](https://www.linkedin.com/in/pratinav-seth/), Bangalore, India.
+- *2023.04 - 2023.12*, [Research Assistant (Dr. Abhilash K. Pai), Dept. of DSCA, MIT MAHE](https://sites.google.com/site/abhilashkpai), Remote.
+- *2022.09 - 2023.09*, [Co-President & Mentor AI Research, Research Society MIT Manipal](https://www.instagram.com/researchsoc/?hl=en), Remote.
+- *2022.11 - 2023.08*, [Co-founder & Head of Artificial Intelligence,  The Data Alchemists](https://www.linkedin.com/company/the-data-alchemists/posts/?feedView=all), Remote.
+- *2022.10 - 2023.03*, [Research Collaborator, IIT Roorkee (Mr. Anmol Gupta & Dr. Vijay Kr. BR (NEC Labs, USA))](https://www.linkedin.com/in/pratinav-seth/), Remote.
+- *2022.06 - 2022.09*, [Research Assistant (Dr.Vidya Rao & Dr. Poornima P.K.), Dept. of DSCA, MIT MAHE](hhttps://www.manipal.edu/mit/department-faculty/department-list/computer-applications.html), Manipal, India.
+- *2022.03 - 2022.05*, [Machine Learning Intern, Eedge.ai](https://www.linkedin.com/in/pratinav-seth/), Remote.
+- *2022.01 - 2022.02*, [Data Science (NLP) Intern, CUREYA](https://www.linkedin.com/in/pratinav-seth/), Remote.
 
 
 # 🎖 Honors and Awards
-- *2023.02* One of the 11 Undergraduates Selected as an AAAI Undergraduate Consortium Scholar. Included a Travel Grant of $2000 to present at AAAI-23 at Washington DC, USA.
+- *2023.02* One of the 11 Undergraduates Selected as an [AAAI Undergraduate Consortium Scholar 2023](https://aaai-uc.github.io/2023_scholars.html). Included a Travel Grant of $2000 to present at AAAI-23 at Washington DC, USA.
 - *2023.01* Received MAHE Undergraduate Research Grant Worth 10K INR for Project : Explainable & Trustworthy Skin Lesion Classification under Dr. Abhilash K. Pai, Dept. of DSCA, Manipal Institute of Technology, MAHE.
 
 # 📖 Educations
@@ -136,5 +136,6 @@ Aditya Kasliwal, Aryan Kamani, Ishaan Gakhar, **Pratinav Seth**, Sriya Rallaband
 # 💬 Invited Talks
 - *2024.03*, Introduction to Research, at ACM-W Manipal Chapter.
 - *2024.02*, Data Dialogue invited by The Data Alchemists, The Official Data Science Club of MIT Manipal.  \| [\[link\]](https://www.instagram.com/p/C2B-pv7v82l/?igsh=OXd3d2J6YTh6aXVt)
+- *2023.03*, Research as Undergrad, at ACM-W Manipal Chapter.
 
 
