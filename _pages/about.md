@@ -17,19 +17,35 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Feel free to say hii!
+Sure! Here's a more polished version of your website content:
 
-Welcome to my corner of the web! I'm Pratinav Seth, an AI explorer specializing in computer vision, NLP, and deep learning.
+---
 
-My passion lies in applying deep learning to healthcare and remote sensing, where I design task-specific, resource-efficient models by integrating domain knowledge while ensuring the explainability and confidence of predictions. I'm also dedicated to using AI for social impact, particularly in addressing climate change and improving medical diagnoses.
+Hi there! 👋 Feel free to say hello!
 
-In July 2024, I graduated with a major in Data Science from the Manipal Institute of Technology. Throughout my studies, I had the privilege of working at esteemed institutions like Mila Quebec AI Institute (utilizing satellite imagery to detect abandoned oil wells), Bosch Research (enhancing autonomous driving systems through controlled generation), and KLIV Lab at IIT Kharagpur (integrating domain knowledge in neural networks for medical image analysis and examining the explainability of modern deep neural networks). These experiences have been invaluable, showing me the vastness of this rapidly evolving field.
+Welcome to my little corner of the web! I'm **Pratinav Seth**, an AI enthusiast with a focus on **computer vision, natural language processing (NLP)**, and **deep learning**.
 
-A significant part of my journey has been shaped by my involvement in student organizations. As a researcher with Mars Rover Manipal, I tackled diverse problems, co-led an AI research group, and mentored undergraduate students. Co-founding The Data Alchemists allowed me to share my enthusiasm for AI and data science with fellow students. Additionally, as Co-President of the Research Society, I worked to promote a culture of undergraduate research across various technical domains.
+My core interest is leveraging **deep learning** in **healthcare** and **remote sensing**, where I specialize in creating **task-specific, resource-efficient models**. By integrating **domain knowledge** into these models, I ensure that predictions are not only accurate but also explainable and trustworthy. Additionally, I'm passionate about using **AI for social good**, addressing global challenges like **climate change** and enhancing **medical diagnoses**.
 
-While I'm proud of my accomplishments, including publications at AI conferences <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>, I know this is just the beginning of my journey. There is so much more to discover and many brilliant minds pushing the boundaries of what's possible with AI.
+In July 2024, I graduated with a degree in **Data Science** from the **Manipal Institute of Technology**. My academic journey was enriched through experiences at renowned institutions like:
 
- I'm always eager to learn from others and explore new ideas in this fascinating field.Thank you for stopping by. I hope you find something interesting here, and I welcome any thoughts or questions you might have.
+- **Mila Quebec AI Institute**: Applied satellite imagery to detect abandoned oil wells.
+- **Bosch Research**: Contributed to enhancing autonomous driving systems through controlled data generation.
+- **KLIV Lab, IIT Kharagpur**: Explored the integration of domain knowledge in neural networks for medical image analysis and investigated the explainability of modern deep neural networks.
+
+These roles gave me valuable insights into AI's transformative potential across industries.
+
+During my studies, I actively participated in student organizations that shaped my path:
+
+- As a **researcher with Mars Rover Manipal**, I tackled AI problems and mentored undergraduate students, while also co-leading an AI research group.
+- I co-founded **The Data Alchemists**, an initiative to foster interest in AI and data science among students.
+- As **Co-President of the Research Society**, I worked to nurture a research-driven culture, encouraging fellow students to explore technical domains through independent research.
+
+Feel free to reach out – I'm always up for a conversation about AI, research, or even just to say hi!
+
+<a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>, I know this is just the beginning of my journey. There is so much more to discover and many brilliant minds pushing the boundaries of what's possible with AI.
+
+ I'm always eager to learn from others and explore new ideas in this fascinating field. Thank you for stopping by. I hope you find something interesting here, and I welcome any thoughts or questions you might have.
 
 (WEBSITE UNDER CONSTRUCTION)
 
