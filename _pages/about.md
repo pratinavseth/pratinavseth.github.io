@@ -16,18 +16,11 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-
-Sure! Here's a more polished version of your website content:
-
----
-
-Hi there! 👋 Feel free to say hello!
-
-Welcome to my little corner of the web! I'm **Pratinav Seth**, an AI enthusiast with a focus on **Computer Vision, Natural Language Processing (NLP)**, and **Deep Learning**. <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
-
-My core interest is leveraging **Deep Learning** in various domains such as **Healthcare** and **Remote Sensing**, where I am interested in making models  Resorce Efficient and incoporating Domain Knowledge for the problem. I am also keen on ensuring trustworthiness of AI models such that they are explainable and one of ensure safe ai by quantifying uncertainity of models. Additionally, I'm passionate about using **AI for social good**, addressing global challenges like **climate change** and enhancing **medical diagnoses**.
+Hi there! Welcome to my little corner of the web! I'm **Pratinav Seth**, an AI enthusiast with a focus on **Computer Vision, Natural Language Processing (NLP)**, and **Deep Learning**. <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 My core interest lies in leveraging **Deep Learning** across various domains such as **Healthcare** and **Remote Sensing**. I’m particularly passionate about building **Resource-Efficient Models** and **incorporating Domain Knowledge** to address specific problems. I am also keen on problems involving the **Trustworthiness of AI Foundation Models**, with a strong focus on **Model Explainability** and **Quantifying Uncertainty** to create safer AI systems. Additionally, I'm have worked on applying AI for **Social Good**, tackling global challenges like **Climate Change** and improving **Medical Diagnoses**.
+
+I'm always eager to learn from others and explore new ideas in this fascinating field. There is so much more to discover and many brilliant minds pushing the boundaries of what's possible with AI. Feel free to reach out – I'm always up for a conversation about AI, research, or even just to say hi!
 
 In July 2024, I graduated with a degree in **Data Science** from the **Manipal Institute of Technology**. My academic journey was enriched through experiences at renowned institutions like:
 
@@ -37,17 +30,12 @@ In July 2024, I graduated with a degree in **Data Science** from the **Manipal I
 
 During my studies, I actively participated in student organizations that shaped my path in ai research:
 - As **Co-President of the Research Society MIT Manipal**, an undergraduate organization with 90+ members across 10+
- technical domains. Led multidisciplinary collaboration, recruited new members from 250+ applicants, and guided their learning and development. Promoted the value of undergraduate research and contributed to interdisciplinary AI projects. Mentored over 10 undergraduates in various AI topics.**(2022-23)**
+ technical domains. Led multidisciplinary collaboration, recruited new members, and guided their learning and development. Promoted the value of undergraduate research and contributed to interdisciplinary AI projects. Mentored over 10 undergraduates in various AI topics.**(2022-23)**
 - As a **Researcher with Mars Rover Manipal**, Advanced from Student Trainee to Senior Researcher, leading AI projects in machine learning, computer vision, and NLP, resulting in multiple publications. Conducted a successful recruitment drive, mentoring 10 undergraduates, with many publishing in top conferences like NeurIPS and CVPR.**(2020-23)**
 - I **co-founded The Data Alchemists**, an initiative aimed at fostering interest in AI and data science among students.**(2022-23)**
 
-Feel free to reach out – I'm always up for a conversation about AI, research, or even just to say hi!
-
-I'm always eager to learn from others and explore new ideas in this fascinating field. There is so much more to discover and many brilliant minds pushing the boundaries of what's possible with AI. Thank you for stopping by. I hope you find something interesting here, and I welcome any thoughts or questions you might have.
-
-(WEBSITE UNDER CONSTRUCTION)
-
 (PS : Open to AI Research and Research collaborations)
+(WEBSITE UNDER CONSTRUCTION)
 
 # 🔥 News
 - *2024.08*: &nbsp; NLP for Positive Impact Workshop, EMNLP 2024
