@@ -23,42 +23,41 @@ Sure! Here's a more polished version of your website content:
 
 Hi there! 👋 Feel free to say hello!
 
-Welcome to my little corner of the web! I'm **Pratinav Seth**, an AI enthusiast with a focus on **computer vision, natural language processing (NLP)**, and **deep learning**.
+Welcome to my little corner of the web! I'm **Pratinav Seth**, an AI enthusiast with a focus on **Computer Vision, Natural Language Processing (NLP)**, and **Deep Learning**. <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
-My core interest is leveraging **deep learning** in **healthcare** and **remote sensing**, where I specialize in creating **task-specific, resource-efficient models**. By integrating **domain knowledge** into these models, I ensure that predictions are not only accurate but also explainable and trustworthy. Additionally, I'm passionate about using **AI for social good**, addressing global challenges like **climate change** and enhancing **medical diagnoses**.
+My core interest is leveraging **Deep Learning** in various domains such as **Healthcare** and **Remote Sensing**, where I am interested in making models  Resorce Efficient and incoporating Domain Knowledge for the problem. I am also keen on ensuring trustworthiness of AI models such that they are explainable and one of ensure safe ai by quantifying uncertainity of models. Additionally, I'm passionate about using **AI for social good**, addressing global challenges like **climate change** and enhancing **medical diagnoses**.
+
+My core interest lies in leveraging **Deep Learning** across various domains such as **Healthcare** and **Remote Sensing**. I’m particularly passionate about building **Resource-Efficient Models** and **incorporating Domain Knowledge** to address specific problems. I am also keen on problems involving the **Trustworthiness of AI Foundation Models**, with a strong focus on **Model Explainability** and **Quantifying Uncertainty** to create safer AI systems. Additionally, I'm have worked on applying AI for **Social Good**, tackling global challenges like **Climate Change** and improving **Medical Diagnoses**.
 
 In July 2024, I graduated with a degree in **Data Science** from the **Manipal Institute of Technology**. My academic journey was enriched through experiences at renowned institutions like:
 
-- **Mila Quebec AI Institute**: Applied satellite imagery to detect abandoned oil wells.
-- **Bosch Research**: Contributed to enhancing autonomous driving systems through controlled data generation.
+- **Mila Quebec AI Institute**: Worked with Domain Experts to detect orphaned oil wells.
+- **Bosch Research India**: Contributed to controlled data generation using Generative Models for enhancing autonomous driving systems.
 - **KLIV Lab, IIT Kharagpur**: Explored the integration of domain knowledge in neural networks for medical image analysis and investigated the explainability of modern deep neural networks.
 
-These roles gave me valuable insights into AI's transformative potential across industries.
-
-During my studies, I actively participated in student organizations that shaped my path:
-
-- As a **researcher with Mars Rover Manipal**, I tackled AI problems and mentored undergraduate students, while also co-leading an AI research group.
-- I co-founded **The Data Alchemists**, an initiative to foster interest in AI and data science among students.
-- As **Co-President of the Research Society**, I worked to nurture a research-driven culture, encouraging fellow students to explore technical domains through independent research.
+During my studies, I actively participated in student organizations that shaped my path in ai research:
+- As **Co-President of the Research Society MIT Manipal**, an undergraduate organization with 90+ members across 10+
+ technical domains. Led multidisciplinary collaboration, recruited new members from 250+ applicants, and guided their learning and development. Promoted the value of undergraduate research and contributed to interdisciplinary AI projects. Mentored over 10 undergraduates in various AI topics.**(2022-23)**
+- As a **Researcher with Mars Rover Manipal**, Advanced from Student Trainee to Senior Researcher, leading AI projects in machine learning, computer vision, and NLP, resulting in multiple publications. Conducted a successful recruitment drive, mentoring 10 undergraduates, with many publishing in top conferences like NeurIPS and CVPR.**(2020-23)**
+- I **co-founded The Data Alchemists**, an initiative aimed at fostering interest in AI and data science among students.**(2022-23)**
 
 Feel free to reach out – I'm always up for a conversation about AI, research, or even just to say hi!
 
-<a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>, I know this is just the beginning of my journey. There is so much more to discover and many brilliant minds pushing the boundaries of what's possible with AI.
-
- I'm always eager to learn from others and explore new ideas in this fascinating field. Thank you for stopping by. I hope you find something interesting here, and I welcome any thoughts or questions you might have.
+I'm always eager to learn from others and explore new ideas in this fascinating field. There is so much more to discover and many brilliant minds pushing the boundaries of what's possible with AI. Thank you for stopping by. I hope you find something interesting here, and I welcome any thoughts or questions you might have.
 
 (WEBSITE UNDER CONSTRUCTION)
 
 (PS : Open to AI Research and Research collaborations)
 
-
 # 🔥 News
+- *2024.08*: &nbsp; NLP for Positive Impact Workshop, EMNLP 2024
 - *2024.07*: &nbsp;🎉 Started as a Research Scientist at Arya.ai working on XAI and Interpretable AI for Regutable ML!
+- *2024.07*: &nbsp; Reviewer at FAIMI Workshop, MICCAI 2024
 - *2024.06*: &nbsp;🎉 AgriLLM accepted to KDD UC-24!
+- *2024.05*: &nbsp; Reviewer at ECCV 2024: May 2024
 - *2024.02*: &nbsp;🎉 Sailing Through Spectra accepted to ICLR Tiny Papers!
 - *2024.01*: &nbsp;🎉🎉 Started my Internship (as a part of my Bachelor Thesis) at Mila Quebec AI Institute (Remotely).
 - *2023.12*: &nbsp;🎉🎉 Does the Fairness of Your Pre-Training Hold Up? accepted to WACV Pretrain Workshop as Oral!
-- *2023.11*: &nbsp;🎉 RSM-NLP at BLP-2023 Task 2 accepted to Bangla Language Processing Workshop @ EMNLP 2023 
 
 # 📝 Publications 
 
