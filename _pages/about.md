@@ -17,13 +17,14 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 Hi there! Welcome to my little corner of the web! 
+
 I'm **Pratinav Seth**, an AI enthusiast with a focus on **Computer Vision, Natural Language Processing (NLP)**, and **Deep Learning**. <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 My core interest lies in leveraging **Deep Learning** across various domains such as **Healthcare** and **Remote Sensing**. I’m particularly passionate about building **Resource-Efficient Models** and **incorporating Domain Knowledge** to address specific problems. I am also keen on problems involving the **Trustworthiness of AI Foundation Models**, with a strong focus on **Model Explainability** and **Quantifying Uncertainty** to create safer AI systems. Additionally, I'm have worked on applying AI for **Social Good**, tackling global challenges like **Climate Change** and improving **Medical Diagnoses**.
 
 I'm always eager to learn from others and explore new ideas in this fascinating field. There is so much more to discover and many brilliant minds pushing the boundaries of what's possible with AI. Feel free to reach out – I'm always up for a conversation about AI, research, or even just to say hi!
 
-In July 2024, I graduated with a degree in **Data Science** from the **Manipal Institute of Technology**. My academic journey was enriched through experiences at renowned institutions like:
+I recently graduated with a degree in **Data Science** from the **Manipal Institute of Technology**. My academic journey was enriched through experiences at renowned institutions like:
 
 - **Mila Quebec AI Institute**: Worked with Domain Experts to detect orphaned oil wells.
 - **Bosch Research India**: Contributed to controlled data generation using Generative Models for enhancing autonomous driving systems.
