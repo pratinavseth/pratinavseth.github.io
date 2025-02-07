@@ -40,6 +40,7 @@ During my studies, I actively participated in student organizations that shaped 
 (WEBSITE UNDER CONSTRUCTION)
 
 # 🔥 News
+- *2025.02*: &nbsp; Reviewer at CVPR 2025
 - *2024.08*: &nbsp; Reviewer at NLP for Positive Impact Workshop, EMNLP 2024
 - *2024.07*: &nbsp;🎉 Started as a Research Scientist at Arya.ai working on XAI and Interpretable AI for Regutable ML!
 - *2024.07*: &nbsp; Reviewer at FAIMI Workshop, MICCAI 2024
