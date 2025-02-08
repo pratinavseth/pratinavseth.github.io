@@ -18,15 +18,8 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 Hi, I'm **Pratinav Seth** 👋  
 
-I'm an **AI enthusiast** passionate about **Computer Vision, NLP, and Deep Learning**. I currently work as a **Research Scientist at Arya.ai**, focusing on **Explaining Black Box Models, Quantifying XAI Algorithm Effectiveness, and AI Alignment** for high-stakes applications.  <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
-
-I completed my **undergrad in Data Science** from **Manipal Institute of Technology**, where I had the opportunity to work at **Mila Canada** (under *Dr. David Rolnick*), **Bosch Research India**, and **KLIV Lab, IIT Kharagpur**. Most of my research was done alongside my peers at **Mars Rover Manipal** and **Research Society MIT**.  
-
-### 🚀 Leadership & Community  
-During my undergrad, I was actively involved in leadership and research communities:  
-- **Co-President, Research Society MIT** – Led a 90+ member research group, fostering collaboration and mentorship.  
-- **Senior Researcher, Mars Rover Manipal** – Worked on AI projects in ML, CV, and NLP, contributing to papers at **NeurIPS, ACL, AAAI, CVPR**.  
-- **Co-Founder, The Data Alchemists** – An initiative to promote AI and data science among students.  
+I'm an passionate about Computer Vision, NLP, and Deep Learning. I currently work as a Research Scientist at AryaXAI(Arya.ai), focusing on Explaining Black Box Models, Quantifying XAI Algorithm Effectiveness, and AI Alignment for high-stakes applications.  
+I completed my undergrad in Data Science from Manipal Institute of Technology, where I had the opportunity to work at Mila Canada (under *Dr. David Rolnick*), Bosch Research India, and KLIV Lab, IIT Kharagpur. Most of my research was done alongside my peers at Mars Rover Manipal and Research Society MIT.  
 
 Always open to discussions on AI, research, and innovation. Let’s connect! 🚀
 
@@ -65,7 +58,7 @@ Always open to discussions on AI, research, and innovation. Let’s connect! �
 - *2023.02* One of the 11 Undergraduates Selected as an [AAAI Undergraduate Consortium Scholar 2023](https://aaai-uc.github.io/2023_scholars.html). Included a Travel Grant of $2000 to present at AAAI-23 at Washington DC, USA.
 - *2023.01* Received MAHE Undergraduate Research Grant Worth 10K INR for Project : Explainable & Trustworthy Skin Lesion Classification under Dr. Abhilash K. Pai, Dept. of DSCA, Manipal Institute of Technology, MAHE.
 
-# 📝 Publications 
+# 📝 Publications <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV Workshop 2024</div><img src='images/Diagram_FAIMI.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
