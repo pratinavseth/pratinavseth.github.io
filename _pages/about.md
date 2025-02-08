@@ -34,6 +34,8 @@ Always open to discussions on AI, research, and innovation. Let’s connect! �
 # 🔥 News
 - *2025.02*: &nbsp; Reviewer at CVPR 2025
 - *2024.11*: &nbsp;🎉 Presented AryaXAI DL-Backtrace at Mlops Conference at Austin, Texas.
+- *2024.10*: &nbsp;🎉 AgriLLM accepted to NLP4I Workshop, EMNLP-24!
+- *2024.10*: &nbsp; Reviewer at  Bayesian Decision-making and Uncertainty Workshop, NeurIPS 2024
 - *2024.08*: &nbsp; Reviewer at NLP for Positive Impact Workshop, EMNLP 2024
 - *2024.07*: &nbsp;🎉 Started as a Research Scientist at Arya.ai working on XAI and Interpretable AI for Regutable ML!
 - *2024.07*: &nbsp; Reviewer at FAIMI Workshop, MICCAI 2024
@@ -42,6 +44,26 @@ Always open to discussions on AI, research, and innovation. Let’s connect! �
 - *2024.02*: &nbsp;🎉 Sailing Through Spectra accepted to ICLR Tiny Papers!
 - *2024.01*: &nbsp;🎉🎉 Started my Internship (as a part of my Bachelor Thesis) at Mila Quebec AI Institute (Remotely).
 - *2023.12*: &nbsp;🎉🎉 Does the Fairness of Your Pre-Training Hold Up? accepted to WACV Pretrain Workshop as Oral!
+
+# 💻 Past Experiences
+
+- *2024.01 - 2024.06*, [Research Intern, Rolnick Lab, Mila Quebec AI Institute](https://davidrolnick.com/lab/), Remote.
+- *2021.03 - 2024.01*, [Researcher (Trainee; Junior; Senior; Mentor), Mars Rover Manipal.](https://www.marsrovermanipal.com/research), Remote & Manipal,India.
+- *2023.12 - 2024.01*, [Research Collaborator, with Dr. Amit Agarwal (Wells Fargo AI COE)](https://arxiv.org/abs/2407.04721), Remote.
+- *2022.05 - 2023.12*, [Research Intern (Mentor - Mr. Rakshith Satish), KLIV Lab (Dr. Debdoot Sheet), IIT Kharagpur.](https://www.linkedin.com/in/pratinav-seth/), Remote.
+- *2023.06 - 2023.10*, [Computer Vision Research Intern (Mentor - Mr. Kaustav Mullick (CR/RTC-2)), Robert Bosch Research and Technology Center India](https://www.linkedin.com/in/pratinav-seth/), Bangalore, India.
+- *2023.04 - 2023.12*, [Research Assistant (Dr. Abhilash K. Pai), Dept. of DSCA, MIT MAHE](https://sites.google.com/site/abhilashkpai), Remote.
+- *2022.09 - 2023.09*, [Co-President & Mentor AI Research, Research Society MIT Manipal](https://www.instagram.com/researchsoc/?hl=en), Remote.
+- *2022.11 - 2023.08*, [Co-founder & Head of Artificial Intelligence,  The Data Alchemists](https://www.linkedin.com/company/the-data-alchemists/posts/?feedView=all), Remote.
+- *2022.10 - 2023.03*, [Research Collaborator, IIT Roorkee (Mr. Anmol Gupta & Dr. Vijay Kr. BR (NEC Labs, USA))](https://www.linkedin.com/in/pratinav-seth/), Remote.
+- *2022.06 - 2022.09*, [Research Assistant (Dr.Vidya Rao & Dr. Poornima P.K.), Dept. of DSCA, MIT MAHE](hhttps://www.manipal.edu/mit/department-faculty/department-list/computer-applications.html), Manipal, India.
+- *2022.03 - 2022.05*, [Machine Learning Intern, Eedge.ai](https://www.linkedin.com/in/pratinav-seth/), Remote.
+- *2022.01 - 2022.02*, [Data Science (NLP) Intern, CUREYA](https://www.linkedin.com/in/pratinav-seth/), Remote.
+
+
+# 🎖 Honors and Awards
+- *2023.02* One of the 11 Undergraduates Selected as an [AAAI Undergraduate Consortium Scholar 2023](https://aaai-uc.github.io/2023_scholars.html). Included a Travel Grant of $2000 to present at AAAI-23 at Washington DC, USA.
+- *2023.01* Received MAHE Undergraduate Research Grant Worth 10K INR for Project : Explainable & Trustworthy Skin Lesion Classification under Dr. Abhilash K. Pai, Dept. of DSCA, Manipal Institute of Technology, MAHE.
 
 # 📝 Publications 
 
@@ -109,25 +131,6 @@ Aditya Kasliwal, Aryan Kamani, Ishaan Gakhar, **Pratinav Seth**, Sriya Rallaband
 
 - [Analyzing Effects of Fake Training Data on the Performance of Deep Learning Systems](https://arxiv.org/pdf/2303.01268),**Pratinav Seth  (†)**, Akshat Bhandari (†), Kumud Lakara (†), **Pre-Print** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:qjMakFHDy7sC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
-# 💻 Past Experiences
-
-- *2024.01 - 2024.06*, [Research Intern, Rolnick Lab, Mila Quebec AI Institute](https://davidrolnick.com/lab/), Remote.
-- *2021.03 - 2024.01*, [Researcher (Trainee; Junior; Senior; Mentor), Mars Rover Manipal.](https://www.marsrovermanipal.com/research), Remote & Manipal,India.
-- *2023.12 - 2024.01*, [Research Collaborator, with Dr. Amit Agarwal (Wells Fargo AI COE)](https://arxiv.org/abs/2407.04721), Remote.
-- *2022.05 - 2023.12*, [Research Intern (Mentor - Mr. Rakshith Satish), KLIV Lab (Dr. Debdoot Sheet), IIT Kharagpur.](https://www.linkedin.com/in/pratinav-seth/), Remote.
-- *2023.06 - 2023.10*, [Computer Vision Research Intern (Mentor - Mr. Kaustav Mullick (CR/RTC-2)), Robert Bosch Research and Technology Center India](https://www.linkedin.com/in/pratinav-seth/), Bangalore, India.
-- *2023.04 - 2023.12*, [Research Assistant (Dr. Abhilash K. Pai), Dept. of DSCA, MIT MAHE](https://sites.google.com/site/abhilashkpai), Remote.
-- *2022.09 - 2023.09*, [Co-President & Mentor AI Research, Research Society MIT Manipal](https://www.instagram.com/researchsoc/?hl=en), Remote.
-- *2022.11 - 2023.08*, [Co-founder & Head of Artificial Intelligence,  The Data Alchemists](https://www.linkedin.com/company/the-data-alchemists/posts/?feedView=all), Remote.
-- *2022.10 - 2023.03*, [Research Collaborator, IIT Roorkee (Mr. Anmol Gupta & Dr. Vijay Kr. BR (NEC Labs, USA))](https://www.linkedin.com/in/pratinav-seth/), Remote.
-- *2022.06 - 2022.09*, [Research Assistant (Dr.Vidya Rao & Dr. Poornima P.K.), Dept. of DSCA, MIT MAHE](hhttps://www.manipal.edu/mit/department-faculty/department-list/computer-applications.html), Manipal, India.
-- *2022.03 - 2022.05*, [Machine Learning Intern, Eedge.ai](https://www.linkedin.com/in/pratinav-seth/), Remote.
-- *2022.01 - 2022.02*, [Data Science (NLP) Intern, CUREYA](https://www.linkedin.com/in/pratinav-seth/), Remote.
-
-
-# 🎖 Honors and Awards
-- *2023.02* One of the 11 Undergraduates Selected as an [AAAI Undergraduate Consortium Scholar 2023](https://aaai-uc.github.io/2023_scholars.html). Included a Travel Grant of $2000 to present at AAAI-23 at Washington DC, USA.
-- *2023.01* Received MAHE Undergraduate Research Grant Worth 10K INR for Project : Explainable & Trustworthy Skin Lesion Classification under Dr. Abhilash K. Pai, Dept. of DSCA, Manipal Institute of Technology, MAHE.
 
 # 📖 Educations
 - *2020.10 - 2024.07*, Bachelors of Technology in Data Science & Engineering (B.Tech), Manipal Academy of Higher Education, Manipal, Karnataka, India.
