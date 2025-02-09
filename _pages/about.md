@@ -16,12 +16,15 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-Hi, I'm **Pratinav Seth** 👋  
+# Hi, I'm Pratinav Seth! 👋  
 
-I'm an passionate about Computer Vision, NLP, and Deep Learning. I currently work as a Research Scientist at AryaXAI(Arya.ai), focusing on Explaining Black Box Models, Quantifying XAI Algorithm Effectiveness, and AI Alignment for high-stakes applications.  
-I completed my undergrad in Data Science from Manipal Institute of Technology, where I had the opportunity to work at Mila Canada (under *Dr. David Rolnick*), Bosch Research India, and KLIV Lab, IIT Kharagpur. Most of my research was done alongside my peers at Mars Rover Manipal and Research Society MIT.  
+I'm passionate about **Computer Vision, NLP, and Deep Learning**. Currently, I work as a **Research Scientist at AryaXAI (Arya.ai)**, where I focus on **interpreting black-box models, evaluating XAI algorithm effectiveness, and ensuring AI alignment in high-stakes applications**.  
 
-Always open to discussions on AI, research, and innovation. Let’s connect! 🚀
+I earned my undergraduate degree in **Data Science from Manipal Institute of Technology**, during which I had the opportunity to work with the **Mila Quebec AI Institute** (under *Dr. David Rolnick*), **Bosch Research India**, and **KLIV Lab, IIT Kharagpur**. Much of my research during this time was conducted alongside peers at **[Mars Rover Manipal AI Research](https://www.marsrovermanipal.com/research)** and the **[Research Society MIT](https://www.instagram.com/researchsoc/?hl=en)**.  
+
+I was also honored to be selected as an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** in 2023.  
+
+I'm always open to conversations about AI, research, and innovation—let’s connect! 🚀  
 
 
 # 🔥 News
