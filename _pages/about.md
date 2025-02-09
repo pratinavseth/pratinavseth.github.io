@@ -127,12 +127,16 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 - [xai_evals: A Framework for Evaluating Post-Hoc Local Explanation Methods](https://arxiv.org/pdf/2502.03014),**Pratinav Seth**, Yashwardhan Rathore, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu, **Technical Report** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
 
 
+- [SELF-PERCEPT: Detecting Multi-Person Mental Manipulation in Conversations](https://arxiv.org/pdf/2502.03014),Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru, Siddharth Shukla, Tanuj Tyagi, SANDEEP CHAURASIA, Kripabandhu Ghosh, **Pre-Print** [**Citations**](https://scholar.google.com/citations?user=DwBn1fcAAAAJ) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+
+
+
 # 💻 Past Experiences
 
 - *2024.01 - 2024.06*, [Research Intern, Rolnick Lab, Mila Quebec AI Institute](https://davidrolnick.com/lab/), Remote.
 - *2021.03 - 2024.01*, [Researcher (Trainee; Junior; Senior; Mentor), Mars Rover Manipal.](https://www.marsrovermanipal.com/research), Remote & Manipal,India.
 - *2023.12 - 2024.01*, [Research Collaborator, with Dr. Amit Agarwal (Wells Fargo AI COE)](https://arxiv.org/abs/2407.04721), Remote.
-- *2022.05 - 2023.12*, [Research Intern (Mentor - Mr. Rakshith Satish), KLIV Lab (Dr. Debdoot Sheet), IIT Kharagpur.](https://www.linkedin.com/in/pratinav-seth/), Remote.
+- *2022.05 - 2023.12*, [Research Intern (Mentor - Mr. Rakshith Satish), KLIV Lab (PI - Dr. Debdoot Sheet), IIT Kharagpur.](https://www.linkedin.com/in/pratinav-seth/), Remote.
 - *2023.06 - 2023.10*, [Computer Vision Research Intern (Mentor - Mr. Kaustav Mullick (CR/RTC-2)), Robert Bosch Research and Technology Center India](https://www.linkedin.com/in/pratinav-seth/), Bangalore, India.
 - *2023.04 - 2023.12*, [Research Assistant (Dr. Abhilash K. Pai), Dept. of DSCA, MIT MAHE](https://sites.google.com/site/abhilashkpai), Remote.
 - *2022.09 - 2023.09*, [Co-President & Mentor AI Research, Research Society MIT Manipal](https://www.instagram.com/researchsoc/?hl=en), Remote.
