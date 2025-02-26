@@ -134,20 +134,39 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 
 
 
-# 💻 Past Experiences
 
-- *2024.01 - 2024.06*, [Research Intern, Rolnick Lab, Mila Quebec AI Institute](https://davidrolnick.com/lab/), Remote.
-- *2021.03 - 2024.01*, [Researcher (Trainee; Junior; Senior; Mentor), Mars Rover Manipal.](https://www.marsrovermanipal.com/research), Remote & Manipal,India.
-- *2023.12 - 2024.01*, [Research Collaborator, with Dr. Amit Agarwal (Wells Fargo AI COE)](https://arxiv.org/abs/2407.04721), Remote.
-- *2022.05 - 2023.12*, [Research Intern (Mentor - Mr. Rakshith Satish), KLIV Lab (PI - Dr. Debdoot Sheet), IIT Kharagpur.](https://www.linkedin.com/in/pratinav-seth/), Remote.
-- *2023.06 - 2023.10*, [Computer Vision Research Intern (Mentor - Mr. Kaustav Mullick (CR/RTC-2)), Robert Bosch Research and Technology Center India](https://www.linkedin.com/in/pratinav-seth/), Bangalore, India.
-- *2023.04 - 2023.12*, [Research Assistant (Dr. Abhilash K. Pai), Dept. of DSCA, MIT MAHE](https://sites.google.com/site/abhilashkpai), Remote.
-- *2022.09 - 2023.09*, [Co-President & Mentor AI Research, Research Society MIT Manipal](https://www.instagram.com/researchsoc/?hl=en), Remote.
-- *2022.11 - 2023.08*, [Co-founder & Head of Artificial Intelligence,  The Data Alchemists](https://www.linkedin.com/company/the-data-alchemists/posts/?feedView=all), Remote.
-- *2022.10 - 2023.03*, [Research Collaborator, IIT Roorkee (Mr. Anmol Gupta & Dr. Vijay Kr. BR (NEC Labs, USA))](https://www.linkedin.com/in/pratinav-seth/), Remote.
-- *2022.06 - 2022.09*, [Research Assistant (Dr.Vidya Rao & Dr. Poornima P.K.), Dept. of DSCA, MIT MAHE](hhttps://www.manipal.edu/mit/department-faculty/department-list/computer-applications.html), Manipal, India.
-- *2022.03 - 2022.05*, [Machine Learning Intern, Eedge.ai](https://www.linkedin.com/in/pratinav-seth/), Remote.
-- *2022.01 - 2022.02*, [Data Science (NLP) Intern, CUREYA](https://www.linkedin.com/in/pratinav-seth/), Remote.
+# 💻 Professional Experience
+
+## Research Positions
+- *2024.01 - 2024.06*, Research Intern at [Rolnick Lab, Mila Quebec AI Institute](https://davidrolnick.com/lab/), Remote
+  - Working on climate change and machine learning applications
+
+- *2023.06 - 2023.10*, Computer Vision Research Intern at [Robert Bosch Research and Technology Center India](https://www.linkedin.com/in/pratinav-seth/), Bangalore
+  - Mentored by Mr. Kaustav Mullick & Dr. Amit Kale (CR/RTC-2).
+  
+- *2021.03 - 2024.01*, Research Progression at [Mars Rover Manipal](https://www.marsrovermanipal.com/research)
+  - Advanced from Trainee to Senior Researcher and Mentor
+  - Led AI research initiatives leading to multiple publications at NeurIPS, ACL, AAAI, CVPR, etc withprojects in Generative AI, Medical Image Analysis, and Climate Change.
+  - Built a team of 10+ members and mentored them in their research.
+
+
+- *2023.04 - 2023.12*, Research Assistant under [Dr. Abhilash K. Pai](https://sites.google.com/site/abhilashkpai), Dept. of DSCA, MIT MAHE
+  - Focused on medical image analysis and fairness in AI. 
+  - Worked on a study on effects of pretraining techniques on skin tone bias in skin lesion classification with support from MAHE Undergraduate Research Grant leading to a publication at Pre-Train Workshop at WACV 2024.
+
+## Research Collaborations
+- *2023.12 - 2024.01*, Research Collaboration with [Dr. Amit Agarwal, Wells Fargo AI COE](https://arxiv.org/abs/2407.04721)
+- *2022.05 - 2023.12*, Research Intern at [KLIV Lab, IIT Kharagpur](https://www.linkedin.com/in/pratinav-seth/) under Dr. Debdoot Sheet and mentored by Mr. Rakshith Satish. Worked on integrating domain knowledge in medical image analysis using Graph Convolutional Networks and Explainable AI for chest radiographs.
+- *2022.10 - 2023.03*, Research Collaboration with [IIT Roorkee](https://www.linkedin.com/in/pratinav-seth/).
+
+## Leadership Roles
+- *2022.09 - 2023.09*, Co-President & AI Research Mentor, [Research Society MIT Manipal](https://www.instagram.com/researchsoc/?hl=en)
+- *2022.11 - 2023.08*, Co-founder & Head of AI, [The Data Alchemists](https://www.linkedin.com/company/the-data-alchemists/)
+
+## Early Career Experience
+- *2022.06 - 2022.09*, Research Assistant, Dept. of DSCA, MIT MAHE under Dr. Vidya Rao & Dr. Poornima P.K. working on International Cyber Security Data Mining Competition leading to a position of 5th out of 134+ teams.
+- *2022.03 - 2022.05*, Machine Learning Intern, [Eedge.ai](https://www.linkedin.com/in/pratinav-seth/)
+- *2022.01 - 2022.02*, Data Science (NLP) Intern, [CUREYA](https://www.linkedin.com/in/pratinav-seth/)
 
 
 # 🎖 Honors and Awards
