@@ -28,8 +28,11 @@ I'm always open to conversations about AI, research, and innovation—let’s co
 
 
 # 🔥 News
+- *2025.03*: &nbsp; Reviewer at IJCNN 2025
+- *2025.03*: &nbsp; Reviewer at Fin-AI Workshop, ICLR 2025
+- *2025.03*: &nbsp; Reviewer at FPI Workshop, ICLR 2025
 - *2025.02*: &nbsp; Reviewer at CVPR 2025
-- *2024.11*: &nbsp;🎉 Presented AryaXAI DL-Backtrace at Mlops Conference at Austin, Texas.
+- *2024.11*: &nbsp; Presented AryaXAI DL-Backtrace at Mlops Conference at Austin, Texas.
 - *2024.10*: &nbsp;🎉 AgriLLM accepted to NLP4I Workshop, EMNLP-24!
 - *2024.10*: &nbsp; Reviewer at  Bayesian Decision-making and Uncertainty Workshop, NeurIPS 2024
 - *2024.08*: &nbsp; Reviewer at NLP for Positive Impact Workshop, EMNLP 2024
