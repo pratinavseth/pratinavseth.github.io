@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # Hi, I'm Pratinav Seth! 👋  
 
-I'm passionate about **Computer Vision, NLP, and Deep Learning**. Currently, I work as a **Research Scientist at AryaXAI (Arya.ai)**, where I focus on **interpreting black-box models, evaluating XAI algorithm effectiveness, and ensuring AI alignment in high-stakes applications**.  
+I'm passionate about **Computer Vision, NLP, and Deep Learning**. Currently, I work as a **Research Scientist at AryaXAI (Arya.ai)**, where I focus on **interpreting black-box models, evaluating XAI algorithm effectiveness, and ensuring AI alignment in high-stakes applications**. 
 
 I earned my undergraduate degree in **Data Science from Manipal Institute of Technology**, during which I had the opportunity to work with the **Mila Quebec AI Institute** (under *Dr. David Rolnick*), **Bosch Research India**, and **KLIV Lab, IIT Kharagpur**. Much of my research during this time was conducted alongside peers at **[Mars Rover Manipal AI Research](https://www.marsrovermanipal.com/research)** and the **[Research Society MIT](https://www.instagram.com/researchsoc/?hl=en)**.  
 
@@ -41,7 +41,7 @@ I'm always open to conversations about AI, research, and innovation—let’s co
 
 # 📝 Publications <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='images/AWD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print (Under Review) / Non Archival Version - CCAI ICLR 2025</div><img src='images/AWD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Alberta Wells Dataset: Pinpointing Oil and Gas Wells from Satellite Imagery](https://arxiv.org/pdf/2410.09032)
