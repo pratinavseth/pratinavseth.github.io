@@ -28,15 +28,16 @@ I'm always open to conversations about AI, research, and innovation—let’s co
 
 
 # 🔥 News
+- *2025.04*: &nbsp;🎉 Will be Attending ICLR 2025 at Singapore to present our Work on Alberta Wells Dataset!
+- *2025.03*: &nbsp;🎉 Dl-Backtrace accepted at IJCNN Conference 2025!
+- *2025.03*: &nbsp;🎉 Non-Archival Version of SELF-PERCEPT: Mental Manipulation Detection accepted at SRW, NAACL 2025!
+- *2025.03*: &nbsp;🎉 Non-Archival Version of Alberta Wells Dataset accepted at CCAI Workshop at ICLR 2025!
 - *2025.03*: &nbsp; Reviewer at IJCNN 2025
 - *2025.03*: &nbsp; Reviewer at Fin-AI Workshop, ICLR 2025
 - *2025.03*: &nbsp; Reviewer at FPI Workshop, ICLR 2025
 - *2025.02*: &nbsp; Reviewer at CVPR 2025
 - *2024.11*: &nbsp; Presented AryaXAI DL-Backtrace at Mlops Conference at Austin, Texas.
 - *2024.10*: &nbsp;🎉 AgriLLM accepted to NLP4I Workshop, EMNLP-24!
-- *2024.10*: &nbsp; Reviewer at  Bayesian Decision-making and Uncertainty Workshop, NeurIPS 2024
-- *2024.08*: &nbsp; Reviewer at NLP for Positive Impact Workshop, EMNLP 2024
-- *2024.07*: &nbsp;🎉 Started as a Research Scientist at Arya.ai working on XAI and Interpretable AI for Regutable ML!
 
 # 📝 Publications <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
@@ -51,6 +52,13 @@ I'm always open to conversations about AI, research, and innovation—let’s co
 [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:5nxA0vEk-isC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 </div>
 </div>
+
+- [SELF-PERCEPT: Introspection Improves Large Language Models’ Detection of Multi-Person Mental Manipulation in Conversations](https://pratinavseth.github.io/),Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru, Siddharth Shukla, Tanuj Tyagi, SANDEEP CHAURASIA, Kripabandhu Ghosh, **Pre-Print** , **Non-Archival Version Accepted at NAACL SRW Workshop 2025**.
+
+
+- [DLBacktrace: A Model Agnostic Explainability for any Deep Learning Models](https://arxiv.org/pdf/2411.12643),Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh, Pratinav Seth, **Accepted at IJCNN 2025** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:MXK_kJrjxJIC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:MXK_kJrjxJIC'></span></strong>
+
+
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV Workshop 2024</div><img src='images/Diagram_FAIMI.jpg' alt="sym" width="100%"></div></div>
@@ -128,14 +136,7 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 
 - [Analyzing Effects of Fake Training Data on the Performance of Deep Learning Systems](https://arxiv.org/pdf/2303.01268),**Pratinav Seth  (†)**, Akshat Bhandari (†), Kumud Lakara (†), **Pre-Print** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:qjMakFHDy7sC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:qjMakFHDy7sC'></span></strong>
 
-- [DLBacktrace: A Model Agnostic Explainability for any Deep Learning Models](https://arxiv.org/pdf/2411.12643),Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh, Pratinav Seth, **Pre-Print** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:MXK_kJrjxJIC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:MXK_kJrjxJIC'></span></strong>
-
 - [xai_evals: A Framework for Evaluating Post-Hoc Local Explanation Methods](https://arxiv.org/pdf/2502.03014),**Pratinav Seth**, Yashwardhan Rathore, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu, **Technical Report** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
-
-
-- [SELF-PERCEPT: Detecting Multi-Person Mental Manipulation in Conversations](https://arxiv.org/pdf/2502.03014),Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru, Siddharth Shukla, Tanuj Tyagi, SANDEEP CHAURASIA, Kripabandhu Ghosh, **Pre-Print** [**Citations**](https://scholar.google.com/citations?user=DwBn1fcAAAAJ) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
-
-
 
 
 # 💻 Professional Experience
