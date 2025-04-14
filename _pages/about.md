@@ -18,14 +18,15 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # Hi, I'm Pratinav Seth! 👋  
 
-I'm passionate about **Computer Vision, NLP, and Deep Learning**. Currently, I work as a **Research Scientist at AryaXAI (Arya.ai)**, where I focus on **interpreting black-box models, evaluating XAI algorithm effectiveness, and ensuring AI alignment in high-stakes applications**. 
+I currently work as a Research Scientist at [AryaXAI (Arya.ai, an Aurionpro Company)](https://www.aryaxai.com/), where I work at the intersection of Explainable AI (XAI), AI alignment, and AI safety for high-stakes, real-world applications. My focus is on interpreting black-box models, evaluating XAI algorithm reliability, ensuring these systems are aligned and trustworthy, and exploring the use of foundation models for tabular data applications—especially in critical sectors.
 
-I earned my undergraduate degree in **Data Science from Manipal Institute of Technology**, during which I had the opportunity to work with the **Mila Quebec AI Institute** (under *Dr. David Rolnick*), **Bosch Research India**, and **KLIV Lab, IIT Kharagpur**. Much of my research during this time was conducted alongside peers at **[Mars Rover Manipal AI Research](https://www.marsrovermanipal.com/research)** and the **[Research Society MIT](https://www.instagram.com/researchsoc/?hl=en)**.  
+I recently completed my B.Tech in Data Science from Manipal Institute of Technology, during which I had the privilege of working at [Mila Quebec AI Institute](https://mila.quebec/en) (under [Dr. David Rolnick](https://davidrolnick.com/)), [Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/) (with Dr. Amit Kale and Koustav Mullick), and [KLIV Lab at IIT Kharagpur](https://iitkliv.github.io/) (PI: Dr. Debdoot Sheet). I conducted much of my research alongside my peers at **[Mars Rover Manipal AI Research](https://www.linkedin.com/company/marsrovermanipal)** (alongside [Dr. Ujjwal Verma](https://scholar.google.com/citations?user=XSzIFIgAAAAJ&hl=en)), **[Research Society MIT](https://www.instagram.com/researchsoc/?hl=en)**, and under [Dr. Abhilash K. Pai](https://scholar.google.co.in/citations?user=WIsqsnsAAAAJ&hl=en) .
 
-I was also honored to be selected as an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** in 2023.  
+In 2023, I was honored to be selected as an  **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)**, where I presented a proposal on Model Agnostic Uncertainty Aware Metrics.
 
-I'm always open to conversations about AI, research, and innovation—let’s connect! 🚀  
+I’m deeply passionate about building responsible AI systems that are aligned, safe, and transparent, with a particular interest in AI for Social Good and its applications in Medical Imagery and Remote Sensing. 
 
+I’m always eager to connect and exchange ideas on AI research, innovation, and shaping the future of responsible AI—let’s connect! 🚀
 
 # 🔥 News
 - *2025.04*: &nbsp;🎉 Will be Attending ICLR 2025 at Singapore to present our Work on Alberta Wells Dataset!
