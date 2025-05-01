@@ -31,20 +31,18 @@ I’m always eager to connect and exchange ideas on AI research, innovation, and
 For a more detailed overview of my professional journey, projects, and contributions, feel free to take a look at my **[Resume](https://linktr.ee/pratinavseth)**.
 
 # 🔥 News
+- *2025.05*: &nbsp;🎉 Alberta Wells Dataset accepted at ICML 2025! (Really Grateful to the Team for their efforts and Prof. David Rolnick)!
+- *2025.05*: &nbsp;🎉 Obscure to Observe: A Lesion-Aware MAE for Glaucoma Detection from Retinal Context accepted at Short Paper Track, MIDL 2025! (with Siddhant)
 - *2025.04*: &nbsp;🎉 Will be Attending ICLR 2025 at Singapore to present our Work on Alberta Wells Dataset!
 - *2025.03*: &nbsp;🎉 Dl-Backtrace accepted at IJCNN Conference 2025!
 - *2025.03*: &nbsp;🎉 Non-Archival Version of SELF-PERCEPT: Mental Manipulation Detection accepted at SRW, NAACL 2025!
 - *2025.03*: &nbsp;🎉 Non-Archival Version of Alberta Wells Dataset accepted at CCAI Workshop at ICLR 2025!
 - *2025.03*: &nbsp; Reviewer at IJCNN 2025
 - *2025.03*: &nbsp; Reviewer at Fin-AI Workshop, ICLR 2025
-- *2025.03*: &nbsp; Reviewer at FPI Workshop, ICLR 2025
-- *2025.02*: &nbsp; Reviewer at CVPR 2025
-- *2024.11*: &nbsp; Presented AryaXAI DL-Backtrace at Mlops Conference at Austin, Texas.
-- *2024.10*: &nbsp;🎉 AgriLLM accepted to NLP4I Workshop, EMNLP-24!
 
 # 📝 Publications <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print (Under Review) / Non Archival Version - CCAI ICLR 2025</div><img src='images/AWD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025 / CCAI ICLR 2025</div><img src='images/AWD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Alberta Wells Dataset: Pinpointing Oil and Gas Wells from Satellite Imagery](https://arxiv.org/pdf/2410.09032)
@@ -60,8 +58,6 @@ For a more detailed overview of my professional journey, projects, and contribut
 
 
 - [DLBacktrace: A Model Agnostic Explainability for any Deep Learning Models](https://arxiv.org/pdf/2411.12643),Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh, Pratinav Seth, **Accepted at IJCNN 2025** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:MXK_kJrjxJIC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:MXK_kJrjxJIC'></span></strong>
-
-
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV Workshop 2024</div><img src='images/Diagram_FAIMI.jpg' alt="sym" width="100%"></div></div>
