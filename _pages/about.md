@@ -32,7 +32,7 @@ For a more detailed overview of my professional journey, projects, and contribut
 
 # 🔥 News
 - *2025.05*: &nbsp;🎉 Alberta Wells Dataset accepted at ICML 2025! (Really Grateful to the Team for their efforts and Prof. David Rolnick)!
-- *2025.05*: &nbsp;🎉 Obscure to Observe: A Lesion-Aware MAE for Glaucoma Detection from Retinal Context accepted at Short Paper Track, MIDL 2025! (with Siddhant)
+- *2025.05*: &nbsp;🎉 Obscure to Observe: A Lesion-Aware MAE for Glaucoma Detection from Retinal Context accepted at Short Paper Track, MIDL 2025! (Finally Colab with Siddhant Bharadwaj)
 - *2025.04*: &nbsp;🎉 Will be Attending ICLR 2025 at Singapore to present our Work on Alberta Wells Dataset!
 - *2025.03*: &nbsp;🎉 Dl-Backtrace accepted at IJCNN Conference 2025!
 - *2025.03*: &nbsp;🎉 Non-Archival Version of SELF-PERCEPT: Mental Manipulation Detection accepted at SRW, NAACL 2025!
