@@ -31,6 +31,7 @@ I’m always eager to connect and exchange ideas on AI research, innovation, and
 For a more detailed overview of my professional journey, projects, and contributions, feel free to take a look at my **[Resume](https://linktr.ee/pratinavseth)**.
 
 # 🔥 News
+- *2025.05*: &nbsp;🎉 SELF-PERCEPT: Mental Manipulation Detection accepted at ACL 2025!
 - *2025.05*: &nbsp;🎉 Alberta Wells Dataset accepted at ICML 2025! (Really Grateful to the Team for their efforts and Prof. David Rolnick)!
 - *2025.05*: &nbsp;🎉 Obscure to Observe: A Lesion-Aware MAE for Glaucoma Detection from Retinal Context accepted at Short Paper Track, MIDL 2025! (Finally Colab with Siddhant Bharadwaj)
 - *2025.04*: &nbsp;🎉 Will be Attending ICLR 2025 at Singapore to present our Work on Alberta Wells Dataset!
@@ -54,7 +55,7 @@ For a more detailed overview of my professional journey, projects, and contribut
 </div>
 </div>
 
-- [SELF-PERCEPT: Introspection Improves Large Language Models’ Detection of Multi-Person Mental Manipulation in Conversations](https://pratinavseth.github.io/),Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru, Siddharth Shukla, Tanuj Tyagi, SANDEEP CHAURASIA, Kripabandhu Ghosh, **Pre-Print** , **Non-Archival Version Accepted at NAACL SRW Workshop 2025**.
+- [SELF-PERCEPT: Introspection Improves Large Language Models’ Detection of Multi-Person Mental Manipulation in Conversations](https://pratinavseth.github.io/),Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru, Siddharth Shukla, Tanuj Tyagi, SANDEEP CHAURASIA, Kripabandhu Ghosh, **Pre-Print** , **ACL 2025 / NAACL SRW Workshop 2025**.
 
 
 - [DLBacktrace: A Model Agnostic Explainability for any Deep Learning Models](https://arxiv.org/pdf/2411.12643),Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh, Pratinav Seth, **Accepted at IJCNN 2025** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:MXK_kJrjxJIC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:MXK_kJrjxJIC'></span></strong>
