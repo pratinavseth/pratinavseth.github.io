@@ -18,9 +18,9 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # Hi, I'm Pratinav Seth! 👋  
 
-I currently work as a Research Scientist at **[AryaXAI (Arya.ai, an Aurionpro Company)](https://www.aryaxai.com/)**, where I work at the intersection of Explainable AI (XAI), AI alignment, and AI safety for high-stakes, real-world applications. My focus is on interpreting black-box models, evaluating XAI algorithm reliability, ensuring these systems are aligned and trustworthy, and exploring the use of foundation models for tabular data applications—especially in critical sectors.
+I currently work as a **Research Scientist** at **[AryaXAI Alignment Labs (Arya.ai, an Aurionpro Company)](https://www.aryaxai.com/)** (July 2024 – Present), where I work at the intersection of Explainable AI (XAI), AI alignment, and AI safety for high-stakes, real-world applications. At AryaXAI, I focus on advancing explainable AI through model-agnostic approaches. I enhanced the DLBacktrace method and developed benchmarking frameworks for XAI evaluation. My work spans investigating alignment and optimization strategies across various architectures like CNNs, BERT, and LLaMA. I'm also actively developing foundation models for tabular data with applications in risk modeling and financial safety.
 
-I recently completed my B.Tech in Data Science from Manipal Institute of Technology, during which I had the privilege of working at **[Mila Quebec AI Institute](https://mila.quebec/en) (under [Dr. David Rolnick](https://davidrolnick.com/))**, **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/) (with Dr. Amit Kale and Mr. Koustav Mullick)**, and **[KLIV Lab at IIT Kharagpur](https://iitkliv.github.io/) (PI: Dr. Debdoot Sheet)**. I conducted much of my research alongside my peers at **[Mars Rover Manipal AI Research](https://www.linkedin.com/company/marsrovermanipal) (alongside [Dr. Ujjwal Verma](https://scholar.google.com/citations?user=XSzIFIgAAAAJ&hl=en))**, **[Research Society MIT](https://www.instagram.com/researchsoc/?hl=en)**, and under **[Dr. Abhilash K. Pai](https://scholar.google.co.in/citations?user=WIsqsnsAAAAJ&hl=en)** .
+I completed my Bachelor's (B.Tech) in Data Science from Manipal Institute of Technology, during which I had the privilege of working at **[Mila Quebec AI Institute](https://mila.quebec/en) (under [Dr. David Rolnick](https://davidrolnick.com/))**, **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/) (with Dr. Amit Kale and Mr. Koustav Mullick)**, and **[KLIV Lab at IIT Kharagpur](https://iitkliv.github.io/) (PI: Dr. Debdoot Sheet)**. I conducted much of my research alongside my peers at **[Mars Rover Manipal AI Research](https://www.linkedin.com/company/marsrovermanipal) (alongside [Dr. Ujjwal Verma](https://scholar.google.com/citations?user=XSzIFIgAAAAJ&hl=en))**, **[Research Society MIT](https://www.instagram.com/researchsoc/?hl=en)**, and under **[Dr. Abhilash K. Pai](https://scholar.google.co.in/citations?user=WIsqsnsAAAAJ&hl=en)** .
 
 In 2023, I was honored to be selected as an  **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)**, where I presented a proposal on Model Agnostic Uncertainty Aware Metrics.
 
@@ -31,15 +31,21 @@ I’m always eager to connect and exchange ideas on AI research, innovation, and
 For a more detailed overview of my professional journey, projects, and contributions, feel free to take a look at my **[Resume](https://linktr.ee/pratinavseth)**.
 
 # 🔥 News
-- *2025.05*: &nbsp;🎉 SELF-PERCEPT: Mental Manipulation Detection accepted at ACL 2025!
-- *2025.05*: &nbsp;🎉 Alberta Wells Dataset accepted at ICML 2025! (Really Grateful to the Team for their efforts and Prof. David Rolnick)!
-- *2025.05*: &nbsp;🎉 Obscure to Observe: A Lesion-Aware MAE for Glaucoma Detection from Retinal Context accepted at Short Paper Track, MIDL 2025! (Finally Colab with Siddhant Bharadwaj)
-- *2025.04*: &nbsp;🎉 Will be Attending ICLR 2025 at Singapore to present our Work on Alberta Wells Dataset!
-- *2025.03*: &nbsp;🎉 Dl-Backtrace accepted at IJCNN Conference 2025!
-- *2025.03*: &nbsp;🎉 Non-Archival Version of SELF-PERCEPT: Mental Manipulation Detection accepted at SRW, NAACL 2025!
-- *2025.03*: &nbsp;🎉 Non-Archival Version of Alberta Wells Dataset accepted at CCAI Workshop at ICLR 2025!
-- *2025.03*: &nbsp; Reviewer at IJCNN 2025
-- *2025.03*: &nbsp; Reviewer at Fin-AI Workshop, ICLR 2025
+
+## Recent Publications & Acceptances
+- *2025.07*: &nbsp;🎉 **Interpretability-aware pruning for efficient medical image analysis** accepted at **MICCAI Workshop 2025**!
+- *2025.05*: &nbsp;🎉 **SELF-PERCEPT: Mental Manipulation Detection** accepted at **ACL 2025**!
+- *2025.05*: &nbsp;🎉 **Alberta Wells Dataset** accepted at **ICML 2025**! (Really Grateful to the Team for their efforts and Prof. David Rolnick)!
+- *2025.05*: &nbsp;🎉 **Obscure to Observe: A Lesion-Aware MAE for Glaucoma Detection** accepted at **MIDL 2025** Short Paper Track! (with Siddhant Bharadwaj)
+- *2025.03*: &nbsp;🎉 **DL-Backtrace** accepted at **IJCNN Conference 2025**!
+
+## Academic Service & Reviewing
+- *2025.08*: &nbsp;📝 **Program Committee** at **AAAI 2026**
+- *2025.09*: &nbsp;📝 **Reviewer** at **RegML Workshop, NeurIPS 2025**
+- *2025.05*: &nbsp;📝 **Reviewer** at **Actionable Interpretability Workshop, ICML 2025**
+- *2025.04*: &nbsp;📝 **Reviewer** at **ICCV 2025**
+- *2025.03*: &nbsp;📝 **Reviewer** at **IJCNN 2025** & **Advances in Financial AI Workshop, ICLR 2025**
+- *2025.02*: &nbsp;📝 **Reviewer** at **CVPR 2025**
 
 # 📝 Publications <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
@@ -55,10 +61,38 @@ For a more detailed overview of my professional journey, projects, and contribut
 </div>
 </div>
 
-- [SELF-PERCEPT: Introspection Improves Large Language Models’ Detection of Multi-Person Mental Manipulation in Conversations](https://pratinavseth.github.io/),Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru, Siddharth Shukla, Tanuj Tyagi, SANDEEP CHAURASIA, Kripabandhu Ghosh, **Pre-Print** , **ACL 2025 / NAACL SRW Workshop 2025**.
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025 / NAACL SRW Workshop 2025</div><img src='images/Manipulation_Techniques.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+[SELF-PERCEPT: Introspection Improves Large Language Models' Detection of Multi-Person Mental Manipulation in Conversations](https://pratinavseth.github.io/)
 
-- [DLBacktrace: A Model Agnostic Explainability for any Deep Learning Models](https://arxiv.org/pdf/2411.12643),Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh, Pratinav Seth, **Accepted at IJCNN 2025** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:MXK_kJrjxJIC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:MXK_kJrjxJIC'></span></strong>
+Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru, Siddharth Shukla, Tanuj Tyagi, SANDEEP CHAURASIA, Kripabandhu Ghosh
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCNN 2025</div><img src='images/dlbacktrace.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DLBacktrace: A Model Agnostic Explainability for any Deep Learning Models](https://arxiv.org/pdf/2411.12643)
+
+Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh, **Pratinav Seth**
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:MXK_kJrjxJIC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:MXK_kJrjxJIC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MICCAI Workshop 2025</div><img src='images/interp-aware-pruning.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Interpretability-aware pruning for efficient medical image analysis](https://arxiv.org/abs/2507.08330)
+
+Nikita Malik, **Pratinav Seth**, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV Workshop 2024</div><img src='images/Diagram_FAIMI.jpg' alt="sym" width="100%"></div></div>
@@ -138,15 +172,46 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 
 - [xai_evals: A Framework for Evaluating Post-Hoc Local Explanation Methods](https://arxiv.org/pdf/2502.03014),**Pratinav Seth**, Yashwardhan Rathore, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu, **Technical Report** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
 
+- [Bridging the gap in XAI-why reliable metrics matter for explainability and compliance](https://arxiv.org/abs/2502.04695),**Pratinav Seth**, Vinay Kumar Sankarapu, **Pre-Print 2025** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+
+
+
+# 🎓 Academic Service
+
+## Conference Reviewing & Program Committee
+- **Main Conference Reviewer**: CVPR 2025, ICCV 2025, IJCNN 2025, ECCV 2024, WACV 2026, AAAI 2026, 
+- **Workshop Reviewer**: 
+  - SyntheticData4ML Workshop (NeurIPS 2022, 2023)
+  - Actionable Interpretability Workshop (ICML 2025)
+  - Advances in Financial AI Workshop (ICLR 2025) 
+  - Frontiers in Probabilistic Inference (ICLR 2025)
+  - Bayesian Decision-making and Uncertainty Workshop (NeurIPS 2024)
+  - NLP for Positive Impact Workshop (EMNLP 2024)
+  - FAIMI Workshop (MICCAI 2024)
+  - Domain Adaptation and Representation Transfer Workshop (MICCAI 2023)
+  - Topological, Algebraic, and Geometric P.R.A. Workshop (CVPR 2023)
+  - RegML Workshop (NeurIPS 2025)
 
 # 💻 Professional Experience
 
 ## Research Positions
+- *2024.07 - Present*, **Research Scientist** at [AryaXAI Alignment Labs](https://www.aryaxai.com/), Remote / Mumbai, India
+  - **Explainability**: Enhanced DLBacktrace method for model-agnostic explainability; co-developed benchmarking framework for XAI techniques
+  - **XAI-guided Optimization**: Investigating alignment strategies across CNNs, BERT, LLaMA architectures for safer model behavior
+  - **Tabular Foundation Models**: Developing foundation models for risk modeling, fraud detection, and financial safety
+  - **Leadership**: Mentored 8+ research interns; led recruitment for Paris and India teams
+  - **Industry Engagement**: R&D representative in client-facing engagements; presented at 5th MLOps Conference
+
 - *2024.01 - 2024.06*, Research Intern at [Rolnick Lab, Mila Quebec AI Institute](https://davidrolnick.com/lab/), Remote
-  - Working on climate change and machine learning applications
+  - **Project**: Computer vision and deep learning for geospatial applications targeting climate change
+  - **Focus**: Detecting abandoned oil and gas wells from satellite imagery; created new geospatial dataset and benchmarked deep learning models
+  - **Mentor**: Dr. David Rolnick (McGill University, Université de Montréal, Mila)
+  - **Outcome**: Led to ICML 2025 publication on Alberta Wells Dataset
 
 - *2023.06 - 2023.10*, Computer Vision Research Intern at [Robert Bosch Research and Technology Center India](https://www.linkedin.com/in/pratinav-seth/), Bangalore
-  - Mentored by Mr. Kaustav Mullick & Dr. Amit Kale (CR/RTC-2).
+  - **Project**: Vision-based generative AI for autonomous driving using Latent Diffusion Models
+  - **Focus**: Generating additional data for difficult or misclassified samples to improve downstream task network optimization
+  - **Mentors**: Mr. Koustav Mullick (CR/RDT-2), Dr. Amit Kale
   
 - *2021.03 - 2024.01*, Research Progression at [Mars Rover Manipal](https://www.marsrovermanipal.com/research)
   - Advanced from Trainee to Senior Researcher and Mentor
@@ -177,12 +242,38 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 - *2023.02* One of the 11 Undergraduates Selected as an [AAAI Undergraduate Consortium Scholar 2023](https://aaai-uc.github.io/2023_scholars.html). Included a Travel Grant of $2000 to present at AAAI-23 at Washington DC, USA.
 - *2023.01* Received MAHE Undergraduate Research Grant Worth 10K INR for Project : Explainable & Trustworthy Skin Lesion Classification under Dr. Abhilash K. Pai, Dept. of DSCA, Manipal Institute of Technology, MAHE.
 
-# 📖 Educations
+# 📖 Education
 - *2020.10 - 2024.07*, Bachelors of Technology in Data Science & Engineering (B.Tech), Manipal Academy of Higher Education, Manipal, Karnataka, India.
+  - **CGPA**: 8.31/10
 
-# 💬 Invited Talks
+# 🛠️ Technical Skills
+
+## Programming Languages & Frameworks
+- **Languages**: Python, C++, SQL, Java, C, LaTeX
+- **ML/DL Frameworks**: TensorFlow, Keras, PyTorch, Scikit-Learn, NetworkX
+- **Libraries**: NumPy, Pandas, Seaborn, Matplotlib, OpenCV, PIL, HuggingFace, GeoPandas, Shapely, NLTK, SpaCy
+
+## Tools & Technologies
+- **Development**: HTML, CSS, Git, Jupyter Notebook, Google Colab
+- **Platforms**: Linux, Windows, HPC
+- **Specialized**: Weka, Excel, LaTeX
+
+## Online Learning & Certifications
+- **Deep Learning Specialization** - DeepLearning.ai
+- **6th Summer School on AI** - CVIT IIITH
+
+# 💬 Invited Talks & Presentations
+
+## 2024-2025
+- **AryaXAI Alignment Lab Webinars**:
+  - "Inside the Black Box: Interpreting LLMs with DL-Backtrace (DLB)"
+  - "Beyond Explainability – Evaluating XAI Methods with Confidence Using xai evals"
+  - "Interpretability Aware Pruning in Medical Imagery" (Paper Podcast)
+- **SSI Club AI Paper-Fest**: "DL-Backtrace by AryaXAI" (October 2024)
 - *2024.03*, Introduction to Research, at ACM-W Manipal Chapter.
 - *2024.02*, Data Dialogue invited by The Data Alchemists, The Official Data Science Club of MIT Manipal.  \| [\[link\]](https://www.instagram.com/p/C2B-pv7v82l/?igsh=OXd3d2J6YTh6aXVt)
+
+## 2023
 - *2023.03*, Research as Undergrad, at ACM-W Manipal Chapter.
 
 
