@@ -36,7 +36,7 @@ For a more detailed overview of my professional journey, projects, and contribut
 - *2025.07*: &nbsp;🎉 **Interpretability-aware pruning for efficient medical image analysis** accepted at **MICCAI Workshop 2025**!
 - *2025.05*: &nbsp;🎉 **SELF-PERCEPT: Mental Manipulation Detection** accepted at **ACL 2025**!
 - *2025.05*: &nbsp;🎉 **Alberta Wells Dataset** accepted at **ICML 2025**! (Really Grateful to the Team for their efforts and Prof. David Rolnick)!
-- *2025.05*: &nbsp;🎉 **Obscure to Observe: A Lesion-Aware MAE for Glaucoma Detection** accepted at **MIDL 2025** Short Paper Track! (with Siddhant Bharadwaj)
+- *2025.05*: &nbsp;🎉 **Obscure to Observe: A Lesion-Aware MAE for Glaucoma Detection** accepted at **MIDL 2025** Short Paper Track!
 - *2025.03*: &nbsp;🎉 **DL-Backtrace** accepted at **IJCNN Conference 2025**!
 
 ## Academic Service & Reviewing
@@ -89,6 +89,17 @@ Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh
 [Interpretability-aware pruning for efficient medical image analysis](https://arxiv.org/abs/2507.08330)
 
 Nikita Malik, **Pratinav Seth**, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MIDL 2025</div><img src='images/od_midl.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Obscure to Observe: A Lesion-Aware MAE for Glaucoma Detection from Retinal Context](https://openreview.net/forum?id=gqLXT8Edf3)
+
+Siddhant Bharadwaj, **Pratinav Seth**, Chandra Sekhar Seelamantula
 
 [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
 </div>
