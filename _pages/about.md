@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # Hi, I'm Pratinav Seth! 👋  
 
-I currently work as a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)** (July 2025 – Present), where I focus on advancing tabular foundation models and interpretability-guided alignment. At Lexsi Labs, I contribute to the development of foundation models for tabular data in high-stakes domains and co-developed a library for inference, fine-tuning, and benchmarking of tabular foundation models. I investigate model optimization (pruning, quantization) and alignment (fine-tuning, RL-based alignment, unlearning) strategies across various model architectures—leveraging interpretability as a design principle and guiding mechanism. I also lead proof-of-concept projects for model optimization, fine-tuning, alignment, and internal research tooling to accelerate experimental workflows.
+I currently work as a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, where I focus on advancing tabular foundation models and interpretability-guided alignment. At Lexsi Labs, I contribute to the development of foundation models for tabular data in high-stakes domains and co-developed a library for inference, fine-tuning, and benchmarking of tabular foundation models. I investigate model optimization (pruning, quantization) and alignment (fine-tuning, RL-based alignment, unlearning) strategies across various model architectures—leveraging interpretability as a design principle and guiding mechanism. I also lead proof-of-concept projects for model optimization, fine-tuning, alignment, and internal research tooling to accelerate experimental workflows.
 
 I completed my Bachelor's (B.Tech) in Data Science from Manipal Institute of Technology, during which I had the privilege of working at **[Mila Quebec AI Institute](https://mila.quebec/en) (under [Dr. David Rolnick](https://davidrolnick.com/))**, **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/) (with Dr. Amit Kale and Mr. Koustav Mullick)**, and **[KLIV Lab at IIT Kharagpur](https://iitkliv.github.io/) (PI: Dr. Debdoot Sheet)**. I conducted much of my research alongside my peers at **[Mars Rover Manipal AI Research](https://www.linkedin.com/company/marsrovermanipal) (alongside [Dr. Ujjwal Verma](https://scholar.google.com/citations?user=XSzIFIgAAAAJ&hl=en))**, **[Research Society MIT](https://www.instagram.com/researchsoc/?hl=en)**, and under **[Dr. Abhilash K. Pai](https://scholar.google.co.in/citations?user=WIsqsnsAAAAJ&hl=en)** .
 
@@ -36,9 +36,9 @@ For a more detailed overview of my professional journey, projects, and contribut
 - *2025.11*: &nbsp;🎉 **Orion-BiX: Bi-Axial Meta-Learning for Tabular In-Context Learning** released on **Hugging Face**!
 - *2025.11*: &nbsp;🎉 **Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning** pre-print released!
 - *2025.11*: &nbsp;🎉 **TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models** released as open-source library!
-- *2025.07*: &nbsp;🎉 **Interpretability as Alignment: Making Internal Understanding a Design Principle** accepted at **EurIPS Workshop on Private AI Governance**!
-- *2025.07*: &nbsp;🎉 **Bridging the gap in XAI-why reliable metrics matter for explainability and compliance** accepted at **EurIPS Workshop on Private AI Governance**!
-- *2025.07*: &nbsp;🎉 **Interpretability-aware pruning for efficient medical image analysis** accepted at **MICCAI Workshop 2025**!
+- *2025.11*: &nbsp;🎉 **Interpretability as Alignment: Making Internal Understanding a Design Principle** accepted at **EurIPS Workshop on Private AI Governance**!
+- *2025.11*: &nbsp;🎉 **Bridging the gap in XAI-why reliable metrics matter for explainability and compliance** accepted at **EurIPS Workshop on Private AI Governance**!
+- *2025.09*: &nbsp;🎉 **Interpretability-aware pruning for efficient medical image analysis** accepted at **MICCAI Workshop 2025**!
 - *2025.05*: &nbsp;🎉 **SELF-PERCEPT: Mental Manipulation Detection** accepted at **ACL 2025**!
 - *2025.05*: &nbsp;🎉 **Alberta Wells Dataset** accepted at **ICML 2025**! (Really Grateful to the Team for their efforts and Prof. David Rolnick)!
 - *2025.05*: &nbsp;🎉 **Obscure to Observe: A Lesion-Aware MAE for Glaucoma Detection** accepted at **MIDL 2025** Short Paper Track!
@@ -77,17 +77,6 @@ Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru,
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCNN 2025</div><img src='images/dlbacktrace.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[DLBacktrace: A Model Agnostic Explainability for any Deep Learning Models](https://arxiv.org/pdf/2411.12643)
-
-Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh, **Pratinav Seth**
-
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:MXK_kJrjxJIC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:MXK_kJrjxJIC'></span></strong>
-</div>
-</div>
-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">EurIPS Workshop 2025</div><img src='images/interpawarealignmnet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -121,7 +110,7 @@ Mohamed Bouadi, **Pratinav Seth**, Aditya Tanna, Vinay Kumar Sankarapu
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='images/orionbix.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='images/tabtune.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models](https://arxiv.org/abs/2511.02802)
@@ -143,6 +132,17 @@ Nikita Malik, **Pratinav Seth**, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kum
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EurIPS Workshop 2025</div><img src='images/xaimetrics.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Bridging the gap in XAI-why reliable metrics matter for explainability and compliance](https://arxiv.org/abs/2502.04695)
+
+**Pratinav Seth**, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MIDL 2025</div><img src='images/od_midl.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -154,6 +154,16 @@ Siddhant Bharadwaj, **Pratinav Seth**, Chandra Sekhar Seelamantula
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCNN 2025</div><img src='images/dlbacktrace.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[DLBacktrace: A Model Agnostic Explainability for any Deep Learning Models](https://arxiv.org/pdf/2411.12643)
+
+Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh, **Pratinav Seth**
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:MXK_kJrjxJIC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:MXK_kJrjxJIC'></span></strong>
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV Workshop 2024</div><img src='images/Diagram_FAIMI.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -231,17 +241,6 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 - [Analyzing Effects of Fake Training Data on the Performance of Deep Learning Systems](https://arxiv.org/pdf/2303.01268),**Pratinav Seth  (†)**, Akshat Bhandari (†), Kumud Lakara (†), **Pre-Print** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:qjMakFHDy7sC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:qjMakFHDy7sC'></span></strong>
 
 - [xai_evals: A Framework for Evaluating Post-Hoc Local Explanation Methods](https://arxiv.org/pdf/2502.03014),**Pratinav Seth**, Yashwardhan Rathore, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu, **Technical Report** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EurIPS Workshop 2025</div><img src='images/xaimetrics.jpg' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Bridging the gap in XAI-why reliable metrics matter for explainability and compliance](https://arxiv.org/abs/2502.04695)
-
-**Pratinav Seth**, Vinay Kumar Sankarapu
-
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
-</div>
-</div>
 
 
 
