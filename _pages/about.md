@@ -268,15 +268,25 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
   - **Tabular Foundation Models**: Contributed to the development of foundation models for tabular data in high-stakes domains; co-developed a library for inference, fine-tuning, and benchmarking of tabular foundation models
   - **Interpretability-Guided Alignment**: Investigating model optimization (pruning, quantization) and alignment (fine-tuning, RL-based alignment, unlearning) strategies across various model architectures—leveraging interpretability as a design principle and guiding mechanism
   - **Research & POCs**: Led proof-of-concept (POC) projects for model optimization, fine-tuning, alignment, and internal research tooling to accelerate experimental workflows
-  - **Leadership & Mentorship**: Mentored 6+ research interns; led recruitment of interns and full-time scientists (Paris and India); authored technical and research documentation for stakeholders
+  - **Leadership & Mentorship**: Mentored six research interns; led recruitment of interns and full-time scientists (Paris and India); authored technical and research documentation for stakeholders; initiated proof-of-concept projects to advance internal algorithmic capabilities
   - **Representation**: Presented a poster at the MICCAI Workshop 2025
+  - **Publications**:
+    - Interpretability-Aware Pruning for Efficient Medical Image Analysis. 2025. MICCAI Workshop 2025 (LNCS).
+    - Interpretability as Alignment: Making Internal Understanding a Design Principle. 2025. Position Paper (Accepted at NeurIPS Workshop on Private AI Governance).
+    - TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models. 2025. Technical Report — Open-Source Library.
+    - Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning. 2025. Pre-print.
+    - Orion-BiX: Bi-Axial Meta-Learning for Tabular In-Context Learning. 2025. Pre-print.
 
 - *2024.07 - 2025.06*, **Research Scientist** at [AryaXAI Alignment Labs](https://www.aryaxai.com/), Remote / Mumbai, India
   - **Research Focus**: Working at the intersection of Explainable AI (XAI), AI alignment, and AI safety in high-stakes domains—interpreting black-box models, assessing XAI reliability, and developing foundation models for tabular data in fraud detection and mission-critical applications
   - **Explainability**: Enhanced the DL-Backtrace method by generalizing its mechanics for model-agnostic use; co-developed a benchmarking framework for the systematic evaluation of XAI techniques
   - **XAI-Guided Optimization & Alignment**: Investigating model-agnostic post-hoc optimization and alignment strategies across various model architectures—leveraging interpretability for safer, more reliable model behavior
-  - **Leadership & Mentorship**: Mentored 2 research interns; led recruitment of interns and full-time scientists (Paris and India); authored technical and research documentation for stakeholders; initiated proof-of-concept (POC) projects to advance internal algorithmic capabilities
+  - **Leadership & Mentorship**: Mentored two research interns; led recruitment of interns and full-time scientists (Paris and India); authored technical and research documentation for stakeholders; initiated proof-of-concept (POC) projects to advance internal algorithmic capabilities
   - **Representation**: Served as R&D representative in client-facing engagements and presented AryaXAI solutions at industry forums, including the 5th MLOps Conference
+  - **Publications**:
+    - DL-Backtrace: A Model-Agnostic Explainability Method for Deep Learning Models. Accepted at IJCNN 2025.
+    - XAI Evals: A Framework for Evaluating Post-Hoc Local Explanation Methods. Technical Report, 2025.
+    - Bridging the Gap in XAI: Why Reliable Metrics Matter for Explainability and Compliance. Accepted at NeurIPS Workshop on Private AI Governance, 2025.
 
 - *2024.01 - 2024.06*, Research Intern at [Rolnick Lab, Mila Quebec AI Institute](https://davidrolnick.com/lab/), Remote
   - **Project**: Computer vision and deep learning for geospatial applications targeting climate change
