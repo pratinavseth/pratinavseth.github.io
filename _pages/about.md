@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # Hi, I'm Pratinav Seth! 👋  
 
-I currently work as a **Research Scientist** at **[AryaXAI Alignment Labs (Arya.ai, an Aurionpro Company)](https://www.aryaxai.com/)** (July 2024 – Present), where I work at the intersection of Explainable AI (XAI), AI alignment, and AI safety for high-stakes, real-world applications. At AryaXAI, I focus on advancing explainable AI through model-agnostic approaches. I enhanced the DLBacktrace method and developed benchmarking frameworks for XAI evaluation. My work spans investigating alignment and optimization strategies across various architectures like CNNs, BERT, and LLaMA. I'm also actively developing foundation models for tabular data with applications in risk modeling and financial safety.
+I currently work as a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)** (July 2025 – Present), where I focus on advancing tabular foundation models and interpretability-guided alignment. At Lexsi Labs, I contribute to the development of foundation models for tabular data in high-stakes domains and co-developed a library for inference, fine-tuning, and benchmarking of tabular foundation models. I investigate model optimization (pruning, quantization) and alignment (fine-tuning, RL-based alignment, unlearning) strategies across various model architectures—leveraging interpretability as a design principle and guiding mechanism. I also lead proof-of-concept projects for model optimization, fine-tuning, alignment, and internal research tooling to accelerate experimental workflows.
 
 I completed my Bachelor's (B.Tech) in Data Science from Manipal Institute of Technology, during which I had the privilege of working at **[Mila Quebec AI Institute](https://mila.quebec/en) (under [Dr. David Rolnick](https://davidrolnick.com/))**, **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/) (with Dr. Amit Kale and Mr. Koustav Mullick)**, and **[KLIV Lab at IIT Kharagpur](https://iitkliv.github.io/) (PI: Dr. Debdoot Sheet)**. I conducted much of my research alongside my peers at **[Mars Rover Manipal AI Research](https://www.linkedin.com/company/marsrovermanipal) (alongside [Dr. Ujjwal Verma](https://scholar.google.com/citations?user=XSzIFIgAAAAJ&hl=en))**, **[Research Society MIT](https://www.instagram.com/researchsoc/?hl=en)**, and under **[Dr. Abhilash K. Pai](https://scholar.google.co.in/citations?user=WIsqsnsAAAAJ&hl=en)** .
 
@@ -33,6 +33,11 @@ For a more detailed overview of my professional journey, projects, and contribut
 # 🔥 News
 
 ## Recent Publications & Acceptances
+- *2025.11*: &nbsp;🎉 **Orion-BiX: Bi-Axial Meta-Learning for Tabular In-Context Learning** released on **Hugging Face**!
+- *2025.11*: &nbsp;🎉 **Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning** pre-print released!
+- *2025.11*: &nbsp;🎉 **TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models** released as open-source library!
+- *2025.07*: &nbsp;🎉 **Interpretability as Alignment: Making Internal Understanding a Design Principle** accepted at **EurIPS Workshop on Private AI Governance**!
+- *2025.07*: &nbsp;🎉 **Bridging the gap in XAI-why reliable metrics matter for explainability and compliance** accepted at **EurIPS Workshop on Private AI Governance**!
 - *2025.07*: &nbsp;🎉 **Interpretability-aware pruning for efficient medical image analysis** accepted at **MICCAI Workshop 2025**!
 - *2025.05*: &nbsp;🎉 **SELF-PERCEPT: Mental Manipulation Detection** accepted at **ACL 2025**!
 - *2025.05*: &nbsp;🎉 **Alberta Wells Dataset** accepted at **ICML 2025**! (Really Grateful to the Team for their efforts and Prof. David Rolnick)!
@@ -40,7 +45,7 @@ For a more detailed overview of my professional journey, projects, and contribut
 - *2025.03*: &nbsp;🎉 **DL-Backtrace** accepted at **IJCNN Conference 2025**!
 
 ## Academic Service & Reviewing
-- *2025.08*: &nbsp;📝 **Program Committee** at **AAAI 2026**
+- *2025.08*: &nbsp;📝 **Reviewer** at **WACV 2026**
 - *2025.09*: &nbsp;📝 **Reviewer** at **RegML Workshop, NeurIPS 2025**
 - *2025.05*: &nbsp;📝 **Reviewer** at **Actionable Interpretability Workshop, ICML 2025**
 - *2025.04*: &nbsp;📝 **Reviewer** at **ICCV 2025**
@@ -80,6 +85,50 @@ Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru,
 Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh, **Pratinav Seth**
 
 [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:MXK_kJrjxJIC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:MXK_kJrjxJIC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EurIPS Workshop 2025</div><img src='images/interpawarealignmnet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Interpretability as Alignment: Making Internal Understanding a Design Principle](https://arxiv.org/abs/2509.08592)
+
+Aadit Sengupta, **Pratinav Seth**, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='images/orionmsp.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning](https://arxiv.org/abs/2511.02818)
+
+Mohamed Bouadi, **Pratinav Seth**, Aditya Tanna, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='images/orionbix.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Orion-BiX: Bi-Axial Meta-Learning for Tabular In-Context Learning](https://huggingface.co/Lexsi/Orion-BiX)
+
+Mohamed Bouadi, **Pratinav Seth**, Aditya Tanna, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='images/orionbix.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models](https://arxiv.org/abs/2511.02802)
+
+Aditya Tanna, **Pratinav Seth**, Mohamed Bouadi, Utsav Avaiya, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
 </div>
 </div>
 
@@ -183,7 +232,16 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 
 - [xai_evals: A Framework for Evaluating Post-Hoc Local Explanation Methods](https://arxiv.org/pdf/2502.03014),**Pratinav Seth**, Yashwardhan Rathore, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu, **Technical Report** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
 
-- [Bridging the gap in XAI-why reliable metrics matter for explainability and compliance](https://arxiv.org/abs/2502.04695),**Pratinav Seth**, Vinay Kumar Sankarapu, **Pre-Print 2025** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EurIPS Workshop 2025</div><img src='images/xaimetrics.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Bridging the gap in XAI-why reliable metrics matter for explainability and compliance](https://arxiv.org/abs/2502.04695)
+
+**Pratinav Seth**, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
 
 
 
@@ -206,12 +264,19 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 # 💻 Professional Experience
 
 ## Research Positions
-- *2024.07 - Present*, **Research Scientist** at [AryaXAI Alignment Labs](https://www.aryaxai.com/), Remote / Mumbai, India
-  - **Explainability**: Enhanced DLBacktrace method for model-agnostic explainability; co-developed benchmarking framework for XAI techniques
-  - **XAI-guided Optimization**: Investigating alignment strategies across CNNs, BERT, LLaMA architectures for safer model behavior
-  - **Tabular Foundation Models**: Developing foundation models for risk modeling, fraud detection, and financial safety
-  - **Leadership**: Mentored 8+ research interns; led recruitment for Paris and India teams
-  - **Industry Engagement**: R&D representative in client-facing engagements; presented at 5th MLOps Conference
+- *2025.07 - Present*, **Research Scientist** at [Lexsi Labs](https://lexsi.ai/), Remote
+  - **Tabular Foundation Models**: Contributed to the development of foundation models for tabular data in high-stakes domains; co-developed a library for inference, fine-tuning, and benchmarking of tabular foundation models
+  - **Interpretability-Guided Alignment**: Investigating model optimization (pruning, quantization) and alignment (fine-tuning, RL-based alignment, unlearning) strategies across various model architectures—leveraging interpretability as a design principle and guiding mechanism
+  - **Research & POCs**: Led proof-of-concept (POC) projects for model optimization, fine-tuning, alignment, and internal research tooling to accelerate experimental workflows
+  - **Leadership & Mentorship**: Mentored 6+ research interns; led recruitment of interns and full-time scientists (Paris and India); authored technical and research documentation for stakeholders
+  - **Representation**: Presented a poster at the MICCAI Workshop 2025
+
+- *2024.07 - 2025.06*, **Research Scientist** at [AryaXAI Alignment Labs](https://www.aryaxai.com/), Remote / Mumbai, India
+  - **Research Focus**: Working at the intersection of Explainable AI (XAI), AI alignment, and AI safety in high-stakes domains—interpreting black-box models, assessing XAI reliability, and developing foundation models for tabular data in fraud detection and mission-critical applications
+  - **Explainability**: Enhanced the DL-Backtrace method by generalizing its mechanics for model-agnostic use; co-developed a benchmarking framework for the systematic evaluation of XAI techniques
+  - **XAI-Guided Optimization & Alignment**: Investigating model-agnostic post-hoc optimization and alignment strategies across various model architectures—leveraging interpretability for safer, more reliable model behavior
+  - **Leadership & Mentorship**: Mentored 2 research interns; led recruitment of interns and full-time scientists (Paris and India); authored technical and research documentation for stakeholders; initiated proof-of-concept (POC) projects to advance internal algorithmic capabilities
+  - **Representation**: Served as R&D representative in client-facing engagements and presented AryaXAI solutions at industry forums, including the 5th MLOps Conference
 
 - *2024.01 - 2024.06*, Research Intern at [Rolnick Lab, Mila Quebec AI Institute](https://davidrolnick.com/lab/), Remote
   - **Project**: Computer vision and deep learning for geospatial applications targeting climate change
