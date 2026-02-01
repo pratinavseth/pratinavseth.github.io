@@ -1,0 +1,334 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\hypersetup{colorlinks,urlcolor=blue}
+
+\usepackage{fancyhdr}
+\usepackage{multibib}
+\newcites{Math}{Math Readings}
+\newcites{Phys}{Physics Readings}
+\newcites{Comps}{Comps Readings}
+
+\usepackage{etoolbox}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large\color{black}
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Custom commands
+\renewcommand{\labelitemii}{$\circ$}
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+\nociteMath{*}
+\nocitePhys{*}
+\nociteComps{*}
+\parbox{\dimexpr\linewidth-0.1cm\relax}{
+
+    \parbox{\dimexpr\linewidth-0.1cm\relax}{
+    \begin{center}
+	\textbf{{\LARGE Pratinav Seth}}
+    \end{center}
+    }
+
+	\begin{minipage}{.49\linewidth} 
+		\begin{flushleft}
+    			Mobile: +91 8444008665 \\
+                Personal Website: \href{https://pratinavseth.github.io/}{https://pratinavseth.github.io/} \\
+                Linkedin: \href{https://www.linkedin.com/in/pratinav-seth}{linkedin.com/in/pratinav-seth}
+    		\end{flushleft} 
+    	\end{minipage}
+    \hfill 
+    \begin{minipage}{.49\linewidth}
+    		\begin{flushright}
+    	 		Email: \href{mailto:seth.pratinav@gmail.com} {seth.pratinav@gmail.com} \\
+    	 		Google Scholar: \href{https://scholar.google.com/citations?hl=en&user=DwBn1fcAAAAJ}{Pratinav Seth} \\
+                    Github: \href{https://github.com/pratinavseth} {https://github.com/pratinavseth}
+    		\end{flushright}
+    	\end{minipage}
+    }
+\section{Professional Summary}
+{\small
+  Research Scientist with a track record of \textbf{accelerating from undergraduate researcher to leading R\&D teams} and initiatives. Demonstrated ability to drive high-impact research from ideation to deployment, with \textbf{24 peer-reviewed publications} at top-tier venues including \textbf{ICML, ACL, WWW, NeurIPS, CVPR, and AAAI}.
+}
+
+\section{Recent Work Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Research Scientist}
+{July 2025 -- Present}
+{Lexsi Labs, Lexsi.ai [Previously : AryaXAI.com (Arya.ai, an Aurionpro Company)]}
+{Remote}
+\resumeItemListStart
+  \resumeItem{Tabular Foundation Models}{Co-developed the ORION series, including \textbf{Orion-Bix} (Bi-Axial Attention) and \textbf{Orion-MSP} (Multi-Scale Sparse Attention) for In-Context Learning. Built \textbf{TabTune}, a unified library for fine-tuning, inference, and benchmarking of tabular foundation models.}
+  \resumeItem{Alignment \& Safety Research}{Pioneered \textit{Interpretability as Alignment} to align internal model representations. Introduced \textbf{C-$\Delta\theta$} (C-Delta-theta), a circuit-restricted weight arithmetic technique for selective refusal. Driving research in \textbf{inference-time LLM safety} to mitigate over-refusal and enhance reliability.}
+  \resumeItem{LLM Interpretability \& Tooling}{Developed \textbf{AlignTune}, a modular toolkit for post-training alignment, and \textbf{DLBacktrace v2}, a CUDA-accelerated interpretability framework for LLMs and Mixture-of-Experts (MoEs).}
+  \resumeItem{Applied Research \& Model Optimization}{Leading applied research in model optimization, employing techniques like \textbf{pruning and quantization}. Developed \textit{Interpretability-Aware Pruning} for medical image analysis, optimizing model efficiency while preserving diagnostic capabilities.}
+  \resumeItem{Leadership \& Team Management}{Managing 4 full-time researchers; mentored 6+ research interns; led recruitment of interns and full-time scientists across Paris and India; authored technical and research documentation for cross-functional stakeholders.}
+  \resumeItem{Scientific Impact}{Presented a spotlight talk at \textbf{NeurIPS 2025}; presented a poster at the MICCAI Workshop 2025.}
+  \resumeItem{Publications}{\citePhys{malik2025interpretabilityawarepruningefficientmedical,sengupta2025interpretabilityalignmentmakinginternal}, \citeMath{bouadi2026orionbix,tanna2026exploringfinetuning,tanna2026tabtune}, \citeComps{bouadi2025orionmspmultiscalesparseattention,kasliwal2025surgicalsafety,singh2025dlbacktracev2,chawla2025aligntune}}
+\resumeItemListEnd
+
+\resumeSubheading
+{Research Scientist}
+{July 2024 -- June 2025}
+{AryaXAI Alignment Labs, AryaXAI.com (Arya.ai, an Aurionpro Company)}
+{Remote / Mumbai, India}
+\resumeItemListStart
+  \resumeItem{Research Focus}{Worked at the intersection of Explainable AI (XAI), AI alignment, and AI safety in high-stakes domains—interpreting black-box models, assessing XAI reliability, and developing foundation models for tabular data in fraud detection and mission-critical applications.}
+  \resumeItem{Model-Agnostic Explainability}{Generalised the mechanics of \textbf{DL-Backtrace} to develop a model-agnostic explainability framework, enabling high-fidelity attributions across diverse deep learning architectures.}
+  \resumeItem{XAI Evaluation \& Compliance}{Built \textbf{xai\_evals}, a comprehensive benchmarking framework for evaluating post-hoc local explanation methods. Established reliable metrics to bridge the gap between explainability and compliance in high-stakes domains.}
+  \resumeItem{Leadership \& Mentorship}{Mentored 2 research interns; led recruitment for interns and full-time scientists (Paris and India); authored technical and research documentation for stakeholders; initiated proof-of-concept (POC) projects to advance internal algorithmic capabilities.}
+  \resumeItem{Representation}{Served as R\&D representative in client-facing engagements and presented AryaXAI solutions at industry forums, including the 5th MLOps Conference.}
+  \resumeItem{Publications}{\citeMath{sankarapu2024dlbacktracemodelagnosticexplainability}, \citePhys{seth2025xaimetrics}, \citeComps{seth2025xaievalsframeworkevaluating}}
+\resumeItemListEnd
+
+
+\resumeSubheading
+{Research Intern}
+{Jan. 2024 -- Jun. 2024}
+{Rolnick Lab, Mila - Quebec AI Institute, Montreal, Quebec}
+{Remote / Montreal, Canada}
+\resumeItemListStart
+  \resumeItem{Project Details}{ Worked on a project (as a part of my bachelor's thesis) \citeMath{milawells} focused on computer vision and deep learning for geospatial applications targeting climate change, specifically in detecting abandoned oil and gas wells. Engaged with domain experts to create a new geospatial dataset and benchmark deep learning models.}
+  \resumeItem{Mentor}{Dr. David Rolnick (McGill University, Université de Montréal, Mila).}
+\resumeItemListEnd
+
+\resumeSubheading
+{Computer Vision Research Intern (CR/RDT-2)}
+{June 2023 -- October 2023}
+{Bosch Corporate Research (Robert Bosch Research and Technology Center India)}
+{Bangalore, India}
+\resumeItemListStart
+  \resumeItem{Project Details}{Worked on a project focused on vision-based generative AI for autonomous driving, utilizing Latent Diffusion Models to generate additional data for difficult or misclassified samples. This approach aimed to improve the fine-tuning and optimization of the downstream task network.}{}
+  \resumeItem{Mentor}{Mr. Koustav Mullick (CR/RDT-2), under the guidance of Dr. Amit Kale.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%\vspace{-2mm}
+\section{Highlighted Achievements}
+	\begin{description}[font=$\bullet$]
+		\item{\textbf{24 peer-reviewed publications}: 9 main conference papers (ICML, ACL, WWW, MIDL, IJCNN, AAAI) + 15 workshop papers (CVPR, NeurIPS, ICLR, MICCAI, etc.).}
+		\vspace{-4pt}
+		\item{\textbf{AAAI Undergraduate Consortium}: Selected as \textbf{1 of 11 scholars globally} (2023 cohort) to present research and engage in intensive mentorship; currently serving as a \textbf{Mentor (2026)} to guide the next generation of researchers on proposal development and academic career strategy.}
+		\vspace{-4pt}
+  \end{description}
+\section{Publications}
+\subsection{Main Conference}
+%\vspace{-2pt}
+	\bibliographystyleMath{unsrturl}
+	\bibliographyMath{selected}    % 'publications' is the name of a BibTeX file
+%\vspace{-6mm}
+\subsection{Peer-Reviewed Workshop}
+	\bibliographystylePhys{unsrturl}
+	\bibliographyPhys{publications}    % 'publications' is the name of a BibTeX file
+%\vspace{-5mm}
+\subsection{Pre-Prints and Shared Tasks}
+	\bibliographystyleComps{unsrturl}
+	\bibliographyComps{shared-tasks}    % 'publications' is the name of a BibTeX file
+\section{Research Collaborations}
+\resumeSubHeadingListStart
+\resumeSubheading{Research Intern}{May 2022 -- December 2023}{KLIV Research Group (PI: Dr.Debdoot Sheet),  Indian Institutes of Technology  Kharagpur}{Remote}
+
+    Worked on an attention-driven dynamic graph convolutional network for noisy multi-label comorbidity awareness chest radiograph screening and sanity checks for class activation maps in multi-label classification in chest x-rays.
+
+\resumeSubheading{Undergraduate Researcher (Mentor: Dr.Abhilash Pai)}{Apr 2023 -- December 2023}{Dept. of Data Science and Computer Application, Manipal Institute of Technology, MAHE}{Manipal, India}
+    \vspace{-1.5pt}
+    
+    Worked on a study analyzing the impact of pre-training on bias due to skin tone in skin lesion classification systems, funded by the MAHE UG Research Grant.
+    
+\resumeSubheading{Research Collaborator}{Oct 2022 -- Mar 2023}{Worked with Dr. Vijay Kumar BR, NEC Labs \& with Indian Institutes of Technology Roorkee }{Remote}
+    \vspace{-3.5pt}
+    
+    Worked in the domain of deep metric learning with an application of self-supervised learning and contrastive learning methodologies with vision-based attention models and hyperbolic representational learning.
+
+
+\resumeSubheading{Research Collaborator}{Dec. 2023 -- Jan. 2024 }{Worked with Dr. Amit Agarwal, Wells Fargo}{Remote}
+    \vspace{-1.5pt}    
+    
+    Developed NLP solutions to address short agricultural queries from Indian farmers using seq2seq Large Language Models (LLMs) such as BART, T5, Flan T5, and others, despite the challenges posed by a highly noisy dataset.
+
+\resumeSubheading{Undergraduate Research Assistant (under Dr.Vidya Rao \& Dr. Poornima P.K.) }{Jun 2022 -- Sep 2022 }{Dept. of Data Science and Computer Application, Manipal Institute of Technology, MAHE}{Manipal, India}
+    \vspace{-1.5pt}
+    
+    Worked on the intersection of cybersecurity and AI with a focus on multi-class malware classification. Ranked 5th among 134 teams in the 13th International Cyber Security Data Mining Competition 2022.
+    
+\resumeSubheading{Machine Learning Intern}{Mar 2022 -- May 2022}{Eedge.ai}{Remote}
+    \vspace{-1.5pt}
+    
+    Contributed to the development of a talent design platform that uses deep learning to discover skills and simplify digital consulting careers. Utilized generative models to produce synthetically generated tabular data for fine-tuning downstream tasks and conducted an analysis to assess the impact of synthetic data on the interpretability of the fine-tuned model. Mentor - Mr. Ananta Mahapatra (CTO \& Co-Founder).
+
+\vspace{-2pt}
+\resumeSubheading{Data Science (NLP) Intern}{Jan 2022 -- Feb 2022}
+    {CUREYA(Aspexx Health Solutions Private Limited)}{Remote}
+    \vspace{-1.5pt}
+    
+    Contributed to the product development of Reyana, an in-house conversational healthcare chatbot. Developed custom text understanding and response generation algorithms tailored to user responses. Implemented Text Classification Algorithms, Text Summarizing Algorithms, BERT Models, and LSTM-based NLG techniques.
+    
+\resumeSubHeadingListEnd
+%\section{Projects}
+%\begin{itemize}
+%    \vspace{2pt}
+%    \item \textbf{SNAP Recommendation Engine}\href{https://github.com/pratinavseth/SNAP_Recommendation_Engine}{\textbf{ Github}}
+%    \\A Graph-Based Recommendation Engine that recommends appropriate similar products, co-purchased products, and high-confidence products similar to one viewed by the user using the Amazon SNAP Co-Purchasing Dataset.Used NetworkX, Dask, and Pandas for the back end and Streamlit for the front end for the demo.
+%    \vspace{-2.5pt}
+%    \item \textbf{Prompted Object Detection, Pose Changing \& Inpainting}\href{https://github.com/pratinavseth/Object_Pose_Change}{\textbf{ Github}}
+%    \\Developed a sequential pipeline using OwlViT and SAM to detect and segment a specific object. Integrated the Zero123 diffusion model to adjust the object's pose based on given coordinates. Finally, employed Stable Diffusion 2 to inpaint the image with the new pose object and background.
+%    \vspace{-2.5pt}
+%    \item \textbf{Customer Segmentation and Visualization using RFM Analysis  }\href{https://www.kaggle.com/pratinavseth/customer-segmentation-and-clustering-starter-kit}{\textbf{ Kaggle}}
+%    \\Clustering of Customers into different Groups and Visualization using RFM analysis using K-Means and Agglomerative Clustering Algorithms.
+%\end{itemize}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages \& Frameworks}{Python, C++, SQL, Java, C, Latex, TensorFlow, Keras, PyTorch, Scikit-Learn, NetworkX}
+	\resumeSubItem{Deep Learning Systems}{Transformers, LLMs, CUDA Programming, Distributed Training, Mixed Precision, Model Quantization \& Pruning}
+	\resumeSubItem{Libraries}{~~~~~~~~~Numpy, Pandas, Seaborn, Mathplotlib, OpenCV, PIL, Huggingface, Geopandas, Shapely, NLTK, SpaCy.}
+ \resumeSubItem{Tools\& Misc.}
+    {~~HTML, CSS, Git, Jupyter Notebook, Google Colab, Linux, Windows, Weka, Excel, HPC. }
+ \resumeSubItem{MOOC}{~~~~~~~~~~~Deep Learning Specialization - \href{https://www.coursera.org/account/accomplishments/specialization/certificate/73386Z863LW5}{\textbf{DeepLearning.ai}}, 6th Summer School on AI by- \href{https://drive.google.com/file/d/1o9630Dd7xtSDniDgnS1CQan38lRyjGtD/view?usp=sharing}{\textbf{CVIT IIITH}}}
+\resumeItemListEnd
+
+\section{Education}
+    \begin{minipage}{.75\linewidth} \begin{flushleft}
+    		\textbf{Bachelors of Technology in Data Science \& Engineering}
+    	\end{flushleft} \end{minipage}
+    \hfill 
+    \begin{minipage}{.20\linewidth}\begin{flushright}
+    	 Manipal, India
+    	\end{flushright}\end{minipage}
+    	
+    	\begin{minipage}{.8\linewidth} \begin{flushleft}
+    		Manipal Institute of Technology, India; CGPA: 8.31/10 \\
+    	\end{flushleft} \end{minipage}
+    \hfill 
+    \begin{minipage}{.19\linewidth}\begin{flushright}
+    	 Oct. 2020 ~ July 2024
+    	\end{flushright}\end{minipage}
+
+\section{Achievements}
+	\begin{description}[font=$\bullet$]
+		\item {\textbf{Undergraduate Research Grant} (Jan. 2023) worth 10000 INR from Manipal Academy of Higher Education.\\ Project Title: Explainable \& Trustworthy Skin Lesion Classification. Led to publication \citePhys{Pratinav_2024_WACV}.}
+		\vspace{-2pt}
+		\item {Placed \textbf{5th among 134} Teams, \textbf{13th International Cyber Security Data Mining Competition}, Nov. 2022}
+            \vspace{-2pt}
+  	    \item{Placed among Top 10 teams out of 1000 submissions in Bajaj Finserv HackRx3.0 Hackathon: June 2022}
+            \vspace{-2pt}
+  \end{description}
+
+\section{Positions of Responsibility}
+\resumeSubHeadingListStart
+
+\resumeSubheading{\bf Mars Rover Manipal}{\em June 2021 -- Dec. 2023}{ Researcher}{Manipal, India}
+\resumeItemListStart
+    \resumeItem{Rapid Progression \& Leadership}{Ascended from Student Trainee to Senior Researcher, leading the AI Research Wing. Oversaw projects in computer vision, multimodal AI, and medical imagery, driving the team's technical roadmap.}
+    \resumeItem{Recruitment \& Development}{Spearheaded a recruitment drive that significantly increased applicant quality; designed and executed training programs for aspiring researchers in machine learning.}
+    \resumeItem{Mentorship \& Impact}{Mentored 10+ undergraduates (collaborating with 12+ total) under the guidance of Dr. Ujjwal Verma (Faculty Advisor), guiding many to their first top-tier publications at \textbf{NeurIPS, CVPR, AAAI, and MICCAI}.}
+\resumeItemListEnd
+
+\resumeSubheading{\bf The Data Alchemists}{\em Nov. 2022 -- Sep. 2023}{Co-founder \& Head of Artificial Intelligence and Machine Learning}{Manipal, India}
+\resumeItemListStart
+    \resumeItem{Co-founding \& Growth}{Founded and led the AI/ML club, growing membership to 30+ individuals and establishing a thriving community of practice.}
+    \resumeItem{Workshop Leadership}{Designed and conducted online workshops; organized technical events to build practical ML skills across the community.}
+    \resumeItem{Project Guidance}{Mentored members on AI projects spanning machine learning and deep learning applications.}
+\resumeItemListEnd
+
+\resumeSubheading{\bf Research Society MIT Manipal}{\em Aug. 2022 -- Sep. 2023}{Co-President \& Mentor AI Research}{Manipal, India}
+\resumeItemListStart
+    \resumeItem{Organizational Leadership}{Led a 90+ member undergraduate organization spanning 10+ technical domains, facilitating multidisciplinary collaboration and communication.}
+    \resumeItem{Recruitment \& Development}{Managed recruitment from 250+ applicants; designed and oversaw learning pathways for member development.}
+    \resumeItem{Mentorship Impact}{Mentored 10+ sophomore and junior undergraduates in various AI topics; championed undergraduate research culture.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Invited Talks}
+
+\resumeSubHeadingListStart
+
+\resumeSubheading{AryaXAI Alignment Lab}{July 2024 -- Present }{Research and Product based Talk}{Webinar}
+\resumeItemListStart
+\resumeItem{Webinar }{ Inside the Black Box: Interpreting LLMs with DL-Backtrace (DLB)}
+\resumeItem{Webinar }{ Beyond Explainability – Evaluating XAI Methods with Confidence Using xai\_evals}
+\resumeItem{Paper Podcast }{ Interpretability Aware Pruning in Medical Imagery}
+\resumeItemListEnd
+
+\resumeSubheading{SSI Club (AI Paper‑Fest / Paper Presentation Week)}{October 2024}{Talk: \emph{DL‑Backtrace by AryaXAI}}{Online}
+\resumeSubheading{ACM‑W Manipal Chapter}{March 2024}{\emph{Introduction to Research}}{Manipal, India}
+\resumeSubheading{The Data Alchemists, MIT Manipal}{February 2024}{\emph{Data Dialogue}}{Manipal, India}
+\resumeSubheading{ACM‑W Manipal Chapter}{March 2023}{\emph{Research as an Undergraduate}}{Manipal, India} 
+\resumeSubHeadingListEnd
+
+\section{Academic Service}
+  \begin{description}[font=$\bullet$]
+        \item {\textbf{Mentor} at AAAI Undergraduate Consortium 2026}
+        \vspace{-5pt}
+        \item {\textbf{Reviewer (Major Conferences)}: CVPR (2025-26), ECCV (2024, 2026), ICCV (2025), WACV (2026), IJCNN (2025)}
+        \vspace{-5pt}
+        \item {\textbf{Reviewer (Workshops)}: NLP4PI @ EMNLP 2024, SyntheticData4ML @ NeurIPS 2022-23, Bayesian Decision-making @ NeurIPS 2024, Frontiers in Probabilistic Inference @ ICLR 2025, Topological/Algebraic/Geometric P.R.A. @ CVPR 2023, Domain Adaptation @ MICCAI 2023, Fairness-AIMI @ MICCAI 2024, Advances in Financial AI @ ICLR 2025-26, Actionable Interpretability @ ICML 2025, RegML @ NeurIPS 2025}
+        \vspace{-5pt}
+\end{description}
+
+\end{document}
+
+
+
