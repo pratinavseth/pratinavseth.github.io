@@ -35,10 +35,10 @@ I’m always eager to connect—feel free to reach out or check out my **[Resume
 - *2026.01*: &nbsp;🎉 **Orion-Bix: Bi-Axial Attention for Tabular In-Context Learning** accepted at **WWW 2026**!
 - *2026.01*: &nbsp;🎉 **Exploring Fine-Tuning for Tabular Foundation Models** accepted at **WWW 2026**!
 - *2026.01*: &nbsp;🎉 **TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models (Demo)** accepted at **WWW 2026**!
-- *2026.01*: &nbsp;🎉 **Laplacian reconstructive network for guided thermal super-resolution** accepted at **Scientific Reports**!
-- *2025.11*: &nbsp;🎉 **Interpretability as Alignment: Making Internal Understanding a Design Principle** accepted at **NeurIPS Workshop on Private AI Governance**!
-- *2025.11*: &nbsp;🎉 **Bridging the gap in XAI-why reliable metrics matter for explainability and compliance** accepted at **NeurIPS Workshop on Private AI Governance**!
-- *2025.11*: &nbsp;🎉 **NeurIPS 2025 Spotlight Talk** on Scientific Impact!
+- *2026.01*: &nbsp;🎉 **Laplacian reconstructive network for guided thermal super-resolution** accepted at **Scientific Reports (Nature)**!
+- *2025.11*: &nbsp;🎉 **Interpretability as Alignment: Making Internal Understanding a Design Principle** accepted at **EurIPS Workshop on Private AI Governance**!
+- *2025.11*: &nbsp;🎉 **Bridging the gap in XAI-why reliable metrics matter for explainability and compliance** accepted at **EurIPS Workshop on Private AI Governance**!
+- *2025.11*: &nbsp;🎉 **EurIPS Workshop on Private AI Governance 2025 Spotlight Talk** !
 - *2025.09*: &nbsp;🎉 **Interpretability-aware pruning for efficient medical image analysis** accepted at **MICCAI Workshop 2025**!
 - *2025.05*: &nbsp;🎉 **SELF-PERCEPT: Mental Manipulation Detection** accepted at **ACL 2025**!
 - *2025.05*: &nbsp;🎉 **Alberta Wells Dataset** accepted at **ICML 2025**! (Really Grateful to the Team for their efforts and Prof. David Rolnick)!
