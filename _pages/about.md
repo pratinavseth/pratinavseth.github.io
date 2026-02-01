@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # Hi, I'm Pratinav Seth! 👋  
 
-I am a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, where I focus on building responsible AI systems through advancements in **Tabular Foundation Models**, AI alignment, and interpretability-guided safety. I currently oversee a team of four full-time researchers, driving R&D initiatives that leverage interpretability as a core design principle to enhance model reliability and transparency.
+I am a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, where I focus on building responsible AI systems through advancements in **Tabular Foundation Models**, AI alignment, and interpretability guided safety. I currently oversee a team of four full-time researchers, driving R&D initiatives that leverage interpretability as a core design principle to enhance model reliability and transparency.
 
 Prior to Lexsi Labs, I completed my B.Tech in Data Science from Manipal Institute of Technology and conducted research at **[Mila Quebec AI Institute](https://mila.quebec/en)** (under Dr. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I am honored to be an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** and am passionate about applying AI for social good, particularly in medical imagery and remote sensing.
 
@@ -111,10 +111,10 @@ Mohamed Bouadi, **Pratinav Seth**, Aditya Tanna, Vinay Kumar Sankarapu
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WWW 2026</div><img src='images/500x300.png' alt="Exploring Fine-Tuning" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WWW 2026</div><img src='images/fine_tuning.png' alt="Exploring Fine-Tuning" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Exploring Fine-Tuning for Tabular Foundation Models](https://pratinavseth.github.io/)
+[Exploring Fine-Tuning for Tabular Foundation Models](https://arxiv.org/abs/2601.09654)
 
 Aditya Tanna, **Pratinav Seth**, Mohamed Bouadi, Vinay Kumar Sankarapu
 
