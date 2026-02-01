@@ -86,7 +86,7 @@ Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru,
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS Workshop 2025</div><img src='images/interpawarealignmnet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EurIPS Workshop 2025</div><img src='images/interpawarealignmnet.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Interpretability as Alignment: Making Internal Understanding a Design Principle](https://arxiv.org/abs/2509.08592)
@@ -152,7 +152,7 @@ Nikita Malik, **Pratinav Seth**, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kum
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS Workshop 2025</div><img src='images/xaimetrics.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EurIPS Workshop 2025</div><img src='images/xaimetrics.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Bridging the gap in XAI-why reliable metrics matter for explainability and compliance](https://arxiv.org/abs/2502.04695)
@@ -229,35 +229,6 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='images/500x300.png' alt="C-Delta-theta" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[C-&Delta;&theta;: Circuit-Restricted Weight Arithmetic for Selective Refusal](https://pratinavseth.github.io/)
-
-Aditya Kasliwal, **Pratinav Seth**, Vinay Kumar Sankarapu
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='images/500x300.png' alt="AlignTune" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models](https://pratinavseth.github.io/)
-
-Chirag Chawla*, Zera Lyngkhoi*, **Pratinav Seth***, Utsav Avaiya, Soham Bhattacharjee, Mykola Khandoga, Rui Yuan, Vinay Kumar Sankarapu
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='images/500x300.png' alt="DLBacktrace v2" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[DLBacktrace v2: Extending Model Agnostic Interpretability for LLMs and MOEs with CUDA Acceleration](https://pratinavseth.github.io/)
-
-Neeraj Kumar Singh*, **Pratinav Seth***, Omkar Kakade*, Chintan Chitroda, Vinay Kumar Sankarapu
-
-</div>
-</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">3rd Workshop on NLP for Positive Impact @ EMNLP 2024</div><img src='images/diag2.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -322,7 +293,7 @@ Neeraj Kumar Singh*, **Pratinav Seth***, Omkar Kakade*, Chintan Chitroda, Vinay 
   - **Representation**: Presented a spotlight talk at NeurIPS 2025; presented a poster at the MICCAI Workshop 2025
   - **Publications**:
     - Interpretability-Aware Pruning for Efficient Medical Image Analysis. 2025. MICCAI Workshop 2025 (LNCS).
-    - Interpretability as Alignment: Making Internal Understanding a Design Principle. 2025. Position Paper (Accepted at NeurIPS Workshop on Private AI Governance).
+    - Interpretability as Alignment: Making Internal Understanding a Design Principle. 2025. Position Paper (Accepted at EurIPS Workshop on Private AI Governance).
     - TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models. 2026. Accepted at WWW 2026.
     - Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning. 2025. Pre-print.
     - Orion-BiX: Bi-Axial Attention for Tabular In-Context Learning. 2026. Accepted at WWW 2026.
@@ -337,7 +308,7 @@ Neeraj Kumar Singh*, **Pratinav Seth***, Omkar Kakade*, Chintan Chitroda, Vinay 
   - **Publications**:
     - DL-Backtrace: A Model-Agnostic Explainability Method for Deep Learning Models. Accepted at IJCNN 2025.
     - XAI Evals: A Framework for Evaluating Post-Hoc Local Explanation Methods. Technical Report, 2025.
-    - Bridging the Gap in XAI: Why Reliable Metrics Matter for Explainability and Compliance. Accepted at NeurIPS Workshop on Private AI Governance, 2025.
+    - Bridging the Gap in XAI: Why Reliable Metrics Matter for Explainability and Compliance. Accepted at EurIPS Workshop on Private AI Governance, 2025.
 
 - *2024.01 - 2024.06*, Research Intern at [Rolnick Lab, Mila Quebec AI Institute](https://davidrolnick.com/lab/), Remote
   - **Project**: Computer vision and deep learning for geospatial applications targeting climate change

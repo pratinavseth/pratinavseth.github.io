@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Pratinav Seth"
-  avatar           : "images/profile.jpg"
+  avatar           : "images/android-chrome-512x512.png"
   bio              : "Research Scientist"
   location         : "India"
   employer         : "Research Scientist @ Lexsi Labs"
