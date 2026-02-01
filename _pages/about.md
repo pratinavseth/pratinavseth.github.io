@@ -18,24 +18,16 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # Hi, I'm Pratinav Seth! 👋  
 
-I am a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, with a track record of **accelerating from an undergraduate researcher to driving R&D initiatives and teams**. My work centers on building responsible AI systems—advancing **Tabular Foundation Models**, AI alignment, and interpretability-guided safety. 
+I am a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, where I focus on building responsible AI systems through advancements in **Tabular Foundation Models**, AI alignment, and interpretability-guided safety. I currently oversee a team of four full-time researchers, driving R&D initiatives that leverage interpretability as a core design principle to enhance model reliability and transparency.
 
-At **Lexsi Labs**, my work is focused on R&D initiatives in **AI alignment**, **interpretability-guided safety**, and the development of **Tabular Foundation Models** for high-stakes applications. I co-developed specialized suites and unified libraries for the end-to-end lifecycle of tabular foundation models. My research explores model optimization and alignment strategies, utilizing interpretability as a core design principle to enhance reliability and transparency. Currently, I oversee a team of four full-time researchers and have mentored over six interns at our India Research Lab.
+Prior to Lexsi Labs, I completed my B.Tech in Data Science from Manipal Institute of Technology and conducted research at **[Mila Quebec AI Institute](https://mila.quebec/en)** (under Dr. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I am honored to be an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** and am passionate about applying AI for social good, particularly in medical imagery and remote sensing.
+
+I’m always eager to connect—feel free to reach out or check out my **[Resume](https://linktr.ee/pratinavseth)** for more details. 🚀
 
 ## 🚀 Key Highlights
 - 📚 **24+ Peer-Reviewed Publications** (9 Main Conference + 15 Workshop) at top-tier venues including **ICML, ACL, WWW, NeurIPS, CVPR, and AAAI**.
 - 🏆 **AAAI Undergraduate Consortium Scholar** & Mentor (2023, 2026).
 
-I completed my Bachelor's (B.Tech) in Data Science from Manipal Institute of Technology, 
-during which I had the privilege of working at **[Mila Quebec AI Institute](https://mila.quebec/en) (under [Dr. David Rolnick](https://davidrolnick.com/))**, **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/) (with Dr. Amit Kale and Mr. Koustav Mullick)**, and **[KLIV Lab at IIT Kharagpur](https://iitkliv.github.io/) (PI: Dr. Debdoot Sheet)**. I conducted much of my research alongside my peers at **[Mars Rover Manipal AI Research](https://www.linkedin.com/company/marsrovermanipal) (alongside [Dr. Ujjwal Verma](https://scholar.google.com/citations?user=XSzIFIgAAAAJ&hl=en))**, **[Research Society MIT](https://www.instagram.com/researchsoc/?hl=en)**, and under **[Dr. Abhilash K. Pai](https://scholar.google.co.in/citations?user=WIsqsnsAAAAJ&hl=en)** .
-
-In 2023, I was honored to be selected as an  **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)**, where I presented a proposal on Model Agnostic Uncertainty Aware Metrics.
-
-I’m deeply passionate about building responsible AI systems that are aligned, safe, and transparent, with a particular interest in AI for Social Good and its applications in Medical Imagery and Remote Sensing. 
-
-I’m always eager to connect and exchange ideas on AI research, innovation, and shaping the future of responsible AI—let’s connect! 🚀
-
-For a more detailed overview of my professional journey, projects, and contributions, feel free to take a look at my **[Resume](https://linktr.ee/pratinavseth)**.
 
 # 🔥 News
 
