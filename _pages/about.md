@@ -20,7 +20,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # Hi, I'm Pratinav Seth! 👋  
 
-I am a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, where I focus on building responsible AI systems through advancements in **LLM post-training** (alignment, safety, distillation), **agentic systems** (coding agents, agentic training), and **interpretability** (mechanistic and post-hoc) applied to model safety and reliability. I currently oversee **6+ full-time researchers** and **10+ interns** across teams in India and Paris, driving R&D initiatives that leverage interpretability as a core design principle to enhance model reliability and transparency.
+I am a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)** with **26+ peer-reviewed publications** across ICML, ACL, NeurIPS, CVPR, and WWW — and currently lead a team of **6+ full-time researchers and 10+ interns** across India and Paris. My research spans **LLM post-training** (alignment, safety fine-tuning, distillation), **agentic systems** (coding agents, agentic training), and **mechanistic interpretability** applied to model safety — with recent work including [AlignTune](https://arxiv.org/abs/2602.09621) (modular post-training toolkit) and [C-ΔΘ](https://arxiv.org/abs/2602.04521) (circuit-level selective refusal via weight arithmetic).
 
 Prior to Lexsi Labs, I completed my B.Tech in Data Science from Manipal Institute of Technology and conducted research at **[Mila Quebec AI Institute](https://mila.quebec/en)** (under Dr. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I am honored to be an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** and am passionate about applying AI for social good, particularly in medical imagery and remote sensing.
 
@@ -38,18 +38,17 @@ I’m always eager to connect—feel free to reach out or check out my **[Resume
   <span style="display:inline-block;background:#f3e5f5;color:#4a148c;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Safety Fine-Tuning</span>
 </div>
 
+## 🚀 Key Highlights
+- 📚 **26+ Peer-Reviewed Publications** (9 Main Conference + 17 Workshop) at **ICML, ACL, WWW, NeurIPS, CVPR, AAAI, MICCAI, ICLR, IJCNN, EMNLP, Scientific Reports (Nature)**.
+- 🏆 **AAAI Undergraduate Consortium Scholar** & Mentor (2023, 2026).
+- 🎤 **Spotlight Talk** at EurIPS Workshop on Private AI Governance, Copenhagen (December 2025).
+
 <div style="background:#fff8e1;border-left:4px solid #f9a825;padding:10px 16px;border-radius:4px;margin-bottom:0.6em;font-size:0.9em;">
   <strong>📢 Lexsi Labs — Internships & Full-Time Roles:</strong> For internship and FTE applications at Lexsi Labs, please <strong>apply directly</strong> via <a href="https://lexsi.ai">lexsi.ai</a> rather than reaching out for referrals.
 </div>
 <div style="background:#e8f5e9;border-left:4px solid #43a047;padding:10px 16px;border-radius:4px;margin-bottom:1.2em;font-size:0.9em;">
   <strong>🎓 Mentoring:</strong> I am open to mentoring early-stage and young researchers. If you'd like to connect, feel free to <a href="mailto:seth.pratinav@gmail.com">reach out via email</a> — please be respectful of my time and include a brief note about your background and what you're working on.
 </div>
-
-## 🚀 Key Highlights
-- 📚 **26+ Peer-Reviewed Publications** (9 Main Conference + 17 Workshop) at **ICML, ACL, WWW, NeurIPS, CVPR, AAAI, MICCAI, ICLR, IJCNN, EMNLP, Scientific Reports (Nature)**.
-- 🏆 **AAAI Undergraduate Consortium Scholar** & Mentor (2023, 2026).
-- 🎤 **Spotlight Talk** at EurIPS Workshop on Private AI Governance, Copenhagen (December 2025).
-- 👥 Leads **6+ full-time researchers & 10+ interns** across India and Paris at Lexsi Labs.
 
 
 # 🔥 News
