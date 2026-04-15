@@ -18,7 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # Hi, I'm Pratinav Seth! 👋  
 
-I am a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, where I focus on building responsible AI systems through advancements in **Tabular Foundation Models**, AI alignment, and interpretability guided safety. I currently oversee a team of four full-time researchers, driving R&D initiatives that leverage interpretability as a core design principle to enhance model reliability and transparency.
+I am a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, where I focus on building responsible AI systems through advancements in **LLM post-training** (alignment, safety, distillation), **agentic systems** (coding agents, agentic training), and **interpretability** (mechanistic and post-hoc) applied to model safety and reliability. I currently oversee researchers across teams in India and Paris, driving R&D initiatives that leverage interpretability as a core design principle to enhance model reliability and transparency.
 
 Prior to Lexsi Labs, I completed my B.Tech in Data Science from Manipal Institute of Technology and conducted research at **[Mila Quebec AI Institute](https://mila.quebec/en)** (under Dr. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I am honored to be an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** and am passionate about applying AI for social good, particularly in medical imagery and remote sensing.
 
@@ -32,6 +32,8 @@ I’m always eager to connect—feel free to reach out or check out my **[Resume
 # 🔥 News
 
 ## Recent Publications & Acceptances
+- *2026.02*: &nbsp;🎉 New Pre-Print: **AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models**!
+- *2026.02*: &nbsp;🎉 New Pre-Print: **C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal**!
 - *2026.01*: &nbsp;🎉 **Orion-Bix: Bi-Axial Attention for Tabular In-Context Learning** accepted at **WWW 2026**!
 - *2026.01*: &nbsp;🎉 **Exploring Fine-Tuning for Tabular Foundation Models** accepted at **WWW 2026**!
 - *2026.01*: &nbsp;🎉 **TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models (Demo)** accepted at **WWW 2026**!
@@ -44,16 +46,41 @@ I’m always eager to connect—feel free to reach out or check out my **[Resume
 - *2025.05*: &nbsp;🎉 **Alberta Wells Dataset** accepted at **ICML 2025**! (Really Grateful to the Team for their efforts and Prof. David Rolnick)!
 
 ## Academic Service & Reviewing
-- *2026.01*: &nbsp;📝 **Reviewer** for **ECCV 2026** & **CVPR 2026**
+- *2026.04*: &nbsp;📝 **Reviewer** for **NeurIPS 2026** & **BMVC 2026**
+- *2026.03*: &nbsp;📝 **Reviewer** for **ECCV 2026** & **ACM SIGMOD Workshop 2026**
+- *2026.02*: &nbsp;📝 **Reviewer** for **Advances in Financial AI Workshop (ICLR 2026)**
+- *2026.01*: &nbsp;📝 **Reviewer** for **CVPR 2026**
 - *2025.12*: &nbsp;📝 **Mentor** at **AAAI Undergraduate Consortium 2026**
 - *2025.08*: &nbsp;📝 **Reviewer** for **WACV 2026**
 - *2025.09*: &nbsp;📝 **Reviewer** for **RegML Workshop (NeurIPS 2025)**
 - *2025.05*: &nbsp;📝 **Reviewer** for **Actionable Interpretability Workshop (ICML 2025)**
 - *2025.04*: &nbsp;📝 **Reviewer** for **ICCV 2025**
-- *2025.03*: &nbsp;📝 **Reviewer** for **IJCNN 2025** & **Advances in Financial AI Workshop (ICLR 2025-26)**
+- *2025.03*: &nbsp;📝 **Reviewer** for **IJCNN 2025** & **Advances in Financial AI Workshop (ICLR 2025)**
 - *2025.02*: &nbsp;📝 **Reviewer** for **CVPR 2025**
 
 # 📝 Publications <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='https://cdn.prod.website-files.com/690097e1da2dba144068cad2/699ad7130ab0ea11e4a3a932_intro_final.png' alt="AlignTune" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models](https://arxiv.org/abs/2602.09621)
+
+R E Zera Marveen Lyngkhoi, Chirag Chawla, **Pratinav Seth**, Utsav Avaiya, Soham Bhattacharjee, Mykola Khandoga, Rui Yuan, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='https://cdn.prod.website-files.com/690097e1da2dba144068cad2/698b87dd6f0ed0e2b76c8093_fig_1_cthetha.png' alt="C-ΔΘ" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal](https://arxiv.org/abs/2602.04521)
+
+Aditya Kasliwal, **Pratinav Seth**, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025 / CCAI ICLR 2025</div><img src='images/AWD.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -261,7 +288,7 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 - **Mentor**: AAAI Undergraduate Consortium 2026
 
 ## Conference Reviewing & Program Committee
-- **Main Conference Reviewer**: CVPR (2025-26), ECCV (2024, 2026), ICCV 2025, WACV 2026, IJCNN 2025, AAAI 2026
+- **Main Conference Reviewer**: CVPR (2025-26), ECCV (2024, 2026), ICCV 2025, WACV 2026, IJCNN 2025, AAAI 2026, NeurIPS 2026, BMVC 2026
 - **Workshop Reviewer**: 
   - NLP for Positive Impact Workshop (EMNLP 2024)
   - SyntheticData4ML Workshop (NeurIPS 2022, 2023)
@@ -273,11 +300,20 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
   - Advances in Financial AI Workshop (ICLR 2025-26)
   - Actionable Interpretability Workshop (ICML 2025)
   - RegML Workshop (NeurIPS 2025)
+  - ACM SIGMOD Workshop 2026
 
 # 💻 Professional Experience
 
 ## Research Positions
-- *2025.07 - Present*, **Research Scientist** at [Lexsi Labs](https://lexsi.ai/), Remote
+- *2026.04 - Present*, **Research Scientist** at [Lexsi Labs](https://lexsi.ai/), Remote
+  - **LLM Post-Training**: Developing post-training libraries and pipelines for LLM alignment, safety post-training, and knowledge distillation; building modular toolkits for supervised fine-tuning and RLHF-style optimization
+  - **Agentic Systems**: Researching agentic training frameworks and coding agents; investigating self-improvement and tool-use capabilities in autonomous LLM-based systems
+  - **Interpretability-Guided Safety**: Applying mechanistic interpretability and post-hoc explanation methods to drive safety post-training, selective refusal, and model reliability—leveraging interpretability as a core design principle
+  - **Publications**:
+    - AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models. 2026. Pre-print.
+    - C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal. 2026. Pre-print.
+
+- *2025.07 - 2026.03*, **Research Scientist** at [Lexsi Labs](https://lexsi.ai/), Remote
   - **Tabular Foundation Models**: Contributed to the development of foundation models for tabular data in high-stakes domains; co-developed a library for inference, fine-tuning, and benchmarking of tabular foundation models
   - **Interpretability-Guided Alignment**: Investigating model optimization (pruning, quantization) and alignment (fine-tuning, RL-based alignment, unlearning) strategies across various model architectures—leveraging interpretability as a design principle and guiding mechanism
   - **Research & POCs**: Led proof-of-concept (POC) projects for model optimization, fine-tuning, alignment, and internal research tooling to accelerate experimental workflows
@@ -362,6 +398,65 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 ### 🏅 Certifications
 - **Deep Learning Specialization** - DeepLearning.ai
 - **6th Summer School on AI** - CVIT IIITH
+
+# 🤝 Collaborators
+
+## Managers
+- Vinay Kumar Sankarapu (11) — Lexsi Labs / AryaXAI Alignment Labs
+- Chintan Chitroda (3) — AryaXAI Alignment Labs
+- Koustav Mullick — Robert Bosch Research India
+- Amit Kale — Robert Bosch Research India
+
+## Mentors
+- David Rolnick (1) — Mila / McGill
+- Abhilash K Pai (1) — MIT MAHE
+- Ujjwal Verma (2) — MIT MAHE
+
+## Mentees
+
+**Lexsi Labs**
+Aditya Kasliwal (8), Aditya Tanna (4), Utsav Avaiya (2), Nikita Malik (1), Aadit Sengupta (1), Chirag Chawla (1), Soham Bhattacharjee (1), R E Zera Marveen Lyngkhoi (1)
+
+**Manipal University Jaipur**
+Danush Khanna (1)
+
+**Mars Rover Manipal**
+Sriya Rallabandi (4), Sanchit Singhal (3), Aryan Kamani (2), Ishaan Gakhar (2), Adil Khan (2), Ananya Gupta (1), Saurabh Kumar Mishra (1), Krish Didwania (1), Laven Srivastava (1)
+
+**Research Society Manipal**
+Dyutit Mohanty (1), Bharath Udupa (1), Rashi Goel (1), Komal Mathur (1), Swetha Vemulapalli (1), Hemang Malik (1), Gaurav Pradeep (1)
+
+## Collaborators
+
+**Lexsi Labs — India**
+Aditya Kasliwal (8), Aditya Tanna (4), Neeraj Kumar Singh (3), Utsav Avaiya (2), Nikita Malik (1), Aadit Sengupta (1), Chirag Chawla (1), Soham Bhattacharjee (1), R E Zera Marveen Lyngkhoi (1)
+
+**Lexsi Labs — Paris**
+Mohamed Bouadi (4), Mykola Khandoga (1), Rui Yuan (1)
+
+**AryaXAI Alignment Labs**
+Yashwardhan Rathore (2), Neeraj Kumar Singh (3)
+
+**Mars Rover Manipal**
+Aditya Kasliwal (8), Akshat Bhandari (4), Sriya Rallabandi (4), Sanchit Singhal (3), Kumud Lakara (2), Aryan Kamani (2), Ishaan Gakhar (2), Adil Khan (2), Ananya Gupta (1), Saurabh Kumar Mishra (1), Krish Didwania (1), Laven Srivastava (1)
+
+**Research Society Manipal**
+Mihir Agarwal (1), Dyutit Mohanty (1), Bharath Udupa (1), Rashi Goel (1), Komal Mathur (1), Swetha Vemulapalli (1), Hemang Malik (1), Gaurav Pradeep (1)
+
+**MIT Manipal / IISc Bangalore**
+Siddhant Bharadwaj (1)
+
+**Manipal University Jaipur**
+Danush Khanna (1), Aditya Kumar Guru (1), Siddharth Shukla (1), Tanuj Tyagi (1)
+
+**NIT Surathkal**
+Sidhaarth Sredharan Murali (1)
+
+**McGill University**
+Jade Boutot (1), Mary Kang (1)
+
+**Wells Fargo AI COE**
+Amit Agarwal (1)
 
 # 💬 Invited Talks & Presentations
 
