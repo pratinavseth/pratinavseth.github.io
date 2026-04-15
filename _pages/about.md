@@ -63,7 +63,7 @@ I’m always eager to connect—feel free to reach out or check out my **[Resume
 - *2026.01*: &nbsp;🎉 **Laplacian reconstructive network for guided thermal super-resolution** accepted at **Scientific Reports (Nature)**!
 - *2025.11*: &nbsp;🎉 **Interpretability as Alignment: Making Internal Understanding a Design Principle** accepted at **EurIPS Workshop on Private AI Governance**!
 - *2025.11*: &nbsp;🎉 **Bridging the gap in XAI-why reliable metrics matter for explainability and compliance** accepted at **EurIPS Workshop on Private AI Governance**!
-- *2025.11*: &nbsp;🎉 **EurIPS Workshop on Private AI Governance 2025 Spotlight Talk** !
+- *2025.11*: &nbsp;🎉 **EurIPS Workshop on Private AI Governance 2025 Spotlight Talk**!
 - *2025.09*: &nbsp;🎉 **Interpretability-aware pruning for efficient medical image analysis** accepted at **MICCAI Workshop 2025**!
 - *2025.05*: &nbsp;🎉 **SELF-PERCEPT: Mental Manipulation Detection** accepted at **ACL 2025**!
 - *2025.05*: &nbsp;🎉 **Alberta Wells Dataset** accepted at **ICML 2025**! (Really Grateful to the Team for their efforts and Prof. David Rolnick)!
@@ -89,7 +89,7 @@ I’m always eager to connect—feel free to reach out or check out my **[Resume
     <li><a href="https://arxiv.org/abs/2602.09621">AlignTune</a> — Pre-Print 2026 · Modular post-training toolkit (RLHF, DPO, SFT)</li>
     <li><a href="https://arxiv.org/abs/2602.04521">C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal</a> — Pre-Print 2026 · Mechanistic interpretability for safety</li>
     <li><a href="https://arxiv.org/pdf/2410.09032">Alberta Wells Dataset</a> — <strong>ICML 2025</strong> · Satellite imagery + climate AI (Mila/McGill)</li>
-    <li><a href="https://pratinavseth.github.io/">SELF-PERCEPT</a> — <strong>ACL 2025</strong> · LLM introspection for mental manipulation detection</li>
+    <li><a href="https://aclanthology.org/2025.acl-short.52/">SELF-PERCEPT</a> — <strong>ACL 2025</strong> · LLM introspection for mental manipulation detection</li>
     <li><a href="https://arxiv.org/abs/2509.08592">Interpretability as Alignment</a> — EurIPS Workshop 2025 · Spotlight Talk, Copenhagen</li>
     <li><a href="https://openaccess.thecvf.com/content/CVPR2023W/PBVS/html/Kasliwal_CoReFusion_Contrastive_Regularized_Fusion_for_Guided_Thermal_Super-Resolution_CVPRW_2023_paper.html">CoReFusion</a> — <strong>CVPR Workshop 2023</strong> · Guided thermal super-resolution</li>
   </ul>
@@ -132,7 +132,7 @@ Aditya Kasliwal, **Pratinav Seth**, Vinay Kumar Sankarapu
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025 / NAACL SRW Workshop 2025</div><img src='images/Manipulation_Techniques.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[SELF-PERCEPT: Introspection Improves Large Language Models' Detection of Multi-Person Mental Manipulation in Conversations](https://pratinavseth.github.io/)
+[SELF-PERCEPT: Introspection Improves Large Language Models' Detection of Multi-Person Mental Manipulation in Conversations](https://aclanthology.org/2025.acl-short.52/)
 
 Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru, Siddharth Shukla, Tanuj Tyagi, SANDEEP CHAURASIA, Kripabandhu Ghosh
 
@@ -352,7 +352,7 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
   - **Tabular Foundation Models**: Contributed to the development of foundation models for tabular data in high-stakes domains; co-developed a library for inference, fine-tuning, and benchmarking of tabular foundation models
   - **Interpretability-Guided Alignment**: Investigating model optimization (pruning, quantization) and alignment (fine-tuning, RL-based alignment, unlearning) strategies across various model architectures—leveraging interpretability as a design principle and guiding mechanism
   - **Research & POCs**: Led proof-of-concept (POC) projects for model optimization, fine-tuning, alignment, and internal research tooling to accelerate experimental workflows
-  - **Research & Mentorship**: Overseeing 4 full-time researchers; mentored six research interns; oversaw recruitment of interns and full-time scientists (Paris and India); authored technical and research documentation for stakeholders; initiated proof-of-concept projects to advance internal algorithmic capabilities
+  - **Research & Mentorship**: Overseeing researchers across teams in India and Paris; mentored six research interns; oversaw recruitment of interns and full-time scientists; authored technical and research documentation for stakeholders; initiated proof-of-concept projects to advance internal algorithmic capabilities
   - **Representation**: Presented a spotlight talk at EurIPS Workshop on Private AI Governance 2025 (Copenhagen); presented a poster at the MICCAI Workshop 2025
   - **Publications**:
     - Interpretability-Aware Pruning for Efficient Medical Image Analysis. 2025. MICCAI Workshop 2025 (LNCS).
@@ -386,7 +386,7 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
   
 - *2021.03 - 2024.01*, Research Progression at [Mars Rover Manipal](https://www.marsrovermanipal.com/research)
   - Advanced from Trainee to Senior Researcher and Mentor
-  - Led AI research initiatives leading to multiple publications at NeurIPS, ACL, AAAI, CVPR, etc withprojects in Generative AI, Medical Image Analysis, and Climate Change.
+  - Led AI research initiatives leading to multiple publications at NeurIPS, ACL, AAAI, CVPR, etc. with projects in Generative AI, Medical Image Analysis, and Climate Change.
   - Built a team of 10+ members and mentored them in their research.
 
 
