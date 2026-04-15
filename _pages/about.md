@@ -20,7 +20,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # Hi, I'm Pratinav Seth! 👋  
 
-I am a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, where I focus on building responsible AI systems through advancements in **LLM post-training** (alignment, safety, distillation), **agentic systems** (coding agents, agentic training), and **interpretability** (mechanistic and post-hoc) applied to model safety and reliability. I currently oversee researchers across teams in India and Paris, driving R&D initiatives that leverage interpretability as a core design principle to enhance model reliability and transparency.
+I am a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, where I focus on building responsible AI systems through advancements in **LLM post-training** (alignment, safety, distillation), **agentic systems** (coding agents, agentic training), and **interpretability** (mechanistic and post-hoc) applied to model safety and reliability. I currently oversee **6+ full-time researchers** and **10+ interns** across teams in India and Paris, driving R&D initiatives that leverage interpretability as a core design principle to enhance model reliability and transparency.
 
 Prior to Lexsi Labs, I completed my B.Tech in Data Science from Manipal Institute of Technology and conducted research at **[Mila Quebec AI Institute](https://mila.quebec/en)** (under Dr. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I am honored to be an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** and am passionate about applying AI for social good, particularly in medical imagery and remote sensing.
 
@@ -49,7 +49,7 @@ I’m always eager to connect—feel free to reach out or check out my **[Resume
 - 📚 **26+ Peer-Reviewed Publications** (9 Main Conference + 17 Workshop) at **ICML, ACL, WWW, NeurIPS, CVPR, AAAI, MICCAI, ICLR, IJCNN, EMNLP, Scientific Reports (Nature)**.
 - 🏆 **AAAI Undergraduate Consortium Scholar** & Mentor (2023, 2026).
 - 🎤 **Spotlight Talk** at EurIPS Workshop on Private AI Governance, Copenhagen (December 2025).
-- 👥 Leads research teams across **India and Paris** at Lexsi Labs.
+- 👥 Leads **6+ full-time researchers & 10+ interns** across India and Paris at Lexsi Labs.
 
 
 # 🔥 News
@@ -352,7 +352,7 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
   - **Tabular Foundation Models**: Contributed to the development of foundation models for tabular data in high-stakes domains; co-developed a library for inference, fine-tuning, and benchmarking of tabular foundation models
   - **Interpretability-Guided Alignment**: Investigating model optimization (pruning, quantization) and alignment (fine-tuning, RL-based alignment, unlearning) strategies across various model architectures—leveraging interpretability as a design principle and guiding mechanism
   - **Research & POCs**: Led proof-of-concept (POC) projects for model optimization, fine-tuning, alignment, and internal research tooling to accelerate experimental workflows
-  - **Research & Mentorship**: Overseeing researchers across teams in India and Paris; mentored six research interns; oversaw recruitment of interns and full-time scientists; authored technical and research documentation for stakeholders; initiated proof-of-concept projects to advance internal algorithmic capabilities
+  - **Research & Mentorship**: Overseeing 6+ full-time researchers across teams in India and Paris; mentored 10+ research interns; oversaw recruitment of interns and full-time scientists; authored technical and research documentation for stakeholders; initiated proof-of-concept projects to advance internal algorithmic capabilities
   - **Representation**: Presented a spotlight talk at EurIPS Workshop on Private AI Governance 2025 (Copenhagen); presented a poster at the MICCAI Workshop 2025
   - **Publications**:
     - Interpretability-Aware Pruning for Efficient Medical Image Analysis. 2025. MICCAI Workshop 2025 (LNCS).
