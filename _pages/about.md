@@ -1,7 +1,9 @@
 ---
 permalink: /
-title: ""
-excerpt: ""
+title: "Pratinav Seth — Research Scientist | LLM Alignment, Post-Training & Mechanistic Interpretability"
+description: "Research Scientist at Lexsi Labs. 26+ publications at ICML, ACL, NeurIPS, CVPR, WWW, AAAI. Expertise: LLM post-training (RLHF, DPO, SFT), AI alignment & safety, mechanistic interpretability, agentic systems, coding agents, knowledge distillation."
+excerpt: "Research Scientist at Lexsi Labs specializing in LLM post-training, AI alignment & safety, mechanistic interpretability, and agentic systems. 26+ publications at ICML, ACL, NeurIPS, CVPR, WWW, AAAI."
+keywords: "Pratinav Seth, LLM alignment, post-training, RLHF, DPO, SFT, mechanistic interpretability, AI safety, agentic systems, coding agents, knowledge distillation, research scientist"
 author_profile: true
 redirect_from: 
   - /about/
@@ -24,9 +26,30 @@ Prior to Lexsi Labs, I completed my B.Tech in Data Science from Manipal Institut
 
 I’m always eager to connect—feel free to reach out or check out my **[Resume](https://linktr.ee/pratinavseth)** for more details. 🚀
 
+<div style="margin: 1em 0 1.5em 0;">
+  <span style="display:inline-block;background:#e3f2fd;color:#1565c0;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">LLM Post-Training</span>
+  <span style="display:inline-block;background:#e3f2fd;color:#1565c0;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">RLHF &amp; DPO</span>
+  <span style="display:inline-block;background:#e8f5e9;color:#2e7d32;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">AI Alignment &amp; Safety</span>
+  <span style="display:inline-block;background:#e8f5e9;color:#2e7d32;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Mechanistic Interpretability</span>
+  <span style="display:inline-block;background:#fce4ec;color:#880e4f;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Agentic Systems</span>
+  <span style="display:inline-block;background:#fce4ec;color:#880e4f;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Coding Agents</span>
+  <span style="display:inline-block;background:#fff3e0;color:#e65100;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Knowledge Distillation</span>
+  <span style="display:inline-block;background:#fff3e0;color:#e65100;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">XAI</span>
+  <span style="display:inline-block;background:#f3e5f5;color:#4a148c;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Safety Fine-Tuning</span>
+</div>
+
+<div style="background:#fff8e1;border-left:4px solid #f9a825;padding:10px 16px;border-radius:4px;margin-bottom:0.6em;font-size:0.9em;">
+  <strong>📢 Lexsi Labs — Internships & Full-Time Roles:</strong> For internship and FTE applications at Lexsi Labs, please <strong>apply directly</strong> via <a href="https://lexsi.ai">lexsi.ai</a> rather than reaching out for referrals.
+</div>
+<div style="background:#e8f5e9;border-left:4px solid #43a047;padding:10px 16px;border-radius:4px;margin-bottom:1.2em;font-size:0.9em;">
+  <strong>🎓 Mentoring:</strong> I am open to mentoring early-stage and young researchers. If you'd like to connect, feel free to <a href="mailto:seth.pratinav@gmail.com">reach out via email</a> — please be respectful of my time and include a brief note about your background and what you're working on.
+</div>
+
 ## 🚀 Key Highlights
-- 📚 **24+ Peer-Reviewed Publications** (9 Main Conference + 15 Workshop) at top-tier venues including **ICML, ACL, WWW, NeurIPS, CVPR, and AAAI**.
+- 📚 **26+ Peer-Reviewed Publications** (9 Main Conference + 17 Workshop) at **ICML, ACL, WWW, NeurIPS, CVPR, AAAI, MICCAI, ICLR, IJCNN, EMNLP, Scientific Reports (Nature)**.
 - 🏆 **AAAI Undergraduate Consortium Scholar** & Mentor (2023, 2026).
+- 🎤 **Spotlight Talk** at EurIPS Workshop on Private AI Governance, Copenhagen (December 2025).
+- 👥 Leads research teams across **India and Paris** at Lexsi Labs.
 
 
 # 🔥 News
@@ -60,7 +83,19 @@ I’m always eager to connect—feel free to reach out or check out my **[Resume
 
 # 📝 Publications <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='https://cdn.prod.website-files.com/690097e1da2dba144068cad2/699ad7130ab0ea11e4a3a932_intro_final.png' alt="AlignTune" width="100%"></div></div>
+<div style="background:#f8f9fa;border:1px solid #dee2e6;border-radius:6px;padding:14px 18px;margin-bottom:1.5em;">
+  <strong>Selected Publications</strong>
+  <ul style="margin:0.5em 0 0 0;padding-left:1.2em;">
+    <li><a href="https://arxiv.org/abs/2602.09621">AlignTune</a> — Pre-Print 2026 · Modular post-training toolkit (RLHF, DPO, SFT)</li>
+    <li><a href="https://arxiv.org/abs/2602.04521">C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal</a> — Pre-Print 2026 · Mechanistic interpretability for safety</li>
+    <li><a href="https://arxiv.org/pdf/2410.09032">Alberta Wells Dataset</a> — <strong>ICML 2025</strong> · Satellite imagery + climate AI (Mila/McGill)</li>
+    <li><a href="https://pratinavseth.github.io/">SELF-PERCEPT</a> — <strong>ACL 2025</strong> · LLM introspection for mental manipulation detection</li>
+    <li><a href="https://arxiv.org/abs/2509.08592">Interpretability as Alignment</a> — EurIPS Workshop 2025 · Spotlight Talk, Copenhagen</li>
+    <li><a href="https://openaccess.thecvf.com/content/CVPR2023W/PBVS/html/Kasliwal_CoReFusion_Contrastive_Regularized_Fusion_for_Guided_Thermal_Super-Resolution_CVPRW_2023_paper.html">CoReFusion</a> — <strong>CVPR Workshop 2023</strong> · Guided thermal super-resolution</li>
+  </ul>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='https://cdn.prod.website-files.com/690097e1da2dba144068cad2/699b3c4d2594e3a9dc779eea_fig2_aligntune.png' alt="AlignTune" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models](https://arxiv.org/abs/2602.09621)
@@ -138,7 +173,7 @@ Mohamed Bouadi, **Pratinav Seth**, Aditya Tanna, Vinay Kumar Sankarapu
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WWW 2026</div><img src='images/fine_tuning.png' alt="Exploring Fine-Tuning" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WWW 2026</div><img src='https://cdn.prod.website-files.com/690097e1da2dba144068cad2/690b5c2945fcabe3b15d04df_2.jpeg' alt="Exploring Fine-Tuning" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Exploring Fine-Tuning for Tabular Foundation Models](https://arxiv.org/abs/2601.09654)
@@ -318,7 +353,7 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
   - **Interpretability-Guided Alignment**: Investigating model optimization (pruning, quantization) and alignment (fine-tuning, RL-based alignment, unlearning) strategies across various model architectures—leveraging interpretability as a design principle and guiding mechanism
   - **Research & POCs**: Led proof-of-concept (POC) projects for model optimization, fine-tuning, alignment, and internal research tooling to accelerate experimental workflows
   - **Research & Mentorship**: Overseeing 4 full-time researchers; mentored six research interns; oversaw recruitment of interns and full-time scientists (Paris and India); authored technical and research documentation for stakeholders; initiated proof-of-concept projects to advance internal algorithmic capabilities
-  - **Representation**: Presented a spotlight talk at NeurIPS 2025; presented a poster at the MICCAI Workshop 2025
+  - **Representation**: Presented a spotlight talk at EurIPS Workshop on Private AI Governance 2025 (Copenhagen); presented a poster at the MICCAI Workshop 2025
   - **Publications**:
     - Interpretability-Aware Pruning for Efficient Medical Image Analysis. 2025. MICCAI Workshop 2025 (LNCS).
     - Interpretability as Alignment: Making Internal Understanding a Design Principle. 2025. Position Paper (Accepted at EurIPS Workshop on Private AI Governance).
@@ -327,7 +362,7 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
     - Orion-BiX: Bi-Axial Attention for Tabular In-Context Learning. 2026. Accepted at WWW 2026.
     - Exploring Fine-Tuning for Tabular Foundation Models. 2026. Accepted at WWW 2026.
 
-- *2024.07 - 2025.06*, **Research Scientist** at [AryaXAI Alignment Labs](https://www.aryaxai.com/), Remote / Mumbai, India
+- *2024.07 - 2025.06*, **Research Scientist** at [AryaXAI Alignment Labs](https://www.aryaxai.com/) *(rebranded to Lexsi Labs in 2025)*, Remote / Mumbai, India
   - **Research Focus**: Working at the intersection of Explainable AI (XAI), AI alignment, and AI safety in high-stakes domains—interpreting black-box models, assessing XAI reliability, and developing foundation models for tabular data in fraud detection and mission-critical applications
   - **Explainability**: Enhanced the DL-Backtrace method by generalizing its mechanics for model-agnostic use; co-developed a benchmarking framework for the systematic evaluation of XAI techniques
   - **XAI-Guided Optimization & Alignment**: Investigating model-agnostic post-hoc optimization and alignment strategies across various model architectures—leveraging interpretability for safer, more reliable model behavior
@@ -426,6 +461,9 @@ Sriya Rallabandi (4), Sanchit Singhal (3), Aryan Kamani (2), Ishaan Gakhar (2), 
 **Research Society Manipal**
 Dyutit Mohanty (1), Bharath Udupa (1), Rashi Goel (1), Komal Mathur (1), Swetha Vemulapalli (1), Hemang Malik (1), Gaurav Pradeep (1)
 
+**AAAI Undergraduate Consortium**
+Hai Le — Singapore
+
 ## Collaborators
 
 **Lexsi Labs — India**
@@ -458,14 +496,25 @@ Jade Boutot (1), Mary Kang (1)
 **Wells Fargo AI COE**
 Amit Agarwal (1)
 
+# 🌐 Events & Conferences
+
+- *2026.02*, **India AI Impact Summit 2026**, Bharat Mandapam, New Delhi *(representing Lexsi Labs)*
+  - Attended **AI Safety Connect Day** hosted by the International Association for Safe and Ethical Artificial Intelligence — discussions on interpretability, transparency, and safety in real-world AI deployment
+  - Participated in **closed-door roundtable** by The Dialogue: *"Powering the AI Frontier: Building India's Compute, Infrastructure, and Trust Backbone for Inclusive AI Growth"*
+  - Shared Lexsi Labs' work on alignment & RL, interpretability-driven safety, and open-source toolkits; co-organised a post-summit gathering
+- *2026.02*, **PyTorch Day Bangalore 2026**, Bangalore
+- *2025.12*, **AurionAI Launch Event**, India *(representing Lexsi Labs)*
+
 # 💬 Invited Talks & Presentations
 
-## 2024-2025
-- **NeurIPS 2025 Spotlight Talk**: "Scientific Impact" at NeurIPS 2025 (December 2025)
+## 2025
+- *2025.12*, **EurIPS Spotlight Talk**: *"Interpretability as Alignment: Making Internal Understanding a Design Principle"* at the EurIPS Workshop on Private AI Governance, Copenhagen, Denmark — with Aadit Sengupta
 - **AryaXAI Alignment Lab Webinars**:
   - "Inside the Black Box: Interpreting LLMs with DL-Backtrace (DLB)"
   - "Beyond Explainability – Evaluating XAI Methods with Confidence Using xai evals"
   - "Interpretability Aware Pruning in Medical Imagery" (Paper Podcast)
+
+## 2024
 - *2024.03*, **Introduction to Research**, at ACM-W Manipal Chapter.
 - *2024.02*, Data Dialogue invited by The Data Alchemists, The Official Data Science Club of MIT Manipal.  \| [\[link\]](https://www.instagram.com/p/C2B-pv7v82l/?igsh=OXd3d2J6YTh6aXVt)
 
