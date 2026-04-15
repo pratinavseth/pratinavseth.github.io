@@ -86,16 +86,17 @@ I’m always eager to connect—feel free to reach out or check out my **[Resume
 <div style="background:#f8f9fa;border:1px solid #dee2e6;border-radius:6px;padding:14px 18px;margin-bottom:1.5em;">
   <strong>Selected Publications</strong>
   <ul style="margin:0.5em 0 0 0;padding-left:1.2em;">
-    <li><a href="https://arxiv.org/abs/2602.09621">AlignTune</a> — Pre-Print 2026 · Modular post-training toolkit (RLHF, DPO, SFT)</li>
-    <li><a href="https://arxiv.org/abs/2602.04521">C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal</a> — Pre-Print 2026 · Mechanistic interpretability for safety</li>
-    <li><a href="https://arxiv.org/pdf/2410.09032">Alberta Wells Dataset</a> — <strong>ICML 2025</strong> · Satellite imagery + climate AI (Mila/McGill)</li>
-    <li><a href="https://aclanthology.org/2025.acl-short.52/">SELF-PERCEPT</a> — <strong>ACL 2025</strong> · LLM introspection for mental manipulation detection</li>
-    <li><a href="https://arxiv.org/abs/2509.08592">Interpretability as Alignment</a> — EurIPS Workshop 2025 · Spotlight Talk, Copenhagen</li>
-    <li><a href="https://openaccess.thecvf.com/content/CVPR2023W/PBVS/html/Kasliwal_CoReFusion_Contrastive_Regularized_Fusion_for_Guided_Thermal_Super-Resolution_CVPRW_2023_paper.html">CoReFusion</a> — <strong>CVPR Workshop 2023</strong> · Guided thermal super-resolution</li>
+    <li><a href="https://arxiv.org/abs/2602.09621">AlignTune</a> — Pre-Print 2026 · Unified post-training library exposing a single interface for SFT, DPO, GRPO and RLHF with interchangeable TRL/Unsloth backends and extensible reward framework</li>
+    <li><a href="https://arxiv.org/abs/2602.04521">C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal</a> — Pre-Print 2026 · Moves selective LLM refusal fully offline via circuit-level mechanistic interpretability and weight arithmetic — no inference-time steering</li>
+    <li><a href="https://arxiv.org/abs/2511.02802">TabTune</a> — <strong>WWW 2026</strong> · Unified open-source library for inference, fine-tuning (SFT, PEFT), and benchmarking of tabular foundation models across 7 architectures</li>
+    <li><a href="https://arxiv.org/pdf/2410.09032">Alberta Wells Dataset</a> — <strong>ICML 2025</strong> · Large-scale satellite imagery benchmark for detecting abandoned oil & gas wells; climate AI collaboration with Mila / McGill</li>
+    <li><a href="https://aclanthology.org/2025.acl-short.52/">SELF-PERCEPT</a> — <strong>ACL 2025</strong> · Two-stage introspection framework (Self-Perception Theory) for detecting multi-person mental manipulation in multi-turn conversations</li>
+    <li><a href="https://arxiv.org/abs/2509.08592">Interpretability as Alignment</a> — EurIPS Workshop 2025 · Position paper arguing mechanistic interpretability should be a first-class design principle in alignment — Spotlight Talk, Copenhagen</li>
+    <li><a href="https://openaccess.thecvf.com/content/CVPR2023W/PBVS/html/Kasliwal_CoReFusion_Contrastive_Regularized_Fusion_for_Guided_Thermal_Super-Resolution_CVPRW_2023_paper.html">CoReFusion</a> — <strong>CVPR Workshop 2023</strong> · Contrastive regularized multimodal fusion for guided thermal super-resolution</li>
   </ul>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='https://cdn.prod.website-files.com/690097e1da2dba144068cad2/699b3c4d2594e3a9dc779eea_fig2_aligntune.png' alt="AlignTune" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='https://cdn.prod.website-files.com/690097e1da2dba144068cad2/699ab40523bab49830cce949_699ab3b9de2e66a74a06fd6a_4384885e.png' alt="AlignTune" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models](https://arxiv.org/abs/2602.09621)
@@ -450,51 +451,105 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 ## Mentees
 
 **Lexsi Labs**
-Aditya Kasliwal (8), Aditya Tanna (4), Utsav Avaiya (2), Nikita Malik (1), Aadit Sengupta (1), Chirag Chawla (1), Soham Bhattacharjee (1), R E Zera Marveen Lyngkhoi (1)
+- Aditya Kasliwal (8)
+- Aditya Tanna (4)
+- Utsav Avaiya (2)
+- Nikita Malik (1)
+- Aadit Sengupta (1)
+- Chirag Chawla (1)
+- Soham Bhattacharjee (1)
+- R E Zera Marveen Lyngkhoi (1)
 
 **Manipal University Jaipur**
-Danush Khanna (1)
+- Danush Khanna (1)
 
 **Mars Rover Manipal**
-Sriya Rallabandi (4), Sanchit Singhal (3), Aryan Kamani (2), Ishaan Gakhar (2), Adil Khan (2), Ananya Gupta (1), Saurabh Kumar Mishra (1), Krish Didwania (1), Laven Srivastava (1)
+- Sriya Rallabandi (4)
+- Sanchit Singhal (3)
+- Aryan Kamani (2)
+- Ishaan Gakhar (2)
+- Adil Khan (2)
+- Ananya Gupta (1)
+- Saurabh Kumar Mishra (1)
+- Krish Didwania (1)
+- Laven Srivastava (1)
 
 **Research Society Manipal**
-Dyutit Mohanty (1), Bharath Udupa (1), Rashi Goel (1), Komal Mathur (1), Swetha Vemulapalli (1), Hemang Malik (1), Gaurav Pradeep (1)
+- Dyutit Mohanty (1)
+- Bharath Udupa (1)
+- Rashi Goel (1)
+- Komal Mathur (1)
+- Swetha Vemulapalli (1)
+- Hemang Malik (1)
+- Gaurav Pradeep (1)
 
 **AAAI Undergraduate Consortium**
-Hai Le — Singapore
+- Hai Le — Singapore
 
 ## Collaborators
 
 **Lexsi Labs — India**
-Aditya Kasliwal (8), Aditya Tanna (4), Neeraj Kumar Singh (3), Utsav Avaiya (2), Nikita Malik (1), Aadit Sengupta (1), Chirag Chawla (1), Soham Bhattacharjee (1), R E Zera Marveen Lyngkhoi (1)
+- Aditya Kasliwal (8)
+- Aditya Tanna (4)
+- Neeraj Kumar Singh (3)
+- Utsav Avaiya (2)
+- Nikita Malik (1)
+- Aadit Sengupta (1)
+- Chirag Chawla (1)
+- Soham Bhattacharjee (1)
+- R E Zera Marveen Lyngkhoi (1)
 
 **Lexsi Labs — Paris**
-Mohamed Bouadi (4), Mykola Khandoga (1), Rui Yuan (1)
+- Mohamed Bouadi (4)
+- Mykola Khandoga (1)
+- Rui Yuan (1)
 
 **AryaXAI Alignment Labs**
-Yashwardhan Rathore (2), Neeraj Kumar Singh (3)
+- Yashwardhan Rathore (2)
+- Neeraj Kumar Singh (3)
 
 **Mars Rover Manipal**
-Aditya Kasliwal (8), Akshat Bhandari (4), Sriya Rallabandi (4), Sanchit Singhal (3), Kumud Lakara (2), Aryan Kamani (2), Ishaan Gakhar (2), Adil Khan (2), Ananya Gupta (1), Saurabh Kumar Mishra (1), Krish Didwania (1), Laven Srivastava (1)
+- Aditya Kasliwal (8)
+- Akshat Bhandari (4)
+- Sriya Rallabandi (4)
+- Sanchit Singhal (3)
+- Kumud Lakara (2)
+- Aryan Kamani (2)
+- Ishaan Gakhar (2)
+- Adil Khan (2)
+- Ananya Gupta (1)
+- Saurabh Kumar Mishra (1)
+- Krish Didwania (1)
+- Laven Srivastava (1)
 
 **Research Society Manipal**
-Mihir Agarwal (1), Dyutit Mohanty (1), Bharath Udupa (1), Rashi Goel (1), Komal Mathur (1), Swetha Vemulapalli (1), Hemang Malik (1), Gaurav Pradeep (1)
+- Mihir Agarwal (1)
+- Dyutit Mohanty (1)
+- Bharath Udupa (1)
+- Rashi Goel (1)
+- Komal Mathur (1)
+- Swetha Vemulapalli (1)
+- Hemang Malik (1)
+- Gaurav Pradeep (1)
 
 **MIT Manipal / IISc Bangalore**
-Siddhant Bharadwaj (1)
+- Siddhant Bharadwaj (1)
 
 **Manipal University Jaipur**
-Danush Khanna (1), Aditya Kumar Guru (1), Siddharth Shukla (1), Tanuj Tyagi (1)
+- Danush Khanna (1)
+- Aditya Kumar Guru (1)
+- Siddharth Shukla (1)
+- Tanuj Tyagi (1)
 
 **NIT Surathkal**
-Sidhaarth Sredharan Murali (1)
+- Sidhaarth Sredharan Murali (1)
 
 **McGill University**
-Jade Boutot (1), Mary Kang (1)
+- Jade Boutot (1)
+- Mary Kang (1)
 
 **Wells Fargo AI COE**
-Amit Agarwal (1)
+- Amit Agarwal (1)
 
 # 🌐 Events & Conferences
 

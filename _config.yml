@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Pratinav Seth"
-description              : "Research Scientist specializing in LLM post-training (RLHF, DPO, SFT), AI alignment & safety, mechanistic interpretability, and agentic/coding systems. 26+ publications at ICML, ACL, NeurIPS, CVPR, WWW, AAAI. Open to research scientist and applied AI roles."
+description              : "Research Scientist specializing in LLM post-training (RLHF, DPO, SFT), AI alignment & safety, mechanistic interpretability, and agentic/coding systems. 26+ publications at ICML, ACL, NeurIPS, CVPR, WWW, AAAI."
 repository               : "pratinavseth/pratinavseth.github.io"
 google_scholar_stats_use_cdn : true
 url                      : "https://pratinavseth.github.io"
