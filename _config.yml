@@ -7,11 +7,11 @@
 
 # Site Settings
 title                    : "Pratinav Seth"
-description              : "Research Scientist specializing in LLM post-training (RLHF, DPO, SFT), AI alignment & safety, mechanistic interpretability, and agentic/coding systems. 26+ publications at ICML, ACL, NeurIPS, CVPR, WWW, AAAI."
+description              : "Lead Research Scientist at Lexsi Labs. 30+ publications at ICML, ACL, NeurIPS, CVPR, WWW, AAAI. Works on LLM post-training, safety alignment, mechanistic interpretability, and tabular foundation models."
 repository               : "pratinavseth/pratinavseth.github.io"
 google_scholar_stats_use_cdn : true
 url                      : "https://pratinavseth.github.io"
-keywords                 : "LLM alignment, post-training, RLHF, DPO, SFT, mechanistic interpretability, AI safety, safety fine-tuning, agentic systems, coding agents, knowledge distillation, research scientist, machine learning, NLP, computer vision"
+keywords                 : "Pratinav Seth, LLM alignment, safety post-training, RLHF, DPO, SFT, mechanistic interpretability, AI safety, circuit analysis, weight arithmetic, safety fine-tuning, agentic systems, tabular foundation models, knowledge distillation, lead research scientist, machine learning, NLP"
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
@@ -25,9 +25,9 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Pratinav Seth"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Research Scientist | LLM Alignment & Safety | Post-Training (RLHF/DPO) | Mechanistic Interpretability | Agentic Systems"
+  bio              : "Lead Research Scientist | LLM Safety & Alignment | Post-Training (RLHF/DPO/SFT) | Mechanistic Interpretability | Tabular Foundation Models"
   location         : "India"
-  employer         : "Research Scientist @ Lexsi Labs"
+  employer         : "Lead Research Scientist @ Lexsi Labs"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=DwBn1fcAAAAJ"
   email            : "seth.pratinav@gmail.com"

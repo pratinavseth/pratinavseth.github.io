@@ -1,9 +1,9 @@
 ---
 permalink: /
-title: "Pratinav Seth — Research Scientist | LLM Alignment, Post-Training & Mechanistic Interpretability"
-description: "Research Scientist at Lexsi Labs. 26+ publications at ICML, ACL, NeurIPS, CVPR, WWW, AAAI. Expertise: LLM post-training (RLHF, DPO, SFT), AI alignment & safety, mechanistic interpretability, agentic systems, coding agents, knowledge distillation."
-excerpt: "Research Scientist at Lexsi Labs specializing in LLM post-training, AI alignment & safety, mechanistic interpretability, and agentic systems. 26+ publications at ICML, ACL, NeurIPS, CVPR, WWW, AAAI."
-keywords: "Pratinav Seth, LLM alignment, post-training, RLHF, DPO, SFT, mechanistic interpretability, AI safety, agentic systems, coding agents, knowledge distillation, research scientist"
+title: "Pratinav Seth — Lead Research Scientist | LLM Alignment, Post-Training & Mechanistic Interpretability"
+description: "Lead Research Scientist at Lexsi Labs. 30+ publications at ICML, ACL, NeurIPS, CVPR, WWW, AAAI. Expertise: LLM post-training (RLHF, DPO, SFT), AI alignment & safety, mechanistic interpretability, agentic systems, coding agents, knowledge distillation."
+excerpt: "Lead Research Scientist at Lexsi Labs specializing in LLM post-training, AI alignment & safety, mechanistic interpretability, and agentic systems. 30+ publications at ICML, ACL, NeurIPS, CVPR, WWW, AAAI."
+keywords: "Pratinav Seth, LLM alignment, safety post-training, RLHF, DPO, SFT, mechanistic interpretability, AI safety, circuit analysis, weight arithmetic, safety fine-tuning, agentic systems, tabular foundation models, knowledge distillation, lead research scientist, machine learning, NLP"
 author_profile: true
 redirect_from: 
   - /about/
@@ -20,26 +20,31 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # Hi, I'm Pratinav Seth! 👋  
 
-I am a **Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)** with **26+ peer-reviewed publications** across ICML, ACL, NeurIPS, CVPR, and WWW — and currently lead a team of **6+ full-time researchers and 10+ interns** across India and Paris. My research spans **LLM post-training** (alignment, safety fine-tuning, distillation), **agentic systems** (coding agents, agentic training), and **mechanistic interpretability** applied to model safety — with recent work including [AlignTune](https://arxiv.org/abs/2602.09621) (modular post-training toolkit) and [C-ΔΘ](https://arxiv.org/abs/2602.04521) (circuit-level selective refusal via weight arithmetic).
+I am a **Lead Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, leading a team of 6+ researchers and 10+ interns across India and Paris. I work on LLM post-training — safety alignment, mechanistic interpretability, and foundation models for structured data. I have **30+ peer-reviewed publications** at ICML, ACL, NeurIPS, CVPR, WWW, and AAAI. I completed my B.Tech in Data Science from MIT Manipal in 2024. Before Lexsi Labs, I worked at **[Mila Quebec AI Institute](https://mila.quebec/en)** (with Prof. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I am an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)**.
 
-Prior to Lexsi Labs, I completed my B.Tech in Data Science from Manipal Institute of Technology and conducted research at **[Mila Quebec AI Institute](https://mila.quebec/en)** (under Dr. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I am honored to be an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** and am passionate about applying AI for social good, particularly in medical imagery and remote sensing.
+Recent work: [AlignTune](https://arxiv.org/abs/2602.09621) · [C-ΔΘ](https://arxiv.org/abs/2602.04521) · [Forgetting That Sticks](https://arxiv.org/abs/2605.15138) · [TabTune](https://arxiv.org/abs/2511.02802) · [Orion-MSP](https://arxiv.org/abs/2511.02818)
 
-I’m always eager to connect—feel free to reach out or check out my **[Resume](https://linktr.ee/pratinavseth)** for more details. 🚀
+Feel free to reach out or see my **[Resume](https://linktr.ee/pratinavseth)**.
+
+---
+
+Most of my work sits at one question: how do we make what a model learns during training — alignment, safety, and structured reasoning — actually hold up after deployment? On the safety side, I study how fine-tuning and quantization silently erode alignment, and how to find and repair the specific weights responsible, using mechanistic interpretability. This has produced a line of work on circuit-level refusal ([C-ΔΘ](https://arxiv.org/abs/2602.04521)), quantization-permanent unlearning ([Forgetting That Sticks](https://arxiv.org/abs/2605.15138)), and safety drift auditing. On the structured data side, I work on tabular foundation models — how to train them, fine-tune them, and distil them down to something deployable ([TabTune](https://arxiv.org/abs/2511.02802), [Orion-MSP](https://arxiv.org/abs/2511.02818), [Orion-BiX](https://huggingface.co/Lexsi/Orion-BiX)). A lot of this research ships as open-source tools. The next problems I am most interested in are safety in reasoning models and interpretability for agentic systems.
 
 <div style="margin: 1em 0 1.5em 0;">
-  <span style="display:inline-block;background:#e3f2fd;color:#1565c0;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">LLM Post-Training</span>
-  <span style="display:inline-block;background:#e3f2fd;color:#1565c0;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">RLHF &amp; DPO</span>
   <span style="display:inline-block;background:#e8f5e9;color:#2e7d32;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">AI Alignment &amp; Safety</span>
   <span style="display:inline-block;background:#e8f5e9;color:#2e7d32;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Mechanistic Interpretability</span>
-  <span style="display:inline-block;background:#fce4ec;color:#880e4f;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Agentic Systems</span>
-  <span style="display:inline-block;background:#fce4ec;color:#880e4f;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Coding Agents</span>
-  <span style="display:inline-block;background:#fff3e0;color:#e65100;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Knowledge Distillation</span>
-  <span style="display:inline-block;background:#fff3e0;color:#e65100;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">XAI</span>
+  <span style="display:inline-block;background:#e3f2fd;color:#1565c0;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">LLM Post-Training</span>
+  <span style="display:inline-block;background:#e3f2fd;color:#1565c0;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">RLHF &amp; DPO</span>
   <span style="display:inline-block;background:#f3e5f5;color:#4a148c;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Safety Fine-Tuning</span>
+  <span style="display:inline-block;background:#fce4ec;color:#880e4f;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Agentic Systems</span>
+  <span style="display:inline-block;background:#fff3e0;color:#e65100;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Tabular Foundation Models</span>
+  <span style="display:inline-block;background:#fff3e0;color:#e65100;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">Knowledge Distillation</span>
+  <span style="display:inline-block;background:#fce4ec;color:#880e4f;border-radius:12px;padding:3px 12px;margin:3px 4px 3px 0;font-size:0.85em;font-weight:600;">XAI</span>
 </div>
 
 ## 🚀 Key Highlights
-- 📚 **26+ Peer-Reviewed Publications** (9 Main Conference + 17 Workshop) at **ICML, ACL, WWW, NeurIPS, CVPR, AAAI, MICCAI, ICLR, IJCNN, EMNLP, Scientific Reports (Nature)**.
+- 📚 **30+ Peer-Reviewed Publications** (9 Main Conference + 21 Workshop) at **ICML, ACL, WWW, NeurIPS, CVPR, AAAI, MICCAI, ICLR, IJCNN, EMNLP, Scientific Reports (Nature)**.
+- 🔬 **Research Focus**: LLM safety post-training — circuit-level mechanistic interpretability, safety weight arithmetic, unlearning, and post-training alignment.
 - 🏆 **AAAI Undergraduate Consortium Scholar** & Mentor (2023, 2026).
 - 🎤 **Spotlight Talk** at EurIPS Workshop on Private AI Governance, Copenhagen (December 2025).
 
@@ -54,6 +59,10 @@ I’m always eager to connect—feel free to reach out or check out my **[Resume
 # 🔥 News
 
 ## Recent Publications & Acceptances
+- *2026.05*: &nbsp;🎉 **Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees** accepted at **FMSD Workshop @ ICML 2026**!
+- *2026.05*: &nbsp;🎉 **Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap** accepted at **FMSD Workshop @ ICML 2026**!
+- *2026.05*: &nbsp;🎉 **Distilling Tabular Foundation Models for Structured Health Data** accepted at **SD4H Workshop @ ICML 2026**!
+- *2026.05*: &nbsp;🎉 **Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution** accepted at **Mechanistic Interpretability Workshop @ ICML 2026**!
 - *2026.02*: &nbsp;🎉 New Pre-Print: **AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models**!
 - *2026.02*: &nbsp;🎉 New Pre-Print: **C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal**!
 - *2026.01*: &nbsp;🎉 **Orion-Bix: Bi-Axial Attention for Tabular In-Context Learning** accepted at **WWW 2026**!
@@ -68,13 +77,14 @@ I’m always eager to connect—feel free to reach out or check out my **[Resume
 - *2025.05*: &nbsp;🎉 **Alberta Wells Dataset** accepted at **ICML 2025**! (Really Grateful to the Team for their efforts and Prof. David Rolnick)!
 
 ## Academic Service & Reviewing
+- *2026.05*: &nbsp;📝 **Reviewer** for **AI for Good Workshop @ ICML 2026**, **Mechanistic Interpretability Workshop @ ICML 2026**, **TAIGR Workshop @ ICML 2026**, **FMSD Workshop @ ICML 2026**, and **FAIMI-BRIDGE-EPIMI Workshop @ MICCAI 2026**
 - *2026.04*: &nbsp;📝 **Reviewer** for **NeurIPS 2026** & **BMVC 2026**
-- *2026.03*: &nbsp;📝 **Reviewer** for **ECCV 2026** & **ACM SIGMOD Workshop 2026**
+- *2026.03*: &nbsp;📝 **Reviewer** for **ECCV 2026** & **FinDS Workshop @ ACM SIGMOD 2026**
 - *2026.02*: &nbsp;📝 **Reviewer** for **Advances in Financial AI Workshop (ICLR 2026)**
 - *2026.01*: &nbsp;📝 **Reviewer** for **CVPR 2026**
 - *2025.12*: &nbsp;📝 **Mentor** at **AAAI Undergraduate Consortium 2026**
-- *2025.08*: &nbsp;📝 **Reviewer** for **WACV 2026**
 - *2025.09*: &nbsp;📝 **Reviewer** for **RegML Workshop (NeurIPS 2025)**
+- *2025.08*: &nbsp;📝 **Reviewer** for **WACV 2026**
 - *2025.05*: &nbsp;📝 **Reviewer** for **Actionable Interpretability Workshop (ICML 2025)**
 - *2025.04*: &nbsp;📝 **Reviewer** for **ICCV 2025**
 - *2025.03*: &nbsp;📝 **Reviewer** for **IJCNN 2025** & **Advances in Financial AI Workshop (ICLR 2025)**
@@ -85,13 +95,14 @@ I’m always eager to connect—feel free to reach out or check out my **[Resume
 <div style="background:#f8f9fa;border:1px solid #dee2e6;border-radius:6px;padding:14px 18px;margin-bottom:1.5em;">
   <strong>Selected Publications</strong>
   <ul style="margin:0.5em 0 0 0;padding-left:1.2em;">
-    <li><a href="https://arxiv.org/abs/2602.09621">AlignTune</a> — Pre-Print 2026 · Unified post-training library exposing a single interface for SFT, DPO, GRPO and RLHF with interchangeable TRL/Unsloth backends and extensible reward framework</li>
-    <li><a href="https://arxiv.org/abs/2602.04521">C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal</a> — Pre-Print 2026 · Moves selective LLM refusal fully offline via circuit-level mechanistic interpretability and weight arithmetic — no inference-time steering</li>
-    <li><a href="https://arxiv.org/abs/2511.02802">TabTune</a> — <strong>WWW 2026</strong> · Unified open-source library for inference, fine-tuning (SFT, PEFT), and benchmarking of tabular foundation models across 7 architectures</li>
-    <li><a href="https://arxiv.org/pdf/2410.09032">Alberta Wells Dataset</a> — <strong>ICML 2025</strong> · Large-scale satellite imagery benchmark for detecting abandoned oil & gas wells; climate AI collaboration with Mila / McGill</li>
-    <li><a href="https://aclanthology.org/2025.acl-short.52/">SELF-PERCEPT</a> — <strong>ACL 2025</strong> · Two-stage introspection framework (Self-Perception Theory) for detecting multi-person mental manipulation in multi-turn conversations</li>
-    <li><a href="https://arxiv.org/abs/2509.08592">Interpretability as Alignment</a> — EurIPS Workshop 2025 · Position paper arguing mechanistic interpretability should be a first-class design principle in alignment — Spotlight Talk, Copenhagen</li>
-    <li><a href="https://openaccess.thecvf.com/content/CVPR2023W/PBVS/html/Kasliwal_CoReFusion_Contrastive_Regularized_Fusion_for_Guided_Thermal_Super-Resolution_CVPRW_2023_paper.html">CoReFusion</a> — <strong>CVPR Workshop 2023</strong> · Contrastive regularized multimodal fusion for guided thermal super-resolution</li>
+    <li><a href="https://arxiv.org/abs/2605.15138">Forgetting That Sticks</a> — <strong>Mech Interp Workshop, ICML 2026</strong> · Unlearning that survives post-training quantization, achieved by identifying and zeroing the circuit components that store the knowledge</li>
+    <li><a href="https://arxiv.org/abs/2602.04521">C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal</a> — Pre-Print 2026 · Selective LLM refusal via circuit-level weight arithmetic — no inference-time steering, no runtime overhead</li>
+    <li><a href="https://arxiv.org/abs/2602.09621">AlignTune</a> — Pre-Print 2026 · One interface for SFT, DPO, GRPO, and RLHF with interchangeable TRL/Unsloth backends and a modular reward framework</li>
+    <li><a href="https://arxiv.org/abs/2605.15164">Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands</a> — Pre-Print 2026 · Argues that behavioral testing is structurally insufficient for the safety guarantees regulators now require</li>
+    <li><a href="https://arxiv.org/abs/2511.02802">TabTune</a> — <strong>WWW 2026</strong> · Open-source library for inference, fine-tuning, and benchmarking of tabular foundation models across 7 architectures (100+ GitHub stars)</li>
+    <li><a href="https://arxiv.org/pdf/2410.09032">Alberta Wells Dataset</a> — <strong>ICML 2025</strong> · Satellite imagery benchmark for detecting abandoned oil & gas wells; climate AI work with Mila / McGill</li>
+    <li><a href="https://aclanthology.org/2025.acl-short.52/">SELF-PERCEPT</a> — <strong>ACL 2025</strong> · Introspection-based framework for detecting multi-person mental manipulation in multi-turn conversations</li>
+    <li><a href="https://arxiv.org/abs/2509.08592">Interpretability as Alignment</a> — <strong>EurIPS Workshop 2025 (Spotlight)</strong> · Position paper arguing mechanistic interpretability should be a first-class design principle, not a post-hoc audit tool</li>
   </ul>
 </div>
 
@@ -134,7 +145,7 @@ Aditya Kasliwal, **Pratinav Seth**, Vinay Kumar Sankarapu
 
 [SELF-PERCEPT: Introspection Improves Large Language Models' Detection of Multi-Person Mental Manipulation in Conversations](https://aclanthology.org/2025.acl-short.52/)
 
-Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru, Siddharth Shukla, Tanuj Tyagi, SANDEEP CHAURASIA, Kripabandhu Ghosh
+Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru, Siddharth Shukla, Tanuj Tyagi, Sandeep Chaurasia, Kripabandhu Ghosh
 
 [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
 </div>
@@ -261,7 +272,7 @@ Aditya Kasliwal, **Pratinav Seth**, Sriya Rallabandi, Sanchit Singhal
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI Student Abstract 2023</div><img src='images/img3.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI Student Abstract 2024</div><img src='images/img3.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [LaMAR: Laplacian Pyramid for Multimodal Adaptive Super Resolution (Student Abstract)](https://ojs.aaai.org/index.php/AAAI/article/download/30463/32568)
@@ -295,6 +306,56 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 </div>
 </div>
 
+#### Safety Post-Training & Alignment
+
+- [Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution](https://arxiv.org/abs/2605.15138), Saisab Sadhu, **Pratinav Seth**, Vinay Kumar Sankarapu, **Mechanistic Interpretability Workshop, ICML 2026**
+
+- [Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands](https://arxiv.org/abs/2605.15164), **Pratinav Seth**, Vinay Kumar Sankarapu, **Pre-Print**
+
+<!-- Drift Then Repair: A Controlled Cross-Paradigm Audit of Safety in Fine-Tuned LLMs — Pratinav Seth, Anshul Kaushal, Saisab Sadhu, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+
+<!-- Self-Calibrating Weight-Arithmetic Safety-Drift Repair — Pratinav Seth, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+
+<!-- ALIGNBEAM: Inference-Time Alignment Transfer via Cross-Vocabulary Logit Mixing — Chirag Chawla, Pratinav Seth, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+
+<!-- Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation — Soham Bhattacharjee, Karun Sharma, Pratinav Seth, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+
+#### Mechanistic Interpretability & XAI
+
+- [xai_evals: A Framework for Evaluating Post-Hoc Local Explanation Methods](https://arxiv.org/pdf/2502.03014),**Pratinav Seth**, Yashwardhan Rathore, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu, **Technical Report** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+
+<!-- Faithfulness Is Not Actionability: Component Heterogeneity in Discovered Circuits — Pratinav Seth, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+
+<!-- Faithfulness to Refusal: A Causal Audit of Neuron Selectors in LLMs — Ananth Eswar, Pratinav Seth, Utsav Avaiya, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+
+#### Tabular Foundation Models & Distillation
+
+- [Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees](https://arxiv.org/abs/2605.18654), Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Vinay Kumar Sankarapu, **Pratinav Seth**, **Foundation Models for Structured Data (FMSD) Workshop, ICML 2026**
+
+- [Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap](https://arxiv.org/abs/2605.18696), Aditya Tanna, Yash Jignesh Desai, **Pratinav Seth**, Mohamed Bouadi, Nassim Bouarour, Vinay Kumar Sankarapu, **Foundation Models for Structured Data (FMSD) Workshop, ICML 2026**
+
+- [Distilling Tabular Foundation Models for Structured Health Data](https://arxiv.org/abs/2605.18702), Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Vinay Kumar Sankarapu, **Pratinav Seth**, **Structured Data for Health (SD4H) Workshop, ICML 2026**
+
+<!-- Position: Institutional Tabular Foundation Models: Rethinking AI for Enterprise Decision-Making — Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Pratinav Seth, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+
+#### Libraries & Toolkits
+
+<!-- InterpSuite: A Library for Post-Hoc Local XAI Evaluation — Pratinav Seth et al. — Pre-Print (link pending) -->
+
+<!-- SafeTune: A Library for Safety Post-Training of Large Language Models — Pratinav Seth et al. — Pre-Print (link pending) -->
+
+<!-- AgentTune: A Library for Agentic Fine-Tuning and Training — Pratinav Seth et al. — Pre-Print (link pending) -->
+
+<!-- CircuitKit: A Toolkit for Mechanistic Circuit Analysis in LLMs — Pratinav Seth et al. — Pre-Print (link pending) -->
+
+<!-- Reducto: A Library for Knowledge Distillation and Model Reduction — Pratinav Seth et al. — Pre-Print (link pending) -->
+
+<!-- PrunKit: A Toolkit for Structured and Unstructured Pruning — Pratinav Seth et al. — Pre-Print (link pending) -->
+
+<!-- CuratorKit: A Toolkit for Post-Training Data Curation — Pratinav Seth et al. — Pre-Print (link pending) -->
+
+#### Other Work
+
 - [Performance Evaluation of Deep Segmentation Models for Contrails Detection](https://arxiv.org/abs/2111.04665), Akshat Bhandari, Sriya Rallabandi, Sanchit Singhal, Aditya Kasliwal, **Pratinav Seth**, **Tackling Climate Change with Machine Learning Workshop at NeurIPS 2022.** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:2osOgNQ5qMEC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 
 - [Sailing Through Spectra: Unveiling the Potential of Multi-Spectral Information in Marine Debris Segmentation](https://openreview.net/pdf?id=tJPLJS97X4), Dyutit Mohanty, Aditya Kasliwal, Bharath Udupa, **Pratinav Seth**, **The Second Tiny Papers Track at ICLR 2024.** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:roLk4NBRz8UC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
@@ -315,8 +376,6 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 
 - [Analyzing Effects of Fake Training Data on the Performance of Deep Learning Systems](https://arxiv.org/pdf/2303.01268),**Pratinav Seth  (†)**, Akshat Bhandari (†), Kumud Lakara (†), **Pre-Print** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:qjMakFHDy7sC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:qjMakFHDy7sC'></span></strong>
 
-- [xai_evals: A Framework for Evaluating Post-Hoc Local Explanation Methods](https://arxiv.org/pdf/2502.03014),**Pratinav Seth**, Yashwardhan Rathore, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu, **Technical Report** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
-
 
 
 # 🎓 Academic Service
@@ -335,18 +394,26 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
   - Advances in Financial AI Workshop (ICLR 2025-26)
   - Actionable Interpretability Workshop (ICML 2025)
   - RegML Workshop (NeurIPS 2025)
-  - ACM SIGMOD Workshop 2026
+  - FinDS Workshop @ ACM SIGMOD 2026
+  - AI for Good Workshop (ICML 2026)
+  - Mechanistic Interpretability Workshop (ICML 2026)
+  - TAIGR Workshop (ICML 2026)
+  - Foundation Models for Structured Data (FMSD) Workshop (ICML 2026)
+  - FAIMI-BRIDGE-EPIMI Workshop (MICCAI 2026)
 
 # 💻 Professional Experience
 
 ## Research Positions
-- *2026.04 - Present*, **Research Scientist** at [Lexsi Labs](https://lexsi.ai/), Remote
+- *2026.04 - Present*, **Lead Research Scientist** at [Lexsi Labs](https://lexsi.ai/), Remote
   - **LLM Post-Training**: Developing post-training libraries and pipelines for LLM alignment, safety post-training, and knowledge distillation; building modular toolkits for supervised fine-tuning and RLHF-style optimization
   - **Agentic Systems**: Researching agentic training frameworks and coding agents; investigating self-improvement and tool-use capabilities in autonomous LLM-based systems
   - **Interpretability-Guided Safety**: Applying mechanistic interpretability and post-hoc explanation methods to drive safety post-training, selective refusal, and model reliability—leveraging interpretability as a core design principle
+  - **Circuit-Level Safety**: Identifying and repairing safety-critical weights via mechanistic interpretability; building weight arithmetic methods that preserve refusal behaviors across fine-tuning (C-ΔΘ, Forgetting That Sticks)
+  - **Safety Drift Auditing**: Measuring and repairing alignment degradation across fine-tuning paradigms; auditing how safety degrades under SFT, DPO, and GRPO and designing targeted repair methods (Drift Then Repair, Self-Calibrating Repair)
   - **Publications**:
     - AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models. 2026. Pre-print.
     - C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal. 2026. Pre-print.
+    - Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution. 2026. Mechanistic Interpretability Workshop, ICML 2026.
 
 - *2025.07 - 2026.03*, **Research Scientist** at [Lexsi Labs](https://lexsi.ai/), Remote
   - **Tabular Foundation Models**: Contributed to the development of foundation models for tabular data in high-stakes domains; co-developed a library for inference, fine-tuning, and benchmarking of tabular foundation models
@@ -450,14 +517,19 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 ## Mentees
 
 **Lexsi Labs**
-- Aditya Kasliwal (8)
-- Aditya Tanna (4)
-- Utsav Avaiya (2)
+- Aditya Kasliwal (9)
+- Aditya Tanna (7)
+- Utsav Avaiya (3)
+- Saisab Sadhu (2)
+- Chirag Chawla (2)
+- Soham Bhattacharjee (2)
 - Nikita Malik (1)
 - Aadit Sengupta (1)
-- Chirag Chawla (1)
-- Soham Bhattacharjee (1)
 - R E Zera Marveen Lyngkhoi (1)
+- Hem Gosalia (1)
+- Ananth Eswar (1)
+- Anshul Kaushal (1)
+- Karun Sharma (1)
 
 **Manipal University Jaipur**
 - Danush Khanna (1)
@@ -488,20 +560,27 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 ## Collaborators
 
 **Lexsi Labs — India**
-- Aditya Kasliwal (8)
-- Aditya Tanna (4)
+- Aditya Kasliwal (9)
+- Aditya Tanna (7)
 - Neeraj Kumar Singh (3)
-- Utsav Avaiya (2)
+- Utsav Avaiya (3)
+- Saisab Sadhu (2)
+- Chirag Chawla (2)
+- Soham Bhattacharjee (2)
 - Nikita Malik (1)
 - Aadit Sengupta (1)
-- Chirag Chawla (1)
-- Soham Bhattacharjee (1)
 - R E Zera Marveen Lyngkhoi (1)
+- Hem Gosalia (1)
+- Ananth Eswar (1)
+- Anshul Kaushal (1)
+- Karun Sharma (1)
 
 **Lexsi Labs — Paris**
-- Mohamed Bouadi (4)
+- Mohamed Bouadi (7)
+- Nassim Bouarour (3)
 - Mykola Khandoga (1)
 - Rui Yuan (1)
+- Yash Jignesh Desai (1)
 
 **AryaXAI Alignment Labs**
 - Yashwardhan Rathore (2)
