@@ -1,8 +1,8 @@
 ---
 permalink: /
 title: "Pratinav Seth — LLM Post-Training, Safety & Mechanistic Interpretability"
-description: "Lead Research Scientist at Lexsi Labs with 30+ papers at ICML, ACL, NeurIPS, CVPR, WWW, and AAAI. Research: post-training alignment for LLMs, circuit-level mechanistic interpretability, and tabular foundation models."
-excerpt: "Lead Research Scientist at Lexsi Labs. Post-training alignment, circuit-level mechanistic interpretability, and tabular foundation models. 30+ publications."
+description: "Lead Research Scientist at Lexsi Labs with 30+ papers at ICML, ACL, NeurIPS, CVPR, WWW, and AAAI. Research: post-training alignment for LLMs and circuit-level mechanistic interpretability."
+excerpt: "Lead Research Scientist at Lexsi Labs. Post-training alignment and circuit-level mechanistic interpretability. 30+ publications at ICML, ACL, NeurIPS, CVPR, WWW, and AAAI."
 keywords: "Pratinav Seth, LLM alignment, safety post-training, RLHF, DPO, SFT, mechanistic interpretability, AI safety, circuit analysis, weight arithmetic, safety fine-tuning, agentic systems, tabular foundation models, knowledge distillation, lead research scientist, machine learning, NLP"
 author_profile: true
 redirect_from: 
