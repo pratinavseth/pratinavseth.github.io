@@ -253,6 +253,10 @@ Aditya Tanna, **Pratinav Seth**, Mohamed Bouadi, Utsav Avaiya, Vinay Kumar Sanka
 
 #### Libraries & Toolkits
 
+- [AlignTune](https://arxiv.org/abs/2602.09621) — Modular post-training toolkit: SFT, DPO, GRPO, and RLHF with interchangeable backends. **Pre-Print 2026.**
+- [TabTune](https://arxiv.org/abs/2511.02802) — Unified inference and fine-tuning library for tabular foundation models across 7 architectures. **WWW 2026** (100+ GitHub stars).
+- [DLBacktrace](https://arxiv.org/pdf/2411.12643) — Model-agnostic explainability for deep learning models. **IJCNN 2025.**
+- [xai_evals](https://arxiv.org/pdf/2502.03014) — Framework for evaluating post-hoc local explanation methods. **Technical Report 2025.**
 
 <!-- InterpSuite: A Library for Post-Hoc Local XAI Evaluation — Pratinav Seth et al. — Pre-Print (link pending) -->
 

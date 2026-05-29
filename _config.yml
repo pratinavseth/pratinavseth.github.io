@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Pratinav Seth"
-description              : "Lead Research Scientist at Lexsi Labs. 30+ publications at ICML, ACL, NeurIPS, CVPR, WWW, AAAI. Works on LLM post-training, safety alignment, mechanistic interpretability, and tabular foundation models."
+description              : "Lead Research Scientist at Lexsi Labs. Post-training alignment, mechanistic interpretability, and tabular foundation models. 30+ papers at ICML, ACL, NeurIPS, CVPR, WWW, and AAAI."
 repository               : "pratinavseth/pratinavseth.github.io"
 google_scholar_stats_use_cdn : true
 url                      : "https://pratinavseth.github.io"
@@ -25,7 +25,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 author:
   name             : "Pratinav Seth"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Lead Research Scientist | LLM Safety & Alignment | Post-Training (RLHF/DPO/SFT) | Mechanistic Interpretability | Tabular Foundation Models"
+  bio              : "LLM Post-Training · AI Safety · Mechanistic Interpretability"
   location         : "India"
   employer         : "Lead Research Scientist @ Lexsi Labs"
   pubmed           : 
