@@ -175,7 +175,7 @@
 .greedy-nav {
   position: relative;
   min-width: 250px;
-  background: $background-color;
+  background: transparent;
 
   a {
     display: block;
@@ -183,6 +183,10 @@
     padding: 0.5rem 0;
     color: $masthead-link-color;
     text-decoration: none;
+    font-size: 0.85em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 
     &:hover {
       color: $masthead-link-color-hover;

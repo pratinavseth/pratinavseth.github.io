@@ -5,6 +5,67 @@
    ========================================================================== */
 
 /*
+   Site hero — full-bleed identity band, breaks out of the sidebar grid
+   ========================================================================== */
+
+.site-hero {
+  width: 100%;
+  padding: 4.5rem 1em 3.5rem;
+  border-bottom: 1px solid $border-color;
+  animation: intro 0.3s both;
+  animation-delay: 0.2s;
+
+  &__inner {
+    max-width: $x-large;
+    margin: 0 auto;
+  }
+
+  &__eyebrow {
+    margin: 0 0 0.6em;
+    font-family: $sans-serif;
+    font-size: 0.85em;
+    font-weight: 600;
+    color: $accent-color;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  &__name {
+    margin: 0 0 0.15em;
+    font-family: $serif-display;
+    font-weight: 600;
+    font-size: clamp(2.75rem, 6vw, 4.75rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: $text-color;
+  }
+
+  &__tagline {
+    margin: 0 0 2rem;
+    max-width: 42ch;
+    font-family: $global-font-family;
+    font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+    color: $gray;
+  }
+
+  &__stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
+    gap: 2.5rem;
+  }
+
+  .stat-tile__number {
+    font-size: 2.6em;
+  }
+}
+
+@include breakpoint($large) {
+  .site-hero {
+    padding: 6rem 1em 4.5rem;
+  }
+}
+
+/*
    Tags — topic/skill pills
    ========================================================================== */
 

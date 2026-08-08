@@ -8,6 +8,19 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+hero:
+  eyebrow: "Lead Research Scientist · Lexsi Labs"
+  name: "Pratinav Seth"
+  tagline: "LLM post-training, safety alignment, and mechanistic interpretability — with a growing focus on AI agents and evaluation."
+  stats:
+    - number: "48"
+      label: "Papers"
+    - number: "31"
+      label: "Peer-Reviewed"
+    - number: "210+"
+      label: "Citations"
+    - number: "8"
+      label: "h-index"
 ---
 
 {% if site.google_scholar_stats_use_cdn %}
@@ -18,9 +31,9 @@ redirect_from:
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
-# Hi, I'm Pratinav Seth!
+## About
 
-I am a **Lead Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, leading the Model Science group across India and Paris. I work on LLM post-training — safety alignment, mechanistic interpretability, and foundation models for structured data — with a growing focus on AI agents and evaluation. My work has appeared at ICML, ACL, WWW, MIDL, and Nature Scientific Reports. I completed my B.Tech in Data Science from MIT Manipal in 2024. Before Lexsi Labs, I worked at **[Mila Quebec AI Institute](https://mila.quebec/en)** (with Prof. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I am an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** (2023 → Mentor, 2026).
+Leading the Model Science group at **[Lexsi Labs](https://lexsi.ai/)** across India and Paris. I completed my B.Tech in Data Science from MIT Manipal in 2024. Before Lexsi Labs, I worked at **[Mila Quebec AI Institute](https://mila.quebec/en)** (with Prof. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I am an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** (2023 → Mentor, 2026).
 
 Recent work: [AlignTune](https://arxiv.org/abs/2602.09621) · [CircuitKIT](https://arxiv.org/abs/2607.19317) · [C-ΔΘ](https://arxiv.org/abs/2602.04521) · [CuratorKIT](https://arxiv.org/abs/2606.21631) · [SafeTune](https://github.com/Lexsi-Labs/SafeTune) · [Forgetting That Sticks](https://arxiv.org/abs/2605.15138) · [TabTune](https://arxiv.org/abs/2511.02802) · [Orion-MSP](https://arxiv.org/abs/2511.02818)
 
@@ -44,14 +57,7 @@ I started in computer vision and medical imaging — uncertainty quantification,
 
 ## Key Highlights
 
-<div class="stat-grid">
-  <div class="stat-tile"><span class="stat-tile__number">48</span><span class="stat-tile__label">Papers</span></div>
-  <div class="stat-tile"><span class="stat-tile__number">31</span><span class="stat-tile__label">Peer-Reviewed</span></div>
-  <div class="stat-tile"><span class="stat-tile__number">210+</span><span class="stat-tile__label">Citations</span></div>
-  <div class="stat-tile"><span class="stat-tile__number">8</span><span class="stat-tile__label">h-index</span></div>
-</div>
-
-At ICML, ACL, WWW, MIDL, IJCNN, AAAI, and Nature Scientific Reports, plus workshops and shared tasks at CVPR, NeurIPS, ICLR, MICCAI, EurIPS, ACL, and SIGMOD.
+Published at ICML, ACL, WWW, MIDL, IJCNN, AAAI, and Nature Scientific Reports, plus workshops and shared tasks at CVPR, NeurIPS, ICLR, MICCAI, EurIPS, ACL, and SIGMOD.
 
 - **Research Focus**: LLM safety post-training — circuit-level mechanistic interpretability, safety weight arithmetic, unlearning, post-training alignment, and a growing focus on AI agents & evaluation.
 - **7 open-source libraries released** — see [Libraries & Toolkits](#libraries--toolkits) below.

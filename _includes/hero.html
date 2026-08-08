@@ -1,0 +1,20 @@
+{% if page.hero %}
+<div class="site-hero">
+  <div class="site-hero__inner">
+    <p class="site-hero__eyebrow">{{ page.hero.eyebrow }}</p>
+    <h1 class="site-hero__name">{{ page.hero.name }}</h1>
+    <p class="site-hero__tagline">{{ page.hero.tagline }}</p>
+
+    {% if page.hero.stats %}
+    <div class="site-hero__stats">
+      {% for stat in page.hero.stats %}
+      <div class="stat-tile">
+        <span class="stat-tile__number">{{ stat.number }}</span>
+        <span class="stat-tile__label">{{ stat.label }}</span>
+      </div>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
