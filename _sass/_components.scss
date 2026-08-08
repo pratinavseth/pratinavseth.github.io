@@ -1,0 +1,247 @@
+/* ==========================================================================
+   Components — Minimalist Editorial system
+   Consolidates the one-off inline-styled elements previously scattered
+   through _pages/about.md into a single, reusable set of classes.
+   ========================================================================== */
+
+/*
+   Tags — topic/skill pills
+   ========================================================================== */
+
+.tag-row {
+  margin: 1em 0 1.5em 0;
+}
+
+.tag {
+  display: inline-block;
+  border-radius: 9999px;
+  padding: 3px 12px;
+  margin: 3px 4px 3px 0;
+  font-size: 0.8em;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.tag--interp {
+  background: #EDF3EC;
+  color: #346538;
+}
+
+.tag--training {
+  background: #E1F3FE;
+  color: #1F6C9F;
+}
+
+.tag--alignment {
+  background: #F1EAF6;
+  color: #6B3FA0;
+}
+
+.tag--agentic {
+  background: #FBEAF0;
+  color: #9F2F6B;
+}
+
+.tag--tabular {
+  background: #FBF3DB;
+  color: #956400;
+}
+
+/*
+   Muted card — e.g. the Selected Publications box
+   ========================================================================== */
+
+.card--muted {
+  background: $surface-color;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-lg;
+  padding: 24px;
+  margin-bottom: 1.5em;
+}
+
+/*
+   Stat grid — Key Highlights headline numbers
+   ========================================================================== */
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 24px;
+  margin: 1em 0 1.5em 0;
+}
+
+.stat-tile {
+  text-align: left;
+
+  .stat-tile__number {
+    display: block;
+    font-family: $serif-display;
+    font-size: 2.2em;
+    font-weight: 600;
+    color: $text-color;
+    line-height: 1.1;
+  }
+
+  .stat-tile__label {
+    display: block;
+    margin-top: 0.25em;
+    font-size: 0.8em;
+    color: $gray;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+}
+
+/*
+   Collapsible section — e.g. Collaborators & Mentees
+   ========================================================================== */
+
+.page__content details {
+  margin: 1.5em 0;
+  padding-top: 1em;
+  border-top: 1px solid $border-color;
+
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: $text-color;
+    list-style: revert;
+  }
+
+  h2 {
+    margin-top: 1.5em;
+  }
+}
+
+/*
+   Timeline list — dated entries (News, etc.)
+   Overrides the global `ul li { margin-bottom }` rule locally rather than
+   touching it site-wide.
+   ========================================================================== */
+
+.timeline-list {
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  li {
+    margin-bottom: 0;
+    padding: 0.85em 0;
+    border-top: 1px solid $border-color;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  .timeline-list__date {
+    display: block;
+    font-size: 0.8em;
+    color: $gray;
+    margin-bottom: 0.2em;
+  }
+}
+
+/*
+   Role list — Professional Experience entries
+   ========================================================================== */
+
+.role-list > ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  > li {
+    margin-bottom: 0;
+    padding: 1.5em 0;
+    border-top: 1px solid $border-color;
+
+    &:first-child {
+      border-top: none;
+      padding-top: 0;
+    }
+  }
+}
+
+.role-list__date {
+  display: block;
+  font-size: 0.8em;
+  color: $gray;
+  margin-bottom: 0.3em;
+}
+
+/*
+   Paper box — the recurring "featured publication" card
+   (moved here from assets/css/main.scss, retinted to the token system)
+   ========================================================================== */
+
+.paper-box {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $border-color;
+  padding: 2em 0 2em 0;
+
+  .paper-box-image {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    order: 2;
+
+    img {
+      max-width: 400px;
+      box-shadow: $box-shadow;
+      border-radius: $border-radius-lg;
+      object-fit: cover;
+      transition: $global-transition;
+    }
+  }
+
+  &:hover .paper-box-image img {
+    box-shadow: $box-shadow-hover;
+  }
+
+  .paper-box-text {
+    max-width: 100%;
+    order: 1;
+  }
+
+  @include breakpoint($medium) {
+    .paper-box-image {
+      justify-content: left;
+      min-width: 200px;
+      max-width: 40%;
+      order: 1;
+    }
+
+    .paper-box-text {
+      justify-content: left;
+      padding-left: 2em;
+      max-width: 60%;
+      order: 2;
+    }
+  }
+}
+
+/* Venue/status badge on paper thumbnails.
+   Note: intentionally has no top/left/right/bottom offsets — it relies on
+   the CSS static-position fallback (its in-flow position, then nudged by
+   margin) to land at the image's top-left corner, since no ancestor here
+   is `position: relative`. Do not give .paper-box-image (or any wrapper)
+   `position: relative` — that would give it a new containing block and
+   move the badge away from the image corner. */
+.badge {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: absolute;
+  margin-top: 0.5em;
+  margin-left: -0.5em;
+  color: $surface-color;
+  background-color: $accent-color;
+  border-radius: $border-radius;
+  font-size: 0.8em;
+}

@@ -72,6 +72,7 @@
 
   /* paragraph indents */
   p {
+    max-width: 70ch;
     margin: 0 0 $indent-var;
 
     /* sibling indentation*/

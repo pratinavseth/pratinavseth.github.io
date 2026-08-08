@@ -1,0 +1,20 @@
+<div class="page__footer">
+  <footer>
+    <div class="page__footer-follow">
+      <ul class="social-icons">
+        {% if site.author.github %}
+        <li><a href="https://github.com/{{ site.author.github }}" title="GitHub"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if site.author.linkedin %}
+        <li><a href="https://www.linkedin.com/in/{{ site.author.linkedin }}" title="LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a></li>
+        {% endif %}
+        {% if site.author.twitter %}
+        <li><a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i></a></li>
+        {% endif %}
+      </ul>
+    </div>
+    <div class="page__footer-copyright">
+      &copy; {{ 'now' | date: "%Y" }} {{ site.author.name | default: site.title }}. Built with <a href="https://jekyllrb.com">Jekyll</a>. Source on <a href="https://github.com/{{ site.repository }}">GitHub</a>.
+    </div>
+  </footer>
+</div>
