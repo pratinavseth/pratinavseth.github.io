@@ -1,7 +1,12 @@
 """
-Regenerates the "Collaborators" list in _pages/about.md from the actual
-co-author lists in the Publications section, instead of hand-maintained
+Regenerates the "Collaborators" list in _pages/service-skills.md from the
+actual co-author lists in _pages/publications.md, instead of hand-maintained
 counts. Run this after adding/removing papers from Publications.
+
+Usage:
+    python3 generate_collaborators.py --write      # regenerate service-skills.md in place
+    python3 generate_collaborators.py --markdown   # print the generated block only
+    python3 generate_collaborators.py              # print raw counts (debugging)
 
 Institution/relationship metadata (Manager / Mentor / which institution a
 collaborator belongs to) is NOT derivable from co-authorship alone, so that
@@ -13,7 +18,8 @@ import re
 import sys
 from collections import Counter
 
-ABOUT_MD = "_pages/about.md"
+PUBLICATIONS_MD = "_pages/publications.md"
+SERVICE_SKILLS_MD = "_pages/service-skills.md"
 
 # Author -> (institution label, relationship: "manager" | "mentor" | "mentee" | "collaborator")
 # Only used for grouping/labelling; counts are always computed from papers.
@@ -169,7 +175,7 @@ def extract_authors_from_line(line):
 
 
 def main():
-    with open(ABOUT_MD, encoding="utf-8") as f:
+    with open(PUBLICATIONS_MD, encoding="utf-8") as f:
         content = f.read()
 
     lines = content.splitlines()
@@ -289,9 +295,36 @@ def render_markdown(counts):
     return "\n".join(parts)
 
 
+def write_service_skills(generated_markdown):
+    """Splice the generated Managers/Mentors/Mentees/Collaborators block into
+    _pages/service-skills.md, replacing everything from '## Managers' up to
+    (not including) the closing '</details>'."""
+    with open(SERVICE_SKILLS_MD, encoding="utf-8") as f:
+        lines = f.readlines()
+
+    start_idx = end_idx = None
+    for i, l in enumerate(lines):
+        if l.rstrip("\n") == "## Managers":
+            start_idx = i
+        if l.rstrip("\n") == "</details>":
+            end_idx = i
+            break
+
+    if start_idx is None or end_idx is None:
+        print(f"Could not find '## Managers' / '</details>' markers in {SERVICE_SKILLS_MD}", file=sys.stderr)
+        sys.exit(1)
+
+    new_lines = lines[:start_idx] + [generated_markdown.rstrip("\n") + "\n", "\n"] + lines[end_idx:]
+    with open(SERVICE_SKILLS_MD, "w", encoding="utf-8") as f:
+        f.writelines(new_lines)
+    print(f"Wrote generated Collaborators block into {SERVICE_SKILLS_MD}", file=sys.stderr)
+
+
 if __name__ == "__main__":
     counts, papers_seen = main()
-    if "--markdown" in sys.argv:
+    if "--write" in sys.argv:
+        write_service_skills(render_markdown(counts))
+    elif "--markdown" in sys.argv:
         print(render_markdown(counts))
     else:
         for name, n in counts.most_common():

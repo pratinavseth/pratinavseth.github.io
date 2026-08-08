@@ -1,7 +1,7 @@
 /* ==========================================================================
-   Components — Minimalist Editorial system
+   Components — Industrial Brutalist (Swiss Industrial Print)
    Consolidates the one-off inline-styled elements previously scattered
-   through _pages/about.md into a single, reusable set of classes.
+   through the content pages into a single, reusable set of classes.
    ========================================================================== */
 
 /*
@@ -10,8 +10,8 @@
 
 .site-hero {
   width: 100%;
-  padding: 3.5rem 1em 3rem;
-  border-bottom: 1px solid $border-color;
+  padding: 3rem 1em 2.5rem;
+  border-bottom: 2px solid $border-color;
   animation: intro 0.3s both;
   animation-delay: 0.2s;
 
@@ -36,16 +36,17 @@
       display: block;
       width: 96px;
       height: 96px;
-      border-radius: 50%;
+      border-radius: 0;
       object-fit: cover;
-      box-shadow: $box-shadow;
+      border: 2px solid $text-color;
+      filter: grayscale(100%) contrast(1.1);
     }
   }
 
   &__links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.4em 1.4em;
+    gap: 0.6em 1.6em;
     margin: 1.75rem 0 0;
     padding: 0;
     list-style: none;
@@ -58,8 +59,11 @@
       display: inline-flex;
       align-items: center;
       gap: 0.4em;
-      font-size: 0.85em;
+      font-family: $monospace;
+      font-size: 0.75em;
       font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
       color: $text-color;
       text-decoration: none;
 
@@ -75,21 +79,30 @@
 
   &__eyebrow {
     margin: 0 0 0.6em;
-    font-family: $sans-serif;
-    font-size: 0.85em;
+    font-family: $monospace;
+    font-size: 0.8em;
     font-weight: 600;
     color: $accent-color;
     text-transform: uppercase;
     letter-spacing: 0.08em;
+
+    &:before {
+      content: "[ ";
+    }
+
+    &:after {
+      content: " ]";
+    }
   }
 
   &__name {
     margin: 0 0 0.15em;
-    font-family: $serif-display;
-    font-weight: 600;
-    font-size: clamp(2.75rem, 6vw, 4.75rem);
-    line-height: 1;
-    letter-spacing: -0.02em;
+    font-family: $display-heavy;
+    font-weight: 900;
+    font-size: clamp(3rem, 9vw, 7rem);
+    line-height: 0.9;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
     color: $text-color;
   }
 
@@ -97,18 +110,27 @@
     margin: 0 0 2rem;
     max-width: 42ch;
     font-family: $global-font-family;
-    font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
     color: $gray;
   }
 
   &__stats {
-    display: grid;
+    display: inline-grid;
+    width: fit-content;
+    max-width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(120px, max-content));
-    gap: 2.5rem;
+    gap: 1px;
+    background: $border-color;
+    border: 1px solid $border-color;
+
+    .stat-tile {
+      background: $bg-color;
+      padding: 1em 1.5em 1em 0;
+    }
   }
 
   .stat-tile__number {
-    font-size: 2.6em;
+    font-size: 2.75em;
   }
 }
 
@@ -126,12 +148,12 @@
 
 @include breakpoint($large) {
   .site-hero {
-    padding: 5rem 1em 4rem;
+    padding: 4rem 1em 3rem;
   }
 }
 
 /*
-   Tags — topic/skill pills
+   Tags — topic/skill labels
    ========================================================================== */
 
 .tag-row {
@@ -140,37 +162,27 @@
 
 .tag {
   display: inline-block;
-  border-radius: 9999px;
-  padding: 3px 12px;
-  margin: 3px 4px 3px 0;
-  font-size: 0.8em;
+  border-radius: 0;
+  border: 1px solid $text-color;
+  padding: 3px 10px;
+  margin: 0 8px 8px 0;
+  font-family: $monospace;
+  font-size: 0.7em;
   font-weight: 600;
-  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $text-color;
+  background: transparent;
 }
 
-.tag--interp {
-  background: #EDF3EC;
-  color: #346538;
-}
-
-.tag--training {
-  background: #E1F3FE;
-  color: #1F6C9F;
-}
-
-.tag--alignment {
-  background: #F1EAF6;
-  color: #6B3FA0;
-}
-
-.tag--agentic {
-  background: #FBEAF0;
-  color: #9F2F6B;
-}
-
+.tag--interp,
+.tag--training,
+.tag--alignment,
+.tag--agentic,
 .tag--tabular {
-  background: #FBF3DB;
-  color: #956400;
+  background: transparent;
+  color: $text-color;
+  border-color: $text-color;
 }
 
 /*
@@ -179,21 +191,30 @@
 
 .card--muted {
   background: $surface-color;
-  border: 1px solid $border-color;
-  border-radius: $border-radius-lg;
+  border: 1px solid $text-color;
+  border-radius: 0;
   padding: 24px;
   margin-bottom: 1.5em;
 }
 
 /*
-   Stat grid — Key Highlights headline numbers
+   Stat grid — generic reusable stat block (not currently used outside hero,
+   kept token-consistent for future content)
    ========================================================================== */
 
 .stat-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 24px;
+  gap: 1px;
+  background: $border-color;
+  border: 1px solid $border-color;
   margin: 1em 0 1.5em 0;
+  max-width: 700px;
+
+  .stat-tile {
+    background: $bg-color;
+    padding: 1em;
+  }
 }
 
 .stat-tile {
@@ -201,20 +222,21 @@
 
   .stat-tile__number {
     display: block;
-    font-family: $serif-display;
+    font-family: $display-heavy;
     font-size: 2.2em;
-    font-weight: 600;
+    font-weight: 900;
     color: $text-color;
-    line-height: 1.1;
+    line-height: 1;
   }
 
   .stat-tile__label {
     display: block;
-    margin-top: 0.25em;
-    font-size: 0.8em;
+    margin-top: 0.35em;
+    font-family: $monospace;
+    font-size: 0.7em;
     color: $gray;
     text-transform: uppercase;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -225,11 +247,15 @@
 .page__content details {
   margin: 1.5em 0;
   padding-top: 1em;
-  border-top: 1px solid $border-color;
+  border-top: 2px solid $border-color;
 
   summary {
     cursor: pointer;
+    font-family: $monospace;
+    font-size: 0.85em;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
     color: $text-color;
     list-style: revert;
   }
@@ -250,16 +276,19 @@
   img {
     display: block;
     width: 100%;
-    border-radius: $border-radius-lg;
-    box-shadow: $box-shadow;
+    border-radius: 0;
+    border: 2px solid $text-color;
+    filter: grayscale(100%) contrast(1.1);
   }
 
   figcaption {
     margin-top: 0.5em;
-    font-size: 0.8em;
+    font-family: $monospace;
+    font-size: 0.7em;
     color: $gray;
-    font-family: $caption-font-family;
-    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-style: normal;
   }
 }
 
@@ -288,9 +317,13 @@
 
   .timeline-list__date {
     display: block;
-    font-size: 0.8em;
+    font-family: $monospace;
+    font-size: 0.7em;
+    font-weight: 600;
     color: $gray;
-    margin-bottom: 0.2em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.3em;
   }
 }
 
@@ -317,14 +350,17 @@
 
 .role-list__date {
   display: block;
-  font-size: 0.8em;
+  font-family: $monospace;
+  font-size: 0.7em;
+  font-weight: 600;
   color: $gray;
-  margin-bottom: 0.3em;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.4em;
 }
 
 /*
    Paper box — the recurring "featured publication" card
-   (moved here from assets/css/main.scss, retinted to the token system)
    ========================================================================== */
 
 .paper-box {
@@ -344,15 +380,17 @@
 
     img {
       max-width: 400px;
-      box-shadow: $box-shadow;
-      border-radius: $border-radius-lg;
+      box-shadow: none;
+      border: 2px solid $text-color;
+      border-radius: 0;
       object-fit: cover;
+      filter: grayscale(100%) contrast(1.1);
       transition: $global-transition;
     }
   }
 
   &:hover .paper-box-image img {
-    box-shadow: $box-shadow-hover;
+    border-color: $accent-color;
   }
 
   .paper-box-text {
@@ -385,13 +423,17 @@
    `position: relative` — that would give it a new containing block and
    move the badge away from the image corner. */
 .badge {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   position: absolute;
   margin-top: 0.5em;
   margin-left: -0.5em;
-  color: $surface-color;
-  background-color: $accent-color;
-  border-radius: $border-radius;
-  font-size: 0.8em;
+  color: $bg-color;
+  background-color: $text-color;
+  border-radius: 0;
+  font-family: $monospace;
+  font-size: 0.7em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }

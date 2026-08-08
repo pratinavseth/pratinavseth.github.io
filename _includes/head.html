@@ -10,13 +10,13 @@
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
 </script>
 
-<!-- Editorial display serif (headings only) -->
+<!-- Macro display grotesque (headings) + monospace (metadata/labels) -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,500;0,600;1,500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="assets/css/main.css?v={{ site.time | date: '%s' }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <meta http-equiv="cleartype" content="on">
 <head>

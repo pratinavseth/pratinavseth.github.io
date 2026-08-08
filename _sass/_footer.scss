@@ -4,24 +4,16 @@
 
 .page__footer {
   @include clearfix;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
+  flex-shrink: 0;
   width: 100%;
-  clear: both;
-  /* sticky footer fix start */
-  position: absolute;
-  bottom: 0em;
-  height: auto;
-  /* sticky footer fix end */
   margin-top: 3em;
-  color: mix(#fff, $gray, 25%);
+  color: $gray;
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  background-color: $lighter-gray;
-  border-top: 1px solid $light-gray;
+  background-color: $bg-color;
+  border-top: 2px solid $border-color;
 
   footer {
     @include clearfix;
@@ -54,8 +46,10 @@
 }
 
 .page__footer-copyright {
-  font-family: $global-font-family;
-  font-size: $type-size-7;
+  font-family: $monospace;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .page__footer-follow {

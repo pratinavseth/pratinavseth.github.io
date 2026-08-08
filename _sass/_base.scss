@@ -2,12 +2,14 @@
    BASE ELEMENTS
    ========================================================================== */
 html {
-  /* sticky footer fix */
-  position: relative;
   min-height: 100%;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-height: 100dvh;
   margin: 0;
   padding: 0;
   padding-bottom: 0em;
@@ -21,6 +23,13 @@ body {
   }
 }
 
+/* Flexbox sticky footer: #main grows to absorb extra space, footer.html
+   sits in normal flow right after it — no absolute-positioning hack, so it
+   can never overlap trailing content regardless of page length. */
+#main {
+  flex: 1 0 auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 0.5em;
   line-height: 1.2;
@@ -31,8 +40,11 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   // margin: 4em 0 0.5em;
   margin-top: 1em;
-  font-size: $type-size-3;
-  letter-spacing: -0.01em;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 h2 {

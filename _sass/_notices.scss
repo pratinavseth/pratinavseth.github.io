@@ -16,10 +16,10 @@
   font-family: $global-font-family;
   font-size: $type-size-6 !important;
   text-indent: initial; /* override*/
-  background-color: mix(#fff, $notice-color, 90%);
-  border-radius: $border-radius-lg;
+  background-color: transparent;
+  border-radius: 0;
   box-shadow: none;
-  border-left: 4px solid $notice-color;
+  border: 2px solid $notice-color;
 
   h4 {
     margin-top: 0 !important; /* override*/
