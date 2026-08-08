@@ -10,7 +10,7 @@
 
 .site-hero {
   width: 100%;
-  padding: 4.5rem 1em 3.5rem;
+  padding: 3.5rem 1em 3rem;
   border-bottom: 1px solid $border-color;
   animation: intro 0.3s both;
   animation-delay: 0.2s;
@@ -18,6 +18,59 @@
   &__inner {
     max-width: $x-large;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  &__main {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  &__portrait {
+    flex: 0 0 auto;
+
+    img {
+      display: block;
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4em 1.4em;
+    margin: 1.75rem 0 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4em;
+      font-size: 0.85em;
+      font-weight: 600;
+      color: $text-color;
+      text-decoration: none;
+
+      &:hover {
+        color: $accent-color;
+      }
+
+      i {
+        color: $gray;
+      }
+    }
   }
 
   &__eyebrow {
@@ -59,9 +112,21 @@
   }
 }
 
+@include breakpoint($medium) {
+  .site-hero__inner {
+    flex-direction: row !important;
+    justify-content: space-between;
+  }
+
+  .site-hero__portrait img {
+    width: 128px;
+    height: 128px;
+  }
+}
+
 @include breakpoint($large) {
   .site-hero {
-    padding: 6rem 1em 4.5rem;
+    padding: 5rem 1em 4rem;
   }
 }
 
@@ -171,6 +236,30 @@
 
   h2 {
     margin-top: 1.5em;
+  }
+}
+
+/*
+   Event photo — inline figure with caption (Events & Conferences)
+   ========================================================================== */
+
+.event-photo {
+  max-width: 360px;
+  margin: 0 0 1.5em;
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: $border-radius-lg;
+    box-shadow: $box-shadow;
+  }
+
+  figcaption {
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    color: $gray;
+    font-family: $caption-font-family;
+    font-style: italic;
   }
 }
 

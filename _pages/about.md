@@ -705,6 +705,11 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 
 ## Industry Events
 
+<figure class="event-photo">
+  <img src="{{ '/images/india-ai-summit-2026.jpg' | relative_url }}" alt="Pratinav Seth at the India AI Impact Summit 2026, Bharat Mandapam, New Delhi">
+  <figcaption>India AI Impact Summit 2026 — Bharat Mandapam, New Delhi (February 2026)</figcaption>
+</figure>
+
 - *2026.02*, **India AI Impact Summit 2026**, Bharat Mandapam, New Delhi *(representing Lexsi Labs)*
   - Attended **AI Safety Connect Day** hosted by the International Association for Safe and Ethical Artificial Intelligence — discussions on interpretability, transparency, and safety in real-world AI deployment
   - Participated in **closed-door roundtable** by The Dialogue: *"Powering the AI Frontier: Building India's Compute, Infrastructure, and Trust Backbone for Inclusive AI Growth"*

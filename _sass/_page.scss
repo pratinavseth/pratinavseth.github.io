@@ -34,6 +34,19 @@
   }
 }
 
+/* full-width single column — no sidebar */
+.page--full {
+  float: none;
+  width: 100%;
+  margin: 0;
+
+  .page__inner-wrap {
+    float: none;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
 .page__title {
   margin-top: 0;
   line-height: 1;
