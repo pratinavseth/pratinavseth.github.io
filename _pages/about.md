@@ -1,9 +1,9 @@
 ---
 permalink: /
 title: "Pratinav Seth — LLM Post-Training, Safety & Mechanistic Interpretability"
-description: "Lead Research Scientist at Lexsi Labs with 30+ papers at ICML, ACL, NeurIPS, CVPR, WWW, and AAAI. Research: post-training alignment for LLMs and circuit-level mechanistic interpretability."
-excerpt: "Lead Research Scientist at Lexsi Labs. Post-training alignment and circuit-level mechanistic interpretability. 30+ publications at ICML, ACL, NeurIPS, CVPR, WWW, and AAAI."
-keywords: "Pratinav Seth, LLM alignment, safety post-training, RLHF, DPO, SFT, mechanistic interpretability, AI safety, circuit analysis, weight arithmetic, safety fine-tuning, agentic systems, tabular foundation models, knowledge distillation, lead research scientist, machine learning, NLP"
+description: "Lead Research Scientist at Lexsi Labs with 48 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, MIDL, and Nature Scientific Reports. Research: post-training alignment for LLMs and circuit-level mechanistic interpretability."
+excerpt: "Lead Research Scientist at Lexsi Labs. Post-training alignment and circuit-level mechanistic interpretability. 48 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
+keywords: "Pratinav Seth, LLM alignment, safety post-training, RLHF, DPO, SFT, mechanistic interpretability, AI safety, circuit analysis, weight arithmetic, safety fine-tuning, agentic systems, AI agents, evaluation, tabular foundation models, knowledge distillation, lead research scientist, machine learning, NLP"
 author_profile: true
 redirect_from: 
   - /about/
@@ -20,9 +20,9 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 # Hi, I'm Pratinav Seth! 👋  
 
-I am a **Lead Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, leading a research team across India and Paris. I work on LLM post-training — safety alignment, mechanistic interpretability, and foundation models for structured data. I have **30+ peer-reviewed publications** at ICML, ACL, NeurIPS, CVPR, WWW, and AAAI. I completed my B.Tech in Data Science from MIT Manipal in 2024. Before Lexsi Labs, I worked at **[Mila Quebec AI Institute](https://mila.quebec/en)** (with Prof. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I am an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)**.
+I am a **Lead Research Scientist** at **[Lexsi Labs](https://lexsi.ai/)**, leading the Model Science group (16 interns and 8 full-time researchers) across India and Paris. I work on LLM post-training — safety alignment, mechanistic interpretability, and foundation models for structured data — with a growing focus on AI agents and evaluation. I have **48 papers overall (31 peer-reviewed, 210+ citations, h-index 8)** at ICML, ACL, WWW, MIDL, and Nature Scientific Reports. I completed my B.Tech in Data Science from MIT Manipal in 2024. Before Lexsi Labs, I worked at **[Mila Quebec AI Institute](https://mila.quebec/en)** (with Prof. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I am an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** (2023 → Mentor, 2026).
 
-Recent work: [AlignTune](https://arxiv.org/abs/2602.09621) · [C-ΔΘ](https://arxiv.org/abs/2602.04521) · [Forgetting That Sticks](https://arxiv.org/abs/2605.15138) · [TabTune](https://arxiv.org/abs/2511.02802) · [Orion-MSP](https://arxiv.org/abs/2511.02818)
+Recent work: [AlignTune](https://arxiv.org/abs/2602.09621) · [CircuitKIT](https://arxiv.org/abs/2607.19317) · [C-ΔΘ](https://arxiv.org/abs/2602.04521) · [CuratorKIT](https://arxiv.org/abs/2606.21631) · [SafeTune](https://github.com/Lexsi-Labs/SafeTune) · [Forgetting That Sticks](https://arxiv.org/abs/2605.15138) · [TabTune](https://arxiv.org/abs/2511.02802) · [Orion-MSP](https://arxiv.org/abs/2511.02818)
 
 Feel free to reach out or see my **[Resume](https://linktr.ee/pratinavseth)**.
 
@@ -43,9 +43,10 @@ I started in computer vision and medical imaging — uncertainty quantification,
 </div>
 
 ## 🚀 Key Highlights
-- 📚 **30+ Peer-Reviewed Publications** (9 Main Conference + 21 Workshop) at **ICML, ACL, WWW, NeurIPS, CVPR, AAAI, MICCAI, ICLR, IJCNN, EMNLP, Scientific Reports (Nature)**.
-- 🔬 **Research Focus**: LLM safety post-training — circuit-level mechanistic interpretability, safety weight arithmetic, unlearning, and post-training alignment.
-- 🏆 **AAAI Undergraduate Consortium Scholar** & Mentor (2023, 2026).
+- 📚 **48 Papers Overall — 31 Peer-Reviewed** (210+ citations, h-index 8) at **ICML, ACL, WWW, MIDL, IJCNN, AAAI, Nature Scientific Reports**, plus workshops and shared tasks at CVPR, NeurIPS, ICLR, MICCAI, EurIPS, ACL, and SIGMOD.
+- 🔬 **Research Focus**: LLM safety post-training — circuit-level mechanistic interpretability, safety weight arithmetic, unlearning, post-training alignment, and a growing focus on AI agents & evaluation.
+- 🧰 **7 Open-Source Libraries Released**: TabTune (116⭐, WWW 2026), AlignTune (37⭐), DLBacktrace v2 (26⭐), CuratorKIT (24⭐), xai_evals (15⭐), CircuitKIT (14⭐), SafeTune (7⭐).
+- 🏆 **AAAI Undergraduate Consortium Scholar** & Mentor (2023 → 2026).
 - 🎤 **Spotlight Talk** at EurIPS Workshop on Private AI Governance, Copenhagen (December 2025).
 
 <div style="background:#fff8e1;border-left:4px solid #f9a825;padding:10px 16px;border-radius:4px;margin-bottom:0.6em;font-size:0.9em;">
@@ -59,10 +60,16 @@ I started in computer vision and medical imaging — uncertainty quantification,
 # 🔥 News
 
 ## Recent Publications & Acceptances
+- *2026.07*: &nbsp;🎉 New Pre-Print: **CircuitKIT: Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability**!
+- *2026.07*: &nbsp;🎉 New Pre-Print: **Faithfulness to Refusal: A Causal Audit of Neuron Selectors in LLMs**!
+- *2026.06*: &nbsp;🎉 New Pre-Print: **CuratorKIT: Data Curation and Synthetic Data Generation for LLM Post-Training**!
+- *2026.06*: &nbsp;🎉 New Pre-Print: **ALIGNBEAM: Inference-Time Alignment Transfer via Cross-Vocabulary Logit Mixing**, accepted at **AI for Good Workshop @ ICML 2026**!
+- *2026.06*: &nbsp;🎉 New library release: **SafeTune** — a unified library for auditing and repairing safety drift in fine-tuned LLMs!
+- *2026.05*: &nbsp;🎉 **Data Presentation over Architecture: Resampling Strategies for Credit Risk Prediction with Tabular Foundation Models** accepted as an **Oral at FinDS Workshop @ ACM SIGMOD 2026**!
+- *2026.05*: &nbsp;🎉 **Distilling Tabular Foundation Models for Structured Health Data** wins **Best Paper Runner-Up (Spotlight)** at **SD4H Workshop @ ICML 2026**!
 - *2026.05*: &nbsp;🎉 New Pre-Print: **Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands**!
 - *2026.05*: &nbsp;🎉 **Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees** accepted at **FMSD Workshop @ ICML 2026**!
 - *2026.05*: &nbsp;🎉 **Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap** accepted at **FMSD Workshop @ ICML 2026**!
-- *2026.05*: &nbsp;🎉 **Distilling Tabular Foundation Models for Structured Health Data** accepted at **SD4H Workshop @ ICML 2026**!
 - *2026.02*: &nbsp;🎉 New Pre-Print: **AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models**!
 - *2026.02*: &nbsp;🎉 New Pre-Print: **C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal**!
 - *2026.01*: &nbsp;🎉 **Orion-Bix: Bi-Axial Attention for Tabular In-Context Learning** accepted at **WWW 2026**!
@@ -77,11 +84,18 @@ I started in computer vision and medical imaging — uncertainty quantification,
 - *2025.05*: &nbsp;🎉 **Alberta Wells Dataset** accepted at **ICML 2025**! (Really Grateful to the Team for their efforts and Prof. David Rolnick)!
 
 ## Academic Service & Reviewing
+- *2026.07*: &nbsp;📝 **Reviewer** for **Actionable Interpretability Workshop @ COLM 2026**
+- *2026.07*: &nbsp;📝 **Program Committee** for **AAAI 2027**
+- *2026.06*: &nbsp;📝 **Reviewer** for **ACM AIES 2026**
+- *2026.06*: &nbsp;📝 **Reviewer** for **System Demonstrations Track @ EMNLP 2026**
+- *2026.06*: &nbsp;📝 **Reviewer** for **NLP4PI Workshop @ EMNLP 2026**
+- *2026.06*: &nbsp;📝 **Reviewer** for **BlackboxNLP Workshop @ EMNLP 2026**
 - *2026.05*: &nbsp;📝 **Reviewer** for **AI for Good Workshop @ ICML 2026**
 - *2026.05*: &nbsp;📝 **Reviewer** for **Mechanistic Interpretability Workshop @ ICML 2026**
 - *2026.05*: &nbsp;📝 **Reviewer** for **TAIGR Workshop @ ICML 2026**
 - *2026.05*: &nbsp;📝 **Reviewer** for **FMSD Workshop @ ICML 2026**
 - *2026.05*: &nbsp;📝 **Reviewer** for **FAIMI-BRIDGE-EPIMI Workshop @ MICCAI 2026**
+- *2026.05*: &nbsp;📝 **Reviewer** for **WACV 2027**
 - *2026.04*: &nbsp;📝 **Reviewer** for **NeurIPS 2026**
 - *2026.04*: &nbsp;📝 **Reviewer** for **BMVC 2026**
 - *2026.03*: &nbsp;📝 **Reviewer** for **ECCV 2026**
@@ -95,11 +109,14 @@ I started in computer vision and medical imaging — uncertainty quantification,
 <div style="background:#f8f9fa;border:1px solid #dee2e6;border-radius:6px;padding:14px 18px;margin-bottom:1.5em;">
   <strong>Selected Publications</strong>
   <ul style="margin:0.5em 0 0 0;padding-left:1.2em;">
-    <li><a href="https://arxiv.org/abs/2602.04521">C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal</a> — Pre-Print 2026 · Circuit-level weight edits that instil selective refusal — no inference-time steering, no runtime overhead</li>
-    <li><a href="https://arxiv.org/abs/2602.09621">AlignTune</a> — Pre-Print 2026 · One interface for SFT, DPO, GRPO, and RLHF with modular reward framework and interchangeable backends</li>
+    <li><a href="https://arxiv.org/abs/2607.19317">CircuitKIT</a> — Pre-Print 2026 · Circuit discovery, evaluation, and application toolkit for mechanistic interpretability (14+ GitHub stars)</li>
+    <li><a href="https://arxiv.org/abs/2602.04521">C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal</a> — <strong>Mechanistic Interpretability Workshop, ICML 2026</strong> · Circuit-level weight edits that instil selective refusal — no inference-time steering, no runtime overhead</li>
+    <li><a href="https://arxiv.org/abs/2606.21631">CuratorKIT</a> — Pre-Print 2026 · Provenance-grounded data-curation and synthetic-generation pipeline for LLM post-training (24+ GitHub stars)</li>
+    <li><a href="https://github.com/Lexsi-Labs/SafeTune">SafeTune</a> — Pre-Print 2026 · Unified library for auditing and repairing safety drift in fine-tuned LLMs (7+ GitHub stars)</li>
+    <li><a href="https://arxiv.org/abs/2602.09621">AlignTune</a> — Pre-Print 2026 · One interface for SFT, DPO, GRPO, and RLHF with modular reward framework and interchangeable backends (37+ GitHub stars)</li>
     <li><a href="https://arxiv.org/abs/2605.15138">Forgetting That Sticks</a> — Pre-Print 2026 · Unlearning that survives quantization by identifying and zeroing the circuits that store the target knowledge</li>
     <li><a href="https://arxiv.org/abs/2509.08592">Interpretability as Alignment</a> — <strong>EurIPS Workshop 2025 (Spotlight)</strong> · Argues mechanistic interpretability should be a design principle in post-training, not a post-hoc audit</li>
-    <li><a href="https://arxiv.org/abs/2511.02802">TabTune</a> — <strong>WWW 2026</strong> · Unified library for tabular foundation model inference, fine-tuning, and benchmarking across 7 architectures (100+ GitHub stars)</li>
+    <li><a href="https://arxiv.org/abs/2511.02802">TabTune</a> — <strong>WWW 2026 Demo</strong> · Unified library for tabular foundation model inference, fine-tuning, and benchmarking across 7 architectures (116+ GitHub stars)</li>
     <li><a href="https://arxiv.org/pdf/2410.09032">Alberta Wells Dataset</a> — <strong>ICML 2025</strong> · Satellite benchmark for detecting abandoned oil & gas wells; climate AI work with Mila / McGill</li>
     <li><a href="https://aclanthology.org/2025.acl-short.52/">SELF-PERCEPT</a> — <strong>ACL 2025</strong> · LLM introspection improves detection of multi-person mental manipulation in multi-turn conversations</li>
   </ul>
@@ -131,17 +148,23 @@ Aditya Kasliwal, **Pratinav Seth**, Vinay Kumar Sankarapu
 </div>
 
 
+- [ALIGNBEAM: Inference-Time Alignment Transfer via Cross-Vocabulary Logit Mixing](https://arxiv.org/abs/2606.12342), Chirag Chawla, **Pratinav Seth**, Vinay Kumar Sankarapu, **AI for Good Workshop, ICML 2026**
+
 - [Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution](https://arxiv.org/abs/2605.15138), Saisab Sadhu, **Pratinav Seth**, Vinay Kumar Sankarapu, **Pre-Print**
 
 - [Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands](https://arxiv.org/abs/2605.15164), **Pratinav Seth**, Vinay Kumar Sankarapu, **Pre-Print**
 
-<!-- Drift Then Repair: A Controlled Cross-Paradigm Audit of Safety in Fine-Tuned LLMs — Pratinav Seth, Anshul Kaushal, Saisab Sadhu, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+- What Do Compliance Detectors Read? An Audit of Activation Probes and Guard Models, Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu, **Pratinav Seth**, **Under Review**
 
-<!-- Self-Calibrating Weight-Arithmetic Safety-Drift Repair — Pratinav Seth, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+- Drift Then Repair: A Controlled Cross-Paradigm Audit of Safety in Fine-Tuned LLMs, **Pratinav Seth**, Anshul Kaushal, Saisab Sadhu, Vinay Kumar Sankarapu, **Under Review**
 
-<!-- ALIGNBEAM: Inference-Time Alignment Transfer via Cross-Vocabulary Logit Mixing — Chirag Chawla, Pratinav Seth, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+- Self-Calibrating Weight-Arithmetic Safety-Drift Repair, **Pratinav Seth**, Vinay Kumar Sankarapu, **Under Review**
 
-<!-- Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation — Soham Bhattacharjee, Karun Sharma, Pratinav Seth, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+- The Off-Switch Failure: When Safety-Repair Evaluation Rewards Model Collapse, **Pratinav Seth**, **Under Review**
+
+- [Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation](https://arxiv.org/abs/2606.11127), Soham Bhattacharjee, Karun Sharma, Vinay Kumar Sankarapu, **Pratinav Seth**, **Under Review**
+
+- Document-as-Function: Verifiable Generation of Long-Form Synthetic Documents, Karun Sharma, Soham Bhattacharjee, Vinay Kumar Sankarapu, **Pratinav Seth**, **Under Review**
 
 #### Mechanistic Interpretability & XAI
 
@@ -192,9 +215,13 @@ Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh
 
 - [xai_evals: A Framework for Evaluating Post-Hoc Local Explanation Methods](https://arxiv.org/pdf/2502.03014),**Pratinav Seth**, Yashwardhan Rathore, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu, **Technical Report** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
 
-<!-- Faithfulness Is Not Actionability: Component Heterogeneity in Discovered Circuits — Pratinav Seth, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+- [CircuitKIT: Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability](https://arxiv.org/abs/2607.19317), **Pratinav Seth**, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu, **Pre-Print**
 
-<!-- Faithfulness to Refusal: A Causal Audit of Neuron Selectors in LLMs — Ananth Eswar, Pratinav Seth, Utsav Avaiya, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+- [Faithfulness to Refusal: A Causal Audit of Neuron Selectors in LLMs](https://arxiv.org/abs/2607.05355), Ananth Eswar, **Pratinav Seth**, Utsav Avaiya, Vinay Kumar Sankarapu, **Under Review**
+
+- Faithfulness Is Not Actionability: Component Heterogeneity in Discovered Circuits, **Pratinav Seth**, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu, **Under Review**
+
+- DLBacktrace v2: Extending Model-Agnostic Interpretability for LLMs and MoEs with CUDA Acceleration, Neeraj Kumar Singh, **Pratinav Seth**, Omkar Kakade, Chintan Chitroda, Vinay Kumar Sankarapu, **Pre-Print**
 
 #### Tabular Foundation Models & Distillation
 
@@ -247,30 +274,26 @@ Aditya Tanna, **Pratinav Seth**, Mohamed Bouadi, Utsav Avaiya, Vinay Kumar Sanka
 
 - [Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap](https://arxiv.org/abs/2605.18696), Aditya Tanna, Yash Jignesh Desai, **Pratinav Seth**, Mohamed Bouadi, Nassim Bouarour, Vinay Kumar Sankarapu, **Foundation Models for Structured Data (FMSD) Workshop, ICML 2026**
 
-- [Distilling Tabular Foundation Models for Structured Health Data](https://arxiv.org/abs/2605.18702), Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Vinay Kumar Sankarapu, **Pratinav Seth**, **Structured Data for Health (SD4H) Workshop, ICML 2026**
+- [Distilling Tabular Foundation Models for Structured Health Data](https://arxiv.org/abs/2605.18702), Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Vinay Kumar Sankarapu, **Pratinav Seth**, **Structured Data for Health (SD4H) Workshop, ICML 2026 — Best Paper Runner-Up, Spotlight**
+
+- [Data Presentation over Architecture: Resampling Strategies for Credit Risk Prediction with Tabular Foundation Models](https://arxiv.org/abs/2605.18635), Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**, Vinay Kumar Sankarapu, **FinDS Workshop @ ACM SIGMOD 2026 (Oral)**
 
 <!-- Position: Institutional Tabular Foundation Models: Rethinking AI for Enterprise Decision-Making — Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Pratinav Seth, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
 
 #### Libraries & Toolkits
 
-- [AlignTune](https://arxiv.org/abs/2602.09621) — Modular post-training toolkit: SFT, DPO, GRPO, and RLHF with interchangeable backends. **Pre-Print 2026.**
-- [TabTune](https://arxiv.org/abs/2511.02802) — Unified inference and fine-tuning library for tabular foundation models across 7 architectures. **WWW 2026** (100+ GitHub stars).
-- [DLBacktrace](https://arxiv.org/pdf/2411.12643) — Model-agnostic explainability for deep learning models. **IJCNN 2025.**
-- [xai_evals](https://arxiv.org/pdf/2502.03014) — Framework for evaluating post-hoc local explanation methods. **Technical Report 2025.**
+*Designed and built the initial release of each library below.*
 
-<!-- InterpSuite: A Library for Post-Hoc Local XAI Evaluation — Pratinav Seth et al. — Pre-Print (link pending) -->
+- [TabTune](https://arxiv.org/abs/2511.02802) — Unified inference and fine-tuning library for tabular foundation models across 7 architectures. **WWW 2026 Demo** (116⭐).
+- [AlignTune](https://arxiv.org/abs/2602.09621) — Modular post-training toolkit: SFT, DPO, GRPO, and RLHF with interchangeable backends. **Pre-Print 2026** (37⭐).
+- [DLBacktrace v2](https://github.com/AryaXAI/DLBacktrace) — `torch.export`-based, model-agnostic explainability for LLMs and MoEs with CUDA acceleration. **Pre-Print 2026** (26⭐).
+- [CuratorKIT](https://arxiv.org/abs/2606.21631) — Provenance-grounded data-curation and synthetic-generation pipeline for LLM post-training. **Pre-Print 2026** (24⭐).
+- [xai_evals](https://arxiv.org/pdf/2502.03014) — Framework for evaluating post-hoc local explanation methods. **Technical Report 2025** (15⭐).
+- [CircuitKIT](https://arxiv.org/abs/2607.19317) — Circuit discovery, evaluation, and application toolkit for mechanistic interpretability. **Pre-Print 2026** (14⭐).
+- [SafeTune](https://github.com/Lexsi-Labs/SafeTune) — Unified library for auditing and repairing safety drift in fine-tuned LLMs. **Pre-Print 2026** (7⭐).
+- [DLBacktrace (v1)](https://arxiv.org/pdf/2411.12643) — Model-agnostic explainability for deep learning models. **IJCNN 2025.**
 
-<!-- SafeTune: A Library for Safety Post-Training of Large Language Models — Pratinav Seth et al. — Pre-Print (link pending) -->
-
-<!-- AgentTune: A Library for Agentic Fine-Tuning and Training — Pratinav Seth et al. — Pre-Print (link pending) -->
-
-<!-- CircuitKit: A Toolkit for Mechanistic Circuit Analysis in LLMs — Pratinav Seth et al. — Pre-Print (link pending) -->
-
-<!-- Reducto: A Library for Knowledge Distillation and Model Reduction — Pratinav Seth et al. — Pre-Print (link pending) -->
-
-<!-- PrunKit: A Toolkit for Structured and Unstructured Pruning — Pratinav Seth et al. — Pre-Print (link pending) -->
-
-<!-- CuratorKit: A Toolkit for Post-Training Data Curation — Pratinav Seth et al. — Pre-Print (link pending) -->
+*In development: multiple additional tools across interpretability, post-training alignment, and LLM safety.*
 
 #### Climate Change & Earth Observation
 
@@ -391,55 +414,79 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 </div>
 </div>
 
+#### Selected Blog Posts
+
+- [Retail Banking Case Study: Why Specialists Beat Generalists on Template-Strict Workflows](https://lexsi.ai/resources/articles/retail-banking-case-study-why-specialists-beat-generalists-on-template-strict-workflows-wpx7b), Chirag Chawla, Zera Lyngkhoi, **Pratinav Seth**, Utsav Avaiya, Soham Bhattacharjee, Mykola Khandoga, Rui Yuan, Vinay Kumar Sankarapu, **Lexsi Labs, 2026**
+- [The Specialization Dividend: Aligning a 4B Model for Wealth Management Using AlignTune](https://lexsi.ai/resources/articles/the-specialization-dividend-aligning-a-4b-model-for-wealth-management-using-aligntune), Chirag Chawla, Zera Lyngkhoi, **Pratinav Seth**, Utsav Avaiya, Soham Bhattacharjee, Mykola Khandoga, Rui Yuan, Vinay Kumar Sankarapu, **Lexsi Labs, 2026**
+- [Now Shipping: TabTune Regression for Tabular Foundation Models](https://lexsi.ai/resources/articles/now-shipping-tabtune-regression-for-tabular-foundational-models), Aditya Tanna, **Pratinav Seth**, Mohamed Bouadi, Utsav Avaiya, Vinay Kumar Sankarapu, **Lexsi Labs, 2026**
+
 
 # 🎓 Academic Service
-- **Mentor**: AAAI Undergraduate Consortium 2026
+- **Mentor**: AAAI Undergraduate Consortium 2026 (Scholar 2023 → Mentor 2026)
 
 ## Conference Reviewing & Program Committee
-- **Main Conference Reviewer**: CVPR (2025-26), ECCV (2024, 2026), ICCV 2025, WACV 2026, IJCNN 2025, AAAI 2026, NeurIPS 2026, BMVC 2026
-- **Workshop Reviewer**: 
-  - NLP for Positive Impact Workshop (EMNLP 2024)
-  - SyntheticData4ML Workshop (NeurIPS 2022, 2023)
-  - Bayesian Decision-making and Uncertainty Workshop (NeurIPS 2024)
-  - Frontiers in Probabilistic Inference (ICLR 2025)
-  - Topological, Algebraic, and Geometric P.R.A. Workshop (CVPR 2023)
-  - Domain Adaptation and Representation Transfer Workshop (MICCAI 2023)
-  - FAIMI Workshop (MICCAI 2024)
-  - Advances in Financial AI Workshop (ICLR 2025-26)
-  - Actionable Interpretability Workshop (ICML 2025)
-  - RegML Workshop (NeurIPS 2025)
-  - FinDS Workshop @ ACM SIGMOD 2026
-  - AI for Good Workshop (ICML 2026)
+- **Main Conference Reviewer**: AAAI 2027 (Program Committee), NeurIPS 2026, ACM AIES 2026, CVPR (2025-26), ECCV (2024-26), ICCV (2025), WACV (2026-27), BMVC 2026, IJCNN (2025)
+- **Workshop & Track Reviewer (2026)**:
   - Mechanistic Interpretability Workshop (ICML 2026)
+  - AI for Good Workshop (ICML 2026)
   - TAIGR Workshop (ICML 2026)
   - Foundation Models for Structured Data (FMSD) Workshop (ICML 2026)
+  - FinDS Workshop @ ACM SIGMOD 2026
+  - Advances in Financial AI Workshop (ICLR 2026)
+  - BlackboxNLP Workshop (EMNLP 2026)
+  - NLP4PI Workshop (EMNLP 2026)
+  - System Demonstrations Track (EMNLP 2026)
+  - Actionable Interpretability Workshop (COLM 2026)
   - FAIMI-BRIDGE-EPIMI Workshop (MICCAI 2026)
+- **Workshop Reviewer (2021–25)**:
+  - Actionable Interpretability Workshop (ICML 2025)
+  - RegML Workshop (NeurIPS 2025)
+  - NLP for Positive Impact Workshop (EMNLP 2024)
+  - Bayesian Decision-making and Uncertainty Workshop (NeurIPS 2024)
+  - Frontiers in Probabilistic Inference (ICLR 2025)
+  - SyntheticData4ML Workshop (NeurIPS 2022-23)
+  - FAIMI Workshop (MICCAI 2024)
+  - Domain Adaptation and Representation Transfer Workshop (MICCAI 2023)
+  - Topological, Algebraic, and Geometric P.R.A. Workshop (CVPR 2023)
 
 # 💻 Professional Experience
 
 ## Research Positions
-- *2026.04 - Present*, **Lead Research Scientist** at [Lexsi Labs](https://lexsi.ai/), Remote
-  - **LLM Post-Training**: Developing post-training libraries and pipelines for LLM alignment, safety post-training, and knowledge distillation; building modular toolkits for supervised fine-tuning and RLHF-style optimization
-  - **Agentic Systems**: Researching agentic training frameworks and coding agents; investigating self-improvement and tool-use capabilities in autonomous LLM-based systems
-  - **Interpretability-Guided Safety**: Applying mechanistic interpretability and post-hoc explanation methods to drive safety post-training, selective refusal, and model reliability—leveraging interpretability as a core design principle
-  - **Circuit-Level Safety**: Identifying and repairing safety-critical weights via mechanistic interpretability; building weight arithmetic methods that preserve refusal behaviors across fine-tuning (C-ΔΘ, Forgetting That Sticks)
-  - **Safety Drift Auditing**: Measuring and repairing alignment degradation across fine-tuning paradigms; auditing how safety degrades under SFT, DPO, and GRPO and designing targeted repair methods (Drift Then Repair, Self-Calibrating Repair)
+- *2026.04 - Present*, **Lead Research Scientist** at [Lexsi Labs, Lexsi.ai](https://lexsi.ai/) (Aurionpro Solutions Group), Remote
+  - **Post-Training & Alignment**: Lead the lab's post-training and alignment research, directing workstreams across interpretability, safety, model optimization, and agents; scaled **AlignTune** (37⭐) into a production-grade multi-backend ecosystem spanning multiple SFT/RL algorithms, model merging, and domain-specific alignment auditing for BFSI, legal, and healthcare; shared applied results in case studies on template-strict domain specialization and wealth-management alignment with AlignTune
+  - **Post-Training & Data Curation**: Building **CuratorKIT** (24⭐), a provenance-grounded data-curation and synthetic-generation pipeline; verifiable long-form synthetic document generation, with further work under review
+  - **Post-Hoc Interpretability**: Built unified post-hoc explainability tooling (LRP, Integrated Gradients, DL-Backtrace), including LRP- and DLB-based analysis of model refusal behavior
+  - **Mechanistic Interpretability**: Lead circuit-level interpretability: built **CircuitKIT** (14⭐), a circuit discovery, evaluation, and application toolkit; co-led **C-ΔΘ**, a circuit-restricted weight-arithmetic method for selective refusal (ICML 2026 Workshop); advised machine unlearning via circuit attribution, with further work on circuit faithfulness under review
+  - **Safety & Steering**: Improve safety alignment across the model lifecycle — during training, post-training recovery and fixing, and at inference time. Co-built **SafeTune** (7⭐), a unified library for auditing and repairing safety drift in fine-tuned LLMs; built an inference-time alignment-transfer method (**ALIGNBEAM**, ICML 2026 Workshop); a position paper on the limits of behavioral safety assurance for governance; audited compliance detectors and guard models; further work on safety-drift repair and safety-repair evaluation, under review
+  - **Model Optimization**: Lead structured-pruning and quantization work for efficient model deployment
+  - **AI & Coding Agents**: Explore agent and coding-agent architectures; early exploration of a self-improving post-training agent and autonomous-research (auto-research) agents
+  - **Evaluation**: Built an internal LLM evaluation library
+  - **Research-to-Product Integration**: Translate research into production — integrate interpretability, alignment, and safety tooling into the product stack
+  - **Team & Delivery**: Lead the Model Science group (16 interns and 8 full-time researchers across India and Paris), covering grants, hiring, roadmap, and overall planning. Team output spans ICML 2026 workshop papers and submissions under review at A* venues (NeurIPS, ACL, and more)
   - **Publications**:
     - AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models. 2026. Pre-print.
-    - C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal. 2026. Pre-print.
+    - CuratorKIT: Data Curation and Synthetic Data Generation for LLM Post-Training. 2026. Pre-print.
+    - CircuitKIT: Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability. 2026. Pre-print.
+    - SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs. 2026. Pre-print.
+    - C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal. 2026. Mechanistic Interpretability Workshop, ICML 2026.
+    - ALIGNBEAM: Inference-Time Alignment Transfer via Cross-Vocabulary Logit Mixing. 2026. AI for Good Workshop, ICML 2026.
     - Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution. 2026. Pre-Print.
+    - Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands. 2026. Pre-print.
 
-- *2025.07 - 2026.03*, **Research Scientist** at [Lexsi Labs](https://lexsi.ai/), Remote
-  - **Tabular Foundation Models**: Contributed to the development of foundation models for tabular data in high-stakes domains; co-developed a library for inference, fine-tuning, and benchmarking of tabular foundation models
-  - **Interpretability-Guided Alignment**: Investigating model optimization (pruning, quantization) and alignment (fine-tuning, RL-based alignment, unlearning) strategies across various model architectures—leveraging interpretability as a design principle and guiding mechanism
-  - **Research & POCs**: Led proof-of-concept (POC) projects for model optimization, fine-tuning, alignment, and internal research tooling to accelerate experimental workflows
-  - **Research & Mentorship**: Overseeing 6+ full-time researchers across teams in India and Paris; mentored 10+ research interns; oversaw recruitment of interns and full-time scientists; authored technical and research documentation for stakeholders; initiated proof-of-concept projects to advance internal algorithmic capabilities
-  - **Representation**: Presented a spotlight talk at EurIPS Workshop on Private AI Governance 2025 (Copenhagen); presented a poster at the MICCAI Workshop 2025
+- *2025.07 - 2026.03*, **Research Scientist** at [Lexsi Labs, Lexsi.ai](https://lexsi.ai/) (Aurionpro Solutions Group) *[Previously: AryaXAI, Arya.ai]*, Remote
+  - **Model Science Group**: Led and scaled the lab's Model Science group across post-training alignment, safety, and interpretability into a core research team driving the lab's alignment and safety agenda
+  - **AlignTune**: Built AlignTune, a modular toolkit for post-training alignment of LLMs spanning SFT, preference optimization, and safety methods (37⭐); formalized the **Interpretability as Alignment** framework (EurIPS 2025 Workshop) as a guiding design principle for the team's alignment work
+  - **Interpretability**: Led the lab's interpretability tooling: rearchitected **DLBacktrace v2** on a `torch.export`-based graph-capture design to keep it model-agnostic across architectures, with CUDA acceleration for LLMs and MoEs (26⭐); drove actionable interpretability into model optimization through interpretability-aware pruning for medical imaging (MICCAI Workshop 2025)
+  - **Tabular Foundation Models**: Led problem framing, early model design, and benchmarking for the ORION tabular foundation-model series — Orion-BiX (WWW 2026) and Orion-MSP (AITD Workshop @ EurIPS 2025) — and drove its extension to regression
+  - **TabTune**: Architected TabTune, an open-source toolkit for inference, fine-tuning, and regression with tabular foundation models (116⭐, WWW 2026 Demo), shipped with an accompanying fine-tuning study; later advised distillation, ensembling (ICML 2026 Workshops), and credit-risk prediction (FinDS @ ACM SIGMOD 2026, Oral) for health and enterprise deployment
+  - **Model Compression**: Built an internal pruning and model-compression toolkit, bringing interpretability-guided compression into the production deployment pipeline
+  - **Team & Mentorship**: Led the Model Science group (14 interns and 5 full-time researchers during this period across India and Paris) spanning tabular, alignment, and interpretability; worked on grants, hiring, and overall planning
+  - **Talks & Posters**: Spotlight talk at EurIPS 2025 Workshop; poster at MICCAI Workshop 2025
   - **Publications**:
     - Interpretability-Aware Pruning for Efficient Medical Image Analysis. 2025. MICCAI Workshop 2025 (LNCS).
     - Interpretability as Alignment: Making Internal Understanding a Design Principle. 2025. Position Paper (Accepted at EurIPS Workshop on Private AI Governance).
-    - TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models. 2026. Accepted at WWW 2026.
-    - Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning. 2025. Pre-print.
+    - TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models. 2026. Accepted at WWW 2026 (Demo).
+    - Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning. 2025. AITD Workshop @ EurIPS 2025.
     - Orion-BiX: Bi-Axial Attention for Tabular In-Context Learning. 2026. Accepted at WWW 2026.
     - Exploring Fine-Tuning for Tabular Foundation Models. 2026. Accepted at WWW 2026.
 
@@ -501,15 +548,29 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 
 # 🛠️ Technical Skills
 
-### 🧠 Machine Learning & AI
-- **Frameworks**: PyTorch, TensorFlow, Keras, Scikit-Learn, HuggingFace, NetworkX
-- **Specialized**: LLM Alignment (Fine-tuning, RLHF, DPO), Tabular Foundation Models, Model Optimization (Pruning, Quantization), Interpretability (XAI), Uncertainty Quantification, CUDA Programming, Distributed Training, Mixed Precision
-- **Libraries**: NumPy, Pandas, Seaborn, Matplotlib, OpenCV, PIL, NLTK, SpaCy, GeoPandas, Shapely
+### 🔬 Interpretability
+Mechanistic interpretability, circuit analysis & attribution; TransformerLens, Captum, SHAP, LIME, Integrated Gradients, LRP, DL-Backtrace
 
-### 💻 Programming & Tools
-- **Languages**: Python, C++, SQL, Java, C, LaTeX, HTML/CSS
-- **Development**: Git, Linux/Bash, HPC (SLURM), Docker, Jupyter, Google Colab
-- **Platforms**: AWS, GCP, Hugging Face Hub, Weights & Biases
+### 🎯 Post-Training & Alignment
+RLHF, DPO, Constitutional AI; PEFT (LoRA, QLoRA, DoRA), TRL (SFTTrainer, DPOTrainer), Axolotl, Unsloth, LlamaFactory, HF Accelerate
+
+### ⚡ LLM Systems & Efficiency
+Flash Attention 2, MoE architectures, quantization (bitsandbytes, AutoGPTQ), pruning, ONNX, TensorRT, lm-evaluation-harness
+
+### 🖥️ Deep Learning Systems
+CUDA programming, Triton kernels, distributed training (DeepSpeed, FSDP), mixed precision; GPUs: H200, H100, RTX 6000 Pro (multi-GPU)
+
+### 📊 Tabular & Classical ML
+XGBoost, LightGBM, CatBoost, TabPFN, Optuna, Ray Tune
+
+### 🤖 AI & Coding Agents
+LangChain, LangGraph, Claude Code, Codex, Cursor, Windsurf
+
+### ⚙️ MLOps, Serving & Infra
+Weights & Biases, MLflow, Ray, Docker, Slurm, Git, Linux, HPC, HF Hub/Datasets, FAISS, AWS/GCP; vLLM, FastAPI, Flask, Gradio, Streamlit, Ollama
+
+### 💻 Languages & Core Libraries
+Python, C++, SQL, Java, C, LaTeX; PyTorch, TensorFlow, Keras, Scikit-Learn, NumPy, Pandas, Seaborn, Matplotlib, OpenCV, PIL, Geopandas, Shapely, NLTK, SpaCy
 
 ### 🏅 Certifications
 - **Deep Learning Specialization** - DeepLearning.ai
@@ -646,9 +707,12 @@ Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 # 🌐 Events & Conferences
 
 ## Academic Conferences Attended
+- **ICML 2026**, Seoul, South Korea
+- **The Web Conference (WWW) 2026**, Dubai, UAE *(attended remotely)*
 - **EurIPS Workshop on Private AI Governance**, Copenhagen, Denmark (December 2025)
+- **MICCAI 2025 Workshop**, Daejeon, South Korea
 - **ICML 2025**, Vancouver, Canada
-- **ICLR 2025**
+- **ICLR 2025**, Singapore
 - **AAAI 2023**, Washington D.C., USA
 
 ## Industry Events
