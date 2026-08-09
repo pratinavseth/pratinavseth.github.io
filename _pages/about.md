@@ -31,9 +31,9 @@ hero:
 <span class='anchor' id='about-me'></span>
 ## About
 
-**What survives post-training?** I study how safety and model behaviour change through fine-tuning, quantization, and deployment — and use mechanistic interpretability to find the specific mechanisms responsible, so they can be audited, repaired, or steered directly: circuit-level refusal ([C-ΔΘ](https://arxiv.org/abs/2602.04521)), quantization-permanent unlearning ([Forgetting That Sticks](https://arxiv.org/abs/2605.15138)), and safety drift auditing.
+I study what survives post-training: how safety and model behavior change through fine-tuning, quantization, and deployment. I use mechanistic interpretability to find the specific mechanisms responsible, then audit, repair, or steer them directly: circuit-level refusal ([C-ΔΘ](https://arxiv.org/abs/2602.04521)), quantization-permanent unlearning ([Forgetting That Sticks](https://arxiv.org/abs/2605.15138)), and safety drift auditing.
 
-I lead the Model Science group at **[Lexsi Labs](https://lexsi.ai/)** across India and Paris, where this research turns into shipped systems — [AlignTune](https://arxiv.org/abs/2602.09621), [CircuitKIT](https://arxiv.org/abs/2607.19317), [SafeTune](https://github.com/Lexsi-Labs/SafeTune), and [CuratorKIT](https://arxiv.org/abs/2606.21631). I'm increasingly extending this work to agentic systems and evaluation.
+I lead the Model Science group at **[Lexsi Labs](https://lexsi.ai/)** across India and Paris. We've shipped [AlignTune](https://arxiv.org/abs/2602.09621), [CircuitKIT](https://arxiv.org/abs/2607.19317), [SafeTune](https://github.com/Lexsi-Labs/SafeTune), and [CuratorKIT](https://arxiv.org/abs/2606.21631) along the way. I'm increasingly extending this work to agentic systems and evaluation.
 
 <div class="tag-row">
   <span class="tag tag--interp">Post-Training &amp; Alignment</span>
@@ -43,7 +43,7 @@ I lead the Model Science group at **[Lexsi Labs](https://lexsi.ai/)** across Ind
   <span class="tag tag--tabular">Foundation Models</span>
 </div>
 
-I also work on efficient, deployable foundation models for structured data — [TabTune](https://arxiv.org/abs/2511.02802), [Orion-MSP](https://arxiv.org/abs/2511.02818), and [Orion-BiX](https://huggingface.co/Lexsi/Orion-BiX).
+I also work on efficient, deployable foundation models for structured data: [TabTune](https://arxiv.org/abs/2511.02802), [Orion-MSP](https://arxiv.org/abs/2511.02818), and [Orion-BiX](https://huggingface.co/Lexsi/Orion-BiX).
 
 Before this, I worked across computer vision, medical imaging, and climate applications at **[Mila Quebec AI Institute](https://mila.quebec/en)** (with Prof. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I completed my B.Tech in Data Science from MIT Manipal in 2024, and I'm an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** (2023 → Mentor, 2026).
 
@@ -85,11 +85,11 @@ Before this, I worked across computer vision, medical imaging, and climate appli
 ## Recent Publications & Acceptances
 
 <div class="timeline-list" markdown="1">
-- <span class="timeline-list__date">2026.07</span>Released **CircuitKIT** — a toolkit for circuit discovery, evaluation, and application in mechanistic interpretability
-- <span class="timeline-list__date">2026.07</span>New pre-print: **Faithfulness to Refusal** — a causal audit of neuron selectors used for LLM refusal behavior
-- <span class="timeline-list__date">2026.06</span>Released **CuratorKIT** — provenance-grounded data curation and synthetic generation for LLM post-training
-- <span class="timeline-list__date">2026.06</span>**ALIGNBEAM** accepted at the AI for Good Workshop, ICML 2026 — inference-time alignment transfer via cross-vocabulary logit mixing
-- <span class="timeline-list__date">2026.06</span>Released **SafeTune** — a library for auditing and repairing safety drift in fine-tuned LLMs
+- <span class="timeline-list__date">2026.07</span>Released **CircuitKIT**, a toolkit for circuit discovery, evaluation, and application in mechanistic interpretability
+- <span class="timeline-list__date">2026.07</span>New pre-print: **Faithfulness to Refusal**, a causal audit of neuron selectors used for LLM refusal behavior
+- <span class="timeline-list__date">2026.06</span>Released **CuratorKIT**, provenance-grounded data curation and synthetic generation for LLM post-training
+- <span class="timeline-list__date">2026.06</span>**ALIGNBEAM** accepted at the AI for Good Workshop, ICML 2026: inference-time alignment transfer via cross-vocabulary logit mixing
+- <span class="timeline-list__date">2026.06</span>Released **SafeTune**, a library for auditing and repairing safety drift in fine-tuned LLMs
 - <span class="timeline-list__date">2026.05</span>**Distilling Tabular Foundation Models for Structured Health Data** wins Best Paper Runner-Up (Spotlight), SD4H Workshop @ ICML 2026
 </div>
 
@@ -134,5 +134,5 @@ Lead, Model Science at Lexsi Labs · previously Mila, Bosch Research, and IIT Kh
 **Lexsi Labs — Internships & Full-Time Roles:** For internship and FTE applications at Lexsi Labs, please **apply directly** via [lexsi.ai](https://lexsi.ai) rather than reaching out for referrals.
 </div>
 <div class="notice--success" markdown="1">
-**Mentoring:** I'm occasionally able to advise early-stage researchers. If you're reaching out, please include a short introduction, your current work, and the specific question you'd like to discuss — [email me](mailto:seth.pratinav@gmail.com).
+**Mentoring:** I'm occasionally able to advise early-stage researchers. Include a short introduction, your current work, and the specific question you'd like to discuss, and [email me](mailto:seth.pratinav@gmail.com).
 </div>
