@@ -85,6 +85,10 @@ excerpt: "Research positions, collaborations, leadership roles, and early career
 ## Research Collaborations
 
 <div class="role-list" markdown="1">
+- <span class="role-list__date">2024 – 2026</span>Independent Research Collaborator with academic collaborators across IIT Kharagpur, IISc Bangalore, and MAHE, Remote
+  - **Medical AI**: Lesion-aware MAE for glaucoma detection from retinal context, with Siddhant Bharadwaj and Chandra Sekhar Seelamantula (MIDL 2025 Short Papers)
+  - **LLM Safety**: Introspective LLM detection of multi-person mental manipulation in conversations, with Danush Khanna, Sidhaarth Sredharan Murali, and collaborators (ACL 2025 & NAACL-SRW Workshop)
+
 - <span class="role-list__date">2023.12 – 2024.01</span>Research Collaborator with [Dr. Amit Agarwal](https://arxiv.org/abs/2407.04721), Wells Fargo AI Center of Excellence, Remote
   - **AgriLLM**: Built seq2seq LLMs (BART, T5, Flan-T5) for agricultural queries from Indian farmers on a highly noisy real-world dataset
   - **Outcome**: Published at the NLP4PI Workshop, EMNLP 2024, and the Undergraduate Consortium at KDD 2024

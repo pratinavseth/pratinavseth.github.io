@@ -2,7 +2,7 @@
 layout: default
 permalink: /publications/
 title: "Publications · Pratinav Seth"
-description: "46 papers (31 peer-reviewed, 210+ citations) spanning LLM post-training, safety alignment, mechanistic interpretability, and tabular foundation models. Venues include ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
+description: "48 papers (31 peer-reviewed, 210+ citations) spanning LLM post-training, safety alignment, mechanistic interpretability, and tabular foundation models. Venues include ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
 excerpt: "Full publication list: safety post-training & alignment, mechanistic interpretability & XAI, tabular foundation models, and open-source libraries."
 ---
 
@@ -16,7 +16,7 @@ excerpt: "Full publication list: safety post-training & alignment, mechanistic i
 # Publications <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 {: #publications}
 
-<p class="total-papers-note">Total Papers: 46*<br><small>* counted from the list below; additional work is in internal review and not yet listed here</small></p>
+<p class="total-papers-note">Total Papers: 48*<br><small>* counted from the list below; additional work is in internal review and not yet listed here</small></p>
 
 <div class="card--muted" markdown="1">
 **Selected Publications**
@@ -94,11 +94,15 @@ Saisab Sadhu, **Pratinav Seth**, Vinay Kumar Sankarapu
 
 - What Do Compliance Detectors Read? An Audit of Activation Probes and Guard Models, Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu, **Pratinav Seth**, **Under Review**
 
+- [SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs](https://github.com/Lexsi-Labs/SafeTune), **Pratinav Seth**, Saisab Sadhu, Anshul Kaushal, Vinay Kumar Sankarapu, **Pre-Print**
+
 - Drift Then Repair: A Controlled Cross-Paradigm Audit of Safety in Fine-Tuned LLMs, **Pratinav Seth**, Anshul Kaushal, Saisab Sadhu, Vinay Kumar Sankarapu, **Under Review**
 
 - Self-Calibrating Weight-Arithmetic Safety-Drift Repair, **Pratinav Seth**, Vinay Kumar Sankarapu, **Under Review**
 
 - The Off-Switch Failure: When Safety-Repair Evaluation Rewards Model Collapse, **Pratinav Seth**, **Under Review**
+
+- [CuratorKIT: Data Curation and Synthetic Data Generation for LLM Post-Training](https://arxiv.org/abs/2606.21631), Soham Bhattacharjee, Karun Sharma, Vinay Kumar Sankarapu, **Pratinav Seth**, **Pre-Print**
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='/images/curatorkit-provenance-fig.png' alt="Provenance-Grounded Gating" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
