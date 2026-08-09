@@ -39,7 +39,6 @@
       border-radius: 0;
       object-fit: cover;
       border: 3px solid $text-color;
-      filter: grayscale(100%) contrast(1.1);
     }
   }
 
@@ -305,7 +304,6 @@
     width: 100%;
     border-radius: 0;
     border: 2px solid $text-color;
-    filter: grayscale(100%) contrast(1.1);
   }
 
   figcaption {
@@ -411,7 +409,6 @@
       border: 2px solid $text-color;
       border-radius: 0;
       object-fit: cover;
-      filter: grayscale(100%) contrast(1.1);
       transition: $global-transition;
     }
   }

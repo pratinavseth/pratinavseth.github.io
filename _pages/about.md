@@ -77,13 +77,13 @@ Published at ICML, ACL, WWW, MIDL, IJCNN, AAAI, and Nature Scientific Reports, p
 - <span class="timeline-list__date">2026.06</span>New Pre-Print: **CuratorKIT: Data Curation and Synthetic Data Generation for LLM Post-Training**
 - <span class="timeline-list__date">2026.06</span>New Pre-Print: **ALIGNBEAM: Inference-Time Alignment Transfer via Cross-Vocabulary Logit Mixing**, accepted at **AI for Good Workshop @ ICML 2026**
 - <span class="timeline-list__date">2026.06</span>New library release: **SafeTune** — a unified library for auditing and repairing safety drift in fine-tuned LLMs
-- <span class="timeline-list__date">2026.05</span>**Data Presentation over Architecture: Resampling Strategies for Credit Risk Prediction with Tabular Foundation Models** accepted as an **Oral at FinDS Workshop @ ACM SIGMOD 2026**
+- <span class="timeline-list__date">2026.05</span>**Distilling Tabular Foundation Models for Structured Health Data** wins **Best Paper Runner-Up (Spotlight)** at **SD4H Workshop @ ICML 2026**
 </div>
 
 <details markdown="1">
 <summary>Earlier publications & acceptances</summary>
 <div class="timeline-list" markdown="1">
-- <span class="timeline-list__date">2026.05</span>**Distilling Tabular Foundation Models for Structured Health Data** wins **Best Paper Runner-Up (Spotlight)** at **SD4H Workshop @ ICML 2026**
+- <span class="timeline-list__date">2026.05</span>**Data Presentation over Architecture: Resampling Strategies for Credit Risk Prediction with Tabular Foundation Models** accepted as an **Oral at FinDS Workshop @ ACM SIGMOD 2026**
 - <span class="timeline-list__date">2026.05</span>New Pre-Print: **Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands**
 - <span class="timeline-list__date">2026.05</span>**Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees** accepted at **FMSD Workshop @ ICML 2026**
 - <span class="timeline-list__date">2026.05</span>**Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap** accepted at **FMSD Workshop @ ICML 2026**
