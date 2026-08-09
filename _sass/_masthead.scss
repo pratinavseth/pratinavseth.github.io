@@ -16,6 +16,10 @@
   &__inner-wrap {
     @include container;
     @include clearfix;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5em;
     padding: 1em .5em;
     font-family: $monospace;
 
@@ -33,7 +37,28 @@
   }
 }
 
+.masthead__site-name {
+  flex: 0 0 auto;
+  font-size: 0.85em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $text-color;
+  white-space: nowrap;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
 .masthead__menu {
+  /* Fill remaining row width (rather than shrink-to-fit) so nav has a
+     stable width for greedy-nav's overflow math to converge against —
+     letting it shrink-to-fit made its measured width chase its own
+     shrinking content as items got hidden, causing the last visible
+     item to land under the overflow button instead of being hidden. */
+  flex: 1 1 auto;
+  min-width: 0;
 
   ul {
     margin: 0;

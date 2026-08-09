@@ -11,5 +11,8 @@
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
+    {% unless page.url == "/" %}
+      <a class="masthead__site-name" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    {% endunless %}
   </div>
 </div>
