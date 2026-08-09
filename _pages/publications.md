@@ -16,6 +16,8 @@ excerpt: "Full publication list: safety post-training & alignment, mechanistic i
 # Publications <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 {: #publications}
 
+<p class="total-papers-note">Total Papers: 48*<br><small>* includes papers in preparation / internal review, not yet publicly listed</small></p>
+
 <div class="card--muted" markdown="1">
 **Selected Publications**
 - [CircuitKIT](https://arxiv.org/abs/2607.19317) — Pre-Print 2026 · Circuit discovery, evaluation, and application toolkit for mechanistic interpretability

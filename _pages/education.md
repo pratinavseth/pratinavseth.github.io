@@ -16,4 +16,10 @@ excerpt: "Education background and honors & awards."
 {: #education}
 - *2020.10 - 2024.07*, Bachelors of Technology in Data Science & Engineering (B.Tech), Manipal Academy of Higher Education, Manipal, Karnataka, India.
   - **CGPA**: 8.31/10
+  - **Final Year Project**: *Pinpointing Oil and Gas Wells from Satellite Imagery using Machine Learning* — Internal Guide: Dr. Abhilash K. Pai (Dept. of DSCA, MIT); External Guide: Dr. David Rolnick (Mila, McGill University, UdeM)
+
+<figure class="event-photo">
+  <img src="{{ '/images/events/mila-fyp-thesis.jpg' | relative_url }}" alt="Final year project defense slide: Pinpointing Oil and Gas Wells from Satellite Imagery using Machine Learning, with Mila and Manipal Institute of Technology branding">
+  <figcaption>Final Year Project Defense — Manipal Institute of Technology</figcaption>
+</figure>
 

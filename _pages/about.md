@@ -13,8 +13,6 @@ hero:
   name: "Pratinav Seth"
   tagline: "LLM post-training, safety alignment, and mechanistic interpretability — with a growing focus on AI agents and evaluation."
   stats:
-    - number: "48"
-      label: "Papers"
     - number: "31"
       label: "Peer-Reviewed"
     - number: "210+"
