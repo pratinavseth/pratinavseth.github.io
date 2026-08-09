@@ -509,6 +509,60 @@
 }
 
 /*
+   Journey strip — compact chronological path (Home)
+   ========================================================================== */
+
+.journey-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0;
+  margin: 1em 0 1.5em;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.journey-step {
+  flex: 1 1 180px;
+  padding: 1em 1.2em 1em 0;
+  border-right: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  @include breakpoint($small) {
+    border-bottom: none;
+  }
+}
+
+.journey-step__date {
+  display: block;
+  margin-bottom: 0.3em;
+  font-family: $monospace;
+  font-size: 0.7em;
+  font-weight: 700;
+  color: $accent-color;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.journey-step__label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9em;
+  margin-bottom: 0.2em;
+}
+
+.journey-step__desc {
+  display: block;
+  font-size: 0.8em;
+  color: $gray;
+  line-height: 1.4;
+}
+
+/*
    Role list — Professional Experience entries
    ========================================================================== */
 

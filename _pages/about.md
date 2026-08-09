@@ -31,9 +31,9 @@ hero:
 <span class='anchor' id='about-me'></span>
 ## About
 
-I study what survives post-training: how safety and model behavior change through fine-tuning, quantization, and deployment. I use mechanistic interpretability to find the specific mechanisms responsible, then audit, repair, or steer them directly: circuit-level refusal ([C-ΔΘ](https://arxiv.org/abs/2602.04521)), quantization-permanent unlearning ([Forgetting That Sticks](https://arxiv.org/abs/2605.15138)), and safety drift auditing.
+I lead the Model Science group at **[Lexsi Labs](https://lexsi.ai/)**, directing research across post-training, alignment, mechanistic interpretability, and tabular foundation models. The team has grown to 20+ researchers and interns across India and Paris; I own hiring, roadmap, grants, and research-to-product integration alongside the research itself.
 
-I lead the Model Science group at **[Lexsi Labs](https://lexsi.ai/)** across India and Paris. We've shipped [AlignTune](https://arxiv.org/abs/2602.09621), [CircuitKIT](https://arxiv.org/abs/2607.19317), [SafeTune](https://github.com/Lexsi-Labs/SafeTune), and [CuratorKIT](https://arxiv.org/abs/2606.21631) along the way. I'm increasingly extending this work to agentic systems and evaluation.
+Most of that research asks what survives post-training: how fine-tuning, quantization, and deployment change a model's behavior, and how to find the specific mechanisms responsible. I use mechanistic interpretability to answer this, then audit, repair, or steer those mechanisms directly: circuit-level refusal ([C-ΔΘ](https://arxiv.org/abs/2602.04521)), circuit discovery and attribution ([CircuitKIT](https://arxiv.org/abs/2607.19317)), and safety-drift auditing and repair ([SafeTune](https://github.com/Lexsi-Labs/SafeTune)). Alongside this, I build the post-training infrastructure that ships it: [AlignTune](https://arxiv.org/abs/2602.09621) for training, [CuratorKIT](https://arxiv.org/abs/2606.21631) for data curation, and [ALIGNBEAM](https://arxiv.org/abs/2606.12342) for inference-time alignment transfer. I'm increasingly extending this work to agentic systems and evaluation.
 
 <div class="tag-row">
   <span class="tag tag--interp">Post-Training &amp; Alignment</span>
@@ -43,9 +43,32 @@ I lead the Model Science group at **[Lexsi Labs](https://lexsi.ai/)** across Ind
   <span class="tag tag--tabular">Foundation Models</span>
 </div>
 
-I also work on efficient, deployable foundation models for structured data: [TabTune](https://arxiv.org/abs/2511.02802), [Orion-MSP](https://arxiv.org/abs/2511.02818), and [Orion-BiX](https://huggingface.co/Lexsi/Orion-BiX).
+In parallel, I lead the [Orion](https://arxiv.org/abs/2511.02818) tabular foundation model series and [TabTune](https://arxiv.org/abs/2511.02802), an inference and fine-tuning library for tabular foundation models, with follow-on work in distillation, ensembling, and applications in structured health data and credit risk.
 
-Before this, I worked across computer vision, medical imaging, and climate applications at **[Mila Quebec AI Institute](https://mila.quebec/en)** (with Prof. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I completed my B.Tech in Data Science from MIT Manipal in 2024, and I'm an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** (2023 → Mentor, 2026).
+<div class="journey-strip">
+  <div class="journey-step">
+    <span class="journey-step__date">2022 – 23</span>
+    <span class="journey-step__label">IIT Kharagpur</span>
+    <span class="journey-step__desc">Medical image analysis and explainable AI for chest radiographs, KLIV Lab</span>
+  </div>
+  <div class="journey-step">
+    <span class="journey-step__date">2023</span>
+    <span class="journey-step__label">Bosch Corporate Research</span>
+    <span class="journey-step__desc">Generative data augmentation for safety-critical autonomous-driving perception</span>
+  </div>
+  <div class="journey-step">
+    <span class="journey-step__date">2024</span>
+    <span class="journey-step__label">Mila &mdash; Rolnick Lab</span>
+    <span class="journey-step__desc">Geospatial climate AI; built the Alberta Wells Dataset (first-author, ICML 2025)</span>
+  </div>
+  <div class="journey-step">
+    <span class="journey-step__date">2024 &ndash; Present</span>
+    <span class="journey-step__label">Lexsi Labs</span>
+    <span class="journey-step__desc">Research Scientist &rarr; Lead Research Scientist, Model Science</span>
+  </div>
+</div>
+
+I completed my B.Tech in Data Science from MIT Manipal in 2024, and I'm an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** (2023 → Mentor, 2026). **[Full experience →](/experience/)**
 
 ## Selected Work
 
@@ -121,12 +144,6 @@ Before this, I worked across computer vision, medical imaging, and climate appli
 **Academic service:** AAAI 2027 Program Committee; reviewer for NeurIPS, CVPR, ECCV, ACM AIES, WACV, IJCNN, and workshops across ICML, EMNLP, and COLM.
 
 **[Full service record →](/education-service/#academic-service)**
-
-## Background
-
-Lead, Model Science at Lexsi Labs · previously Mila, Bosch Research, and IIT Kharagpur · AAAI Undergraduate Consortium Scholar → Mentor (2023 → 2026) · Spotlight Talk at EurIPS Workshop on Private AI Governance, Copenhagen (December 2025).
-
-**[Full experience →](/experience/)**
 
 ## Contact
 
