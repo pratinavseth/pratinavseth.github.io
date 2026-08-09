@@ -86,7 +86,7 @@ Published at ICML, ACL, WWW, MIDL, IJCNN, AAAI, and Nature Scientific Reports, p
 - <span class="timeline-list__date">2026.05</span>**Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees** accepted at **FMSD Workshop @ ICML 2026**
 - <span class="timeline-list__date">2026.05</span>**Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap** accepted at **FMSD Workshop @ ICML 2026**
 - <span class="timeline-list__date">2026.02</span>New Pre-Print: **AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models**
-- <span class="timeline-list__date">2026.02</span>New Pre-Print: **C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal**
+- <span class="timeline-list__date">2026.02</span>**C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal** accepted at the **Mechanistic Interpretability Workshop @ ICML 2026** — in-person poster, &lt;15% acceptance rate
 - <span class="timeline-list__date">2026.01</span>**Orion-Bix: Bi-Axial Attention for Tabular In-Context Learning** accepted at **WWW 2026**
 - <span class="timeline-list__date">2026.01</span>**Exploring Fine-Tuning for Tabular Foundation Models** accepted at **WWW 2026**
 - <span class="timeline-list__date">2026.01</span>**TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models (Demo)** accepted at **WWW 2026**

@@ -46,23 +46,51 @@ R E Zera Marveen Lyngkhoi, Chirag Chawla, **Pratinav Seth**, Utsav Avaiya, Soham
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='https://cdn.prod.website-files.com/690097e1da2dba144068cad2/698b87dd6f0ed0e2b76c8093_fig_1_cthetha.png' alt="C-ΔΘ" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Mech Interp Workshop, ICML 2026</div><img src='https://cdn.prod.website-files.com/690097e1da2dba144068cad2/698b87dd6f0ed0e2b76c8093_fig_1_cthetha.png' alt="C-ΔΘ" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal](https://arxiv.org/abs/2602.04521)
 
 Aditya Kasliwal, **Pratinav Seth**, Vinay Kumar Sankarapu
 
+Accepted at the **Mechanistic Interpretability Workshop, ICML 2026** (in-person poster; <15% acceptance rate)
+
 [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI for Good Workshop, ICML 2026</div><img src='/images/alignbeam-fig.png' alt="ALIGNBEAM" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-- [ALIGNBEAM: Inference-Time Alignment Transfer via Cross-Vocabulary Logit Mixing](https://arxiv.org/abs/2606.12342), Chirag Chawla, **Pratinav Seth**, Vinay Kumar Sankarapu, **AI for Good Workshop, ICML 2026**
+[ALIGNBEAM: Inference-Time Alignment Transfer via Cross-Vocabulary Logit Mixing](https://arxiv.org/abs/2606.12342)
 
-- [Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution](https://arxiv.org/abs/2605.15138), Saisab Sadhu, **Pratinav Seth**, Vinay Kumar Sankarapu, **Pre-Print**
+Chirag Chawla, **Pratinav Seth**, Vinay Kumar Sankarapu
 
-- [Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands](https://arxiv.org/abs/2605.15164), **Pratinav Seth**, Vinay Kumar Sankarapu, **Pre-Print**
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='/images/forgetting-that-sticks-fig.png' alt="Forgetting That Sticks" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution](https://arxiv.org/abs/2605.15138)
+
+Saisab Sadhu, **Pratinav Seth**, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='/images/behavioural-assurance-fig.png' alt="Position: Behavioural Assurance" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands](https://arxiv.org/abs/2605.15164)
+
+**Pratinav Seth**, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
 
 - What Do Compliance Detectors Read? An Audit of Activation Probes and Guard Models, Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu, **Pratinav Seth**, **Under Review**
 
@@ -72,7 +100,16 @@ Aditya Kasliwal, **Pratinav Seth**, Vinay Kumar Sankarapu
 
 - The Off-Switch Failure: When Safety-Repair Evaluation Rewards Model Collapse, **Pratinav Seth**, **Under Review**
 
-- [Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation](https://arxiv.org/abs/2606.11127), Soham Bhattacharjee, Karun Sharma, Vinay Kumar Sankarapu, **Pratinav Seth**, **Under Review**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='/images/curatorkit-provenance-fig.png' alt="Provenance-Grounded Gating" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation](https://arxiv.org/abs/2606.11127)
+
+Soham Bhattacharjee, Karun Sharma, Vinay Kumar Sankarapu, **Pratinav Seth**
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
 
 - Document-as-Function: Verifiable Generation of Long-Form Synthetic Documents, Karun Sharma, Soham Bhattacharjee, Vinay Kumar Sankarapu, **Pratinav Seth**, **Under Review**
 
@@ -123,15 +160,42 @@ Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh
 </div>
 
 
-- [xai_evals: A Framework for Evaluating Post-Hoc Local Explanation Methods](https://arxiv.org/pdf/2502.03014),**Pratinav Seth**, Yashwardhan Rathore, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu, **Technical Report** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report</div><img src='/images/xai-evals-fig.png' alt="xai_evals" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-- [CircuitKIT: Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability](https://arxiv.org/abs/2607.19317), **Pratinav Seth**, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu, **Pre-Print**
+[xai_evals: A Framework for Evaluating Post-Hoc Local Explanation Methods](https://arxiv.org/pdf/2502.03014)
 
-- [Faithfulness to Refusal: A Causal Audit of Neuron Selectors in LLMs](https://arxiv.org/abs/2607.05355), Ananth Eswar, **Pratinav Seth**, Utsav Avaiya, Vinay Kumar Sankarapu, **Under Review**
+**Pratinav Seth**, Yashwardhan Rathore, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='/images/circuitkit-fig.png' alt="CircuitKIT" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[CircuitKIT: Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability](https://arxiv.org/abs/2607.19317)
+
+**Pratinav Seth**, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='/images/faithfulness-refusal-fig.png' alt="Faithfulness to Refusal" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Faithfulness to Refusal: A Causal Audit of Neuron Selectors in LLMs](https://arxiv.org/abs/2607.05355)
+
+Ananth Eswar, **Pratinav Seth**, Utsav Avaiya, Vinay Kumar Sankarapu
+
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+</div>
+</div>
 
 - Faithfulness Is Not Actionability: Component Heterogeneity in Discovered Circuits, **Pratinav Seth**, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu, **Under Review**
 
-- DLBacktrace v2: Extending Model-Agnostic Interpretability for LLMs and MoEs with CUDA Acceleration, Neeraj Kumar Singh, **Pratinav Seth**, Omkar Kakade, Chintan Chitroda, Vinay Kumar Sankarapu, **Pre-Print**
+- [DLBacktrace v2: Extending Model-Agnostic Interpretability for LLMs and MoEs with CUDA Acceleration](https://github.com/Lexsi-Labs/DLBacktrace), Neeraj Kumar Singh, **Pratinav Seth**, Omkar Kakade, Chintan Chitroda, Vinay Kumar Sankarapu, **Pre-Print**
 
 #### Tabular Foundation Models & Distillation
 
@@ -180,11 +244,34 @@ Aditya Tanna, **Pratinav Seth**, Mohamed Bouadi, Utsav Avaiya, Vinay Kumar Sanka
 </div>
 
 
-- [Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees](https://arxiv.org/abs/2605.18654), Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Vinay Kumar Sankarapu, **Pratinav Seth**, **Foundation Models for Structured Data (FMSD) Workshop, ICML 2026**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FMSD Workshop, ICML 2026</div><img src='/images/events/icml2026-fmsd.jpg' alt="Pocket Foundation Models poster session" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-- [Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap](https://arxiv.org/abs/2605.18696), Aditya Tanna, Yash Jignesh Desai, **Pratinav Seth**, Mohamed Bouadi, Nassim Bouarour, Vinay Kumar Sankarapu, **Foundation Models for Structured Data (FMSD) Workshop, ICML 2026**
+[Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees](https://arxiv.org/abs/2605.18654)
 
-- [Distilling Tabular Foundation Models for Structured Health Data](https://arxiv.org/abs/2605.18702), Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Vinay Kumar Sankarapu, **Pratinav Seth**, **Structured Data for Health (SD4H) Workshop, ICML 2026 — Best Paper Runner-Up, Spotlight**
+Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Vinay Kumar Sankarapu, **Pratinav Seth**
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FMSD Workshop, ICML 2026</div><img src='/images/events/icml2026-fmsd.jpg' alt="Ensembling Tabular Foundation Models poster session" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap](https://arxiv.org/abs/2605.18696)
+
+Aditya Tanna, Yash Jignesh Desai, **Pratinav Seth**, Mohamed Bouadi, Nassim Bouarour, Vinay Kumar Sankarapu
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SD4H Workshop, ICML 2026 — Spotlight</div><img src='/images/events/icml2026-sd4h-spotlight.jpg' alt="Distilling Tabular Foundation Models for Structured Health Data, Best Paper Runner-Up" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Distilling Tabular Foundation Models for Structured Health Data](https://arxiv.org/abs/2605.18702)
+
+Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Vinay Kumar Sankarapu, **Pratinav Seth**
+
+**Best Paper Runner-Up (Spotlight)**
+</div>
+</div>
 
 - [Data Presentation over Architecture: Resampling Strategies for Credit Risk Prediction with Tabular Foundation Models](https://arxiv.org/abs/2605.18635), Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**, Vinay Kumar Sankarapu, **FinDS Workshop @ ACM SIGMOD 2026 (Oral)**
 
