@@ -50,11 +50,11 @@ AFFILIATIONS = {
     "Omkar Kakade": ("Lexsi Labs", "mentee"),
     "Mitul Solanki": ("Lexsi Labs", "mentee"),
 
-    "Mohamed Bouadi": ("Lexsi Labs — Paris", "collaborator"),
-    "Nassim Bouarour": ("Lexsi Labs — Paris", "collaborator"),
-    "Mykola Khandoga": ("Lexsi Labs — Paris", "collaborator"),
-    "Rui Yuan": ("Lexsi Labs — Paris", "collaborator"),
-    "Yash Jignesh Desai": ("Lexsi Labs — Paris", "collaborator"),
+    "Mohamed Bouadi": ("Lexsi Labs, Paris", "collaborator"),
+    "Nassim Bouarour": ("Lexsi Labs, Paris", "collaborator"),
+    "Mykola Khandoga": ("Lexsi Labs, Paris", "collaborator"),
+    "Rui Yuan": ("Lexsi Labs, Paris", "collaborator"),
+    "Yash Jignesh Desai": ("Lexsi Labs, Paris", "collaborator"),
 
     "Yashwardhan Rathore": ("AryaXAI Alignment Labs", "collaborator"),
     "Neeraj Kumar Singh": ("AryaXAI Alignment Labs", "collaborator"),

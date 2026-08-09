@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /publications/
-title: "Publications — Pratinav Seth"
+title: "Publications · Pratinav Seth"
 description: "46 papers (31 peer-reviewed, 210+ citations) spanning LLM post-training, safety alignment, mechanistic interpretability, and tabular foundation models. Venues include ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
 excerpt: "Full publication list: safety post-training & alignment, mechanistic interpretability & XAI, tabular foundation models, and open-source libraries."
 ---
@@ -20,16 +20,16 @@ excerpt: "Full publication list: safety post-training & alignment, mechanistic i
 
 <div class="card--muted" markdown="1">
 **Selected Publications**
-- [CircuitKIT](https://arxiv.org/abs/2607.19317) — Pre-Print 2026 · Circuit discovery, evaluation, and application toolkit for mechanistic interpretability
-- [C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal](https://arxiv.org/abs/2602.04521) — **Mechanistic Interpretability Workshop, ICML 2026** · Circuit-level weight edits that instil selective refusal — no inference-time steering, no runtime overhead
-- [CuratorKIT](https://arxiv.org/abs/2606.21631) — Pre-Print 2026 · Provenance-grounded data-curation and synthetic-generation pipeline for LLM post-training
-- [SafeTune](https://github.com/Lexsi-Labs/SafeTune) — Pre-Print 2026 · Unified library for auditing and repairing safety drift in fine-tuned LLMs
-- [AlignTune](https://arxiv.org/abs/2602.09621) — Pre-Print 2026 · One interface for SFT, DPO, GRPO, and RLHF with modular reward framework and interchangeable backends
-- [Forgetting That Sticks](https://arxiv.org/abs/2605.15138) — Pre-Print 2026 · Unlearning that survives quantization by identifying and zeroing the circuits that store the target knowledge
-- [Interpretability as Alignment](https://arxiv.org/abs/2509.08592) — **EurIPS Workshop 2025 (Spotlight)** · Argues mechanistic interpretability should be a design principle in post-training, not a post-hoc audit
-- [TabTune](https://arxiv.org/abs/2511.02802) — **WWW 2026 Demo** · Unified library for tabular foundation model inference, fine-tuning, and benchmarking across 7 architectures
-- [Alberta Wells Dataset](https://arxiv.org/pdf/2410.09032) — **ICML 2025** · Satellite benchmark for detecting abandoned oil & gas wells; climate AI work with Mila / McGill
-- [SELF-PERCEPT](https://aclanthology.org/2025.acl-short.52/) — **ACL 2025** · LLM introspection improves detection of multi-person mental manipulation in multi-turn conversations
+- [CircuitKIT](https://arxiv.org/abs/2607.19317) · Pre-Print 2026 · Circuit discovery, evaluation, and application toolkit for mechanistic interpretability
+- [C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal](https://arxiv.org/abs/2602.04521) · **Mechanistic Interpretability Workshop, ICML 2026** · Circuit-level weight edits that instil selective refusal, with no inference-time steering or runtime overhead
+- [CuratorKIT](https://arxiv.org/abs/2606.21631) · Pre-Print 2026 · Provenance-grounded data-curation and synthetic-generation pipeline for LLM post-training
+- [SafeTune](https://github.com/Lexsi-Labs/SafeTune) · Pre-Print 2026 · Unified library for auditing and repairing safety drift in fine-tuned LLMs
+- [AlignTune](https://arxiv.org/abs/2602.09621) · Pre-Print 2026 · One interface for SFT, DPO, GRPO, and RLHF with modular reward framework and interchangeable backends
+- [Forgetting That Sticks](https://arxiv.org/abs/2605.15138) · Pre-Print 2026 · Unlearning that survives quantization by identifying and zeroing the circuits that store the target knowledge
+- [Interpretability as Alignment](https://arxiv.org/abs/2509.08592) · **EurIPS Workshop 2025 (Spotlight)** · Argues mechanistic interpretability should be a design principle in post-training, not a post-hoc audit
+- [TabTune](https://arxiv.org/abs/2511.02802) · **WWW 2026 Demo** · Unified library for tabular foundation model inference, fine-tuning, and benchmarking across 7 architectures
+- [Alberta Wells Dataset](https://arxiv.org/pdf/2410.09032) · **ICML 2025** · Satellite benchmark for detecting abandoned oil & gas wells; climate AI work with Mila / McGill
+- [SELF-PERCEPT](https://aclanthology.org/2025.acl-short.52/) · **ACL 2025** · LLM introspection improves detection of multi-person mental manipulation in multi-turn conversations
 </div>
 
 
@@ -262,7 +262,7 @@ Aditya Tanna, Yash Jignesh Desai, **Pratinav Seth**, Mohamed Bouadi, Nassim Boua
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SD4H Workshop, ICML 2026 — Spotlight</div><img src='/images/sd4h-distillation-fig.png' alt="Distilling Tabular Foundation Models for Structured Health Data pipeline" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SD4H Workshop, ICML 2026 · Spotlight</div><img src='/images/sd4h-distillation-fig.png' alt="Distilling Tabular Foundation Models for Structured Health Data pipeline" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Distilling Tabular Foundation Models for Structured Health Data](https://arxiv.org/abs/2605.18702)
@@ -273,7 +273,7 @@ Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Vinay Kumar Sankarapu, **Pratinav
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FinDS @ ACM SIGMOD 2026 — Oral</div><img src='/images/sigmod-credit-risk-fig.png' alt="Credit default prediction under severe class imbalance pipeline" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FinDS @ ACM SIGMOD 2026 · Oral</div><img src='/images/sigmod-credit-risk-fig.png' alt="Credit default prediction under severe class imbalance pipeline" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Data Presentation over Architecture: Resampling Strategies for Credit Risk Prediction with Tabular Foundation Models](https://arxiv.org/abs/2605.18635)
@@ -282,20 +282,20 @@ Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**,
 </div>
 </div>
 
-<!-- Position: Institutional Tabular Foundation Models: Rethinking AI for Enterprise Decision-Making — Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Pratinav Seth, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
+<!-- Position: Institutional Tabular Foundation Models: Rethinking AI for Enterprise Decision-Making · Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Pratinav Seth, Vinay Kumar Sankarapu · Pre-Print (link pending) -->
 
 #### Libraries & Toolkits
 
 *Designed and built the initial release of each library below.*
 
-- [TabTune](https://arxiv.org/abs/2511.02802) — Unified inference and fine-tuning library for tabular foundation models across 7 architectures. **WWW 2026 Demo** (116⭐).
-- [AlignTune](https://arxiv.org/abs/2602.09621) — Modular post-training toolkit: SFT, DPO, GRPO, and RLHF with interchangeable backends. **Pre-Print 2026** (37⭐).
-- [DLBacktrace v2](https://github.com/AryaXAI/DLBacktrace) — `torch.export`-based, model-agnostic explainability for LLMs and MoEs with CUDA acceleration. **Pre-Print 2026** (26⭐).
-- [CuratorKIT](https://arxiv.org/abs/2606.21631) — Provenance-grounded data-curation and synthetic-generation pipeline for LLM post-training. **Pre-Print 2026** (24⭐).
-- [xai_evals](https://arxiv.org/pdf/2502.03014) — Framework for evaluating post-hoc local explanation methods. **Technical Report 2025** (15⭐).
-- [CircuitKIT](https://arxiv.org/abs/2607.19317) — Circuit discovery, evaluation, and application toolkit for mechanistic interpretability. **Pre-Print 2026** (14⭐).
-- [SafeTune](https://github.com/Lexsi-Labs/SafeTune) — Unified library for auditing and repairing safety drift in fine-tuned LLMs. **Pre-Print 2026** (7⭐).
-- [DLBacktrace (v1)](https://arxiv.org/pdf/2411.12643) — Model-agnostic explainability for deep learning models. **IJCNN 2025.**
+- [TabTune](https://arxiv.org/abs/2511.02802) · Unified inference and fine-tuning library for tabular foundation models across 7 architectures. **WWW 2026 Demo** (116⭐).
+- [AlignTune](https://arxiv.org/abs/2602.09621) · Modular post-training toolkit: SFT, DPO, GRPO, and RLHF with interchangeable backends. **Pre-Print 2026** (37⭐).
+- [DLBacktrace v2](https://github.com/AryaXAI/DLBacktrace) · `torch.export`-based, model-agnostic explainability for LLMs and MoEs with CUDA acceleration. **Pre-Print 2026** (26⭐).
+- [CuratorKIT](https://arxiv.org/abs/2606.21631) · Provenance-grounded data-curation and synthetic-generation pipeline for LLM post-training. **Pre-Print 2026** (24⭐).
+- [xai_evals](https://arxiv.org/pdf/2502.03014) · Framework for evaluating post-hoc local explanation methods. **Technical Report 2025** (15⭐).
+- [CircuitKIT](https://arxiv.org/abs/2607.19317) · Circuit discovery, evaluation, and application toolkit for mechanistic interpretability. **Pre-Print 2026** (14⭐).
+- [SafeTune](https://github.com/Lexsi-Labs/SafeTune) · Unified library for auditing and repairing safety drift in fine-tuned LLMs. **Pre-Print 2026** (7⭐).
+- [DLBacktrace (v1)](https://arxiv.org/pdf/2411.12643) · Model-agnostic explainability for deep learning models. **IJCNN 2025.**
 
 *In development: multiple additional tools across interpretability, post-training alignment, and LLM safety.*
 

@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Pratinav Seth — LLM Post-Training, Safety & Mechanistic Interpretability"
+title: "Pratinav Seth · LLM Post-Training, Safety & Mechanistic Interpretability"
 description: "AI researcher with 46 papers (31 peer-reviewed, 210+ citations) and 7 open-source research libraries. Research: post-training safety and circuit-level mechanistic interpretability for language models."
 excerpt: "AI researcher working on post-training safety and mechanistic interpretability for language models. 46 papers (31 peer-reviewed, 210+ citations), 7 open-source research libraries."
 keywords: "Pratinav Seth, LLM alignment, safety post-training, RLHF, DPO, SFT, mechanistic interpretability, AI safety, circuit analysis, weight arithmetic, safety fine-tuning, agentic systems, AI agents, evaluation, tabular foundation models, knowledge distillation, lead research scientist, machine learning, NLP"
@@ -98,7 +98,7 @@ I've published 46 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, M
   </div>
   <div class="journey-step">
     <span class="journey-step__date">2024</span>
-    <span class="journey-step__label">Mila &mdash; Rolnick Lab</span>
+    <span class="journey-step__label">Mila, Rolnick Lab</span>
     <span class="journey-step__desc">Geospatial climate AI; built the Alberta Wells Dataset (first-author, ICML 2025)</span>
   </div>
   <div class="journey-step">
@@ -164,7 +164,7 @@ I've published 46 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, M
 - <span class="timeline-list__date">2026.05</span>**Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees** accepted at **FMSD Workshop @ ICML 2026**
 - <span class="timeline-list__date">2026.05</span>**Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap** accepted at **FMSD Workshop @ ICML 2026**
 - <span class="timeline-list__date">2026.02</span>New Pre-Print: **AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models**
-- <span class="timeline-list__date">2026.02</span>**C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal** accepted at the **Mechanistic Interpretability Workshop @ ICML 2026** — in-person poster, &lt;15% acceptance rate
+- <span class="timeline-list__date">2026.02</span>**C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal** accepted at the **Mechanistic Interpretability Workshop @ ICML 2026** (in-person poster, &lt;15% acceptance rate)
 - <span class="timeline-list__date">2026.01</span>**Orion-Bix: Bi-Axial Attention for Tabular In-Context Learning** accepted at **WWW 2026**
 - <span class="timeline-list__date">2026.01</span>**Exploring Fine-Tuning for Tabular Foundation Models** accepted at **WWW 2026**
 - <span class="timeline-list__date">2026.01</span>**TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models (Demo)** accepted at **WWW 2026**
@@ -188,7 +188,7 @@ I've published 46 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, M
 ## Contact
 
 <div class="notice--warning" markdown="1">
-**Lexsi Labs — Internships & Full-Time Roles:** For internship and FTE applications at Lexsi Labs, please **apply directly** via [lexsi.ai](https://lexsi.ai) rather than reaching out for referrals.
+**Lexsi Labs Internships & Full-Time Roles:** For internship and FTE applications at Lexsi Labs, please **apply directly** via [lexsi.ai](https://lexsi.ai) rather than reaching out for referrals.
 </div>
 <div class="notice--success" markdown="1">
 **Mentoring:** I'm occasionally able to advise early-stage researchers. Include a short introduction, your current work, and the specific question you'd like to discuss, and [email me](mailto:seth.pratinav@gmail.com).

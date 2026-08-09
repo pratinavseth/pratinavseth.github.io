@@ -1,8 +1,8 @@
 ---
 layout: default
 permalink: /experience/
-title: "Professional Experience — Pratinav Seth"
-description: "Research career from Lead Research Scientist at Lexsi Labs back through Mila Quebec AI Institute, Bosch Research India, and IIT Kharagpur — post-training alignment, mechanistic interpretability, and tabular foundation models."
+title: "Professional Experience · Pratinav Seth"
+description: "Research career from Lead Research Scientist at Lexsi Labs back through Mila Quebec AI Institute, Bosch Research India, and IIT Kharagpur, covering post-training alignment, mechanistic interpretability, and tabular foundation models."
 excerpt: "Research positions, collaborations, leadership roles, and early career experience."
 ---
 
@@ -17,11 +17,11 @@ excerpt: "Research positions, collaborations, leadership roles, and early career
   - **Post-Training & Data Curation**: Building **CuratorKIT** (24⭐), a provenance-grounded data-curation and synthetic-generation pipeline; verifiable long-form synthetic document generation, with further work under review
   - **Post-Hoc Interpretability**: Built unified post-hoc explainability tooling (LRP, Integrated Gradients, DL-Backtrace), including LRP- and DLB-based analysis of model refusal behavior
   - **Mechanistic Interpretability**: Lead circuit-level interpretability: built **CircuitKIT** (14⭐), a circuit discovery, evaluation, and application toolkit; co-led **C-ΔΘ**, a circuit-restricted weight-arithmetic method for selective refusal (ICML 2026 Workshop); advised machine unlearning via circuit attribution, with further work on circuit faithfulness under review
-  - **Safety & Steering**: Improve safety alignment across the model lifecycle — during training, post-training recovery and fixing, and at inference time. Co-built **SafeTune** (7⭐), a unified library for auditing and repairing safety drift in fine-tuned LLMs; built an inference-time alignment-transfer method (**ALIGNBEAM**, ICML 2026 Workshop); a position paper on the limits of behavioral safety assurance for governance; audited compliance detectors and guard models; further work on safety-drift repair and safety-repair evaluation, under review
+  - **Safety & Steering**: Improve safety alignment across the model lifecycle: during training, post-training recovery and fixing, and at inference time. Co-built **SafeTune** (7⭐), a unified library for auditing and repairing safety drift in fine-tuned LLMs; built an inference-time alignment-transfer method (**ALIGNBEAM**, ICML 2026 Workshop); a position paper on the limits of behavioral safety assurance for governance; audited compliance detectors and guard models; further work on safety-drift repair and safety-repair evaluation, under review
   - **Model Optimization**: Lead structured-pruning and quantization work for efficient model deployment
   - **AI & Coding Agents**: Explore agent and coding-agent architectures; early exploration of a self-improving post-training agent and autonomous-research (auto-research) agents
   - **Evaluation**: Built an internal LLM evaluation library
-  - **Research-to-Product Integration**: Translate research into production — integrate interpretability, alignment, and safety tooling into the product stack
+  - **Research-to-Product Integration**: Translate research into production: integrate interpretability, alignment, and safety tooling into the product stack
   - **Team & Delivery**: Lead the Model Science group (16 interns and 8 full-time researchers across India and Paris), covering grants, hiring, roadmap, and overall planning. Team output spans ICML 2026 workshop papers and submissions under review at A* venues (NeurIPS, ACL, and more)
   - **Publications**:
     - AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models. 2026. Pre-print.
@@ -37,7 +37,7 @@ excerpt: "Research positions, collaborations, leadership roles, and early career
   - **Model Science Group**: Led and scaled the lab's Model Science group across post-training alignment, safety, and interpretability into a core research team driving the lab's alignment and safety agenda
   - **AlignTune**: Built AlignTune, a modular toolkit for post-training alignment of LLMs spanning SFT, preference optimization, and safety methods (37⭐); formalized the **Interpretability as Alignment** framework (EurIPS 2025 Workshop) as a guiding design principle for the team's alignment work
   - **Interpretability**: Led the lab's interpretability tooling: rearchitected **DLBacktrace v2** on a `torch.export`-based graph-capture design to keep it model-agnostic across architectures, with CUDA acceleration for LLMs and MoEs (26⭐); drove actionable interpretability into model optimization through interpretability-aware pruning for medical imaging (MICCAI Workshop 2025)
-  - **Tabular Foundation Models**: Led problem framing, early model design, and benchmarking for the ORION tabular foundation-model series — Orion-BiX (WWW 2026) and Orion-MSP (AITD Workshop @ EurIPS 2025) — and drove its extension to regression
+  - **Tabular Foundation Models**: Led problem framing, early model design, and benchmarking for the ORION tabular foundation-model series (Orion-BiX, WWW 2026; and Orion-MSP, AITD Workshop @ EurIPS 2025), and drove its extension to regression
   - **TabTune**: Architected TabTune, an open-source toolkit for inference, fine-tuning, and regression with tabular foundation models (116⭐, WWW 2026 Demo), shipped with an accompanying fine-tuning study; later advised distillation, ensembling (ICML 2026 Workshops), and credit-risk prediction (FinDS @ ACM SIGMOD 2026, Oral) for health and enterprise deployment
   - **Model Compression**: Built an internal pruning and model-compression toolkit, bringing interpretability-guided compression into the production deployment pipeline
   - **Team & Mentorship**: Led the Model Science group (14 interns and 5 full-time researchers during this period across India and Paris) spanning tabular, alignment, and interpretability; worked on grants, hiring, and overall planning
@@ -51,9 +51,9 @@ excerpt: "Research positions, collaborations, leadership roles, and early career
     - Exploring Fine-Tuning for Tabular Foundation Models. 2026. Accepted at WWW 2026.
 
 - <span class="role-list__date">2024.07 – 2025.06</span>**Research Scientist** at [AryaXAI Alignment Labs](https://www.aryaxai.com/) *(rebranded to Lexsi Labs in 2025)*, Remote / Mumbai, India
-  - **Research Focus**: Working at the intersection of Explainable AI (XAI), AI alignment, and AI safety in high-stakes domains—interpreting black-box models, assessing XAI reliability, and developing foundation models for tabular data in fraud detection and mission-critical applications
+  - **Research Focus**: Working at the intersection of Explainable AI (XAI), AI alignment, and AI safety in high-stakes domains: interpreting black-box models, assessing XAI reliability, and developing foundation models for tabular data in fraud detection and mission-critical applications
   - **Explainability**: Enhanced the DL-Backtrace method by generalizing its mechanics for model-agnostic use; co-developed a benchmarking framework for the systematic evaluation of XAI techniques
-  - **XAI-Guided Optimization & Alignment**: Investigating model-agnostic post-hoc optimization and alignment strategies across various model architectures—leveraging interpretability for safer, more reliable model behavior
+  - **XAI-Guided Optimization & Alignment**: Investigating model-agnostic post-hoc optimization and alignment strategies across various model architectures, using interpretability for safer, more reliable model behavior
   - **Leadership & Mentorship**: Mentored two research interns; led recruitment of interns and full-time scientists (Paris and India); authored technical and research documentation for stakeholders; initiated proof-of-concept (POC) projects to advance internal algorithmic capabilities
   - **Representation**: Served as R&D representative in client-facing engagements and presented AryaXAI solutions at industry forums, including the 5th MLOps Conference
   - **Publications**:
@@ -72,29 +72,56 @@ excerpt: "Research positions, collaborations, leadership roles, and early career
   - **Focus**: Generating additional data for difficult or misclassified samples to improve downstream task network optimization
   - **Mentors**: Mr. Koustav Mullick (CR/RDT-2), Dr. Amit Kale
   
-- <span class="role-list__date">2021.03 – 2024.01</span>Research Progression at [Mars Rover Manipal](https://www.marsrovermanipal.com/research)
-  - Advanced from Trainee to Senior Researcher and Mentor
-  - Led AI research initiatives leading to multiple publications at NeurIPS, ACL, AAAI, CVPR, etc. with projects in Generative AI, Medical Image Analysis, and Climate Change.
-  - Built a team of 10+ members and mentored them in their research.
+- <span class="role-list__date">2021.06 – 2023.12</span>**Researcher**, AI Research Wing at [Mars Rover Manipal](https://www.marsrovermanipal.com/research), Manipal, India
+  - **Progression**: Rose from Student Trainee to Senior Researcher leading the AI Research Wing, driving the team's technical roadmap across computer vision, multimodal AI, and medical imaging
+  - **Recruitment & Training**: Spearheaded recruitment that raised applicant quality; designed and ran training programs for incoming ML researchers
+  - **Mentorship**: Mentored 10+ undergraduates (12+ total collaborators) under Dr. Ujjwal Verma; co-authored their publications, including workshop papers at NeurIPS, CVPR, ICLR, and MICCAI, an AAAI student abstract, and a Nature Scientific Reports journal paper
 
-
-- <span class="role-list__date">2023.04 – 2023.12</span>Research Assistant under [Dr. Abhilash K. Pai](https://sites.google.com/site/abhilashkpai), Dept. of DSCA, MIT MAHE
-  - Focused on medical image analysis and fairness in AI. 
-  - Worked on a study on effects of pretraining techniques on skin tone bias in skin lesion classification with support from MAHE Undergraduate Research Grant leading to a publication at Pre-Train Workshop at WACV 2024.
+- <span class="role-list__date">2023.04 – 2023.12</span>**Undergraduate Researcher** under [Dr. Abhilash K. Pai](https://sites.google.com/site/abhilashkpai), Dept. of Data Science & Computer Application, MIT MAHE, Manipal, India
+  - **Medical AI & Fairness**: Studied the impact of pretraining techniques on skin-tone bias in skin lesion classification, funded by the MAHE Undergraduate Research Grant
+  - **Outcome**: Led to a publication at the Pre-Train Workshop, WACV 2024
 </div>
 
 ## Research Collaborations
-- *2023.12 - 2024.01*, Research Collaboration with [Dr. Amit Agarwal, Wells Fargo AI COE](https://arxiv.org/abs/2407.04721)
-- *2022.05 - 2023.12*, Research Intern at [KLIV Lab, IIT Kharagpur](https://www.linkedin.com/in/pratinav-seth/) under Dr. Debdoot Sheet and mentored by Mr. Rakshith Satish. Worked on integrating domain knowledge in medical image analysis using Graph Convolutional Networks and Explainable AI for chest radiographs.
-- *2022.10 - 2023.03*, Research Collaboration with [IIT Roorkee](https://www.linkedin.com/in/pratinav-seth/).
+
+<div class="role-list" markdown="1">
+- <span class="role-list__date">2023.12 – 2024.01</span>Research Collaborator with [Dr. Amit Agarwal](https://arxiv.org/abs/2407.04721), Wells Fargo AI Center of Excellence, Remote
+  - **AgriLLM**: Built seq2seq LLMs (BART, T5, Flan-T5) for agricultural queries from Indian farmers on a highly noisy real-world dataset
+  - **Outcome**: Published at the NLP4PI Workshop, EMNLP 2024, and the Undergraduate Consortium at KDD 2024
+
+- <span class="role-list__date">2022.05 – 2023.12</span>Research Intern at KLIV Research Group, [IIT Kharagpur](https://www.linkedin.com/in/pratinav-seth/) (PI: Dr. Debdoot Sheet; mentored by Rakshith Satish), Remote
+  - **Healthcare AI**: Developed an attention-driven dynamic Graph Convolutional Network for noisy, multi-label, comorbidity-aware chest radiograph screening
+  - **Interpretability**: Investigated sanity checks for class activation maps in multi-label chest X-ray classification
+
+- <span class="role-list__date">2022.10 – 2023.03</span>Research Collaborator with Dr. Vijay Kumar BR, [NEC Labs & IIT Roorkee](https://www.linkedin.com/in/pratinav-seth/), Remote
+  - **Focus**: Deep metric learning with self-supervised and contrastive learning; vision-based attention models and hyperbolic representation learning
+</div>
 
 ## Leadership Roles
-- *2022.09 - 2023.09*, Co-President & AI Research Mentor, [Research Society MIT Manipal](https://www.instagram.com/researchsoc/?hl=en)
-- *2022.11 - 2023.08*, Co-founder & Head of AI, [The Data Alchemists](https://www.linkedin.com/company/the-data-alchemists/)
+
+<div class="role-list" markdown="1">
+- <span class="role-list__date">2022.08 – 2023.09</span>Co-President & AI Research Mentor, [Research Society MIT Manipal](https://www.instagram.com/researchsoc/?hl=en), Manipal, India
+  - **Organization**: Led a 90+ member undergraduate research organization across 10+ technical domains; managed recruitment from 250+ applicants and ran member-development pathways
+  - **Mentorship**: Mentored 10+ undergraduates and co-authored the RSM-NLP team's shared-task papers
+
+- <span class="role-list__date">2022.11 – 2023.09</span>Co-founder & Head of Artificial Intelligence and Machine Learning, [The Data Alchemists](https://www.linkedin.com/company/the-data-alchemists/), Manipal, India
+  - **Co-founding**: Founded and led the AI/ML club, growing it to 30+ members and establishing a lasting community of practice
+  - **Programming**: Ran workshops and technical events on ML fundamentals and projects
+</div>
 
 ## Early Career Experience
-- *2022.06 - 2022.09*, Research Assistant, Dept. of DSCA, MIT MAHE under Dr. Vidya Rao & Dr. Poornima P.K. working on International Cyber Security Data Mining Competition leading to a position of 5th out of 134+ teams.
-- *2022.03 - 2022.05*, Machine Learning Intern, [Eedge.ai](https://www.linkedin.com/in/pratinav-seth/)
-- *2022.01 - 2022.02*, Data Science (NLP) Intern, [CUREYA](https://www.linkedin.com/in/pratinav-seth/)
+
+<div class="role-list" markdown="1">
+- <span class="role-list__date">2022.06 – 2022.09</span>Undergraduate Research Assistant under Dr. Vidya Rao & Dr. Poornima P.K., Dept. of Data Science & Computer Application, MIT MAHE, Manipal, India
+  - **Cybersecurity & AI**: Multi-class malware classification at the intersection of cybersecurity and AI
+  - **Outcome**: Placed 5th of 134 teams in the 13th International Cyber Security Data Mining Competition
+
+- <span class="role-list__date">2022.03 – 2022.05</span>Machine Learning Intern at [Eedge.ai](https://www.linkedin.com/in/pratinav-seth/), a deep-learning talent-design platform, Remote
+  - **Synthetic Data & Interpretability**: Built generative models for synthetic tabular data to fine-tune downstream models; analyzed the effect of synthetic data on the interpretability of the fine-tuned models
+  - **Mentor**: Ananta Mahapatra, CTO & Co-Founder
+
+- <span class="role-list__date">2022.01 – 2022.02</span>Data Science (NLP) Intern at [CUREYA](https://www.linkedin.com/in/pratinav-seth/), Aspexx Health Solutions, Remote
+  - **Healthcare AI**: Built NLP pipelines for Reyana, a conversational healthcare chatbot: text classification, summarization, BERT models, and LSTM-based NLG for clinical dialogue
+</div>
 
 
