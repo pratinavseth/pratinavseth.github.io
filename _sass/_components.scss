@@ -509,6 +509,62 @@
 }
 
 /*
+   Bio switcher — First Person / Third Person / Full (Home, CSS-only tabs)
+   ========================================================================== */
+
+.bio-switcher__radio {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.bio-switcher__nav {
+  display: flex;
+  gap: 0;
+  margin: 0 0 1.2em;
+  border: 1px solid $border-color;
+  width: fit-content;
+
+  label {
+    padding: 0.5em 1em;
+    font-family: $monospace;
+    font-size: 0.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: $gray;
+    cursor: pointer;
+    border-right: 1px solid $border-color;
+    transition: $global-transition;
+
+    &:last-of-type {
+      border-right: none;
+    }
+
+    &:hover {
+      color: $text-color;
+    }
+  }
+}
+
+.bio-switcher__panel {
+  display: none;
+}
+
+#bio-first:checked ~ .bio-switcher__nav label[for="bio-first"],
+#bio-third:checked ~ .bio-switcher__nav label[for="bio-third"],
+#bio-full:checked ~ .bio-switcher__nav label[for="bio-full"] {
+  color: $bg-color;
+  background: $text-color;
+}
+
+#bio-first:checked ~ .bio-switcher__panel--first,
+#bio-third:checked ~ .bio-switcher__panel--third,
+#bio-full:checked ~ .bio-switcher__panel--full {
+  display: block;
+}
+
+/*
    Journey strip — compact chronological path (Home)
    ========================================================================== */
 
