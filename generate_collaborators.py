@@ -236,39 +236,45 @@ def main():
     return counts, papers_seen
 
 
-def render_group(names_counts, group_by_label=True):
-    """names_counts: list of (name, count). Groups by institution label,
+ROLE_TAG = {"mentee": "MENTEE"}  # roles that get an inline tag; "collaborator" gets none
+
+
+def render_group(names_counts):
+    """names_counts: list of (name, count, role). Groups by institution label,
     preserving institution order of first appearance, sorted by count desc
-    within each group."""
+    within each group. Each person appears exactly once; their role (if
+    tag-worthy) is rendered as an inline tag rather than a separate list."""
     out = []
     seen_labels = []
     by_label = {}
-    for name, n in names_counts:
+    for name, n, role in names_counts:
         label, _rel = AFFILIATIONS[name]
-        by_label.setdefault(label, []).append((name, n))
+        by_label.setdefault(label, []).append((name, n, role))
         if label not in seen_labels:
             seen_labels.append(label)
     for label in seen_labels:
         entries = sorted(by_label[label], key=lambda x: -x[1])
-        if group_by_label:
-            out.append(f"\n**{label}**")
-        for name, n in entries:
-            suffix = f" ({n})"
-            out.append(f"- {name}{suffix}")
+        out.append(f"\n**{label}**")
+        for name, n, role in entries:
+            tag = ROLE_TAG.get(role)
+            tag_html = f" <span class='tag'>{tag}</span>" if tag else ""
+            out.append(f"- {name} ({n}){tag_html}")
     return "\n".join(out)
 
 
 def render_markdown(counts):
     managers = [(n, c) for n, c in counts.items() if AFFILIATIONS[n][1] == "manager"]
     mentors = [(n, c) for n, c in counts.items() if AFFILIATIONS[n][1] == "mentor"]
-    mentees = [(n, c) for n, c in counts.items() if AFFILIATIONS[n][1] == "mentee"]
-    # "Collaborators" is the comprehensive by-institution index of everyone
-    # except managers/mentors (who get their own sections above).
-    collaborators = [(n, c) for n, c in counts.items() if AFFILIATIONS[n][1] in ("mentee", "collaborator")]
+    # Everyone who isn't a manager/mentor is listed exactly once here,
+    # grouped by institution, with a MENTEE tag where relevant — instead of
+    # duplicating mentees across a separate "Mentees" section.
+    collaborators = [
+        (n, c, AFFILIATIONS[n][1]) for n, c in counts.items()
+        if AFFILIATIONS[n][1] in ("mentee", "collaborator")
+    ]
 
     managers.sort(key=lambda x: -x[1])
     mentors.sort(key=lambda x: -x[1])
-    mentees.sort(key=lambda x: -x[1])
     collaborators.sort(key=lambda x: -x[1])
 
     parts = ["## Managers"]
@@ -283,13 +289,10 @@ def render_markdown(counts):
         suffix = f" ({n})"
         parts.append(f"- {name}{suffix} — {label}")
 
-    parts.append("\n## Mentees")
-    parts.append(render_group(mentees))
-
     # Explicit id: this h2's auto-generated kramdown id would otherwise
     # collide with the page's "# Collaborators & Mentees {: #collaborators}"
     # h1 above it (duplicate IDs on the page).
-    parts.append("\n\n## Collaborators\n{: #collaborators-list}")
+    parts.append("\n\n## Collaborators & Mentees\n{: #collaborators-list}")
     parts.append(render_group(collaborators))
 
     return "\n".join(parts)

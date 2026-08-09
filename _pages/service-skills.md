@@ -170,45 +170,26 @@ Numbers in parentheses indicate co-authored works together.
 - David Rolnick (1) — Mila / McGill
 - Abhilash K Pai (1) — MIT MAHE
 
-## Mentees
 
-**Lexsi Labs**
-- Aditya Kasliwal (10)
-- Aditya Tanna (8)
-- Utsav Avaiya (3)
-- Soham Bhattacharjee (3)
-- Saisab Sadhu (3)
-- Chirag Chawla (2)
-- Aadit Sengupta (2)
-- Karun Sharma (2)
-- Hem Gosalia (2)
-- R E Zera Marveen Lyngkhoi (1)
-- Anshul Kaushal (1)
-- Nikita Malik (1)
-- Ananth Eswar (1)
-- Omkar Kakade (1)
-- Mitul Solanki (1)
-
-
-## Collaborators
+## Collaborators & Mentees
 {: #collaborators-list}
 
 **Lexsi Labs**
-- Aditya Kasliwal (10)
-- Aditya Tanna (8)
-- Utsav Avaiya (3)
-- Soham Bhattacharjee (3)
-- Saisab Sadhu (3)
-- Chirag Chawla (2)
-- Aadit Sengupta (2)
-- Karun Sharma (2)
-- Hem Gosalia (2)
-- R E Zera Marveen Lyngkhoi (1)
-- Anshul Kaushal (1)
-- Nikita Malik (1)
-- Ananth Eswar (1)
-- Omkar Kakade (1)
-- Mitul Solanki (1)
+- Aditya Kasliwal (10) <span class='tag'>MENTEE</span>
+- Aditya Tanna (8) <span class='tag'>MENTEE</span>
+- Utsav Avaiya (3) <span class='tag'>MENTEE</span>
+- Soham Bhattacharjee (3) <span class='tag'>MENTEE</span>
+- Saisab Sadhu (3) <span class='tag'>MENTEE</span>
+- Chirag Chawla (2) <span class='tag'>MENTEE</span>
+- Aadit Sengupta (2) <span class='tag'>MENTEE</span>
+- Karun Sharma (2) <span class='tag'>MENTEE</span>
+- Hem Gosalia (2) <span class='tag'>MENTEE</span>
+- R E Zera Marveen Lyngkhoi (1) <span class='tag'>MENTEE</span>
+- Anshul Kaushal (1) <span class='tag'>MENTEE</span>
+- Nikita Malik (1) <span class='tag'>MENTEE</span>
+- Ananth Eswar (1) <span class='tag'>MENTEE</span>
+- Omkar Kakade (1) <span class='tag'>MENTEE</span>
+- Mitul Solanki (1) <span class='tag'>MENTEE</span>
 
 **Lexsi Labs — Paris**
 - Mohamed Bouadi (8)
