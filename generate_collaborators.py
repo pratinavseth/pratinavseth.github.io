@@ -34,7 +34,7 @@ AFFILIATIONS = {
     "Abhilash K Pai": ("MIT MAHE", "mentor"),
     "Ujjwal Verma": ("MIT MAHE", "mentor"),
 
-    "Aditya Kasliwal": ("Lexsi Labs", "mentee"),
+    "Aditya Kasliwal": ("Mars Rover Manipal / Research Society Manipal / Lexsi Labs", "mentee"),
     "Aditya Tanna": ("Lexsi Labs", "mentee"),
     "Utsav Avaiya": ("Lexsi Labs", "mentee"),
     "Saisab Sadhu": ("Lexsi Labs", "mentee"),
@@ -89,7 +89,7 @@ AFFILIATIONS = {
     "Siddharth Shukla": ("Manipal University Jaipur", "collaborator"),
     "Tanuj Tyagi": ("Manipal University Jaipur", "collaborator"),
     "Sandeep Chaurasia": ("Manipal University Jaipur", "collaborator"),
-    "Kripabandhu Ghosh": ("Manipal University Jaipur", "collaborator"),
+    "Kripabandhu Ghosh": ("IISER Kolkata", "collaborator"),
 
     "Sidhaarth Sredharan Murali": ("NIT Surathkal", "collaborator"),
 
