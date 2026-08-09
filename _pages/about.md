@@ -1,15 +1,15 @@
 ---
 permalink: /
 title: "Pratinav Seth — LLM Post-Training, Safety & Mechanistic Interpretability"
-description: "Lead Research Scientist at Lexsi Labs with 48 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, MIDL, and Nature Scientific Reports. Research: post-training alignment for LLMs and circuit-level mechanistic interpretability."
-excerpt: "Lead Research Scientist at Lexsi Labs. Post-training alignment and circuit-level mechanistic interpretability. 48 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
+description: "AI researcher with 46 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, MIDL, and Nature Scientific Reports. Research: post-training alignment for LLMs and circuit-level mechanistic interpretability."
+excerpt: "AI researcher working on post-training alignment and circuit-level mechanistic interpretability. 46 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
 keywords: "Pratinav Seth, LLM alignment, safety post-training, RLHF, DPO, SFT, mechanistic interpretability, AI safety, circuit analysis, weight arithmetic, safety fine-tuning, agentic systems, AI agents, evaluation, tabular foundation models, knowledge distillation, lead research scientist, machine learning, NLP"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 hero:
-  eyebrow: "Lead Research Scientist · Lexsi Labs"
+  eyebrow: "AI Researcher"
   name: "Pratinav Seth"
   tagline: "LLM post-training, safety alignment, and mechanistic interpretability — with a growing focus on AI agents and evaluation."
   stats:

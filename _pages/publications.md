@@ -2,7 +2,7 @@
 layout: default
 permalink: /publications/
 title: "Publications — Pratinav Seth"
-description: "48 papers (31 peer-reviewed, 210+ citations) spanning LLM post-training, safety alignment, mechanistic interpretability, and tabular foundation models. Venues include ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
+description: "46 papers (31 peer-reviewed, 210+ citations) spanning LLM post-training, safety alignment, mechanistic interpretability, and tabular foundation models. Venues include ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
 excerpt: "Full publication list: safety post-training & alignment, mechanistic interpretability & XAI, tabular foundation models, and open-source libraries."
 ---
 
@@ -16,7 +16,7 @@ excerpt: "Full publication list: safety post-training & alignment, mechanistic i
 # Publications <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 {: #publications}
 
-<p class="total-papers-note">Total Papers: 48*<br><small>* includes papers in preparation / internal review, not yet publicly listed</small></p>
+<p class="total-papers-note">Total Papers: 46*<br><small>* counted from the list below; additional work is in internal review and not yet listed here</small></p>
 
 <div class="card--muted" markdown="1">
 **Selected Publications**

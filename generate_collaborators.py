@@ -1,10 +1,14 @@
 """
 Regenerates the "Collaborators" list in _pages/service-skills.md from the
 actual co-author lists in _pages/publications.md, instead of hand-maintained
-counts. Run this after adding/removing papers from Publications.
+counts. Also syncs the total paper count (front-matter descriptions, the
+Total Papers note) to the actual number of papers listed, instead of a
+hand-typed figure that can drift — it already had (the hand-typed "48" was
+stale; the real count was 46). Run this after adding/removing papers from
+Publications.
 
 Usage:
-    python3 generate_collaborators.py --write      # regenerate service-skills.md in place
+    python3 generate_collaborators.py --write      # regenerate service-skills.md + sync paper count in place
     python3 generate_collaborators.py --markdown   # print the generated block only
     python3 generate_collaborators.py              # print raw counts (debugging)
 
@@ -288,10 +292,33 @@ def write_service_skills(generated_markdown):
     print(f"Wrote generated Collaborators block into {SERVICE_SKILLS_MD}", file=sys.stderr)
 
 
+# Files (and the "48 papers" phrasing pattern within them) that mention the
+# total paper count outside the list itself — front matter descriptions,
+# excerpts, and the visible Total Papers note. Kept in sync with the actual
+# count so it can't drift the way the hand-typed "48" already had (the real
+# count was 46).
+PAPER_COUNT_FILES = ["_pages/about.md", "_pages/publications.md", "_config.yml"]
+PAPER_COUNT_PATTERN = re.compile(r"\b\d+ papers\b")
+TOTAL_PAPERS_NOTE_PATTERN = re.compile(r"Total Papers: \d+\*")
+
+
+def sync_total_papers(papers_seen):
+    for path in PAPER_COUNT_FILES:
+        with open(path, encoding="utf-8") as f:
+            content = f.read()
+        new_content = PAPER_COUNT_PATTERN.sub(f"{papers_seen} papers", content)
+        new_content = TOTAL_PAPERS_NOTE_PATTERN.sub(f"Total Papers: {papers_seen}*", new_content)
+        if new_content != content:
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(new_content)
+            print(f"Synced paper count ({papers_seen}) into {path}", file=sys.stderr)
+
+
 if __name__ == "__main__":
     counts, papers_seen = main()
     if "--write" in sys.argv:
         write_service_skills(render_markdown(counts))
+        sync_total_papers(papers_seen)
     elif "--markdown" in sys.argv:
         print(render_markdown(counts))
     else:
