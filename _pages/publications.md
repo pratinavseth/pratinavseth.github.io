@@ -244,7 +244,7 @@ Aditya Tanna, **Pratinav Seth**, Mohamed Bouadi, Utsav Avaiya, Vinay Kumar Sanka
 </div>
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FMSD Workshop, ICML 2026</div><img src='/images/events/icml2026-fmsd.jpg' alt="Pocket Foundation Models poster session" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FMSD Workshop, ICML 2026</div><img src='/images/pocket-fm-distillation-fig.png' alt="Pocket Foundation Models distillation pipeline" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees](https://arxiv.org/abs/2605.18654)
@@ -253,7 +253,7 @@ Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Vinay Kumar Sankarapu, **Pratinav
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FMSD Workshop, ICML 2026</div><img src='/images/events/icml2026-fmsd.jpg' alt="Ensembling Tabular Foundation Models poster session" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FMSD Workshop, ICML 2026</div><img src='/images/ensembling-tfm-fig.png' alt="Ensembling Tabular Foundation Models Pareto frontier" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap](https://arxiv.org/abs/2605.18696)
@@ -262,7 +262,7 @@ Aditya Tanna, Yash Jignesh Desai, **Pratinav Seth**, Mohamed Bouadi, Nassim Boua
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SD4H Workshop, ICML 2026 — Spotlight</div><img src='/images/events/icml2026-sd4h-spotlight.jpg' alt="Distilling Tabular Foundation Models for Structured Health Data, Best Paper Runner-Up" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">SD4H Workshop, ICML 2026 — Spotlight</div><img src='/images/sd4h-distillation-fig.png' alt="Distilling Tabular Foundation Models for Structured Health Data pipeline" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Distilling Tabular Foundation Models for Structured Health Data](https://arxiv.org/abs/2605.18702)
@@ -273,7 +273,14 @@ Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Vinay Kumar Sankarapu, **Pratinav
 </div>
 </div>
 
-- [Data Presentation over Architecture: Resampling Strategies for Credit Risk Prediction with Tabular Foundation Models](https://arxiv.org/abs/2605.18635), Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**, Vinay Kumar Sankarapu, **FinDS Workshop @ ACM SIGMOD 2026 (Oral)**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">FinDS @ ACM SIGMOD 2026 — Oral</div><img src='/images/sigmod-credit-risk-fig.png' alt="Credit default prediction under severe class imbalance pipeline" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Data Presentation over Architecture: Resampling Strategies for Credit Risk Prediction with Tabular Foundation Models](https://arxiv.org/abs/2605.18635)
+
+Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**, Vinay Kumar Sankarapu
+</div>
+</div>
 
 <!-- Position: Institutional Tabular Foundation Models: Rethinking AI for Enterprise Decision-Making — Aditya Tanna, Nassim Bouarour, Mohamed Bouadi, Pratinav Seth, Vinay Kumar Sankarapu — Pre-Print (link pending) -->
 
