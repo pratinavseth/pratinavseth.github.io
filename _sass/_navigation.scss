@@ -174,7 +174,12 @@
 
 .greedy-nav {
   position: relative;
-  min-width: 250px;
+  /* No min-width: it must be free to shrink below its old 250px floor once
+     the masthead has a sibling (site name) competing for row space — a
+     hard floor here let nav (and its absolutely-positioned overflow
+     button) overflow past its flex box and collide with that sibling on
+     narrow viewports. */
+  min-width: 0;
   background: transparent;
 
   a {
