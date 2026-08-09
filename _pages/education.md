@@ -8,6 +8,7 @@ excerpt: "Education background and honors & awards."
 
 # Honors and Awards
 {: #honors-and-awards}
+- *2025.12* Selected as **Mentor** for the [AAAI Undergraduate Consortium 2026](https://aaai-uc.github.io/), returning after being a Scholar in the 2023 cohort.
 - *2023.02* One of the 11 Undergraduates Selected as an [AAAI Undergraduate Consortium Scholar 2023](https://aaai-uc.github.io/2023_scholars.html). Included a Travel Grant of $2000 to present at AAAI-23 at Washington DC, USA.
 - *2023.01* Received MAHE Undergraduate Research Grant Worth 10K INR for Project : Explainable & Trustworthy Skin Lesion Classification under Dr. Abhilash K. Pai, Dept. of DSCA, Manipal Institute of Technology, MAHE.
 - *2022.06* **Top 10 Team** out of 1000+ submissions in **Bajaj Finserv HackRx3.0 Hackathon**.
