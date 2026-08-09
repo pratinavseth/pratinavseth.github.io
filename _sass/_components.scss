@@ -347,6 +347,12 @@
     letter-spacing: 0.04em;
     color: $text-color;
     list-style: revert;
+    transition: $global-transition;
+
+    &:hover,
+    &:focus-visible {
+      color: $accent-color;
+    }
   }
 
   h2 {
@@ -608,6 +614,13 @@
 #bio-full:checked ~ .bio-switcher__nav label[for="bio-full"] {
   color: $bg-color;
   background: $text-color;
+}
+
+#bio-first:focus-visible ~ .bio-switcher__nav label[for="bio-first"],
+#bio-third:focus-visible ~ .bio-switcher__nav label[for="bio-third"],
+#bio-full:focus-visible ~ .bio-switcher__nav label[for="bio-full"] {
+  outline: 2px solid $accent-color;
+  outline-offset: 2px;
 }
 
 #bio-first:checked ~ .bio-switcher__panel--first,

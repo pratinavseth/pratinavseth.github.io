@@ -44,7 +44,6 @@ excerpt: "Education & honors, academic service, technical skills, and collaborat
   - NLP4PI Workshop (EMNLP 2026)
   - System Demonstrations Track (EMNLP 2026)
   - Actionable Interpretability Workshop (COLM 2026)
-  - FAIMI-BRIDGE-EPIMI Workshop (MICCAI 2026)
 - **Workshop Reviewer (2021–25)**:
   - Actionable Interpretability Workshop (ICML 2025)
   - RegML Workshop (NeurIPS 2025)

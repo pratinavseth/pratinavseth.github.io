@@ -99,6 +99,7 @@ excerpt: "Invited talks & presentations, academic conferences attended, and indu
   - "Interpretability Aware Pruning in Medical Imagery" (Paper Podcast)
 
 ## 2024
+- *2024.10*, **SSI Club (AI Paper-Fest / Paper Presentation Week)**: Talk on DL-Backtrace by AryaXAI, Online
 - *2024.03*, **Introduction to Research**, at ACM-W Manipal Chapter.
 - *2024.02*, Data Dialogue invited by The Data Alchemists, The Official Data Science Club of MIT Manipal.  \| [\[link\]](https://www.instagram.com/p/C2B-pv7v82l/?igsh=OXd3d2J6YTh6aXVt)
 

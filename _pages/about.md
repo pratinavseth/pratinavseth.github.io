@@ -9,7 +9,7 @@ redirect_from:
   - /about/
   - /about.html
 hero:
-  eyebrow: "AI Researcher"
+  eyebrow: "Mechanistic Interpretability Researcher"
   name: "Pratinav Seth"
   tagline: "Post-training safety and mechanistic interpretability for language models."
   stats:
@@ -39,7 +39,7 @@ hero:
 <input class="bio-switcher__radio" type="radio" name="bio" id="bio-full">
 <div class="bio-switcher__nav">
   <label for="bio-first">First Person</label>
-  <label for="bio-third">Third Person</label>
+  <label for="bio-third">Third Person (for bios/intros)</label>
   <label for="bio-full">Full</label>
 </div>
 
@@ -48,7 +48,7 @@ Hi, I'm Pratinav!
 
 I'm a Lead Research Scientist at Lexsi Labs, where I lead the Model Science group: 20+ researchers and interns across India and Paris, working on post-training, mechanistic interpretability, and safety for foundation models. I architected and scaled AlignTune into a production-grade, multi-backend post-training system now used across BFSI, legal, and healthcare alignment work, and I built CircuitKIT, a circuit discovery and application toolkit, alongside SafeTune, CuratorKIT, and DLBacktrace v2: seven open-source libraries in total, with 230+ combined GitHub stars.
 
-My research asks what survives post-training, how fine-tuning, quantization, and deployment change a model's behavior, and how to find and repair the specific mechanisms responsible. This spans circuit-level refusal ([C-ΔΘ](https://arxiv.org/abs/2602.04521)), safety-drift auditing and repair ([SafeTune](https://github.com/Lexsi-Labs/SafeTune)), and inference-time alignment transfer ([ALIGNBEAM](https://arxiv.org/abs/2606.12342)), alongside ongoing research on circuit attribution and faithfulness. In parallel, I used to work on the [Orion](https://arxiv.org/abs/2511.02818) tabular foundation model series and [TabTune](https://arxiv.org/abs/2511.02802), with follow-on research in distillation, ensembling, and applications in health and credit risk.
+I keep asking what survives post-training: how fine-tuning, quantization, and deployment change a model's behavior, and how to find and repair the mechanisms responsible. This spans circuit-level refusal ([C-ΔΘ](https://arxiv.org/abs/2602.04521)), safety-drift auditing and repair ([SafeTune](https://github.com/Lexsi-Labs/SafeTune)), and inference-time alignment transfer ([ALIGNBEAM](https://arxiv.org/abs/2606.12342)), alongside ongoing research on circuit attribution and faithfulness. In parallel, I used to work on the [Orion](https://arxiv.org/abs/2511.02818) tabular foundation model series and [TabTune](https://arxiv.org/abs/2511.02802), with follow-on research in distillation, ensembling, and applications in health and credit risk.
 
 Before Lexsi, I worked with David Rolnick at Mila on geospatial climate AI. My bachelor's thesis became the Alberta Wells Dataset, published first-author at ICML 2025. Before that, at Bosch Corporate Research, I built a generative data-augmentation pipeline for safety-critical autonomous-driving perception using latent diffusion models. Earlier still, I mentored 10+ undergraduates as a researcher at Mars Rover Manipal, co-founded The Data Alchemists, and co-led Research Society MIT Manipal, a 90-member undergraduate research organization.
 
@@ -56,21 +56,19 @@ I've published 48 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, M
 </div>
 
 <div class="bio-switcher__panel bio-switcher__panel--third" markdown="1">
-Pratinav Seth is a Lead Research Scientist at Lexsi Labs, where he leads the Model Science group across India and Paris. His research focuses on post-training, mechanistic interpretability, and safety for foundation models, spanning circuit-level interventions, safety-drift auditing and repair, and inference-time alignment transfer. He has architected and released seven open-source research libraries, including [AlignTune](https://arxiv.org/abs/2602.09621), [CircuitKIT](https://arxiv.org/abs/2607.19317), [SafeTune](https://github.com/Lexsi-Labs/SafeTune), and [CuratorKIT](https://arxiv.org/abs/2606.21631), and previously worked on the [Orion](https://arxiv.org/abs/2511.02818) tabular foundation model series and [TabTune](https://arxiv.org/abs/2511.02802).
+*Copy-paste bio for introductions, programs, and bylines.*
 
-Before joining Lexsi Labs, Seth worked with Professor David Rolnick at Mila Quebec AI Institute on geospatial climate AI, and with Bosch Corporate Research on generative data augmentation for autonomous-driving perception. He has published 48 papers (31 peer-reviewed, 210+ citations) at venues including ICML, ACL, WWW, MIDL, and Nature Scientific Reports, and reviews for AAAI, NeurIPS, CVPR, ECCV, and other major venues.
-
-Seth holds a B.Tech in Data Science & Engineering from Manipal Institute of Technology, and is an AAAI Undergraduate Consortium Scholar (2023) and Mentor (2026).
+Pratinav Seth is a Lead Research Scientist at Lexsi Labs, where he leads the Model Science group's post-training, mechanistic interpretability, and LLM safety research across India and Paris. He has published 48 papers (31 peer-reviewed, 210+ citations) at venues including ICML, ACL, WWW, MIDL, and Nature Scientific Reports, and has released seven open-source research libraries with 230+ combined GitHub stars, including [AlignTune](https://arxiv.org/abs/2602.09621), [CircuitKIT](https://arxiv.org/abs/2607.19317), and [SafeTune](https://github.com/Lexsi-Labs/SafeTune). Before Lexsi Labs, he worked with Professor David Rolnick at Mila Quebec AI Institute and with Bosch Corporate Research. He holds a B.Tech in Data Science & Engineering from Manipal Institute of Technology and is an AAAI Undergraduate Consortium Scholar (2023) and Mentor (2026).
 </div>
 
 <div class="bio-switcher__panel bio-switcher__panel--full" markdown="1">
 I lead the Model Science group at **[Lexsi Labs](https://lexsi.ai/)**, directing research across post-training, alignment, mechanistic interpretability, and tabular foundation models. The team has grown to 20+ researchers and interns across India and Paris; I've worked on hiring, roadmap, grants, and research-to-product integration alongside the research itself.
 
-Most of that research asks what survives post-training: how fine-tuning, quantization, and deployment change a model's behavior, and how to find the specific mechanisms responsible. I use mechanistic interpretability to answer this, then audit, repair, or steer those mechanisms directly: circuit-level refusal ([C-ΔΘ](https://arxiv.org/abs/2602.04521)), circuit discovery and attribution ([CircuitKIT](https://arxiv.org/abs/2607.19317)), and safety-drift auditing and repair ([SafeTune](https://github.com/Lexsi-Labs/SafeTune)). Alongside this, I build the post-training infrastructure that ships it: [AlignTune](https://arxiv.org/abs/2602.09621) for training, [CuratorKIT](https://arxiv.org/abs/2606.21631) for data curation, and [ALIGNBEAM](https://arxiv.org/abs/2606.12342) for inference-time alignment transfer. I used to work on the [Orion](https://arxiv.org/abs/2511.02818) tabular foundation model series and [TabTune](https://arxiv.org/abs/2511.02802) too, with follow-on research in distillation, ensembling, and applications in structured health data and credit risk. I'm increasingly extending this work to agentic systems and evaluation.
+I spend most of that time asking what survives post-training: how fine-tuning, quantization, and deployment change a model's behavior, and how to find the specific mechanisms responsible. I use mechanistic interpretability to answer this, then audit, repair, or steer those mechanisms directly: circuit-level refusal ([C-ΔΘ](https://arxiv.org/abs/2602.04521)), circuit discovery and attribution ([CircuitKIT](https://arxiv.org/abs/2607.19317)), and safety-drift auditing and repair ([SafeTune](https://github.com/Lexsi-Labs/SafeTune)). Alongside this, I build the post-training infrastructure that ships it: [AlignTune](https://arxiv.org/abs/2602.09621) for training, [CuratorKIT](https://arxiv.org/abs/2606.21631) for data curation, and [ALIGNBEAM](https://arxiv.org/abs/2606.12342) for inference-time alignment transfer. I used to work on the [Orion](https://arxiv.org/abs/2511.02818) tabular foundation model series and [TabTune](https://arxiv.org/abs/2511.02802) too, with follow-on research in distillation, ensembling, and applications in structured health data and credit risk. I'm increasingly extending this work to agentic systems and evaluation.
 
-Before Lexsi, I worked with David Rolnick at Mila Quebec AI Institute on geospatial climate AI. My bachelor's thesis became the Alberta Wells Dataset, a satellite-imagery benchmark for detecting abandoned oil and gas wells, published first-author at ICML 2025. Before that, at Bosch Corporate Research, I built a generative data-augmentation pipeline for safety-critical autonomous-driving perception, using latent diffusion models to synthesize hard-negative training samples. Before that, at IIT Kharagpur's KLIV Lab, I worked on medical image analysis and explainable AI for chest radiographs.
+Before Lexsi, I worked with David Rolnick at Mila Quebec AI Institute on geospatial climate AI. My bachelor's thesis became the Alberta Wells Dataset, a satellite-imagery benchmark for detecting abandoned oil and gas wells, published first-author at ICML 2025. Before that, at Bosch Corporate Research, I built a generative data-augmentation pipeline for safety-critical autonomous-driving perception, using latent diffusion models to synthesize hard-negative training samples. Earlier, at IIT Kharagpur's KLIV Lab, I worked on medical image analysis and explainable AI for chest radiographs.
 
-My path into research started earlier and wider than any of that. As an undergraduate, I worked on NLP for a healthcare chatbot at CUREYA, synthetic tabular data at Eedge.ai, cybersecurity malware classification at MAHE, deep metric learning with NEC Labs and IIT Roorkee, and agricultural NLP with Wells Fargo. I also mentored 10+ undergraduates as a researcher at Mars Rover Manipal, rising from student trainee to lead its AI Research Wing; co-founded The Data Alchemists, growing it to 30+ members; and co-led Research Society MIT Manipal, a 90-member undergraduate research organization.
+Before all of that, I was already doing research as an undergraduate. I worked on NLP for a healthcare chatbot at CUREYA, synthetic tabular data at Eedge.ai, cybersecurity malware classification at MAHE, deep metric learning with NEC Labs and IIT Roorkee, and agricultural NLP with Wells Fargo. I also mentored 10+ undergraduates as a researcher at Mars Rover Manipal, rising from student trainee to lead its AI Research Wing; co-founded The Data Alchemists, growing it to 30+ members; and co-led Research Society MIT Manipal, a 90-member undergraduate research organization.
 
 I've published 48 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, MIDL, and Nature Scientific Reports, alongside workshops and shared tasks at NeurIPS, ICLR, CVPR, MICCAI, EurIPS, EMNLP, WACV, and ACM SIGMOD. I've released seven open-source libraries (230+ combined GitHub stars): TabTune, AlignTune, DLBacktrace v2, xai_evals, CircuitKIT, CuratorKIT, and SafeTune. I review for AAAI, NeurIPS, CVPR, ECCV, and other major venues, and I'm an AAAI Undergraduate Consortium Scholar (2023) turned Mentor (2026). I completed my B.Tech in Data Science & Engineering at Manipal Institute of Technology in 2024.
 </div>
@@ -121,27 +119,27 @@ I've published 48 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, M
   <a class="work-card" href="https://arxiv.org/abs/2607.19317">
     <span class="work-card__tag">LIBRARY</span>
     <h3 class="work-card__title">CircuitKIT</h3>
-    <p class="work-card__desc">Circuit discovery, evaluation, and application toolkit for mechanistic interpretability.</p>
+    <p class="work-card__desc">Circuit discovery, evaluation, and application toolkit for mechanistic interpretability, with 14 stars on GitHub.</p>
   </a>
   <a class="work-card" href="https://github.com/Lexsi-Labs/SafeTune">
     <span class="work-card__tag">LIBRARY</span>
     <h3 class="work-card__title">SafeTune</h3>
-    <p class="work-card__desc">Audits and repairs safety drift in fine-tuned language models.</p>
+    <p class="work-card__desc">Audits and repairs safety drift in fine-tuned language models, with 7 stars on GitHub.</p>
   </a>
   <a class="work-card" href="https://arxiv.org/abs/2602.09621">
     <span class="work-card__tag">LIBRARY</span>
     <h3 class="work-card__title">AlignTune</h3>
-    <p class="work-card__desc">Modular post-training toolkit spanning SFT, DPO, GRPO, and RLHF.</p>
+    <p class="work-card__desc">Modular post-training toolkit spanning SFT, DPO, GRPO, and RLHF, now running production alignment work in BFSI, legal, and healthcare.</p>
   </a>
   <a class="work-card" href="https://arxiv.org/abs/2606.21631">
     <span class="work-card__tag">LIBRARY</span>
     <h3 class="work-card__title">CuratorKIT</h3>
-    <p class="work-card__desc">Provenance-grounded data curation and synthetic generation for LLM post-training.</p>
+    <p class="work-card__desc">Provenance-grounded data curation and synthetic generation for LLM post-training, with 24 stars on GitHub.</p>
   </a>
   <a class="work-card" href="https://arxiv.org/abs/2602.04521">
     <span class="work-card__tag">PAPER</span>
     <h3 class="work-card__title">C-ΔΘ</h3>
-    <p class="work-card__desc">Circuit-restricted weight arithmetic for selectively modifying refusal behavior.</p>
+    <p class="work-card__desc">Circuit-restricted weight arithmetic for selectively modifying refusal behavior, accepted at the ICML 2026 Mechanistic Interpretability Workshop (under 15% acceptance rate).</p>
   </a>
 </div>
 
@@ -174,9 +172,9 @@ I've published 48 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, M
 - <span class="timeline-list__date">2026.01</span>**Exploring Fine-Tuning for Tabular Foundation Models** accepted at **WWW 2026**
 - <span class="timeline-list__date">2026.01</span>**TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models (Demo)** accepted at **WWW 2026**
 - <span class="timeline-list__date">2026.01</span>**Laplacian reconstructive network for guided thermal super-resolution** accepted at **Scientific Reports (Nature)**
-- <span class="timeline-list__date">2025.11</span>**Interpretability as Alignment: Making Internal Understanding a Design Principle** accepted at **EurIPS Workshop on Private AI Governance**
-- <span class="timeline-list__date">2025.11</span>**Bridging the gap in XAI-why reliable metrics matter for explainability and compliance** accepted at **EurIPS Workshop on Private AI Governance**
-- <span class="timeline-list__date">2025.11</span>**EurIPS Workshop on Private AI Governance 2025 Spotlight Talk**
+- <span class="timeline-list__date">2025.12</span>**Interpretability as Alignment: Making Internal Understanding a Design Principle** accepted at **EurIPS Workshop on Private AI Governance**
+- <span class="timeline-list__date">2025.12</span>**Bridging the gap in XAI-why reliable metrics matter for explainability and compliance** accepted at **EurIPS Workshop on Private AI Governance**
+- <span class="timeline-list__date">2025.12</span>**EurIPS Workshop on Private AI Governance 2025 Spotlight Talk**
 - <span class="timeline-list__date">2025.09</span>**Interpretability-aware pruning for efficient medical image analysis** accepted at **MICCAI Workshop 2025**
 - <span class="timeline-list__date">2025.05</span>**SELF-PERCEPT: Mental Manipulation Detection** accepted at **ACL 2025**
 - <span class="timeline-list__date">2025.05</span>**Alberta Wells Dataset** accepted at **ICML 2025** (grateful to the team for their efforts, and to Prof. David Rolnick)

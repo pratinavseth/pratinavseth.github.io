@@ -26,8 +26,8 @@ excerpt: "Full publication list: safety post-training & alignment, mechanistic i
 - [SafeTune](https://github.com/Lexsi-Labs/SafeTune) · Pre-Print 2026 · Unified library for auditing and repairing safety drift in fine-tuned LLMs
 - [AlignTune](https://arxiv.org/abs/2602.09621) · Pre-Print 2026 · One interface for SFT, DPO, GRPO, and RLHF with modular reward framework and interchangeable backends
 - [Forgetting That Sticks](https://arxiv.org/abs/2605.15138) · Pre-Print 2026 · Unlearning that survives quantization by identifying and zeroing the circuits that store the target knowledge
-- [Interpretability as Alignment](https://arxiv.org/abs/2509.08592) · **EurIPS Workshop 2025 (Spotlight)** · Argues mechanistic interpretability should be a design principle in post-training, not a post-hoc audit
-- [TabTune](https://arxiv.org/abs/2511.02802) · **WWW 2026 Demo** · Unified library for tabular foundation model inference, fine-tuning, and benchmarking across 7 architectures
+- [Interpretability as Alignment](https://arxiv.org/abs/2509.08592) · **EurIPS Workshop 2025 (Spotlight)** · Case for mechanistic interpretability as a design principle in post-training, not a post-hoc audit
+- [TabTune](https://arxiv.org/abs/2511.02802) · **WWW 2026 Demo** · Unified library for tabular foundation model inference, fine-tuning, and benchmarking across 12+ architectures
 - [Alberta Wells Dataset](https://arxiv.org/pdf/2410.09032) · **ICML 2025** · Satellite benchmark for detecting abandoned oil & gas wells; climate AI work with Mila / McGill
 - [SELF-PERCEPT](https://aclanthology.org/2025.acl-short.52/) · **ACL 2025** · LLM introspection improves detection of multi-person mental manipulation in multi-turn conversations
 </div>
@@ -292,7 +292,7 @@ Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**,
 
 *Designed and built the initial release of each library below.*
 
-- [TabTune](https://arxiv.org/abs/2511.02802) · Unified inference and fine-tuning library for tabular foundation models across 7 architectures. **WWW 2026 Demo** (116⭐).
+- [TabTune](https://arxiv.org/abs/2511.02802) · Unified inference and fine-tuning library for tabular foundation models across 12+ architectures. **WWW 2026 Demo** (116⭐).
 - [AlignTune](https://arxiv.org/abs/2602.09621) · Modular post-training toolkit: SFT, DPO, GRPO, and RLHF with interchangeable backends. **Pre-Print 2026** (37⭐).
 - [DLBacktrace v2](https://github.com/AryaXAI/DLBacktrace) · `torch.export`-based, model-agnostic explainability for LLMs and MoEs with CUDA acceleration. **Pre-Print 2026** (26⭐).
 - [CuratorKIT](https://arxiv.org/abs/2606.21631) · Provenance-grounded data-curation and synthetic-generation pipeline for LLM post-training. **Pre-Print 2026** (24⭐).
