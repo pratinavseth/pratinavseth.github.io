@@ -355,6 +355,58 @@
 }
 
 /*
+   Collaborator list — per-person <details> revealing their shared papers
+   ========================================================================== */
+
+.collab-list {
+  margin: 0.5em 0;
+}
+
+// Override the generic `.page__content details` heavy-divider styling —
+// these are compact list rows, not top-level page sections.
+.collab-list .collab-entry {
+  margin: 0;
+  padding: 0.4em 0;
+  border-top: 1px solid color-mix(in srgb, $border-color 18%, transparent);
+
+  &:first-child {
+    border-top: none;
+  }
+
+  summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em;
+    font-family: $global-font-family;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+    cursor: pointer;
+    list-style: revert;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+}
+
+.collab-entry__papers {
+  margin: 0.6em 0 0.2em;
+  padding-left: 1.4em;
+  list-style: disc;
+
+  li {
+    margin-bottom: 0.35em;
+    font-family: $monospace;
+    font-size: 0.72em;
+    color: $gray;
+    line-height: 1.4;
+  }
+}
+
+/*
    Event photo — inline figure with caption (Events & Conferences)
    ========================================================================== */
 

@@ -20,7 +20,7 @@ the paper list, so they can never drift out of sync with Publications.
 """
 import re
 import sys
-from collections import Counter
+from collections import Counter, defaultdict
 
 PUBLICATIONS_MD = "_pages/publications.md"
 SERVICE_SKILLS_MD = "_pages/education-service.md"
@@ -113,6 +113,11 @@ VENUE_KEYWORDS = re.compile(
     re.IGNORECASE,
 )
 HAS_DIGIT = re.compile(r"\d")
+TITLE_LINE_RE = re.compile(r"^\[([^\]]+)\]\([^)]+\)\s*$")
+BULLET_TITLE_RE = re.compile(r"^-\s*\[([^\]]+)\]\([^)]+\)\s*,\s*")
+# Fallback for bullet papers with no arxiv/GitHub link yet (Under Review) —
+# title is plain text up to the first comma.
+BULLET_TITLE_PLAIN_RE = re.compile(r"^-\s*([^,]+),\s*")
 NAME_SUFFIX = re.compile(r"\s*(\(#\)|\(†\)|\(\*\*\)|\(\*\)|\*\*|\*|\(†\s*\))\s*$")
 
 
@@ -218,16 +223,37 @@ def main():
         counted_lines.append(l)
 
     counts = Counter()
+    paper_titles = defaultdict(list)  # author -> [paper titles they co-authored]
     papers_seen = 0
+    pending_title = None
     for l in counted_lines:
+        text = l.strip()
+
+        # Paper-box format: title sits alone on its own line, authors follow
+        # a line or two later. Track it so the authors line (which carries
+        # no title of its own) can pick it up.
+        m = TITLE_LINE_RE.match(text)
+        if m:
+            pending_title = m.group(1)
+            continue
+
         authors = extract_authors_from_line(l)
         if authors is None:
             continue
         papers_seen += 1
+
+        if text.startswith("- "):
+            bm = BULLET_TITLE_RE.match(text) or BULLET_TITLE_PLAIN_RE.match(text)
+            title = bm.group(1).strip() if bm else "Untitled"
+        else:
+            title = pending_title or "Untitled"
+        pending_title = None
+
         for a in authors:
             if a == "Pratinav Seth":
                 continue
             counts[a] += 1
+            paper_titles[a].append(title)
 
     print(f"Parsed {papers_seen} paper author-lines.", file=sys.stderr)
 
@@ -237,7 +263,7 @@ def main():
         for u in unmapped:
             print(f"  - {u} ({counts[u]})", file=sys.stderr)
 
-    return counts, papers_seen
+    return counts, papers_seen, paper_titles
 
 
 ROLE_TAG = {"mentee": "MENTEE"}  # roles that get an inline tag; "collaborator" gets none
@@ -246,15 +272,23 @@ ROLE_TAG = {"mentee": "MENTEE"}  # roles that get an inline tag; "collaborator" 
 GENERATED_MARKER = "<!-- GENERATED:COLLABORATORS -->"
 
 
-def render_markdown(counts):
+def _escape(text):
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
+def render_markdown(counts, paper_titles):
     """Single flat list, one line per person, sorted by co-authored-work
     count descending. Each line carries a ROLE tag (manager/mentor/mentee —
     collaborators get none, since that's the default) and an INSTITUTION
     tag, instead of nesting people under separate role/institution
-    headings where the same person could end up listed more than once."""
+    headings where the same person could end up listed more than once.
+
+    Each person is a <details> disclosure: clicking their row reveals the
+    specific papers (out of the 48) they co-authored, instead of just the
+    bare count."""
     people = sorted(counts.items(), key=lambda x: -x[1])
 
-    lines = [GENERATED_MARKER]
+    lines = [GENERATED_MARKER, '<div class="collab-list">']
     for name, n in people:
         label, role = AFFILIATIONS[name]
         tags = []
@@ -262,7 +296,13 @@ def render_markdown(counts):
         if role_tag:
             tags.append(f"<span class='tag'>{role_tag}</span>")
         tags.append(f"<span class='tag'>{label.upper()}</span>")
-        lines.append(f"- {name} ({n}) {' '.join(tags)}")
+        titles = paper_titles.get(name, [])
+        paper_items = "".join(f"<li>{_escape(t)}</li>" for t in titles)
+        lines.append(
+            f"<details class='collab-entry'><summary>{_escape(name)} ({n}) {' '.join(tags)}</summary>"
+            f"<ul class='collab-entry__papers'>{paper_items}</ul></details>"
+        )
+    lines.append("</div>")
 
     return "\n".join(lines)
 
@@ -315,12 +355,12 @@ def sync_total_papers(papers_seen):
 
 
 if __name__ == "__main__":
-    counts, papers_seen = main()
+    counts, papers_seen, paper_titles = main()
     if "--write" in sys.argv:
-        write_service_skills(render_markdown(counts))
+        write_service_skills(render_markdown(counts, paper_titles))
         sync_total_papers(papers_seen)
     elif "--markdown" in sys.argv:
-        print(render_markdown(counts))
+        print(render_markdown(counts, paper_titles))
     else:
         for name, n in counts.most_common():
             label, rel = AFFILIATIONS.get(name, ("UNKNOWN", "collaborator"))
