@@ -19,7 +19,7 @@ import sys
 from collections import Counter
 
 PUBLICATIONS_MD = "_pages/publications.md"
-SERVICE_SKILLS_MD = "_pages/service-skills.md"
+SERVICE_SKILLS_MD = "_pages/education-service.md"
 
 # Author -> (institution label, relationship: "manager" | "mentor" | "mentee" | "collaborator")
 # Only used for grouping/labelling; counts are always computed from papers.

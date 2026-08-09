@@ -9,11 +9,8 @@ main:
   - title: "Experience"
     url: "/experience/"
 
-  - title: "Education"
-    url: "/education/"
-
   - title: "Talks & Events"
     url: "/talks-events/"
 
-  - title: "Service & Skills"
-    url: "/service-skills/"
+  - title: "Education & Service"
+    url: "/education-service/"
