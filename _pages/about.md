@@ -24,8 +24,10 @@ hero:
     - label: "View Publications"
       url: "/publications/"
       primary: true
-    - label: "Download CV"
-      url: "https://linktr.ee/pratinavseth"
+    - label: "CV"
+      url: "/files/pratinav-seth-cv-full.pdf"
+    - label: "Resume"
+      url: "/files/pratinav-seth-cv.pdf"
 ---
 
 <span class='anchor' id='about-me'></span>
