@@ -115,7 +115,7 @@ Soham Bhattacharjee, Karun Sharma, Vinay Kumar Sankarapu, **Pratinav Seth**
 
 #### Mechanistic Interpretability & XAI
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EurIPS Workshop 2025</div><img src='/images/interpawarealignmnet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EurIPS Workshop 2025</div><img src='/images/interpawarealignmnet.png' alt="Interpretability as Alignment: making internal understanding a design principle, conceptual diagram" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Interpretability as Alignment: Making Internal Understanding a Design Principle](https://arxiv.org/abs/2509.08592)
@@ -126,7 +126,7 @@ Aadit Sengupta, **Pratinav Seth**, Vinay Kumar Sankarapu
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MICCAI Workshop 2025</div><img src='/images/interp-aware-pruning.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MICCAI Workshop 2025</div><img src='/images/interp-aware-pruning.png' alt="Interpretability-aware pruning pipeline for efficient medical image analysis" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Interpretability-aware pruning for efficient medical image analysis](https://arxiv.org/abs/2507.08330)
@@ -137,7 +137,7 @@ Nikita Malik, **Pratinav Seth**, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kum
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EurIPS Workshop 2025</div><img src='/images/xaimetrics.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EurIPS Workshop 2025</div><img src='/images/xaimetrics.jpg' alt="Bridging the gap in XAI: reliable metrics for explainability and compliance, diagram" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Bridging the gap in XAI-why reliable metrics matter for explainability and compliance](https://arxiv.org/abs/2502.04695)
@@ -148,7 +148,7 @@ Nikita Malik, **Pratinav Seth**, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kum
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCNN 2025</div><img src='/images/dlbacktrace.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">IJCNN 2025</div><img src='/images/dlbacktrace.png' alt="DLBacktrace model-agnostic explainability architecture diagram" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [DLBacktrace: A Model Agnostic Explainability for any Deep Learning Models](https://arxiv.org/pdf/2411.12643)
@@ -199,7 +199,7 @@ Ananth Eswar, **Pratinav Seth**, Utsav Avaiya, Vinay Kumar Sankarapu
 
 #### Tabular Foundation Models & Distillation
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='/images/orionmsp.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='/images/orionmsp.png' alt="Orion-MSP: multi-scale sparse attention for tabular in-context learning, architecture diagram" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning](https://arxiv.org/abs/2511.02818)
@@ -210,7 +210,7 @@ Mohamed Bouadi, **Pratinav Seth**, Aditya Tanna, Vinay Kumar Sankarapu
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WWW 2026</div><img src='/images/orionbix.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WWW 2026</div><img src='/images/orionbix.png' alt="Orion-BiX: bi-axial attention for tabular in-context learning, architecture diagram" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Orion-BiX: Bi-Axial Attention for Tabular In-Context Learning](https://huggingface.co/Lexsi/Orion-BiX)
@@ -232,7 +232,7 @@ Aditya Tanna, **Pratinav Seth**, Mohamed Bouadi, Vinay Kumar Sankarapu
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WWW 2026</div><img src='/images/tabtune.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WWW 2026</div><img src='/images/tabtune.png' alt="TabTune unified library architecture for tabular foundation model inference and fine-tuning" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models (Demo)](https://arxiv.org/abs/2511.02802)
@@ -301,7 +301,7 @@ Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**,
 
 #### Climate Change & Earth Observation
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025 / CCAI ICLR 2025</div><img src='/images/AWD.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICML 2025 / CCAI ICLR 2025</div><img src='/images/AWD.png' alt="Alberta Wells Dataset pipeline for pinpointing oil and gas wells from satellite imagery" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Alberta Wells Dataset: Pinpointing Oil and Gas Wells from Satellite Imagery](https://arxiv.org/pdf/2410.09032)
@@ -328,7 +328,7 @@ Akshat Bhandari, Sriya Rallabandi, Sanchit Singhal, Aditya Kasliwal, **Pratinav 
 
 #### Medical Imaging
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MIDL 2025</div><img src='/images/od_midl.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MIDL 2025</div><img src='/images/od_midl.png' alt="Obscure to Observe: lesion-aware MAE for glaucoma detection, model diagram" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Obscure to Observe: A Lesion-Aware MAE for Glaucoma Detection from Retinal Context](https://openreview.net/forum?id=gqLXT8Edf3)
@@ -339,7 +339,7 @@ Siddhant Bharadwaj, **Pratinav Seth**, Chandra Sekhar Seelamantula
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV Workshop 2024</div><img src='/images/Diagram_FAIMI.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">WACV Workshop 2024</div><img src='/images/Diagram_FAIMI.jpg' alt="Pre-training techniques and skin tone bias in skin lesion classification, study diagram" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Does the Fairness of Your Pre-Training Hold Up? Examining the Influence of Pre-Training Techniques on Skin Tone Bias in Skin Lesion Classification](https://openaccess.thecvf.com/content/WACV2024W/Pretrain/papers/Seth_Does_the_Fairness_of_Your_Pre-Training_Hold_Up_Examining_the_WACVW_2024_paper.pdf)
@@ -400,7 +400,7 @@ Kumud Lakara (†), Akshat Bhandari (†), **Pratinav Seth (†)**, Ujjwal Verma
 
 #### NLP & AI for Social Good
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025 / NAACL SRW Workshop 2025</div><img src='/images/Manipulation_Techniques.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACL 2025 / NAACL SRW Workshop 2025</div><img src='/images/Manipulation_Techniques.png' alt="SELF-PERCEPT introspection pipeline for detecting multi-person mental manipulation" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [SELF-PERCEPT: Introspection Improves Large Language Models' Detection of Multi-Person Mental Manipulation in Conversations](https://aclanthology.org/2025.acl-short.52/)
@@ -411,7 +411,7 @@ Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru,
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">3rd Workshop on NLP for Positive Impact @ EMNLP 2024</div><img src='/images/diag2.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">3rd Workshop on NLP for Positive Impact @ EMNLP 2024</div><img src='/images/diag2.jpg' alt="AgriLLM transformer pipeline for farmer query handling" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [AgriLLM: Harnessing transformers for farmer queries.](https://arxiv.org/pdf/2407.04721)
@@ -448,7 +448,7 @@ Sriya Rallabandi, Sanchit Singhal, **Pratinav Seth**
 
 #### Vision & Super-Resolution
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR Workshop 2023</div><img src='/images/unet-f.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR Workshop 2023</div><img src='/images/unet-f.png' alt="CoReFusion contrastive regularized fusion architecture for thermal super-resolution" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [CoReFusion: Contrastive Regularized Fusion for Guided Thermal Super-Resolution](https://openaccess.thecvf.com/content/CVPR2023W/PBVS/html/Kasliwal_CoReFusion_Contrastive_Regularized_Fusion_for_Guided_Thermal_Super-Resolution_CVPRW_2023_paper.html)
@@ -459,7 +459,7 @@ Aditya Kasliwal, **Pratinav Seth**, Sriya Rallabandi, Sanchit Singhal
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI Student Abstract 2024</div><img src='/images/img3.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI Student Abstract 2024</div><img src='/images/img3.jpg' alt="LaMAR Laplacian pyramid architecture for multimodal adaptive super resolution" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [LaMAR: Laplacian Pyramid for Multimodal Adaptive Super Resolution (Student Abstract)](https://ojs.aaai.org/index.php/AAAI/article/download/30463/32568)
@@ -470,7 +470,7 @@ Aditya Kasliwal, Aryan Kamani, Ishaan Gakhar, **Pratinav Seth**, Sriya Rallaband
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Scientific Reports (Nature)</div><img src='/images/LAPGSR.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Scientific Reports (Nature)</div><img src='/images/LAPGSR.jpg' alt="Laplacian reconstructive network architecture for guided thermal super-resolution" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Laplacian reconstructive network for guided thermal super-resolution](https://doi.org/10.1038/s41598-026-36027-x)

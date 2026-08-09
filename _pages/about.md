@@ -1,8 +1,8 @@
 ---
 permalink: /
 title: "Pratinav Seth — LLM Post-Training, Safety & Mechanistic Interpretability"
-description: "AI researcher with 46 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, MIDL, and Nature Scientific Reports. Research: post-training alignment for LLMs and circuit-level mechanistic interpretability."
-excerpt: "AI researcher working on post-training alignment and circuit-level mechanistic interpretability. 46 papers (31 peer-reviewed, 210+ citations) at ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
+description: "AI researcher with 46 papers (31 peer-reviewed, 210+ citations) and 7 open-source research libraries. Research: post-training safety and circuit-level mechanistic interpretability for language models."
+excerpt: "AI researcher working on post-training safety and mechanistic interpretability for language models. 46 papers (31 peer-reviewed, 210+ citations), 7 open-source research libraries."
 keywords: "Pratinav Seth, LLM alignment, safety post-training, RLHF, DPO, SFT, mechanistic interpretability, AI safety, circuit analysis, weight arithmetic, safety fine-tuning, agentic systems, AI agents, evaluation, tabular foundation models, knowledge distillation, lead research scientist, machine learning, NLP"
 author_profile: true
 redirect_from: 
@@ -11,58 +11,73 @@ redirect_from:
 hero:
   eyebrow: "AI Researcher"
   name: "Pratinav Seth"
-  tagline: "LLM post-training, safety alignment, and mechanistic interpretability — with a growing focus on AI agents and evaluation."
+  tagline: "Post-training safety and mechanistic interpretability for language models."
   stats:
     - number: "31"
       label: "Peer-Reviewed"
+    - number: "7"
+      label: "OSS Libraries"
     - number: "210+"
       label: "Citations"
-    - number: "8"
-      label: "h-index"
+  h_index: "8"
+  cta:
+    - label: "View Publications"
+      url: "/publications/"
+      primary: true
+    - label: "Download CV"
+      url: "https://linktr.ee/pratinavseth"
 ---
 
 <span class='anchor' id='about-me'></span>
 ## About
 
-I started in computer vision and medical imaging — uncertainty quantification, model fairness, and segmentation with teams at IIT Kharagpur and Bosch Research. Moving into language models, I kept running into the same problem: a model that looked aligned on benchmarks would fail in ways that weren't visible from the outside. That gap — between what training instils and what survives deployment — became the question I keep returning to.
+**What survives post-training?** I study how safety and model behaviour change through fine-tuning, quantization, and deployment — and use mechanistic interpretability to find the specific mechanisms responsible, so they can be audited, repaired, or steered directly: circuit-level refusal ([C-ΔΘ](https://arxiv.org/abs/2602.04521)), quantization-permanent unlearning ([Forgetting That Sticks](https://arxiv.org/abs/2605.15138)), and safety drift auditing.
 
-On the safety side, I study how fine-tuning and quantization silently erode alignment, and how to find and repair the specific weights responsible using mechanistic interpretability: circuit-level refusal ([C-ΔΘ](https://arxiv.org/abs/2602.04521)), quantization-permanent unlearning ([Forgetting That Sticks](https://arxiv.org/abs/2605.15138)), and safety drift auditing. On the structured data side, I work on tabular foundation models — how to train, fine-tune, and distil them down to something deployable ([TabTune](https://arxiv.org/abs/2511.02802), [Orion-MSP](https://arxiv.org/abs/2511.02818), [Orion-BiX](https://huggingface.co/Lexsi/Orion-BiX)). Most of this ships as open-source tools. The next problems I care most about are safety in reasoning models and interpretability for agentic systems.
+I lead the Model Science group at **[Lexsi Labs](https://lexsi.ai/)** across India and Paris, where this research turns into shipped systems — [AlignTune](https://arxiv.org/abs/2602.09621), [CircuitKIT](https://arxiv.org/abs/2607.19317), [SafeTune](https://github.com/Lexsi-Labs/SafeTune), and [CuratorKIT](https://arxiv.org/abs/2606.21631). I'm increasingly extending this work to agentic systems and evaluation.
 
 <div class="tag-row">
-  <span class="tag tag--interp">AI Alignment &amp; Safety</span>
-  <span class="tag tag--interp">Mechanistic Interpretability</span>
-  <span class="tag tag--training">LLM Post-Training</span>
-  <span class="tag tag--training">RLHF &amp; DPO</span>
-  <span class="tag tag--alignment">Safety Fine-Tuning</span>
-  <span class="tag tag--agentic">Agentic Systems</span>
-  <span class="tag tag--tabular">Tabular Foundation Models</span>
-  <span class="tag tag--tabular">Knowledge Distillation</span>
-  <span class="tag tag--agentic">XAI</span>
+  <span class="tag tag--interp">Post-Training &amp; Alignment</span>
+  <span class="tag tag--interp">LLM Safety</span>
+  <span class="tag tag--training">Mechanistic Interpretability</span>
+  <span class="tag tag--alignment">Research Systems</span>
+  <span class="tag tag--tabular">Foundation Models</span>
 </div>
 
----
+I also work on efficient, deployable foundation models for structured data — [TabTune](https://arxiv.org/abs/2511.02802), [Orion-MSP](https://arxiv.org/abs/2511.02818), and [Orion-BiX](https://huggingface.co/Lexsi/Orion-BiX).
 
-I lead the Model Science group at **[Lexsi Labs](https://lexsi.ai/)** across India and Paris. I completed my B.Tech in Data Science from MIT Manipal in 2024, and before that worked at **[Mila Quebec AI Institute](https://mila.quebec/en)** (with Prof. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I'm an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** (2023 → Mentor, 2026).
+Before this, I worked across computer vision, medical imaging, and climate applications at **[Mila Quebec AI Institute](https://mila.quebec/en)** (with Prof. David Rolnick), **[Bosch Research India](https://www.bosch.in/our-company/bosch-in-india/bangalore/)**, and **[IIT Kharagpur](https://iitkliv.github.io/)**. I completed my B.Tech in Data Science from MIT Manipal in 2024, and I'm an **[AAAI Undergraduate Consortium Scholar](https://aaai-uc.github.io/2023_scholars.html)** (2023 → Mentor, 2026).
 
-Recent work: [AlignTune](https://arxiv.org/abs/2602.09621) · [CircuitKIT](https://arxiv.org/abs/2607.19317) · [C-ΔΘ](https://arxiv.org/abs/2602.04521) · [CuratorKIT](https://arxiv.org/abs/2606.21631) · [SafeTune](https://github.com/Lexsi-Labs/SafeTune) · [Forgetting That Sticks](https://arxiv.org/abs/2605.15138) · [TabTune](https://arxiv.org/abs/2511.02802) · [Orion-MSP](https://arxiv.org/abs/2511.02818)
+## Selected Work
 
-Feel free to reach out or see my **[Resume](https://linktr.ee/pratinavseth)**.
-
-## Key Highlights
-
-Published at ICML, ACL, WWW, MIDL, IJCNN, AAAI, and Nature Scientific Reports, plus workshops and shared tasks at CVPR, NeurIPS, ICLR, MICCAI, EurIPS, ACL, and SIGMOD.
-
-- **Research Focus**: LLM safety post-training — circuit-level mechanistic interpretability, safety weight arithmetic, unlearning, post-training alignment, and a growing focus on AI agents & evaluation.
-- **7 open-source libraries released** — see [Libraries & Toolkits](/publications/#libraries--toolkits).
-- **AAAI Undergraduate Consortium Scholar** & Mentor (2023 → 2026); **Spotlight Talk** at EurIPS Workshop on Private AI Governance, Copenhagen (December 2025).
-
-<div class="notice--warning" markdown="1">
-**Lexsi Labs — Internships & Full-Time Roles:** For internship and FTE applications at Lexsi Labs, please **apply directly** via [lexsi.ai](https://lexsi.ai) rather than reaching out for referrals.
+<div class="work-grid">
+  <a class="work-card" href="https://arxiv.org/abs/2607.19317">
+    <span class="work-card__tag">LIBRARY</span>
+    <h3 class="work-card__title">CircuitKIT</h3>
+    <p class="work-card__desc">Circuit discovery, evaluation, and application toolkit for mechanistic interpretability.</p>
+  </a>
+  <a class="work-card" href="https://github.com/Lexsi-Labs/SafeTune">
+    <span class="work-card__tag">LIBRARY</span>
+    <h3 class="work-card__title">SafeTune</h3>
+    <p class="work-card__desc">Audits and repairs safety drift in fine-tuned language models.</p>
+  </a>
+  <a class="work-card" href="https://arxiv.org/abs/2602.09621">
+    <span class="work-card__tag">LIBRARY</span>
+    <h3 class="work-card__title">AlignTune</h3>
+    <p class="work-card__desc">Modular post-training toolkit spanning SFT, DPO, GRPO, and RLHF.</p>
+  </a>
+  <a class="work-card" href="https://arxiv.org/abs/2606.21631">
+    <span class="work-card__tag">LIBRARY</span>
+    <h3 class="work-card__title">CuratorKIT</h3>
+    <p class="work-card__desc">Provenance-grounded data curation and synthetic generation for LLM post-training.</p>
+  </a>
+  <a class="work-card" href="https://arxiv.org/abs/2602.04521">
+    <span class="work-card__tag">PAPER</span>
+    <h3 class="work-card__title">C-ΔΘ</h3>
+    <p class="work-card__desc">Circuit-restricted weight arithmetic for selectively modifying refusal behavior.</p>
+  </a>
 </div>
-<div class="notice--success" markdown="1">
-**Mentoring:** I am open to mentoring early-stage and young researchers. If you'd like to connect, feel free to [reach out via email](mailto:seth.pratinav@gmail.com) — please be respectful of my time and include a brief note about your background and what you're working on.
-</div>
 
+**[View all research → Publications](/publications/)**
 
 # News
 {: #news}
@@ -70,12 +85,12 @@ Published at ICML, ACL, WWW, MIDL, IJCNN, AAAI, and Nature Scientific Reports, p
 ## Recent Publications & Acceptances
 
 <div class="timeline-list" markdown="1">
-- <span class="timeline-list__date">2026.07</span>New Pre-Print: **CircuitKIT: Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability**
-- <span class="timeline-list__date">2026.07</span>New Pre-Print: **Faithfulness to Refusal: A Causal Audit of Neuron Selectors in LLMs**
-- <span class="timeline-list__date">2026.06</span>New Pre-Print: **CuratorKIT: Data Curation and Synthetic Data Generation for LLM Post-Training**
-- <span class="timeline-list__date">2026.06</span>New Pre-Print: **ALIGNBEAM: Inference-Time Alignment Transfer via Cross-Vocabulary Logit Mixing**, accepted at **AI for Good Workshop @ ICML 2026**
-- <span class="timeline-list__date">2026.06</span>New library release: **SafeTune** — a unified library for auditing and repairing safety drift in fine-tuned LLMs
-- <span class="timeline-list__date">2026.05</span>**Distilling Tabular Foundation Models for Structured Health Data** wins **Best Paper Runner-Up (Spotlight)** at **SD4H Workshop @ ICML 2026**
+- <span class="timeline-list__date">2026.07</span>Released **CircuitKIT** — a toolkit for circuit discovery, evaluation, and application in mechanistic interpretability
+- <span class="timeline-list__date">2026.07</span>New pre-print: **Faithfulness to Refusal** — a causal audit of neuron selectors used for LLM refusal behavior
+- <span class="timeline-list__date">2026.06</span>Released **CuratorKIT** — provenance-grounded data curation and synthetic generation for LLM post-training
+- <span class="timeline-list__date">2026.06</span>**ALIGNBEAM** accepted at the AI for Good Workshop, ICML 2026 — inference-time alignment transfer via cross-vocabulary logit mixing
+- <span class="timeline-list__date">2026.06</span>Released **SafeTune** — a library for auditing and repairing safety drift in fine-tuned LLMs
+- <span class="timeline-list__date">2026.05</span>**Distilling Tabular Foundation Models for Structured Health Data** wins Best Paper Runner-Up (Spotlight), SD4H Workshop @ ICML 2026
 </div>
 
 <details markdown="1">
@@ -100,33 +115,24 @@ Published at ICML, ACL, WWW, MIDL, IJCNN, AAAI, and Nature Scientific Reports, p
 </div>
 </details>
 
-## Academic Service & Reviewing
+## Academic Service
+{: #academic-service-summary}
 
-<div class="timeline-list" markdown="1">
-- <span class="timeline-list__date">2026.07</span>**Reviewer** for **Actionable Interpretability Workshop @ COLM 2026**
-- <span class="timeline-list__date">2026.07</span>**Program Committee** for **AAAI 2027**
-- <span class="timeline-list__date">2026.06</span>**Reviewer** for **ACM AIES 2026**
-- <span class="timeline-list__date">2026.06</span>**Reviewer** for **System Demonstrations Track @ EMNLP 2026**
-- <span class="timeline-list__date">2026.06</span>**Reviewer** for **NLP4PI Workshop @ EMNLP 2026**
-- <span class="timeline-list__date">2026.06</span>**Reviewer** for **BlackboxNLP Workshop @ EMNLP 2026**
+**Academic service:** AAAI 2027 Program Committee; reviewer for NeurIPS, CVPR, ECCV, ACM AIES, WACV, IJCNN, and workshops across ICML, EMNLP, and COLM.
+
+**[Full service record →](/education-service/#academic-service)**
+
+## Background
+
+Lead, Model Science at Lexsi Labs · previously Mila, Bosch Research, and IIT Kharagpur · AAAI Undergraduate Consortium Scholar → Mentor (2023 → 2026) · Spotlight Talk at EurIPS Workshop on Private AI Governance, Copenhagen (December 2025).
+
+**[Full experience →](/experience/)**
+
+## Contact
+
+<div class="notice--warning" markdown="1">
+**Lexsi Labs — Internships & Full-Time Roles:** For internship and FTE applications at Lexsi Labs, please **apply directly** via [lexsi.ai](https://lexsi.ai) rather than reaching out for referrals.
 </div>
-
-<details markdown="1">
-<summary>Earlier service & reviewing</summary>
-<div class="timeline-list" markdown="1">
-- <span class="timeline-list__date">2026.05</span>**Reviewer** for **AI for Good Workshop @ ICML 2026**
-- <span class="timeline-list__date">2026.05</span>**Reviewer** for **Mechanistic Interpretability Workshop @ ICML 2026**
-- <span class="timeline-list__date">2026.05</span>**Reviewer** for **TAIGR Workshop @ ICML 2026**
-- <span class="timeline-list__date">2026.05</span>**Reviewer** for **FMSD Workshop @ ICML 2026**
-- <span class="timeline-list__date">2026.05</span>**Reviewer** for **FAIMI-BRIDGE-EPIMI Workshop @ MICCAI 2026**
-- <span class="timeline-list__date">2026.05</span>**Reviewer** for **WACV 2027**
-- <span class="timeline-list__date">2026.04</span>**Reviewer** for **NeurIPS 2026**
-- <span class="timeline-list__date">2026.04</span>**Reviewer** for **BMVC 2026**
-- <span class="timeline-list__date">2026.03</span>**Reviewer** for **ECCV 2026**
-- <span class="timeline-list__date">2026.03</span>**Reviewer** for **FinDS Workshop @ ACM SIGMOD 2026**
-- <span class="timeline-list__date">2026.02</span>**Reviewer** for **Advances in Financial AI Workshop (ICLR 2026)**
-- <span class="timeline-list__date">2026.01</span>**Reviewer** for **CVPR 2026**
-- <span class="timeline-list__date">2025.12</span>**Mentor** at **AAAI Undergraduate Consortium 2026**
+<div class="notice--success" markdown="1">
+**Mentoring:** I'm occasionally able to advise early-stage researchers. If you're reaching out, please include a short introduction, your current work, and the specific question you'd like to discuss — [email me](mailto:seth.pratinav@gmail.com).
 </div>
-</details>
-

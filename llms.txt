@@ -1,0 +1,29 @@
+# Pratinav Seth
+
+> AI researcher leading the Model Science group at Lexsi Labs (India & Paris). Works on post-training safety and mechanistic interpretability for language models — circuit-level weight repair, unlearning, and safety-drift auditing — plus foundation models for structured data. B.Tech Data Science, MIT Manipal (2024). AAAI Undergraduate Consortium Scholar (2023) and Mentor (2026).
+
+## Pages
+
+- [Home](https://pratinavseth.github.io/): Bio, research focus, selected work (CircuitKIT, SafeTune, AlignTune, CuratorKIT, C-ΔΘ), and a running news feed of recent publications and acceptances.
+- [Publications](https://pratinavseth.github.io/publications/): 46 papers, pre-prints, and toolkits grouped by topic — safety post-training & alignment, mechanistic interpretability & XAI, tabular foundation models, climate/medical/uncertainty/NLP/vision work.
+- [Experience](https://pratinavseth.github.io/experience/): Roles at Lexsi Labs, Mila Quebec AI Institute, Bosch Research India, IIT Kharagpur, plus research collaborations and leadership roles.
+- [Talks & Events](https://pratinavseth.github.io/talks-events/): Invited talks, workshop spotlights, conference presentations, and industry events.
+- [Education & Service](https://pratinavseth.github.io/education-service/): Education, honors and awards, academic service and reviewing, technical skills, and collaborators & mentees.
+
+## Open-Source Libraries
+
+- AlignTune: modular toolkit for post-training alignment (SFT, DPO, GRPO, RLHF).
+- CircuitKIT: circuit discovery, evaluation, and application toolkit for mechanistic interpretability.
+- SafeTune: audits and repairs safety drift in fine-tuned LLMs.
+- CuratorKIT: provenance-grounded data curation and synthetic generation for LLM post-training.
+- TabTune: unified inference/fine-tuning library for tabular foundation models across 7 architectures.
+- DLBacktrace v2: model-agnostic explainability for LLMs and MoEs with CUDA acceleration.
+- xai_evals: framework for evaluating post-hoc local explanation methods.
+
+## Optional
+
+- [Google Scholar](https://scholar.google.com/citations?user=DwBn1fcAAAAJ)
+- [GitHub](https://github.com/pratinavseth)
+- [LinkedIn](https://www.linkedin.com/in/pratinav-seth/)
+- [ORCID](https://orcid.org/0009-0001-4525-4464)
+- [DBLP](https://dblp.org/pid/305/7312)
