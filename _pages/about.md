@@ -31,7 +31,7 @@ hero:
 <span class='anchor' id='about-me'></span>
 ## About
 
-I lead the Model Science group at **[Lexsi Labs](https://lexsi.ai/)**, directing research across post-training, alignment, mechanistic interpretability, and tabular foundation models. The team has grown to 20+ researchers and interns across India and Paris; I own hiring, roadmap, grants, and research-to-product integration alongside the research itself.
+I lead the Model Science group at **[Lexsi Labs](https://lexsi.ai/)**, directing research across post-training, alignment, mechanistic interpretability, and tabular foundation models. The team has grown to 20+ researchers and interns across India and Paris; I've worked on hiring, roadmap, grants, and research-to-product integration alongside the research itself.
 
 Most of that research asks what survives post-training: how fine-tuning, quantization, and deployment change a model's behavior, and how to find the specific mechanisms responsible. I use mechanistic interpretability to answer this, then audit, repair, or steer those mechanisms directly: circuit-level refusal ([C-ΔΘ](https://arxiv.org/abs/2602.04521)), circuit discovery and attribution ([CircuitKIT](https://arxiv.org/abs/2607.19317)), and safety-drift auditing and repair ([SafeTune](https://github.com/Lexsi-Labs/SafeTune)). Alongside this, I build the post-training infrastructure that ships it: [AlignTune](https://arxiv.org/abs/2602.09621) for training, [CuratorKIT](https://arxiv.org/abs/2606.21631) for data curation, and [ALIGNBEAM](https://arxiv.org/abs/2606.12342) for inference-time alignment transfer. I'm increasingly extending this work to agentic systems and evaluation.
 
@@ -43,7 +43,9 @@ Most of that research asks what survives post-training: how fine-tuning, quantiz
   <span class="tag tag--tabular">Foundation Models</span>
 </div>
 
-In parallel, I lead the [Orion](https://arxiv.org/abs/2511.02818) tabular foundation model series and [TabTune](https://arxiv.org/abs/2511.02802), an inference and fine-tuning library for tabular foundation models, with follow-on work in distillation, ensembling, and applications in structured health data and credit risk.
+Published at **ICML, ACL, WWW, MIDL, AAAI, IJCNN**, and **Nature Scientific Reports**, plus workshops and shared tasks at **NeurIPS, ICLR, CVPR, MICCAI, EurIPS, EMNLP, WACV**, and **ACM SIGMOD**.
+
+In parallel, I used to work on the [Orion](https://arxiv.org/abs/2511.02818) tabular foundation model series and [TabTune](https://arxiv.org/abs/2511.02802), an inference and fine-tuning library for tabular foundation models, with follow-on work in distillation, ensembling, and applications in structured health data and credit risk.
 
 <div class="journey-strip">
   <div class="journey-step">
