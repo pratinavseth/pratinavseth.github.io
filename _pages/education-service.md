@@ -182,93 +182,67 @@ excerpt: "Education & honors, academic service, technical skills, and collaborat
 
 Numbers in parentheses indicate co-authored works together.
 
-## Managers
-- Vinay Kumar Sankarapu (27) — Lexsi Labs / AryaXAI Alignment Labs
-- Chintan Chitroda (4) — AryaXAI Alignment Labs
-
-## Mentors
-- Ujjwal Verma (2) — MIT MAHE
-- David Rolnick (1) — Mila / McGill
-- Abhilash K Pai (1) — MIT MAHE
-
-
-## Collaborators & Mentees
-{: #collaborators-list}
-
-**Lexsi Labs**
-- Aditya Kasliwal (10) <span class='tag'>MENTEE</span>
-- Aditya Tanna (8) <span class='tag'>MENTEE</span>
-- Utsav Avaiya (3) <span class='tag'>MENTEE</span>
-- Soham Bhattacharjee (3) <span class='tag'>MENTEE</span>
-- Saisab Sadhu (3) <span class='tag'>MENTEE</span>
-- Chirag Chawla (2) <span class='tag'>MENTEE</span>
-- Aadit Sengupta (2) <span class='tag'>MENTEE</span>
-- Karun Sharma (2) <span class='tag'>MENTEE</span>
-- Hem Gosalia (2) <span class='tag'>MENTEE</span>
-- R E Zera Marveen Lyngkhoi (1) <span class='tag'>MENTEE</span>
-- Anshul Kaushal (1) <span class='tag'>MENTEE</span>
-- Nikita Malik (1) <span class='tag'>MENTEE</span>
-- Ananth Eswar (1) <span class='tag'>MENTEE</span>
-- Omkar Kakade (1) <span class='tag'>MENTEE</span>
-- Mitul Solanki (1) <span class='tag'>MENTEE</span>
-
-**Lexsi Labs — Paris**
-- Mohamed Bouadi (8)
-- Nassim Bouarour (4)
-- Mykola Khandoga (1)
-- Rui Yuan (1)
-- Yash Jignesh Desai (1)
-
-**AryaXAI Alignment Labs**
-- Neeraj Kumar Singh (4)
-- Yashwardhan Rathore (2)
-
-**Mars Rover Manipal**
-- Akshat Bhandari (4)
-- Sriya Rallabandi (4)
-- Sanchit Singhal (3)
-- Adil Khan (2)
-- Kumud Lakara (2)
-- Aryan Kamani (2)
-- Ishaan Gakhar (2)
-- Sankarshanaa Sagaram (1)
-- Laven Srivastava (1)
-- Ananya Gupta (1)
-- Saurabh Kumar Mishra (1)
-- Krish Didwania (1)
-
-**McGill University**
-- Michelle Lin (1)
-- Brefo Dwamena Yaw (1)
-- Jade Boutot (1)
-- Mary Kang (1)
-
-**Research Society Manipal**
-- Dyutit Mohanty (1)
-- Bharath Udapa (1)
-- Mihir Agarwal (1)
-- Rashi Goel (1)
-- Komal Mathur (1)
-- Swetha Vemulapalli (1)
-- Hemang Malik (1)
-- Gaurav Pradeep (1)
-
-**MIT Manipal / IISc Bangalore**
-- Siddhant Bharadwaj (1)
-- Chandra Sekhar Seelamantula (1)
-
-**Manipal University Jaipur**
-- Danush Khanna (1)
-- Aditya Kumar Guru (1)
-- Siddharth Shukla (1)
-- Tanuj Tyagi (1)
-- Sandeep Chaurasia (1)
-- Kripabandhu Ghosh (1)
-
-**NIT Surathkal**
-- Sidhaarth Sredharan Murali (1)
-
-**Wells Fargo AI COE**
-- Amit Agarwal (1)
+<!-- GENERATED:COLLABORATORS -->
+- Vinay Kumar Sankarapu (27) <span class='tag'>MANAGER</span> <span class='tag'>LEXSI LABS / ARYAXAI ALIGNMENT LABS</span>
+- Aditya Kasliwal (10) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Mohamed Bouadi (8) <span class='tag'>LEXSI LABS — PARIS</span>
+- Aditya Tanna (8) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Neeraj Kumar Singh (4) <span class='tag'>ARYAXAI ALIGNMENT LABS</span>
+- Chintan Chitroda (4) <span class='tag'>MANAGER</span> <span class='tag'>ARYAXAI ALIGNMENT LABS</span>
+- Nassim Bouarour (4) <span class='tag'>LEXSI LABS — PARIS</span>
+- Akshat Bhandari (4) <span class='tag'>MARS ROVER MANIPAL</span>
+- Sriya Rallabandi (4) <span class='tag'>MARS ROVER MANIPAL</span>
+- Utsav Avaiya (3) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Soham Bhattacharjee (3) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Saisab Sadhu (3) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Sanchit Singhal (3) <span class='tag'>MARS ROVER MANIPAL</span>
+- Chirag Chawla (2) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Aadit Sengupta (2) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Karun Sharma (2) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Yashwardhan Rathore (2) <span class='tag'>ARYAXAI ALIGNMENT LABS</span>
+- Hem Gosalia (2) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Adil Khan (2) <span class='tag'>MARS ROVER MANIPAL</span>
+- Kumud Lakara (2) <span class='tag'>MARS ROVER MANIPAL</span>
+- Ujjwal Verma (2) <span class='tag'>MENTOR</span> <span class='tag'>MIT MAHE</span>
+- Aryan Kamani (2) <span class='tag'>MARS ROVER MANIPAL</span>
+- Ishaan Gakhar (2) <span class='tag'>MARS ROVER MANIPAL</span>
+- R E Zera Marveen Lyngkhoi (1) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Mykola Khandoga (1) <span class='tag'>LEXSI LABS — PARIS</span>
+- Rui Yuan (1) <span class='tag'>LEXSI LABS — PARIS</span>
+- Anshul Kaushal (1) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Nikita Malik (1) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Ananth Eswar (1) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Omkar Kakade (1) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Yash Jignesh Desai (1) <span class='tag'>LEXSI LABS — PARIS</span>
+- Mitul Solanki (1) <span class='tag'>MENTEE</span> <span class='tag'>LEXSI LABS</span>
+- Michelle Lin (1) <span class='tag'>MCGILL UNIVERSITY</span>
+- Brefo Dwamena Yaw (1) <span class='tag'>MCGILL UNIVERSITY</span>
+- Jade Boutot (1) <span class='tag'>MCGILL UNIVERSITY</span>
+- Mary Kang (1) <span class='tag'>MCGILL UNIVERSITY</span>
+- David Rolnick (1) <span class='tag'>MENTOR</span> <span class='tag'>MILA / MCGILL</span>
+- Dyutit Mohanty (1) <span class='tag'>RESEARCH SOCIETY MANIPAL</span>
+- Bharath Udapa (1) <span class='tag'>RESEARCH SOCIETY MANIPAL</span>
+- Siddhant Bharadwaj (1) <span class='tag'>MIT MANIPAL / IISC BANGALORE</span>
+- Chandra Sekhar Seelamantula (1) <span class='tag'>MIT MANIPAL / IISC BANGALORE</span>
+- Abhilash K Pai (1) <span class='tag'>MENTOR</span> <span class='tag'>MIT MAHE</span>
+- Sankarshanaa Sagaram (1) <span class='tag'>MARS ROVER MANIPAL</span>
+- Laven Srivastava (1) <span class='tag'>MARS ROVER MANIPAL</span>
+- Ananya Gupta (1) <span class='tag'>MARS ROVER MANIPAL</span>
+- Saurabh Kumar Mishra (1) <span class='tag'>MARS ROVER MANIPAL</span>
+- Mihir Agarwal (1) <span class='tag'>RESEARCH SOCIETY MANIPAL</span>
+- Danush Khanna (1) <span class='tag'>MANIPAL UNIVERSITY JAIPUR</span>
+- Sidhaarth Sredharan Murali (1) <span class='tag'>NIT SURATHKAL</span>
+- Aditya Kumar Guru (1) <span class='tag'>MANIPAL UNIVERSITY JAIPUR</span>
+- Siddharth Shukla (1) <span class='tag'>MANIPAL UNIVERSITY JAIPUR</span>
+- Tanuj Tyagi (1) <span class='tag'>MANIPAL UNIVERSITY JAIPUR</span>
+- Sandeep Chaurasia (1) <span class='tag'>MANIPAL UNIVERSITY JAIPUR</span>
+- Kripabandhu Ghosh (1) <span class='tag'>MANIPAL UNIVERSITY JAIPUR</span>
+- Krish Didwania (1) <span class='tag'>MARS ROVER MANIPAL</span>
+- Amit Agarwal (1) <span class='tag'>WELLS FARGO AI COE</span>
+- Rashi Goel (1) <span class='tag'>RESEARCH SOCIETY MANIPAL</span>
+- Komal Mathur (1) <span class='tag'>RESEARCH SOCIETY MANIPAL</span>
+- Swetha Vemulapalli (1) <span class='tag'>RESEARCH SOCIETY MANIPAL</span>
+- Hemang Malik (1) <span class='tag'>RESEARCH SOCIETY MANIPAL</span>
+- Gaurav Pradeep (1) <span class='tag'>RESEARCH SOCIETY MANIPAL</span>
 
 </details>

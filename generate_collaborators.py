@@ -239,82 +239,47 @@ def main():
 ROLE_TAG = {"mentee": "MENTEE"}  # roles that get an inline tag; "collaborator" gets none
 
 
-def render_group(names_counts):
-    """names_counts: list of (name, count, role). Groups by institution label,
-    preserving institution order of first appearance, sorted by count desc
-    within each group. Each person appears exactly once; their role (if
-    tag-worthy) is rendered as an inline tag rather than a separate list."""
-    out = []
-    seen_labels = []
-    by_label = {}
-    for name, n, role in names_counts:
-        label, _rel = AFFILIATIONS[name]
-        by_label.setdefault(label, []).append((name, n, role))
-        if label not in seen_labels:
-            seen_labels.append(label)
-    for label in seen_labels:
-        entries = sorted(by_label[label], key=lambda x: -x[1])
-        out.append(f"\n**{label}**")
-        for name, n, role in entries:
-            tag = ROLE_TAG.get(role)
-            tag_html = f" <span class='tag'>{tag}</span>" if tag else ""
-            out.append(f"- {name} ({n}){tag_html}")
-    return "\n".join(out)
+GENERATED_MARKER = "<!-- GENERATED:COLLABORATORS -->"
 
 
 def render_markdown(counts):
-    managers = [(n, c) for n, c in counts.items() if AFFILIATIONS[n][1] == "manager"]
-    mentors = [(n, c) for n, c in counts.items() if AFFILIATIONS[n][1] == "mentor"]
-    # Everyone who isn't a manager/mentor is listed exactly once here,
-    # grouped by institution, with a MENTEE tag where relevant — instead of
-    # duplicating mentees across a separate "Mentees" section.
-    collaborators = [
-        (n, c, AFFILIATIONS[n][1]) for n, c in counts.items()
-        if AFFILIATIONS[n][1] in ("mentee", "collaborator")
-    ]
+    """Single flat list, one line per person, sorted by co-authored-work
+    count descending. Each line carries a ROLE tag (manager/mentor/mentee —
+    collaborators get none, since that's the default) and an INSTITUTION
+    tag, instead of nesting people under separate role/institution
+    headings where the same person could end up listed more than once."""
+    people = sorted(counts.items(), key=lambda x: -x[1])
 
-    managers.sort(key=lambda x: -x[1])
-    mentors.sort(key=lambda x: -x[1])
-    collaborators.sort(key=lambda x: -x[1])
+    lines = [GENERATED_MARKER]
+    for name, n in people:
+        label, role = AFFILIATIONS[name]
+        tags = []
+        role_tag = ROLE_TAG.get(role, role.upper() if role in ("manager", "mentor") else None)
+        if role_tag:
+            tags.append(f"<span class='tag'>{role_tag}</span>")
+        tags.append(f"<span class='tag'>{label.upper()}</span>")
+        lines.append(f"- {name} ({n}) {' '.join(tags)}")
 
-    parts = ["## Managers"]
-    for name, n in managers:
-        label, _ = AFFILIATIONS[name]
-        suffix = f" ({n})"
-        parts.append(f"- {name}{suffix} — {label}")
-
-    parts.append("\n## Mentors")
-    for name, n in mentors:
-        label, _ = AFFILIATIONS[name]
-        suffix = f" ({n})"
-        parts.append(f"- {name}{suffix} — {label}")
-
-    # Explicit id: this h2's auto-generated kramdown id would otherwise
-    # collide with the page's "# Collaborators & Mentees {: #collaborators}"
-    # h1 above it (duplicate IDs on the page).
-    parts.append("\n\n## Collaborators & Mentees\n{: #collaborators-list}")
-    parts.append(render_group(collaborators))
-
-    return "\n".join(parts)
+    return "\n".join(lines)
 
 
 def write_service_skills(generated_markdown):
-    """Splice the generated Managers/Mentors/Mentees/Collaborators block into
-    _pages/service-skills.md, replacing everything from '## Managers' up to
-    (not including) the closing '</details>'."""
+    """Splice the generated single-list block into _pages/education-service.md,
+    replacing everything from the GENERATED_MARKER comment up to (not
+    including) the closing '</details>'."""
     with open(SERVICE_SKILLS_MD, encoding="utf-8") as f:
         lines = f.readlines()
 
     start_idx = end_idx = None
     for i, l in enumerate(lines):
-        if l.rstrip("\n") == "## Managers":
+        if l.rstrip("\n") == GENERATED_MARKER or l.rstrip("\n") == "## Managers":
             start_idx = i
         if l.rstrip("\n") == "</details>":
             end_idx = i
             break
 
     if start_idx is None or end_idx is None:
-        print(f"Could not find '## Managers' / '</details>' markers in {SERVICE_SKILLS_MD}", file=sys.stderr)
+        print(f"Could not find generated-block start / '</details>' markers in {SERVICE_SKILLS_MD}", file=sys.stderr)
         sys.exit(1)
 
     new_lines = lines[:start_idx] + [generated_markdown.rstrip("\n") + "\n", "\n"] + lines[end_idx:]
