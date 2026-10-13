@@ -63,6 +63,8 @@ excerpt: "Invited talks & presentations, academic conferences attended, and indu
 
 ## Industry Events
 
+- *2026*, **Hindustan Times Brunch**: Shared perspectives with [Vinay Kumar Sankarapu](https://www.linkedin.com/in/vinaykumar123/) on AI sycophancy and why chatbots can sound confident even when they are wrong, in [Taranna Khetpal's feature](https://www.hindustantimes.com/lifestyle/brunch/too-chatty-gpt-why-ai-should-talk-less-and-just-give-us-the-info-we-need-101791477133262.html).
+
 <figure class="event-photo">
   <img src="{{ '/images/india-ai-summit-2026.jpg' | relative_url }}" alt="Pratinav Seth at the India AI Impact Summit 2026, Bharat Mandapam, New Delhi">
   <figcaption>India AI Impact Summit 2026, Bharat Mandapam, New Delhi (February 2026)</figcaption>

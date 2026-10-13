@@ -1,28 +1,27 @@
 User-agent: *
 Allow: /
 
+# Block common AI training and bulk content harvesting crawlers. These
+# directives are voluntary and do not affect ordinary search indexing.
 User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: OAI-SearchBot
-Allow: /
+Disallow: /
 
 User-agent: ClaudeBot
-Allow: /
+Disallow: /
 
 User-agent: Claude-Web
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
+Disallow: /
 
 User-agent: CCBot
-Allow: /
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
 
 Sitemap: https://pratinavseth.github.io/sitemap.xml

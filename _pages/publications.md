@@ -16,24 +16,38 @@ excerpt: "Full publication list: safety post-training & alignment, mechanistic i
 # Publications <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 {: #publications}
 
-<p class="total-papers-note">Total Papers: 48*<br><small>* counted from the list below; additional work is in internal review and not yet listed here</small></p>
+<p class="total-papers-note">Total papers: 48<br><small>Count includes the publications listed below; additional work remains under review.</small></p>
 
 <div class="card--muted" markdown="1">
 **Selected Publications**
-- [CircuitKIT](https://arxiv.org/abs/2607.19317) · Pre-Print 2026 · Circuit discovery, evaluation, and application toolkit for mechanistic interpretability
+- [CircuitKIT](https://arxiv.org/abs/2607.19317) · Pre-Print 2026; **NeurIPS 2026 Workshop** · Circuit discovery, evaluation, and application toolkit for mechanistic interpretability
 - [C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal](https://arxiv.org/abs/2602.04521) · **Mechanistic Interpretability Workshop, ICML 2026** · Circuit-level weight edits that instil selective refusal, with no inference-time steering or runtime overhead
 - [CuratorKIT](https://arxiv.org/abs/2606.21631) · Pre-Print 2026 · Provenance-grounded data-curation and synthetic-generation pipeline for LLM post-training
-- [SafeTune](https://github.com/Lexsi-Labs/SafeTune) · Pre-Print 2026 · Unified library for auditing and repairing safety drift in fine-tuned LLMs
 - [AlignTune](https://arxiv.org/abs/2602.09621) · Pre-Print 2026 · One interface for SFT, DPO, GRPO, and RLHF with modular reward framework and interchangeable backends
 - [Forgetting That Sticks](https://arxiv.org/abs/2605.15138) · Pre-Print 2026 · Unlearning that survives quantization by identifying and zeroing the circuits that store the target knowledge
 - [Interpretability as Alignment](https://arxiv.org/abs/2509.08592) · **EurIPS Workshop 2025 (Spotlight)** · Case for mechanistic interpretability as a design principle in post-training, not a post-hoc audit
 - [TabTune](https://arxiv.org/abs/2511.02802) · **WWW 2026 Demo** · Unified library for tabular foundation model inference, fine-tuning, and benchmarking across 12+ architectures
+- [Orion-Bix: Bi-Axial Attention for Tabular In-Context Learning](https://arxiv.org/abs/2512.00181) · **WWW 2026** · Tabular foundation model combining biaxial attention and meta-learned in-context reasoning
 - [Alberta Wells Dataset](https://arxiv.org/pdf/2410.09032) · **ICML 2025** · Satellite benchmark for detecting abandoned oil & gas wells; climate AI work with Mila / McGill
 - [SELF-PERCEPT](https://aclanthology.org/2025.acl-short.52/) · **ACL 2025** · LLM introspection improves detection of multi-person mental manipulation in multi-turn conversations
 </div>
 
 
 #### Safety Post-Training & Alignment
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Research Release</div><img src='/images/faithfulness-refusal-fig.png' alt="Targeted multilingual and cybersecurity safety repair for Gemma 4 31B" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Targeted Multilingual and Cybersecurity Safety Repair for Gemma 4 31B](https://openreview.net/forum?id=Mgnk5R9Z0l)
+
+Experiments with targeted interventions in model weights to address multilingual and cybersecurity safety failures, reporting improved safety and multi-turn jailbreak resistance while largely preserving broader model capabilities.
+
+The wider [Lexsi Alignment and Safety Stack](https://lexsi.ai/resources/articles/open-sourcing-the-lexsi-alignment-and-safety-stack-frontier-safety-research-for-auditing-correcting-and-verifying-model-weights) connects data curation, post-training, safety drift measurement, circuit-based interventions, unlearning, and audit records through a cycle of **audit → correct in the weights → re-verify**. Its released components include CuratorKIT, AlignTune, SafeTune, CircuitKIT, AuditKIT, and MANSU.
+
+**Resources:** [Multilingual checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Multilingual-Safety-Repair) · [Cybersecurity checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Cybersecurity-Safety-Repair) · [Technical report](https://lexsi.ai/resources/articles/the-lexsi-alignment-and-safety-stack-correcting-gemma-4-31b-for-multilingual-and-cybersecurity-safety-in-the-weights-copy) · [Lexsi Alignment and Safety Stack](https://lexsi.ai/resources/articles/open-sourcing-the-lexsi-alignment-and-safety-stack-frontier-safety-research-for-auditing-correcting-and-verifying-model-weights)
+
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='https://cdn.prod.website-files.com/690097e1da2dba144068cad2/699ab40523bab49830cce949_699ab3b9de2e66a74a06fd6a_4384885e.png' alt="AlignTune" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -92,24 +106,64 @@ Saisab Sadhu, **Pratinav Seth**, Vinay Kumar Sankarapu
 </div>
 </div>
 
-- What Do Compliance Detectors Read? An Audit of Activation Probes and Guard Models, Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu, **Pratinav Seth**, **Under Review**
+- What Do Compliance Detectors Read? An Audit of Activation Probes and Guard Models, Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu, **Pratinav Seth**, **NeurIPS 2026 Workshop**
 
-- [SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs](https://github.com/Lexsi-Labs/SafeTune), **Pratinav Seth**, Saisab Sadhu, Anshul Kaushal, Vinay Kumar Sankarapu, **Pre-Print**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2026 NLLP Workshop</div><img src='/images/behavioural-assurance-fig.png' alt="Legal reasoning faithfulness audit" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
-- Drift Then Repair: A Controlled Cross-Paradigm Audit of Safety in Fine-Tuned LLMs, **Pratinav Seth**, Anshul Kaushal, Saisab Sadhu, Vinay Kumar Sankarapu, **Under Review**
+[Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness](https://openreview.net/forum?id=25nCvWm2yy)
+
+Saisab Sadhu, Shreeyans Arora, **Pratinav Seth**
+
+Accepted at the **EMNLP 2026 NLLP Workshop** and a **NeurIPS 2026 Workshop**
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2026 NLLP Workshop · NeurIPS 2026 Workshop</div><img src='/images/behavioural-assurance-fig.png' alt="Regulatory rule sensitivity audit" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems](https://openreview.net/forum?id=jX7FB33LSz)
+
+Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu, **Pratinav Seth**
+
+Accepted at the **EMNLP 2026 NLLP Workshop** and a **NeurIPS 2026 Workshop**
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026 Workshop</div><img src='/images/behavioural-assurance-fig.png' alt="Ablation and self-repair analysis" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair](https://arxiv.org/abs/2610.02173)
+
+Areeb Ahmad, **Pratinav Seth**, Vinay Kumar Sankarapu
+
+Accepted at a **NeurIPS 2026 Workshop**
+
+</div>
+</div>
+
+- [AgentTune: A Unified Training Lifecycle for Tool-Using LLM Agents](https://arxiv.org/abs/2610.13335), R E Zera Marveen Lyngkhoi, Abhivansh Gupta, Vidushee Vats, Ram Mohan Rao Kadiyala, Vinay Kumar Sankarapu, **Pratinav Seth**, **Pre-Print**
+
+- [SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs](https://openreview.net/forum?id=5Hl0P9faYV), **Pratinav Seth**, Saisab Sadhu, Anshul Kaushal, Vinay Kumar Sankarapu, **EMNLP 2026 System Demonstrations** · [Code](https://github.com/Lexsi-Labs/SafeTune)
+
+- Drift, Then Repair: A Safety Audit of Fine-Tuned Language Models, **Pratinav Seth**, Anshul Kaushal, Saisab Sadhu, Vinay Kumar Sankarapu, **NeurIPS 2026 Workshop**
 
 - Self-Calibrating Weight-Arithmetic Safety-Drift Repair, **Pratinav Seth**, Vinay Kumar Sankarapu, **Under Review**
 
-- The Off-Switch Failure: When Safety-Repair Evaluation Rewards Model Collapse, **Pratinav Seth**, **Under Review**
+- The Off-Switch Failure: When Safety-Repair Evaluation Rewards Model Collapse, **Pratinav Seth**, **NeurIPS 2026 Workshop**
 
 - [CuratorKIT: Data Curation and Synthetic Data Generation for LLM Post-Training](https://arxiv.org/abs/2606.21631), Soham Bhattacharjee, Karun Sharma, Vinay Kumar Sankarapu, **Pratinav Seth**, **Pre-Print**
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Under Review</div><img src='/images/curatorkit-provenance-fig.png' alt="Provenance-Grounded Gating" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2026 Findings</div><img src='/images/curatorkit-provenance-fig.png' alt="Provenance-Grounded Gating" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation](https://arxiv.org/abs/2606.11127)
+[Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation](https://openreview.net/forum?id=X49HukIVLk)
 
 Soham Bhattacharjee, Karun Sharma, Vinay Kumar Sankarapu, **Pratinav Seth**
+
+Accepted to **EMNLP 2026 Findings**
 
 [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
 </div>
@@ -197,7 +251,13 @@ Ananth Eswar, **Pratinav Seth**, Utsav Avaiya, Vinay Kumar Sankarapu
 </div>
 </div>
 
+- [xai_evals: A Framework for Evaluating Post-Hoc Local Explanation Methods](https://arxiv.org/abs/2502.03014), **Pratinav Seth**, Yashwardhan Rathore, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu, **Technical Report**
+
 - Faithfulness Is Not Actionability: Component Heterogeneity in Discovered Circuits, **Pratinav Seth**, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu, **Under Review**
+
+- Faithfulness Is Not Actionability: Extrinsic Validation of Circuit Selectors Under Structured Pruning, Hem Gosalia, **Pratinav Seth**, Aditya Kasliwal, Vinay Kumar Sankarapu, **NeurIPS 2026 Workshop**
+
+- BRIEF: Bounded-Context Regeneration of Long Documents with Verifiable Structural Topology, Aryan Sood, Soham Bhattacharjee, **Pratinav Seth**, **NeurIPS 2026 Workshop**
 
 - [DLBacktrace v2: Extending Model-Agnostic Interpretability for LLMs and MoEs with CUDA Acceleration](https://github.com/Lexsi-Labs/DLBacktrace), Neeraj Kumar Singh, **Pratinav Seth**, Omkar Kakade, Chintan Chitroda, Vinay Kumar Sankarapu, **Pre-Print**
 
@@ -290,7 +350,7 @@ Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**,
 
 #### Libraries & Toolkits
 
-*Designed and built the initial release of each library below.*
+*Libraries I designed or helped build, plus related team tools.*
 
 - [TabTune](https://arxiv.org/abs/2511.02802) · Unified inference and fine-tuning library for tabular foundation models across 12+ architectures. **WWW 2026 Demo** (116⭐).
 - [AlignTune](https://arxiv.org/abs/2602.09621) · Modular post-training toolkit: SFT, DPO, GRPO, and RLHF with interchangeable backends. **Pre-Print 2026** (37⭐).
@@ -298,7 +358,9 @@ Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**,
 - [CuratorKIT](https://arxiv.org/abs/2606.21631) · Provenance-grounded data-curation and synthetic-generation pipeline for LLM post-training. **Pre-Print 2026** (24⭐).
 - [xai_evals](https://arxiv.org/pdf/2502.03014) · Framework for evaluating post-hoc local explanation methods. **Technical Report 2025** (15⭐).
 - [CircuitKIT](https://arxiv.org/abs/2607.19317) · Circuit discovery, evaluation, and application toolkit for mechanistic interpretability. **Pre-Print 2026** (14⭐).
-- [SafeTune](https://github.com/Lexsi-Labs/SafeTune) · Unified library for auditing and repairing safety drift in fine-tuned LLMs. **Pre-Print 2026** (7⭐).
+- [SafeTune](https://github.com/Lexsi-Labs/SafeTune) · Unified library for auditing and repairing safety drift in fine-tuned LLMs. **EMNLP 2026 System Demonstrations** (7⭐).
+- [AuditKIT](https://auditkit.lexsi.ai/) · Shared evaluation and audit records for comparing models and interventions across safety and alignment experiments.
+- [AgentTune](https://github.com/Lexsi-Labs/AgentTune) · Framework for building, training, evaluating, and maintaining tool-using LLM agents. See the [paper](https://arxiv.org/abs/2610.13335).
 - [DLBacktrace (v1)](https://arxiv.org/pdf/2411.12643) · Model-agnostic explainability for deep learning models. **IJCNN 2025.**
 
 *In development: multiple additional tools across interpretability, post-training alignment, and LLM safety.*
@@ -313,7 +375,7 @@ Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**,
 **Pratinav Seth(#)**, Michelle Lin(#), Brefo Dwamena Yaw, Jade Boutot, Mary Kang, David Rolnick
 
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:5nxA0vEk-isC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:5nxA0vEk-isC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:5nxA0vEk-isC'></span></strong>
 </div>
 </div>
 
@@ -324,11 +386,15 @@ Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**,
 
 Akshat Bhandari, Sriya Rallabandi, Sanchit Singhal, Aditya Kasliwal, **Pratinav Seth**
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:2osOgNQ5qMEC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:2osOgNQ5qMEC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:2osOgNQ5qMEC'></span></strong>
 </div>
 </div>
 
-- [Sailing Through Spectra: Unveiling the Potential of Multi-Spectral Information in Marine Debris Segmentation](https://openreview.net/pdf?id=tJPLJS97X4), Dyutit Mohanty, Aditya Kasliwal, Bharath Udapa, **Pratinav Seth**, **The Second Tiny Papers Track at ICLR 2024.** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:roLk4NBRz8UC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[LapGSR: Laplacian Reconstructive Network for Guided Thermal Super-Resolution](https://arxiv.org/abs/2411.07750)
+
+Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
+
+- [Sailing Through Spectra: Unveiling the Potential of Multi-Spectral Information in Marine Debris Segmentation](https://openreview.net/pdf?id=tJPLJS97X4), Dyutit Mohanty, Aditya Kasliwal, Bharath Udapa, **Pratinav Seth**, **The Second Tiny Papers Track at ICLR 2024.** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:roLk4NBRz8UC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:roLk4NBRz8UC'></span></strong>
 
 #### Medical Imaging
 
@@ -350,7 +416,7 @@ Siddhant Bharadwaj, **Pratinav Seth**, Chandra Sekhar Seelamantula
 
 **Pratinav Seth**, Abhilash K Pai
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:LkGwnXOMwfcC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:LkGwnXOMwfcC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:LkGwnXOMwfcC'></span></strong>
 </div>
 </div>
 
@@ -361,7 +427,7 @@ Siddhant Bharadwaj, **Pratinav Seth**, Chandra Sekhar Seelamantula
 
 Aditya Kasliwal, Sankarshanaa Sagaram, Laven Srivastava, **Pratinav Seth**, Adil Khan
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:Y0pCki6q_DkC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:Y0pCki6q_DkC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:Y0pCki6q_DkC'></span></strong>
 </div>
 </div>
 
@@ -372,7 +438,7 @@ Aditya Kasliwal, Sankarshanaa Sagaram, Laven Srivastava, **Pratinav Seth**, Adil
 
 **Pratinav Seth**, Adil Khan, Ananya Gupta, Saurabh Kumar Mishra, Akshat Bhandhari
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:u-x6o8ySG0sC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:u-x6o8ySG0sC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:u-x6o8ySG0sC'></span></strong>
 </div>
 </div>
 
@@ -385,11 +451,11 @@ Aditya Kasliwal, Sankarshanaa Sagaram, Laven Srivastava, **Pratinav Seth**, Adil
 
 Kumud Lakara (†), Akshat Bhandari (†), **Pratinav Seth (†)**, Ujjwal Verma
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:u5HHmVD_uO8C) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:u5HHmVD_uO8C) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:u5HHmVD_uO8C'></span></strong>
 </div>
 </div>
 
-- [UATTA-EB: Uncertainty-Aware Test-Time Augmented Ensemble of BERTs for Classifying Common Mental Illnesses on Social Media Posts](https://arxiv.org/pdf/2304.04539), **Pratinav Seth  (†)**, Mihir Agarwal  (†), **1st Tiny Paper Track at ICLR 2023.** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:IjCSPb-OGe4C) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- [UATTA-EB: Uncertainty-Aware Test-Time Augmented Ensemble of BERTs for Classifying Common Mental Illnesses on Social Media Posts](https://arxiv.org/pdf/2304.04539), **Pratinav Seth  (†)**, Mihir Agarwal  (†), **1st Tiny Paper Track at ICLR 2023.** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:IjCSPb-OGe4C) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:IjCSPb-OGe4C'></span></strong>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='/images/fake-training-data-fig.png' alt="Sample low-fidelity synthetic training image" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -401,6 +467,12 @@ Kumud Lakara (†), Akshat Bhandari (†), **Pratinav Seth (†)**, Ujjwal Verma
 [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:qjMakFHDy7sC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:qjMakFHDy7sC'></span></strong>
 </div>
 </div>
+
+[CoReFusion: Contrastive Regularized Fusion for Guided Thermal Super-Resolution](https://arxiv.org/abs/2304.01243)
+
+Aditya Kasliwal, **Pratinav Seth**, Sriya Rallabandi, Sanchit Singhal
+
+Accepted at **CVPR 2023 Workshop**
 
 #### NLP & AI for Social Good
 
@@ -422,7 +494,7 @@ Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru,
 
  Krish Didwania (†), **Pratinav Seth (†)**, Aditya Kasliwal, Amit Agarwal
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:hqOjcs7Dif8C) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:hqOjcs7Dif8C) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:hqOjcs7Dif8C'></span></strong>
 </div>
 </div>
 
@@ -459,7 +531,7 @@ Sriya Rallabandi, Sanchit Singhal, **Pratinav Seth**
 
 Aditya Kasliwal, **Pratinav Seth**, Sriya Rallabandi, Sanchit Singhal
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:UeHWp8X0CEIC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:UeHWp8X0CEIC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:UeHWp8X0CEIC'></span></strong>
 </div>
 </div>
 
@@ -470,7 +542,7 @@ Aditya Kasliwal, **Pratinav Seth**, Sriya Rallabandi, Sanchit Singhal
 
 Aditya Kasliwal, Aryan Kamani, Ishaan Gakhar, **Pratinav Seth**, Sriya Rallabandi
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:Se3iqnhoufwC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:Se3iqnhoufwC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:Se3iqnhoufwC'></span></strong>
 </div>
 </div>
 
@@ -481,7 +553,7 @@ Aditya Kasliwal, Aryan Kamani, Ishaan Gakhar, **Pratinav Seth**, Sriya Rallaband
 
 Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:8k81kl-MbHgC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:8k81kl-MbHgC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:8k81kl-MbHgC'></span></strong>
 </div>
 </div>
 
