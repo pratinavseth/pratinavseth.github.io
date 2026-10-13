@@ -31,6 +31,9 @@ excerpt: "Education & honors, academic service, technical skills, and collaborat
 {: #academic-service}
 - **Mentor**: AAAI Undergraduate Consortium 2026 (Scholar 2023 → Mentor 2026)
 
+## Conference Participation
+- **[EMNLP 2026](https://2026.emnlp.org/)**: Scheduled to attend in Budapest, Hungary (October 24–29). Accepted work includes one Findings paper, one System Demonstrations paper, and two NLLP Workshop papers; see the [publications page](/publications/) for titles and links.
+
 ## Conference Reviewing & Program Committee
 - **Main Conference Reviewer**: AAAI 2027 (Program Committee), NeurIPS 2026, ACM AIES 2026, CVPR (2025-26), ECCV (2024-26), ICCV (2025), WACV (2026-27), BMVC 2026, IJCNN (2025)
 - **Workshop & Track Reviewer (2026)**:

@@ -1,6 +1,6 @@
 # Pratinav Seth
 
-> AI researcher leading the Model Science group at Lexsi Labs (India & Paris). Works on post-training safety and mechanistic interpretability for language models — circuit-level weight repair, unlearning, and safety-drift auditing — plus foundation models for structured data. Has contributed to open-source research tools including AlignTune, CircuitKIT, SafeTune, AuditKIT, and AgentTune. B.Tech Data Science, MIT Manipal (2024). AAAI Undergraduate Consortium Scholar (2023) and Mentor (2026).
+> AI researcher leading the Model Science group at Lexsi Labs (India & Paris). Works on post-training safety and mechanistic interpretability for language models — circuit-level weight repair, unlearning, and safety-drift auditing — plus foundation models for structured data. Has contributed to research tools and libraries including AlignTune, CircuitKIT, SafeTune, AuditKIT, and AgentTune. B.Tech Data Science, MIT Manipal (2024). AAAI Undergraduate Consortium Scholar (2023) and Mentor (2026).
 
 ## Pages
 
@@ -19,8 +19,10 @@
 - TabTune: unified inference/fine-tuning library for tabular foundation models across 7 architectures.
 - DLBacktrace v2: model-agnostic explainability for LLMs and MoEs with CUDA acceleration.
 - xai_evals: framework for evaluating post-hoc local explanation methods.
-- AuditKIT: Lexsi Labs evaluation and audit-record tooling for comparing models and interventions.
-- AgentTune: library for building, training, evaluating, and maintaining tool-using LLM agents; Pratinav Seth is a co-author.
+- AuditKIT: source-available evaluation library for benchmarks, LLM-as-judge, RAG, model comparison, performance/cost metrics, and experiment tracking.
+- AgentTune: source-available library for building, training, evaluating, and maintaining tool-using LLM agents; Pratinav Seth is a co-author. [Pre-print](https://arxiv.org/abs/2610.13335).
+- Lexsi Alignment and Safety Stack: CuratorKIT, AlignTune, SafeTune, CircuitKIT, AuditKIT, and MANSU, an unlearning method; see the [release article](https://lexsi.ai/resources/articles/open-sourcing-the-lexsi-alignment-and-safety-stack-frontier-safety-research-for-auditing-correcting-and-verifying-model-weights).
+- ALIGNBEAM: accepted at the AI for Good Workshop at ICML 2026 and the EMNLP 2026 Main Conference.
 
 ## Optional
 

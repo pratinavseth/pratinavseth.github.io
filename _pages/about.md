@@ -136,6 +136,16 @@ My papers and demos have appeared at ICML, ACL, WWW, MIDL, IJCNN, and Nature Sci
     <h3 class="work-card__title">CuratorKIT</h3>
     <p class="work-card__desc">Provenance-grounded data curation and synthetic generation for LLM post-training, with 24 stars on GitHub.</p>
   </a>
+  <a class="work-card" href="https://github.com/Lexsi-Labs/TabTune">
+    <span class="work-card__tag">LIBRARY</span>
+    <h3 class="work-card__title">TabTune</h3>
+    <p class="work-card__desc">Unified inference, fine-tuning, and benchmarking for tabular foundation models across 12+ architectures; WWW 2026 Demo.</p>
+  </a>
+  <a class="work-card" href="https://github.com/Lexsi-Labs/DLBacktrace">
+    <span class="work-card__tag">LIBRARY</span>
+    <h3 class="work-card__title">DLBacktrace v2</h3>
+    <p class="work-card__desc">Model-agnostic interpretability tooling for deep learning, LLMs, and MoEs, with a torch.export-based design and CUDA acceleration.</p>
+  </a>
   <a class="work-card" href="https://auditkit.lexsi.ai/">
     <span class="work-card__tag">TEAM TOOL</span>
     <h3 class="work-card__title">AuditKIT</h3>
@@ -161,42 +171,43 @@ My papers and demos have appeared at ICML, ACL, WWW, MIDL, IJCNN, and Nature Sci
 ## Recent Publications & Acceptances
 
 <div class="timeline-list" markdown="1">
+- <span class="timeline-list__date">2026</span>**EMNLP 2026 Findings:** [*Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation*](https://openreview.net/forum?id=X49HukIVLk) accepted to Findings.
+- <span class="timeline-list__date">2026</span>**EMNLP 2026 System Demonstrations:** [SafeTune](https://openreview.net/forum?id=5Hl0P9faYV), a library for auditing and repairing safety drift in fine-tuned LLMs, accepted to the system demonstrations track.
+- <span class="timeline-list__date">2026</span>**EMNLP 2026 NLLP Workshop:** [*Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness*](https://openreview.net/forum?id=25nCvWm2yy) and [*Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems*](https://openreview.net/forum?id=jX7FB33LSz) accepted.
+- <span class="timeline-list__date">2026</span>**NeurIPS 2026 Workshop:** [*Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair*](https://arxiv.org/abs/2610.02173), coauthored with Areeb Ahmad and Vinay Kumar Sankarapu, accepted.
+- <span class="timeline-list__date">2026</span>**NeurIPS 2026 Workshops:** [*CircuitKIT*](https://arxiv.org/abs/2607.19317); *Drift, Then Repair*; *Faithfulness Is Not Actionability: Extrinsic Validation of Circuit Selectors Under Structured Pruning*; *The Off-Switch Failure*; [*What Do Compliance Detectors Read?*](https://arxiv.org/abs/2608.16852); [*Cited but Not Consulted*](https://openreview.net/forum?id=25nCvWm2yy); and *BRIEF* accepted.
+- <span class="timeline-list__date">2026.10</span>With the Lexsi Labs team, released experiments and corrected Gemma 4 31B checkpoints for multilingual and cybersecurity safety. The team reports improved safety and multi-turn jailbreak resistance while largely preserving broader capabilities; some gains generalized beyond the tested languages and settings. See the [OpenReview paper](https://openreview.net/forum?id=Mgnk5R9Z0l), [multilingual checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Multilingual-Safety-Repair), [cybersecurity checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Cybersecurity-Safety-Repair), [technical report](https://lexsi.ai/resources/articles/the-lexsi-alignment-and-safety-stack-correcting-gemma-4-31b-for-multilingual-and-cybersecurity-safety-in-the-weights-copy), and [open-source Safety Stack](https://lexsi.ai/resources/articles/open-sourcing-the-lexsi-alignment-and-safety-stack-frontier-safety-research-for-auditing-correcting-and-verifying-model-weights).
 - <span class="timeline-list__date">2026.10</span>Shared perspectives with Vinay Kumar Sankarapu on AI sycophancy in [Hindustan Times Brunch](https://www.hindustantimes.com/lifestyle/brunch/too-chatty-gpt-why-ai-should-talk-less-and-just-give-us-the-info-we-need-101791477133262.html), in a feature by Taranna Khetpal.
 - <span class="timeline-list__date">2026.10</span>Attending [EMNLP 2026](https://2026.emnlp.org/) in Budapest, Hungary (October 24–29).
 - <span class="timeline-list__date">2026.10</span>New pre-print and open-source release: [AgentTune](https://arxiv.org/abs/2610.13335), a training lifecycle library for tool-using LLM agents; [code](https://github.com/Lexsi-Labs/AgentTune).
 - <span class="timeline-list__date">2026.10</span>Released [AuditKIT](https://auditkit.lexsi.ai/), Lexsi Labs tooling for shared evaluation and audit records across safety and alignment experiments.
-- <span class="timeline-list__date">2026</span>**EMNLP 2026 Findings:** *Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation* accepted to Findings.
-- <span class="timeline-list__date">2026</span>**EMNLP 2026 System Demonstrations:** [SafeTune](https://openreview.net/forum?id=5Hl0P9faYV), a library for auditing and repairing safety drift in fine-tuned LLMs, accepted to the system demonstrations track.
-- <span class="timeline-list__date">2026</span>**EMNLP 2026 NLLP Workshop:** [*Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness*](https://openreview.net/forum?id=25nCvWm2yy) and [*Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems*](https://openreview.net/forum?id=jX7FB33LSz) accepted.
-- <span class="timeline-list__date">2026</span>**NeurIPS 2026 Workshops:** *CircuitKIT*; *Drift, Then Repair*; *Faithfulness Is Not Actionability: Extrinsic Validation of Circuit Selectors Under Structured Pruning*; *The Off-Switch Failure*; *What Do Compliance Detectors Read?*; *Cited but Not Consulted*; and *BRIEF* accepted.
-- <span class="timeline-list__date">2026.10</span>With the Lexsi Labs team, released experiments and corrected Gemma 4 31B checkpoints for multilingual and cybersecurity safety. The team reports improved safety and multi-turn jailbreak resistance while largely preserving broader capabilities; some gains generalized beyond the tested languages and settings. See the [OpenReview paper](https://openreview.net/forum?id=Mgnk5R9Z0l), [multilingual checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Multilingual-Safety-Repair), [cybersecurity checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Cybersecurity-Safety-Repair), [technical report](https://lexsi.ai/resources/articles/the-lexsi-alignment-and-safety-stack-correcting-gemma-4-31b-for-multilingual-and-cybersecurity-safety-in-the-weights-copy), and [open-source Safety Stack](https://lexsi.ai/resources/articles/open-sourcing-the-lexsi-alignment-and-safety-stack-frontier-safety-research-for-auditing-correcting-and-verifying-model-weights).
-- <span class="timeline-list__date">2026.07</span>Released **CircuitKIT**, a toolkit for circuit discovery, evaluation, and application in mechanistic interpretability
-- <span class="timeline-list__date">2026.07</span>New pre-print: **Faithfulness to Refusal**, a causal audit of neuron selectors used for LLM refusal behavior
-- <span class="timeline-list__date">2026.06</span>Released **CuratorKIT**, provenance-grounded data curation and synthetic generation for LLM post-training
-- <span class="timeline-list__date">2026.06</span>**ALIGNBEAM** accepted at the AI for Good Workshop, ICML 2026: inference-time alignment transfer via cross-vocabulary logit mixing
-- <span class="timeline-list__date">2026.06</span>Released **SafeTune**, a library for auditing and repairing safety drift in fine-tuned LLMs
-- <span class="timeline-list__date">2026.05</span>**Distilling Tabular Foundation Models for Structured Health Data** wins Best Paper Runner-Up (Spotlight), SD4H Workshop @ ICML 2026
+- <span class="timeline-list__date">2026.07</span>Released [**CircuitKIT**](https://arxiv.org/abs/2607.19317), a toolkit for circuit discovery, evaluation, and application in mechanistic interpretability
+- <span class="timeline-list__date">2026.07</span>New pre-print: [**Faithfulness to Refusal**](https://arxiv.org/abs/2607.05355), a causal audit of neuron selectors used for LLM refusal behavior
+- <span class="timeline-list__date">2026.06</span>Released [**CuratorKIT**](https://arxiv.org/abs/2606.21631), provenance-grounded data curation and synthetic generation for LLM post-training
+- <span class="timeline-list__date">2026.06</span>[**ALIGNBEAM**](https://arxiv.org/abs/2606.12342) accepted at the AI for Good Workshop, ICML 2026: inference-time alignment transfer via cross-vocabulary logit mixing
+- <span class="timeline-list__date">2026.06</span>Released [**SafeTune**](https://openreview.net/forum?id=5Hl0P9faYV), a library for auditing and repairing safety drift in fine-tuned LLMs
+- <span class="timeline-list__date">2026.05</span>[**Distilling Tabular Foundation Models for Structured Health Data**](https://arxiv.org/abs/2605.18702) wins Best Paper Runner-Up (Spotlight), SD4H Workshop @ ICML 2026
 </div>
 
 <details markdown="1">
 <summary>Earlier publications & acceptances</summary>
 <div class="timeline-list" markdown="1">
-- <span class="timeline-list__date">2026.05</span>**Data Presentation over Architecture: Resampling Strategies for Credit Risk Prediction with Tabular Foundation Models** accepted as an **Oral at FinDS Workshop @ ACM SIGMOD 2026**
+- <span class="timeline-list__date">2026.05</span>[**Data Presentation over Architecture: Resampling Strategies for Credit Risk Prediction with Tabular Foundation Models**](https://arxiv.org/abs/2605.18635) accepted as an **Oral at FinDS Workshop @ ACM SIGMOD 2026**
 - <span class="timeline-list__date">2026.05</span>New Pre-Print: **Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands**
-- <span class="timeline-list__date">2026.05</span>**Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees** accepted at **FMSD Workshop @ ICML 2026**
-- <span class="timeline-list__date">2026.05</span>**Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap** accepted at **FMSD Workshop @ ICML 2026**
-- <span class="timeline-list__date">2026.02</span>New Pre-Print: **AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models**
+- <span class="timeline-list__date">2026.05</span>[**Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees**](https://arxiv.org/abs/2605.18654) accepted at **FMSD Workshop @ ICML 2026**
+- <span class="timeline-list__date">2026.05</span>[**Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap**](https://arxiv.org/abs/2605.18696) accepted at **FMSD Workshop @ ICML 2026**
+- <span class="timeline-list__date">2026.02</span>New Pre-Print: [**AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models**](https://arxiv.org/abs/2602.09621)
 - <span class="timeline-list__date">2026.02</span>**C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal** accepted at the **Mechanistic Interpretability Workshop @ ICML 2026** (in-person poster, &lt;15% acceptance rate)
-- <span class="timeline-list__date">2026.01</span>**Orion-Bix: Bi-Axial Attention for Tabular In-Context Learning** accepted at **WWW 2026**
-- <span class="timeline-list__date">2026.01</span>**Exploring Fine-Tuning for Tabular Foundation Models** accepted at **WWW 2026**
-- <span class="timeline-list__date">2026.01</span>**TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models (Demo)** accepted at **WWW 2026**
-- <span class="timeline-list__date">2026.01</span>**Laplacian reconstructive network for guided thermal super-resolution** accepted at **Scientific Reports (Nature)**
-- <span class="timeline-list__date">2025.12</span>**Interpretability as Alignment: Making Internal Understanding a Design Principle** accepted at **EurIPS Workshop on Private AI Governance**
-- <span class="timeline-list__date">2025.12</span>**Bridging the gap in XAI-why reliable metrics matter for explainability and compliance** accepted at **EurIPS Workshop on Private AI Governance**
+- <span class="timeline-list__date">2026.01</span>[**Orion-Bix: Bi-Axial Attention for Tabular In-Context Learning**](https://huggingface.co/Lexsi/Orion-BiX) accepted at **WWW 2026**
+- <span class="timeline-list__date">2026.01</span>[**Exploring Fine-Tuning for Tabular Foundation Models**](https://arxiv.org/abs/2601.09654) accepted at **WWW 2026**
+- <span class="timeline-list__date">2026.01</span>[**TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models (Demo)**](https://arxiv.org/abs/2511.02802) accepted at **WWW 2026**
+- <span class="timeline-list__date">2026.01</span>[**Laplacian reconstructive network for guided thermal super-resolution**](https://doi.org/10.1038/s41598-026-36027-x) accepted at **Scientific Reports (Nature)**
+- <span class="timeline-list__date">2025.12</span>[**Interpretability as Alignment: Making Internal Understanding a Design Principle**](https://arxiv.org/abs/2509.08592) accepted at **EurIPS Workshop on Private AI Governance**
+- <span class="timeline-list__date">2025.12</span>[**Bridging the gap in XAI-why reliable metrics matter for explainability and compliance**](https://arxiv.org/abs/2502.04695) accepted at **EurIPS Workshop on Private AI Governance**
 - <span class="timeline-list__date">2025.12</span>**EurIPS Workshop on Private AI Governance 2025 Spotlight Talk**
-- <span class="timeline-list__date">2025.09</span>**Interpretability-aware pruning for efficient medical image analysis** accepted at **MICCAI Workshop 2025**
-- <span class="timeline-list__date">2025.05</span>**SELF-PERCEPT: Mental Manipulation Detection** accepted at **ACL 2025**
-- <span class="timeline-list__date">2025.05</span>**Alberta Wells Dataset** accepted at **ICML 2025** (grateful to the team for their efforts, and to Prof. David Rolnick)
+- <span class="timeline-list__date">2025.09</span>[**Interpretability-aware pruning for efficient medical image analysis**](https://arxiv.org/abs/2507.08330) accepted at **MICCAI Workshop 2025**
+- <span class="timeline-list__date">2025.05</span>[**SELF-PERCEPT: Mental Manipulation Detection**](https://aclanthology.org/2025.acl-short.52/) accepted at **ACL 2025**
+- <span class="timeline-list__date">2025.05</span>[**Alberta Wells Dataset**](https://arxiv.org/pdf/2410.09032) accepted at **ICML 2025** (grateful to the team for their efforts, and to Prof. David Rolnick)
 </div>
 </details>
 

@@ -17,21 +17,24 @@ excerpt: "Research positions, collaborations, leadership roles, and early career
   - **Post-Training & Data Curation**: Building **CuratorKIT** (24⭐), a provenance-grounded data-curation and synthetic-generation pipeline; verifiable long-form synthetic document generation, with further work under review
   - **Post-Hoc Interpretability**: Built unified post-hoc explainability tooling (LRP, Integrated Gradients, DL-Backtrace), including LRP- and DLB-based analysis of model refusal behavior
   - **Mechanistic Interpretability**: Lead circuit-level interpretability: built **CircuitKIT** (14⭐), a circuit discovery, evaluation, and application toolkit; co-led **C-ΔΘ**, a circuit-restricted weight-arithmetic method for selective refusal (ICML 2026 Workshop); advised machine unlearning via circuit attribution, with further work on circuit faithfulness under review
-  - **Safety & Steering**: Improve safety alignment across the model lifecycle: during training, post-training recovery and fixing, and at inference time. Co-built **SafeTune** (7⭐), a unified library for auditing and repairing safety drift in fine-tuned LLMs; built an inference-time alignment-transfer method (**ALIGNBEAM**, ICML 2026 Workshop); a position paper on the limits of behavioral safety assurance for governance; audited compliance detectors and guard models; further work on safety-drift repair and safety-repair evaluation, under review
+  - **Safety & Steering**: Study and improve model behavior across training, post-training, and inference. Co-built [**SafeTune**](https://github.com/Lexsi-Labs/SafeTune), a library for auditing and repairing safety drift in fine-tuned LLMs; developed [**ALIGNBEAM**](https://arxiv.org/abs/2606.12342) for inference-time alignment transfer; and contributed to the team's multilingual and cybersecurity safety-repair experiments on Gemma 4 31B, with [released checkpoints and evaluation](https://openreview.net/forum?id=Mgnk5R9Z0l). Related work examines behavioral assurance, compliance detectors, safety drift, and safety-repair evaluation.
   - **Model Optimization**: Lead structured-pruning and quantization work for efficient model deployment
-  - **AI & Coding Agents**: Explore agent and coding-agent architectures; early exploration of a self-improving post-training agent and autonomous-research (auto-research) agents
-  - **Evaluation**: Built an internal LLM evaluation library
+  - **AI & Coding Agents**: Contributed to [**AgentTune**](https://github.com/Lexsi-Labs/AgentTune), a source-available training lifecycle library for tool-using LLM agents, with a [2026 pre-print](https://arxiv.org/abs/2610.13335).
+  - **Evaluation**: Released [**AuditKIT**](https://auditkit.lexsi.ai/) for model evaluation and shared audit records across safety and alignment experiments.
   - **Research-to-Product Integration**: Translate research into production: integrate interpretability, alignment, and safety tooling into the product stack
-  - **Team & Delivery**: Lead the Model Science group (16 interns and 8 full-time researchers across India and Paris), covering grants, hiring, roadmap, and overall planning. Team output spans ICML 2026 workshop papers and submissions under review at A* venues (NeurIPS, ACL, and more)
+  - **Team & Delivery**: Lead the Model Science group across India and Paris, covering research direction, hiring, grants, roadmap, and research-to-product integration.
   - **Publications**:
-    - AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models. 2026. Pre-print.
-    - CuratorKIT: Data Curation and Synthetic Data Generation for LLM Post-Training. 2026. Pre-print.
-    - CircuitKIT: Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability. 2026. Pre-print.
-    - SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs. 2026. Pre-print.
-    - C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal. 2026. Mechanistic Interpretability Workshop, ICML 2026.
-    - ALIGNBEAM: Inference-Time Alignment Transfer via Cross-Vocabulary Logit Mixing. 2026. AI for Good Workshop, ICML 2026.
-    - Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution. 2026. Pre-Print.
-    - Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands. 2026. Pre-print.
+    - [AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models](https://arxiv.org/abs/2602.09621). 2026. Pre-print.
+    - [CuratorKIT: Data Curation and Synthetic Data Generation for LLM Post-Training](https://arxiv.org/abs/2606.21631). 2026. Pre-print.
+    - [CircuitKIT: Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability](https://arxiv.org/abs/2607.19317). 2026. Pre-print.
+    - [SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs](https://openreview.net/forum?id=5Hl0P9faYV). Accepted, EMNLP 2026 System Demonstrations.
+    - [C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal](https://arxiv.org/abs/2602.04521). ICML 2026 Mechanistic Interpretability Workshop.
+    - [ALIGNBEAM: Inference-Time Alignment Transfer via Cross-Vocabulary Logit Mixing](https://arxiv.org/abs/2606.12342). Accepted, EMNLP 2026 Main Conference and AI for Good Workshop, ICML 2026.
+    - [Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution](https://arxiv.org/abs/2605.15138). 2026. Pre-print.
+    - [Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands](https://arxiv.org/abs/2605.15164). 2026. Pre-print.
+    - [Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation](https://openreview.net/forum?id=X49HukIVLk). Accepted, EMNLP 2026 Findings.
+    - [Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness](https://openreview.net/forum?id=25nCvWm2yy) and [Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems](https://openreview.net/forum?id=jX7FB33LSz). Accepted, EMNLP 2026 NLLP Workshop.
+    - [Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair](https://arxiv.org/abs/2610.02173). Accepted, NeurIPS 2026 Workshop.
 
 - <span class="role-list__date">2025.07 – 2026.03</span>**Research Scientist** at [Lexsi Labs, Lexsi.ai](https://lexsi.ai/) (Aurionpro Solutions Group) *[Previously: AryaXAI, Arya.ai]*, Remote
   - **Model Science Group**: Led and scaled the lab's Model Science group across post-training alignment, safety, and interpretability into a core research team driving the lab's alignment and safety agenda

@@ -2,12 +2,15 @@
 layout: default
 permalink: /talks-events/
 title: "Talks & Events · Pratinav Seth"
-description: "Invited talks, webinars, and conference/industry events attended, including a Spotlight Talk at the EurIPS Workshop on Private AI Governance and the India AI Impact Summit 2026."
-excerpt: "Invited talks & presentations, academic conferences attended, and industry events."
+description: "Invited talks, webinars, conference participation, and industry events, including EMNLP 2026, the EurIPS 2025 Spotlight Talk, and the India AI Impact Summit."
+excerpt: "Invited talks, conference participation, and industry events."
 ---
 
 # Events & Conferences
 {: #events-conferences}
+
+## Upcoming Conference
+- **[EMNLP 2026](https://2026.emnlp.org/)**, Budapest, Hungary (October 24–29). Scheduled to attend; accepted work includes one Findings paper, one System Demonstrations paper, and two NLLP Workshop papers. See the [publications page](/publications/) for details.
 
 ## Academic Conferences Attended
 - **ICML 2026**, Seoul, South Korea

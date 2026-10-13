@@ -73,12 +73,14 @@ Accepted at the **Mechanistic Interpretability Workshop, ICML 2026** (in-person 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AI for Good Workshop, ICML 2026</div><img src='/images/alignbeam-fig.png' alt="ALIGNBEAM" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2026 Main Conference · AI for Good Workshop, ICML 2026</div><img src='/images/alignbeam-fig.png' alt="ALIGNBEAM" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [ALIGNBEAM: Inference-Time Alignment Transfer via Cross-Vocabulary Logit Mixing](https://arxiv.org/abs/2606.12342)
 
 Chirag Chawla, **Pratinav Seth**, Vinay Kumar Sankarapu
+
+Accepted at the **AI for Good Workshop, ICML 2026** and the **EMNLP 2026 Main Conference**
 
 [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
 </div>
@@ -359,8 +361,8 @@ Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**,
 - [xai_evals](https://arxiv.org/pdf/2502.03014) · Framework for evaluating post-hoc local explanation methods. **Technical Report 2025** (15⭐).
 - [CircuitKIT](https://arxiv.org/abs/2607.19317) · Circuit discovery, evaluation, and application toolkit for mechanistic interpretability. **Pre-Print 2026** (14⭐).
 - [SafeTune](https://github.com/Lexsi-Labs/SafeTune) · Unified library for auditing and repairing safety drift in fine-tuned LLMs. **EMNLP 2026 System Demonstrations** (7⭐).
-- [AuditKIT](https://auditkit.lexsi.ai/) · Shared evaluation and audit records for comparing models and interventions across safety and alignment experiments.
-- [AgentTune](https://github.com/Lexsi-Labs/AgentTune) · Framework for building, training, evaluating, and maintaining tool-using LLM agents. See the [paper](https://arxiv.org/abs/2610.13335).
+- [AuditKIT](https://auditkit.lexsi.ai/) · Model evaluation across benchmarks, LLM-as-judge, RAG, performance and cost metrics, comparison, and experiment tracking.
+- [AgentTune](https://github.com/Lexsi-Labs/AgentTune) · Source-available framework for building, training, evaluating, and maintaining tool-using LLM agents. See the [pre-print](https://arxiv.org/abs/2610.13335).
 - [DLBacktrace (v1)](https://arxiv.org/pdf/2411.12643) · Model-agnostic explainability for deep learning models. **IJCNN 2025.**
 
 *In development: multiple additional tools across interpretability, post-training alignment, and LLM safety.*
