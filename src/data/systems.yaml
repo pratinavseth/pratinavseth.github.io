@@ -22,7 +22,7 @@ stages:
     what: "Find where a behavior lives: circuit discovery, attribution, interchange interventions, post-hoc explanation"
     tools:
       - { name: CircuitKIT, paper: circuitkit, role: Led & built }
-      - { name: InterpSuite, role: Built (internal) }
+      - { name: Post-hoc interpretability library, role: Built (internal) }
       - { name: DLBacktrace v2, paper: dlbacktrace-v2, role: Architected & built }
   - step: Repair
     what: Audit safety drift and correct it with small, verified, circuit-restricted weight edits
@@ -32,7 +32,8 @@ stages:
   - step: Compress
     what: Structured pruning and quantization that keep safety and capability intact
     tools:
-      - { name: PrunKIT, role: Built (internal) }
+      - { name: Pruning library, role: Built (internal) }
+      - { name: Quantization library, role: Designed & mentored (internal) }
   - step: Evaluate
     what: Safety, utility and side-effects on one reproducible record, with LLM judges and cost tracking
     tools:
