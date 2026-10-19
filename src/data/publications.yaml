@@ -462,9 +462,9 @@
     - Pratinav Seth
     - Aditya Tanna
     - Vinay Kumar Sankarapu
-  venue: Pre-Print
-  status: preprint
-  type: preprint
+  venue: "AITD Workshop @ EurIPS 2025"
+  status: published
+  type: workshop
   year: 2025
   area: "Tabular Foundation Models & Distillation"
   url: "https://arxiv.org/abs/2511.02818"
