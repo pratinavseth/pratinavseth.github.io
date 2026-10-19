@@ -1,11 +1,16 @@
 ---
 import Base from '../layouts/Base.astro';
-import { experience } from '../lib/data';
+import { experience, systems } from '../lib/data';
 import { inline } from '../lib/md';
 import { getPubs, pageOf } from '../lib/pubs';
 
 const pubs = await getPubs();
 const byId = new Map(pubs.map((p) => [p.id, p]));
+for (const st of systems.stages) {
+  for (const t of st.tools) {
+    if (t.paper && !byId.has(t.paper)) throw new Error(`systems.yaml: tool "${t.name}" links unknown paper id "${t.paper}"`);
+  }
+}
 for (const g of experience) {
   for (const r of g.roles) {
     for (const id of r.papers) {
@@ -21,8 +26,43 @@ for (const g of experience) {
 >
   <header class="page-head container">
     <h1>Experience</h1>
-    <p>Research roles, collaborations and leadership, most recent first.</p>
+    <p>I design and ship the systems that keep LLMs and agents safe and aligned through fine-tuning and deployment, and lead the research behind them.</p>
   </header>
+
+  <section class="section container" id="systems" aria-labelledby="systems-title">
+    <div class="section__head"><h2 id="systems-title">Systems I’ve designed</h2></div>
+    <p class="measure" style="font-size:var(--step-1);margin-bottom:var(--space-5)"><strong>{systems.title}.</strong> {systems.summary}</p>
+    <ol class="stack" aria-label="Stack stages, in order">
+      {systems.stages.map((st) => (
+        <li class="stack__stage">
+          <span class="stack__step">{st.step}</span>
+          <p class="stack__what">{st.what}</p>
+          <ul class="stack__tools">
+            {st.tools.map((t) => {
+              const href = t.paper ? `/publications/${t.paper}/` : t.url;
+              return (
+                <li>
+                  {href ? <a href={href}>{t.name}</a> : <span>{t.name}</span>}
+                  <span class="stack__role">{t.role}</span>
+                </li>
+              );
+            })}
+          </ul>
+        </li>
+      ))}
+    </ol>
+    <p class="stack__loop"><span aria-hidden="true">↻</span> {systems.loop}</p>
+    <div class="areas" style="margin-top:var(--space-5)">
+      <div class="area">
+        <h3>How it’s built</h3>
+        <ul style="padding-left:1.1rem;margin:var(--space-3) 0 0">{systems.principles.map((p) => <li set:html={inline(p)} />)}</ul>
+      </div>
+      <div class="area">
+        <h3>Core stack</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);margin-top:var(--space-3)">{systems.keywords.map((k) => <span class="tag">{k}</span>)}</div>
+      </div>
+    </div>
+  </section>
 
   {experience.map((g) => (
     <section class="section container" aria-labelledby={`g-${g.group}`}>

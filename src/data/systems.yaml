@@ -1,0 +1,65 @@
+# "Systems I've designed" block at the top of the Experience page.
+# Stages run left to right and loop back: audit → correct in the weights → re-verify.
+# `paper` links to an id in publications.yaml; `repo` to a public GitHub repo. Internal tools have neither.
+
+title: The Lexsi alignment & safety stack
+summary: >-
+  I architected and lead a suite of composable libraries that keeps enterprise LLMs and agents safe and aligned
+  through fine-tuning, compression and deployment. Each library owns one job; all of them write to a shared,
+  reproducible evaluation record, so a fix is only shipped once it is shown not to break anything useful.
+
+stages:
+  - step: Curate
+    what: Data curation and synthetic generation for post-training, with provenance for every example
+    tools:
+      - { name: CuratorKIT, paper: curatorkit, role: Built }
+  - step: Post-train
+    what: Modular SFT, preference and RL training for models and tool-using agents, behind one interface
+    tools:
+      - { name: AlignTune, paper: aligntune, role: Built and scaled }
+      - { name: AgentTune, paper: agenttune, role: Co-author }
+  - step: Inspect
+    what: "Find where a behaviour lives: circuit discovery, attribution, interchange interventions, post-hoc explanation"
+    tools:
+      - { name: CircuitKIT, paper: circuitkit, role: Built }
+      - { name: InterpSuite, role: Built (internal) }
+      - { name: DLBacktrace v2, paper: dlbacktrace-v2, role: Re-architected }
+  - step: Repair
+    what: Audit safety drift and correct it with small, verified, circuit-restricted weight edits
+    tools:
+      - { name: SafeTune, paper: safetune, role: Led (first author) }
+      - { name: C-ΔΘ, paper: c-delta-theta, role: Co-led }
+  - step: Compress
+    what: Structured pruning and quantization that keeps safety and capability intact
+    tools:
+      - { name: PrunKIT, role: Built (internal) }
+  - step: Evaluate
+    what: Safety, utility and side-effects on one reproducible record, with LLM judges and cost tracking
+    tools:
+      - { name: AuditKIT, url: "https://auditkit.lexsi.ai/", role: Contributor }
+
+loop: Audit → correct in the weights → re-verify. Every repair is checked for capability loss and collateral effects before release.
+
+principles:
+  - "**Single-responsibility libraries** that compose through a shared evaluation record, instead of one monolith."
+  - "**Internal/public twins:** each library has an internal build for client work and a public release, plus a lightweight studio app for demos."
+  - "**Config-driven, reproducible evaluation:** judge models, tiny-model CPU tests and CI on every library, verified across CUDA and Apple MPS."
+  - "**Research → benchmark → feature:** a research question becomes a benchmark, and the benchmark becomes a library feature."
+
+keywords:
+  - PyTorch
+  - Hugging Face Transformers
+  - PEFT / LoRA
+  - SFT, DPO, GRPO, RLHF
+  - vLLM
+  - Circuit discovery & attribution
+  - Activation steering & weight editing
+  - Safety evaluation & red-teaming
+  - Benchmark design
+  - Quantization (AWQ, bitsandbytes)
+  - Structured pruning
+  - State-space / hybrid models
+  - Tabular foundation models
+  - Agent & tool-use orchestration
+  - CUDA / MPS
+  - CI & release engineering

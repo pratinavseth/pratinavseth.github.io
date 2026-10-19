@@ -386,3 +386,23 @@ details > summary { cursor: pointer; }
   .paper--thumb { grid-template-columns: 6.5rem minmax(0, 1fr); gap: var(--space-3); }
   .paper__thumb-type { font-size: 0.75rem; padding: 0.4rem; }
 }
+
+/* --- Systems stack (experience) ---------------------------------------- */
+.stack { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border: 2px solid var(--ink); background: var(--surface); }
+.stack__stage { position: relative; padding: var(--space-4) var(--space-3); border-right: 1px solid var(--ink); display: flex; flex-direction: column; gap: var(--space-2); }
+.stack__stage:last-child { border-right: 0; }
+.stack__stage:not(:last-child)::after {
+  content: ''; position: absolute; right: -7px; top: 1.6rem; width: 12px; height: 12px; z-index: 1;
+  background: var(--accent); clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+.stack__n { font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-text); }
+.stack__step { font-family: var(--font-display); font-size: var(--step-1); line-height: 1; }
+.stack__what { font-size: var(--step--1); color: var(--ink-2); margin: 0; }
+.stack__tools { list-style: none; padding: 0; margin: auto 0 0; border-top: 1px solid var(--rule-soft); }
+.stack__tools li { padding-top: var(--space-2); display: flex; flex-direction: column; }
+.stack__tools a, .stack__tools span:first-child { font-weight: 700; font-size: var(--step--1); }
+.stack__role { font-family: var(--font-mono); font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+.stack__loop { margin-top: var(--space-3); font-family: var(--font-mono); font-size: var(--step--1); }
+.stack__loop span { color: var(--accent-text); font-size: 1.2em; }
+@media (max-width: 64rem) { .stack { grid-template-columns: repeat(3, minmax(0, 1fr)); } .stack__stage:nth-child(3) { border-right: 0; } .stack__stage:nth-child(-n+3) { border-bottom: 1px solid var(--ink); } .stack__stage:nth-child(3)::after { display: none; } }
+@media (max-width: 36rem) { .stack { grid-template-columns: 1fr; } .stack__stage { border-right: 0; border-bottom: 1px solid var(--ink); } .stack__stage:last-child { border-bottom: 0; } .stack__stage:not(:last-child)::after { right: auto; left: 1rem; top: auto; bottom: -7px; transform: rotate(90deg); } .stack__stage:nth-child(3)::after { display: block; } }

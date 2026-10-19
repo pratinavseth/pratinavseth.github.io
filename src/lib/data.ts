@@ -94,3 +94,21 @@ export const education = load(
     certifications: z.array(z.string()),
   }),
 );
+
+export const systems = load(
+  'systems.yaml',
+  z.object({
+    title: z.string(),
+    summary: z.string(),
+    stages: z.array(
+      z.object({
+        step: z.string(),
+        what: z.string(),
+        tools: z.array(z.object({ name: z.string(), role: z.string(), paper: z.string().optional(), url: z.url().optional() })),
+      }),
+    ),
+    loop: z.string(),
+    principles: z.array(z.string()),
+    keywords: z.array(z.string()),
+  }),
+);
