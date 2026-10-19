@@ -40,23 +40,36 @@ const journey = [
   { date: '2024–now', org: 'Lexsi Labs', what: 'Research Scientist to Lead Research Scientist, Model Science' },
 ];
 
-// Current research threads, each with a live paper count from the data file.
-const threads = [
-  {
-    title: 'Post-training safety & alignment',
-    areas: ['Safety Post-Training & Alignment'],
-    text: 'How fine-tuning, quantization and deployment shift a model’s safety behavior, and how to audit and repair it in the weights. SafeTune, ALIGNBEAM, AlignTune, CuratorKIT.',
-  },
-  {
-    title: 'Mechanistic interpretability',
-    areas: ['Mechanistic Interpretability & XAI'],
-    text: 'Finding the circuits behind refusal and other behaviors, testing whether they are faithful, and editing them. C-ΔΘ, CircuitKIT, unlearning by circuit attribution, and the post-hoc explainability work that came first: DLBacktrace (IJCNN 2025) and xai_evals.',
-  },
-].map((t) => ({
-  ...t,
-  count: pubs.filter((p) => t.areas.includes(p.data.area)).length,
-  peer: pubs.filter((p) => t.areas.includes(p.data.area) && isPeerReviewed(p)).length,
-}));
+// Current focus: one broad statement, with a live count across both current areas.
+const CURRENT_AREAS = ['Safety Post-Training & Alignment', 'Mechanistic Interpretability & XAI'];
+const currentPubs = pubs.filter((p) => CURRENT_AREAS.includes(p.data.area));
+const focus = {
+  count: currentPubs.length,
+  peer: currentPubs.filter(isPeerReviewed).length,
+  tracks: [
+    {
+      title: 'Post-training & repair',
+      text: 'Audit how fine-tuning and quantization shift safety, and fix it in the weights or at inference time.',
+      links: [['SafeTune', 'safetune'], ['ALIGNBEAM', 'alignbeam'], ['AlignTune', 'aligntune'], ['CuratorKIT', 'curatorkit']],
+      area: 'Safety Post-Training & Alignment',
+    },
+    {
+      title: 'Interpretability',
+      text: 'Find the circuits behind refusal and other behaviors, test whether they are faithful, and edit them.',
+      links: [['C-ΔΘ', 'c-delta-theta'], ['CircuitKIT', 'circuitkit'], ['DLBacktrace', 'dlbacktrace'], ['xai_evals', 'xai-evals']],
+      area: 'Mechanistic Interpretability & XAI',
+    },
+    {
+      title: 'Agents & evaluation',
+      text: 'Train tool-using agents, check that safety holds when they act, and keep one auditable record of every change.',
+      links: [['AgentTune', 'agenttune'], ['Compliance detectors', 'what-do-compliance-detectors-read'], ['Off-Switch Failure', 'the-off-switch-failure']],
+      area: undefined,
+    },
+  ],
+};
+for (const t of focus.tracks) for (const [, id] of t.links) {
+  if (!pubs.some((p) => p.id === id)) throw new Error(`index.astro: focus links unknown paper "${id}"`);
+}
 
 // Earlier research areas: years, counts and highlights all come from the data file.
 const earlierAreas = [
@@ -234,15 +247,30 @@ const personLd = {
 
   <section class="section container" aria-labelledby="research-title">
     <div class="section__head"><h2 id="research-title">Research</h2><a class="section__more" href="/publications/">All {stats.papers} papers →</a></div>
-    <div class="areas">
-      {threads.map((t) => (
-        <div class="area">
-          <span class="area__n">{t.count} papers · {t.peer} peer-reviewed</span>
-          <h3>{t.title}</h3>
-          <p class="muted" style="margin:0">{t.text}</p>
-          <p style="margin-top:var(--space-3)"><a class="section__more" href={`/publications/?area=${encodeURIComponent(t.areas[0])}`}>See papers →</a></p>
-        </div>
-      ))}
+    <div class="focus">
+      <span class="area__n">Current focus · {focus.count} papers · {focus.peer} peer-reviewed</span>
+      <h3 class="focus__title">Keeping language models and agents safe after they leave the lab</h3>
+      <p class="focus__pitch">
+        Models keep changing after release. Teams fine-tune them on new domains, quantize them for cheaper hardware,
+        and wire them into agents that call tools and act on their own. I study what each of those steps does to a
+        model’s safety, find the mechanism when something breaks, and repair it. Then I build the tooling that makes
+        those fixes repeatable.
+      </p>
+      <div class="focus__tracks">
+        {focus.tracks.map((t) => (
+          <div class="focus__track">
+            <h4>{t.title}</h4>
+            <p class="muted">{t.text}</p>
+            <p class="focus__links">
+              {t.links.map(([label, id], i) => (
+                <>{i > 0 && ' · '}<a href={`/publications/${id}/`}>{label}</a></>
+              ))}
+            </p>
+            {t.area && <a class="section__more" href={`/publications/?area=${encodeURIComponent(t.area)}`}>All papers →</a>}
+          </div>
+        ))}
+      </div>
+      <p style="margin-top:var(--space-4)"><a class="section__more" href="/experience/#systems">See the systems behind this →</a></p>
     </div>
     <h3 class="earlier__head">Earlier research</h3>
     <div class="earlier">
