@@ -1,10 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
-import { experience, systems } from '../lib/data';
+import { experience, systems, libraries } from '../lib/data';
+import { getStars } from '../lib/remote';
+import LibraryCard from '../components/LibraryCard.astro';
 import { inline } from '../lib/md';
 import { getPubs, pageOf } from '../lib/pubs';
 
 const pubs = await getPubs();
+const libs = await Promise.all(libraries.map(async (l) => ({ ...l, liveStars: await getStars(l.repo, l.stars) })));
 const byId = new Map(pubs.map((p) => [p.id, p]));
 for (const st of systems.stages) {
   for (const t of st.tools) {
@@ -52,6 +55,8 @@ for (const g of experience) {
       ))}
     </ol>
     <p class="stack__loop"><span aria-hidden="true">↻</span> {systems.loop}</p>
+    <h3 id="libraries" style="margin:var(--space-6) 0 var(--space-3)">The libraries</h3>
+    <div class="lib-grid">{libs.map((l) => <LibraryCard lib={l} />)}</div>
     <div class="areas" style="margin-top:var(--space-5)">
       <div class="area">
         <h3>How it’s built</h3>

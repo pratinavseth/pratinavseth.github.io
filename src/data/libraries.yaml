@@ -1,8 +1,9 @@
 # Libraries & tools. Star counts are fetched from GitHub at build time using `repo`;
 # `stars` is only the fallback used when the GitHub API can't be reached.
-# `paper` links to an id in publications.yaml. `oss: true` counts toward the "open-source libraries" stat.
+# `paper` links to an id in publications.yaml. `logo` is relative to src/assets/images/ (omit to show the name in type). `oss: true` counts toward the "open-source libraries" stat.
 
 - name: TabTune
+  logo: logos/tabtune.png
   repo: Lexsi-Labs/TabTune
   paper: tabtune
   stars: 137
@@ -10,6 +11,7 @@
   role: Architect
   description: Unified inference, fine-tuning and benchmarking for tabular foundation models (21 models in 7 architecture families).
 - name: AlignTune
+  logo: logos/aligntune.png
   repo: Lexsi-Labs/aligntune
   paper: aligntune
   stars: 44
@@ -17,6 +19,7 @@
   role: Built and scaled
   description: Modular post-training toolkit for SFT, DPO, GRPO and RLHF with interchangeable backends; runs production alignment work in BFSI, legal and healthcare.
 - name: CuratorKIT
+  logo: logos/curatorkit.png
   repo: Lexsi-Labs/CuratorKIT
   paper: curatorkit
   stars: 30
@@ -31,6 +34,7 @@
   role: Re-architected
   description: torch.export-based, model-agnostic explainability for LLMs and MoEs with CUDA acceleration.
 - name: CircuitKIT
+  logo: logos/circuitkit.png
   repo: Lexsi-Labs/CircuitKIT
   paper: circuitkit
   stars: 26
@@ -38,6 +42,7 @@
   role: Built
   description: Circuit discovery, evaluation and application toolkit for mechanistic interpretability.
 - name: SafeTune
+  logo: logos/safetune.png
   repo: Lexsi-Labs/SafeTune
   paper: safetune
   stars: 19
@@ -52,12 +57,14 @@
   role: Built
   description: Framework for evaluating post-hoc local explanation methods.
 - name: AuditKIT
+  logo: logos/auditkit.png
   repo: Lexsi-Labs/AuditKIT
   url: https://auditkit.lexsi.ai/
   stars: 12
   role: Contributor (team tool)
   description: Source-available evaluation library for benchmarks, LLM-as-judge, RAG, model comparison, cost metrics and experiment tracking.
 - name: AgentTune
+  logo: logos/agenttune.png
   repo: Lexsi-Labs/AgentTune
   paper: agenttune
   stars: 10

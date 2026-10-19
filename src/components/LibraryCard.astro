@@ -1,0 +1,34 @@
+---
+import { Image } from 'astro:assets';
+import { img, hasImg } from '../lib/images';
+import { libraries } from '../lib/data';
+
+interface Props {
+  lib: (typeof libraries)[number] & { liveStars: number };
+}
+const { lib } = Astro.props;
+const home = lib.url ?? `https://github.com/${lib.repo}`;
+---
+
+<article class="lib">
+  <a class="lib__logo" href={home} aria-label={`${lib.name} on ${lib.url ? 'its website' : 'GitHub'}`}>
+    {lib.logo && hasImg(lib.logo) ? (
+      <Image src={img(lib.logo)} alt={`${lib.name} logo`} widths={[240, 480]} sizes="15rem" />
+    ) : (
+      <span class="lib__wordmark">{lib.name}</span>
+    )}
+  </a>
+  <div class="lib__body">
+    <div class="card__meta">
+      <span class="tag tag--solid">{lib.role}</span>
+      <span class="tag tag--quiet">★ {lib.liveStars}</span>
+    </div>
+    <h3 class="lib__name">{lib.name}</h3>
+    <p class="lib__desc">{lib.description}</p>
+    <p class="lib__links">
+      <a href={`https://github.com/${lib.repo}`}>GitHub</a>
+      {lib.url && <a href={lib.url}>Website</a>}
+      {lib.paper && <a href={`/publications/${lib.paper}/`}>Paper</a>}
+    </p>
+  </div>
+</article>

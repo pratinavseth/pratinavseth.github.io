@@ -145,7 +145,12 @@
   type: workshop
   year: 2026
   area: "Safety Post-Training & Alignment"
-  url: "https://openreview.net/forum?id=25nCvWm2yy"
+  url: "https://arxiv.org/abs/2610.12361"
+  arxiv: "2610.12361"
+  image: cited-but-not-consulted-fig.png
+  imageAlt: "Architecture of the counterfactual audit: case facts, authority-swap prompts, internal commitment tracking with logit lens, and behavioral and mechanistic faithfulness metrics"
+  notes:
+    - "Also on [OpenReview](https://openreview.net/forum?id=25nCvWm2yy)."
 
 - id: verdict-without-the-rule
   title: "Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems"
@@ -159,7 +164,12 @@
   type: workshop
   year: 2026
   area: "Safety Post-Training & Alignment"
-  url: "https://openreview.net/forum?id=jX7FB33LSz"
+  url: "https://arxiv.org/abs/2610.12313"
+  arxiv: "2610.12313"
+  image: verdict-without-the-rule-fig.png
+  imageAlt: "Rule perturbations (delete, swap, negate) fed to five LLMs, measured behaviorally with OCS and representationally with ICS-Δ"
+  notes:
+    - "Also on [OpenReview](https://openreview.net/forum?id=jX7FB33LSz)."
 
 - id: every-ablation-is-a-dose
   title: "Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair"

@@ -31,6 +31,7 @@ export const libraries = load(
       oss: z.boolean().default(false),
       role: z.string(),
       description: z.string(),
+      logo: z.string().optional(),
     }),
   ),
 );

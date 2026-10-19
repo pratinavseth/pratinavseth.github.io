@@ -10,8 +10,6 @@ import { news, libraries } from '../lib/data';
 import { getPubs, getStats, isMine, isPeerReviewed, fill, pageOf } from '../lib/pubs';
 import { getStars } from '../lib/remote';
 import { inline, block } from '../lib/md';
-import { Image } from 'astro:assets';
-import { img, hasImg } from '../lib/images';
 
 const stats = await getStats();
 const pubs = (await getPubs()).filter(isMine);
@@ -22,8 +20,6 @@ const featured = FLAGSHIP.map((id) => {
   if (!p) throw new Error(`index.astro: unknown flagship paper "${id}"`);
   return p;
 });
-// Systems row: the libraries I built or led, shown with their paper's figure.
-const SYSTEMS = ['SafeTune', 'AlignTune', 'CircuitKIT', 'TabTune'];
 
 const bioFile = (n: string) => readFileSync(join(process.cwd(), 'src/data/bio', `${n}.md`), 'utf8');
 const bios = [
@@ -40,35 +36,39 @@ const journey = [
   { date: '2024–now', org: 'Lexsi Labs', what: 'Research Scientist to Lead Research Scientist, Model Science' },
 ];
 
-// Current focus: one broad statement, with a live count across both current areas.
-const CURRENT_AREAS = ['Safety Post-Training & Alignment', 'Mechanistic Interpretability & XAI'];
-const currentPubs = pubs.filter((p) => CURRENT_AREAS.includes(p.data.area));
+// Research pitch: one broad statement across the whole lifecycle, counted over all papers.
 const focus = {
-  count: currentPubs.length,
-  peer: currentPubs.filter(isPeerReviewed).length,
+  count: pubs.length,
+  peer: pubs.filter(isPeerReviewed).length,
   tracks: [
     {
-      title: 'Post-training & repair',
-      text: 'Audit how fine-tuning and quantization shift safety, and fix it in the weights or at inference time.',
-      links: [['SafeTune', 'safetune'], ['ALIGNBEAM', 'alignbeam'], ['AlignTune', 'aligntune'], ['CuratorKIT', 'curatorkit']],
-      area: 'Safety Post-Training & Alignment',
+      title: 'Alignment & post-training',
+      text: 'Curate the data, train the model, and when fine-tuning or quantization erodes safety, repair it in the weights or at inference time.',
+      links: [['AlignTune', 'aligntune'], ['CuratorKIT', 'curatorkit'], ['SafeTune', 'safetune'], ['ALIGNBEAM', 'alignbeam']],
+      href: `/publications/?area=${encodeURIComponent('Safety Post-Training & Alignment')}`,
     },
     {
       title: 'Interpretability',
-      text: 'Find the circuits behind refusal and other behaviors, test whether they are faithful, and edit them.',
+      text: 'Open models up: from post-hoc explanations to the circuits behind refusal, and edits that change them.',
       links: [['C-ΔΘ', 'c-delta-theta'], ['CircuitKIT', 'circuitkit'], ['DLBacktrace', 'dlbacktrace'], ['xai_evals', 'xai-evals']],
-      area: 'Mechanistic Interpretability & XAI',
+      href: `/publications/?area=${encodeURIComponent('Mechanistic Interpretability & XAI')}`,
     },
     {
       title: 'Agents & evaluation',
-      text: 'Train tool-using agents, check that safety holds when they act, and keep one auditable record of every change.',
-      links: [['AgentTune', 'agenttune'], ['Compliance detectors', 'what-do-compliance-detectors-read'], ['Off-Switch Failure', 'the-off-switch-failure']],
-      area: undefined,
+      text: 'Train tool-using agents, test that safety holds when they act, and keep one auditable record of every change.',
+      links: [['AgentTune', 'agenttune'], ['AuditKIT', 'https://auditkit.lexsi.ai/'], ['Compliance detectors', 'what-do-compliance-detectors-read'], ['Off-Switch Failure', 'the-off-switch-failure']],
+      href: undefined,
     },
-  ],
+    {
+      title: 'Foundation models & applied AI',
+      text: 'Tabular foundation models, and AI for health, climate and finance where reliability decides whether a model gets used.',
+      links: [['Orion-BiX', 'orion-bix'], ['TabTune', 'tabtune'], ['Alberta Wells', 'alberta-wells-dataset'], ['Credit risk', 'data-presentation-over-architecture']],
+      href: '#applied',
+    },
+  ] as { title: string; text: string; links: [string, string][]; href?: string }[],
 };
 for (const t of focus.tracks) for (const [, id] of t.links) {
-  if (!pubs.some((p) => p.id === id)) throw new Error(`index.astro: focus links unknown paper "${id}"`);
+  if (!id.startsWith('http') && !pubs.some((p) => p.id === id)) throw new Error(`index.astro: focus links unknown paper "${id}"`);
 }
 
 // Earlier research areas: years, counts and highlights all come from the data file.
@@ -131,14 +131,8 @@ const earlierAreas = [
 const libRows = await Promise.all(
   libraries.map(async (l) => ({ ...l, liveStars: await getStars(l.repo, l.stars) })),
 );
-const systemCards = SYSTEMS.map((name) => {
-  const l = libRows.find((x) => x.name === name);
-  if (!l) throw new Error(`index.astro: unknown library "${name}"`);
-  const paper = pubs.find((p) => p.id === l.paper);
-  return { ...l, paper };
-});
 
-const recentCutoff = 8;
+const recentCutoff = 11; // the five 2026 acceptances + latest news
 const recent = news.slice(0, recentCutoff);
 const earlier = news.slice(recentCutoff);
 
@@ -189,8 +183,8 @@ const personLd = {
           {site.role} · <a href={site.orgUrl}>{site.org}</a> · Model Science group, {site.location}
         </p>
         <p class="hero__thesis">
-          I study <em>what survives post-training</em>: how fine-tuning, quantization and deployment change a model’s
-          behavior, and how to find and repair the circuits responsible.
+          I build <em>AI systems you can trust</em>: how models are trained, how they work inside, and how to keep
+          them safe once they are fine-tuned, compressed and put to work as agents.
         </p>
 
         <div class="stats">
@@ -248,13 +242,13 @@ const personLd = {
   <section class="section container" aria-labelledby="research-title">
     <div class="section__head"><h2 id="research-title">Research</h2><a class="section__more" href="/publications/">All {stats.papers} papers →</a></div>
     <div class="focus">
-      <span class="area__n">Current focus · {focus.count} papers · {focus.peer} peer-reviewed</span>
-      <h3 class="focus__title">Keeping language models and agents safe after they leave the lab</h3>
+      <span class="area__n">{focus.count} papers · {focus.peer} peer-reviewed · {stats.ossLibraries} open-source libraries</span>
+      <h3 class="focus__title">Trustworthy AI, from the data to the deployed agent</h3>
       <p class="focus__pitch">
-        Models keep changing after release. Teams fine-tune them on new domains, quantize them for cheaper hardware,
-        and wire them into agents that call tools and act on their own. I study what each of those steps does to a
-        model’s safety, find the mechanism when something breaks, and repair it. Then I build the tooling that makes
-        those fixes repeatable.
+        A model passes through many hands before anyone relies on it: someone curates its data, trains and aligns it,
+        compresses it for cheaper hardware, fine-tunes it for a new domain, and wires it into an agent that acts on its
+        own. Each step can change what the model does. I work across that whole lifecycle, on the research that explains
+        where things go wrong and on the systems that let teams fix them and prove the fix held.
       </p>
       <div class="focus__tracks">
         {focus.tracks.map((t) => (
@@ -263,16 +257,16 @@ const personLd = {
             <p class="muted">{t.text}</p>
             <p class="focus__links">
               {t.links.map(([label, id], i) => (
-                <>{i > 0 && ' · '}<a href={`/publications/${id}/`}>{label}</a></>
+                <>{i > 0 && ' · '}<a href={id.startsWith('http') ? id : `/publications/${id}/`}>{label}</a></>
               ))}
             </p>
-            {t.area && <a class="section__more" href={`/publications/?area=${encodeURIComponent(t.area)}`}>All papers →</a>}
+            {t.href && <a class="section__more" href={t.href}>{t.href.startsWith('#') ? 'See the areas ↓' : 'All papers →'}</a>}
           </div>
         ))}
       </div>
       <p style="margin-top:var(--space-4)"><a class="section__more" href="/experience/#systems">See the systems behind this →</a></p>
     </div>
-    <h3 class="earlier__head">Earlier research</h3>
+    <h3 class="earlier__head" id="applied">Applied across domains</h3>
     <div class="earlier">
       {earlierAreas.map((a) => (
         <div class="earlier__item">
@@ -292,26 +286,11 @@ const personLd = {
 
   <section class="section container" aria-labelledby="selected-title">
     <div class="section__head"><h2 id="selected-title">Selected work</h2></div>
-    <div class="section__head" style="margin-bottom:var(--space-3)">
-      <h3>Systems I built</h3><a class="section__more" href="/experience/#systems">How they fit together →</a>
-    </div>
-    <div class="card-grid card-grid--4">
-      {systemCards.map((l) => (
-        <a class="card" href={l.paper ? `/publications/${l.paper.id}/` : `https://github.com/${l.repo}`}>
-          {l.paper && hasImg(l.paper.data.image) ? (
-            <div class="card__fig"><Image src={img(l.paper.data.image!)} alt={l.paper.data.imageAlt ?? ''} widths={[360, 560]} sizes="(min-width: 60rem) 17rem, 90vw" /></div>
-          ) : (
-            <div class="card__fig card__fig--type" aria-hidden="true"><span>{l.name}</span></div>
-          )}
-          <div class="card__body">
-            <div class="card__meta"><span class="tag tag--solid">{l.role}</span><span class="tag tag--quiet">★ {l.liveStars}</span></div>
-            <h3 class="card__title">{l.name}</h3>
-            <p class="card__desc">{l.description}</p>
-          </div>
-        </a>
-      ))}
-    </div>
-    <h3 style="margin:var(--space-6) 0 var(--space-3)">Flagship papers</h3>
+    <p class="muted" style="margin:0 0 var(--space-5)">
+      Nine libraries came out of this work: SafeTune, AlignTune, AgentTune, CircuitKIT, CuratorKIT, AuditKIT, TabTune,
+      DLBacktrace and xai_evals. <a href="/experience/#libraries">See them with their roles and star counts →</a>
+    </p>
+    <h3 style="margin:0 0 var(--space-3)">Flagship papers</h3>
     <div class="card-grid">
       {featured.map((p, i) => <PaperCard pub={p} blurb={blurbs[p.id]} eager={i < 3} />)}
     </div>

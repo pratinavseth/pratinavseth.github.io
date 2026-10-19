@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import PaperItem from '../../components/PaperItem.astro';
 import PaperCard from '../../components/PaperCard.astro';
+import LibraryCard from '../../components/LibraryCard.astro';
 import { site } from '../../config/site';
 import { libraries } from '../../lib/data';
 import { getPubs, getStats, getAreas, isMine, STATUS_LABEL } from '../../lib/pubs';
@@ -88,24 +89,7 @@ const libs = await Promise.all(libraries.map(async (l) => ({ ...l, liveStars: aw
 
   <section class="section container" aria-labelledby="libs-title">
     <div class="section__head"><h2 id="libs-title">Libraries &amp; tools</h2></div>
-    <ul class="paper-list">
-      {libs.map((l) => (
-        <li class="paper">
-          <div class="paper__year">★ {l.liveStars}</div>
-          <div>
-            <div class="paper__title"><a href={l.url ?? `https://github.com/${l.repo}`}>{l.name}</a></div>
-            <div class="paper__authors">{l.description}</div>
-            <div class="paper__meta">
-              <span class="tag tag--quiet">{l.role}</span>
-              <span class="paper__links">
-                <a href={`https://github.com/${l.repo}`}>GitHub</a>
-                {l.paper && <a href={`/publications/${l.paper}/`}>Paper</a>}
-              </span>
-            </div>
-          </div>
-        </li>
-      ))}
-    </ul>
+    <div class="lib-grid">{libs.map((l) => <LibraryCard lib={l} />)}</div>
     <p class="muted" style="font-size:var(--step--1);margin-top:var(--space-4)">Star counts update from GitHub on every site build.</p>
   </section>
 </Base>
