@@ -2,7 +2,7 @@
 layout: default
 permalink: /publications/
 title: "Publications · Pratinav Seth"
-description: "48 papers (31 peer-reviewed, 210+ citations) spanning LLM post-training, safety alignment, mechanistic interpretability, and tabular foundation models. Venues include ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
+description: "54 papers (31 peer-reviewed, 210+ citations) spanning LLM post-training, safety alignment, mechanistic interpretability, and tabular foundation models. Venues include ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
 excerpt: "Full publication list: safety post-training & alignment, mechanistic interpretability & XAI, tabular foundation models, and open-source libraries."
 ---
 
@@ -16,7 +16,7 @@ excerpt: "Full publication list: safety post-training & alignment, mechanistic i
 # Publications <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 {: #publications}
 
-<p class="total-papers-note">Total papers: 48<br><small>Count includes the publications listed below; additional work remains under review.</small></p>
+<p class="total-papers-note">Total papers: 54<br><small>Count includes the publications listed below; additional work remains under review.</small></p>
 
 <div class="card--muted" markdown="1">
 **Selected Publications**
@@ -26,7 +26,7 @@ excerpt: "Full publication list: safety post-training & alignment, mechanistic i
 - [AlignTune](https://arxiv.org/abs/2602.09621) · Pre-Print 2026 · One interface for SFT, DPO, GRPO, and RLHF with modular reward framework and interchangeable backends
 - [Forgetting That Sticks](https://arxiv.org/abs/2605.15138) · Pre-Print 2026 · Unlearning that survives quantization by identifying and zeroing the circuits that store the target knowledge
 - [Interpretability as Alignment](https://arxiv.org/abs/2509.08592) · **EurIPS Workshop 2025 (Spotlight)** · Case for mechanistic interpretability as a design principle in post-training, not a post-hoc audit
-- [TabTune](https://arxiv.org/abs/2511.02802) · **WWW 2026 Demo** · Unified library for tabular foundation model inference, fine-tuning, and benchmarking across 12+ architectures
+- [TabTune](https://arxiv.org/abs/2511.02802) · **WWW 2026 Demo** · Unified library for tabular foundation model inference, fine-tuning, and benchmarking across 21 models in 7 architecture families
 - [Orion-Bix: Bi-Axial Attention for Tabular In-Context Learning](https://arxiv.org/abs/2512.00181) · **WWW 2026** · Tabular foundation model combining biaxial attention and meta-learned in-context reasoning
 - [Alberta Wells Dataset](https://arxiv.org/pdf/2410.09032) · **ICML 2025** · Satellite benchmark for detecting abandoned oil & gas wells; climate AI work with Mila / McGill
 - [SELF-PERCEPT](https://aclanthology.org/2025.acl-short.52/) · **ACL 2025** · LLM introspection improves detection of multi-person mental manipulation in multi-turn conversations
@@ -35,19 +35,7 @@ excerpt: "Full publication list: safety post-training & alignment, mechanistic i
 
 #### Safety Post-Training & Alignment
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Research Release</div><img src='/images/faithfulness-refusal-fig.png' alt="Targeted multilingual and cybersecurity safety repair for Gemma 4 31B" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Targeted Multilingual and Cybersecurity Safety Repair for Gemma 4 31B](https://openreview.net/forum?id=Mgnk5R9Z0l)
-
-Experiments with targeted interventions in model weights to address multilingual and cybersecurity safety failures, reporting improved safety and multi-turn jailbreak resistance while largely preserving broader model capabilities.
-
-The wider [Lexsi Alignment and Safety Stack](https://lexsi.ai/resources/articles/open-sourcing-the-lexsi-alignment-and-safety-stack-frontier-safety-research-for-auditing-correcting-and-verifying-model-weights) connects data curation, post-training, safety drift measurement, circuit-based interventions, unlearning, and audit records through a cycle of **audit → correct in the weights → re-verify**. Its released components include CuratorKIT, AlignTune, SafeTune, CircuitKIT, AuditKIT, and MANSU.
-
-**Resources:** [Multilingual checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Multilingual-Safety-Repair) · [Cybersecurity checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Cybersecurity-Safety-Repair) · [Technical report](https://lexsi.ai/resources/articles/the-lexsi-alignment-and-safety-stack-correcting-gemma-4-31b-for-multilingual-and-cybersecurity-safety-in-the-weights-copy) · [Lexsi Alignment and Safety Stack](https://lexsi.ai/resources/articles/open-sourcing-the-lexsi-alignment-and-safety-stack-frontier-safety-research-for-auditing-correcting-and-verifying-model-weights)
-
-</div>
-</div>
+- [Targeted Multilingual and Cybersecurity Safety Repair for Gemma 4 31B](https://openreview.net/forum?id=Mgnk5R9Z0l), Lexsi Labs team, **Research Release 2026**. Targeted weight interventions for multilingual and cybersecurity safety failures, part of the [Lexsi Alignment and Safety Stack](https://lexsi.ai/resources/articles/open-sourcing-the-lexsi-alignment-and-safety-stack-frontier-safety-research-for-auditing-correcting-and-verifying-model-weights) (CuratorKIT, AlignTune, SafeTune, CircuitKIT, AuditKIT, MANSU). [Multilingual checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Multilingual-Safety-Repair) · [Cybersecurity checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Cybersecurity-Safety-Repair) · [Technical report](https://lexsi.ai/resources/articles/the-lexsi-alignment-and-safety-stack-correcting-gemma-4-31b-for-multilingual-and-cybersecurity-safety-in-the-weights-copy)
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='https://cdn.prod.website-files.com/690097e1da2dba144068cad2/699ab40523bab49830cce949_699ab3b9de2e66a74a06fd6a_4384885e.png' alt="AlignTune" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -110,47 +98,17 @@ Saisab Sadhu, **Pratinav Seth**, Vinay Kumar Sankarapu
 
 - What Do Compliance Detectors Read? An Audit of Activation Probes and Guard Models, Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu, **Pratinav Seth**, **NeurIPS 2026 Workshop**
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2026 NLLP Workshop</div><img src='/images/behavioural-assurance-fig.png' alt="Legal reasoning faithfulness audit" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+- [Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness](https://openreview.net/forum?id=25nCvWm2yy), Saisab Sadhu, Shreeyans Arora, **Pratinav Seth**, **EMNLP 2026 NLLP Workshop; NeurIPS 2026 Workshop**
 
-[Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness](https://openreview.net/forum?id=25nCvWm2yy)
+- [Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems](https://openreview.net/forum?id=jX7FB33LSz), Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu, **Pratinav Seth**, **EMNLP 2026 NLLP Workshop; NeurIPS 2026 Workshop**
 
-Saisab Sadhu, Shreeyans Arora, **Pratinav Seth**
-
-Accepted at the **EMNLP 2026 NLLP Workshop** and a **NeurIPS 2026 Workshop**
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">EMNLP 2026 NLLP Workshop · NeurIPS 2026 Workshop</div><img src='/images/behavioural-assurance-fig.png' alt="Regulatory rule sensitivity audit" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems](https://openreview.net/forum?id=jX7FB33LSz)
-
-Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu, **Pratinav Seth**
-
-Accepted at the **EMNLP 2026 NLLP Workshop** and a **NeurIPS 2026 Workshop**
-
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026 Workshop</div><img src='/images/behavioural-assurance-fig.png' alt="Ablation and self-repair analysis" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair](https://arxiv.org/abs/2610.02173)
-
-Areeb Ahmad, **Pratinav Seth**, Vinay Kumar Sankarapu
-
-Accepted at a **NeurIPS 2026 Workshop**
-
-</div>
-</div>
+- [Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair](https://arxiv.org/abs/2610.02173), Areeb Ahmad, **Pratinav Seth**, Vinay Kumar Sankarapu, **NeurIPS 2026 Workshop**
 
 - [AgentTune: A Unified Training Lifecycle for Tool-Using LLM Agents](https://arxiv.org/abs/2610.13335), R E Zera Marveen Lyngkhoi, Abhivansh Gupta, Vidushee Vats, Ram Mohan Rao Kadiyala, Vinay Kumar Sankarapu, **Pratinav Seth**, **Pre-Print**
 
 - [SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs](https://openreview.net/forum?id=5Hl0P9faYV), **Pratinav Seth**, Saisab Sadhu, Anshul Kaushal, Vinay Kumar Sankarapu, **EMNLP 2026 System Demonstrations** · [Code](https://github.com/Lexsi-Labs/SafeTune)
 
-- Drift, Then Repair: A Safety Audit of Fine-Tuned Language Models, **Pratinav Seth**, Anshul Kaushal, Saisab Sadhu, Vinay Kumar Sankarapu, **NeurIPS 2026 Workshop**
+- Drift Then Repair: A Safety Audit of Fine-Tuned Language Models, **Pratinav Seth**, Anshul Kaushal, Saisab Sadhu, Vinay Kumar Sankarapu, **NeurIPS 2026 Workshop**
 
 - Self-Calibrating Weight-Arithmetic Safety-Drift Repair, **Pratinav Seth**, Vinay Kumar Sankarapu, **Under Review**
 
@@ -253,8 +211,6 @@ Ananth Eswar, **Pratinav Seth**, Utsav Avaiya, Vinay Kumar Sankarapu
 </div>
 </div>
 
-- [xai_evals: A Framework for Evaluating Post-Hoc Local Explanation Methods](https://arxiv.org/abs/2502.03014), **Pratinav Seth**, Yashwardhan Rathore, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu, **Technical Report**
-
 - Faithfulness Is Not Actionability: Component Heterogeneity in Discovered Circuits, **Pratinav Seth**, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu, **Under Review**
 
 - Faithfulness Is Not Actionability: Extrinsic Validation of Circuit Selectors Under Structured Pruning, Hem Gosalia, **Pratinav Seth**, Aditya Kasliwal, Vinay Kumar Sankarapu, **NeurIPS 2026 Workshop**
@@ -354,14 +310,14 @@ Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**,
 
 *Libraries I designed or helped build, plus related team tools.*
 
-- [TabTune](https://arxiv.org/abs/2511.02802) · Unified inference and fine-tuning library for tabular foundation models across 12+ architectures. **WWW 2026 Demo** (116⭐).
+- [TabTune](https://arxiv.org/abs/2511.02802) · Unified inference and fine-tuning library for tabular foundation models (21 models, 7 architecture families). **WWW 2026 Demo** (116⭐).
 - [AlignTune](https://arxiv.org/abs/2602.09621) · Modular post-training toolkit: SFT, DPO, GRPO, and RLHF with interchangeable backends. **Pre-Print 2026** (37⭐).
 - [DLBacktrace v2](https://github.com/AryaXAI/DLBacktrace) · `torch.export`-based, model-agnostic explainability for LLMs and MoEs with CUDA acceleration. **Pre-Print 2026** (26⭐).
 - [CuratorKIT](https://arxiv.org/abs/2606.21631) · Provenance-grounded data-curation and synthetic-generation pipeline for LLM post-training. **Pre-Print 2026** (24⭐).
 - [xai_evals](https://arxiv.org/pdf/2502.03014) · Framework for evaluating post-hoc local explanation methods. **Technical Report 2025** (15⭐).
 - [CircuitKIT](https://arxiv.org/abs/2607.19317) · Circuit discovery, evaluation, and application toolkit for mechanistic interpretability. **Pre-Print 2026** (14⭐).
 - [SafeTune](https://github.com/Lexsi-Labs/SafeTune) · Unified library for auditing and repairing safety drift in fine-tuned LLMs. **EMNLP 2026 System Demonstrations** (7⭐).
-- [AuditKIT](https://auditkit.lexsi.ai/) · Model evaluation across benchmarks, LLM-as-judge, RAG, performance and cost metrics, comparison, and experiment tracking.
+- [AuditKIT](https://auditkit.lexsi.ai/) · Source-available library for model evaluation across benchmarks, LLM-as-judge, RAG, performance and cost metrics, comparison, and experiment tracking.
 - [AgentTune](https://github.com/Lexsi-Labs/AgentTune) · Source-available framework for building, training, evaluating, and maintaining tool-using LLM agents. See the [pre-print](https://arxiv.org/abs/2610.13335).
 - [DLBacktrace (v1)](https://arxiv.org/pdf/2411.12643) · Model-agnostic explainability for deep learning models. **IJCNN 2025.**
 
@@ -391,10 +347,6 @@ Akshat Bhandari, Sriya Rallabandi, Sanchit Singhal, Aditya Kasliwal, **Pratinav 
 [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:2osOgNQ5qMEC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:2osOgNQ5qMEC'></span></strong>
 </div>
 </div>
-
-[LapGSR: Laplacian Reconstructive Network for Guided Thermal Super-Resolution](https://arxiv.org/abs/2411.07750)
-
-Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 
 - [Sailing Through Spectra: Unveiling the Potential of Multi-Spectral Information in Marine Debris Segmentation](https://openreview.net/pdf?id=tJPLJS97X4), Dyutit Mohanty, Aditya Kasliwal, Bharath Udapa, **Pratinav Seth**, **The Second Tiny Papers Track at ICLR 2024.** [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:roLk4NBRz8UC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:roLk4NBRz8UC'></span></strong>
 
@@ -469,12 +421,6 @@ Kumud Lakara (†), Akshat Bhandari (†), **Pratinav Seth (†)**, Ujjwal Verma
 [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:qjMakFHDy7sC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:qjMakFHDy7sC'></span></strong>
 </div>
 </div>
-
-[CoReFusion: Contrastive Regularized Fusion for Guided Thermal Super-Resolution](https://arxiv.org/abs/2304.01243)
-
-Aditya Kasliwal, **Pratinav Seth**, Sriya Rallabandi, Sanchit Singhal
-
-Accepted at **CVPR 2023 Workshop**
 
 #### NLP & AI for Social Good
 

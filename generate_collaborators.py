@@ -50,6 +50,13 @@ AFFILIATIONS = {
     "Omkar Kakade": ("Lexsi Labs", "mentee"),
     "Mitul Solanki": ("Lexsi Labs", "mentee"),
 
+    "Areeb Ahmad": ("Lexsi Labs", "collaborator"),
+    "Shreeyans Arora": ("Lexsi Labs", "collaborator"),
+    "Aryan Sood": ("Lexsi Labs", "collaborator"),
+    "Abhivansh Gupta": ("Lexsi Labs", "collaborator"),
+    "Vidushee Vats": ("Lexsi Labs", "collaborator"),
+    "Ram Mohan Rao Kadiyala": ("Lexsi Labs", "collaborator"),
+
     "Mohamed Bouadi": ("Lexsi Labs, Paris", "collaborator"),
     "Nassim Bouarour": ("Lexsi Labs, Paris", "collaborator"),
     "Mykola Khandoga": ("Lexsi Labs, Paris", "collaborator"),
@@ -337,9 +344,9 @@ def write_service_skills(generated_markdown):
 # excerpts, and the visible Total Papers note. Kept in sync with the actual
 # count so it can't drift the way the hand-typed "48" already had (the real
 # count was 46).
-PAPER_COUNT_FILES = ["_pages/about.md", "_pages/publications.md", "_config.yml"]
+PAPER_COUNT_FILES = ["_pages/about.md", "_pages/publications.md", "_config.yml", "llms.txt"]
 PAPER_COUNT_PATTERN = re.compile(r"\b\d+ papers\b")
-TOTAL_PAPERS_NOTE_PATTERN = re.compile(r"Total Papers: \d+\*")
+TOTAL_PAPERS_NOTE_PATTERN = re.compile(r"Total [Pp]apers: \d+\*?")
 
 
 def sync_total_papers(papers_seen):
@@ -347,7 +354,7 @@ def sync_total_papers(papers_seen):
         with open(path, encoding="utf-8") as f:
             content = f.read()
         new_content = PAPER_COUNT_PATTERN.sub(f"{papers_seen} papers", content)
-        new_content = TOTAL_PAPERS_NOTE_PATTERN.sub(f"Total Papers: {papers_seen}*", new_content)
+        new_content = TOTAL_PAPERS_NOTE_PATTERN.sub(f"Total papers: {papers_seen}", new_content)
         if new_content != content:
             with open(path, "w", encoding="utf-8") as f:
                 f.write(new_content)

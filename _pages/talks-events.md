@@ -10,7 +10,7 @@ excerpt: "Invited talks, conference participation, and industry events."
 {: #events-conferences}
 
 ## Upcoming Conference
-- **[EMNLP 2026](https://2026.emnlp.org/)**, Budapest, Hungary (October 24–29). Scheduled to attend; accepted work includes one Findings paper, one System Demonstrations paper, and two NLLP Workshop papers. See the [publications page](/publications/) for details.
+- **[EMNLP 2026](https://2026.emnlp.org/)**, Budapest, Hungary (October 24–29). Scheduled to attend; accepted work includes one Main Conference paper, one Findings paper, one System Demonstrations paper, and two NLLP Workshop papers. See the [publications page](/publications/) for details.
 
 ## Academic Conferences Attended
 - **ICML 2026**, Seoul, South Korea

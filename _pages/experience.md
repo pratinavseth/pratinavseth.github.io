@@ -20,7 +20,7 @@ excerpt: "Research positions, collaborations, leadership roles, and early career
   - **Safety & Steering**: Study and improve model behavior across training, post-training, and inference. Co-built [**SafeTune**](https://github.com/Lexsi-Labs/SafeTune), a library for auditing and repairing safety drift in fine-tuned LLMs; developed [**ALIGNBEAM**](https://arxiv.org/abs/2606.12342) for inference-time alignment transfer; and contributed to the team's multilingual and cybersecurity safety-repair experiments on Gemma 4 31B, with [released checkpoints and evaluation](https://openreview.net/forum?id=Mgnk5R9Z0l). Related work examines behavioral assurance, compliance detectors, safety drift, and safety-repair evaluation.
   - **Model Optimization**: Lead structured-pruning and quantization work for efficient model deployment
   - **AI & Coding Agents**: Contributed to [**AgentTune**](https://github.com/Lexsi-Labs/AgentTune), a source-available training lifecycle library for tool-using LLM agents, with a [2026 pre-print](https://arxiv.org/abs/2610.13335).
-  - **Evaluation**: Released [**AuditKIT**](https://auditkit.lexsi.ai/) for model evaluation and shared audit records across safety and alignment experiments.
+  - **Evaluation**: Contributed to [**AuditKIT**](https://auditkit.lexsi.ai/), the team's source-available library for model evaluation and shared audit records across safety and alignment experiments.
   - **Research-to-Product Integration**: Translate research into production: integrate interpretability, alignment, and safety tooling into the product stack
   - **Team & Delivery**: Lead the Model Science group across India and Paris, covering research direction, hiring, grants, roadmap, and research-to-product integration.
   - **Publications**:
