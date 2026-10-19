@@ -4,9 +4,9 @@
 
 title: The Lexsi alignment & safety stack
 summary: >-
-  I architected and lead a suite of composable libraries that keeps enterprise LLMs and agents safe and aligned
-  through fine-tuning, compression and deployment. Each library owns one job; all of them write to a shared,
-  reproducible evaluation record, so a fix is only shipped once it is shown not to break anything useful.
+  I architected and lead a set of composable libraries that keep enterprise LLMs and agents safe and aligned
+  through fine-tuning, compression and deployment. Each library does one job, and all of them write to one shared,
+  reproducible evaluation record. Nothing ships until that record shows the fix kept the model's useful behavior.
 
 stages:
   - step: Curate
@@ -19,7 +19,7 @@ stages:
       - { name: AlignTune, paper: aligntune, role: Built and scaled }
       - { name: AgentTune, paper: agenttune, role: Co-author }
   - step: Inspect
-    what: "Find where a behaviour lives: circuit discovery, attribution, interchange interventions, post-hoc explanation"
+    what: "Find where a behavior lives: circuit discovery, attribution, interchange interventions, post-hoc explanation"
     tools:
       - { name: CircuitKIT, paper: circuitkit, role: Built }
       - { name: InterpSuite, role: Built (internal) }
@@ -30,7 +30,7 @@ stages:
       - { name: SafeTune, paper: safetune, role: Led (first author) }
       - { name: C-ΔΘ, paper: c-delta-theta, role: Co-led }
   - step: Compress
-    what: Structured pruning and quantization that keeps safety and capability intact
+    what: Structured pruning and quantization that keep safety and capability intact
     tools:
       - { name: PrunKIT, role: Built (internal) }
   - step: Evaluate
@@ -38,7 +38,7 @@ stages:
     tools:
       - { name: AuditKIT, url: "https://auditkit.lexsi.ai/", role: Contributor }
 
-loop: Audit → correct in the weights → re-verify. Every repair is checked for capability loss and collateral effects before release.
+loop: Audit, correct in the weights, re-verify. We check every repair for capability loss and side effects before release.
 
 principles:
   - "**Single-responsibility libraries** that compose through a shared evaluation record, instead of one monolith."

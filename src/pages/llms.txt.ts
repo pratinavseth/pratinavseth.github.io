@@ -27,7 +27,7 @@ export const GET: APIRoute = async () => {
     `- [Experience](${u('/experience/')}): Lexsi Labs, Mila Quebec AI Institute, Bosch Research, IIT Kharagpur, and earlier roles.`,
     `- [Talks & Events](${u('/talks-events/')}): talks, posters and conferences.`,
     `- [Writing](${u('/writing/')}): notes on the research.`,
-    `- [Education & Service](${u('/education-service/')}): education, honours, reviewing, skills, collaborators.`,
+    `- [Education & Service](${u('/education-service/')}): education, honors, reviewing, skills, collaborators.`,
     '',
     '## Contact',
     '',

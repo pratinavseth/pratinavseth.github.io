@@ -18,7 +18,7 @@ Compression has the same problem in a sharper form. In [Forgetting That Sticks](
 
 ## Edit the mechanism, not the output
 
-That result points at the general approach I trust most: find the mechanism responsible for a behaviour, then change it directly. [C-ΔΘ](/publications/c-delta-theta/) does this for refusal. It localises the circuit behind category-specific refusal and computes a weight update restricted to that circuit, usually under 5% of parameters. The result is an ordinary checkpoint with no inference-time hooks, so the safety behaviour costs nothing at serving time. [CircuitKIT](/publications/circuitkit/) packages the discovery, evaluation and editing steps so the team can do this routinely rather than as one-off research code.
+That result points at the general approach I trust most: find the mechanism responsible for a behavior, then change it directly. [C-ΔΘ](/publications/c-delta-theta/) does this for refusal. It localises the circuit behind category-specific refusal and computes a weight update restricted to that circuit, usually under 5% of parameters. The result is an ordinary checkpoint with no inference-time hooks, so the safety behavior costs nothing at serving time. [CircuitKIT](/publications/circuitkit/) packages the discovery, evaluation and editing steps so the team can do this routinely rather than as one-off research code.
 
 The same audit, correct, re-verify loop is what we applied to [Gemma 4 31B](/publications/gemma-4-safety-repair/) for multilingual and cybersecurity safety failures.
 
@@ -33,7 +33,7 @@ Editing mechanisms only works if the mechanism you found is real. A lot of my re
 
 ## Why this matters beyond the lab
 
-Governance frameworks increasingly ask for evidence about properties like hidden objectives or bounded capabilities. Behavioural evaluations and red-teaming only see outputs, so they cannot verify those claims. That is the argument of our [position paper on behavioural assurance](/publications/position/), and the reason I think of interpretability as infrastructure rather than a post-hoc explanation tool ([Interpretability as Alignment](/publications/interpretability-as-alignment/)).
+Governance frameworks increasingly ask for evidence about properties like hidden objectives or bounded capabilities. Behavioral evaluations and red-teaming only see outputs, so they cannot verify those claims. That is the argument of our [position paper on behavioural assurance](/publications/position/), and the reason I think of interpretability as infrastructure rather than a post-hoc explanation tool ([Interpretability as Alignment](/publications/interpretability-as-alignment/)).
 
 ## What's next
 

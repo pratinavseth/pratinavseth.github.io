@@ -12,7 +12,7 @@ import { img } from '../lib/images';
 >
   <header class="page-head container">
     <h1>Talks &amp; events</h1>
-    <p>Where I’ve presented, and where to find me next. Happy to give talks on post-training safety and interpretability.</p>
+    <p>Talks, posters and conferences. I give talks on post-training safety and interpretability; <a href="/#contact">email me</a> to invite me.</p>
   </header>
 
   {talks.upcoming.length > 0 && (
@@ -28,6 +28,18 @@ import { img } from '../lib/images';
     </section>
   )}
 
+  <section class="section container" aria-labelledby="photos-title">
+    <div class="section__head"><h2 id="photos-title">At conferences</h2></div>
+    <div class="photos">
+      {talks.photos.map((ph) => (
+        <figure>
+          <Image src={img(ph.src)} alt={ph.alt} widths={[360, 560, 800]} sizes="(min-width: 60rem) 23rem, 92vw" />
+          <figcaption>{ph.caption}</figcaption>
+        </figure>
+      ))}
+    </div>
+  </section>
+
   <section class="section container" aria-labelledby="talks-title">
     <div class="section__head"><h2 id="talks-title">Talks &amp; presentations</h2></div>
     {talks.talks.map((y) => (
@@ -42,17 +54,6 @@ import { img } from '../lib/images';
     ))}
   </section>
 
-  <section class="section container" aria-labelledby="photos-title">
-    <div class="section__head"><h2 id="photos-title">At conferences</h2></div>
-    <div class="photos">
-      {talks.photos.map((ph) => (
-        <figure>
-          <Image src={img(ph.src)} alt={ph.alt} widths={[360, 560, 800]} sizes="(min-width: 60rem) 23rem, 92vw" />
-          <figcaption>{ph.caption}</figcaption>
-        </figure>
-      ))}
-    </div>
-  </section>
 
   <section class="section container" aria-labelledby="conf-title">
     <div class="section__head"><h2 id="conf-title">Conferences attended</h2></div>

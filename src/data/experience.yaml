@@ -1,7 +1,7 @@
 # Experience page. `role` and point text accept inline Markdown (links, **bold**).
 # `papers` lists ids from publications.yaml; titles and venues are filled in from there.
 
-- group: "Research Positions"
+- group: "Research positions"
   roles:
     - date: "2026.04 – Present"
       role: "**Lead Research Scientist** at [Lexsi Labs, Lexsi.ai](https://lexsi.ai/) (Aurionpro Solutions Group), Remote"
@@ -13,17 +13,17 @@
         - label: "Safety repair pipelines"
           text: "Led [**SafeTune**](https://github.com/Lexsi-Labs/SafeTune) (EMNLP 2026 Demo): audits safety drift after fine-tuning and repairs it with small, verified weight edits in a localize → edit → verify loop with capability and collateral checks. Co-led **C-ΔΘ**, circuit-restricted weight arithmetic for selective refusal; contributed to the team's Gemma 4 31B multilingual and cybersecurity [safety repair](https://openreview.net/forum?id=Mgnk5R9Z0l)."
         - label: "Interpretability engine"
-          text: "Built **CircuitKIT** for circuit discovery, attribution, interchange interventions and dose-response analysis, and unified post-hoc tooling (LRP, Integrated Gradients, DL-Backtrace) for analysing refusal; compared additive steering with weight edits as interventions."
+          text: "Built **CircuitKIT** for circuit discovery, attribution, interchange interventions and dose-response analysis, and unified post-hoc tooling (LRP, Integrated Gradients, DL-Backtrace) for analyzing refusal; compared additive steering with weight edits as interventions."
         - label: "Inference-time alignment"
           text: "Developed [**ALIGNBEAM**](https://arxiv.org/abs/2606.12342) (EMNLP 2026): transfers safety from an aligned anchor model at decoding time, even across model families with different vocabularies, with no weight changes."
         - label: "Efficiency"
-          text: "Lead structured pruning and quantization (AWQ and others) for deployment, with **PrunKIT**, and checks that compression keeps safety behaviour intact."
+          text: "Lead structured pruning and quantization (AWQ and others) for deployment, with **PrunKIT**, and checks that compression keeps safety behavior intact."
         - label: "Evaluation infrastructure"
           text: "Config-driven, reproducible evaluation harnesses with LLM judges, tiny-model CPU tests and CI across CUDA and Apple MPS; contributed to [**AuditKIT**](https://auditkit.lexsi.ai/) for shared audit records."
         - label: "Applied research → product"
           text: "Research programme on whether safety survives model change: long context in state-space and hybrid models, language shift, tool use, and authorization in multi-step agents. Applied to regulatory-compliance, financial-services, insurance and Indic-language deployments; each question becomes a benchmark, and each benchmark a library feature."
         - label: "Engineering platform"
-          text: "Review code across the engineering organisation, including the lab's internal AI coding-agent platform."
+          text: "Review code across the engineering organization, including the lab's internal AI coding-agent platform."
         - label: "Leadership"
           text: "Lead the Model Science group across India and Paris: research direction, hiring, grants, roadmap and research-to-product integration; set the team's standards for evidence-first measurement, draft-PR review and reproducible evaluation."
       papers: [aligntune, curatorkit, circuitkit, safetune, c-delta-theta, alignbeam, forgetting-that-sticks, position, provenance-grounded-gating, cited-but-not-consulted, verdict-without-the-rule, every-ablation-is-a-dose, agenttune, gemma-4-safety-repair]
@@ -98,7 +98,7 @@
         - label: "Outcome"
           text: "Led to a publication at the Pre-Train Workshop, WACV 2024"
 
-- group: "Research Collaborations"
+- group: "Research collaborations"
   roles:
     - date: "2024 – 2026"
       role: "Independent Research Collaborator with academic collaborators across IIT Kharagpur, IISc Bangalore, and MAHE, Remote"
@@ -127,7 +127,7 @@
         - label: "Focus"
           text: "Deep metric learning with self-supervised and contrastive learning; vision-based attention models and hyperbolic representation learning"
 
-- group: "Leadership Roles"
+- group: "Leadership"
   roles:
     - date: "2022.08 – 2023.09"
       role: "Co-President & AI Research Mentor, [Research Society MIT Manipal](https://www.instagram.com/researchsoc/?hl=en), Manipal, India"
@@ -144,7 +144,7 @@
         - label: "Programming"
           text: "Ran workshops and technical events on ML fundamentals and projects"
 
-- group: "Early Career Experience"
+- group: "Early career"
   roles:
     - date: "2022.06 – 2022.09"
       role: "Undergraduate Research Assistant under Dr. Vidya Rao & Dr. Poornima P.K., Dept. of Data Science & Computer Application, MIT MAHE, Manipal, India"

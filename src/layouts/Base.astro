@@ -4,6 +4,7 @@ import '@fontsource-variable/ibm-plex-sans/wght.css';
 import '@fontsource-variable/jetbrains-mono/wght.css';
 import '../styles/global.css';
 import { site, nav } from '../config/site';
+import { getPosts } from '../lib/posts';
 
 interface Props {
   title: string;
@@ -24,6 +25,9 @@ const canonical = new URL(Astro.url.pathname, site.url).href;
 const imageUrl = new URL(image, site.url).href;
 const fullTitle = title === site.name ? `${site.name} · ${site.tagline}` : `${title} · ${site.name}`;
 const path = Astro.url.pathname;
+// Writing appears in the menu once there is at least one published post.
+const hasPosts = (await getPosts()).some((p) => !p.data.draft);
+const menu = nav.filter((item) => item.href !== '/writing/' || hasPosts);
 const isCurrent = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
 ---
 
@@ -76,7 +80,7 @@ const isCurrent = (href: string) => (href === '/' ? path === '/' : path.startsWi
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
         <nav class="site-nav" id="site-nav" aria-label="Main">
           <ul>
-            {nav.map((item) => (
+            {menu.map((item) => (
               <li><a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a></li>
             ))}
           </ul>

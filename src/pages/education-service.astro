@@ -16,11 +16,11 @@ const ROLE_TAG: Record<string, string | undefined> = { manager: 'Manager', mento
 >
   <header class="page-head container">
     <h1>Education &amp; service</h1>
-    <p>Honours, education, reviewing, skills, and the people I’ve worked with.</p>
+    <p>Honors, education, reviewing, skills, and the people I’ve published with.</p>
   </header>
 
   <section class="section container" id="honors-and-awards" aria-labelledby="honors-title">
-    <div class="section__head"><h2 id="honors-title">Honours &amp; awards</h2></div>
+    <div class="section__head"><h2 id="honors-title">Honors &amp; awards</h2></div>
     <ul class="timeline">
       {education.honors.map((h) => <li><span class="timeline__date">{h.date}</span><span set:html={inline(h.text)} /></li>)}
     </ul>
@@ -35,8 +35,8 @@ const ROLE_TAG: Record<string, string | undefined> = { manager: 'Manager', mento
           <p class="role__title"><strong>{e.degree}</strong>, {e.school}</p>
           <ul>{e.details.map((x) => <li set:html={inline(x)} />)}</ul>
           {e.photo && (
-            <figure class="figure-frame" style="max-width:36rem;margin-top:var(--space-4)">
-              <Image src={img(e.photo.src)} alt={e.photo.alt} widths={[480, 720]} sizes="(min-width: 40rem) 36rem, 92vw" />
+            <figure class="figure-frame" style="max-width:20rem;margin-top:var(--space-4)">
+              <Image src={img(e.photo.src)} alt={e.photo.alt} widths={[320, 640]} sizes="20rem" />
               <figcaption>{e.photo.caption}</figcaption>
             </figure>
           )}

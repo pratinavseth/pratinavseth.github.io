@@ -7,7 +7,7 @@ export const site = {
   orgUrl: 'https://lexsi.ai/',
   location: 'India & Paris (remote)',
   // One sentence that answers "what do you work on?" — shown large in the hero.
-  thesis: 'I study what survives post-training: how fine-tuning, quantization and deployment change a model’s behaviour, and how to find and repair the circuits responsible.',
+  thesis: 'I study what survives post-training: how fine-tuning, quantization and deployment change a model’s behavior, and how to find and repair the circuits responsible.',
   tagline: 'Post-training safety and mechanistic interpretability for language models.',
   description:
     'Pratinav Seth leads the Model Science group at Lexsi Labs, working on post-training safety, alignment and mechanistic interpretability for language models.',

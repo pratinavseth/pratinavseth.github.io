@@ -42,7 +42,7 @@
   paper: safetune
   stars: 19
   oss: true
-  role: Co-built
+  role: Led (first author)
   description: Audits and repairs safety drift in fine-tuned LLMs.
 - name: xai_evals
   repo: Lexsi-Labs/xai_evals

@@ -45,12 +45,12 @@ const threads = [
   {
     title: 'Post-training safety & alignment',
     areas: ['Safety Post-Training & Alignment'],
-    text: 'How fine-tuning, quantization and deployment shift a model’s safety behaviour, and how to audit and repair it in the weights: SafeTune, ALIGNBEAM, AlignTune, CuratorKIT.',
+    text: 'How fine-tuning, quantization and deployment shift a model’s safety behavior, and how to audit and repair it in the weights. SafeTune, ALIGNBEAM, AlignTune, CuratorKIT.',
   },
   {
     title: 'Mechanistic interpretability',
     areas: ['Mechanistic Interpretability & XAI'],
-    text: 'Finding the circuits behind refusal and other behaviours, testing whether they are faithful, and acting on them: C-ΔΘ, CircuitKIT, unlearning via circuit attribution. Built on earlier post-hoc explainability work: DLBacktrace (IJCNN 2025), xai_evals and XAI metrics for compliance.',
+    text: 'Finding the circuits behind refusal and other behaviors, testing whether they are faithful, and editing them. C-ΔΘ, CircuitKIT, unlearning by circuit attribution, and the post-hoc explainability work that came first: DLBacktrace (IJCNN 2025) and xai_evals.',
   },
 ].map((t) => ({
   ...t,
@@ -75,7 +75,7 @@ const earlierAreas = [
   {
     area: 'Medical Imaging',
     title: 'Medical imaging',
-    text: 'Glaucoma detection from retinal context, skin-tone bias in skin-lesion classifiers, brain-tumour segmentation and diabetic retinopathy.',
+    text: 'Glaucoma detection from retinal context, skin-tone bias in skin-lesion classifiers, brain-tumor segmentation and diabetic retinopathy.',
     highlights: ['obscure-to-observe', 'pretraining-fairness-skin-lesions'],
   },
   {
@@ -177,7 +177,7 @@ const personLd = {
         </p>
         <p class="hero__thesis">
           I study <em>what survives post-training</em>: how fine-tuning, quantization and deployment change a model’s
-          behaviour, and how to find and repair the circuits responsible.
+          behavior, and how to find and repair the circuits responsible.
         </p>
 
         <div class="stats">
@@ -193,7 +193,7 @@ const personLd = {
           <a class="btn" href={site.cv}>CV</a>
           <a class="btn" href={site.resume}>Résumé</a>
         </div>
-        <p class="hero__open"><strong>Open to</strong> {site.openTo.join(' · ').toLowerCase()}, and conversations about where post-training research is heading.</p>
+        <p class="hero__open"><strong>Open to</strong> research collaborations and talks. If you work on post-training or interpretability, I’d like to hear from you.</p>
       </div>
       <div class="hero__portrait">
         <img src={site.avatar} alt="Pratinav Seth at the India AI Impact Summit 2026, New Delhi" width="480" height="480" fetchpriority="high" />

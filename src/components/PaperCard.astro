@@ -29,7 +29,7 @@ const cites = await citationsOf(pub);
     <h3 class="card__title">{d.title}</h3>
     <p class="card__desc">{blurb ?? d.area}</p>
     <div class="card__foot">
-      {d.year}{typeof cites === 'number' && cites > 0 && ` · ${cites} citations`}
+      {d.year}{typeof cites === 'number' && cites > 0 && ` · ${cites} citation${cites === 1 ? '' : 's'}`}
     </div>
   </div>
 </a>

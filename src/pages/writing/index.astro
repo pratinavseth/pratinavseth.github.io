@@ -8,12 +8,12 @@ const posts = await getPosts();
 <Base title="Writing" description="Notes by Pratinav Seth on post-training safety, mechanistic interpretability and the research behind his papers.">
   <header class="page-head container">
     <h1>Writing</h1>
-    <p>Notes on the research: what a paper is really about, what didn’t make it in, and where it goes next.</p>
+    <p>Notes on the research: the question behind each paper, what didn’t make the final version, and what comes next.</p>
   </header>
 
   <section class="container" style="padding-bottom:var(--space-8)">
     {posts.length === 0 ? (
-      <p class="muted">The first post is on its way. In the meantime, the <a href="/publications/">papers</a> are the best place to start, and there’s an <a href="/rss.xml">RSS feed</a> to catch new posts.</p>
+      <p class="muted">The first post is in progress. Until then, start with the <a href="/publications/">papers</a>, or follow the <a href="/rss.xml">RSS feed</a> to get new posts.</p>
     ) : (
       <ul class="paper-list">
         {posts.map((p) => (
