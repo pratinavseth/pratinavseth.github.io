@@ -124,7 +124,9 @@ TITLE_LINE_RE = re.compile(r"^\[([^\]]+)\]\([^)]+\)\s*$")
 BULLET_TITLE_RE = re.compile(r"^-\s*\[([^\]]+)\]\([^)]+\)\s*,\s*")
 # Fallback for bullet papers with no arxiv/GitHub link yet (Under Review) —
 # title is plain text up to the first comma.
-BULLET_TITLE_PLAIN_RE = re.compile(r"^-\s*([^,]+),\s*")
+# A colon before the first "**" marks a "Title: Subtitle" form; the title
+# then runs to the first comma after it, so "Drift, Then Repair: ..." parses.
+BULLET_TITLE_PLAIN_RE = re.compile(r"^-\s*([^:\[*]*?:[^,]+|[^,]+),\s*")
 NAME_SUFFIX = re.compile(r"\s*(\(#\)|\(†\)|\(\*\*\)|\(\*\)|\*\*|\*|\(†\s*\))\s*$")
 
 
@@ -167,7 +169,7 @@ def extract_authors_from_line(line):
         if m:
             text = text[m.end():]
         else:
-            m2 = re.match(r"^[^,]*,\s*", text)
+            m2 = re.match(r"^(?:[^:\[*]*?:[^,]*|[^,]*),\s*", text)
             if m2:
                 text = text[m2.end():]
             else:

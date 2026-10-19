@@ -34,7 +34,7 @@ excerpt: "Research positions, collaborations, leadership roles, and early career
     - [Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands](https://arxiv.org/abs/2605.15164). 2026. Pre-print.
     - [Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation](https://openreview.net/forum?id=X49HukIVLk). Accepted, EMNLP 2026 Findings.
     - [Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness](https://openreview.net/forum?id=25nCvWm2yy) and [Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems](https://openreview.net/forum?id=jX7FB33LSz). Accepted, EMNLP 2026 NLLP Workshop.
-    - [Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair](https://arxiv.org/abs/2610.02173). Accepted, NeurIPS 2026 Workshop.
+    - [Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair](https://arxiv.org/abs/2610.02173). 2026. Pre-print.
 
 - <span class="role-list__date">2025.07 – 2026.03</span>**Research Scientist** at [Lexsi Labs, Lexsi.ai](https://lexsi.ai/) (Aurionpro Solutions Group) *[Previously: AryaXAI, Arya.ai]*, Remote
   - **Model Science Group**: Led and scaled the lab's Model Science group across post-training alignment, safety, and interpretability into a core research team driving the lab's alignment and safety agenda

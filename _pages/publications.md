@@ -2,7 +2,7 @@
 layout: default
 permalink: /publications/
 title: "Publications · Pratinav Seth"
-description: "54 papers (31 peer-reviewed, 210+ citations) spanning LLM post-training, safety alignment, mechanistic interpretability, and tabular foundation models. Venues include ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
+description: "53 papers (31 peer-reviewed, 210+ citations) spanning LLM post-training, safety alignment, mechanistic interpretability, and tabular foundation models. Venues include ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
 excerpt: "Full publication list: safety post-training & alignment, mechanistic interpretability & XAI, tabular foundation models, and open-source libraries."
 ---
 
@@ -16,7 +16,7 @@ excerpt: "Full publication list: safety post-training & alignment, mechanistic i
 # Publications <a href='https://scholar.google.com/citations?user=DwBn1fcAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 {: #publications}
 
-<p class="total-papers-note">Total papers: 54<br><small>Count includes the publications listed below; additional work remains under review.</small></p>
+<p class="total-papers-note">Total papers: 53<br><small>Count includes the publications listed below; additional work remains under review.</small></p>
 
 <div class="card--muted" markdown="1">
 **Selected Publications**
@@ -35,7 +35,18 @@ excerpt: "Full publication list: safety post-training & alignment, mechanistic i
 
 #### Safety Post-Training & Alignment
 
-- [Targeted Multilingual and Cybersecurity Safety Repair for Gemma 4 31B](https://openreview.net/forum?id=Mgnk5R9Z0l), Lexsi Labs team, **Research Release 2026**. Targeted weight interventions for multilingual and cybersecurity safety failures, part of the [Lexsi Alignment and Safety Stack](https://lexsi.ai/resources/articles/open-sourcing-the-lexsi-alignment-and-safety-stack-frontier-safety-research-for-auditing-correcting-and-verifying-model-weights) (CuratorKIT, AlignTune, SafeTune, CircuitKIT, AuditKIT, MANSU). [Multilingual checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Multilingual-Safety-Repair) · [Cybersecurity checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Cybersecurity-Safety-Repair) · [Technical report](https://lexsi.ai/resources/articles/the-lexsi-alignment-and-safety-stack-correcting-gemma-4-31b-for-multilingual-and-cybersecurity-safety-in-the-weights-copy)
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report 2026</div><img src='/images/gemma4-safety-repair-fig.png' alt="Contrast, attribute, localise and verify pipeline for circuit-restricted weight edits on Gemma 4 31B" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Targeted Multilingual and Cybersecurity Safety Repair for Gemma 4 31B](https://openreview.net/forum?id=Mgnk5R9Z0l)
+
+Lexsi Labs Team
+
+Targeted weight interventions for multilingual and cybersecurity safety failures, reporting improved safety and multi-turn jailbreak resistance while largely preserving broader capabilities. Part of the [Lexsi Alignment and Safety Stack](https://lexsi.ai/resources/articles/open-sourcing-the-lexsi-alignment-and-safety-stack-frontier-safety-research-for-auditing-correcting-and-verifying-model-weights) (CuratorKIT, AlignTune, SafeTune, CircuitKIT, AuditKIT, MANSU).
+
+[Multilingual checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Multilingual-Safety-Repair) · [Cybersecurity checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Cybersecurity-Safety-Repair) · [Technical report](https://lexsi.ai/resources/articles/the-lexsi-alignment-and-safety-stack-correcting-gemma-4-31b-for-multilingual-and-cybersecurity-safety-in-the-weights-copy)
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='https://cdn.prod.website-files.com/690097e1da2dba144068cad2/699ab40523bab49830cce949_699ab3b9de2e66a74a06fd6a_4384885e.png' alt="AlignTune" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -102,13 +113,13 @@ Saisab Sadhu, **Pratinav Seth**, Vinay Kumar Sankarapu
 
 - [Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems](https://openreview.net/forum?id=jX7FB33LSz), Saisab Sadhu, Aadit Sengupta, Vinay Kumar Sankarapu, **Pratinav Seth**, **EMNLP 2026 NLLP Workshop; NeurIPS 2026 Workshop**
 
-- [Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair](https://arxiv.org/abs/2610.02173), Areeb Ahmad, **Pratinav Seth**, Vinay Kumar Sankarapu, **NeurIPS 2026 Workshop**
+- [Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair](https://arxiv.org/abs/2610.02173), Areeb Ahmad, **Pratinav Seth**, Vinay Kumar Sankarapu, **Pre-Print**
 
 - [AgentTune: A Unified Training Lifecycle for Tool-Using LLM Agents](https://arxiv.org/abs/2610.13335), R E Zera Marveen Lyngkhoi, Abhivansh Gupta, Vidushee Vats, Ram Mohan Rao Kadiyala, Vinay Kumar Sankarapu, **Pratinav Seth**, **Pre-Print**
 
 - [SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs](https://openreview.net/forum?id=5Hl0P9faYV), **Pratinav Seth**, Saisab Sadhu, Anshul Kaushal, Vinay Kumar Sankarapu, **EMNLP 2026 System Demonstrations** · [Code](https://github.com/Lexsi-Labs/SafeTune)
 
-- Drift Then Repair: A Safety Audit of Fine-Tuned Language Models, **Pratinav Seth**, Anshul Kaushal, Saisab Sadhu, Vinay Kumar Sankarapu, **NeurIPS 2026 Workshop**
+- Drift, Then Repair: A Safety Audit of Fine-Tuned Language Models, **Pratinav Seth**, Anshul Kaushal, Saisab Sadhu, Vinay Kumar Sankarapu, **NeurIPS 2026 Workshop**
 
 - Self-Calibrating Weight-Arithmetic Safety-Drift Repair, **Pratinav Seth**, Vinay Kumar Sankarapu, **Under Review**
 
@@ -210,8 +221,6 @@ Ananth Eswar, **Pratinav Seth**, Utsav Avaiya, Vinay Kumar Sankarapu
 [**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
 </div>
 </div>
-
-- Faithfulness Is Not Actionability: Component Heterogeneity in Discovered Circuits, **Pratinav Seth**, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu, **Under Review**
 
 - Faithfulness Is Not Actionability: Extrinsic Validation of Circuit Selectors Under Structured Pruning, Hem Gosalia, **Pratinav Seth**, Aditya Kasliwal, Vinay Kumar Sankarapu, **NeurIPS 2026 Workshop**
 

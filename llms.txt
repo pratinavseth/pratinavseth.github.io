@@ -5,7 +5,7 @@
 ## Pages
 
 - [Home](https://pratinavseth.github.io/): Bio, research focus, selected work (CircuitKIT, SafeTune, AlignTune, CuratorKIT, C-ΔΘ), and a running news feed of recent publications and acceptances.
-- [Publications](https://pratinavseth.github.io/publications/): 54 papers, pre-prints, and toolkits grouped by topic — safety post-training & alignment, mechanistic interpretability & XAI, tabular foundation models, climate/medical/uncertainty/NLP/vision work.
+- [Publications](https://pratinavseth.github.io/publications/): 53 papers, pre-prints, and toolkits grouped by topic — safety post-training & alignment, mechanistic interpretability & XAI, tabular foundation models, climate/medical/uncertainty/NLP/vision work.
 - [Experience](https://pratinavseth.github.io/experience/): Roles at Lexsi Labs, Mila Quebec AI Institute, Bosch Research India, IIT Kharagpur, plus research collaborations and leadership roles.
 - [Talks & Events](https://pratinavseth.github.io/talks-events/): Invited talks, workshop spotlights, conference presentations, and industry events.
 - [Education & Service](https://pratinavseth.github.io/education-service/): Education, honors and awards, academic service and reviewing, technical skills, and collaborators & mentees.
