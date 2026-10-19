@@ -10,7 +10,7 @@
 - [Talks & Events](https://pratinavseth.github.io/talks-events/): Invited talks, workshop spotlights, conference presentations, and industry events.
 - [Education & Service](https://pratinavseth.github.io/education-service/): Education, honors and awards, academic service and reviewing, technical skills, and collaborators & mentees.
 
-## Open-Source Libraries
+## Libraries & Tools
 
 - AlignTune: modular toolkit for post-training alignment (SFT, DPO, GRPO, RLHF).
 - CircuitKIT: circuit discovery, evaluation, and application toolkit for mechanistic interpretability.

@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Pratinav Seth · LLM Post-Training, Safety & Mechanistic Interpretability"
-description: "AI researcher with 53 papers (31 peer-reviewed, 210+ citations) and experience building open-source AI research libraries. Research: post-training safety and circuit-level mechanistic interpretability for language models."
+description: "AI researcher with 53 papers (40 peer-reviewed, 220+ citations) and experience building open-source AI research libraries. Research: post-training safety and circuit-level mechanistic interpretability for language models."
 excerpt: "AI researcher working on post-training safety and mechanistic interpretability for language models, with 53 papers and open-source research tools."
 keywords: "Pratinav Seth, LLM alignment, safety post-training, RLHF, DPO, SFT, mechanistic interpretability, AI safety, circuit analysis, weight arithmetic, safety fine-tuning, agentic systems, AI agents, evaluation, tabular foundation models, knowledge distillation, lead research scientist, machine learning, NLP"
 author_profile: true
@@ -13,11 +13,11 @@ hero:
   name: "Pratinav Seth"
   tagline: "Post-training safety and mechanistic interpretability for language models."
   stats:
-    - number: "31"
+    - number: "40"
       label: "Peer-Reviewed"
     - number: "7"
       label: "OSS Libraries"
-    - number: "210+"
+    - number: "220+"
       label: "Citations"
   h_index: "8"
   cta:
@@ -46,19 +46,19 @@ hero:
 <div class="bio-switcher__panel bio-switcher__panel--first" markdown="1">
 Hi, I'm Pratinav!
 
-I'm a Lead Research Scientist at Lexsi Labs, where I lead the Model Science group, a team of more than 20 researchers and interns across India and Paris. I work on post-training, mechanistic interpretability, and safety for foundation models. I architected and scaled AlignTune, a multi-backend post-training system used in BFSI, legal, and healthcare projects. I also built CircuitKIT and contributed to SafeTune, CuratorKIT, and DLBacktrace v2. Seven libraries I designed or helped launch have more than 230 GitHub stars combined; newer team projects include [AuditKIT](https://auditkit.lexsi.ai/) and [AgentTune](https://github.com/Lexsi-Labs/AgentTune).
+I'm a Lead Research Scientist at Lexsi Labs, where I lead the Model Science group, a team of more than 20 researchers and interns across India and Paris. I work on post-training, mechanistic interpretability, and safety for foundation models. I architected and scaled AlignTune, a multi-backend post-training system used in BFSI, legal, and healthcare projects. I also built CircuitKIT and contributed to SafeTune, CuratorKIT, and DLBacktrace v2. Seven libraries I designed or helped launch have more than 300 GitHub stars combined; newer team projects include [AuditKIT](https://auditkit.lexsi.ai/) and [AgentTune](https://github.com/Lexsi-Labs/AgentTune).
 
 My research asks how fine-tuning, quantization, and deployment change model behavior, and how to identify and repair the mechanisms behind safety failures. Recent work includes circuit-level refusal ([C-ΔΘ](https://arxiv.org/abs/2602.04521)), safety-drift auditing and repair ([SafeTune](https://github.com/Lexsi-Labs/SafeTune)), and inference-time alignment transfer ([ALIGNBEAM](https://arxiv.org/abs/2606.12342)), alongside studies of circuit attribution and faithfulness. Earlier, I worked on the [Orion](https://arxiv.org/abs/2511.02818) tabular foundation model series and [TabTune](https://arxiv.org/abs/2511.02802), followed by work on distillation, ensembling, and applications in health and credit risk.
 
 Before Lexsi, I worked with David Rolnick at Mila on geospatial climate AI. My bachelor's thesis became the Alberta Wells Dataset, published first-author at ICML 2025. Before that, at Bosch Corporate Research, I built a generative data-augmentation pipeline for safety-critical autonomous-driving perception using latent diffusion models. Earlier still, I mentored 10+ undergraduates as a researcher at Mars Rover Manipal, co-founded The Data Alchemists, and co-led Research Society MIT Manipal, a 90-member undergraduate research organization.
 
-My papers and demos have appeared at ICML, ACL, WWW, MIDL, IJCNN, and Nature Scientific Reports, with workshop and shared-task work at NeurIPS, ICLR, CVPR, MICCAI, EurIPS, EMNLP, NAACL, WACV, BioNLP, SemEval, and ACM SIGMOD. I have 31 peer-reviewed papers and 210+ citations. I'm an AAAI Undergraduate Consortium Scholar (2023) and Mentor (2026), and I completed my B.Tech in Data Science & Engineering at Manipal Institute of Technology.
+My papers and demos have appeared at ICML, ACL, WWW, MIDL, IJCNN, and Nature Scientific Reports, with workshop and shared-task work at NeurIPS, ICLR, CVPR, MICCAI, EurIPS, EMNLP, NAACL, WACV, BioNLP, SemEval, and ACM SIGMOD. I have 40 peer-reviewed papers and 220+ citations. I'm an AAAI Undergraduate Consortium Scholar (2023) and Mentor (2026), and I completed my B.Tech in Data Science & Engineering at Manipal Institute of Technology.
 </div>
 
 <div class="bio-switcher__panel bio-switcher__panel--third" markdown="1">
 *Copy-paste bio for introductions, programs, and bylines.*
 
-Pratinav Seth is a Lead Research Scientist at Lexsi Labs, where he leads the Model Science group's work on post-training, mechanistic interpretability, and LLM safety across India and Paris. His papers and demos have appeared at ICML, ACL, WWW, MIDL, IJCNN, and Nature Scientific Reports, with workshop and shared-task work at NeurIPS, ICLR, CVPR, MICCAI, EurIPS, EMNLP, NAACL, WACV, BioNLP, SemEval, and ACM SIGMOD. He has 31 peer-reviewed papers and 210+ citations. Seven libraries he designed or helped launch have more than 230 GitHub stars combined; related team projects include AuditKIT and AgentTune. His work includes [AlignTune](https://arxiv.org/abs/2602.09621), [CircuitKIT](https://arxiv.org/abs/2607.19317), and [SafeTune](https://github.com/Lexsi-Labs/SafeTune). Before Lexsi Labs, he worked with Professor David Rolnick at Mila Quebec AI Institute and with Bosch Corporate Research. He holds a B.Tech in Data Science & Engineering from Manipal Institute of Technology and is an AAAI Undergraduate Consortium Scholar (2023) and Mentor (2026).
+Pratinav Seth is a Lead Research Scientist at Lexsi Labs, where he leads the Model Science group's work on post-training, mechanistic interpretability, and LLM safety across India and Paris. His papers and demos have appeared at ICML, ACL, WWW, MIDL, IJCNN, and Nature Scientific Reports, with workshop and shared-task work at NeurIPS, ICLR, CVPR, MICCAI, EurIPS, EMNLP, NAACL, WACV, BioNLP, SemEval, and ACM SIGMOD. He has 40 peer-reviewed papers and 220+ citations. Seven libraries he designed or helped launch have more than 300 GitHub stars combined; related team projects include AuditKIT and AgentTune. His work includes [AlignTune](https://arxiv.org/abs/2602.09621), [CircuitKIT](https://arxiv.org/abs/2607.19317), and [SafeTune](https://github.com/Lexsi-Labs/SafeTune). Before Lexsi Labs, he worked with Professor David Rolnick at Mila Quebec AI Institute and with Bosch Corporate Research. He holds a B.Tech in Data Science & Engineering from Manipal Institute of Technology and is an AAAI Undergraduate Consortium Scholar (2023) and Mentor (2026).
 </div>
 
 <div class="bio-switcher__panel bio-switcher__panel--full" markdown="1">
@@ -70,7 +70,7 @@ Before Lexsi, I worked with David Rolnick at Mila Quebec AI Institute on geospat
 
 Before all of that, I was already doing research as an undergraduate. I worked on NLP for a healthcare chatbot at CUREYA, synthetic tabular data at Eedge.ai, cybersecurity malware classification at MAHE, deep metric learning with NEC Labs and IIT Roorkee, and agricultural NLP with Wells Fargo. I also mentored 10+ undergraduates as a researcher at Mars Rover Manipal, rising from student trainee to lead its AI Research Wing; co-founded The Data Alchemists, growing it to 30+ members; and co-led Research Society MIT Manipal, a 90-member undergraduate research organization.
 
-My papers and demos have appeared at ICML, ACL, WWW, MIDL, IJCNN, and Nature Scientific Reports, with workshop and shared-task work at NeurIPS, ICLR, CVPR, MICCAI, EurIPS, EMNLP, NAACL, WACV, BioNLP, SemEval, AAAI, and ACM SIGMOD. I have 31 peer-reviewed papers and 210+ citations. Seven libraries I designed or helped launch (TabTune, AlignTune, DLBacktrace v2, xai_evals, CircuitKIT, CuratorKIT, and SafeTune) have more than 230 GitHub stars combined. AuditKIT and AgentTune are additional team projects. I review for AAAI, NeurIPS, CVPR, ECCV, and other venues. I was an AAAI Undergraduate Consortium Scholar in 2023 and returned as a mentor in 2026. I completed my B.Tech in Data Science & Engineering at Manipal Institute of Technology in 2024.
+My papers and demos have appeared at ICML, ACL, WWW, MIDL, IJCNN, and Nature Scientific Reports, with workshop and shared-task work at NeurIPS, ICLR, CVPR, MICCAI, EurIPS, EMNLP, NAACL, WACV, BioNLP, SemEval, AAAI, and ACM SIGMOD. I have 40 peer-reviewed papers and 220+ citations. Seven libraries I designed or helped launch (TabTune, AlignTune, DLBacktrace v2, xai_evals, CircuitKIT, CuratorKIT, and SafeTune) have more than 300 GitHub stars combined. AuditKIT and AgentTune are additional team projects. I review for AAAI, NeurIPS, CVPR, ECCV, and other venues. I was an AAAI Undergraduate Consortium Scholar in 2023 and returned as a mentor in 2026. I completed my B.Tech in Data Science & Engineering at Manipal Institute of Technology in 2024.
 </div>
 
 </div>
@@ -119,12 +119,12 @@ My papers and demos have appeared at ICML, ACL, WWW, MIDL, IJCNN, and Nature Sci
   <a class="work-card" href="https://arxiv.org/abs/2607.19317">
     <span class="work-card__tag">LIBRARY</span>
     <h3 class="work-card__title">CircuitKIT</h3>
-    <p class="work-card__desc">Circuit discovery, evaluation, and application toolkit for mechanistic interpretability, with 14 stars on GitHub.</p>
+    <p class="work-card__desc">Circuit discovery, evaluation, and application toolkit for mechanistic interpretability, with 26 stars on GitHub.</p>
   </a>
   <a class="work-card" href="https://github.com/Lexsi-Labs/SafeTune">
     <span class="work-card__tag">LIBRARY</span>
     <h3 class="work-card__title">SafeTune</h3>
-    <p class="work-card__desc">Audits and repairs safety drift in fine-tuned language models, with 7 stars on GitHub.</p>
+    <p class="work-card__desc">Audits and repairs safety drift in fine-tuned language models, with 19 stars on GitHub.</p>
   </a>
   <a class="work-card" href="https://arxiv.org/abs/2602.09621">
     <span class="work-card__tag">LIBRARY</span>
@@ -134,7 +134,7 @@ My papers and demos have appeared at ICML, ACL, WWW, MIDL, IJCNN, and Nature Sci
   <a class="work-card" href="https://arxiv.org/abs/2606.21631">
     <span class="work-card__tag">LIBRARY</span>
     <h3 class="work-card__title">CuratorKIT</h3>
-    <p class="work-card__desc">Provenance-grounded data curation and synthetic generation for LLM post-training, with 24 stars on GitHub.</p>
+    <p class="work-card__desc">Provenance-grounded data curation and synthetic generation for LLM post-training, with 30 stars on GitHub.</p>
   </a>
   <a class="work-card" href="https://github.com/Lexsi-Labs/TabTune">
     <span class="work-card__tag">LIBRARY</span>

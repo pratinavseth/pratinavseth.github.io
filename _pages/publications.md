@@ -2,7 +2,7 @@
 layout: default
 permalink: /publications/
 title: "Publications · Pratinav Seth"
-description: "53 papers (31 peer-reviewed, 210+ citations) spanning LLM post-training, safety alignment, mechanistic interpretability, and tabular foundation models. Venues include ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
+description: "53 papers (40 peer-reviewed, 220+ citations) spanning LLM post-training, safety alignment, mechanistic interpretability, and tabular foundation models. Venues include ICML, ACL, WWW, MIDL, and Nature Scientific Reports."
 excerpt: "Full publication list: safety post-training & alignment, mechanistic interpretability & XAI, tabular foundation models, and open-source libraries."
 ---
 
@@ -55,7 +55,7 @@ Targeted weight interventions for multilingual and cybersecurity safety failures
 
 R E Zera Marveen Lyngkhoi, Chirag Chawla, **Pratinav Seth**, Utsav Avaiya, Soham Bhattacharjee, Mykola Khandoga, Rui Yuan, Vinay Kumar Sankarapu
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:L8Ckcad2t8MC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:L8Ckcad2t8MC'></span></strong>
 </div>
 </div>
 
@@ -68,7 +68,7 @@ Aditya Kasliwal, **Pratinav Seth**, Vinay Kumar Sankarapu
 
 Accepted at the **Mechanistic Interpretability Workshop, ICML 2026** (in-person poster; <15% acceptance rate)
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:7PzlFSSx8tAC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:7PzlFSSx8tAC'></span></strong>
 </div>
 </div>
 
@@ -81,7 +81,7 @@ Chirag Chawla, **Pratinav Seth**, Vinay Kumar Sankarapu
 
 Accepted at the **AI for Good Workshop, ICML 2026** and the **EMNLP 2026 Main Conference**
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:R3hNpaxXUhUC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:R3hNpaxXUhUC'></span></strong>
 </div>
 </div>
 
@@ -92,7 +92,7 @@ Accepted at the **AI for Good Workshop, ICML 2026** and the **EMNLP 2026 Main Co
 
 Saisab Sadhu, **Pratinav Seth**, Vinay Kumar Sankarapu
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:hC7cP41nSMkC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:hC7cP41nSMkC'></span></strong>
 </div>
 </div>
 
@@ -103,7 +103,7 @@ Saisab Sadhu, **Pratinav Seth**, Vinay Kumar Sankarapu
 
 **Pratinav Seth**, Vinay Kumar Sankarapu
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:-f6ydRqryjwC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:-f6ydRqryjwC'></span></strong>
 </div>
 </div>
 
@@ -136,7 +136,7 @@ Soham Bhattacharjee, Karun Sharma, Vinay Kumar Sankarapu, **Pratinav Seth**
 
 Accepted to **EMNLP 2026 Findings**
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:e5wmG9Sq2KIC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:e5wmG9Sq2KIC'></span></strong>
 </div>
 </div>
 
@@ -151,7 +151,7 @@ Accepted to **EMNLP 2026 Findings**
 
 Aadit Sengupta, **Pratinav Seth**, Vinay Kumar Sankarapu
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:4TOpqqG69KYC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:4TOpqqG69KYC'></span></strong>
 </div>
 </div>
 
@@ -162,7 +162,7 @@ Aadit Sengupta, **Pratinav Seth**, Vinay Kumar Sankarapu
 
 Nikita Malik, **Pratinav Seth**, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kumar Sankarapu
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:_kc_bZDykSQC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:_kc_bZDykSQC'></span></strong>
 </div>
 </div>
 
@@ -173,7 +173,7 @@ Nikita Malik, **Pratinav Seth**, Neeraj Kumar Singh, Chintan Chitroda, Vinay Kum
 
 **Pratinav Seth**, Vinay Kumar Sankarapu
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:KlAtU1dfN6UC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:KlAtU1dfN6UC'></span></strong>
 </div>
 </div>
 
@@ -200,14 +200,14 @@ Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Pre-Print</div><img src='/images/circuitkit-fig.png' alt="CircuitKIT" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2026 Workshop</div><img src='/images/circuitkit-fig.png' alt="CircuitKIT" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [CircuitKIT: Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability](https://arxiv.org/abs/2607.19317)
 
 **Pratinav Seth**, Hem Gosalia, Aditya Kasliwal, Vinay Kumar Sankarapu
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:j3f4tGmQtD8C) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:j3f4tGmQtD8C'></span></strong>
 </div>
 </div>
 
@@ -218,7 +218,7 @@ Vinay Kumar Sankarapu, Chintan Chitroda, Yashwardhan Rathore, Neeraj Kumar Singh
 
 Ananth Eswar, **Pratinav Seth**, Utsav Avaiya, Vinay Kumar Sankarapu
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:RHpTSmoSYBkC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:RHpTSmoSYBkC'></span></strong>
 </div>
 </div>
 
@@ -237,7 +237,7 @@ Ananth Eswar, **Pratinav Seth**, Utsav Avaiya, Vinay Kumar Sankarapu
 
 Mohamed Bouadi, **Pratinav Seth**, Aditya Tanna, Vinay Kumar Sankarapu
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:qxL8FJ1GzNcC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:qxL8FJ1GzNcC'></span></strong>
 </div>
 </div>
 
@@ -248,7 +248,7 @@ Mohamed Bouadi, **Pratinav Seth**, Aditya Tanna, Vinay Kumar Sankarapu
 
 Mohamed Bouadi, **Pratinav Seth**, Aditya Tanna, Vinay Kumar Sankarapu
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:aqlVkmm33-oC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:aqlVkmm33-oC'></span></strong>
 </div>
 </div>
 
@@ -259,7 +259,7 @@ Mohamed Bouadi, **Pratinav Seth**, Aditya Tanna, Vinay Kumar Sankarapu
 
 Aditya Tanna, **Pratinav Seth**, Mohamed Bouadi, Vinay Kumar Sankarapu
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:9ZlFYXVOiuMC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:9ZlFYXVOiuMC'></span></strong>
 </div>
 </div>
 
@@ -270,7 +270,7 @@ Aditya Tanna, **Pratinav Seth**, Mohamed Bouadi, Vinay Kumar Sankarapu
 
 Aditya Tanna, **Pratinav Seth**, Mohamed Bouadi, Utsav Avaiya, Vinay Kumar Sankarapu
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:M3ejUd6NZC8C) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:M3ejUd6NZC8C'></span></strong>
 </div>
 </div>
 
@@ -319,13 +319,13 @@ Aditya Tanna, Mitul Solanki, Mohamed Bouadi, Nassim Bouarour, **Pratinav Seth**,
 
 *Libraries I designed or helped build, plus related team tools.*
 
-- [TabTune](https://arxiv.org/abs/2511.02802) · Unified inference and fine-tuning library for tabular foundation models (21 models, 7 architecture families). **WWW 2026 Demo** (116⭐).
-- [AlignTune](https://arxiv.org/abs/2602.09621) · Modular post-training toolkit: SFT, DPO, GRPO, and RLHF with interchangeable backends. **Pre-Print 2026** (37⭐).
-- [DLBacktrace v2](https://github.com/AryaXAI/DLBacktrace) · `torch.export`-based, model-agnostic explainability for LLMs and MoEs with CUDA acceleration. **Pre-Print 2026** (26⭐).
-- [CuratorKIT](https://arxiv.org/abs/2606.21631) · Provenance-grounded data-curation and synthetic-generation pipeline for LLM post-training. **Pre-Print 2026** (24⭐).
-- [xai_evals](https://arxiv.org/pdf/2502.03014) · Framework for evaluating post-hoc local explanation methods. **Technical Report 2025** (15⭐).
-- [CircuitKIT](https://arxiv.org/abs/2607.19317) · Circuit discovery, evaluation, and application toolkit for mechanistic interpretability. **Pre-Print 2026** (14⭐).
-- [SafeTune](https://github.com/Lexsi-Labs/SafeTune) · Unified library for auditing and repairing safety drift in fine-tuned LLMs. **EMNLP 2026 System Demonstrations** (7⭐).
+- [TabTune](https://arxiv.org/abs/2511.02802) · Unified inference and fine-tuning library for tabular foundation models (21 models, 7 architecture families). **WWW 2026 Demo** (137⭐).
+- [AlignTune](https://arxiv.org/abs/2602.09621) · Modular post-training toolkit: SFT, DPO, GRPO, and RLHF with interchangeable backends. **Pre-Print 2026** (44⭐).
+- [DLBacktrace v2](https://github.com/AryaXAI/DLBacktrace) · `torch.export`-based, model-agnostic explainability for LLMs and MoEs with CUDA acceleration. **Pre-Print 2026** (28⭐).
+- [CuratorKIT](https://arxiv.org/abs/2606.21631) · Provenance-grounded data-curation and synthetic-generation pipeline for LLM post-training. **Pre-Print 2026** (30⭐).
+- [xai_evals](https://arxiv.org/pdf/2502.03014) · Framework for evaluating post-hoc local explanation methods. **Technical Report 2025** (18⭐).
+- [CircuitKIT](https://arxiv.org/abs/2607.19317) · Circuit discovery, evaluation, and application toolkit for mechanistic interpretability. **NeurIPS 2026 Workshop** (26⭐).
+- [SafeTune](https://github.com/Lexsi-Labs/SafeTune) · Unified library for auditing and repairing safety drift in fine-tuned LLMs. **EMNLP 2026 System Demonstrations** (19⭐).
 - [AuditKIT](https://auditkit.lexsi.ai/) · Source-available library for model evaluation across benchmarks, LLM-as-judge, RAG, performance and cost metrics, comparison, and experiment tracking.
 - [AgentTune](https://github.com/Lexsi-Labs/AgentTune) · Source-available framework for building, training, evaluating, and maintaining tool-using LLM agents. See the [pre-print](https://arxiv.org/abs/2610.13335).
 - [DLBacktrace (v1)](https://arxiv.org/pdf/2411.12643) · Model-agnostic explainability for deep learning models. **IJCNN 2025.**
@@ -368,7 +368,7 @@ Akshat Bhandari, Sriya Rallabandi, Sanchit Singhal, Aditya Kasliwal, **Pratinav 
 
 Siddhant Bharadwaj, **Pratinav Seth**, Chandra Sekhar Seelamantula
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:Zph67rFs4hoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:Zph67rFs4hoC'></span></strong>
 </div>
 </div>
 
@@ -440,7 +440,7 @@ Kumud Lakara (†), Akshat Bhandari (†), **Pratinav Seth (†)**, Ujjwal Verma
 
 Danush Khanna, **Pratinav Seth**, Sidhaarth Sredharan Murali, Aditya Kumar Guru, Siddharth Shukla, Tanuj Tyagi, Sandeep Chaurasia, Kripabandhu Ghosh
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:kNdYIx-mwKoC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:kNdYIx-mwKoC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:YOwf2qJgpHMC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:YOwf2qJgpHMC'></span></strong>
 </div>
 </div>
 
@@ -510,7 +510,7 @@ Aditya Kasliwal, Aryan Kamani, Ishaan Gakhar, **Pratinav Seth**, Sriya Rallaband
 
 Aditya Kasliwal, Ishaan Gakhar, Aryan Kamani, **Pratinav Seth**, Ujjwal Verma
 
-[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:8k81kl-MbHgC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:8k81kl-MbHgC'></span></strong>
+[**Citations**](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=DwBn1fcAAAAJ&citation_for_view=DwBn1fcAAAAJ:QIV2ME_5wuYC) <strong><span class='show_paper_citations' data='DwBn1fcAAAAJ:QIV2ME_5wuYC'></span></strong>
 </div>
 </div>
 
