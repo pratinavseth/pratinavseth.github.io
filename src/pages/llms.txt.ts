@@ -16,7 +16,7 @@ export const GET: APIRoute = async () => {
   const lines = [
     `# ${site.name}`,
     '',
-    `> ${site.role} at ${site.org}, leading the Model Science group (India & Paris). Works on post-training safety, alignment and mechanistic interpretability for language models, plus foundation models for structured data. ${s.papers} papers (${s.peerReviewed} peer-reviewed), ${s.citations} Google Scholar citations, h-index ${s.hIndex}. B.Tech Data Science & Engineering, Manipal Institute of Technology (2024). AAAI Undergraduate Consortium Scholar (2023) and Mentor (2026).`,
+    `> ${site.role} at ${site.org}, leading the Model Science group (India & Paris). Works on post-training safety, alignment and mechanistic interpretability for language models; earlier work on tabular foundation models, climate AI, medical imaging and NLP. ${s.papers} papers (${s.peerReviewed} peer-reviewed), ${s.citations} Google Scholar citations, h-index ${s.hIndex}. B.Tech Data Science & Engineering, Manipal Institute of Technology (2024). AAAI Undergraduate Consortium Scholar (2023) and Mentor (2026).`,
     '',
     `Research question: ${site.thesis}`,
     '',

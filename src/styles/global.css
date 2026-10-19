@@ -365,7 +365,9 @@ details > summary { cursor: pointer; }
 
 /* --- Earlier research areas (home) -------------------------------------- */
 .earlier__head { font-size: var(--step-1); margin: var(--space-6) 0 var(--space-3); }
-.earlier { display: grid; grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr)); border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
+.earlier { display: grid; grid-template-columns: 1fr; border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
+@media (min-width: 36rem) { .earlier { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 60rem) { .earlier { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .earlier__item { padding: var(--space-4); border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background: var(--surface); display: flex; flex-direction: column; gap: var(--space-2); }
 .earlier__item h4 { font-family: var(--font-body); font-size: var(--step-0); font-weight: 700; margin: 0; }
 .earlier__item p { font-size: var(--step--1); margin: 0; }

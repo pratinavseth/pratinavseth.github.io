@@ -40,7 +40,7 @@ const journey = [
   { date: '2024–now', org: 'Lexsi Labs', what: 'Research Scientist to Lead Research Scientist, Model Science' },
 ];
 
-// Three research threads, each with a live paper count from the data file.
+// Current research threads, each with a live paper count from the data file.
 const threads = [
   {
     title: 'Post-training safety & alignment',
@@ -52,11 +52,6 @@ const threads = [
     areas: ['Mechanistic Interpretability & XAI'],
     text: 'Finding the circuits behind refusal and other behaviours, testing whether they are faithful, and acting on them: C-ΔΘ, CircuitKIT, unlearning via circuit attribution. Built on earlier post-hoc explainability work: DLBacktrace (IJCNN 2025), xai_evals and XAI metrics for compliance.',
   },
-  {
-    title: 'Foundation models for structured data',
-    areas: ['Tabular Foundation Models & Distillation'],
-    text: 'The Orion tabular foundation models and TabTune, plus distillation, ensembling and deployments in health and credit risk.',
-  },
 ].map((t) => ({
   ...t,
   count: pubs.filter((p) => t.areas.includes(p.data.area)).length,
@@ -65,6 +60,12 @@ const threads = [
 
 // Earlier research areas: years, counts and highlights all come from the data file.
 const earlierAreas = [
+  {
+    area: 'Tabular Foundation Models & Distillation',
+    title: 'Foundation models for structured data',
+    text: 'The Orion tabular foundation models and TabTune, plus distillation, ensembling, and deployments in health and credit risk.',
+    highlights: ['orion-bix', 'tabtune'],
+  },
   {
     area: 'Climate Change & Earth Observation',
     title: 'Climate & earth observation',
