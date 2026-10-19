@@ -162,9 +162,15 @@
     border-top: 1px solid $border-color;
 
     .stat-tile {
-      padding: 0 1.75em 0 0;
-      margin-right: 1.75em;
+      // tighter on phones so all three tiles fit on one row
+      padding: 0 0.75em 0 0;
+      margin-right: 0.75em;
       border-right: 1px solid $border-color;
+
+      @include breakpoint($medium) {
+        padding-right: 1.75em;
+        margin-right: 1.75em;
+      }
 
       &:last-child {
         margin-right: 0;
