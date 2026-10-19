@@ -4,6 +4,7 @@
 # status: published | preprint | under-review | report   (published = accepted at a peer-reviewed venue)
 # type:   conference | journal | workshop | demo | shared-task | tiny-paper | student-abstract | preprint | under-review | report
 # authors: append * to a name for equal contribution. 'Pratinav Seth' is highlighted automatically.
+# myRole: lead (first author or main hands-on contributor) | senior (mentored the first author or led the design) | coauthor
 # scholarId: the part after 'DwBn1fcAAAAJ:' in your Google Scholar paper URL (citation counts come from it).
 
 - id: gemma-4-safety-repair
@@ -38,6 +39,7 @@
   type: preprint
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: senior
   url: "https://arxiv.org/abs/2602.09621"
   arxiv: "2602.09621"
   scholarId: "L8Ckcad2t8MC"
@@ -55,6 +57,7 @@
   type: workshop
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: senior
   url: "https://arxiv.org/abs/2602.04521"
   arxiv: "2602.04521"
   scholarId: "7PzlFSSx8tAC"
@@ -75,6 +78,7 @@
   type: conference
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: senior
   url: "https://arxiv.org/abs/2606.12342"
   arxiv: "2606.12342"
   scholarId: "R3hNpaxXUhUC"
@@ -95,6 +99,7 @@
   type: preprint
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: senior
   url: "https://arxiv.org/abs/2605.15138"
   arxiv: "2605.15138"
   scholarId: "hC7cP41nSMkC"
@@ -111,6 +116,7 @@
   type: preprint
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: lead
   url: "https://arxiv.org/abs/2605.15164"
   arxiv: "2605.15164"
   scholarId: "-f6ydRqryjwC"
@@ -129,6 +135,7 @@
   type: workshop
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: senior
   url: "https://arxiv.org/abs/2608.16852"
   arxiv: "2608.16852"
   image: compliance-detectors-fig.png
@@ -145,6 +152,7 @@
   type: workshop
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: senior
   url: "https://arxiv.org/abs/2610.12361"
   arxiv: "2610.12361"
   image: cited-but-not-consulted-fig.png
@@ -164,6 +172,7 @@
   type: workshop
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: senior
   url: "https://arxiv.org/abs/2610.12313"
   arxiv: "2610.12313"
   image: verdict-without-the-rule-fig.png
@@ -182,6 +191,7 @@
   type: preprint
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: senior
   url: "https://arxiv.org/abs/2610.02173"
   arxiv: "2610.02173"
   image: every-ablation-fig.png
@@ -201,6 +211,7 @@
   type: preprint
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: senior
   url: "https://arxiv.org/abs/2610.13335"
   arxiv: "2610.13335"
   image: agenttune-fig.png
@@ -218,6 +229,7 @@
   type: demo
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: lead
   url: "https://openreview.net/forum?id=5Hl0P9faYV"
   image: safetune-fig.png
   imageAlt: "SafeTune pipeline: drift induction, a repair registry of harden, recover, unlearn and steer methods, shared instrumentation, and re-evaluation before deployment"
@@ -236,6 +248,7 @@
   type: workshop
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: lead
   image: drift-then-repair-fig.png
   imageAlt: "Evaluation pipeline: aligned base model, benign LoRA fine-tuning, drifted checkpoint, then harden, recover or unlearn repairs and safety-capability evaluation"
 
@@ -249,6 +262,7 @@
   type: under-review
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: lead
   image: self-calibrating-fig.png
   imageAlt: "Self-calibrating repair: the aligned-minus-base task vector is masked and scaled by a 1-D search against an MMLU floor"
 
@@ -261,6 +275,7 @@
   type: workshop
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: lead
 
 - id: curatorkit
   title: "CuratorKIT: Data Curation and Synthetic Data Generation for LLM Post-Training"
@@ -274,6 +289,7 @@
   type: preprint
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: senior
   url: "https://arxiv.org/abs/2606.21631"
   arxiv: "2606.21631"
   image: curatorkit-fig.png
@@ -291,6 +307,7 @@
   type: conference
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: senior
   url: "https://openreview.net/forum?id=X49HukIVLk"
   scholarId: "e5wmG9Sq2KIC"
   image: curatorkit-provenance-fig.png
@@ -311,6 +328,7 @@
   type: under-review
   year: 2026
   area: "Safety Post-Training & Alignment"
+  myRole: senior
 
 - id: interpretability-as-alignment
   title: "Interpretability as Alignment: Making Internal Understanding a Design Principle"
@@ -323,6 +341,7 @@
   type: workshop
   year: 2025
   area: "Mechanistic Interpretability & XAI"
+  myRole: senior
   url: "https://arxiv.org/abs/2509.08592"
   arxiv: "2509.08592"
   scholarId: "4TOpqqG69KYC"
@@ -342,6 +361,7 @@
   type: workshop
   year: 2025
   area: "Mechanistic Interpretability & XAI"
+  myRole: senior
   url: "https://arxiv.org/abs/2507.08330"
   arxiv: "2507.08330"
   scholarId: "_kc_bZDykSQC"
@@ -358,6 +378,7 @@
   type: workshop
   year: 2025
   area: "Mechanistic Interpretability & XAI"
+  myRole: lead
   url: "https://arxiv.org/abs/2502.04695"
   arxiv: "2502.04695"
   scholarId: "KlAtU1dfN6UC"
@@ -377,6 +398,7 @@
   type: conference
   year: 2025
   area: "Mechanistic Interpretability & XAI"
+  myRole: senior
   url: "https://arxiv.org/pdf/2411.12643"
   arxiv: "2411.12643"
   scholarId: "MXK_kJrjxJIC"
@@ -396,6 +418,7 @@
   type: report
   year: 2025
   area: "Mechanistic Interpretability & XAI"
+  myRole: lead
   url: "https://arxiv.org/pdf/2502.03014"
   arxiv: "2502.03014"
   scholarId: "kNdYIx-mwKoC"
@@ -414,6 +437,7 @@
   type: workshop
   year: 2026
   area: "Mechanistic Interpretability & XAI"
+  myRole: lead
   url: "https://arxiv.org/abs/2607.19317"
   arxiv: "2607.19317"
   scholarId: "j3f4tGmQtD8C"
@@ -432,6 +456,7 @@
   type: under-review
   year: 2026
   area: "Mechanistic Interpretability & XAI"
+  myRole: senior
   url: "https://arxiv.org/abs/2607.05355"
   arxiv: "2607.05355"
   scholarId: "RHpTSmoSYBkC"
@@ -450,6 +475,7 @@
   type: workshop
   year: 2026
   area: "Mechanistic Interpretability & XAI"
+  myRole: senior
   image: faithfulness-not-actionability-fig.png
   imageAlt: "Accuracy retention versus patching faithfulness for circuit selectors on Llama and Gemma under structured pruning"
 
@@ -464,6 +490,7 @@
   type: workshop
   year: 2026
   area: "Mechanistic Interpretability & XAI"
+  myRole: senior
 
 - id: dlbacktrace-v2
   title: "DLBacktrace v2: Extending Model-Agnostic Interpretability for LLMs and MoEs with CUDA Acceleration"
@@ -478,6 +505,7 @@
   type: preprint
   year: 2026
   area: "Mechanistic Interpretability & XAI"
+  myRole: lead
   url: "https://github.com/Lexsi-Labs/DLBacktrace"
   image: dlbacktrace-v2-fig.png
   imageAlt: "Speedup of DLBacktrace v2 over v1 by sequence length, reaching over 1,400 times faster at 1,024 tokens"
@@ -494,6 +522,7 @@
   type: workshop
   year: 2025
   area: "Tabular Foundation Models & Distillation"
+  myRole: senior
   url: "https://arxiv.org/abs/2511.02818"
   arxiv: "2511.02818"
   scholarId: "qxL8FJ1GzNcC"
@@ -512,6 +541,7 @@
   type: conference
   year: 2026
   area: "Tabular Foundation Models & Distillation"
+  myRole: senior
   url: "https://huggingface.co/Lexsi/Orion-BiX"
   scholarId: "aqlVkmm33-oC"
   image: orionbix.png
@@ -529,6 +559,7 @@
   type: conference
   year: 2026
   area: "Tabular Foundation Models & Distillation"
+  myRole: senior
   url: "https://arxiv.org/abs/2601.09654"
   arxiv: "2601.09654"
   scholarId: "9ZlFYXVOiuMC"
@@ -548,6 +579,7 @@
   type: conference
   year: 2026
   area: "Tabular Foundation Models & Distillation"
+  myRole: senior
   url: "https://arxiv.org/abs/2511.02802"
   arxiv: "2511.02802"
   scholarId: "M3ejUd6NZC8C"
@@ -567,6 +599,7 @@
   type: workshop
   year: 2026
   area: "Tabular Foundation Models & Distillation"
+  myRole: senior
   url: "https://arxiv.org/abs/2605.18654"
   arxiv: "2605.18654"
   image: pocket-fm-distillation-fig.png
@@ -586,6 +619,7 @@
   type: workshop
   year: 2026
   area: "Tabular Foundation Models & Distillation"
+  myRole: senior
   url: "https://arxiv.org/abs/2605.18696"
   arxiv: "2605.18696"
   image: ensembling-tfm-fig.png
@@ -604,6 +638,7 @@
   type: workshop
   year: 2026
   area: "Tabular Foundation Models & Distillation"
+  myRole: senior
   url: "https://arxiv.org/abs/2605.18702"
   arxiv: "2605.18702"
   image: sd4h-distillation-fig.png
@@ -625,6 +660,7 @@
   type: workshop
   year: 2026
   area: "Tabular Foundation Models & Distillation"
+  myRole: senior
   url: "https://arxiv.org/abs/2605.18635"
   arxiv: "2605.18635"
   image: sigmod-credit-risk-fig.png
@@ -644,6 +680,7 @@
   type: conference
   year: 2025
   area: "Climate Change & Earth Observation"
+  myRole: lead
   url: "https://arxiv.org/pdf/2410.09032"
   arxiv: "2410.09032"
   scholarId: "5nxA0vEk-isC"
@@ -664,6 +701,7 @@
   type: workshop
   year: 2022
   area: "Climate Change & Earth Observation"
+  myRole: senior
   url: "https://arxiv.org/abs/2211.14851"
   arxiv: "2211.14851"
   scholarId: "2osOgNQ5qMEC"
@@ -682,6 +720,7 @@
   type: tiny-paper
   year: 2024
   area: "Climate Change & Earth Observation"
+  myRole: senior
   url: "https://openreview.net/pdf?id=tJPLJS97X4"
   scholarId: "roLk4NBRz8UC"
 
@@ -696,6 +735,7 @@
   type: conference
   year: 2025
   area: Medical Imaging
+  myRole: lead
   url: "https://openreview.net/forum?id=gqLXT8Edf3"
   scholarId: "Zph67rFs4hoC"
   image: od_midl.png
@@ -711,6 +751,7 @@
   type: workshop
   year: 2024
   area: Medical Imaging
+  myRole: lead
   url: "https://openaccess.thecvf.com/content/WACV2024W/Pretrain/papers/Seth_Does_the_Fairness_of_Your_Pre-Training_Hold_Up_Examining_the_WACVW_2024_paper.pdf"
   scholarId: "LkGwnXOMwfcC"
   image: Diagram_FAIMI.jpg
@@ -729,6 +770,7 @@
   type: workshop
   year: 2023
   area: Medical Imaging
+  myRole: senior
   url: "https://arxiv.org/pdf/2308.13883"
   arxiv: "2308.13883"
   scholarId: "Y0pCki6q_DkC"
@@ -748,6 +790,7 @@
   type: workshop
   year: 2022
   area: Medical Imaging
+  myRole: lead
   url: "https://arxiv.org/pdf/2211.03148"
   arxiv: "2211.03148"
   scholarId: "u-x6o8ySG0sC"
@@ -766,6 +809,7 @@
   type: workshop
   year: 2021
   area: "Uncertainty & Robustness"
+  myRole: lead
   url: "https://arxiv.org/abs/2111.04665"
   arxiv: "2111.04665"
   scholarId: "u5HHmVD_uO8C"
@@ -782,6 +826,7 @@
   type: tiny-paper
   year: 2023
   area: "Uncertainty & Robustness"
+  myRole: lead
   url: "https://arxiv.org/pdf/2304.04539"
   arxiv: "2304.04539"
   scholarId: "IjCSPb-OGe4C"
@@ -799,6 +844,7 @@
   type: preprint
   year: 2023
   area: "Uncertainty & Robustness"
+  myRole: lead
   url: "https://arxiv.org/pdf/2303.01268"
   arxiv: "2303.01268"
   scholarId: "qjMakFHDy7sC"
@@ -821,6 +867,7 @@
   type: conference
   year: 2025
   area: "NLP & AI for Social Good"
+  myRole: lead
   url: "https://aclanthology.org/2025.acl-short.52/"
   scholarId: "YOwf2qJgpHMC"
   image: Manipulation_Techniques.png
@@ -839,6 +886,7 @@
   type: workshop
   year: 2024
   area: "NLP & AI for Social Good"
+  myRole: lead
   url: "https://arxiv.org/pdf/2407.04721"
   arxiv: "2407.04721"
   scholarId: "hqOjcs7Dif8C"
@@ -856,6 +904,7 @@
   type: shared-task
   year: 2023
   area: "NLP & AI for Social Good"
+  myRole: senior
   url: "https://aclanthology.org/2023.semeval-1.171/"
   scholarId: "zYLM7Y9cAGgC"
   image: sss-semeval-fig.png
@@ -873,6 +922,7 @@
   type: shared-task
   year: 2023
   area: "NLP & AI for Social Good"
+  myRole: lead
   url: "https://aclanthology.org/2023.banglalp-1.40/"
   scholarId: "ufrVoPGSRksC"
   image: rsm-nlp-blp-fig.png
@@ -889,6 +939,7 @@
   type: shared-task
   year: 2024
   area: "NLP & AI for Social Good"
+  myRole: senior
   url: "https://aclanthology.org/2024.bionlp-1.78.pdf"
   scholarId: "0EnyYjriUFMC"
   image: hgp-nlp-table.png
@@ -906,6 +957,7 @@
   type: workshop
   year: 2023
   area: "Vision & Super-Resolution"
+  myRole: senior
   url: "https://openaccess.thecvf.com/content/CVPR2023W/PBVS/html/Kasliwal_CoReFusion_Contrastive_Regularized_Fusion_for_Guided_Thermal_Super-Resolution_CVPRW_2023_paper.html"
   scholarId: "UeHWp8X0CEIC"
   image: unet-f.png
@@ -924,6 +976,7 @@
   type: student-abstract
   year: 2024
   area: "Vision & Super-Resolution"
+  myRole: senior
   url: "https://ojs.aaai.org/index.php/AAAI/article/download/30463/32568"
   scholarId: "Se3iqnhoufwC"
   image: img3.jpg
@@ -942,6 +995,7 @@
   type: journal
   year: 2026
   area: "Vision & Super-Resolution"
+  myRole: senior
   url: "https://doi.org/10.1038/s41598-026-36027-x"
   scholarId: "QIV2ME_5wuYC"
   image: LAPGSR.jpg

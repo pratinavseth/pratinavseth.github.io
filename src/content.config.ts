@@ -20,6 +20,7 @@ const publications = defineCollection({
     type: z.enum(TYPE),
     year: z.number().int().min(2015).max(2100),
     area: z.string().min(1),
+    myRole: z.enum(['lead', 'senior', 'coauthor']).optional(),
     url: z.url().optional(),
     arxiv: z.string().regex(/^\d{4}\.\d{4,5}$/).optional(),
     scholarId: z.string().optional(),

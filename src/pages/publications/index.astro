@@ -5,7 +5,7 @@ import PaperCard from '../../components/PaperCard.astro';
 import LibraryCard from '../../components/LibraryCard.astro';
 import { site } from '../../config/site';
 import { libraries } from '../../lib/data';
-import { getPubs, getStats, getAreas, isMine, STATUS_LABEL } from '../../lib/pubs';
+import { getPubs, getStats, getAreas, isMine, STATUS_LABEL, ROLE_LABEL, ROLE_HINT } from '../../lib/pubs';
 import { getStars } from '../../lib/remote';
 
 const stats = await getStats();
@@ -17,6 +17,7 @@ const featured = pubs.filter((p) => p.data.featured).slice(0, 6);
 const years = [...new Set(pubs.map((p) => p.data.year))].sort((a, b) => b - a);
 const statuses = (['published', 'preprint', 'under-review', 'report'] as const).filter((s) => pubs.some((p) => p.data.status === s));
 const countBy = <K,>(key: (p: (typeof pubs)[number]) => K, v: K) => pubs.filter((p) => key(p) === v).length;
+const roles = (['lead', 'senior', 'coauthor'] as const).filter((r) => pubs.some((p) => p.data.myRole === r));
 const libs = await Promise.all(libraries.map(async (l) => ({ ...l, liveStars: await getStars(l.repo, l.stars) })));
 ---
 
@@ -28,7 +29,9 @@ const libs = await Promise.all(libraries.map(async (l) => ({ ...l, liveStars: aw
     <h1>Publications</h1>
     <p>
       {stats.papers} papers, {stats.peerReviewed} of them peer-reviewed, with {stats.citationsRounded} citations on{" "}
-      <a href={site.links.scholar}>Google Scholar</a>. Each title opens a page with the abstract, links and BibTeX.
+      <a href={site.links.scholar}>Google Scholar</a>. I’m the lead author on {countBy((p) => p.data.myRole, 'lead')} and
+      senior author on {countBy((p) => p.data.myRole, 'senior')}, where I mentored the first author or led the design.
+      Each title opens a page with the abstract, links and BibTeX.
     </p>
   </header>
 
@@ -52,6 +55,13 @@ const libs = await Promise.all(libraries.map(async (l) => ({ ...l, liveStars: aw
         <button class="chip" type="button" data-filter="status" data-value="" aria-pressed="true">All</button>
         {statuses.map((s) => (
           <button class="chip" type="button" data-filter="status" data-value={s} aria-pressed="false">{STATUS_LABEL[s]}<span class="chip__n">{countBy((p) => p.data.status, s)}</span></button>
+        ))}
+      </div>
+      <div class="filters__row">
+        <span class="filters__label">My role</span>
+        <button class="chip" type="button" data-filter="role" data-value="" aria-pressed="true">All</button>
+        {roles.map((r) => (
+          <button class="chip" type="button" data-filter="role" data-value={r} aria-pressed="false" title={ROLE_HINT[r]}>{ROLE_LABEL[r]}<span class="chip__n">{countBy((p) => p.data.myRole, r)}</span></button>
         ))}
       </div>
       <div class="filters__row">
@@ -98,9 +108,9 @@ const libs = await Promise.all(libraries.map(async (l) => ({ ...l, liveStars: aw
   const root = document.querySelector<HTMLElement>('[data-filters]');
   if (root) {
     root.dataset.js = 'on';
-    const state: Record<string, string> = { area: '', status: '', year: '', q: '' };
+    const state: Record<string, string> = { area: '', status: '', role: '', year: '', q: '' };
     const params = new URLSearchParams(location.search);
-    for (const k of ['area', 'status', 'year', 'q']) state[k] = params.get(k) ?? '';
+    for (const k of ['area', 'status', 'role', 'year', 'q']) state[k] = params.get(k) ?? '';
 
     const chips = [...root.querySelectorAll<HTMLButtonElement>('[data-filter]')];
     const search = root.querySelector<HTMLInputElement>('#pub-search')!;
@@ -117,6 +127,7 @@ const libs = await Promise.all(libraries.map(async (l) => ({ ...l, liveStars: aw
         const ok =
           (!state.area || p.dataset.area === state.area) &&
           (!state.status || p.dataset.status === state.status) &&
+          (!state.role || p.dataset.role === state.role) &&
           (!state.year || p.dataset.year === state.year) &&
           (!q || (p.dataset.search ?? '').includes(q));
         p.hidden = !ok;

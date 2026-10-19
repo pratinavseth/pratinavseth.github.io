@@ -50,6 +50,17 @@ export const TYPE_LABEL: Record<Pub['data']['type'], string> = {
   report: 'Report',
 };
 
+export const ROLE_LABEL: Record<'lead' | 'senior' | 'coauthor', string> = {
+  lead: 'Lead author',
+  senior: 'Senior author',
+  coauthor: 'Co-author',
+};
+export const ROLE_HINT: Record<'lead' | 'senior' | 'coauthor', string> = {
+  lead: 'First author or main hands-on contributor',
+  senior: 'Mentored the first author or led the design',
+  coauthor: 'Co-author',
+};
+
 export const abstractOf = (p: Pub) => (p.data.arxiv ? abstracts[p.data.arxiv]?.abstract : undefined);
 
 export function pdfOf(p: Pub): string | undefined {

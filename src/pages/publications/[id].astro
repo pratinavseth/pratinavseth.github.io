@@ -8,7 +8,7 @@ import { img, hasImg } from '../../lib/images';
 import { inline } from '../../lib/md';
 import {
   abstractOf, authorsOf, bibtex, citationsOf, getPubs, isMine, pageOf, pdfOf,
-  STATUS_LABEL, TYPE_LABEL, type Pub,
+  ROLE_HINT, ROLE_LABEL, STATUS_LABEL, TYPE_LABEL, type Pub,
 } from '../../lib/pubs';
 
 export const getStaticPaths = (async () => {
@@ -94,6 +94,7 @@ const bib = bibtex(pub);
     <div class="card__meta" style="margin-top:var(--space-4)">
       <span class:list={['tag', d.status === 'published' ? 'tag--solid' : 'tag--quiet']}>{d.venue}</span>
       <span class="tag tag--quiet">{d.year}</span>
+      {d.myRole && <span class="tag tag--accent" title={ROLE_HINT[d.myRole]}>My role: {ROLE_LABEL[d.myRole]}</span>}
       <span class="tag tag--quiet">{d.status === 'published' ? TYPE_LABEL[d.type] : STATUS_LABEL[d.status]}</span>
       {typeof cites === 'number' && <span class="tag tag--quiet">{cites} citation{cites === 1 ? '' : 's'}</span>}
     </div>
