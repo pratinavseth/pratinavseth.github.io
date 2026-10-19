@@ -52,6 +52,7 @@ export const experience = load(
       roles: z.array(
         z.object({
           date: z.string(),
+          theme: z.string().optional(),
           role: z.string(),
           points: z.array(z.object({ label: z.string().optional(), text: z.string() })).default([]),
           papers: z.array(z.string()).default([]),

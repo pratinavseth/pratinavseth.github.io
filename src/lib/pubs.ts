@@ -155,6 +155,7 @@ export async function fill(text: string): Promise<string> {
     stars: s.starsRounded,
     hIndex: String(s.hIndex),
     ossLibraries: String(s.ossLibraries),
+    libraryCount: String(libraries.length),
   };
   return text.replace(/\{(\w+)\}/g, (m, k: string) => map[k] ?? m);
 }

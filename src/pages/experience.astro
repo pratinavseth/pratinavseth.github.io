@@ -4,9 +4,17 @@ import { experience, systems, libraries } from '../lib/data';
 import { getStars } from '../lib/remote';
 import LibraryCard from '../components/LibraryCard.astro';
 import { inline } from '../lib/md';
-import { getPubs, pageOf } from '../lib/pubs';
+import { getPubs, pageOf, fill } from '../lib/pubs';
 
 const pubs = await getPubs();
+const mine = pubs.filter((p) => p.data.authors.some((x) => x.replace(/\*$/, '') === 'Pratinav Seth'));
+const glance = [
+  { n: `${new Date().getFullYear() - 2021}+`, label: 'Years doing research' },
+  { n: '20+', label: 'Researchers & interns led' },
+  { n: String(libraries.length), label: 'Libraries built or led' },
+  { n: String(mine.filter((p) => p.data.myRole === 'lead').length), label: 'Papers as lead author' },
+  { n: String(mine.filter((p) => p.data.myRole === 'senior').length), label: 'Papers as senior author' },
+];
 const libs = await Promise.all(libraries.map(async (l) => ({ ...l, liveStars: await getStars(l.repo, l.stars) })));
 const byId = new Map(pubs.map((p) => [p.id, p]));
 for (const st of systems.stages) {
@@ -14,6 +22,9 @@ for (const st of systems.stages) {
     if (t.paper && !byId.has(t.paper)) throw new Error(`systems.yaml: tool "${t.name}" links unknown paper id "${t.paper}"`);
   }
 }
+// Fill {stars}/{libraryCount}/... placeholders in role text from live data.
+const fills = new Map<string, string>();
+for (const g of experience) for (const r of g.roles) for (const pt of r.points) fills.set(pt.text, await fill(pt.text));
 for (const g of experience) {
   for (const r of g.roles) {
     for (const id of r.papers) {
@@ -30,6 +41,9 @@ for (const g of experience) {
   <header class="page-head container">
     <h1>Experience</h1>
     <p>I design and ship systems that keep LLMs and agents safe and aligned through fine-tuning and deployment, and I lead the research behind them.</p>
+    <div class="stats" style="max-width:60rem">
+      {glance.map((g) => <div class="stat"><span class="stat__n">{g.n}</span><span class="stat__label">{g.label}</span></div>)}
+    </div>
   </header>
 
   <section class="section container" id="systems" aria-labelledby="systems-title">
@@ -76,13 +90,14 @@ for (const g of experience) {
         <div class="role">
           <div class="role__date">{r.date}</div>
           <div>
-            <p class="role__title" set:html={inline(r.role)} />
+            {r.theme && <h3 class="role__theme">{r.theme}</h3>}
+            <p class:list={['role__title', r.theme && 'role__title--sub']} set:html={inline(r.role)} />
             {r.points.length > 0 && (
               <ul>
                 {r.points.map((pt) => (
                   <li>
                     {pt.label && <span class="role__label">{pt.label}: </span>}
-                    <span set:html={inline(pt.text)} />
+                    <span set:html={inline(fills.get(pt.text) ?? pt.text)} />
                   </li>
                 ))}
               </ul>

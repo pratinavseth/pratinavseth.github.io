@@ -1,33 +1,30 @@
-# Experience page. `role` and point text accept inline Markdown (links, **bold**).
+# Experience page. `theme` is the bold one-line summary; `role` (formal title) and point text accept inline Markdown.
+# Point text may use {stars}, {libraryCount}, {peerReviewed} placeholders, filled from live data.
 # `papers` lists ids from publications.yaml; titles and venues are filled in from there.
 
 - group: "Research positions"
   roles:
     - date: "2026.04 – Present"
+      theme: "Research and engineering lead for AI safety & alignment"
       role: "**Lead Research Scientist** at [Lexsi Labs, Lexsi.ai](https://lexsi.ai/) (Aurionpro Solutions Group), Remote"
       points:
-        - label: "Systems architecture"
-          text: "Architected and lead the lab's [alignment & safety stack](#systems): composable libraries for data curation (**CuratorKIT**, which I designed and mentored), post-training (**AlignTune**, **AgentTune**), interpretability (**CircuitKIT** and a post-hoc interpretability library), safety repair (**SafeTune**), compression (pruning and quantization libraries) and evaluation (**AuditKIT**), all writing to one shared, reproducible evaluation record. Designed the release pattern: internal builds for client work, public releases, and lightweight studio apps for demos."
+        - label: "Platform architecture"
+          text: "Architected the lab's [alignment & safety stack](#systems): {libraryCount} single-purpose libraries for data curation, post-training, interpretability, safety repair, compression and evaluation, all writing to one shared evaluation record. The open-source ones have {stars} GitHub stars."
         - label: "Post-training platform"
-          text: "Led and built **AlignTune**, then scaled it as design lead and mentor into a production-grade, multi-backend post-training system covering SFT, preference and RL algorithms (DPO, GRPO, RLHF-style), model merging and domain-specific alignment auditing, used in BFSI, legal and healthcare work; built the data-curation → reward pipelines that feed it, and designed and led [**AgentTune**](https://arxiv.org/abs/2610.13335), mentoring the team that built it, for training tool-using agents."
-        - label: "Safety repair pipelines"
-          text: "Led [**SafeTune**](https://github.com/Lexsi-Labs/SafeTune) (EMNLP 2026 Demo): audits safety drift after fine-tuning and repairs it with small, verified weight edits in a localize → edit → verify loop with capability and collateral checks. Co-led **C-ΔΘ**, circuit-restricted weight arithmetic for selective refusal; contributed to the team's Gemma 4 31B multilingual and cybersecurity [safety repair](https://openreview.net/forum?id=Mgnk5R9Z0l)."
-        - label: "Interpretability engine"
-          text: "Led and built **CircuitKIT** for circuit discovery, attribution, interchange interventions and dose-response analysis, and unified post-hoc tooling (LRP, Integrated Gradients, DL-Backtrace) for analyzing refusal; compared additive steering with weight edits as interventions."
-        - label: "Inference-time alignment"
-          text: "Developed [**ALIGNBEAM**](https://arxiv.org/abs/2606.12342) (EMNLP 2026): transfers safety from an aligned anchor model at decoding time, even across model families with different vocabularies, with no weight changes."
-        - label: "Efficiency"
-          text: "Lead structured pruning and quantization (AWQ and others) for deployment, with an internal pruning library and a quantization library I designed and mentored, plus checks that compression keeps safety behavior intact."
-        - label: "Evaluation infrastructure"
-          text: "Config-driven, reproducible evaluation harnesses with LLM judges, tiny-model CPU tests and CI across CUDA and Apple MPS; contributed to [**AuditKIT**](https://auditkit.lexsi.ai/) for shared audit records."
-        - label: "Applied research → product"
-          text: "Research programme on whether safety survives model change: long context in state-space and hybrid models, language shift, tool use, and authorization in multi-step agents. Applied to regulatory-compliance, financial-services, insurance and Indic-language deployments; each question becomes a benchmark, and each benchmark a library feature."
-        - label: "Engineering platform"
-          text: "Review code across the engineering organization, including the lab's internal AI coding-agent platform."
+          text: "Led and built **AlignTune**, then scaled it as design lead into the multi-backend post-training system (SFT, DPO, GRPO, RLHF-style training, model merging) behind the lab's BFSI, legal and healthcare work."
+        - label: "Safety repair"
+          text: "Led and built [**SafeTune**](https://github.com/Lexsi-Labs/SafeTune) (EMNLP 2026 Demo), which audits safety drift after fine-tuning and repairs it with small weight edits checked for capability loss. Co-led **C-ΔΘ**, circuit-restricted weight edits for selective refusal (ICML 2026 workshop)."
+        - label: "Interpretability & agents"
+          text: "Led and built **CircuitKIT** for circuit discovery, attribution and interventions. Designed and led [**AgentTune**](https://arxiv.org/abs/2610.13335) for training tool-using agents, mentoring the team that built it."
+        - label: "Compression & evaluation"
+          text: "Built the lab's pruning library and designed its quantization library, with checks that compressed models keep their safety behavior. Set up config-driven evaluation with LLM judges and CI on CUDA and Apple MPS; contributed to [**AuditKIT**](https://auditkit.lexsi.ai/)."
+        - label: "Research output"
+          text: "Of the group's 11 papers accepted at EMNLP 2026 and NeurIPS 2026 workshops, I was first author on 4 and mentored the first authors of the other 7, including [ALIGNBEAM](/publications/alignbeam/) (EMNLP Main) and [Provenance-Grounded Gating](/publications/provenance-grounded-gating/) (EMNLP Findings). Applied the work to regulatory-compliance, financial-services, insurance and Indic-language deployments."
         - label: "Leadership"
-          text: "Lead the Model Science group across India and Paris: research direction, hiring, grants, roadmap and research-to-product integration; set the team's standards for evidence-first measurement, draft-PR review and reproducible evaluation."
+          text: "Lead the Model Science group, 20+ researchers and interns across India and Paris: research direction, hiring, grants and roadmap. Set the team's standards for evidence-first measurement and reproducible evaluation, and review code across engineering, including the lab's internal AI coding-agent platform."
       papers: [aligntune, curatorkit, circuitkit, safetune, c-delta-theta, alignbeam, forgetting-that-sticks, position, provenance-grounded-gating, cited-but-not-consulted, verdict-without-the-rule, every-ablation-is-a-dose, agenttune, gemma-4-safety-repair]
     - date: "2025.07 – 2026.03"
+      theme: "Post-training, interpretability and tabular foundation models"
       role: "**Research Scientist** at [Lexsi Labs, Lexsi.ai](https://lexsi.ai/) (Aurionpro Solutions Group) *[Previously: AryaXAI, Arya.ai]*, Remote"
       points:
         - label: "Model Science Group"
@@ -48,6 +45,7 @@
           text: "Spotlight talk at EurIPS 2025 Workshop; poster at MICCAI Workshop 2025"
       papers: [interpretability-aware-pruning, interpretability-as-alignment, tabtune, orion-msp, orion-bix, exploring-fine-tuning-for-tabular-foundation-models]
     - date: "2024.07 – 2025.06"
+      theme: "Explainability methods and XAI evaluation"
       role: "**Research Scientist** at [AryaXAI Alignment Labs](https://www.aryaxai.com/) *(rebranded to Lexsi Labs in 2025)*, Remote / Mumbai, India"
       points:
         - label: "Research Focus"
@@ -62,6 +60,7 @@
           text: "Served as R&D representative in client-facing engagements and presented AryaXAI solutions at industry forums, including the 5th MLOps Conference"
       papers: [dlbacktrace, xai-evals, bridging-the-gap-in-xai]
     - date: "2024.01 – 2024.06"
+      theme: "Climate AI: finding oil and gas wells from satellites (ICML 2025)"
       role: "Research Intern at [Rolnick Lab, Mila Quebec AI Institute](https://davidrolnick.com/lab/), Remote"
       points:
         - label: "Project"
@@ -73,6 +72,7 @@
         - label: "Outcome"
           text: "Led to ICML 2025 publication on Alberta Wells Dataset"
     - date: "2023.06 – 2023.10"
+      theme: "Generative data augmentation for autonomous driving"
       role: "Computer Vision Research Intern at [Robert Bosch Research and Technology Center India](https://www.linkedin.com/in/pratinav-seth/), Bangalore"
       points:
         - label: "Project"
@@ -82,6 +82,7 @@
         - label: "Mentors"
           text: "Mr. Koustav Mullick (CR/RDT-2), Dr. Amit Kale"
     - date: "2021.06 – 2023.12"
+      theme: "Led an undergraduate AI research wing"
       role: "**Researcher**, AI Research Wing at [Mars Rover Manipal](https://www.marsrovermanipal.com/), Manipal, India"
       points:
         - label: "Progression"
@@ -91,6 +92,7 @@
         - label: "Mentorship"
           text: "Mentored 10+ undergraduates (12+ total collaborators) under Dr. Ujjwal Verma; co-authored their publications, including workshop papers at NeurIPS, CVPR, ICLR, and MICCAI, an AAAI student abstract, and a Nature Scientific Reports journal paper"
     - date: "2023.04 – 2023.12"
+      theme: "Fairness in skin-lesion classification"
       role: "**Undergraduate Researcher** under [Dr. Abhilash K. Pai](https://sites.google.com/site/abhilashkpai), Dept. of Data Science & Computer Application, MIT MAHE, Manipal, India"
       points:
         - label: "Medical AI & Fairness"
@@ -101,6 +103,7 @@
 - group: "Research collaborations"
   roles:
     - date: "2024 – 2026"
+      theme: "Medical AI and LLM safety collaborations"
       role: "Independent Research Collaborator with academic collaborators across IIT Kharagpur, IISc Bangalore, and MAHE, Remote"
       points:
         - label: "Medical AI"
@@ -108,6 +111,7 @@
         - label: "LLM Safety"
           text: "Introspective LLM detection of multi-person mental manipulation in conversations, with Danush Khanna, Sidhaarth Sredharan Murali, and collaborators (ACL 2025 & NAACL-SRW Workshop)"
     - date: "2023.12 – 2024.01"
+      theme: "LLMs for farmers’ questions (AgriLLM)"
       role: "Research Collaborator with [Dr. Amit Agarwal](https://arxiv.org/abs/2407.04721), Wells Fargo AI Center of Excellence, Remote"
       points:
         - label: "AgriLLM"
@@ -115,6 +119,7 @@
         - label: "Outcome"
           text: "Published at the NLP4PI Workshop, EMNLP 2024, and the Undergraduate Consortium at KDD 2024"
     - date: "2022.05 – 2023.12"
+      theme: "Chest X-ray screening and interpretability"
       role: "Research Intern at KLIV Research Group, [IIT Kharagpur](https://www.linkedin.com/in/pratinav-seth/) (PI: Dr. Debdoot Sheet; mentored by Rakshith Satish), Remote"
       points:
         - label: "Healthcare AI"
@@ -122,6 +127,7 @@
         - label: "Interpretability"
           text: "Investigated sanity checks for class activation maps in multi-label chest X-ray classification"
     - date: "2022.10 – 2023.03"
+      theme: "Metric learning research"
       role: "Research Collaborator with Dr. Vijay Kumar BR, [NEC Labs & IIT Roorkee](https://www.linkedin.com/in/pratinav-seth/), Remote"
       points:
         - label: "Focus"
@@ -130,6 +136,7 @@
 - group: "Leadership"
   roles:
     - date: "2022.08 – 2023.09"
+      theme: "Ran a 90-member undergraduate research society"
       role: "Co-President & AI Research Mentor, [Research Society MIT Manipal](https://www.instagram.com/researchsoc/?hl=en), Manipal, India"
       points:
         - label: "Organization"
@@ -137,6 +144,7 @@
         - label: "Mentorship"
           text: "Mentored 10+ undergraduates and co-authored the RSM-NLP team's shared-task papers"
     - date: "2022.11 – 2023.09"
+      theme: "Co-founded an AI/ML club"
       role: "Co-founder & Head of Artificial Intelligence and Machine Learning, [The Data Alchemists](https://www.linkedin.com/company/the-data-alchemists/), Manipal, India"
       points:
         - label: "Co-founding"
@@ -147,6 +155,7 @@
 - group: "Early career"
   roles:
     - date: "2022.06 – 2022.09"
+      theme: "Malware classification (5th of 134 teams)"
       role: "Undergraduate Research Assistant under Dr. Vidya Rao & Dr. Poornima P.K., Dept. of Data Science & Computer Application, MIT MAHE, Manipal, India"
       points:
         - label: "Cybersecurity & AI"
@@ -154,6 +163,7 @@
         - label: "Outcome"
           text: "Placed 5th of 134 teams in the 13th International Cyber Security Data Mining Competition"
     - date: "2022.03 – 2022.05"
+      theme: "Synthetic tabular data"
       role: "Machine Learning Intern at [Eedge.ai](https://www.linkedin.com/in/pratinav-seth/), a deep-learning talent-design platform, Remote"
       points:
         - label: "Synthetic Data & Interpretability"
@@ -161,6 +171,7 @@
         - label: "Mentor"
           text: "Ananta Mahapatra, CTO & Co-Founder"
     - date: "2022.01 – 2022.02"
+      theme: "Healthcare NLP"
       role: "Data Science (NLP) Intern at [CUREYA](https://www.linkedin.com/in/pratinav-seth/), Aspexx Health Solutions, Remote"
       points:
         - label: "Healthcare AI"
