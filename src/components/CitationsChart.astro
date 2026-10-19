@@ -1,0 +1,29 @@
+---
+import type { Stats } from '../lib/pubs';
+
+interface Props {
+  stats: Stats;
+}
+const { stats } = Astro.props;
+const rows = stats.citesPerYear;
+const max = Math.max(...rows.map(([, n]) => n), 1);
+const current = String(new Date().getFullYear());
+---
+
+<figure style="margin:0">
+  <div class="bars" role="img" aria-label={`Google Scholar citations per year: ${rows.map(([y, n]) => `${y}: ${n}`).join(', ')}`}>
+    {rows.map(([, n]) => (
+      <div class="bars__col">
+        <span class="bars__v">{n}</span>
+        <div class="bars__bar" style={`height:${Math.max((n / max) * 100, 1.5)}%`}></div>
+      </div>
+    ))}
+  </div>
+  <div class="bars__axis" aria-hidden="true">
+    {rows.map(([year]) => <span>{year === current ? `${year}*` : year}</span>)}
+  </div>
+  <figcaption class="muted" style="font-size:var(--step--1);margin-top:var(--space-3)">
+    Citations per year, Google Scholar{stats.scholarUpdated && `, as of ${stats.scholarUpdated}`}.
+    {rows.some(([y]) => y === current) && ' *Year to date.'}
+  </figcaption>
+</figure>

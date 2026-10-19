@@ -1,0 +1,154 @@
+---
+import Base from '../../layouts/Base.astro';
+import PaperItem from '../../components/PaperItem.astro';
+import PaperCard from '../../components/PaperCard.astro';
+import { site } from '../../config/site';
+import { libraries } from '../../lib/data';
+import { getPubs, getStats, getAreas, isMine, STATUS_LABEL } from '../../lib/pubs';
+import { getStars } from '../../lib/remote';
+
+const stats = await getStats();
+const all = await getPubs();
+const pubs = all.filter(isMine);
+const team = all.filter((p) => !isMine(p));
+const areas = await getAreas();
+const featured = pubs.filter((p) => p.data.featured).slice(0, 6);
+const years = [...new Set(pubs.map((p) => p.data.year))].sort((a, b) => b - a);
+const statuses = (['published', 'preprint', 'under-review', 'report'] as const).filter((s) => pubs.some((p) => p.data.status === s));
+const countBy = <K,>(key: (p: (typeof pubs)[number]) => K, v: K) => pubs.filter((p) => key(p) === v).length;
+const libs = await Promise.all(libraries.map(async (l) => ({ ...l, liveStars: await getStars(l.repo, l.stars) })));
+---
+
+<Base
+  title="Publications"
+  description={`${stats.papers} papers by ${site.name} (${stats.peerReviewed} peer-reviewed, ${stats.citationsRounded} citations) on LLM post-training, safety alignment, mechanistic interpretability and tabular foundation models.`}
+>
+  <header class="page-head container">
+    <h1>Publications</h1>
+    <p>
+      {stats.papers} papers, {stats.peerReviewed} of them peer-reviewed, with {stats.citationsRounded} citations on{" "}
+      <a href={site.links.scholar}>Google Scholar</a>. Each title opens a page with the abstract, links and BibTeX.
+    </p>
+  </header>
+
+  <section class="container" aria-labelledby="featured-title" style="margin-bottom:var(--space-7)">
+    <h2 id="featured-title" class="visually-hidden">Featured</h2>
+    <div class="card-grid">{featured.map((p, i) => <PaperCard pub={p} eager={i < 3} />)}</div>
+  </section>
+
+  <section class="container" aria-labelledby="all-title">
+    <h2 id="all-title" class="visually-hidden">All papers</h2>
+    <div class="filters" data-js="off" data-filters>
+      <div class="filters__row">
+        <span class="filters__label">Area</span>
+        <button class="chip" type="button" data-filter="area" data-value="" aria-pressed="true">All<span class="chip__n">{pubs.length}</span></button>
+        {areas.map((a) => (
+          <button class="chip" type="button" data-filter="area" data-value={a} aria-pressed="false">{a}<span class="chip__n">{countBy((p) => p.data.area, a)}</span></button>
+        ))}
+      </div>
+      <div class="filters__row">
+        <span class="filters__label">Status</span>
+        <button class="chip" type="button" data-filter="status" data-value="" aria-pressed="true">All</button>
+        {statuses.map((s) => (
+          <button class="chip" type="button" data-filter="status" data-value={s} aria-pressed="false">{STATUS_LABEL[s]}<span class="chip__n">{countBy((p) => p.data.status, s)}</span></button>
+        ))}
+      </div>
+      <div class="filters__row">
+        <span class="filters__label">Year</span>
+        <button class="chip" type="button" data-filter="year" data-value="" aria-pressed="true">All</button>
+        {years.map((y) => (
+          <button class="chip" type="button" data-filter="year" data-value={String(y)} aria-pressed="false">{y}</button>
+        ))}
+      </div>
+      <div class="filters__row">
+        <label class="visually-hidden" for="pub-search">Search papers</label>
+        <input class="search" id="pub-search" type="search" placeholder="Search title, author, venue…" autocomplete="off" />
+        <span class="filters__count" aria-live="polite" data-count>{pubs.length} papers</span>
+      </div>
+    </div>
+
+    {areas.map((area) => {
+      const list = pubs.filter((p) => p.data.area === area);
+      return (
+        <div class="area-block" data-area-block={area}>
+          <h2 id={area.toLowerCase().replace(/[^a-z0-9]+/g, '-')}>{area}</h2>
+          <ul class="paper-list">{list.map((p) => <PaperItem pub={p} />)}</ul>
+        </div>
+      );
+    })}
+    <p class="muted" data-empty hidden style="padding-block:var(--space-6)">No papers match these filters.</p>
+  </section>
+
+  {team.length > 0 && (
+    <section class="section container" aria-labelledby="team-title" style="margin-top:var(--space-7)">
+      <div class="section__head"><h2 id="team-title">Team releases</h2></div>
+      <ul class="paper-list">{team.map((p) => <PaperItem pub={p} />)}</ul>
+    </section>
+  )}
+
+  <section class="section container" aria-labelledby="libs-title">
+    <div class="section__head"><h2 id="libs-title">Libraries &amp; tools</h2></div>
+    <ul class="paper-list">
+      {libs.map((l) => (
+        <li class="paper">
+          <div class="paper__year">★ {l.liveStars}</div>
+          <div>
+            <div class="paper__title"><a href={l.url ?? `https://github.com/${l.repo}`}>{l.name}</a></div>
+            <div class="paper__authors">{l.description}</div>
+            <div class="paper__meta">
+              <span class="tag tag--quiet">{l.role}</span>
+              <span class="paper__links">
+                <a href={`https://github.com/${l.repo}`}>GitHub</a>
+                {l.paper && <a href={`/publications/${l.paper}/`}>Paper</a>}
+              </span>
+            </div>
+          </div>
+        </li>
+      ))}
+    </ul>
+    <p class="muted" style="font-size:var(--step--1);margin-top:var(--space-4)">Star counts update from GitHub on every site build.</p>
+  </section>
+</Base>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-filters]');
+  if (root) {
+    root.dataset.js = 'on';
+    const state: Record<string, string> = { area: '', status: '', year: '', q: '' };
+    const params = new URLSearchParams(location.search);
+    for (const k of ['area', 'status', 'year', 'q']) state[k] = params.get(k) ?? '';
+
+    const chips = [...root.querySelectorAll<HTMLButtonElement>('[data-filter]')];
+    const search = root.querySelector<HTMLInputElement>('#pub-search')!;
+    const count = root.querySelector<HTMLElement>('[data-count]')!;
+    const papers = [...document.querySelectorAll<HTMLElement>('.area-block .paper')];
+    const blocks = [...document.querySelectorAll<HTMLElement>('[data-area-block]')];
+    const empty = document.querySelector<HTMLElement>('[data-empty]')!;
+    search.value = state.q;
+
+    const apply = () => {
+      const q = state.q.trim().toLowerCase();
+      let shown = 0;
+      for (const p of papers) {
+        const ok =
+          (!state.area || p.dataset.area === state.area) &&
+          (!state.status || p.dataset.status === state.status) &&
+          (!state.year || p.dataset.year === state.year) &&
+          (!q || (p.dataset.search ?? '').includes(q));
+        p.hidden = !ok;
+        if (ok) shown++;
+      }
+      for (const b of blocks) b.hidden = !b.querySelector('.paper:not([hidden])');
+      empty.hidden = shown > 0;
+      count.textContent = `${shown} paper${shown === 1 ? '' : 's'}`;
+      for (const c of chips) c.setAttribute('aria-pressed', String(state[c.dataset.filter!] === c.dataset.value));
+      const next = new URLSearchParams();
+      for (const [k, v] of Object.entries(state)) if (v) next.set(k, v);
+      history.replaceState(null, '', next.size ? `?${next}` : location.pathname);
+    };
+
+    chips.forEach((c) => c.addEventListener('click', () => { state[c.dataset.filter!] = c.dataset.value ?? ''; apply(); }));
+    search.addEventListener('input', () => { state.q = search.value; apply(); });
+    apply();
+  }
+</script>

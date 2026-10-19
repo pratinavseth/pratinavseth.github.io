@@ -1,0 +1,171 @@
+{
+ "updated": "2026-09-01 16:36:34.080800",
+ "citedby": 227,
+ "hindex": 8,
+ "i10index": 6,
+ "cites_per_year": {
+  "2022": 1,
+  "2023": 13,
+  "2024": 22,
+  "2025": 59,
+  "2026": 130
+ },
+ "publications": {
+  "DwBn1fcAAAAJ:UeHWp8X0CEIC": {
+   "num_citations": 32
+  },
+  "DwBn1fcAAAAJ:KlAtU1dfN6UC": {
+   "num_citations": 25
+  },
+  "DwBn1fcAAAAJ:hqOjcs7Dif8C": {
+   "num_citations": 23
+  },
+  "DwBn1fcAAAAJ:qxL8FJ1GzNcC": {
+   "num_citations": 19
+  },
+  "DwBn1fcAAAAJ:LkGwnXOMwfcC": {
+   "num_citations": 13
+  },
+  "DwBn1fcAAAAJ:M3ejUd6NZC8C": {
+   "num_citations": 11
+  },
+  "DwBn1fcAAAAJ:u5HHmVD_uO8C": {
+   "num_citations": 9
+  },
+  "DwBn1fcAAAAJ:aqlVkmm33-oC": {
+   "num_citations": 8
+  },
+  "DwBn1fcAAAAJ:MXK_kJrjxJIC": {
+   "num_citations": 8
+  },
+  "DwBn1fcAAAAJ:qjMakFHDy7sC": {
+   "num_citations": 8
+  },
+  "DwBn1fcAAAAJ:9ZlFYXVOiuMC": {
+   "num_citations": 7
+  },
+  "DwBn1fcAAAAJ:5nxA0vEk-isC": {
+   "num_citations": 6
+  },
+  "DwBn1fcAAAAJ:ufrVoPGSRksC": {
+   "num_citations": 6
+  },
+  "DwBn1fcAAAAJ:2osOgNQ5qMEC": {
+   "num_citations": 6
+  },
+  "DwBn1fcAAAAJ:4TOpqqG69KYC": {
+   "num_citations": 5
+  },
+  "DwBn1fcAAAAJ:kNdYIx-mwKoC": {
+   "num_citations": 5
+  },
+  "DwBn1fcAAAAJ:Wp0gIr-vW9MC": {
+   "num_citations": 5
+  },
+  "DwBn1fcAAAAJ:0EnyYjriUFMC": {
+   "num_citations": 4
+  },
+  "DwBn1fcAAAAJ:Y0pCki6q_DkC": {
+   "num_citations": 4
+  },
+  "DwBn1fcAAAAJ:zYLM7Y9cAGgC": {
+   "num_citations": 4
+  },
+  "DwBn1fcAAAAJ:QIV2ME_5wuYC": {
+   "num_citations": 3
+  },
+  "DwBn1fcAAAAJ:YOwf2qJgpHMC": {
+   "num_citations": 3
+  },
+  "DwBn1fcAAAAJ:4DMP91E08xMC": {
+   "num_citations": 3
+  },
+  "DwBn1fcAAAAJ:-f6ydRqryjwC": {
+   "num_citations": 2
+  },
+  "DwBn1fcAAAAJ:IjCSPb-OGe4C": {
+   "num_citations": 2
+  },
+  "DwBn1fcAAAAJ:TQgYirikUcIC": {
+   "num_citations": 1
+  },
+  "DwBn1fcAAAAJ:HDshCWvjkbEC": {
+   "num_citations": 1
+  },
+  "DwBn1fcAAAAJ:7PzlFSSx8tAC": {
+   "num_citations": 1
+  },
+  "DwBn1fcAAAAJ:IWHjjKOFINEC": {
+   "num_citations": 1
+  },
+  "DwBn1fcAAAAJ:8k81kl-MbHgC": {
+   "num_citations": 1
+  },
+  "DwBn1fcAAAAJ:u-x6o8ySG0sC": {
+   "num_citations": 1
+  },
+  "DwBn1fcAAAAJ:r0BpntZqJG4C": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:j3f4tGmQtD8C": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:RHpTSmoSYBkC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:_Qo2XoVZTnwC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:R3hNpaxXUhUC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:e5wmG9Sq2KIC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:mB3voiENLucC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:hFOr9nPyWt4C": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:hC7cP41nSMkC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:L8Ckcad2t8MC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:ZeXyd9-uunAC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:_kc_bZDykSQC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:dhFuZR0502QC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:Zph67rFs4hoC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:Se3iqnhoufwC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:3fE2CSJIrl8C": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:UebtZRa9Y70C": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:roLk4NBRz8UC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:4JMBOYKVnBMC": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:qUcmZB5y_30C": {
+   "num_citations": 0
+  },
+  "DwBn1fcAAAAJ:mVmsd5A6BfQC": {
+   "num_citations": 0
+  }
+ }
+}

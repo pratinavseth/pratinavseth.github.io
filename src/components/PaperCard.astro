@@ -1,0 +1,35 @@
+---
+import { Image } from 'astro:assets';
+import { img, hasImg } from '../lib/images';
+import { citationsOf, pageOf, type Pub } from '../lib/pubs';
+
+interface Props {
+  pub: Pub;
+  /** Short line under the title; defaults to the area. */
+  blurb?: string;
+  eager?: boolean;
+}
+const { pub, blurb, eager = false } = Astro.props;
+const d = pub.data;
+const cites = await citationsOf(pub);
+---
+
+<a class="card" href={pageOf(pub)}>
+  {hasImg(d.image) ? (
+    <div class="card__fig">
+      <Image src={img(d.image!)} alt={d.imageAlt ?? ''} widths={[360, 560, 720]} sizes="(min-width: 60rem) 22rem, 90vw" loading={eager ? 'eager' : 'lazy'} />
+    </div>
+  ) : (
+    <div class="card__fig card__fig--type" aria-hidden="true"><span>{d.title.split(':')[0]}</span></div>
+  )}
+  <div class="card__body">
+    <div class="card__meta">
+      <span class:list={['tag', d.status === 'published' ? 'tag--solid' : 'tag--quiet']}>{d.venue}</span>
+    </div>
+    <h3 class="card__title">{d.title}</h3>
+    <p class="card__desc">{blurb ?? d.area}</p>
+    <div class="card__foot">
+      {d.year}{typeof cites === 'number' && cites > 0 && ` · ${cites} citations`}
+    </div>
+  </div>
+</a>

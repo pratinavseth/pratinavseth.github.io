@@ -1,0 +1,101 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import { education } from '../lib/data';
+import { inline } from '../lib/md';
+import { img } from '../lib/images';
+import { getCollaborators } from '../lib/pubs';
+
+const collabs = await getCollaborators();
+const ROLE_TAG: Record<string, string | undefined> = { manager: 'Manager', mentor: 'Mentor', mentee: 'Mentee' };
+---
+
+<Base
+  title="Education & Service"
+  description="B.Tech in Data Science & Engineering (Manipal Institute of Technology), AAAI Undergraduate Consortium Scholar 2023 and Mentor 2026, reviewing for NeurIPS, AAAI, CVPR and ECCV, technical skills, and collaborators."
+>
+  <header class="page-head container">
+    <h1>Education &amp; service</h1>
+    <p>Honours, education, reviewing, skills, and the people I’ve worked with.</p>
+  </header>
+
+  <section class="section container" id="honors-and-awards" aria-labelledby="honors-title">
+    <div class="section__head"><h2 id="honors-title">Honours &amp; awards</h2></div>
+    <ul class="timeline">
+      {education.honors.map((h) => <li><span class="timeline__date">{h.date}</span><span set:html={inline(h.text)} /></li>)}
+    </ul>
+  </section>
+
+  <section class="section container" id="education" aria-labelledby="edu-title">
+    <div class="section__head"><h2 id="edu-title">Education</h2></div>
+    {education.education.map((e) => (
+      <div class="role">
+        <div class="role__date">{e.date}</div>
+        <div>
+          <p class="role__title"><strong>{e.degree}</strong>, {e.school}</p>
+          <ul>{e.details.map((x) => <li set:html={inline(x)} />)}</ul>
+          {e.photo && (
+            <figure class="figure-frame" style="max-width:36rem;margin-top:var(--space-4)">
+              <Image src={img(e.photo.src)} alt={e.photo.alt} widths={[480, 720]} sizes="(min-width: 40rem) 36rem, 92vw" />
+              <figcaption>{e.photo.caption}</figcaption>
+            </figure>
+          )}
+        </div>
+      </div>
+    ))}
+  </section>
+
+  <section class="section container" id="academic-service" aria-labelledby="service-title">
+    <div class="section__head"><h2 id="service-title">Academic service</h2></div>
+    <ul class="timeline">
+      {education.service.mentoring.map((m) => <li><span class="timeline__date">Mentoring</span><span set:html={inline(m)} /></li>)}
+      <li><span class="timeline__date">Reviewing</span><span><strong>Main conferences:</strong> {education.service.mainConference}</span></li>
+    </ul>
+    <div class="areas" style="margin-top:var(--space-5)">
+      <div class="area">
+        <h3>Workshop &amp; track reviewing, 2026</h3>
+        <ul style="padding-left:1.1rem;margin:var(--space-3) 0 0">{education.service.workshops2026.map((w) => <li>{w}</li>)}</ul>
+      </div>
+      <div class="area">
+        <h3>Workshop reviewing, 2021–25</h3>
+        <ul style="padding-left:1.1rem;margin:var(--space-3) 0 0">{education.service.workshopsEarlier.map((w) => <li>{w}</li>)}</ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" id="technical-skills" aria-labelledby="skills-title">
+    <div class="section__head"><h2 id="skills-title">Technical skills</h2></div>
+    <div style="display:grid;gap:var(--space-4)">
+      {education.skills.map((s) => (
+        <div class="role" style="padding-block:var(--space-3);border-bottom-color:var(--rule-soft)">
+          <div class="role__date">{s.group}</div>
+          <div style="display:flex;flex-wrap:wrap;gap:var(--space-2)">{s.items.map((i) => <span class="tag">{i}</span>)}</div>
+        </div>
+      ))}
+    </div>
+    <h3 style="margin:var(--space-6) 0 var(--space-2)">Certifications</h3>
+    <ul style="padding-left:1.1rem">{education.certifications.map((c) => <li set:html={inline(c)} />)}</ul>
+  </section>
+
+  <section class="section container" id="collaborators" aria-labelledby="collab-title">
+    <div class="section__head">
+      <h2 id="collab-title">Collaborators &amp; mentees</h2>
+      <span class="muted mono" style="font-size:var(--step--1)">{collabs.length} people · counted from the paper list</span>
+    </div>
+    <ul class="collabs">
+      {collabs.map((c) => (
+        <li>
+          <details>
+            <summary>
+              <span class="collabs__name">{c.name}</span>
+              <span class="collabs__n">{c.count} paper{c.count === 1 ? '' : 's'}</span>
+              {ROLE_TAG[c.role] && <span class="tag tag--accent">{ROLE_TAG[c.role]}</span>}
+              {c.institution && <span class="tag tag--quiet">{c.institution}</span>}
+            </summary>
+            <ul>{c.papers.map((p) => <li><a href={p.href}>{p.title}</a></li>)}</ul>
+          </details>
+        </li>
+      ))}
+    </ul>
+  </section>
+</Base>

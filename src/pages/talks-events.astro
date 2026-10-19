@@ -1,0 +1,74 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import { talks } from '../lib/data';
+import { inline } from '../lib/md';
+import { img } from '../lib/images';
+---
+
+<Base
+  title="Talks & Events"
+  description="Invited talks, conference presentations and industry events, including the EurIPS 2025 spotlight talk, ICML 2025–26 posters, EMNLP 2026 and the India AI Impact Summit."
+>
+  <header class="page-head container">
+    <h1>Talks &amp; events</h1>
+    <p>Where I’ve presented, and where to find me next. Happy to give talks on post-training safety and interpretability.</p>
+  </header>
+
+  {talks.upcoming.length > 0 && (
+    <section class="container" aria-labelledby="up-title" style="margin-bottom:var(--space-6)">
+      <h2 id="up-title" class="visually-hidden">Upcoming</h2>
+      {talks.upcoming.map((u) => (
+        <div class="notice">
+          <span class="tag tag--accent">Upcoming</span>
+          <p style="margin:var(--space-2) 0 0;font-size:var(--step-1)"><strong set:html={inline(u.name)} />, {u.where}, {u.when}</p>
+          <p class="muted" style="margin:var(--space-1) 0 0">{u.note} <a href="/publications/">See the papers →</a></p>
+        </div>
+      ))}
+    </section>
+  )}
+
+  <section class="section container" aria-labelledby="talks-title">
+    <div class="section__head"><h2 id="talks-title">Talks &amp; presentations</h2></div>
+    {talks.talks.map((y) => (
+      <>
+        <h3 style="margin:var(--space-5) 0 var(--space-2)">{y.year}</h3>
+        <ul class="timeline">
+          {y.items.map((t) => (
+            <li><span class="timeline__date">{t.date ?? ''}</span><span set:html={inline(t.text)} /></li>
+          ))}
+        </ul>
+      </>
+    ))}
+  </section>
+
+  <section class="section container" aria-labelledby="photos-title">
+    <div class="section__head"><h2 id="photos-title">At conferences</h2></div>
+    <div class="photos">
+      {talks.photos.map((ph) => (
+        <figure>
+          <Image src={img(ph.src)} alt={ph.alt} widths={[360, 560, 800]} sizes="(min-width: 60rem) 23rem, 92vw" />
+          <figcaption>{ph.caption}</figcaption>
+        </figure>
+      ))}
+    </div>
+  </section>
+
+  <section class="section container" aria-labelledby="conf-title">
+    <div class="section__head"><h2 id="conf-title">Conferences attended</h2></div>
+    <ul class="timeline">
+      {talks.conferences.map((c) => (
+        <li><span class="timeline__date">{c.name.match(/20\d\d/)?.[0] ?? ''}</span><span><strong>{c.name}</strong>, {c.where}{c.note && <span class="muted"> ({c.note})</span>}</span></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="section container" aria-labelledby="industry-title">
+    <div class="section__head"><h2 id="industry-title">Industry &amp; media</h2></div>
+    <ul class="timeline">
+      {talks.industry.map((t) => (
+        <li><span class="timeline__date">{t.date ?? ''}</span><span set:html={inline(t.text)} /></li>
+      ))}
+    </ul>
+  </section>
+</Base>

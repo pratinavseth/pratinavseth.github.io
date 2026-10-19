@@ -1,0 +1,276 @@
+---
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import Base from '../layouts/Base.astro';
+import PaperCard from '../components/PaperCard.astro';
+import CitationsChart from '../components/CitationsChart.astro';
+import Contact from '../components/Contact.astro';
+import { site } from '../config/site';
+import { news, libraries } from '../lib/data';
+import { getPubs, getStats, getAreas, isMine, isPeerReviewed, fill } from '../lib/pubs';
+import { getStars } from '../lib/remote';
+import { inline, block } from '../lib/md';
+
+const stats = await getStats();
+const pubs = (await getPubs()).filter(isMine);
+const featured = pubs.filter((p) => p.data.featured);
+const areas = await getAreas();
+
+const bioFile = (n: string) => readFileSync(join(process.cwd(), 'src/data/bio', `${n}.md`), 'utf8');
+const bios = [
+  { id: 'first', label: 'First person', html: block(await fill(bioFile('first'))) },
+  { id: 'third', label: 'Third person (for intros)', html: block(await fill(bioFile('third'))), copy: true },
+  { id: 'full', label: 'Full story', html: block(await fill(bioFile('full'))) },
+];
+
+const journey = [
+  { date: '2021–23', org: 'Mars Rover Manipal', what: 'Trainee to senior researcher leading the AI Research Wing; mentored 10+ undergraduates' },
+  { date: '2022–23', org: 'IIT Kharagpur', what: 'Medical image analysis and explainable AI for chest radiographs, KLIV Lab' },
+  { date: '2023', org: 'Bosch Research', what: 'Generative data augmentation for autonomous-driving perception' },
+  { date: '2024', org: 'Mila, Rolnick Lab', what: 'Geospatial climate AI; Alberta Wells Dataset (first author, ICML 2025)' },
+  { date: '2024–now', org: 'Lexsi Labs', what: 'Research Scientist to Lead Research Scientist, Model Science' },
+];
+
+// Three research threads, each with a live paper count from the data file.
+const threads = [
+  {
+    title: 'Post-training safety & alignment',
+    areas: ['Safety Post-Training & Alignment'],
+    text: 'How fine-tuning, quantization and deployment shift a model’s safety behaviour, and how to audit and repair it in the weights: SafeTune, ALIGNBEAM, AlignTune, CuratorKIT.',
+  },
+  {
+    title: 'Mechanistic interpretability',
+    areas: ['Mechanistic Interpretability & XAI'],
+    text: 'Finding the circuits behind refusal and other behaviours, testing whether they are faithful, and acting on them: C-ΔΘ, CircuitKIT, unlearning via circuit attribution.',
+  },
+  {
+    title: 'Foundation models for structured data',
+    areas: ['Tabular Foundation Models & Distillation'],
+    text: 'The Orion tabular foundation models and TabTune, plus distillation, ensembling and deployments in health and credit risk.',
+  },
+].map((t) => ({
+  ...t,
+  count: pubs.filter((p) => t.areas.includes(p.data.area)).length,
+  peer: pubs.filter((p) => t.areas.includes(p.data.area) && isPeerReviewed(p)).length,
+}));
+
+const libRows = await Promise.all(
+  libraries.map(async (l) => ({ ...l, liveStars: await getStars(l.repo, l.stars) })),
+);
+
+const recentCutoff = 8;
+const recent = news.slice(0, recentCutoff);
+const earlier = news.slice(recentCutoff);
+
+const blurbs: Record<string, string> = {
+  'c-delta-theta': 'Circuit-restricted weight edits that instil selective refusal, with no inference-time overhead.',
+  circuitkit: 'Circuit discovery, evaluation and application toolkit for mechanistic interpretability.',
+  aligntune: 'One interface for SFT, DPO, GRPO and RLHF with interchangeable backends.',
+  alignbeam: 'Training-free safety transfer between model families at inference time, even across different vocabularies.',
+  'forgetting-that-sticks': 'Unlearning that survives quantization, by zeroing the circuits that store the knowledge.',
+  'interpretability-as-alignment': 'The case for interpretability as a design principle in post-training, not a post-hoc audit.',
+  tabtune: 'Inference, fine-tuning and benchmarking for 21 tabular foundation models.',
+  'alberta-wells-dataset': 'Satellite benchmark for finding abandoned oil and gas wells. Climate AI with Mila.',
+  'self-percept': 'LLM introspection improves detection of multi-person mental manipulation.',
+};
+
+const personLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  dateModified: new Date().toISOString().slice(0, 10),
+  mainEntity: {
+    '@type': 'Person',
+    '@id': `${site.url}/#person`,
+    name: site.name,
+    jobTitle: site.role,
+    worksFor: { '@type': 'Organization', name: site.org, url: site.orgUrl },
+    alumniOf: [
+      { '@type': 'CollegeOrUniversity', name: 'Manipal Institute of Technology' },
+    ],
+    url: site.url,
+    image: new URL(site.avatar, site.url).href,
+    email: `mailto:${site.email}`,
+    description: site.description,
+    knowsAbout: ['Post-training alignment', 'AI safety', 'Mechanistic interpretability', 'Large language models', 'Tabular foundation models'],
+    sameAs: Object.values(site.links),
+    identifier: { '@type': 'PropertyValue', propertyID: 'ORCID', value: '0009-0001-4525-4464' },
+  },
+};
+---
+
+<Base
+  title={site.name}
+  description={`${site.description} ${stats.peerReviewed} peer-reviewed papers, ${stats.citationsRounded} citations.`}
+  type="profile"
+  jsonLd={[personLd]}
+>
+  <section class="hero container" aria-labelledby="hero-name">
+    <div class="hero__grid">
+      <div>
+        <h1 class="hero__name" id="hero-name">Pratinav<br />Seth</h1>
+        <p class="hero__role">
+          {site.role} · <a href={site.orgUrl}>{site.org}</a> · Model Science group, {site.location}
+        </p>
+        <p class="hero__thesis">
+          I study <em>what survives post-training</em>: how fine-tuning, quantization and deployment change a model’s
+          behaviour, and how to find and repair the circuits responsible.
+        </p>
+
+        <div class="stats">
+          <div class="stat"><span class="stat__n">{stats.peerReviewed}</span><span class="stat__label">Peer-reviewed papers</span></div>
+          <div class="stat"><span class="stat__n">{stats.citationsRounded}</span><span class="stat__label">Citations · h-index {stats.hIndex}</span></div>
+          <div class="stat"><span class="stat__n">{stats.ossLibraries}</span><span class="stat__label">Open-source libraries</span></div>
+          <div class="stat"><span class="stat__n">{stats.starsRounded}</span><span class="stat__label">GitHub stars</span></div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn btn--primary" href="#contact">Get in touch</a>
+          <a class="btn" href="/publications/">Publications</a>
+          <a class="btn" href={site.cv}>CV</a>
+          <a class="btn" href={site.resume}>Résumé</a>
+        </div>
+        <p class="hero__open"><strong>Open to</strong> {site.openTo.join(' · ').toLowerCase()}, and conversations about where post-training research is heading.</p>
+      </div>
+      <div class="hero__portrait">
+        <img src={site.avatar} alt="Pratinav Seth at the India AI Impact Summit 2026, New Delhi" width="480" height="480" fetchpriority="high" />
+        <ul class="profile-links" aria-label="Profiles">
+          <li><a href={site.links.scholar} rel="me">Scholar</a></li>
+          <li><a href={site.links.linkedin} rel="me">LinkedIn</a></li>
+          <li><a href={site.links.github} rel="me">GitHub</a></li>
+          <li><a href={site.links.twitter} rel="me">X</a></li>
+          <li><a href={site.links.orcid} rel="me">ORCID</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" aria-labelledby="about-title">
+    <div class="section__head"><h2 id="about-title">About</h2></div>
+    <div class="bio" data-bio>
+      <div class="bio__tabs" role="tablist" aria-label="Bio length">
+        {bios.map((b, i) => (
+          <button class="bio__tab" role="tab" type="button" id={`tab-${b.id}`} aria-controls={`bio-${b.id}`} aria-selected={i === 0 ? 'true' : 'false'} tabindex={i === 0 ? 0 : -1}>{b.label}</button>
+        ))}
+      </div>
+      {bios.map((b, i) => (
+        <div class="bio__panel prose" role="tabpanel" id={`bio-${b.id}`} aria-labelledby={`tab-${b.id}`} hidden={i !== 0}>
+          <Fragment set:html={b.html} />
+          {b.copy && <button class="btn bio__copy" type="button" data-copy={`bio-${b.id}`}>Copy bio</button>}
+        </div>
+      ))}
+    </div>
+
+    <ol class="journey" aria-label="Career path">
+      {journey.map((j) => (
+        <li><span class="journey__date">{j.date}</span><span class="journey__org">{j.org}</span><span class="journey__what">{j.what}</span></li>
+      ))}
+    </ol>
+    <p style="margin-top:var(--space-4)"><a class="section__more" href="/experience/">Full experience →</a></p>
+  </section>
+
+  <section class="section container" aria-labelledby="research-title">
+    <div class="section__head"><h2 id="research-title">Research</h2><a class="section__more" href="/publications/">All {stats.papers} papers →</a></div>
+    <div class="areas">
+      {threads.map((t) => (
+        <div class="area">
+          <span class="area__n">{t.count} papers · {t.peer} peer-reviewed</span>
+          <h3>{t.title}</h3>
+          <p class="muted" style="margin:0">{t.text}</p>
+          <p style="margin-top:var(--space-3)"><a class="section__more" href={`/publications/?area=${encodeURIComponent(t.areas[0])}`}>See papers →</a></p>
+        </div>
+      ))}
+    </div>
+    <p class="muted" style="font-size:var(--step--1);margin-top:var(--space-4)">
+      Earlier work spans climate and earth observation, medical imaging, uncertainty, and NLP for social good ({areas.length} areas in all).
+    </p>
+  </section>
+
+  <section class="section container" aria-labelledby="selected-title">
+    <div class="section__head"><h2 id="selected-title">Selected work</h2></div>
+    <div class="card-grid">
+      {featured.map((p, i) => <PaperCard pub={p} blurb={blurbs[p.id]} eager={i < 3} />)}
+    </div>
+  </section>
+
+  <section class="section container" aria-labelledby="impact-title">
+    <div class="section__head"><h2 id="impact-title">Impact</h2></div>
+    <div class="impact">
+      <div>
+        <CitationsChart stats={stats} />
+      </div>
+      <div>
+        <table class="lib-table">
+          <caption class="visually-hidden">Libraries and GitHub stars</caption>
+          <thead><tr><th scope="col">Library</th><th scope="col">Role</th><th scope="col" class="num">★</th></tr></thead>
+          <tbody>
+            {libRows.map((l) => (
+              <tr>
+                <td><a href={l.paper ? `/publications/${l.paper}/` : l.url ?? `https://github.com/${l.repo}`}>{l.name}</a></td>
+                <td class="muted">{l.role}</td>
+                <td class="num"><a href={`https://github.com/${l.repo}`} aria-label={`${l.name} on GitHub, ${l.liveStars} stars`}>{l.liveStars}</a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container" aria-labelledby="news-title">
+    <div class="section__head"><h2 id="news-title">News</h2></div>
+    <ul class="timeline">
+      {recent.map((n) => (
+        <li><span class="timeline__date">{n.date}</span><span set:html={inline(n.text)} /></li>
+      ))}
+    </ul>
+    <details class="fold">
+      <summary>Earlier ({earlier.length})</summary>
+      <ul class="timeline">
+        {earlier.map((n) => (
+          <li><span class="timeline__date">{n.date}</span><span set:html={inline(n.text)} /></li>
+        ))}
+      </ul>
+    </details>
+  </section>
+
+  <Contact />
+</Base>
+
+<script>
+  // Accessible tabs for the bio switcher, plus "copy bio".
+  document.querySelectorAll<HTMLElement>('[data-bio]').forEach((root) => {
+    const tabs = [...root.querySelectorAll<HTMLButtonElement>('[role="tab"]')];
+    const select = (tab: HTMLButtonElement) => {
+      tabs.forEach((t) => {
+        const on = t === tab;
+        t.setAttribute('aria-selected', String(on));
+        t.tabIndex = on ? 0 : -1;
+        const panel = document.getElementById(t.getAttribute('aria-controls')!);
+        if (panel) panel.hidden = !on;
+      });
+    };
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => select(t));
+      t.addEventListener('keydown', (e) => {
+        const d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
+        if (!d) return;
+        const next = tabs[(i + d + tabs.length) % tabs.length];
+        next.focus();
+        select(next);
+      });
+    });
+  });
+  document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const panel = document.getElementById(btn.dataset.copy!);
+      const text = [...(panel?.querySelectorAll('p') ?? [])].map((p) => p.textContent?.trim()).join('\n\n');
+      try {
+        await navigator.clipboard.writeText(text);
+        btn.textContent = 'Copied';
+      } catch {
+        btn.textContent = 'Select and copy manually';
+      }
+      setTimeout(() => (btn.textContent = 'Copy bio'), 2000);
+    });
+  });
+</script>

@@ -1,0 +1,918 @@
+# Single source of truth for every paper on the site.
+# Counts, collaborator lists, per-paper pages, BibTeX and llms.txt are all generated from this file.
+#
+# status: published | preprint | under-review | report   (published = accepted at a peer-reviewed venue)
+# type:   conference | journal | workshop | demo | shared-task | tiny-paper | student-abstract | preprint | under-review | report
+# authors: append * to a name for equal contribution. 'Pratinav Seth' is highlighted automatically.
+# scholarId: the part after 'DwBn1fcAAAAJ:' in your Google Scholar paper URL (citation counts come from it).
+
+- id: gemma-4-safety-repair
+  title: Targeted Multilingual and Cybersecurity Safety Repair for Gemma 4 31B
+  authors:
+    - Lexsi Labs Team
+  venue: Technical Report 2026
+  status: report
+  type: report
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  url: "https://openreview.net/forum?id=Mgnk5R9Z0l"
+  image: gemma4-safety-repair-fig.png
+  imageAlt: "Contrast, attribute, localise and verify pipeline for circuit-restricted weight edits on Gemma 4 31B"
+  notes:
+    - "Targeted weight interventions for multilingual and cybersecurity safety failures, reporting improved safety and multi-turn jailbreak resistance while largely preserving broader capabilities. Part of the [Lexsi Alignment and Safety Stack](https://lexsi.ai/resources/articles/open-sourcing-the-lexsi-alignment-and-safety-stack-frontier-safety-research-for-auditing-correcting-and-verifying-model-weights) (CuratorKIT, AlignTune, SafeTune, CircuitKIT, AuditKIT, MANSU)."
+    - "[Multilingual checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Multilingual-Safety-Repair) · [Cybersecurity checkpoint](https://huggingface.co/Lexsi/Gemma-4-31B-it-Cybersecurity-Safety-Repair) · [Technical report](https://lexsi.ai/resources/articles/the-lexsi-alignment-and-safety-stack-correcting-gemma-4-31b-for-multilingual-and-cybersecurity-safety-in-the-weights-copy)"
+
+- id: aligntune
+  title: "AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models"
+  authors:
+    - R E Zera Marveen Lyngkhoi
+    - Chirag Chawla
+    - Pratinav Seth
+    - Utsav Avaiya
+    - Soham Bhattacharjee
+    - Mykola Khandoga
+    - Rui Yuan
+    - Vinay Kumar Sankarapu
+  venue: Pre-Print
+  status: preprint
+  type: preprint
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  url: "https://arxiv.org/abs/2602.09621"
+  arxiv: "2602.09621"
+  scholarId: "L8Ckcad2t8MC"
+  image: aligntune-fig.png
+  imageAlt: AlignTune
+  featured: true
+
+- id: c-delta-theta
+  title: "C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal"
+  authors:
+    - Aditya Kasliwal
+    - Pratinav Seth
+    - Vinay Kumar Sankarapu
+  venue: "Mech Interp Workshop, ICML 2026"
+  status: published
+  type: workshop
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  url: "https://arxiv.org/abs/2602.04521"
+  arxiv: "2602.04521"
+  scholarId: "7PzlFSSx8tAC"
+  image: c-delta-theta-fig.png
+  imageAlt: C-ΔΘ
+  notes:
+    - "Accepted at the **Mechanistic Interpretability Workshop, ICML 2026** (in-person poster; <15% acceptance rate)"
+  featured: true
+
+- id: alignbeam
+  title: "ALIGNBEAM: Inference-Time Alignment Transfer via Cross-Vocabulary Logit Mixing"
+  authors:
+    - Chirag Chawla
+    - Pratinav Seth
+    - Vinay Kumar Sankarapu
+  venue: "EMNLP 2026 Main Conference · AI for Good Workshop, ICML 2026"
+  status: published
+  type: conference
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  url: "https://arxiv.org/abs/2606.12342"
+  arxiv: "2606.12342"
+  scholarId: "R3hNpaxXUhUC"
+  image: alignbeam-fig.png
+  imageAlt: ALIGNBEAM
+  notes:
+    - "Accepted at the **AI for Good Workshop, ICML 2026** and the **EMNLP 2026 Main Conference**"
+  featured: true
+
+- id: forgetting-that-sticks
+  title: "Forgetting That Sticks: Quantization-Permanent Unlearning via Circuit Attribution"
+  authors:
+    - Saisab Sadhu
+    - Pratinav Seth
+    - Vinay Kumar Sankarapu
+  venue: Pre-Print
+  status: preprint
+  type: preprint
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  url: "https://arxiv.org/abs/2605.15138"
+  arxiv: "2605.15138"
+  scholarId: "hC7cP41nSMkC"
+  image: forgetting-that-sticks-fig.png
+  imageAlt: Forgetting That Sticks
+  featured: true
+
+- id: position
+  title: "Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands"
+  authors:
+    - Pratinav Seth
+    - Vinay Kumar Sankarapu
+  venue: Pre-Print
+  status: preprint
+  type: preprint
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  url: "https://arxiv.org/abs/2605.15164"
+  arxiv: "2605.15164"
+  scholarId: "-f6ydRqryjwC"
+  image: behavioural-assurance-fig.png
+  imageAlt: "Position: Behavioural Assurance"
+
+- id: what-do-compliance-detectors-read
+  title: "What Do Compliance Detectors Read? An Audit of Activation Probes and Guard Models"
+  authors:
+    - Saisab Sadhu
+    - Aadit Sengupta
+    - Vinay Kumar Sankarapu
+    - Pratinav Seth
+  venue: NeurIPS 2026 Workshop
+  status: published
+  type: workshop
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+
+- id: cited-but-not-consulted
+  title: "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness"
+  authors:
+    - Saisab Sadhu
+    - Shreeyans Arora
+    - Pratinav Seth
+  venue: EMNLP 2026 NLLP Workshop; NeurIPS 2026 Workshop
+  status: published
+  type: workshop
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  url: "https://openreview.net/forum?id=25nCvWm2yy"
+
+- id: verdict-without-the-rule
+  title: "Verdict Without the Rule: Diagnosing and Auditing Regulatory Rule Sensitivity in LLM Compliance Systems"
+  authors:
+    - Saisab Sadhu
+    - Aadit Sengupta
+    - Vinay Kumar Sankarapu
+    - Pratinav Seth
+  venue: EMNLP 2026 NLLP Workshop; NeurIPS 2026 Workshop
+  status: published
+  type: workshop
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  url: "https://openreview.net/forum?id=jX7FB33LSz"
+
+- id: every-ablation-is-a-dose
+  title: "Every Ablation Is a Dose: Counterweights and the Semblance of Self-Repair"
+  authors:
+    - Areeb Ahmad
+    - Pratinav Seth
+    - Vinay Kumar Sankarapu
+  venue: Pre-Print
+  status: preprint
+  type: preprint
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  url: "https://arxiv.org/abs/2610.02173"
+  arxiv: "2610.02173"
+
+- id: agenttune
+  title: "AgentTune: A Unified Training Lifecycle for Tool-Using LLM Agents"
+  authors:
+    - R E Zera Marveen Lyngkhoi
+    - Abhivansh Gupta
+    - Vidushee Vats
+    - Ram Mohan Rao Kadiyala
+    - Vinay Kumar Sankarapu
+    - Pratinav Seth
+  venue: Pre-Print
+  status: preprint
+  type: preprint
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  url: "https://arxiv.org/abs/2610.13335"
+  arxiv: "2610.13335"
+
+- id: safetune
+  title: "SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs"
+  authors:
+    - Pratinav Seth
+    - Saisab Sadhu
+    - Anshul Kaushal
+    - Vinay Kumar Sankarapu
+  venue: EMNLP 2026 System Demonstrations
+  status: published
+  type: demo
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  url: "https://openreview.net/forum?id=5Hl0P9faYV"
+  notes:
+    - "[Code](https://github.com/Lexsi-Labs/SafeTune)"
+
+- id: drift-then-repair
+  title: "Drift, Then Repair: A Safety Audit of Fine-Tuned Language Models"
+  authors:
+    - Pratinav Seth
+    - Anshul Kaushal
+    - Saisab Sadhu
+    - Vinay Kumar Sankarapu
+  venue: NeurIPS 2026 Workshop
+  status: published
+  type: workshop
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+
+- id: self-calibrating-safety-drift-repair
+  title: Self-Calibrating Weight-Arithmetic Safety-Drift Repair
+  authors:
+    - Pratinav Seth
+    - Vinay Kumar Sankarapu
+  venue: Under Review
+  status: under-review
+  type: under-review
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+
+- id: the-off-switch-failure
+  title: "The Off-Switch Failure: When Safety-Repair Evaluation Rewards Model Collapse"
+  authors:
+    - Pratinav Seth
+  venue: NeurIPS 2026 Workshop
+  status: published
+  type: workshop
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+
+- id: curatorkit
+  title: "CuratorKIT: Data Curation and Synthetic Data Generation for LLM Post-Training"
+  authors:
+    - Soham Bhattacharjee
+    - Karun Sharma
+    - Vinay Kumar Sankarapu
+    - Pratinav Seth
+  venue: Pre-Print
+  status: preprint
+  type: preprint
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  url: "https://arxiv.org/abs/2606.21631"
+  arxiv: "2606.21631"
+
+- id: provenance-grounded-gating
+  title: Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation
+  authors:
+    - Soham Bhattacharjee
+    - Karun Sharma
+    - Vinay Kumar Sankarapu
+    - Pratinav Seth
+  venue: EMNLP 2026 Findings
+  status: published
+  type: conference
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  url: "https://openreview.net/forum?id=X49HukIVLk"
+  scholarId: "e5wmG9Sq2KIC"
+  image: curatorkit-provenance-fig.png
+  imageAlt: Provenance-Grounded Gating
+  notes:
+    - "Accepted to **EMNLP 2026 Findings**"
+
+- id: document-as-function
+  title: "Document-as-Function: Verifiable Generation of Long-Form Synthetic Documents"
+  authors:
+    - Karun Sharma
+    - Soham Bhattacharjee
+    - Vinay Kumar Sankarapu
+    - Pratinav Seth
+  venue: Under Review
+  status: under-review
+  type: under-review
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+
+- id: interpretability-as-alignment
+  title: "Interpretability as Alignment: Making Internal Understanding a Design Principle"
+  authors:
+    - Aadit Sengupta
+    - Pratinav Seth
+    - Vinay Kumar Sankarapu
+  venue: EurIPS Workshop 2025
+  status: published
+  type: workshop
+  year: 2025
+  area: "Mechanistic Interpretability & XAI"
+  url: "https://arxiv.org/abs/2509.08592"
+  arxiv: "2509.08592"
+  scholarId: "4TOpqqG69KYC"
+  image: interpawarealignmnet.png
+  imageAlt: "Interpretability as Alignment: making internal understanding a design principle, conceptual diagram"
+  featured: true
+
+- id: interpretability-aware-pruning
+  title: Interpretability-aware pruning for efficient medical image analysis
+  authors:
+    - Nikita Malik
+    - Pratinav Seth
+    - Neeraj Kumar Singh
+    - Chintan Chitroda
+    - Vinay Kumar Sankarapu
+  venue: MICCAI Workshop 2025
+  status: published
+  type: workshop
+  year: 2025
+  area: "Mechanistic Interpretability & XAI"
+  url: "https://arxiv.org/abs/2507.08330"
+  arxiv: "2507.08330"
+  scholarId: "_kc_bZDykSQC"
+  image: interp-aware-pruning.png
+  imageAlt: Interpretability-aware pruning pipeline for efficient medical image analysis
+
+- id: bridging-the-gap-in-xai
+  title: Bridging the gap in XAI-why reliable metrics matter for explainability and compliance
+  authors:
+    - Pratinav Seth
+    - Vinay Kumar Sankarapu
+  venue: EurIPS Workshop 2025
+  status: published
+  type: workshop
+  year: 2025
+  area: "Mechanistic Interpretability & XAI"
+  url: "https://arxiv.org/abs/2502.04695"
+  arxiv: "2502.04695"
+  scholarId: "KlAtU1dfN6UC"
+  image: xaimetrics.jpg
+  imageAlt: "Bridging the gap in XAI: reliable metrics for explainability and compliance, diagram"
+
+- id: dlbacktrace
+  title: "DLBacktrace: A Model Agnostic Explainability for any Deep Learning Models"
+  authors:
+    - Vinay Kumar Sankarapu
+    - Chintan Chitroda
+    - Yashwardhan Rathore
+    - Neeraj Kumar Singh
+    - Pratinav Seth
+  venue: IJCNN 2025
+  status: published
+  type: conference
+  year: 2025
+  area: "Mechanistic Interpretability & XAI"
+  url: "https://arxiv.org/pdf/2411.12643"
+  arxiv: "2411.12643"
+  scholarId: "MXK_kJrjxJIC"
+  image: dlbacktrace.png
+  imageAlt: DLBacktrace model-agnostic explainability architecture diagram
+
+- id: xai-evals
+  title: "xai_evals: A Framework for Evaluating Post-Hoc Local Explanation Methods"
+  authors:
+    - Pratinav Seth
+    - Yashwardhan Rathore
+    - Neeraj Kumar Singh
+    - Chintan Chitroda
+    - Vinay Kumar Sankarapu
+  venue: Technical Report
+  status: report
+  type: report
+  year: 2025
+  area: "Mechanistic Interpretability & XAI"
+  url: "https://arxiv.org/pdf/2502.03014"
+  arxiv: "2502.03014"
+  scholarId: "kNdYIx-mwKoC"
+  image: xai-evals-fig.png
+  imageAlt: xai_evals
+
+- id: circuitkit
+  title: "CircuitKIT: Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability"
+  authors:
+    - Pratinav Seth
+    - Hem Gosalia
+    - Aditya Kasliwal
+    - Vinay Kumar Sankarapu
+  venue: NeurIPS 2026 Workshop
+  status: published
+  type: workshop
+  year: 2026
+  area: "Mechanistic Interpretability & XAI"
+  url: "https://arxiv.org/abs/2607.19317"
+  arxiv: "2607.19317"
+  scholarId: "j3f4tGmQtD8C"
+  image: circuitkit-fig.png
+  imageAlt: CircuitKIT
+  featured: true
+
+- id: faithfulness-to-refusal
+  title: "Faithfulness to Refusal: A Causal Audit of Neuron Selectors in LLMs"
+  authors:
+    - Ananth Eswar
+    - Pratinav Seth
+    - Utsav Avaiya
+    - Vinay Kumar Sankarapu
+  venue: Under Review
+  status: under-review
+  type: under-review
+  year: 2026
+  area: "Mechanistic Interpretability & XAI"
+  url: "https://arxiv.org/abs/2607.05355"
+  arxiv: "2607.05355"
+  scholarId: "RHpTSmoSYBkC"
+  image: faithfulness-refusal-fig.png
+  imageAlt: Faithfulness to Refusal
+
+- id: faithfulness-is-not-actionability
+  title: "Faithfulness Is Not Actionability: Extrinsic Validation of Circuit Selectors Under Structured Pruning"
+  authors:
+    - Hem Gosalia
+    - Pratinav Seth
+    - Aditya Kasliwal
+    - Vinay Kumar Sankarapu
+  venue: NeurIPS 2026 Workshop
+  status: published
+  type: workshop
+  year: 2026
+  area: "Mechanistic Interpretability & XAI"
+
+- id: brief
+  title: "BRIEF: Bounded-Context Regeneration of Long Documents with Verifiable Structural Topology"
+  authors:
+    - Aryan Sood
+    - Soham Bhattacharjee
+    - Pratinav Seth
+  venue: NeurIPS 2026 Workshop
+  status: published
+  type: workshop
+  year: 2026
+  area: "Mechanistic Interpretability & XAI"
+
+- id: dlbacktrace-v2
+  title: "DLBacktrace v2: Extending Model-Agnostic Interpretability for LLMs and MoEs with CUDA Acceleration"
+  authors:
+    - Neeraj Kumar Singh
+    - Pratinav Seth
+    - Omkar Kakade
+    - Chintan Chitroda
+    - Vinay Kumar Sankarapu
+  venue: Pre-Print
+  status: preprint
+  type: preprint
+  year: 2026
+  area: "Mechanistic Interpretability & XAI"
+  url: "https://github.com/Lexsi-Labs/DLBacktrace"
+
+- id: orion-msp
+  title: "Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning"
+  authors:
+    - Mohamed Bouadi
+    - Pratinav Seth
+    - Aditya Tanna
+    - Vinay Kumar Sankarapu
+  venue: Pre-Print
+  status: preprint
+  type: preprint
+  year: 2025
+  area: "Tabular Foundation Models & Distillation"
+  url: "https://arxiv.org/abs/2511.02818"
+  arxiv: "2511.02818"
+  scholarId: "qxL8FJ1GzNcC"
+  image: orionmsp.png
+  imageAlt: "Orion-MSP: multi-scale sparse attention for tabular in-context learning, architecture diagram"
+
+- id: orion-bix
+  title: "Orion-BiX: Bi-Axial Attention for Tabular In-Context Learning"
+  authors:
+    - Mohamed Bouadi
+    - Pratinav Seth
+    - Aditya Tanna
+    - Vinay Kumar Sankarapu
+  venue: WWW 2026
+  status: published
+  type: conference
+  year: 2026
+  area: "Tabular Foundation Models & Distillation"
+  url: "https://huggingface.co/Lexsi/Orion-BiX"
+  scholarId: "aqlVkmm33-oC"
+  image: orionbix.png
+  imageAlt: "Orion-BiX: bi-axial attention for tabular in-context learning, architecture diagram"
+
+- id: exploring-fine-tuning-for-tabular-foundation-models
+  title: Exploring Fine-Tuning for Tabular Foundation Models
+  authors:
+    - Aditya Tanna
+    - Pratinav Seth
+    - Mohamed Bouadi
+    - Vinay Kumar Sankarapu
+  venue: WWW 2026
+  status: published
+  type: conference
+  year: 2026
+  area: "Tabular Foundation Models & Distillation"
+  url: "https://arxiv.org/abs/2601.09654"
+  arxiv: "2601.09654"
+  scholarId: "9ZlFYXVOiuMC"
+  image: tfm-finetuning-fig.jpeg
+  imageAlt: Exploring Fine-Tuning
+
+- id: tabtune
+  title: "TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models (Demo)"
+  authors:
+    - Aditya Tanna
+    - Pratinav Seth
+    - Mohamed Bouadi
+    - Utsav Avaiya
+    - Vinay Kumar Sankarapu
+  venue: WWW 2026
+  status: published
+  type: conference
+  year: 2026
+  area: "Tabular Foundation Models & Distillation"
+  url: "https://arxiv.org/abs/2511.02802"
+  arxiv: "2511.02802"
+  scholarId: "M3ejUd6NZC8C"
+  image: tabtune.png
+  imageAlt: TabTune unified library architecture for tabular foundation model inference and fine-tuning
+  featured: true
+
+- id: pocket-foundation-models
+  title: "Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees"
+  authors:
+    - Aditya Tanna
+    - Nassim Bouarour
+    - Mohamed Bouadi
+    - Vinay Kumar Sankarapu
+    - Pratinav Seth
+  venue: "FMSD Workshop, ICML 2026"
+  status: published
+  type: workshop
+  year: 2026
+  area: "Tabular Foundation Models & Distillation"
+  url: "https://arxiv.org/abs/2605.18654"
+  arxiv: "2605.18654"
+  image: pocket-fm-distillation-fig.png
+  imageAlt: Pocket Foundation Models distillation pipeline
+
+- id: ensembling-tabular-foundation-models
+  title: "Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap"
+  authors:
+    - Aditya Tanna
+    - Yash Jignesh Desai
+    - Pratinav Seth
+    - Mohamed Bouadi
+    - Nassim Bouarour
+    - Vinay Kumar Sankarapu
+  venue: "FMSD Workshop, ICML 2026"
+  status: published
+  type: workshop
+  year: 2026
+  area: "Tabular Foundation Models & Distillation"
+  url: "https://arxiv.org/abs/2605.18696"
+  arxiv: "2605.18696"
+  image: ensembling-tfm-fig.png
+  imageAlt: Ensembling Tabular Foundation Models Pareto frontier
+
+- id: distilling-tfms-structured-health-data
+  title: Distilling Tabular Foundation Models for Structured Health Data
+  authors:
+    - Aditya Tanna
+    - Nassim Bouarour
+    - Mohamed Bouadi
+    - Vinay Kumar Sankarapu
+    - Pratinav Seth
+  venue: "SD4H Workshop, ICML 2026 · Spotlight"
+  status: published
+  type: workshop
+  year: 2026
+  area: "Tabular Foundation Models & Distillation"
+  url: "https://arxiv.org/abs/2605.18702"
+  arxiv: "2605.18702"
+  image: sd4h-distillation-fig.png
+  imageAlt: Distilling Tabular Foundation Models for Structured Health Data pipeline
+  notes:
+    - "**Best Paper Runner-Up (Spotlight)**"
+
+- id: data-presentation-over-architecture
+  title: "Data Presentation over Architecture: Resampling Strategies for Credit Risk Prediction with Tabular Foundation Models"
+  authors:
+    - Aditya Tanna
+    - Mitul Solanki
+    - Mohamed Bouadi
+    - Nassim Bouarour
+    - Pratinav Seth
+    - Vinay Kumar Sankarapu
+  venue: "FinDS @ ACM SIGMOD 2026 · Oral"
+  status: published
+  type: workshop
+  year: 2026
+  area: "Tabular Foundation Models & Distillation"
+  url: "https://arxiv.org/abs/2605.18635"
+  arxiv: "2605.18635"
+  image: sigmod-credit-risk-fig.png
+  imageAlt: Credit default prediction under severe class imbalance pipeline
+
+- id: alberta-wells-dataset
+  title: "Alberta Wells Dataset: Pinpointing Oil and Gas Wells from Satellite Imagery"
+  authors:
+    - "Pratinav Seth*"
+    - "Michelle Lin*"
+    - Brefo Dwamena Yaw
+    - Jade Boutot
+    - Mary Kang
+    - David Rolnick
+  venue: ICML 2025 / CCAI ICLR 2025
+  status: published
+  type: conference
+  year: 2025
+  area: "Climate Change & Earth Observation"
+  url: "https://arxiv.org/pdf/2410.09032"
+  arxiv: "2410.09032"
+  scholarId: "5nxA0vEk-isC"
+  image: AWD.png
+  imageAlt: Alberta Wells Dataset pipeline for pinpointing oil and gas wells from satellite imagery
+  featured: true
+
+- id: contrails-segmentation
+  title: Performance Evaluation of Deep Segmentation Models for Contrails Detection
+  authors:
+    - Akshat Bhandari
+    - Sriya Rallabandi
+    - Sanchit Singhal
+    - Aditya Kasliwal
+    - Pratinav Seth
+  venue: NeurIPS 2022 Workshop
+  status: published
+  type: workshop
+  year: 2022
+  area: "Climate Change & Earth Observation"
+  url: "https://arxiv.org/abs/2211.14851"
+  arxiv: "2211.14851"
+  scholarId: "2osOgNQ5qMEC"
+  image: contrails-fig.png
+  imageAlt: Predicted contrail segmentation mask
+
+- id: sailing-through-spectra
+  title: "Sailing Through Spectra: Unveiling the Potential of Multi-Spectral Information in Marine Debris Segmentation"
+  authors:
+    - Dyutit Mohanty
+    - Aditya Kasliwal
+    - Bharath Udapa
+    - Pratinav Seth
+  venue: The Second Tiny Papers Track at ICLR 2024
+  status: published
+  type: tiny-paper
+  year: 2024
+  area: "Climate Change & Earth Observation"
+  url: "https://openreview.net/pdf?id=tJPLJS97X4"
+  scholarId: "roLk4NBRz8UC"
+
+- id: obscure-to-observe
+  title: "Obscure to Observe: A Lesion-Aware MAE for Glaucoma Detection from Retinal Context"
+  authors:
+    - Siddhant Bharadwaj
+    - Pratinav Seth
+    - Chandra Sekhar Seelamantula
+  venue: MIDL 2025
+  status: published
+  type: conference
+  year: 2025
+  area: Medical Imaging
+  url: "https://openreview.net/forum?id=gqLXT8Edf3"
+  scholarId: "Zph67rFs4hoC"
+  image: od_midl.png
+  imageAlt: "Obscure to Observe: lesion-aware MAE for glaucoma detection, model diagram"
+
+- id: pretraining-fairness-skin-lesions
+  title: "Does the Fairness of Your Pre-Training Hold Up? Examining the Influence of Pre-Training Techniques on Skin Tone Bias in Skin Lesion Classification"
+  authors:
+    - Pratinav Seth
+    - Abhilash K Pai
+  venue: WACV Workshop 2024
+  status: published
+  type: workshop
+  year: 2024
+  area: Medical Imaging
+  url: "https://openaccess.thecvf.com/content/WACV2024W/Pretrain/papers/Seth_Does_the_Fairness_of_Your_Pre-Training_Hold_Up_Examining_the_WACVW_2024_paper.pdf"
+  scholarId: "LkGwnXOMwfcC"
+  image: Diagram_FAIMI.jpg
+  imageAlt: "Pre-training techniques and skin tone bias in skin lesion classification, study diagram"
+
+- id: refuseg
+  title: "ReFuSeg: Regularized Multi-Modal Fusion for Precise Brain Tumour Segmentation"
+  authors:
+    - Aditya Kasliwal
+    - Sankarshanaa Sagaram
+    - Laven Srivastava
+    - Pratinav Seth
+    - Adil Khan
+  venue: "BrainLes @ MICCAI 2023"
+  status: published
+  type: workshop
+  year: 2023
+  area: Medical Imaging
+  url: "https://arxiv.org/pdf/2308.13883"
+  arxiv: "2308.13883"
+  scholarId: "Y0pCki6q_DkC"
+  image: refuseg-fig.png
+  imageAlt: Brain MRI slice used in ReFuSeg tumour segmentation
+
+- id: uatta-ens
+  title: "UATTA-ENS: Uncertainty Aware Test Time Augmented Ensemble for PIRC Diabetic Retinopathy Detection"
+  authors:
+    - Pratinav Seth
+    - Adil Khan
+    - Ananya Gupta
+    - Saurabh Kumar Mishra
+    - Akshat Bhandari
+  venue: NeurIPS 2022 Workshop
+  status: published
+  type: workshop
+  year: 2022
+  area: Medical Imaging
+  url: "https://arxiv.org/pdf/2211.03148"
+  arxiv: "2211.03148"
+  scholarId: "u-x6o8ySG0sC"
+  image: uatta-ens-fig.png
+  imageAlt: Retinal fundus image used in UATTA-ENS diabetic retinopathy detection
+
+- id: predictive-uncertainty-distribution-shift
+  title: Evaluating Predictive Uncertainty and Robustness to Distributional Shift Using Real World Data
+  authors:
+    - "Kumud Lakara*"
+    - "Akshat Bhandari*"
+    - "Pratinav Seth*"
+    - Ujjwal Verma
+  venue: "Bayesian DL Workshop, NeurIPS 2021"
+  status: published
+  type: workshop
+  year: 2021
+  area: "Uncertainty & Robustness"
+  url: "https://arxiv.org/abs/2111.04665"
+  arxiv: "2111.04665"
+  scholarId: "u5HHmVD_uO8C"
+  image: eval-pred-uncertainty-fig.png
+  imageAlt: F1 score vs retention fraction for single model vs ensemble
+
+- id: uatta-eb
+  title: "UATTA-EB: Uncertainty-Aware Test-Time Augmented Ensemble of BERTs for Classifying Common Mental Illnesses on Social Media Posts"
+  authors:
+    - "Pratinav Seth*"
+    - "Mihir Agarwal*"
+  venue: 1st Tiny Paper Track at ICLR 2023
+  status: published
+  type: tiny-paper
+  year: 2023
+  area: "Uncertainty & Robustness"
+  url: "https://arxiv.org/pdf/2304.04539"
+  arxiv: "2304.04539"
+  scholarId: "IjCSPb-OGe4C"
+
+- id: fake-training-data
+  title: Analyzing Effects of Fake Training Data on the Performance of Deep Learning Systems
+  authors:
+    - "Pratinav Seth*"
+    - "Akshat Bhandari*"
+    - "Kumud Lakara*"
+  venue: Pre-Print
+  status: preprint
+  type: preprint
+  year: 2023
+  area: "Uncertainty & Robustness"
+  url: "https://arxiv.org/pdf/2303.01268"
+  arxiv: "2303.01268"
+  scholarId: "qjMakFHDy7sC"
+  image: fake-training-data-fig.png
+  imageAlt: Sample low-fidelity synthetic training image
+
+- id: self-percept
+  title: "SELF-PERCEPT: Introspection Improves Large Language Models' Detection of Multi-Person Mental Manipulation in Conversations"
+  authors:
+    - Danush Khanna
+    - Pratinav Seth
+    - Sidhaarth Sredharan Murali
+    - Aditya Kumar Guru
+    - Siddharth Shukla
+    - Tanuj Tyagi
+    - Sandeep Chaurasia
+    - Kripabandhu Ghosh
+  venue: ACL 2025 / NAACL SRW Workshop 2025
+  status: published
+  type: conference
+  year: 2025
+  area: "NLP & AI for Social Good"
+  url: "https://aclanthology.org/2025.acl-short.52/"
+  scholarId: "YOwf2qJgpHMC"
+  image: Manipulation_Techniques.png
+  imageAlt: SELF-PERCEPT introspection pipeline for detecting multi-person mental manipulation
+  featured: true
+
+- id: agrillm
+  title: "AgriLLM: Harnessing transformers for farmer queries."
+  authors:
+    - "Krish Didwania*"
+    - "Pratinav Seth*"
+    - Aditya Kasliwal
+    - Amit Agarwal
+  venue: "3rd Workshop on NLP for Positive Impact @ EMNLP 2024"
+  status: published
+  type: workshop
+  year: 2024
+  area: "NLP & AI for Social Good"
+  url: "https://arxiv.org/pdf/2407.04721"
+  arxiv: "2407.04721"
+  scholarId: "hqOjcs7Dif8C"
+  image: diag2.jpg
+  imageAlt: AgriLLM transformer pipeline for farmer query handling
+
+- id: sss-semeval-2023
+  title: "SSS at SemEval-2023 Task 10: Explainable Detection of Online Sexism using Majority Voted Fine-Tuned Transformers"
+  authors:
+    - Sriya Rallabandi
+    - Sanchit Singhal
+    - Pratinav Seth
+  venue: "SemEval-2023 @ ACL 2023"
+  status: published
+  type: shared-task
+  year: 2023
+  area: "NLP & AI for Social Good"
+  url: "https://aclanthology.org/2023.semeval-1.171/"
+  scholarId: "zYLM7Y9cAGgC"
+  image: sss-semeval-fig.png
+  imageAlt: Frequency distribution of sexism labels in the SemEval-2023 Task 10 dataset
+
+- id: rsm-nlp-blp-2023
+  title: "RSM-NLP at BLP-2023 Task 2: Bangla Sentiment Analysis using Weighted and Majority Voted Fine-Tuned Transformers"
+  authors:
+    - Pratinav Seth
+    - Rashi Goel
+    - Komal Mathur
+    - Swetha Vemulapalli
+  venue: "BLP 2023 @ EMNLP 2023"
+  status: published
+  type: shared-task
+  year: 2023
+  area: "NLP & AI for Social Good"
+  url: "https://aclanthology.org/2023.banglalp-1.40/"
+  scholarId: "ufrVoPGSRksC"
+  image: rsm-nlp-blp-fig.png
+  imageAlt: Frequency distribution of sentiment labels in the BLP-2023 Task 2 dataset
+
+- id: hgp-nlp-biolaysumm
+  title: "HGP-NLP at Shared Task: Leveraging LoRA for Lay Summarization of Biomedical Research Articles using Seq2Seq Transformers"
+  authors:
+    - Hemang Malik
+    - Gaurav Pradeep
+    - Pratinav Seth
+  venue: "BioNLP Workshop @ ACL 2024"
+  status: published
+  type: shared-task
+  year: 2024
+  area: "NLP & AI for Social Good"
+  url: "https://aclanthology.org/2024.bionlp-1.78.pdf"
+  scholarId: "0EnyYjriUFMC"
+
+- id: corefusion
+  title: "CoReFusion: Contrastive Regularized Fusion for Guided Thermal Super-Resolution"
+  authors:
+    - Aditya Kasliwal
+    - Pratinav Seth
+    - Sriya Rallabandi
+    - Sanchit Singhal
+  venue: CVPR Workshop 2023
+  status: published
+  type: workshop
+  year: 2023
+  area: "Vision & Super-Resolution"
+  url: "https://openaccess.thecvf.com/content/CVPR2023W/PBVS/html/Kasliwal_CoReFusion_Contrastive_Regularized_Fusion_for_Guided_Thermal_Super-Resolution_CVPRW_2023_paper.html"
+  scholarId: "UeHWp8X0CEIC"
+  image: unet-f.png
+  imageAlt: CoReFusion contrastive regularized fusion architecture for thermal super-resolution
+
+- id: lamar
+  title: "LaMAR: Laplacian Pyramid for Multimodal Adaptive Super Resolution (Student Abstract)"
+  authors:
+    - Aditya Kasliwal
+    - Aryan Kamani
+    - Ishaan Gakhar
+    - Pratinav Seth
+    - Sriya Rallabandi
+  venue: AAAI Student Abstract 2024
+  status: published
+  type: student-abstract
+  year: 2024
+  area: "Vision & Super-Resolution"
+  url: "https://ojs.aaai.org/index.php/AAAI/article/download/30463/32568"
+  scholarId: "Se3iqnhoufwC"
+  image: img3.jpg
+  imageAlt: LaMAR Laplacian pyramid architecture for multimodal adaptive super resolution
+
+- id: lapgsr
+  title: Laplacian reconstructive network for guided thermal super-resolution
+  authors:
+    - Aditya Kasliwal
+    - Ishaan Gakhar
+    - Aryan Kamani
+    - Pratinav Seth
+    - Ujjwal Verma
+  venue: Scientific Reports (Nature)
+  status: published
+  type: journal
+  year: 2026
+  area: "Vision & Super-Resolution"
+  url: "https://doi.org/10.1038/s41598-026-36027-x"
+  scholarId: "QIV2ME_5wuYC"
+  image: LAPGSR.jpg
+  imageAlt: Laplacian reconstructive network architecture for guided thermal super-resolution

@@ -1,0 +1,90 @@
+# Talks & Events page. Text fields accept inline Markdown. Photo `src` is relative to src/assets/images/.
+
+upcoming:
+  - name: "[EMNLP 2026](https://2026.emnlp.org/)"
+    where: Budapest, Hungary
+    when: October 24–29, 2026
+    note: Attending, with accepted work at the main conference, Findings, System Demonstrations and the NLLP Workshop.
+
+conferences:
+  - { name: ICML 2026, where: "Seoul, South Korea" }
+  - { name: The Web Conference (WWW) 2026, where: "Dubai, UAE", note: attended remotely }
+  - { name: EurIPS Workshop on Private AI Governance, where: "Copenhagen, Denmark", note: December 2025 }
+  - { name: MICCAI 2025 Workshop, where: "Daejeon, South Korea" }
+  - { name: ICML 2025, where: "Vancouver, Canada" }
+  - { name: ICLR 2025, where: Singapore }
+  - { name: AAAI 2023, where: "Washington D.C., USA" }
+
+photos:
+  - src: events/icml2026-sd4h-spotlight.jpg
+    alt: Pratinav Seth and co-author holding a Spotlight certificate for Distilling Tabular Foundation Models for Structured Health Data at the SD4H Workshop, ICML 2026
+    caption: ICML 2026 · SD4H Workshop, Spotlight (Best Paper Runner-Up)
+  - src: events/icml2026-fmsd.jpg
+    alt: Pratinav Seth presenting Ensembling Tabular Foundation Models and Pocket Foundation Models posters at the FMSD Workshop, ICML 2026
+    caption: ICML 2026 · FMSD Workshop
+  - src: events/icml2026-alignbeam.jpg
+    alt: Pratinav Seth presenting the ALIGNBEAM poster at ICML 2026
+    caption: ICML 2026 · ALIGNBEAM
+  - src: events/icml2026-ctheta.jpg
+    alt: Pratinav Seth presenting the C-Delta-Theta poster at ICML 2026
+    caption: ICML 2026 · C-ΔΘ
+  - src: events/eurips-2025-spotlight-talk.jpg
+    alt: Pratinav Seth delivering the Interpretability as Alignment spotlight talk at the EurIPS Workshop on Private AI Governance, Copenhagen
+    caption: EurIPS 2025 · Spotlight Talk, Copenhagen
+  - src: events/eurips-2025-posters.jpg
+    alt: Pratinav Seth between two posters, Interpretability as Alignment and Bridging the Gap in XAI, at the EurIPS Workshop on Private AI Governance 2025
+    caption: EurIPS 2025 · Private AI Governance Workshop
+  - src: events/eurips-2025-orion-msp.jpg
+    alt: Pratinav Seth presenting the Orion-MSP poster at EurIPS Copenhagen 2025
+    caption: EurIPS 2025 · Orion-MSP
+  - src: events/miccai2025-pruning.jpg
+    alt: Pratinav Seth presenting the Interpretability-Aware Pruning for Efficient Medical Image Analysis poster at a MICCAI 2025 Workshop
+    caption: MICCAI 2025 Workshop · Interpretability-Aware Pruning
+  - src: events/icml2025-alberta-wells.jpg
+    alt: Pratinav Seth and a co-author presenting the Alberta Wells Dataset poster at ICML 2025
+    caption: ICML 2025 · Alberta Wells Dataset
+  - src: events/iclr2025-ccai-alberta-wells.jpg
+    alt: Pratinav Seth presenting the Alberta Wells Dataset poster at the Climate Change AI workshop, ICLR 2025
+    caption: ICLR 2025 · Climate Change AI Workshop
+  - src: india-ai-summit-2026.jpg
+    alt: Pratinav Seth at the India AI Impact Summit 2026, Bharat Mandapam, New Delhi
+    caption: India AI Impact Summit 2026 · New Delhi
+  - src: events/mlops-conf-2024-sf-booth.jpg
+    alt: Pratinav Seth at the AryaXAI booth, MLOps Conference 2024, San Francisco
+    caption: MLOps Conference 2024 · San Francisco
+  - src: events/aaai-uc-2023.jpg
+    alt: Pratinav Seth in Washington D.C. for the AAAI Undergraduate Consortium 2023
+    caption: AAAI 2023 · Washington D.C.
+
+talks:
+  - year: 2025
+    items:
+      - date: "2025.12"
+        text: "**EurIPS Spotlight Talk:** *Interpretability as Alignment: Making Internal Understanding a Design Principle*, EurIPS Workshop on Private AI Governance, Copenhagen, with Aadit Sengupta"
+      - text: "**AryaXAI Alignment Lab webinar:** *Inside the Black Box: Interpreting LLMs with DL-Backtrace*"
+      - text: "**AryaXAI Alignment Lab webinar:** *Beyond Explainability: Evaluating XAI Methods with Confidence Using xai_evals*"
+      - text: "**Paper podcast:** *Interpretability-Aware Pruning in Medical Imagery*"
+  - year: 2024
+    items:
+      - date: "2024.10"
+        text: "**SSI Club AI Paper-Fest:** talk on DL-Backtrace, online"
+      - date: "2024.03"
+        text: "**Introduction to Research**, ACM-W Manipal Chapter"
+      - date: "2024.02"
+        text: "**Data Dialogue**, invited by The Data Alchemists, MIT Manipal ([post](https://www.instagram.com/p/C2B-pv7v82l/))"
+  - year: 2023
+    items:
+      - date: "2023.03"
+        text: "**Research as an Undergrad**, ACM-W Manipal Chapter"
+
+industry:
+  - date: "2026"
+    text: "**Hindustan Times Brunch:** shared perspectives with [Vinay Kumar Sankarapu](https://www.linkedin.com/in/vinaykumar123/) on AI sycophancy and why chatbots can sound confident even when they are wrong, in [Taranna Khetpal's feature](https://www.hindustantimes.com/lifestyle/brunch/too-chatty-gpt-why-ai-should-talk-less-and-just-give-us-the-info-we-need-101791477133262.html)."
+  - date: "2026.02"
+    text: "**India AI Impact Summit 2026**, Bharat Mandapam, New Delhi, representing Lexsi Labs. Attended AI Safety Connect Day (International Association for Safe and Ethical AI); joined The Dialogue's closed-door roundtable *Powering the AI Frontier: Building India's Compute, Infrastructure, and Trust Backbone for Inclusive AI Growth*; presented Lexsi Labs' work on alignment, interpretability-driven safety and open-source toolkits."
+  - date: "2026.02"
+    text: "**PyTorch Day Bangalore 2026**"
+  - date: "2025.12"
+    text: "**AurionAI Launch Event**, India, representing Lexsi Labs"
+  - date: "2024"
+    text: "**MLOps Conference**, San Francisco, representing AryaXAI"

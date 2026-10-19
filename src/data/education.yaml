@@ -1,0 +1,71 @@
+# Education & Service page. Text fields accept inline Markdown.
+
+honors:
+  - date: "2025.12"
+    text: "Selected as **Mentor** for the [AAAI Undergraduate Consortium 2026](https://aaai-uc.github.io/), returning after being a Scholar in the 2023 cohort."
+  - date: "2023.02"
+    text: "One of 11 undergraduates selected as an [AAAI Undergraduate Consortium Scholar 2023](https://aaai-uc.github.io/2023_scholars.html), with a $2,000 travel grant to present at AAAI-23 in Washington D.C."
+  - date: "2023.01"
+    text: "MAHE Undergraduate Research Grant (₹10,000) for *Explainable & Trustworthy Skin Lesion Classification*, under Dr. Abhilash K. Pai."
+  - date: "2022.06"
+    text: "**Top 10 team** of 1,000+ submissions, Bajaj Finserv HackRx 3.0 Hackathon."
+
+education:
+  - date: "2020.10 – 2024.07"
+    degree: B.Tech in Data Science & Engineering
+    school: Manipal Institute of Technology, Manipal Academy of Higher Education
+    details:
+      - "**CGPA:** 8.31/10"
+      - "**Final year project:** *Pinpointing Oil and Gas Wells from Satellite Imagery using Machine Learning*. Internal guide Dr. Abhilash K. Pai (MIT); external guide Dr. David Rolnick (Mila, McGill, UdeM)."
+    photo:
+      src: events/mila-fyp-thesis.jpg
+      alt: "Final year project defense slide: Pinpointing Oil and Gas Wells from Satellite Imagery using Machine Learning, with Mila and Manipal Institute of Technology branding"
+      caption: Final year project defense, Manipal Institute of Technology
+
+service:
+  mentoring:
+    - "**Mentor**, AAAI Undergraduate Consortium 2026 (Scholar 2023 → Mentor 2026)"
+  mainConference: "AAAI 2027 (Program Committee), NeurIPS 2026, ACM AIES 2026, CVPR (2025–26), ECCV (2024–26), ICCV 2025, WACV (2026–27), BMVC 2026, IJCNN 2025"
+  workshops2026:
+    - Mechanistic Interpretability Workshop (ICML 2026)
+    - AI for Good Workshop (ICML 2026)
+    - TAIGR Workshop (ICML 2026)
+    - Foundation Models for Structured Data Workshop (ICML 2026)
+    - FinDS Workshop @ ACM SIGMOD 2026
+    - Advances in Financial AI Workshop (ICLR 2026)
+    - BlackboxNLP Workshop (EMNLP 2026)
+    - NLP4PI Workshop (EMNLP 2026)
+    - System Demonstrations Track (EMNLP 2026)
+    - Actionable Interpretability Workshop (COLM 2026)
+  workshopsEarlier:
+    - Actionable Interpretability Workshop (ICML 2025)
+    - RegML Workshop (NeurIPS 2025)
+    - NLP for Positive Impact Workshop (EMNLP 2024)
+    - Bayesian Decision-making and Uncertainty Workshop (NeurIPS 2024)
+    - Frontiers in Probabilistic Inference (ICLR 2025)
+    - SyntheticData4ML Workshop (NeurIPS 2022–23)
+    - FAIMI Workshop (MICCAI 2024)
+    - Domain Adaptation and Representation Transfer Workshop (MICCAI 2023)
+    - Topological, Algebraic, and Geometric Pattern Recognition Workshop (CVPR 2023)
+
+skills:
+  - group: Interpretability
+    items: [Mechanistic interpretability, Circuit analysis & attribution, TransformerLens, Captum, SHAP, LIME, Integrated Gradients, LRP, DL-Backtrace]
+  - group: Post-training & alignment
+    items: [RLHF, DPO, Constitutional AI, "PEFT (LoRA, QLoRA, DoRA)", TRL, Axolotl, Unsloth, LlamaFactory, HF Accelerate]
+  - group: LLM systems & efficiency
+    items: [Flash Attention 2, MoE architectures, "Quantization (bitsandbytes, AutoGPTQ)", Pruning, ONNX, TensorRT, lm-evaluation-harness]
+  - group: Deep learning systems
+    items: [CUDA, Triton kernels, "Distributed training (DeepSpeed, FSDP)", Mixed precision, "Multi-GPU (H200 / H100 / RTX 6000 Pro)"]
+  - group: Tabular & classical ML
+    items: [XGBoost, LightGBM, CatBoost, TabPFN, Optuna, Ray Tune]
+  - group: AI & coding agents
+    items: [LangChain, LangGraph, Claude Code, Codex, Cursor, Windsurf]
+  - group: MLOps, serving & infra
+    items: [Weights & Biases, MLflow, Ray, Docker, Slurm, Git, Linux, HPC, HF Hub, FAISS, AWS/GCP, vLLM, FastAPI, Gradio, Streamlit, Ollama]
+  - group: Languages & core libraries
+    items: [Python, C++, SQL, Java, C, LaTeX, PyTorch, TensorFlow, Keras, scikit-learn, NumPy, pandas, OpenCV, GeoPandas, spaCy]
+
+certifications:
+  - "**Deep Learning Specialization**, DeepLearning.AI"
+  - "**6th Summer School on AI**, CVIT IIIT Hyderabad"

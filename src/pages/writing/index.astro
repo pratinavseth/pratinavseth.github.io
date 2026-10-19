@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getPosts, fmtDate } from '../../lib/posts';
+
+const posts = await getPosts();
+---
+
+<Base title="Writing" description="Notes by Pratinav Seth on post-training safety, mechanistic interpretability and the research behind his papers.">
+  <header class="page-head container">
+    <h1>Writing</h1>
+    <p>Notes on the research: what a paper is really about, what didn’t make it in, and where it goes next.</p>
+  </header>
+
+  <section class="container" style="padding-bottom:var(--space-8)">
+    {posts.length === 0 ? (
+      <p class="muted">The first post is on its way. In the meantime, the <a href="/publications/">papers</a> are the best place to start, and there’s an <a href="/rss.xml">RSS feed</a> to catch new posts.</p>
+    ) : (
+      <ul class="paper-list">
+        {posts.map((p) => (
+          <li class="paper">
+            <div class="paper__year">{p.data.date.getUTCFullYear()}</div>
+            <div>
+              <div class="paper__title" style="font-size:var(--step-1)">
+                <a href={`/writing/${p.id}/`}>{p.data.title}</a>
+                {p.data.draft && <span class="tag tag--accent" style="margin-left:.5rem">Draft</span>}
+              </div>
+              <p class="paper__authors" style="margin:var(--space-1) 0 0">{p.data.description}</p>
+              <p class="mono muted" style="font-size:.75rem;margin:var(--space-2) 0 0">{fmtDate(p.data.date)}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+</Base>

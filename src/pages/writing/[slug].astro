@@ -1,0 +1,42 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { render, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Contact from '../../components/Contact.astro';
+import { site } from '../../config/site';
+import { getPosts, fmtDate } from '../../lib/posts';
+
+export const getStaticPaths = (async () => {
+  const posts = await getPosts();
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}) satisfies GetStaticPaths;
+
+interface Props { post: CollectionEntry<'posts'> }
+const { post } = Astro.props;
+const { Content } = await render(post);
+const url = new URL(`/writing/${post.id}/`, site.url).href;
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: post.data.date.toISOString(),
+  url,
+  author: { '@type': 'Person', '@id': `${site.url}/#person`, name: site.name, url: site.url },
+  keywords: post.data.tags.join(', '),
+};
+---
+
+<Base title={post.data.title} description={post.data.description} type="article" jsonLd={[ld]} noindex={post.data.draft}>
+  <article class="container" style="padding-block:var(--space-7)">
+    <p class="mono" style="font-size:var(--step--1);text-transform:uppercase;letter-spacing:.05em">
+      <a href="/writing/">← Writing</a> · <time datetime={post.data.date.toISOString()}>{fmtDate(post.data.date)}</time>
+      {post.data.draft && <span class="tag tag--accent" style="margin-left:.5rem">Draft, not published</span>}
+    </p>
+    <h1 style="font-size:var(--step-3);max-width:24ch;margin:var(--space-4) 0 var(--space-5)">{post.data.title}</h1>
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+  <Contact />
+</Base>

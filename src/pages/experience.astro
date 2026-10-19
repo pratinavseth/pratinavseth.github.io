@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import { experience } from '../lib/data';
+import { inline } from '../lib/md';
+import { getPubs, pageOf } from '../lib/pubs';
+
+const pubs = await getPubs();
+const byId = new Map(pubs.map((p) => [p.id, p]));
+for (const g of experience) {
+  for (const r of g.roles) {
+    for (const id of r.papers) {
+      if (!byId.has(id)) throw new Error(`experience.yaml: role "${r.role}" lists unknown paper id "${id}"`);
+    }
+  }
+}
+---
+
+<Base
+  title="Experience"
+  description="Research career from Lead Research Scientist at Lexsi Labs back through Mila Quebec AI Institute, Bosch Research and IIT Kharagpur: post-training alignment, mechanistic interpretability and tabular foundation models."
+>
+  <header class="page-head container">
+    <h1>Experience</h1>
+    <p>Research roles, collaborations and leadership, most recent first.</p>
+  </header>
+
+  {experience.map((g) => (
+    <section class="section container" aria-labelledby={`g-${g.group}`}>
+      <div class="section__head"><h2 id={`g-${g.group}`}>{g.group}</h2></div>
+      {g.roles.map((r) => (
+        <div class="role">
+          <div class="role__date">{r.date}</div>
+          <div>
+            <p class="role__title" set:html={inline(r.role)} />
+            {r.points.length > 0 && (
+              <ul>
+                {r.points.map((pt) => (
+                  <li>
+                    {pt.label && <span class="role__label">{pt.label}: </span>}
+                    <span set:html={inline(pt.text)} />
+                  </li>
+                ))}
+              </ul>
+            )}
+            {r.papers.length > 0 && (
+              <details class="role__papers">
+                <summary>{r.papers.length} paper{r.papers.length === 1 ? '' : 's'} from this role</summary>
+                <ul style="margin-top:var(--space-2)">
+                  {r.papers.map((id) => {
+                    const p = byId.get(id)!;
+                    return <li><a href={pageOf(p)}>{p.data.title}</a> <span class="muted">· {p.data.venue}</span></li>;
+                  })}
+                </ul>
+              </details>
+            )}
+          </div>
+        </div>
+      ))}
+    </section>
+  ))}
+</Base>

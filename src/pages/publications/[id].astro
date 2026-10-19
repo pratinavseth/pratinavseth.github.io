@@ -1,0 +1,159 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { Image } from 'astro:assets';
+import Base from '../../layouts/Base.astro';
+import PaperItem from '../../components/PaperItem.astro';
+import { site } from '../../config/site';
+import { img, hasImg } from '../../lib/images';
+import { inline } from '../../lib/md';
+import {
+  abstractOf, authorsOf, bibtex, citationsOf, getPubs, isMine, pageOf, pdfOf,
+  STATUS_LABEL, TYPE_LABEL, type Pub,
+} from '../../lib/pubs';
+
+export const getStaticPaths = (async () => {
+  const pubs = await getPubs();
+  return pubs.map((pub) => ({ params: { id: pub.id }, props: { pub } }));
+}) satisfies GetStaticPaths;
+
+interface Props { pub: Pub }
+const { pub } = Astro.props;
+const d = pub.data;
+const authors = authorsOf(pub);
+const abstract = abstractOf(pub);
+const cites = await citationsOf(pub);
+const pdf = pdfOf(pub);
+const url = new URL(pageOf(pub), site.url).href;
+const related = (await getPubs())
+  .filter((p) => p.id !== pub.id && isMine(p) && p.data.area === d.area)
+  .slice(0, 4);
+
+const description = abstract
+  ? abstract.slice(0, 155).replace(/\s+\S*$/, '') + '…'
+  : `${d.title}. ${authors.map((a) => a.name).join(', ')}. ${d.venue}, ${d.year}.`;
+
+// Google Scholar reads Highwire Press tags: one paper per URL.
+const meta = [
+  { name: 'citation_title', content: d.title },
+  ...authors.filter((a) => a.name !== 'Lexsi Labs Team').map((a) => ({ name: 'citation_author', content: a.name })),
+  { name: 'citation_publication_date', content: String(d.year) },
+  { name: 'citation_abstract_html_url', content: url },
+  ...(d.type === 'journal'
+    ? [{ name: 'citation_journal_title', content: d.venue }]
+    : d.status === 'published'
+      ? [{ name: 'citation_conference_title', content: d.venue }]
+      : []),
+  ...(pdf ? [{ name: 'citation_pdf_url', content: pdf }] : []),
+  ...(d.arxiv ? [{ name: 'citation_arxiv_id', content: d.arxiv }] : []),
+  ...(d.type === 'report' ? [{ name: 'citation_technical_report_institution', content: 'Lexsi Labs' }] : []),
+];
+
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ScholarlyArticle',
+  headline: d.title,
+  name: d.title,
+  url,
+  datePublished: String(d.year),
+  author: authors.map((a) =>
+    a.me ? { '@id': `${site.url}/#person`, '@type': 'Person', name: a.name } : { '@type': 'Person', name: a.name },
+  ),
+  ...(abstract ? { abstract } : {}),
+  ...(d.status === 'published' ? { isPartOf: { '@type': 'PublicationIssue', name: d.venue } } : {}),
+  ...(d.arxiv ? { sameAs: [`https://arxiv.org/abs/${d.arxiv}`], identifier: `arXiv:${d.arxiv}` } : d.url ? { sameAs: [d.url] } : {}),
+  keywords: d.area,
+};
+const crumbsLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Publications', item: `${site.url}/publications/` },
+    { '@type': 'ListItem', position: 2, name: d.title, item: url },
+  ],
+};
+const bib = bibtex(pub);
+---
+
+<Base title={d.title} description={description} type="article" image={`/og/papers/${pub.id}.png`} imageAlt={d.title} meta={meta} jsonLd={[articleLd, crumbsLd]}>
+  <article class="container" style="padding-block:var(--space-7)">
+    <p class="mono" style="font-size:var(--step--1);text-transform:uppercase;letter-spacing:.05em;margin-bottom:var(--space-4)">
+      <a href="/publications/">← Publications</a> / {d.area}
+    </p>
+    <h1 style="font-size:var(--step-3);max-width:28ch">{d.title}</h1>
+    <p style="margin-top:var(--space-4);font-size:var(--step-1)">
+      {authors.map((a, i) => (
+        <>
+          {a.me ? <a href="/"><strong>{a.name}</strong></a> : a.name}
+          {a.equal && <sup title="Equal contribution">*</sup>}
+          {i < authors.length - 1 && ', '}
+        </>
+      ))}
+    </p>
+    {authors.some((a) => a.equal) && <p class="muted" style="font-size:var(--step--1)">* Equal contribution</p>}
+
+    <div class="card__meta" style="margin-top:var(--space-4)">
+      <span class:list={['tag', d.status === 'published' ? 'tag--solid' : 'tag--quiet']}>{d.venue}</span>
+      <span class="tag tag--quiet">{d.year}</span>
+      <span class="tag tag--quiet">{d.status === 'published' ? TYPE_LABEL[d.type] : STATUS_LABEL[d.status]}</span>
+      {typeof cites === 'number' && <span class="tag tag--quiet">{cites} citation{cites === 1 ? '' : 's'}</span>}
+    </div>
+
+    <div class="btn-row" style="margin-top:var(--space-5)">
+      {pdf && <a class="btn btn--primary" href={pdf}>PDF</a>}
+      {d.arxiv && <a class="btn" href={`https://arxiv.org/abs/${d.arxiv}`}>arXiv</a>}
+      {d.url && !d.url.includes('arxiv.org') && <a class="btn" href={d.url}>Paper page</a>}
+      {d.code && <a class="btn" href={d.code}>Code</a>}
+      {d.scholarId && <a class="btn" href={`https://scholar.google.com/citations?view_op=view_citation&user=${site.scholarUser}&citation_for_view=${site.scholarUser}:${d.scholarId}`}>Scholar</a>}
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-6);margin-top:var(--space-6)">
+      {hasImg(d.image) && (
+        <figure class="figure-frame" style="max-width:56rem">
+          <Image src={img(d.image!)} alt={d.imageAlt ?? `Figure from ${d.title}`} widths={[480, 800, 1200]} sizes="(min-width: 60rem) 54rem, 92vw" loading="eager" />
+        </figure>
+      )}
+
+      {abstract && (
+        <section class="prose" aria-labelledby="abstract-title">
+          <h2 id="abstract-title" style="font-size:var(--step-2);margin-top:0">Abstract</h2>
+          <p>{abstract}</p>
+        </section>
+      )}
+
+      {d.notes && d.notes.length > 0 && (
+        <section class="prose" aria-label="Notes">
+          {d.notes.map((n) => <p set:html={inline(n)} />)}
+        </section>
+      )}
+
+      <section aria-labelledby="cite-title" style="max-width:56rem">
+        <h2 id="cite-title" style="font-size:var(--step-2);margin-bottom:var(--space-3)">Cite</h2>
+        <div class="bib">
+          <pre id="bibtex">{bib}</pre>
+          <button class="copy-btn" type="button" data-copy-bib>Copy BibTeX</button>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  {related.length > 0 && (
+    <section class="section container" aria-labelledby="related-title">
+      <div class="section__head"><h2 id="related-title">More in {d.area}</h2><a class="section__more" href={`/publications/?area=${encodeURIComponent(d.area)}`}>All →</a></div>
+      <ul class="paper-list">{related.map((p) => <PaperItem pub={p} />)}</ul>
+    </section>
+  )}
+</Base>
+
+<script>
+  document.querySelector<HTMLButtonElement>('[data-copy-bib]')?.addEventListener('click', async (e) => {
+    const btn = e.currentTarget as HTMLButtonElement;
+    const text = document.getElementById('bibtex')?.textContent ?? '';
+    try {
+      await navigator.clipboard.writeText(text);
+      btn.textContent = 'Copied';
+    } catch {
+      btn.textContent = 'Select and copy';
+    }
+    setTimeout(() => (btn.textContent = 'Copy BibTeX'), 2000);
+  });
+</script>

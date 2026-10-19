@@ -1,0 +1,71 @@
+# Who each co-author is to Pratinav. Co-authorship counts and shared papers are computed
+# from publications.yaml at build time; only the relationship and institution live here.
+# role: manager | mentor | mentee | collaborator
+
+Vinay Kumar Sankarapu: { institution: Lexsi Labs / AryaXAI Alignment Labs, role: manager }
+Chintan Chitroda: { institution: AryaXAI Alignment Labs, role: manager }
+David Rolnick: { institution: Mila / McGill, role: mentor }
+Abhilash K Pai: { institution: MIT MAHE, role: mentor }
+Ujjwal Verma: { institution: MIT MAHE, role: mentor }
+Aditya Kasliwal: { institution: Mars Rover Manipal / Research Society Manipal / Lexsi Labs, role: mentee }
+Aditya Tanna: { institution: Lexsi Labs, role: mentee }
+Utsav Avaiya: { institution: Lexsi Labs, role: mentee }
+Saisab Sadhu: { institution: Lexsi Labs, role: mentee }
+Chirag Chawla: { institution: Lexsi Labs, role: mentee }
+Soham Bhattacharjee: { institution: Lexsi Labs, role: mentee }
+Nikita Malik: { institution: Lexsi Labs, role: mentee }
+Aadit Sengupta: { institution: Lexsi Labs, role: mentee }
+R E Zera Marveen Lyngkhoi: { institution: Lexsi Labs, role: mentee }
+Hem Gosalia: { institution: Lexsi Labs, role: mentee }
+Ananth Eswar: { institution: Lexsi Labs, role: mentee }
+Anshul Kaushal: { institution: Lexsi Labs, role: mentee }
+Karun Sharma: { institution: Lexsi Labs, role: mentee }
+Omkar Kakade: { institution: Lexsi Labs, role: mentee }
+Mitul Solanki: { institution: Lexsi Labs, role: mentee }
+Areeb Ahmad: { institution: Lexsi Labs, role: collaborator }
+Shreeyans Arora: { institution: Lexsi Labs, role: collaborator }
+Aryan Sood: { institution: Lexsi Labs, role: collaborator }
+Abhivansh Gupta: { institution: Lexsi Labs, role: collaborator }
+Vidushee Vats: { institution: Lexsi Labs, role: collaborator }
+Ram Mohan Rao Kadiyala: { institution: Lexsi Labs, role: collaborator }
+Mohamed Bouadi: { institution: "Lexsi Labs, Paris", role: collaborator }
+Nassim Bouarour: { institution: "Lexsi Labs, Paris", role: collaborator }
+Mykola Khandoga: { institution: "Lexsi Labs, Paris", role: collaborator }
+Rui Yuan: { institution: "Lexsi Labs, Paris", role: collaborator }
+Yash Jignesh Desai: { institution: "Lexsi Labs, Paris", role: collaborator }
+Yashwardhan Rathore: { institution: AryaXAI Alignment Labs, role: collaborator }
+Neeraj Kumar Singh: { institution: AryaXAI Alignment Labs, role: collaborator }
+Akshat Bhandari: { institution: Mars Rover Manipal, role: collaborator }
+Sriya Rallabandi: { institution: Mars Rover Manipal, role: collaborator }
+Sanchit Singhal: { institution: Mars Rover Manipal, role: collaborator }
+Kumud Lakara: { institution: Mars Rover Manipal, role: collaborator }
+Aryan Kamani: { institution: Mars Rover Manipal, role: collaborator }
+Ishaan Gakhar: { institution: Mars Rover Manipal, role: collaborator }
+Adil Khan: { institution: Mars Rover Manipal, role: collaborator }
+Ananya Gupta: { institution: Mars Rover Manipal, role: collaborator }
+Saurabh Kumar Mishra: { institution: Mars Rover Manipal, role: collaborator }
+Krish Didwania: { institution: Mars Rover Manipal, role: collaborator }
+Laven Srivastava: { institution: Mars Rover Manipal, role: collaborator }
+Sankarshanaa Sagaram: { institution: Mars Rover Manipal, role: collaborator }
+Mihir Agarwal: { institution: Research Society Manipal, role: collaborator }
+Dyutit Mohanty: { institution: Research Society Manipal, role: collaborator }
+Bharath Udapa: { institution: Research Society Manipal, role: collaborator }
+Rashi Goel: { institution: Research Society Manipal, role: collaborator }
+Komal Mathur: { institution: Research Society Manipal, role: collaborator }
+Swetha Vemulapalli: { institution: Research Society Manipal, role: collaborator }
+Hemang Malik: { institution: Research Society Manipal, role: collaborator }
+Gaurav Pradeep: { institution: Research Society Manipal, role: collaborator }
+Siddhant Bharadwaj: { institution: MIT Manipal / IISc Bangalore, role: collaborator }
+Chandra Sekhar Seelamantula: { institution: MIT Manipal / IISc Bangalore, role: collaborator }
+Danush Khanna: { institution: Manipal University Jaipur, role: collaborator }
+Aditya Kumar Guru: { institution: Manipal University Jaipur, role: collaborator }
+Siddharth Shukla: { institution: Manipal University Jaipur, role: collaborator }
+Tanuj Tyagi: { institution: Manipal University Jaipur, role: collaborator }
+Sandeep Chaurasia: { institution: Manipal University Jaipur, role: collaborator }
+Kripabandhu Ghosh: { institution: IISER Kolkata, role: collaborator }
+Sidhaarth Sredharan Murali: { institution: NIT Surathkal, role: collaborator }
+Jade Boutot: { institution: McGill University, role: collaborator }
+Mary Kang: { institution: McGill University, role: collaborator }
+Michelle Lin: { institution: McGill University, role: collaborator }
+Brefo Dwamena Yaw: { institution: McGill University, role: collaborator }
+Amit Agarwal: { institution: Wells Fargo AI COE, role: collaborator }

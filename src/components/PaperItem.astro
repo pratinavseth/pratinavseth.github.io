@@ -1,0 +1,50 @@
+---
+import { authorsOf, citationsOf, pageOf, pdfOf, STATUS_LABEL, TYPE_LABEL, type Pub } from '../lib/pubs';
+
+interface Props {
+  pub: Pub;
+  /** Show the year column (off when the list is already grouped by year). */
+  showYear?: boolean;
+}
+const { pub, showYear = true } = Astro.props;
+const d = pub.data;
+const authors = authorsOf(pub);
+const cites = await citationsOf(pub);
+const pdf = pdfOf(pub);
+const searchText = [d.title, d.venue, d.authors.join(' '), d.area].join(' ').toLowerCase();
+---
+
+<li
+  class="paper"
+  data-area={d.area}
+  data-status={d.status}
+  data-year={d.year}
+  data-search={searchText}
+  style={showYear ? undefined : 'grid-template-columns:1fr'}
+>
+  {showYear && <div class="paper__year">{d.year}</div>}
+  <div>
+    <div class="paper__title"><a href={pageOf(pub)}>{d.title}</a></div>
+    <div class="paper__authors">
+      {authors.map((a, i) => (
+        <>
+          {a.me ? <span class="me">{a.name}</span> : a.name}
+          {a.equal && <sup title="Equal contribution">*</sup>}
+          {i < authors.length - 1 && ', '}
+        </>
+      ))}
+    </div>
+    <div class="paper__meta">
+      <span class:list={['tag', d.status === 'published' ? 'tag--solid' : 'tag--quiet']}>{d.venue}</span>
+      {d.status !== 'published' && d.type !== d.status && <span class="tag tag--quiet">{STATUS_LABEL[d.status]}</span>}
+      {d.status === 'published' && <span class="visually-hidden">{TYPE_LABEL[d.type]}</span>}
+      <span class="paper__links">
+        {d.arxiv && <a href={`https://arxiv.org/abs/${d.arxiv}`}>arXiv</a>}
+        {pdf && <a href={pdf}>PDF</a>}
+        {!d.arxiv && d.url && <a href={d.url}>Paper</a>}
+        {d.code && <a href={d.code}>Code</a>}
+        {typeof cites === 'number' && cites > 0 && <span class="muted">{cites} citation{cites === 1 ? '' : 's'}</span>}
+      </span>
+    </div>
+  </div>
+</li>
