@@ -10,10 +10,20 @@ import { news, libraries } from '../lib/data';
 import { getPubs, getStats, isMine, isPeerReviewed, fill, pageOf } from '../lib/pubs';
 import { getStars } from '../lib/remote';
 import { inline, block } from '../lib/md';
+import { Image } from 'astro:assets';
+import { img, hasImg } from '../lib/images';
 
 const stats = await getStats();
 const pubs = (await getPubs()).filter(isMine);
-const featured = pubs.filter((p) => p.data.featured);
+// Flagship papers, chosen for venue strength and spread across areas; order is deliberate.
+const FLAGSHIP = ['alignbeam', 'alberta-wells-dataset', 'self-percept', 'provenance-grounded-gating', 'c-delta-theta', 'lapgsr'];
+const featured = FLAGSHIP.map((id) => {
+  const p = pubs.find((x) => x.id === id);
+  if (!p) throw new Error(`index.astro: unknown flagship paper "${id}"`);
+  return p;
+});
+// Systems row: the libraries I built or led, shown with their paper's figure.
+const SYSTEMS = ['SafeTune', 'AlignTune', 'CircuitKIT', 'TabTune'];
 
 const bioFile = (n: string) => readFileSync(join(process.cwd(), 'src/data/bio', `${n}.md`), 'utf8');
 const bios = [
@@ -107,21 +117,24 @@ const earlierAreas = [
 const libRows = await Promise.all(
   libraries.map(async (l) => ({ ...l, liveStars: await getStars(l.repo, l.stars) })),
 );
+const systemCards = SYSTEMS.map((name) => {
+  const l = libRows.find((x) => x.name === name);
+  if (!l) throw new Error(`index.astro: unknown library "${name}"`);
+  const paper = pubs.find((p) => p.id === l.paper);
+  return { ...l, paper };
+});
 
 const recentCutoff = 8;
 const recent = news.slice(0, recentCutoff);
 const earlier = news.slice(recentCutoff);
 
 const blurbs: Record<string, string> = {
-  'c-delta-theta': 'Circuit-restricted weight edits that instil selective refusal, with no inference-time overhead.',
-  circuitkit: 'Circuit discovery, evaluation and application toolkit for mechanistic interpretability.',
-  aligntune: 'One interface for SFT, DPO, GRPO and RLHF with interchangeable backends.',
   alignbeam: 'Training-free safety transfer between model families at inference time, even across different vocabularies.',
-  'forgetting-that-sticks': 'Unlearning that survives quantization, by zeroing the circuits that store the knowledge.',
-  'interpretability-as-alignment': 'The case for interpretability as a design principle in post-training, not a post-hoc audit.',
-  tabtune: 'Inference, fine-tuning and benchmarking for 21 tabular foundation models.',
-  'alberta-wells-dataset': 'Satellite benchmark for finding abandoned oil and gas wells. Climate AI with Mila.',
-  'self-percept': 'LLM introspection improves detection of multi-person mental manipulation.',
+  'alberta-wells-dataset': 'First-author satellite benchmark for finding abandoned oil and gas wells. Climate AI with Mila.',
+  'self-percept': 'LLM introspection improves detection of multi-person mental manipulation in conversations.',
+  'provenance-grounded-gating': 'Provenance-based gating and adaptive recovery for synthetic post-training data.',
+  'c-delta-theta': 'Circuit-restricted weight edits that install selective refusal, with no inference-time overhead.',
+  lapgsr: 'Journal paper: sharpening low-resolution thermal images using a visible-light guide and a Laplacian image pyramid.',
 };
 
 const personLd = {
@@ -250,6 +263,26 @@ const personLd = {
 
   <section class="section container" aria-labelledby="selected-title">
     <div class="section__head"><h2 id="selected-title">Selected work</h2></div>
+    <div class="section__head" style="margin-bottom:var(--space-3)">
+      <h3>Systems I built</h3><a class="section__more" href="/experience/#systems">How they fit together →</a>
+    </div>
+    <div class="card-grid card-grid--4">
+      {systemCards.map((l) => (
+        <a class="card" href={l.paper ? `/publications/${l.paper.id}/` : `https://github.com/${l.repo}`}>
+          {l.paper && hasImg(l.paper.data.image) ? (
+            <div class="card__fig"><Image src={img(l.paper.data.image!)} alt={l.paper.data.imageAlt ?? ''} widths={[360, 560]} sizes="(min-width: 60rem) 17rem, 90vw" /></div>
+          ) : (
+            <div class="card__fig card__fig--type" aria-hidden="true"><span>{l.name}</span></div>
+          )}
+          <div class="card__body">
+            <div class="card__meta"><span class="tag tag--solid">{l.role}</span><span class="tag tag--quiet">★ {l.liveStars}</span></div>
+            <h3 class="card__title">{l.name}</h3>
+            <p class="card__desc">{l.description}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+    <h3 style="margin:var(--space-6) 0 var(--space-3)">Flagship papers</h3>
     <div class="card-grid">
       {featured.map((p, i) => <PaperCard pub={p} blurb={blurbs[p.id]} eager={i < 3} />)}
     </div>

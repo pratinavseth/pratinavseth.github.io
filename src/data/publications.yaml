@@ -43,7 +43,6 @@
   scholarId: "L8Ckcad2t8MC"
   image: aligntune-fig.png
   imageAlt: AlignTune
-  featured: true
 
 - id: c-delta-theta
   title: "C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal"
@@ -101,7 +100,6 @@
   scholarId: "hC7cP41nSMkC"
   image: forgetting-that-sticks-fig.png
   imageAlt: Forgetting That Sticks
-  featured: true
 
 - id: position
   title: "Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands"
@@ -289,6 +287,7 @@
   imageAlt: Provenance-Grounded Gating
   notes:
     - "Accepted to **EMNLP 2026 Findings**"
+  featured: true
 
 - id: document-as-function
   title: "Document-as-Function: Verifiable Generation of Long-Form Synthetic Documents"
@@ -319,7 +318,6 @@
   scholarId: "4TOpqqG69KYC"
   image: interpawarealignmnet.png
   imageAlt: "Interpretability as Alignment: making internal understanding a design principle, conceptual diagram"
-  featured: true
 
 - id: interpretability-aware-pruning
   title: Interpretability-aware pruning for efficient medical image analysis
@@ -411,7 +409,6 @@
   scholarId: "j3f4tGmQtD8C"
   image: circuitkit-fig.png
   imageAlt: CircuitKIT
-  featured: true
 
 - id: faithfulness-to-refusal
   title: "Faithfulness to Refusal: A Causal Audit of Neuron Selectors in LLMs"
@@ -546,7 +543,6 @@
   scholarId: "M3ejUd6NZC8C"
   image: tabtune.png
   imageAlt: TabTune unified library architecture for tabular foundation model inference and fine-tuning
-  featured: true
 
 - id: pocket-foundation-models
   title: "Pocket Foundation Models: Distilling TFMs into CPU-Ready Gradient-Boosted Trees"
@@ -940,3 +936,4 @@
   scholarId: "QIV2ME_5wuYC"
   image: LAPGSR.jpg
   imageAlt: Laplacian reconstructive network architecture for guided thermal super-resolution
+  featured: true

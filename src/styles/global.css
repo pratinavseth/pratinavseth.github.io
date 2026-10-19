@@ -406,3 +406,5 @@ details > summary { cursor: pointer; }
 .stack__loop span { color: var(--accent-text); font-size: 1.2em; }
 @media (max-width: 64rem) { .stack { grid-template-columns: repeat(3, minmax(0, 1fr)); } .stack__stage:nth-child(3) { border-right: 0; } .stack__stage:nth-child(-n+3) { border-bottom: 1px solid var(--ink); } .stack__stage:nth-child(3)::after { display: none; } }
 @media (max-width: 36rem) { .stack { grid-template-columns: 1fr; } .stack__stage { border-right: 0; border-bottom: 1px solid var(--ink); } .stack__stage:last-child { border-bottom: 0; } .stack__stage:not(:last-child)::after { right: auto; left: 1rem; top: auto; bottom: -7px; transform: rotate(90deg); } .stack__stage:nth-child(3)::after { display: block; } }
+
+.card-grid--4 { grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); }
