@@ -7,14 +7,13 @@ import CitationsChart from '../components/CitationsChart.astro';
 import Contact from '../components/Contact.astro';
 import { site } from '../config/site';
 import { news, libraries } from '../lib/data';
-import { getPubs, getStats, getAreas, isMine, isPeerReviewed, fill } from '../lib/pubs';
+import { getPubs, getStats, isMine, isPeerReviewed, fill, pageOf } from '../lib/pubs';
 import { getStars } from '../lib/remote';
 import { inline, block } from '../lib/md';
 
 const stats = await getStats();
 const pubs = (await getPubs()).filter(isMine);
 const featured = pubs.filter((p) => p.data.featured);
-const areas = await getAreas();
 
 const bioFile = (n: string) => readFileSync(join(process.cwd(), 'src/data/bio', `${n}.md`), 'utf8');
 const bios = [
@@ -41,7 +40,7 @@ const threads = [
   {
     title: 'Mechanistic interpretability',
     areas: ['Mechanistic Interpretability & XAI'],
-    text: 'Finding the circuits behind refusal and other behaviours, testing whether they are faithful, and acting on them: C-ΔΘ, CircuitKIT, unlearning via circuit attribution.',
+    text: 'Finding the circuits behind refusal and other behaviours, testing whether they are faithful, and acting on them: C-ΔΘ, CircuitKIT, unlearning via circuit attribution. Built on earlier post-hoc explainability work: DLBacktrace (IJCNN 2025), xai_evals and XAI metrics for compliance.',
   },
   {
     title: 'Foundation models for structured data',
@@ -53,6 +52,57 @@ const threads = [
   count: pubs.filter((p) => t.areas.includes(p.data.area)).length,
   peer: pubs.filter((p) => t.areas.includes(p.data.area) && isPeerReviewed(p)).length,
 }));
+
+// Earlier research areas: years, counts and highlights all come from the data file.
+const earlierAreas = [
+  {
+    area: 'Climate Change & Earth Observation',
+    title: 'Climate & earth observation',
+    text: 'Satellite and remote-sensing AI: finding abandoned oil and gas wells, contrail detection, and multispectral marine-debris segmentation.',
+    highlights: ['alberta-wells-dataset', 'contrails-segmentation'],
+  },
+  {
+    area: 'Medical Imaging',
+    title: 'Medical imaging',
+    text: 'Glaucoma detection from retinal context, skin-tone bias in skin-lesion classifiers, brain-tumour segmentation and diabetic retinopathy.',
+    highlights: ['obscure-to-observe', 'pretraining-fairness-skin-lesions'],
+  },
+  {
+    area: 'Vision & Super-Resolution',
+    title: 'Vision & super-resolution',
+    text: 'Guided thermal super-resolution with Laplacian and contrastive fusion networks, from a CVPR workshop to Nature Scientific Reports.',
+    highlights: ['lapgsr', 'corefusion'],
+  },
+  {
+    area: 'NLP & AI for Social Good',
+    title: 'NLP for social good',
+    text: 'Detecting mental manipulation in conversations, LLMs for farmers’ queries, online-sexism detection, Bangla sentiment and biomedical lay summaries.',
+    highlights: ['self-percept', 'agrillm'],
+  },
+  {
+    area: 'Uncertainty & Robustness',
+    title: 'Uncertainty & robustness',
+    text: 'Predictive uncertainty under distribution shift, test-time-augmented ensembles, and how synthetic training data affects models.',
+    highlights: ['predictive-uncertainty-distribution-shift', 'uatta-eb'],
+  },
+].map((a) => {
+  const list = pubs.filter((p) => p.data.area === a.area);
+  if (list.length === 0) throw new Error(`index.astro: no papers in area "${a.area}"`);
+  const years = list.map((p) => p.data.year);
+  const [lo, hi] = [Math.min(...years), Math.max(...years)];
+  const highlights = a.highlights.map((id) => {
+    const p = pubs.find((x) => x.id === id);
+    if (!p) throw new Error(`index.astro: unknown highlight paper "${id}"`);
+    return p;
+  });
+  return {
+    ...a,
+    count: list.length,
+    peer: list.filter(isPeerReviewed).length,
+    years: lo === hi ? String(lo) : `${lo}–${String(hi).slice(2)}`,
+    highlights,
+  };
+});
 
 const libRows = await Promise.all(
   libraries.map(async (l) => ({ ...l, liveStars: await getStars(l.repo, l.stars) })),
@@ -180,9 +230,22 @@ const personLd = {
         </div>
       ))}
     </div>
-    <p class="muted" style="font-size:var(--step--1);margin-top:var(--space-4)">
-      Earlier work spans climate and earth observation, medical imaging, uncertainty, and NLP for social good ({areas.length} areas in all).
-    </p>
+    <h3 class="earlier__head">Earlier research</h3>
+    <div class="earlier">
+      {earlierAreas.map((a) => (
+        <div class="earlier__item">
+          <span class="area__n">{a.years} · {a.count} papers · {a.peer} peer-reviewed</span>
+          <h4>{a.title}</h4>
+          <p class="muted">{a.text}</p>
+          <ul>
+            {a.highlights.map((p) => (
+              <li><a href={pageOf(p)}>{p.data.title.split(':')[0]}</a> <span class="muted">· {p.data.venue}</span></li>
+            ))}
+          </ul>
+          <a class="section__more" href={`/publications/?area=${encodeURIComponent(a.area)}`}>All {a.count} →</a>
+        </div>
+      ))}
+    </div>
   </section>
 
   <section class="section container" aria-labelledby="selected-title">

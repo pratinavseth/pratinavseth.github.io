@@ -131,6 +131,10 @@
   type: workshop
   year: 2026
   area: "Safety Post-Training & Alignment"
+  url: "https://arxiv.org/abs/2608.16852"
+  arxiv: "2608.16852"
+  image: compliance-detectors-fig.png
+  imageAlt: "Pipeline for auditing compliance detectors: offline calibration of activation probes, online inference, and the decision rule"
 
 - id: cited-but-not-consulted
   title: "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness"
@@ -172,6 +176,8 @@
   area: "Safety Post-Training & Alignment"
   url: "https://arxiv.org/abs/2610.02173"
   arxiv: "2610.02173"
+  image: every-ablation-fig.png
+  imageAlt: "Interventions as doses on a signed axis from clean to inverted, with the affine repair response on the true and false sides"
 
 - id: agenttune
   title: "AgentTune: A Unified Training Lifecycle for Tool-Using LLM Agents"
@@ -189,6 +195,8 @@
   area: "Safety Post-Training & Alignment"
   url: "https://arxiv.org/abs/2610.13335"
   arxiv: "2610.13335"
+  image: agenttune-fig.png
+  imageAlt: "AgentTune architecture: interfaces, agent runtime, unified trajectory, learning and evaluation, and production layers"
 
 - id: safetune
   title: "SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs"
@@ -203,6 +211,8 @@
   year: 2026
   area: "Safety Post-Training & Alignment"
   url: "https://openreview.net/forum?id=5Hl0P9faYV"
+  image: safetune-fig.png
+  imageAlt: "SafeTune pipeline: drift induction, a repair registry of harden, recover, unlearn and steer methods, shared instrumentation, and re-evaluation before deployment"
   notes:
     - "[Code](https://github.com/Lexsi-Labs/SafeTune)"
 
@@ -218,6 +228,8 @@
   type: workshop
   year: 2026
   area: "Safety Post-Training & Alignment"
+  image: drift-then-repair-fig.png
+  imageAlt: "Evaluation pipeline: aligned base model, benign LoRA fine-tuning, drifted checkpoint, then harden, recover or unlearn repairs and safety-capability evaluation"
 
 - id: self-calibrating-safety-drift-repair
   title: Self-Calibrating Weight-Arithmetic Safety-Drift Repair
@@ -229,6 +241,8 @@
   type: under-review
   year: 2026
   area: "Safety Post-Training & Alignment"
+  image: self-calibrating-fig.png
+  imageAlt: "Self-calibrating repair: the aligned-minus-base task vector is masked and scaled by a 1-D search against an MMLU floor"
 
 - id: the-off-switch-failure
   title: "The Off-Switch Failure: When Safety-Repair Evaluation Rewards Model Collapse"
@@ -254,6 +268,8 @@
   area: "Safety Post-Training & Alignment"
   url: "https://arxiv.org/abs/2606.21631"
   arxiv: "2606.21631"
+  image: curatorkit-fig.png
+  imageAlt: "CuratorKIT pipeline from data sources through ingestion, hygiene, synthetic generation, quality filtering and dataset export"
 
 - id: provenance-grounded-gating
   title: Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation
@@ -427,6 +443,8 @@
   type: workshop
   year: 2026
   area: "Mechanistic Interpretability & XAI"
+  image: faithfulness-not-actionability-fig.png
+  imageAlt: "Accuracy retention versus patching faithfulness for circuit selectors on Llama and Gemma under structured pruning"
 
 - id: brief
   title: "BRIEF: Bounded-Context Regeneration of Long Documents with Verifiable Structural Topology"
@@ -454,6 +472,8 @@
   year: 2026
   area: "Mechanistic Interpretability & XAI"
   url: "https://github.com/Lexsi-Labs/DLBacktrace"
+  image: dlbacktrace-v2-fig.png
+  imageAlt: "Speedup of DLBacktrace v2 over v1 by sequence length, reaching over 1,400 times faster at 1,024 tokens"
 
 - id: orion-msp
   title: "Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning"
@@ -759,6 +779,8 @@
   url: "https://arxiv.org/pdf/2304.04539"
   arxiv: "2304.04539"
   scholarId: "IjCSPb-OGe4C"
+  image: uatta-eb-fig.png
+  imageAlt: "UATTA-EB: test-time augmentations of an input passed through an ensemble of BERT-family models and combined with uncertainty-aware ensembling"
 
 - id: fake-training-data
   title: Analyzing Effects of Fake Training Data on the Performance of Deep Learning Systems
@@ -863,6 +885,8 @@
   area: "NLP & AI for Social Good"
   url: "https://aclanthology.org/2024.bionlp-1.78.pdf"
   scholarId: "0EnyYjriUFMC"
+  image: hgp-nlp-table.png
+  imageAlt: "Results table for T5-small and LoRA Flan-T5-base on relevance, readability and factuality metrics"
 
 - id: corefusion
   title: "CoReFusion: Contrastive Regularized Fusion for Guided Thermal Super-Resolution"

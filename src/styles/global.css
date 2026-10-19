@@ -362,3 +362,27 @@ details > summary { cursor: pointer; }
   body { background: #fff; }
   a { color: #000; }
 }
+
+/* --- Earlier research areas (home) -------------------------------------- */
+.earlier__head { font-size: var(--step-1); margin: var(--space-6) 0 var(--space-3); }
+.earlier { display: grid; grid-template-columns: repeat(auto-fit, minmax(13.5rem, 1fr)); border-top: 1px solid var(--rule); border-left: 1px solid var(--rule); }
+.earlier__item { padding: var(--space-4); border-right: 1px solid var(--rule); border-bottom: 1px solid var(--rule); background: var(--surface); display: flex; flex-direction: column; gap: var(--space-2); }
+.earlier__item h4 { font-family: var(--font-body); font-size: var(--step-0); font-weight: 700; margin: 0; }
+.earlier__item p { font-size: var(--step--1); margin: 0; }
+.earlier__item ul { list-style: none; padding: 0; margin: 0; font-size: var(--step--1); }
+.earlier__item li { padding-block: 0.2rem; border-top: 1px solid var(--rule-soft); }
+.earlier__item .section__more { margin-top: auto; padding-top: var(--space-2); }
+
+/* --- Paper rows with thumbnails ---------------------------------------- */
+.paper--thumb { grid-template-columns: 10rem minmax(0, 1fr); align-items: start; }
+.paper__thumb { display: block; aspect-ratio: 4 / 3; background: var(--surface); border: 1px solid var(--rule); overflow: hidden; }
+.paper__thumb img { width: 100%; height: 100%; object-fit: contain; padding: 0.25rem; }
+.paper__thumb-type {
+  display: flex; align-items: flex-end; width: 100%; height: 100%; padding: 0.6rem;
+  background: var(--ink); color: var(--paper); font-family: var(--font-display); font-size: 0.95rem; line-height: 1.05;
+  border-bottom: 5px solid var(--accent); overflow: hidden;
+}
+@media (max-width: 36rem) {
+  .paper--thumb { grid-template-columns: 6.5rem minmax(0, 1fr); gap: var(--space-3); }
+  .paper__thumb-type { font-size: 0.75rem; padding: 0.4rem; }
+}

@@ -107,10 +107,12 @@ const bib = bibtex(pub);
     </div>
 
     <div style="display:grid;grid-template-columns:minmax(0,1fr);gap:var(--space-6);margin-top:var(--space-6)">
-      {hasImg(d.image) && (
+      {hasImg(d.image) ? (
         <figure class="figure-frame" style="max-width:56rem">
           <Image src={img(d.image!)} alt={d.imageAlt ?? `Figure from ${d.title}`} widths={[480, 800, 1200]} sizes="(min-width: 60rem) 54rem, 92vw" loading="eager" />
         </figure>
+      ) : (
+        <div class="card__fig card__fig--type" style="max-width:56rem;aspect-ratio:21/6" aria-hidden="true"><span>{d.title.split(':')[0]}</span></div>
       )}
 
       {abstract && (

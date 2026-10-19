@@ -1,12 +1,12 @@
 ---
+import { Image } from 'astro:assets';
+import { img, hasImg } from '../lib/images';
 import { authorsOf, citationsOf, pageOf, pdfOf, STATUS_LABEL, TYPE_LABEL, type Pub } from '../lib/pubs';
 
 interface Props {
   pub: Pub;
-  /** Show the year column (off when the list is already grouped by year). */
-  showYear?: boolean;
 }
-const { pub, showYear = true } = Astro.props;
+const { pub } = Astro.props;
 const d = pub.data;
 const authors = authorsOf(pub);
 const cites = await citationsOf(pub);
@@ -14,15 +14,14 @@ const pdf = pdfOf(pub);
 const searchText = [d.title, d.venue, d.authors.join(' '), d.area].join(' ').toLowerCase();
 ---
 
-<li
-  class="paper"
-  data-area={d.area}
-  data-status={d.status}
-  data-year={d.year}
-  data-search={searchText}
-  style={showYear ? undefined : 'grid-template-columns:1fr'}
->
-  {showYear && <div class="paper__year">{d.year}</div>}
+<li class="paper paper--thumb" data-area={d.area} data-status={d.status} data-year={d.year} data-search={searchText}>
+  <a class="paper__thumb" href={pageOf(pub)} tabindex="-1" aria-hidden="true">
+    {hasImg(d.image) ? (
+      <Image src={img(d.image!)} alt="" widths={[200, 320, 440]} sizes="(min-width: 36rem) 10rem, 92vw" loading="lazy" />
+    ) : (
+      <span class="paper__thumb-type">{d.title.split(':')[0]}</span>
+    )}
+  </a>
   <div>
     <div class="paper__title"><a href={pageOf(pub)}>{d.title}</a></div>
     <div class="paper__authors">
@@ -36,6 +35,7 @@ const searchText = [d.title, d.venue, d.authors.join(' '), d.area].join(' ').toL
     </div>
     <div class="paper__meta">
       <span class:list={['tag', d.status === 'published' ? 'tag--solid' : 'tag--quiet']}>{d.venue}</span>
+      <span class="tag tag--quiet">{d.year}</span>
       {d.status !== 'published' && d.type !== d.status && <span class="tag tag--quiet">{STATUS_LABEL[d.status]}</span>}
       {d.status === 'published' && <span class="visually-hidden">{TYPE_LABEL[d.type]}</span>}
       <span class="paper__links">
