@@ -23,7 +23,8 @@ interface Props {
 const { title, description, image = '/og/home.png', imageAlt = `${site.name}, ${site.role} at ${site.org}`, type = 'website', jsonLd = [], meta = [], noindex = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const imageUrl = new URL(image, site.url).href;
-const fullTitle = title === site.name ? `${site.name} · ${site.tagline}` : `${title} · ${site.name}`;
+const fullTitle =
+  title === site.name ? `${site.name} · ${site.tagline}` : title.length > 45 ? title : `${title} · ${site.name}`;
 const path = Astro.url.pathname;
 // Writing appears in the menu once there is at least one published post.
 const hasPosts = (await getPosts()).some((p) => !p.data.draft);

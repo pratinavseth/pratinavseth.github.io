@@ -145,6 +145,40 @@ const blurbs: Record<string, string> = {
   lapgsr: 'Journal paper: sharpening low-resolution thermal images using a visible-light guide and a Laplacian image pyramid.',
 };
 
+// Quick answers: visible on the page and mirrored as FAQPage data for answer engines.
+const faqs = [
+  {
+    q: 'What does Pratinav Seth work on?',
+    a: `Trustworthy AI for language models and agents: post-training and alignment, mechanistic interpretability, and repairing safety failures in model weights. He leads the Model Science group at ${site.org}.`,
+  },
+  {
+    q: 'What has he built?',
+    a: `The ${site.org} alignment and safety stack: ${libraries.length} libraries including AlignTune, SafeTune, CircuitKIT, CuratorKIT, AgentTune and TabTune. The open-source ones have ${stats.starsRounded} GitHub stars.`,
+  },
+  {
+    q: 'Where has he published?',
+    a: `${stats.papers} papers, ${stats.peerReviewed} of them peer-reviewed, at venues including ICML, ACL, EMNLP, WWW, MIDL and Nature Scientific Reports, with ${stats.citationsRounded} citations on Google Scholar.`,
+  },
+  {
+    q: 'How can I contact him?',
+    a: `By email at ${site.email} or on LinkedIn. He is open to research collaborations and talks.`,
+  },
+];
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const websiteLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: site.name,
+  url: site.url,
+  description: site.description,
+  author: { '@id': `${site.url}/#person` },
+  inLanguage: 'en',
+};
+
 const personLd = {
   '@context': 'https://schema.org',
   '@type': 'ProfilePage',
@@ -171,9 +205,9 @@ const personLd = {
 
 <Base
   title={site.name}
-  description={`${site.description} ${stats.peerReviewed} peer-reviewed papers, ${stats.citationsRounded} citations.`}
+  description={site.description}
   type="profile"
-  jsonLd={[personLd]}
+  jsonLd={[personLd, websiteLd, faqLd]}
 >
   <section class="hero container" aria-labelledby="hero-name">
     <div class="hero__grid">
@@ -335,6 +369,15 @@ const personLd = {
         ))}
       </ul>
     </details>
+  </section>
+
+  <section class="section container" aria-labelledby="faq-title">
+    <div class="section__head"><h2 id="faq-title">Quick answers</h2></div>
+    <dl class="faq">
+      {faqs.map((f) => (
+        <div class="faq__item"><dt>{f.q}</dt><dd>{f.a}</dd></div>
+      ))}
+    </dl>
   </section>
 
   <Contact />

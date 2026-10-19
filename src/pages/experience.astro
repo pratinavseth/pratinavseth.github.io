@@ -5,9 +5,29 @@ import { getStars } from '../lib/remote';
 import LibraryCard from '../components/LibraryCard.astro';
 import { inline } from '../lib/md';
 import { getPubs, pageOf, fill } from '../lib/pubs';
+import { site } from '../config/site';
 
 const pubs = await getPubs();
 const mine = pubs.filter((p) => p.data.authors.some((x) => x.replace(/\*$/, '') === 'Pratinav Seth'));
+const careerLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: `Experience · ${site.name}`,
+  url: `${site.url}/experience/`,
+  about: {
+    '@type': 'Person',
+    '@id': `${site.url}/#person`,
+    name: site.name,
+    jobTitle: site.role,
+    worksFor: { '@type': 'Organization', name: site.org, url: site.orgUrl },
+    hasOccupation: { '@type': 'Occupation', name: 'Research Scientist', skills: 'LLM post-training, AI safety, mechanistic interpretability, alignment, evaluation' },
+    alumniOf: [{ '@type': 'CollegeOrUniversity', name: 'Manipal Institute of Technology' }],
+    affiliation: [
+      { '@type': 'Organization', name: 'Mila Quebec AI Institute' },
+      { '@type': 'Organization', name: 'Bosch Research and Technology Center India' },
+    ],
+  },
+};
 const glance = [
   { n: `${new Date().getFullYear() - 2021}+`, label: 'Years doing research' },
   { n: '20+', label: 'Researchers & interns led' },
@@ -36,7 +56,8 @@ for (const g of experience) {
 
 <Base
   title="Experience"
-  description="Research career from Lead Research Scientist at Lexsi Labs back through Mila Quebec AI Institute, Bosch Research and IIT Kharagpur: post-training alignment, mechanistic interpretability and tabular foundation models."
+  jsonLd={[careerLd]}
+  description="Pratinav Seth's experience: Lead Research Scientist at Lexsi Labs, the AI safety and alignment stack he designed, and earlier work at Mila and Bosch Research."
 >
   <header class="page-head container">
     <h1>Experience</h1>

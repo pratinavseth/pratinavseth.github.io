@@ -18,12 +18,21 @@ const years = [...new Set(pubs.map((p) => p.data.year))].sort((a, b) => b - a);
 const statuses = (['published', 'preprint', 'under-review', 'report'] as const).filter((s) => pubs.some((p) => p.data.status === s));
 const countBy = <K,>(key: (p: (typeof pubs)[number]) => K, v: K) => pubs.filter((p) => key(p) === v).length;
 const roles = (['lead', 'senior', 'coauthor'] as const).filter((r) => pubs.some((p) => p.data.myRole === r));
+const collectionLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: `Publications by ${site.name}`,
+  url: `${site.url}/publications/`,
+  about: { '@id': `${site.url}/#person` },
+  hasPart: pubs.map((p) => ({ '@type': 'ScholarlyArticle', name: p.data.title, url: `${site.url}/publications/${p.id}/`, datePublished: String(p.data.year) })),
+};
 const libs = await Promise.all(libraries.map(async (l) => ({ ...l, liveStars: await getStars(l.repo, l.stars) })));
 ---
 
 <Base
   title="Publications"
-  description={`${stats.papers} papers by ${site.name} (${stats.peerReviewed} peer-reviewed, ${stats.citationsRounded} citations) on LLM post-training, safety alignment, mechanistic interpretability and tabular foundation models.`}
+  jsonLd={[collectionLd]}
+  description={`${stats.papers} papers by ${site.name} (${stats.peerReviewed} peer-reviewed) on LLM post-training, AI safety, interpretability and foundation models.`}
 >
   <header class="page-head container">
     <h1>Publications</h1>

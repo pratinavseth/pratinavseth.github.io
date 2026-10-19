@@ -30,7 +30,10 @@ const related = (await getPubs())
 
 const description = abstract
   ? abstract.slice(0, 155).replace(/\s+\S*$/, '') + '…'
-  : `${d.title}. ${authors.map((a) => a.name).join(', ')}. ${d.venue}, ${d.year}.`;
+  : (() => {
+      const t = `${d.title}. ${d.venue}, ${d.year}. ${authors.map((a) => a.name).join(', ')}.`;
+      return t.length > 158 ? t.slice(0, 155).replace(/[\s,]+\S*$/, '') + '…' : t;
+    })();
 
 // Google Scholar reads Highwire Press tags: one paper per URL.
 const meta = [

@@ -17,7 +17,7 @@ const searchText = [d.title, d.venue, d.authors.join(' '), d.area].join(' ').toL
 <li class="paper paper--thumb" data-area={d.area} data-status={d.status} data-year={d.year} data-role={d.myRole ?? ""} data-search={searchText}>
   <a class="paper__thumb" href={pageOf(pub)} tabindex="-1" aria-hidden="true">
     {hasImg(d.image) ? (
-      <Image src={img(d.image!)} alt="" widths={[200, 320, 440]} sizes="(min-width: 36rem) 10rem, 92vw" loading="lazy" />
+      <Image src={img(d.image!)} alt={d.imageAlt ?? `Figure from ${d.title}`} widths={[200, 320, 440]} sizes="(min-width: 36rem) 10rem, 92vw" loading="lazy" />
     ) : (
       <span class="paper__thumb-type">{d.title.split(':')[0]}</span>
     )}

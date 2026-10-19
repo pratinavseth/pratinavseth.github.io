@@ -11,7 +11,7 @@ export default defineConfig({
     '/education/': '/education-service/',
     '/service-skills/': '/education-service/',
   },
-  integrations: [sitemap({ filter: (page) => !page.includes('/404') })],
+  integrations: [sitemap({ filter: (page) => !page.includes('/404'), lastmod: new Date() })],
   image: {
     responsiveStyles: true,
   },

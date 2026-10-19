@@ -10,7 +10,7 @@ export const site = {
   thesis: 'I build AI systems you can trust: how models are trained, how they work inside, and how to keep them safe once they are fine-tuned, compressed and put to work as agents.',
   tagline: 'Trustworthy AI, from the data to the deployed agent.',
   description:
-    'Pratinav Seth leads the Model Science group at Lexsi Labs, building trustworthy AI end to end: data curation, post-training and alignment, interpretability, safety repair, and agents.',
+    'Pratinav Seth leads the Model Science group at Lexsi Labs, working on trustworthy AI: post-training, alignment, interpretability, safety repair and agents.',
   email: 'seth.pratinav@gmail.com',
   avatar: '/images/profile-summit.jpg',
   cv: '/files/pratinav-seth-cv-full.pdf',
