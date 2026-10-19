@@ -8,7 +8,7 @@
   paper: tabtune
   stars: 137
   oss: true
-  role: Architect
+  role: Designed & built v1, then mentored
   description: Unified inference, fine-tuning and benchmarking for tabular foundation models (21 models in 7 architecture families).
 - name: AlignTune
   logo: logos/aligntune.png
@@ -16,7 +16,7 @@
   paper: aligntune
   stars: 44
   oss: true
-  role: Built and scaled
+  role: Led & built; design lead & mentor
   description: Modular post-training toolkit for SFT, DPO, GRPO and RLHF with interchangeable backends; runs production alignment work in BFSI, legal and healthcare.
 - name: CuratorKIT
   logo: logos/curatorkit.png
@@ -24,14 +24,14 @@
   paper: curatorkit
   stars: 30
   oss: true
-  role: Built
+  role: Designed & mentored
   description: Provenance-grounded data curation and synthetic generation for LLM post-training.
 - name: DLBacktrace v2
   repo: Lexsi-Labs/DLBacktrace
   paper: dlbacktrace-v2
   stars: 28
   oss: true
-  role: Re-architected
+  role: Architected & built
   description: torch.export-based, model-agnostic explainability for LLMs and MoEs with CUDA acceleration.
 - name: CircuitKIT
   logo: logos/circuitkit.png
@@ -39,7 +39,7 @@
   paper: circuitkit
   stars: 26
   oss: true
-  role: Built
+  role: Led & built
   description: Circuit discovery, evaluation and application toolkit for mechanistic interpretability.
 - name: SafeTune
   logo: logos/safetune.png
@@ -47,26 +47,26 @@
   paper: safetune
   stars: 19
   oss: true
-  role: Led (first author)
+  role: Led & built
   description: Audits and repairs safety drift in fine-tuned LLMs.
 - name: xai_evals
   repo: Lexsi-Labs/xai_evals
   paper: xai-evals
   stars: 18
   oss: true
-  role: Built
+  role: Built (first author)
   description: Framework for evaluating post-hoc local explanation methods.
 - name: AuditKIT
   logo: logos/auditkit.png
   repo: Lexsi-Labs/AuditKIT
   url: https://auditkit.lexsi.ai/
   stars: 12
-  role: Contributor (team tool)
+  role: Contributor
   description: Source-available evaluation library for benchmarks, LLM-as-judge, RAG, model comparison, cost metrics and experiment tracking.
 - name: AgentTune
   logo: logos/agenttune.png
   repo: Lexsi-Labs/AgentTune
   paper: agenttune
   stars: 10
-  role: Co-author (team tool)
+  role: Designed, led & mentored
   description: Source-available training lifecycle for building, training, evaluating and maintaining tool-using LLM agents.

@@ -12,22 +12,22 @@ stages:
   - step: Curate
     what: Data curation and synthetic generation for post-training, with provenance for every example
     tools:
-      - { name: CuratorKIT, paper: curatorkit, role: Built }
+      - { name: CuratorKIT, paper: curatorkit, role: Designed & mentored }
   - step: Post-train
     what: Modular SFT, preference and RL training for models and tool-using agents, behind one interface
     tools:
-      - { name: AlignTune, paper: aligntune, role: Built and scaled }
-      - { name: AgentTune, paper: agenttune, role: Co-author }
+      - { name: AlignTune, paper: aligntune, role: Led & built; design lead }
+      - { name: AgentTune, paper: agenttune, role: Designed & led }
   - step: Inspect
     what: "Find where a behavior lives: circuit discovery, attribution, interchange interventions, post-hoc explanation"
     tools:
-      - { name: CircuitKIT, paper: circuitkit, role: Built }
+      - { name: CircuitKIT, paper: circuitkit, role: Led & built }
       - { name: InterpSuite, role: Built (internal) }
-      - { name: DLBacktrace v2, paper: dlbacktrace-v2, role: Re-architected }
+      - { name: DLBacktrace v2, paper: dlbacktrace-v2, role: Architected & built }
   - step: Repair
     what: Audit safety drift and correct it with small, verified, circuit-restricted weight edits
     tools:
-      - { name: SafeTune, paper: safetune, role: Led (first author) }
+      - { name: SafeTune, paper: safetune, role: Led & built }
       - { name: C-ΔΘ, paper: c-delta-theta, role: Co-led }
   - step: Compress
     what: Structured pruning and quantization that keep safety and capability intact
