@@ -19,7 +19,7 @@
         - label: "Compression & evaluation"
           text: "Built the lab's pruning library and designed its quantization library, with checks that compressed models keep their safety behavior. Set up config-driven evaluation with LLM judges and CI on CUDA and Apple MPS; contributed to [**AuditKIT**](https://auditkit.lexsi.ai/)."
         - label: "Research output"
-          text: "Of the group's 11 papers accepted at EMNLP 2026 and NeurIPS 2026 workshops, I was first author on 4 and mentored the first authors of the other 7, including [ALIGNBEAM](/publications/alignbeam/) (EMNLP Main) and [Provenance-Grounded Gating](/publications/provenance-grounded-gating/) (EMNLP Findings). Applied the work to regulatory-compliance, financial-services, insurance and Indic-language deployments."
+          text: "In 2026 I was first author on 8 papers (one sole-authored) and co-first on 2; the group I lead has 35 papers this year, 19 accepted so far, including [ALIGNBEAM](/publications/alignbeam/) (EMNLP Main, co-led) and [Provenance-Grounded Gating](/publications/provenance-grounded-gating/) (EMNLP Findings). Applied the work to regulatory-compliance, financial-services, insurance and Indic-language deployments."
         - label: "Leadership"
           text: "Founded the AI Safety & Alignment team (8 full-time researchers, 16 interns) and head the Model Science group, 30+ people across India and Paris that also includes the R&D and product team for the lab's coding agent; report to the CEO. Own the research agenda, library product direction, releases, grants, compute, hiring and code review, and ran the technical side of the Lexsi Hackathon (55+ submissions)."
       papers: [aligntune, curatorkit, circuitkit, safetune, c-delta-theta, alignbeam, forgetting-that-sticks, position, provenance-grounded-gating, cited-but-not-consulted, verdict-without-the-rule, every-ablation-is-a-dose, agenttune, gemma-4-safety-repair]
@@ -30,7 +30,7 @@
         - label: "Team"
           text: "Grew the Model Science group into the lab's core team for alignment, safety and interpretability: 14 interns and 5 full-time researchers across India and Paris. Ran grants, hiring and planning."
         - label: "Post-training"
-          text: "Led and built **AlignTune**, a modular post-training toolkit covering SFT, preference optimization and safety methods. Senior author on [Interpretability as Alignment](/publications/interpretability-as-alignment/) (EurIPS 2025 workshop, spotlight talk), which set the team's design principle."
+          text: "Led and built **AlignTune**, a modular post-training toolkit covering SFT, preference optimization and safety methods. Co-first author on [Interpretability as Alignment](/publications/interpretability-as-alignment/) (EurIPS 2025 workshop, spotlight talk), which set the team's design principle."
         - label: "Interpretability"
           text: "Architected and built **DLBacktrace v2** on `torch.export` graph capture, so it works across model architectures, with CUDA acceleration for LLMs and MoEs. Applied interpretability to compression with [interpretability-aware pruning](/publications/interpretability-aware-pruning/) for medical imaging (MICCAI 2025 workshop)."
         - label: "Tabular foundation models"

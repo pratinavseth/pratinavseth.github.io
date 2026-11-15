@@ -98,7 +98,11 @@ const bib = bibtex(pub);
       <span class:list={['tag', d.status === 'published' ? 'tag--solid' : 'tag--quiet']}>{d.venue}</span>
       <span class="tag tag--quiet">{d.year}</span>
       {d.myRole && <span class="tag tag--accent" title={ROLE_HINT[d.myRole]}>My role: {ROLE_LABEL[d.myRole]}</span>}
-      <span class="tag tag--quiet">{d.status === 'published' ? TYPE_LABEL[d.type] : STATUS_LABEL[d.status]}</span>
+      {d.status === 'published' ? (
+        <span class="tag tag--quiet">{TYPE_LABEL[d.type]}</span>
+      ) : (
+        !d.venue.toLowerCase().includes(STATUS_LABEL[d.status].toLowerCase().split(' ')[0]) && <span class="tag tag--quiet">{STATUS_LABEL[d.status]}</span>
+      )}
       {typeof cites === 'number' && <span class="tag tag--quiet">{cites} citation{cites === 1 ? '' : 's'}</span>}
     </div>
 

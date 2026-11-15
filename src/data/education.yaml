@@ -30,7 +30,7 @@ service:
   mentoring:
     - "**Session Chair**, EMNLP 2026: *LLM Agents 1* oral session, Budapest, 25 October 2026 (with Aakash Kolekar)"
     - "**Mentor**, AAAI Undergraduate Consortium 2026 (Scholar 2023 → Mentor 2026)"
-  mainConference: "AAAI 2027 (Program Committee), NeurIPS 2026, ACM AIES 2026, CVPR (2025–26), ECCV (2024–26), ICCV 2025, WACV (2026–27), BMVC 2026, IJCNN 2025"
+  mainConference: "AAAI 2027 (Program Committee), ICLR 2027, NeurIPS 2026, ACM AIES 2026, CVPR (2025–26), ECCV (2024–26), ICCV 2025, WACV (2026–27), BMVC 2026, IJCNN 2025"
   workshops2026:
     - Mechanistic Interpretability Workshop (ICML 2026)
     - AI for Good Workshop (ICML 2026)

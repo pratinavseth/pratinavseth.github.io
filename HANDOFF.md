@@ -36,16 +36,17 @@ Every paper gets its own page with Google Scholar `citation_*` tags, ScholarlyAr
 
 ## Running locally
 
-The system Node is 16, but Astro needs 22.22 or newer. Either install Node 22 LTS, or use the portable copy:
+The system Node is 16, but Astro needs 22.22 or newer. **Install Node 22 LTS** (nodejs.org). Portable copies in temp folders get cleaned up: the one in the original handoff disappeared within a month.
 
 ```bash
-export PATH="/c/Users/prati/AppData/Local/Temp/claude/c--Users-prati-Downloads-rsbnq-github-io/ee548074-2581-44dd-8aa5-e4993d2a82f5/scratchpad/node/node-v22.23.3-win-x64:$PATH"
 npm install
 npm run dev      # drafts visible
 npm run build    # astro check + build
 ```
 
-That portable path is in a temp folder and may disappear. Installing Node 22 is the durable fix.
+## Paper data and the CV
+
+The Overleaf CV project (`bib/*.bib`, `notes/papers-status.md`, `notes/website-update.md`) is the source of truth for paper statuses, venues and authorship. `publications.yaml` was synced to it on 15 Nov 2026: 61 papers, 40 peer-reviewed, matching the CV. Deliberate differences: AgentTune is listed (not in the CV bibs), InterpSuite is not (internal name), and the Gemma 4 team report is listed as a team release.
 
 ## Decisions the owner made (keep them)
 
@@ -61,7 +62,7 @@ That portable path is in a temp folder and may disappear. Installing Node 22 is 
 ## Open items
 
 1. **Make `dev-stable` the default branch** (Settings → General). Scheduled workflows only run on the default branch, so the Scholar crawler and the daily rebuild are idle and citations are frozen at 2026-09-01.
-2. **Four papers still use title placeholders:** the-off-switch-failure, document-as-function, brief, sailing-through-spectra. None are on arXiv, and OpenReview blocks automated downloads. Save the PDFs and crop Figure 1.
+2. **Papers without figures** (placeholders): the-off-switch-failure, document-as-function, brief, sailing-through-spectra and the seven under-review papers added from the CV. Save the PDFs and crop Figure 1.
 3. **Draft post** `what-survives-post-training.md` needs the owner's edit before setting `draft: false`.
 4. **GoatCounter:** set `goatcounter` in `site.ts` once the owner signs up.
 5. **Search consoles:** verify in Google Search Console and Bing Webmaster Tools, submit `sitemap-index.xml`, and link the site from Scholar, LinkedIn, GitHub, ORCID and X.

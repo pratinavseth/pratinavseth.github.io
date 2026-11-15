@@ -32,7 +32,7 @@ const journey = [
   { date: '2020–24', org: 'Mars Rover Manipal', what: 'Trainee to senior researcher leading the AI Research Wing; mentored 10+ undergraduates' },
   { date: '2022–23', org: 'IIT Kharagpur', what: 'Medical image analysis and explainable AI for chest radiographs, KLIV Lab' },
   { date: '2023', org: 'Bosch Research', what: 'Generative data augmentation for autonomous-driving perception' },
-  { date: '2024', org: 'Mila, Rolnick Lab', what: 'Geospatial climate AI; Alberta Wells Dataset (co-first author, ICML 2025)' },
+  { date: '2024', org: 'Mila, Rolnick Lab', what: 'Geospatial climate AI; Alberta Wells Dataset (first author, ICML 2025)' },
   { date: '2024–now', org: 'Lexsi Labs', what: 'Research Scientist to Lead Research Scientist, Model Science' },
 ];
 
@@ -56,8 +56,8 @@ const focus = {
     {
       title: 'Agents & evaluation',
       text: 'Train tool-using agents, test that safety holds when they act, and keep one auditable record of every change.',
-      links: [['AgentTune', 'agenttune'], ['AuditKIT', 'https://auditkit.lexsi.ai/'], ['Compliance detectors', 'what-do-compliance-detectors-read'], ['Off-Switch Failure', 'the-off-switch-failure']],
-      href: undefined,
+      links: [['AgentTune', 'agenttune'], ['AuditKIT', 'auditkit'], ['LegalSearchGym', 'legalsearchgym'], ['Off-Switch Failure', 'the-off-switch-failure']],
+      href: `/publications/?area=${encodeURIComponent('Agents & Evaluation')}`,
     },
     {
       title: 'Foundation models & applied AI',
@@ -138,7 +138,7 @@ const earlier = news.slice(recentCutoff);
 
 const blurbs: Record<string, string> = {
   alignbeam: 'Training-free safety transfer between model families at inference time, even across different vocabularies.',
-  'alberta-wells-dataset': 'Satellite benchmark for finding abandoned oil and gas wells (co-first author). Climate AI with Mila.',
+  'alberta-wells-dataset': 'First-author satellite benchmark for finding abandoned oil and gas wells. Climate AI with Mila.',
   'self-percept': 'LLM introspection improves detection of multi-person mental manipulation in conversations.',
   'provenance-grounded-gating': 'Provenance-based gating and adaptive recovery for synthetic post-training data.',
   'c-delta-theta': 'Circuit-restricted weight edits that install selective refusal, with no inference-time overhead.',

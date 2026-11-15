@@ -4,6 +4,6 @@ My research asks what survives post-training. Fine-tuning, quantization, and dep
 
 I also build the systems that make this repeatable. I architected Lexsi's [alignment and safety stack](/experience/#systems) and scaled AlignTune into the multi-backend post-training system behind our BFSI, legal, and healthcare work. {OssLibrariesWord} libraries I designed or led have {stars} GitHub stars between them.
 
-Before Lexsi, I worked with David Rolnick at Mila on climate AI, where my bachelor's thesis became the [Alberta Wells Dataset](/publications/alberta-wells-dataset/) (co-first author, ICML 2025). Earlier, I built generative data augmentation for autonomous-driving perception at Bosch Research and rose to lead the AI Research Wing at Mars Rover Manipal.
+Before Lexsi, I worked with David Rolnick at Mila on climate AI, where my bachelor's thesis became the [Alberta Wells Dataset](/publications/alberta-wells-dataset/) (first author, ICML 2025). Earlier, I built generative data augmentation for autonomous-driving perception at Bosch Research and rose to lead the AI Research Wing at Mars Rover Manipal.
 
 I have {peerReviewed} peer-reviewed papers and {citations} citations, at venues including ICML, ACL, EMNLP, WWW, MIDL, and Nature Scientific Reports. I was an AAAI Undergraduate Consortium Scholar in 2023 and came back as a mentor in 2026.

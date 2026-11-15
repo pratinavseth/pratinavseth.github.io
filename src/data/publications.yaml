@@ -26,17 +26,17 @@
 - id: aligntune
   title: "AlignTune: Modular Toolkit for Post-Training Alignment of Large Language Models"
   authors:
-    - R E Zera Marveen Lyngkhoi
-    - Chirag Chawla
-    - Pratinav Seth
-    - Utsav Avaiya
-    - Soham Bhattacharjee
-    - Mykola Khandoga
-    - Rui Yuan
-    - Vinay Kumar Sankarapu
-  venue: "ICLR 2026 SPOT Workshop"
-  status: published
-  type: workshop
+    - "R E Zera Marveen Lyngkhoi*"
+    - "Chirag Chawla*"
+    - "Pratinav Seth*"
+    - "Utsav Avaiya"
+    - "Soham Bhattacharjee"
+    - "Mykola Khandoga"
+    - "Rui Yuan"
+    - "Vinay Kumar Sankarapu"
+  venue: "Pre-Print"
+  status: preprint
+  type: preprint
   year: 2026
   area: "Safety Post-Training & Alignment"
   myRole: senior
@@ -52,7 +52,7 @@
     - Aditya Kasliwal*
     - Pratinav Seth*
     - Vinay Kumar Sankarapu
-  venue: "Mech Interp Workshop, ICML 2026"
+  venue: "Mechanistic Interpretability Workshop, ICML 2026"
   status: published
   type: workshop
   year: 2026
@@ -74,12 +74,12 @@
     - Chirag Chawla
     - Pratinav Seth
     - Vinay Kumar Sankarapu
-  venue: "EMNLP 2026 Main Conference · AI for Good Workshop, ICML 2026"
+  venue: "EMNLP 2026 (Main) · AI for Good Workshop, ICML 2026"
   status: published
   type: conference
   year: 2026
   area: "Safety Post-Training & Alignment"
-  myRole: senior
+  myRole: lead
   url: "https://arxiv.org/abs/2606.12342"
   arxiv: "2606.12342"
   scholarId: "R3hNpaxXUhUC"
@@ -95,9 +95,9 @@
     - Saisab Sadhu
     - Pratinav Seth
     - Vinay Kumar Sankarapu
-  venue: Pre-Print
-  status: preprint
-  type: preprint
+  venue: "Under Review: ICLR 2027"
+  status: under-review
+  type: under-review
   year: 2026
   area: "Safety Post-Training & Alignment"
   myRole: senior
@@ -108,7 +108,7 @@
   imageAlt: Forgetting That Sticks
 
 - id: position
-  title: "Position: Behavioural Assurance Cannot Verify the Safety Claims Governance Now Demands"
+  title: "Position: Behavioural Assurance Alone Cannot Support Strong Claims About Latent Model Properties"
   authors:
     - Pratinav Seth
     - Vinay Kumar Sankarapu
@@ -131,7 +131,7 @@
     - Aadit Sengupta
     - Vinay Kumar Sankarapu
     - Pratinav Seth
-  venue: NeurIPS 2026 Workshop
+  venue: "TAE Workshop, NeurIPS 2026"
   status: published
   type: workshop
   year: 2026
@@ -148,7 +148,7 @@
     - Saisab Sadhu
     - Shreeyans Arora
     - Pratinav Seth
-  venue: EMNLP 2026 NLLP Workshop; NeurIPS 2026 Workshop
+  venue: "NLLP Workshop, EMNLP 2026 · TAE Workshop, NeurIPS 2026"
   status: published
   type: workshop
   year: 2026
@@ -168,7 +168,7 @@
     - Aadit Sengupta
     - Vinay Kumar Sankarapu
     - Pratinav Seth
-  venue: EMNLP 2026 NLLP Workshop; NeurIPS 2026 Workshop
+  venue: "NLLP Workshop, EMNLP 2026"
   status: published
   type: workshop
   year: 2026
@@ -187,9 +187,9 @@
     - Areeb Ahmad
     - Pratinav Seth
     - Vinay Kumar Sankarapu
-  venue: Pre-Print
-  status: preprint
-  type: preprint
+  venue: "Under Review: ICLR 2027"
+  status: under-review
+  type: under-review
   year: 2026
   area: "Safety Post-Training & Alignment"
   myRole: senior
@@ -198,33 +198,13 @@
   image: every-ablation-fig.png
   imageAlt: "Interventions as doses on a signed axis from clean to inverted, with the affine repair response on the true and false sides"
 
-- id: agenttune
-  title: "AgentTune: A Unified Training Lifecycle for Tool-Using LLM Agents"
-  authors:
-    - R E Zera Marveen Lyngkhoi
-    - Abhivansh Gupta
-    - Vidushee Vats
-    - Ram Mohan Rao Kadiyala
-    - Vinay Kumar Sankarapu
-    - Pratinav Seth
-  venue: Pre-Print
-  status: preprint
-  type: preprint
-  year: 2026
-  area: "Safety Post-Training & Alignment"
-  myRole: senior
-  url: "https://arxiv.org/abs/2610.13335"
-  arxiv: "2610.13335"
-  image: agenttune-fig.png
-  imageAlt: "AgentTune architecture: interfaces, agent runtime, unified trajectory, learning and evaluation, and production layers"
-
 - id: safetune
   title: "SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs"
   authors:
-    - Pratinav Seth
-    - Saisab Sadhu
-    - Anshul Kaushal
-    - Vinay Kumar Sankarapu
+    - "Pratinav Seth*"
+    - "Saisab Sadhu*"
+    - "Anshul Kaushal*"
+    - "Vinay Kumar Sankarapu"
   venue: EMNLP 2026 System Demonstrations
   status: published
   type: demo
@@ -244,7 +224,7 @@
     - Anshul Kaushal
     - Saisab Sadhu
     - Vinay Kumar Sankarapu
-  venue: NeurIPS 2026 Workshop
+  venue: "FLLMPT Workshop, NeurIPS 2026"
   status: published
   type: workshop
   year: 2026
@@ -271,7 +251,7 @@
   title: "The Off-Switch Failure: When Safety-Repair Evaluation Rewards Model Collapse"
   authors:
     - Pratinav Seth
-  venue: NeurIPS 2026 Workshop
+  venue: "TAE Workshop, NeurIPS 2026"
   status: published
   type: workshop
   year: 2026
@@ -331,18 +311,45 @@
   area: "Safety Post-Training & Alignment"
   myRole: senior
 
+- id: evaluating-rule-adherence
+  title: "Evaluating Rule Adherence in Language Model Compliance Detection"
+  authors:
+    - "Saisab Sadhu"
+    - "Aadit Sengupta"
+    - "Vinay Kumar Sankarapu"
+    - "Pratinav Seth"
+  venue: "Under Review: WWW 2027 (Short Papers)"
+  status: under-review
+  type: under-review
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  myRole: senior
+
+- id: directional-heterogeneity-multilingual-safety
+  title: "Directional Heterogeneity in Multilingual Safety Under Weight Perturbations"
+  authors:
+    - "Deeraj S K"
+    - "Saisab Sadhu"
+    - "Pratinav Seth"
+  venue: "Under Review"
+  status: under-review
+  type: under-review
+  year: 2026
+  area: "Safety Post-Training & Alignment"
+  myRole: senior
+
 - id: interpretability-as-alignment
   title: "Interpretability as Alignment: Making Internal Understanding a Design Principle"
   authors:
-    - Aadit Sengupta
-    - Pratinav Seth
-    - Vinay Kumar Sankarapu
-  venue: EurIPS Workshop 2025
+    - "Aadit Sengupta*"
+    - "Pratinav Seth*"
+    - "Vinay Kumar Sankarapu"
+  venue: "Private AI Governance Workshop, EurIPS 2025"
   status: published
   type: workshop
   year: 2025
   area: "Mechanistic Interpretability & XAI"
-  myRole: senior
+  myRole: lead
   url: "https://arxiv.org/abs/2509.08592"
   arxiv: "2509.08592"
   scholarId: "4TOpqqG69KYC"
@@ -357,7 +364,7 @@
     - Neeraj Kumar Singh
     - Chintan Chitroda
     - Vinay Kumar Sankarapu
-  venue: MICCAI Workshop 2025
+  venue: "Efficient Medical AI Workshop, MICCAI 2025"
   status: published
   type: workshop
   year: 2025
@@ -374,7 +381,7 @@
   authors:
     - Pratinav Seth
     - Vinay Kumar Sankarapu
-  venue: EurIPS Workshop 2025
+  venue: "Private AI Governance Workshop, EurIPS 2025"
   status: published
   type: workshop
   year: 2025
@@ -414,9 +421,9 @@
     - Neeraj Kumar Singh
     - Chintan Chitroda
     - Vinay Kumar Sankarapu
-  venue: Technical Report
-  status: report
-  type: report
+  venue: "Pre-Print"
+  status: preprint
+  type: preprint
   year: 2025
   area: "Mechanistic Interpretability & XAI"
   myRole: lead
@@ -429,11 +436,11 @@
 - id: circuitkit
   title: "CircuitKIT: Circuit Discovery, Evaluation, and Application Toolkit for Mechanistic Interpretability"
   authors:
-    - Pratinav Seth
-    - Hem Gosalia
-    - Aditya Kasliwal
-    - Vinay Kumar Sankarapu
-  venue: NeurIPS 2026 Workshop
+    - "Pratinav Seth*"
+    - "Hem Gosalia*"
+    - "Aditya Kasliwal*"
+    - "Vinay Kumar Sankarapu"
+  venue: "NeuralArtifacts Workshop 2026"
   status: published
   type: workshop
   year: 2026
@@ -444,9 +451,11 @@
   scholarId: "j3f4tGmQtD8C"
   image: circuitkit-fig.png
   imageAlt: CircuitKIT
+  notes:
+    - "AAAI-27 Demonstrations: under review."
 
 - id: faithfulness-to-refusal
-  title: "Faithfulness to Refusal: A Causal Audit of Neuron Selectors in LLMs"
+  title: "Faithfulness to Refusal: A Causal Audit of Neuron Selectors"
   authors:
     - Ananth Eswar
     - Pratinav Seth
@@ -467,16 +476,16 @@
 - id: faithfulness-is-not-actionability
   title: "Faithfulness Is Not Actionability: Extrinsic Validation of Circuit Selectors Under Structured Pruning"
   authors:
-    - Hem Gosalia
-    - Pratinav Seth
-    - Aditya Kasliwal
-    - Vinay Kumar Sankarapu
-  venue: NeurIPS 2026 Workshop
-  status: published
-  type: workshop
+    - "Pratinav Seth"
+    - "Hem Gosalia"
+    - "Aditya Kasliwal"
+    - "Vinay Kumar Sankarapu"
+  venue: "Under Review"
+  status: under-review
+  type: under-review
   year: 2026
   area: "Mechanistic Interpretability & XAI"
-  myRole: senior
+  myRole: lead
   image: faithfulness-not-actionability-fig.png
   imageAlt: "Accuracy retention versus patching faithfulness for circuit selectors on Llama and Gemma under structured pruning"
 
@@ -486,19 +495,21 @@
     - Aryan Sood
     - Soham Bhattacharjee
     - Pratinav Seth
-  venue: NeurIPS 2026 Workshop
+  venue: "LCFM Workshop, NeurIPS 2026"
   status: published
   type: workshop
   year: 2026
   area: "Mechanistic Interpretability & XAI"
   myRole: senior
+  notes:
+    - "Also under review at ICLR 2027."
 
 - id: dlbacktrace-v2
   title: "DLBacktrace v2: Extending Model-Agnostic Interpretability for LLMs and MoEs with CUDA Acceleration"
   authors:
-    - Neeraj Kumar Singh
-    - Pratinav Seth
-    - Omkar Kakade
+    - "Neeraj Kumar Singh*"
+    - "Pratinav Seth*"
+    - "Omkar Kakade*"
     - Chintan Chitroda
     - Vinay Kumar Sankarapu
   venue: Pre-Print
@@ -510,6 +521,114 @@
   url: "https://github.com/Lexsi-Labs/DLBacktrace"
   image: dlbacktrace-v2-fig.png
   imageAlt: "Speedup of DLBacktrace v2 over v1 by sequence length, reaching over 1,400 times faster at 1,024 tokens"
+
+- id: mechanistic-flinch
+  title: "The Mechanistic Flinch: Predicting Multi-Turn Sycophantic Collapse from First-Contact Attention Dynamics"
+  authors:
+    - "Saisab Sadhu"
+    - "Pratinav Seth"
+  venue: "Under Review"
+  status: under-review
+  type: under-review
+  year: 2026
+  area: "Mechanistic Interpretability & XAI"
+  myRole: senior
+
+- id: three-steps-to-no
+  title: "Three Steps to \"No\": Tracing the Refusal Circuit of a Hybrid Mamba-MoE-Attention Language Model"
+  authors:
+    - "Ashim Dhor"
+    - "Pratinav Seth"
+    - "Vinay Kumar Sankarapu"
+  venue: "Under Review: WWW 2027 (Short Papers)"
+  status: under-review
+  type: under-review
+  year: 2026
+  area: "Mechanistic Interpretability & XAI"
+  myRole: senior
+
+- id: agenttune
+  title: "AgentTune: A Unified Training Lifecycle for Tool-Using LLM Agents"
+  authors:
+    - R E Zera Marveen Lyngkhoi
+    - Abhivansh Gupta
+    - Vidushee Vats
+    - Ram Mohan Rao Kadiyala
+    - Vinay Kumar Sankarapu
+    - Pratinav Seth
+  venue: Pre-Print
+  status: preprint
+  type: preprint
+  year: 2026
+  area: "Agents & Evaluation"
+  myRole: senior
+  url: "https://arxiv.org/abs/2610.13335"
+  arxiv: "2610.13335"
+  image: agenttune-fig.png
+  imageAlt: "AgentTune architecture: interfaces, agent runtime, unified trajectory, learning and evaluation, and production layers"
+
+- id: auditkit
+  title: "AuditKIT: A Unified Evaluation Spine for Benchmarking, Judging, and Comparing Large Language Models and Agentic Systems"
+  authors:
+    - "Shreeyans Arora"
+    - "Utsav Avaiya"
+    - "R E Zera Marveen Lyngkhoi"
+    - "Hem Gosalia"
+    - "Ram Mohan Rao Kadiyala"
+    - "Vinay Kumar Sankarapu"
+    - "Pratinav Seth"
+  venue: "Pre-Print"
+  status: preprint
+  type: preprint
+  year: 2026
+  area: "Agents & Evaluation"
+  myRole: senior
+  url: "https://arxiv.org/abs/2610.22511"
+  arxiv: "2610.22511"
+  image: logos/auditkit.png
+  imageAlt: "AuditKIT logo"
+
+- id: legalsearchgym
+  title: "LegalSearchGym: A Framework for Reinforcement Learning and Distillation of Legal Search Agents"
+  authors:
+    - "Abhivansh Gupta"
+    - "Vidushee Vats"
+    - "R E Zera Marveen Lyngkhoi"
+    - "Pratinav Seth"
+  venue: "Under Review: WWW 2027 (Short Papers)"
+  status: under-review
+  type: under-review
+  year: 2026
+  area: "Agents & Evaluation"
+  myRole: senior
+
+- id: policy-grounded-insurance-agents
+  title: "Synthetic, Verifiable Environment for Training and Evaluating Policy-Grounded Insurance Agents"
+  authors:
+    - "Abhivansh Gupta"
+    - "R E Zera Marveen Lyngkhoi"
+    - "Pratinav Seth"
+  venue: "Under Review: WWW 2027 (Short Papers)"
+  status: under-review
+  type: under-review
+  year: 2026
+  area: "Agents & Evaluation"
+  myRole: senior
+
+- id: wording-risk-underwriting
+  title: "Wording Risk Underwriting: Automatically Repairing Flagged Clauses in Bank Guarantees"
+  authors:
+    - "R E Zera Marveen Lyngkhoi"
+    - "Soham Bhattacharjee"
+    - "Pratinav Seth"
+    - "Aryan Singh"
+    - "Vinay Kumar Sankarapu"
+  venue: "Under Review: WWW 2027 (Short Papers)"
+  status: under-review
+  type: under-review
+  year: 2026
+  area: "Agents & Evaluation"
+  myRole: senior
 
 - id: orion-msp
   title: "Orion-MSP: Multi-Scale Sparse Attention for Tabular In-Context Learning"
@@ -609,12 +728,12 @@
 - id: ensembling-tabular-foundation-models
   title: "Ensembling Tabular Foundation Models: A Diversity Ceiling and a Calibration Trap"
   authors:
-    - Aditya Tanna
-    - Yash Jignesh Desai
-    - Pratinav Seth
-    - Mohamed Bouadi
-    - Nassim Bouarour
-    - Vinay Kumar Sankarapu
+    - "Aditya Tanna"
+    - "Yash Desai"
+    - "Pratinav Seth"
+    - "Mohamed Bouadi"
+    - "Nassim Bouarour"
+    - "Vinay Kumar Sankarapu"
   venue: "FMSD Workshop, ICML 2026"
   status: published
   type: workshop
@@ -670,13 +789,13 @@
 - id: alberta-wells-dataset
   title: "Alberta Wells Dataset: Pinpointing Oil and Gas Wells from Satellite Imagery"
   authors:
-    - "Pratinav Seth*"
-    - "Michelle Lin*"
-    - Brefo Dwamena Yaw
-    - Jade Boutot
-    - Mary Kang
-    - David Rolnick
-  venue: ICML 2025 / CCAI ICLR 2025
+    - "Pratinav Seth"
+    - "Michelle Lin"
+    - "Brefo Dwamena Yaw"
+    - "Jade Boutot"
+    - "Mary Kang"
+    - "David Rolnick"
+  venue: "ICML 2025 · ClimateAI Workshop, ICLR 2025"
   status: published
   type: conference
   year: 2025
@@ -692,12 +811,12 @@
 - id: contrails-segmentation
   title: Performance Evaluation of Deep Segmentation Models for Contrails Detection
   authors:
-    - Akshat Bhandari
-    - Sriya Rallabandi
-    - Sanchit Singhal
-    - Aditya Kasliwal
+    - "Akshat Bhandari*"
+    - "Sriya Rallabandi*"
+    - "Sanchit Singhal*"
+    - "Aditya Kasliwal*"
     - Pratinav Seth
-  venue: NeurIPS 2022 Workshop
+  venue: "Tackling Climate Change with ML Workshop, NeurIPS 2022"
   status: published
   type: workshop
   year: 2022
@@ -731,7 +850,7 @@
     - Siddhant Bharadwaj
     - Pratinav Seth
     - Chandra Sekhar Seelamantula
-  venue: MIDL 2025
+  venue: "MIDL 2025 (Short Papers)"
   status: published
   type: conference
   year: 2025
@@ -747,7 +866,7 @@
   authors:
     - Pratinav Seth
     - Abhilash K Pai
-  venue: WACV Workshop 2024
+  venue: "WACV 2024 Workshops"
   status: published
   type: workshop
   year: 2024
@@ -766,7 +885,7 @@
     - Laven Srivastava
     - Pratinav Seth
     - Adil Khan
-  venue: "BrainLes @ MICCAI 2023"
+  venue: "BrainLes Workshop, MICCAI 2023"
   status: published
   type: workshop
   year: 2023
@@ -782,11 +901,11 @@
   title: "UATTA-ENS: Uncertainty Aware Test Time Augmented Ensemble for PIRC Diabetic Retinopathy Detection"
   authors:
     - Pratinav Seth
-    - Adil Khan
-    - Ananya Gupta
-    - Saurabh Kumar Mishra
+    - "Adil Khan*"
+    - "Ananya Gupta*"
+    - "Saurabh Kumar Mishra*"
     - Akshat Bhandari
-  venue: NeurIPS 2022 Workshop
+  venue: "Medical Imagery Meets NeurIPS Workshop, NeurIPS 2022"
   status: published
   type: workshop
   year: 2022
@@ -805,7 +924,7 @@
     - "Akshat Bhandari*"
     - "Pratinav Seth*"
     - Ujjwal Verma
-  venue: "Bayesian DL Workshop, NeurIPS 2021"
+  venue: "Bayesian Deep Learning Workshop, NeurIPS 2021"
   status: published
   type: workshop
   year: 2021
@@ -863,7 +982,7 @@
     - Tanuj Tyagi
     - Sandeep Chaurasia
     - Kripabandhu Ghosh
-  venue: ACL 2025 / NAACL SRW Workshop 2025
+  venue: "ACL 2025 (Main) · NAACL-SRW 2025"
   status: published
   type: conference
   year: 2025
@@ -882,7 +1001,7 @@
     - "Pratinav Seth*"
     - Aditya Kasliwal
     - Amit Agarwal
-  venue: "3rd Workshop on NLP for Positive Impact @ EMNLP 2024"
+  venue: "NLP4PI Workshop, EMNLP 2024 · KDD 2024 Undergraduate Consortium"
   status: published
   type: workshop
   year: 2024
@@ -930,12 +1049,12 @@
   imageAlt: Frequency distribution of sentiment labels in the BLP-2023 Task 2 dataset
 
 - id: hgp-nlp-biolaysumm
-  title: "HGP-NLP at Shared Task: Leveraging LoRA for Lay Summarization of Biomedical Research Articles using Seq2Seq Transformers"
+  title: "HGP-NLP at BioLaySumm: Leveraging LoRA for Lay Summarization of Biomedical Research Articles using Seq2Seq Transformers"
   authors:
     - Hemang Malik
     - Gaurav Pradeep
     - Pratinav Seth
-  venue: "BioNLP Workshop @ ACL 2024"
+  venue: "BioNLP Workshop, ACL 2024"
   status: published
   type: shared-task
   year: 2024
@@ -965,14 +1084,14 @@
   imageAlt: CoReFusion contrastive regularized fusion architecture for thermal super-resolution
 
 - id: lamar
-  title: "LaMAR: Laplacian Pyramid for Multimodal Adaptive Super Resolution (Student Abstract)"
+  title: "LaMAR: Laplacian Pyramid for Multimodal Adaptive Super Resolution"
   authors:
     - Aditya Kasliwal
     - Aryan Kamani
     - Ishaan Gakhar
     - Pratinav Seth
     - Sriya Rallabandi
-  venue: AAAI Student Abstract 2024
+  venue: "AAAI 2024 Student Abstract"
   status: published
   type: student-abstract
   year: 2024
@@ -986,17 +1105,17 @@
 - id: lapgsr
   title: Laplacian reconstructive network for guided thermal super-resolution
   authors:
-    - Aditya Kasliwal
-    - Ishaan Gakhar
-    - Aryan Kamani
-    - Pratinav Seth
-    - Ujjwal Verma
-  venue: Scientific Reports (Nature)
+    - "Aditya Kasliwal*"
+    - "Ishaan Gakhar*"
+    - "Aryan Kamani*"
+    - "Pratinav Seth*"
+    - "Ujjwal Verma"
+  venue: "Nature Scientific Reports"
   status: published
   type: journal
   year: 2026
   area: "Vision & Super-Resolution"
-  myRole: senior
+  myRole: lead
   url: "https://doi.org/10.1038/s41598-026-36027-x"
   scholarId: "QIV2ME_5wuYC"
   image: LAPGSR.jpg
