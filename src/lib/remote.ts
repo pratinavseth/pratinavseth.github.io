@@ -7,6 +7,7 @@ import { site } from '../config/site';
 
 export interface ScholarData {
   updated?: string;
+  cites_per_year_updated?: string;
   citedby: number;
   hindex: number;
   i10index?: number;

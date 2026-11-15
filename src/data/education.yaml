@@ -1,6 +1,8 @@
 # Education & Service page. Text fields accept inline Markdown.
 
 honors:
+  - date: "2026.05"
+    text: "**Best Paper Runner-Up (Spotlight)**, SD4H Workshop @ ICML 2026, for [Distilling Tabular Foundation Models for Structured Health Data](/publications/distilling-tfms-structured-health-data/)."
   - date: "2025.12"
     text: "Selected as **Mentor** for the [AAAI Undergraduate Consortium 2026](https://aaai-uc.github.io/), returning after being a Scholar in the 2023 cohort."
   - date: "2023.02"
@@ -9,6 +11,8 @@ honors:
     text: "MAHE Undergraduate Research Grant (₹10,000) for *Explainable & Trustworthy Skin Lesion Classification*, under Dr. Abhilash K. Pai."
   - date: "2022.06"
     text: "**Top 10 team** of 1,000+ submissions, Bajaj Finserv HackRx 3.0 Hackathon."
+  - date: "2022"
+    text: "**5th of 134 teams**, 13th International Cyber Security Data Mining Competition."
 
 education:
   - date: "2020.10 – 2024.07"
@@ -24,6 +28,7 @@ education:
 
 service:
   mentoring:
+    - "**Session Chair**, EMNLP 2026: *LLM Agents 1* oral session, Budapest, 25 October 2026 (with Aakash Kolekar)"
     - "**Mentor**, AAAI Undergraduate Consortium 2026 (Scholar 2023 → Mentor 2026)"
   mainConference: "AAAI 2027 (Program Committee), NeurIPS 2026, ACM AIES 2026, CVPR (2025–26), ECCV (2024–26), ICCV 2025, WACV (2026–27), BMVC 2026, IJCNN 2025"
   workshops2026:

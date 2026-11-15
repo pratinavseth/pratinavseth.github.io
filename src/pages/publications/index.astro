@@ -38,7 +38,7 @@ const libs = await Promise.all(libraries.map(async (l) => ({ ...l, liveStars: aw
     <h1>Publications</h1>
     <p>
       {stats.papers} papers, {stats.peerReviewed} of them peer-reviewed, with {stats.citationsRounded} citations on{" "}
-      <a href={site.links.scholar}>Google Scholar</a>. I’m the lead author on {countBy((p) => p.data.myRole, 'lead')} and
+      <a href={site.links.scholar}>Google Scholar</a>. I led {countBy((p) => p.data.myRole, 'lead')} of them as first, co-first or main hands-on author, and was
       senior author on {countBy((p) => p.data.myRole, 'senior')}, where I mentored the first author or led the design.
       Each title opens a page with the abstract, links and BibTeX.
     </p>

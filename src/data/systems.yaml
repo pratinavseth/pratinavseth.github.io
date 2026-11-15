@@ -28,7 +28,7 @@ stages:
     what: Audit safety drift and correct it with small, verified, circuit-restricted weight edits
     tools:
       - { name: SafeTune, paper: safetune, role: Led & built }
-      - { name: C-ΔΘ, paper: c-delta-theta, role: Co-led }
+      - { name: C-ΔΘ, paper: c-delta-theta, role: Co-first author }
   - step: Compress
     what: Structured pruning and quantization that keep safety and capability intact
     tools:
@@ -37,7 +37,7 @@ stages:
   - step: Evaluate
     what: Safety, utility and side-effects on one reproducible record, with LLM judges and cost tracking
     tools:
-      - { name: AuditKIT, url: "https://auditkit.lexsi.ai/", role: Contributor }
+      - { name: AuditKIT, url: "https://auditkit.lexsi.ai/", role: Team lead & contributor }
 
 loop: Audit, correct in the weights, re-verify. We check every repair for capability loss and side effects before release.
 

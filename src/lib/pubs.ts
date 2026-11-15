@@ -51,12 +51,12 @@ export const TYPE_LABEL: Record<Pub['data']['type'], string> = {
 };
 
 export const ROLE_LABEL: Record<'lead' | 'senior' | 'coauthor', string> = {
-  lead: 'Lead author',
+  lead: 'Led',
   senior: 'Senior author',
   coauthor: 'Co-author',
 };
 export const ROLE_HINT: Record<'lead' | 'senior' | 'coauthor', string> = {
-  lead: 'First author or main hands-on contributor',
+  lead: 'First, co-first or main hands-on author',
   senior: 'Mentored the first author or led the design',
   coauthor: 'Co-author',
 };
@@ -112,6 +112,7 @@ export interface Stats {
   stars: number;
   starsRounded: string;
   scholarUpdated?: string;
+  citesPerYearUpdated?: string;
 }
 
 const roundDown = (n: number, step: number) => `${Math.floor(n / step) * step}+`;
@@ -121,7 +122,8 @@ export function getStats(): Promise<Stats> {
   statsCache ??= (async () => {
     const pubs = (await getPubs()).filter(isMine);
     const scholar = await getScholar();
-    const oss = libraries.filter((l) => l.oss);
+    // All libraries count (some are source-available rather than OSI open source).
+    const oss = libraries;
     const stars = (await Promise.all(oss.map((l) => getStars(l.repo, l.stars)))).reduce((a, b) => a + b, 0);
     return {
       papers: pubs.length,
@@ -134,6 +136,7 @@ export function getStats(): Promise<Stats> {
       stars,
       starsRounded: roundDown(stars, 50),
       scholarUpdated: scholar.updated?.slice(0, 10),
+      citesPerYearUpdated: (scholar.cites_per_year_updated ?? scholar.updated)?.slice(0, 10),
     };
   })();
   return statsCache;

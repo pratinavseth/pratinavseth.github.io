@@ -34,9 +34,9 @@
     - Mykola Khandoga
     - Rui Yuan
     - Vinay Kumar Sankarapu
-  venue: Pre-Print
-  status: preprint
-  type: preprint
+  venue: "ICLR 2026 SPOT Workshop"
+  status: published
+  type: workshop
   year: 2026
   area: "Safety Post-Training & Alignment"
   myRole: senior
@@ -49,21 +49,22 @@
 - id: c-delta-theta
   title: "C-ΔΘ: Circuit-Restricted Weight Arithmetic for Selective Refusal"
   authors:
-    - Aditya Kasliwal
-    - Pratinav Seth
+    - Aditya Kasliwal*
+    - Pratinav Seth*
     - Vinay Kumar Sankarapu
   venue: "Mech Interp Workshop, ICML 2026"
   status: published
   type: workshop
   year: 2026
   area: "Safety Post-Training & Alignment"
-  myRole: senior
+  myRole: lead
   url: "https://arxiv.org/abs/2602.04521"
   arxiv: "2602.04521"
   scholarId: "7PzlFSSx8tAC"
-  image: c-delta-theta-fig.png
-  imageAlt: C-ΔΘ
+  image: c-delta-theta-method-fig.png
+  imageAlt: "C-ΔΘ method: circuit discovery with EAP-IG, then a sparse circuit-restricted weight update that changes harmful behavior while preserving ability"
   notes:
+    - "Under review at ICLR 2027."
     - "Accepted at the **Mechanistic Interpretability Workshop, ICML 2026** (in-person poster; <15% acceptance rate)"
   featured: true
 

@@ -29,10 +29,10 @@ const bios = [
 ];
 
 const journey = [
-  { date: '2021–23', org: 'Mars Rover Manipal', what: 'Trainee to senior researcher leading the AI Research Wing; mentored 10+ undergraduates' },
+  { date: '2020–24', org: 'Mars Rover Manipal', what: 'Trainee to senior researcher leading the AI Research Wing; mentored 10+ undergraduates' },
   { date: '2022–23', org: 'IIT Kharagpur', what: 'Medical image analysis and explainable AI for chest radiographs, KLIV Lab' },
   { date: '2023', org: 'Bosch Research', what: 'Generative data augmentation for autonomous-driving perception' },
-  { date: '2024', org: 'Mila, Rolnick Lab', what: 'Geospatial climate AI; Alberta Wells Dataset (first author, ICML 2025)' },
+  { date: '2024', org: 'Mila, Rolnick Lab', what: 'Geospatial climate AI; Alberta Wells Dataset (co-first author, ICML 2025)' },
   { date: '2024–now', org: 'Lexsi Labs', what: 'Research Scientist to Lead Research Scientist, Model Science' },
 ];
 
@@ -138,7 +138,7 @@ const earlier = news.slice(recentCutoff);
 
 const blurbs: Record<string, string> = {
   alignbeam: 'Training-free safety transfer between model families at inference time, even across different vocabularies.',
-  'alberta-wells-dataset': 'First-author satellite benchmark for finding abandoned oil and gas wells. Climate AI with Mila.',
+  'alberta-wells-dataset': 'Satellite benchmark for finding abandoned oil and gas wells (co-first author). Climate AI with Mila.',
   'self-percept': 'LLM introspection improves detection of multi-person mental manipulation in conversations.',
   'provenance-grounded-gating': 'Provenance-based gating and adaptive recovery for synthetic post-training data.',
   'c-delta-theta': 'Circuit-restricted weight edits that install selective refusal, with no inference-time overhead.',
@@ -152,8 +152,8 @@ const faqs = [
     a: `Trustworthy AI for language models and agents: post-training and alignment, mechanistic interpretability, and repairing safety failures in model weights. He leads the Model Science group at ${site.org}.`,
   },
   {
-    q: 'What has he built?',
-    a: `The ${site.org} alignment and safety stack: ${libraries.length} libraries including AlignTune, SafeTune, CircuitKIT, CuratorKIT, AgentTune and TabTune. The open-source ones have ${stats.starsRounded} GitHub stars.`,
+    q: 'What has he built and led?',
+    a: `The ${site.org} alignment and safety stack: ${libraries.length} libraries he designed, built or led, including AlignTune, SafeTune, CircuitKIT, CuratorKIT, AgentTune and TabTune, with ${stats.starsRounded} GitHub stars between them.`,
   },
   {
     q: 'Where has he published?',
@@ -224,7 +224,7 @@ const personLd = {
         <div class="stats">
           <div class="stat"><span class="stat__n">{stats.peerReviewed}</span><span class="stat__label">Peer-reviewed papers</span></div>
           <div class="stat"><span class="stat__n">{stats.citationsRounded}</span><span class="stat__label">Citations · h-index {stats.hIndex}</span></div>
-          <div class="stat"><span class="stat__n">{stats.ossLibraries}</span><span class="stat__label">Open-source libraries</span></div>
+          <div class="stat"><span class="stat__n">{stats.ossLibraries}</span><span class="stat__label">Libraries built or led</span></div>
           <div class="stat"><span class="stat__n">{stats.starsRounded}</span><span class="stat__label">GitHub stars</span></div>
         </div>
 
@@ -276,7 +276,7 @@ const personLd = {
   <section class="section container" aria-labelledby="research-title">
     <div class="section__head"><h2 id="research-title">Research</h2><a class="section__more" href="/publications/">All {stats.papers} papers →</a></div>
     <div class="focus">
-      <span class="area__n">{focus.count} papers · {focus.peer} peer-reviewed · {stats.ossLibraries} open-source libraries</span>
+      <span class="area__n">{focus.count} papers · {focus.peer} peer-reviewed · {stats.ossLibraries} libraries</span>
       <h3 class="focus__title">Trustworthy AI, from the data to the deployed agent</h3>
       <p class="focus__pitch">
         A model passes through many hands before anyone relies on it: someone curates its data, trains and aligns it,

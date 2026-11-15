@@ -1,12 +1,9 @@
 # Talks & Events page. Text fields accept inline Markdown. Photo `src` is relative to src/assets/images/.
 
-upcoming:
-  - name: "[EMNLP 2026](https://2026.emnlp.org/)"
-    where: Budapest, Hungary
-    when: October 24–29, 2026
-    note: Attending, with accepted work at the main conference, Findings, System Demonstrations and the NLLP Workshop.
+upcoming: []
 
 conferences:
+  - { name: EMNLP 2026, where: "Budapest, Hungary", note: "session chair; posters for ALIGNBEAM, SafeTune and Provenance-Grounded Gating" }
   - { name: ICML 2026, where: "Seoul, South Korea" }
   - { name: The Web Conference (WWW) 2026, where: "Dubai, UAE", note: attended remotely }
   - { name: EurIPS Workshop on Private AI Governance, where: "Copenhagen, Denmark", note: December 2025 }
@@ -16,6 +13,18 @@ conferences:
   - { name: AAAI 2023, where: "Washington D.C., USA" }
 
 photos:
+  - src: events/emnlp2026-session-chair.jpg
+    alt: Pratinav Seth at the lectern chairing the LLM Agents 1 oral session at EMNLP 2026, Budapest
+    caption: EMNLP 2026 · Session chair, LLM Agents 1
+  - src: events/emnlp2026-safetune-demo.jpg
+    alt: Pratinav Seth with a co-author at the SafeTune system demonstration poster, EMNLP 2026
+    caption: EMNLP 2026 · SafeTune demo
+  - src: events/emnlp2026-alignbeam.jpg
+    alt: Pratinav Seth beside the ALIGNBEAM poster at EMNLP 2026, Budapest
+    caption: EMNLP 2026 · ALIGNBEAM
+  - src: events/emnlp2026-provenance-gating.jpg
+    alt: Pratinav Seth beside the Provenance-Grounded Gating poster at EMNLP 2026, Budapest
+    caption: EMNLP 2026 · Provenance-Grounded Gating (Findings)
   - src: events/icml2026-sd4h-spotlight.jpg
     alt: Pratinav Seth and co-author holding a Spotlight certificate for Distilling Tabular Foundation Models for Structured Health Data at the SD4H Workshop, ICML 2026
     caption: ICML 2026 · SD4H Workshop, Spotlight (Best Paper Runner-Up)
@@ -55,8 +64,27 @@ photos:
   - src: events/aaai-uc-2023.jpg
     alt: Pratinav Seth in Washington D.C. for the AAAI Undergraduate Consortium 2023
     caption: AAAI 2023 · Washington D.C.
+  - src: events/aaai-2023-poster.jpg
+    alt: Pratinav Seth beside his poster at AAAI 2023 in Washington D.C.
+    caption: AAAI 2023 · Undergraduate Consortium poster
+  - src: events/aaai-uc-2023-scholars.jpg
+    alt: Group photo of the AAAI Undergraduate Consortium 2023 scholars
+    caption: AAAI Undergraduate Consortium 2023 scholars
+  - src: events/bosch-2023.jpg
+    alt: Pratinav Seth outside the Bosch office in Bangalore during his 2023 internship
+    caption: Bosch Research · Bangalore, 2023
+  - src: events/rsm-techtatva-panel.jpg
+    alt: Research Society MIT Manipal members at a TechTatva session
+    caption: Research Society MIT Manipal · TechTatva
+  - src: events/data-alchemists-event.jpg
+    alt: Members of The Data Alchemists club at an event at MIT Manipal
+    caption: The Data Alchemists · MIT Manipal
 
 talks:
+  - year: 2026
+    items:
+      - date: "2026.11"
+        text: "**AI Safety India Spotlight:** *How I Got Into AI Safety Research*"
   - year: 2025
     items:
       - date: "2025.12"
@@ -78,6 +106,8 @@ talks:
         text: "**Research as an Undergrad**, ACM-W Manipal Chapter"
 
 industry:
+  - date: "2026.11"
+    text: "**Lexsi Hackathon:** ran the technical side of the hackathon (October–November 2026, 55+ submissions)."
   - date: "2026"
     text: "**Hindustan Times Brunch:** shared perspectives with [Vinay Kumar Sankarapu](https://www.linkedin.com/in/vinaykumar123/) on AI sycophancy and why chatbots can sound confident even when they are wrong, in [Taranna Khetpal's feature](https://www.hindustantimes.com/lifestyle/brunch/too-chatty-gpt-why-ai-should-talk-less-and-just-give-us-the-info-we-need-101791477133262.html)."
   - date: "2026.02"

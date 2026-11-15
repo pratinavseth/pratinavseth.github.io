@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-01 16:36:34.080800",
- "citedby": 227,
- "hindex": 8,
+ "updated": "2026-11-14",
+ "citedby": 290,
+ "hindex": 9,
  "i10index": 6,
  "cites_per_year": {
   "2022": 1,
@@ -167,5 +167,6 @@
   "DwBn1fcAAAAJ:mVmsd5A6BfQC": {
    "num_citations": 0
   }
- }
+ },
+ "cites_per_year_updated": "2026-09-01"
 }

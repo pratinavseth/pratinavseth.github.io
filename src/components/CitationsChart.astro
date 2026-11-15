@@ -23,7 +23,7 @@ const current = String(new Date().getFullYear());
     {rows.map(([year]) => <span>{year === current ? `${year}*` : year}</span>)}
   </div>
   <figcaption class="muted" style="font-size:var(--step--1);margin-top:var(--space-3)">
-    Citations per year, Google Scholar{stats.scholarUpdated && `, as of ${stats.scholarUpdated}`}.
+    Citations per year, Google Scholar{stats.citesPerYearUpdated && `, as of ${stats.citesPerYearUpdated}`}.
     {rows.some(([y]) => y === current) && ' *Year to date.'}
   </figcaption>
 </figure>

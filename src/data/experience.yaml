@@ -9,11 +9,11 @@
       role: "**Lead Research Scientist** at [Lexsi Labs, Lexsi.ai](https://lexsi.ai/) (Aurionpro Solutions Group), Remote"
       points:
         - label: "Platform architecture"
-          text: "Architected the lab's [alignment & safety stack](#systems): {libraryCount} single-purpose libraries for data curation, post-training, interpretability, safety repair, compression and evaluation, all writing to one shared evaluation record. The open-source ones have {stars} GitHub stars."
+          text: "Architected the lab's [alignment & safety stack](#systems): {libraryCount} single-purpose libraries for data curation, post-training, interpretability, safety repair, compression and evaluation, all writing to one shared evaluation record, with {stars} GitHub stars between them."
         - label: "Post-training platform"
           text: "Led and built **AlignTune**, then scaled it as design lead into the multi-backend post-training system (SFT, DPO, GRPO, RLHF-style training, model merging) behind the lab's BFSI, legal and healthcare work."
         - label: "Safety repair"
-          text: "Led and built [**SafeTune**](https://github.com/Lexsi-Labs/SafeTune) (EMNLP 2026 Demo), which audits safety drift after fine-tuning and repairs it with small weight edits checked for capability loss. Co-led **C-ΔΘ**, circuit-restricted weight edits for selective refusal (ICML 2026 workshop)."
+          text: "Led and built [**SafeTune**](https://github.com/Lexsi-Labs/SafeTune) (EMNLP 2026 Demo), which audits safety drift after fine-tuning and repairs it with small weight edits checked for capability loss. Co-first author on **C-ΔΘ**, circuit-restricted weight edits for selective refusal (ICML 2026 workshop). Led the Gemma 4 31B multilingual and cybersecurity [safety repairs](/publications/gemma-4-safety-repair/)."
         - label: "Interpretability & agents"
           text: "Led and built **CircuitKIT** for circuit discovery, attribution and interventions. Designed and led [**AgentTune**](https://arxiv.org/abs/2610.13335) for training tool-using agents, mentoring the team that built it."
         - label: "Compression & evaluation"
@@ -21,7 +21,7 @@
         - label: "Research output"
           text: "Of the group's 11 papers accepted at EMNLP 2026 and NeurIPS 2026 workshops, I was first author on 4 and mentored the first authors of the other 7, including [ALIGNBEAM](/publications/alignbeam/) (EMNLP Main) and [Provenance-Grounded Gating](/publications/provenance-grounded-gating/) (EMNLP Findings). Applied the work to regulatory-compliance, financial-services, insurance and Indic-language deployments."
         - label: "Leadership"
-          text: "Lead the Model Science group, 20+ researchers and interns across India and Paris: research direction, hiring, grants and roadmap. Set the team's standards for evidence-first measurement and reproducible evaluation, and review code across engineering, including the lab's internal AI coding-agent platform."
+          text: "Founded the AI Safety & Alignment team (8 full-time researchers, 16 interns) and head the Model Science group, 30+ people across India and Paris that also includes the R&D and product team for the lab's coding agent; report to the CEO. Own the research agenda, library product direction, releases, grants, compute, hiring and code review, and ran the technical side of the Lexsi Hackathon (55+ submissions)."
       papers: [aligntune, curatorkit, circuitkit, safetune, c-delta-theta, alignbeam, forgetting-that-sticks, position, provenance-grounded-gating, cited-but-not-consulted, verdict-without-the-rule, every-ablation-is-a-dose, agenttune, gemma-4-safety-repair]
     - date: "2025.07 – 2026.03"
       theme: "Post-training, interpretability and tabular foundation models"
@@ -36,9 +36,9 @@
         - label: "Tabular foundation models"
           text: "Led problem framing, early design and benchmarking for the Orion models ([Orion-BiX](/publications/orion-bix/) at WWW 2026, [Orion-MSP](/publications/orion-msp/) at an EurIPS 2025 workshop) and their extension to regression."
         - label: "TabTune"
-          text: "Designed and built the first version of [**TabTune**](/publications/tabtune/) (WWW 2026 Demo) with a companion fine-tuning study, then mentored follow-on work on distillation and ensembling (ICML 2026 workshops) and credit-risk prediction (SIGMOD 2026 workshop, oral)."
+          text: "Designed and built the first version of [**TabTune**](/publications/tabtune/) (WWW 2026 Demo) with a companion fine-tuning study, then mentored follow-on work on distillation and ensembling (ICML 2026 workshops) and credit-risk prediction (SIGMOD 2026 workshop, oral); advised the tabular line until April 2026."
         - label: "Compression"
-          text: "Built the lab's pruning toolkit and brought interpretability-guided compression into the production deployment pipeline."
+          text: "Built internal libraries for pruning, unlearning, bias mitigation and inference optimization, and brought interpretability-guided compression into the production deployment pipeline. Started the lab's coding-agent research in February 2026."
         - label: "Talks"
           text: "Gave a spotlight talk at EurIPS 2025 and presented a poster at a MICCAI 2025 workshop."
       papers: [interpretability-aware-pruning, interpretability-as-alignment, tabtune, orion-msp, orion-bix, exploring-fine-tuning-for-tabular-foundation-models]
@@ -79,14 +79,14 @@
           text: "Generating additional data for difficult or misclassified samples to improve downstream task network optimization"
         - label: "Mentors"
           text: "Mr. Koustav Mullick (CR/RDT-2), Dr. Amit Kale"
-    - date: "2021.06 – 2023.12"
+    - date: "2020.11 – 2024.08"
       theme: "Led an undergraduate AI research wing"
-      role: "**Researcher**, AI Research Wing at [Mars Rover Manipal](https://www.marsrovermanipal.com/), Manipal, India"
+      role: "**Senior Researcher**, AI Research Wing at [Mars Rover Manipal](https://www.marsrovermanipal.com/), Manipal, India"
       points:
         - label: "Progression"
-          text: "Rose from Student Trainee to Senior Researcher leading the AI Research Wing, driving the team's technical roadmap across computer vision, multimodal AI, and medical imaging"
+          text: "Trainee (November 2020), researcher (August 2021), then senior researcher leading the AI Research Wing (August 2022 – August 2023); mentor and alumnus until August 2024"
         - label: "Recruitment & Training"
-          text: "Spearheaded recruitment that raised applicant quality; designed and ran training programs for incoming ML researchers"
+          text: "Ran recruitment and training programs for incoming ML researchers"
         - label: "Mentorship"
           text: "Mentored 10+ undergraduates (12+ total collaborators) under Dr. Ujjwal Verma; co-authored their publications, including workshop papers at NeurIPS, CVPR, ICLR, and MICCAI, an AAAI student abstract, and a Nature Scientific Reports journal paper"
     - date: "2023.04 – 2023.12"
@@ -133,9 +133,9 @@
 
 - group: "Leadership"
   roles:
-    - date: "2022.08 – 2023.09"
+    - date: "2021 – 2023.09"
       theme: "Ran a 90-member undergraduate research society"
-      role: "Co-President & AI Research Mentor, [Research Society MIT Manipal](https://www.instagram.com/researchsoc/?hl=en), Manipal, India"
+      role: "AI member from 2021, then Co-President & AI Research Mentor (2022–23), [Research Society MIT Manipal](https://www.instagram.com/researchsoc/?hl=en), Manipal, India"
       points:
         - label: "Organization"
           text: "Led a 90+ member undergraduate research organization across 10+ technical domains; managed recruitment from 250+ applicants and ran member-development pathways"
@@ -146,7 +146,7 @@
       role: "Co-founder & Head of Artificial Intelligence and Machine Learning, [The Data Alchemists](https://www.linkedin.com/company/the-data-alchemists/), Manipal, India"
       points:
         - label: "Co-founding"
-          text: "Founded and led the AI/ML club, growing it to 30+ members and establishing a lasting community of practice"
+          text: "Co-founded and led the AI/ML club, growing it to 30+ members"
         - label: "Programming"
           text: "Ran workshops and technical events on ML fundamentals and projects"
 
