@@ -15,6 +15,12 @@ import { img } from '../lib/images';
     <p>Talks, posters and conferences. I give talks on post-training safety and interpretability; see <a href="/speaking/">topics, bios and a photo for organisers</a>, or <a href="/#contact">email me</a> to invite me.</p>
   </header>
 
+  {talks.notice && (
+    <section class="container" aria-label="Notice" style="margin-bottom:var(--space-6)">
+      <p style="max-width:64ch;margin:0;padding-left:var(--space-4);border-left:3px solid var(--accent)">{talks.notice}</p>
+    </section>
+  )}
+
   {talks.upcoming.length > 0 && (
     <section class="container" aria-labelledby="up-title" style="margin-bottom:var(--space-6)">
       <h2 id="up-title" class="visually-hidden">Upcoming</h2>

@@ -5,7 +5,7 @@ export const site = {
   role: 'Lead Research Scientist',
   org: 'Lexsi Labs',
   orgUrl: 'https://lexsi.ai/',
-  location: 'India & Paris (remote)',
+  location: 'India (remote)',
   // One sentence that answers "what do you work on?" — shown large in the hero.
   thesis: 'I build AI systems you can trust: how models are trained, how they work inside, and how to keep them safe once they are fine-tuned, compressed and put to work as agents.',
   tagline: 'Trustworthy AI, from the data to the deployed agent.',

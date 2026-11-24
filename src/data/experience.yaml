@@ -21,14 +21,14 @@
         - label: "Research output"
           text: "In 2026 I was first author on 8 papers (one sole-authored) and co-first on 2; the group I lead has 35 papers this year, 19 accepted so far, including [ALIGNBEAM](/publications/alignbeam/) (EMNLP Main, co-led) and [Provenance-Grounded Gating](/publications/provenance-grounded-gating/) (EMNLP Findings). Applied the work to regulatory-compliance, financial-services, insurance and Indic-language deployments."
         - label: "Leadership"
-          text: "Founded the AI Safety & Alignment team (8 full-time researchers, 16 interns) and head the Model Science group, 30+ people across India and Paris that also includes the R&D and product team for the lab's coding agent; report to the CEO. Own the research agenda, library product direction, releases, grants, compute, hiring and code review, and ran the technical side of the [Lexsi AI Safety & Alignment Hackathon](https://hackathon.lexsi.ai/) with Cohere Labs and Hugging Face (400+ submissions)."
+          text: "Founded the AI Safety & Alignment team (8 full-time researchers and 16 interns so far) and head the Model Science group, 15+ people today (30 at its peak) that also includes the R&D and product team for the lab's coding agent; report to the CEO. Own the research agenda, library product direction, releases, grants, compute, hiring and code review, and ran the technical side of the [Lexsi AI Safety & Alignment Hackathon](https://hackathon.lexsi.ai/) with Cohere Labs and Hugging Face (400+ submissions)."
       papers: [aligntune, curatorkit, circuitkit, safetune, c-delta-theta, alignbeam, forgetting-that-sticks, position, provenance-grounded-gating, cited-but-not-consulted, verdict-without-the-rule, every-ablation-is-a-dose, agenttune, gemma-4-safety-repair]
     - date: "2025.07 – 2026.03"
       theme: "Post-training, interpretability and tabular foundation models"
       role: "**Research Scientist** at [Lexsi Labs, Lexsi.ai](https://lexsi.ai/) (Aurionpro Solutions Group) *[Previously: AryaXAI, Arya.ai]*, Remote"
       points:
         - label: "Team"
-          text: "Grew the Model Science group into the lab's core team for alignment, safety and interpretability: 14 interns and 5 full-time researchers across India and Paris. Ran grants, hiring and planning."
+          text: "Grew the Model Science group into the lab's core team for alignment, safety and interpretability: 14 interns and 5 full-time researchers. Ran grants, hiring and planning."
         - label: "Post-training"
           text: "Led and built **AlignTune**, a modular post-training toolkit covering SFT, preference optimization and safety methods. Co-first author on [Interpretability as Alignment](/publications/interpretability-as-alignment/) (EurIPS 2025 workshop, spotlight talk), which set the team's design principle."
         - label: "Interpretability"
@@ -53,7 +53,7 @@
         - label: "Interpretability-guided optimization"
           text: "Explored post-hoc optimization and alignment methods guided by interpretability, across model architectures."
         - label: "Leadership"
-          text: "Mentored two research interns, led hiring of interns and full-time scientists in Paris and India, wrote technical documentation for stakeholders, and started proof-of-concept projects for the lab's methods."
+          text: "Mentored two research interns, led hiring of interns and full-time scientists, wrote technical documentation for stakeholders, and started proof-of-concept projects for the lab's methods."
         - label: "Representation"
           text: "Represented R&D in client engagements and presented AryaXAI's work at industry forums, including the 5th MLOps Conference."
       papers: [dlbacktrace, xai-evals, bridging-the-gap-in-xai]

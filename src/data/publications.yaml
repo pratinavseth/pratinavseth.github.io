@@ -321,7 +321,7 @@
     - "Aadit Sengupta"
     - "Vinay Kumar Sankarapu"
     - "Pratinav Seth"
-  venue: "Under Review: WWW 2027 (Short Papers)"
+  venue: "Under Review"
   status: under-review
   type: under-review
   year: 2026
@@ -444,7 +444,7 @@
     - "Hem Gosalia*"
     - "Aditya Kasliwal*"
     - "Vinay Kumar Sankarapu"
-  venue: "NeuralArtifacts Workshop 2026"
+  venue: "AAAI-27 Demonstrations · NeuralArtifacts Workshop 2026"
   status: published
   type: workshop
   year: 2026
@@ -456,7 +456,7 @@
   image: circuitkit-fig.png
   imageAlt: CircuitKIT
   notes:
-    - "AAAI-27 Demonstrations: under review."
+    - "Accepted to the AAAI-27 Demonstrations track."
 
 - id: faithfulness-to-refusal
   title: "Faithfulness to Refusal: A Causal Audit of Neuron Selectors"
@@ -544,7 +544,7 @@
     - "Ashim Dhor"
     - "Pratinav Seth"
     - "Vinay Kumar Sankarapu"
-  venue: "Under Review: WWW 2027 (Short Papers)"
+  venue: "Under Review"
   status: under-review
   type: under-review
   year: 2026
@@ -599,7 +599,7 @@
     - "Vidushee Vats"
     - "R E Zera Marveen Lyngkhoi"
     - "Pratinav Seth"
-  venue: "Under Review: WWW 2027 (Short Papers)"
+  venue: "Under Review"
   status: under-review
   type: under-review
   year: 2026
@@ -613,7 +613,7 @@
     - "Abhivansh Gupta"
     - "R E Zera Marveen Lyngkhoi"
     - "Pratinav Seth"
-  venue: "Under Review: WWW 2027 (Short Papers)"
+  venue: "Under Review"
   status: under-review
   type: under-review
   year: 2026
@@ -628,7 +628,7 @@
     - "Pratinav Seth"
     - "Aryan Singh"
     - "Vinay Kumar Sankarapu"
-  venue: "Under Review: WWW 2027 (Short Papers)"
+  venue: "Under Review"
   status: under-review
   type: under-review
   year: 2026

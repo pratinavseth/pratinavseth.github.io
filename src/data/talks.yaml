@@ -1,5 +1,7 @@
 # Talks & Events page. Text fields accept inline Markdown. Photo `src` is relative to src/assets/images/.
 
+notice: "Unfortunately, for reasons outside my control, I won't be attending NeurIPS 2026 in person, although several of our papers were accepted to its workshops. I am happy to discuss any of them by email."
+
 upcoming: []
 
 conferences:
@@ -114,7 +116,7 @@ talks:
   - year: 2026
     items:
       - date: "2026.11"
-        text: "**AI Safety India Spotlight, 15 November:** *How I Got Into AI Safety Research*. [Written version](/writing/how-i-got-into-ai-safety/) · [Slides (PDF)](/files/how-i-got-into-ai-safety-slides.pdf)."
+        text: "**AI Safety India Spotlight, 15 November:** *How I Got Into AI Safety Research*. [Written version](/writing/how-i-got-into-ai-safety/)."
   - year: 2025
     items:
       - date: "2025.12"

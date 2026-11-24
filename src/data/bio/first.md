@@ -1,4 +1,4 @@
-I lead the Model Science group at [Lexsi Labs](https://lexsi.ai/), more than 30 people in India and Paris, and founded its AI Safety & Alignment team. We work on post-training, alignment, and mechanistic interpretability for language models and agents.
+I lead the Model Science group at [Lexsi Labs](https://lexsi.ai/), 15+ people today, and founded its AI Safety & Alignment team. We work on post-training, alignment, and mechanistic interpretability for language models and agents.
 
 My research asks what survives post-training. Fine-tuning, quantization, and deployment all change how a model behaves, and they can erode its safety. I look for the mechanism behind each failure and repair it in the weights: circuit-restricted refusal edits ([C-ΔΘ](/publications/c-delta-theta/)), safety-drift auditing and repair ([SafeTune](/publications/safetune/)), and alignment transfer at inference time ([ALIGNBEAM](/publications/alignbeam/)).
 

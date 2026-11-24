@@ -65,6 +65,7 @@ export const experience = load(
 export const talks = load(
   'talks.yaml',
   z.object({
+    notice: z.string().optional(),
     upcoming: z.array(z.object({ name: z.string(), where: z.string(), when: z.string(), note: z.string() })).default([]),
     conferences: z.array(z.object({ name: z.string(), where: z.string(), note: z.string().optional() })),
     photos: z.array(photo),
