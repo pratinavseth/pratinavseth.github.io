@@ -20,7 +20,7 @@ const cites = await citationsOf(pub);
       <Image src={img(d.image!)} alt={d.imageAlt ?? ''} widths={[360, 560, 720]} sizes="(min-width: 60rem) 22rem, 90vw" loading={eager ? 'eager' : 'lazy'} />
     </div>
   ) : (
-    <div class="card__fig card__fig--type" aria-hidden="true"><span>{d.title.split(':')[0]}</span></div>
+    <div class="card__fig card__fig--type" aria-hidden="true"><span>{d.short ?? d.title.split(':')[0]}</span></div>
   )}
   <div class="card__body">
     <div class="card__meta">

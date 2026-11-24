@@ -19,7 +19,7 @@ const searchText = [d.title, d.venue, d.authors.join(' '), d.area].join(' ').toL
     {hasImg(d.image) ? (
       <Image src={img(d.image!)} alt={d.imageAlt ?? `Figure from ${d.title}`} widths={[200, 320, 440]} sizes="(min-width: 36rem) 10rem, 92vw" loading="lazy" />
     ) : (
-      <span class="paper__thumb-type">{d.title.split(':')[0]}</span>
+      <span class="paper__thumb-type"><span>{d.short ?? d.title.split(':')[0]}</span></span>
     )}
   </a>
   <div>

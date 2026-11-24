@@ -384,6 +384,7 @@ details > summary { cursor: pointer; }
   background: var(--ink); color: var(--paper); font-family: var(--font-display); font-size: 0.95rem; line-height: 1.05;
   border-bottom: 5px solid var(--accent); overflow: hidden;
 }
+.paper__thumb-type > span, .card__fig--type span { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 4; line-clamp: 4; }
 @media (max-width: 36rem) {
   .paper--thumb { grid-template-columns: 6.5rem minmax(0, 1fr); gap: var(--space-3); }
   .paper__thumb-type { font-size: 0.75rem; padding: 0.4rem; }

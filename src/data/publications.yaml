@@ -212,8 +212,8 @@
   area: "Safety Post-Training & Alignment"
   myRole: lead
   url: "https://openreview.net/forum?id=5Hl0P9faYV"
-  image: safetune-fig.png
-  imageAlt: "SafeTune pipeline: drift induction, a repair registry of harden, recover, unlearn and steer methods, shared instrumentation, and re-evaluation before deployment"
+  image: safetune-overview.png
+  imageAlt: "SafeTune overview: choose one intervention (harden, recover, unlearn or steer) by how far the model has drifted, with interpretability and safety-plus-capability evaluation as shared instrumentation"
   notes:
     - "[Code](https://github.com/Lexsi-Labs/SafeTune)"
 
@@ -312,6 +312,7 @@
   myRole: senior
 
 - id: evaluating-rule-adherence
+  short: "Rule Adherence"
   title: "Evaluating Rule Adherence in Language Model Compliance Detection"
   authors:
     - "Saisab Sadhu"
@@ -326,6 +327,7 @@
   myRole: senior
 
 - id: directional-heterogeneity-multilingual-safety
+  short: "Directional Heterogeneity"
   title: "Directional Heterogeneity in Multilingual Safety Under Weight Perturbations"
   authors:
     - "Deeraj S K"
@@ -603,6 +605,7 @@
   myRole: senior
 
 - id: policy-grounded-insurance-agents
+  short: "Policy-Grounded Insurance Agents"
   title: "Synthetic, Verifiable Environment for Training and Evaluating Policy-Grounded Insurance Agents"
   authors:
     - "Abhivansh Gupta"

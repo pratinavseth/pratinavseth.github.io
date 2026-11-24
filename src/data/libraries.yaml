@@ -60,6 +60,7 @@
   logo: logos/auditkit.png
   repo: Lexsi-Labs/AuditKIT
   url: https://auditkit.lexsi.ai/
+  paper: auditkit
   stars: 12
   role: Team lead & contributor
   description: Source-available evaluation library for benchmarks, LLM-as-judge, RAG, model comparison, cost metrics and experiment tracking.

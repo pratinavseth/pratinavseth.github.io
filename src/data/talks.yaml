@@ -6,7 +6,7 @@ conferences:
   - { name: EMNLP 2026, where: "Budapest, Hungary", note: "session chair; posters for ALIGNBEAM, SafeTune and Provenance-Grounded Gating" }
   - { name: ICML 2026, where: "Seoul, South Korea" }
   - { name: The Web Conference (WWW) 2026, where: "Dubai, UAE", note: attended remotely }
-  - { name: EurIPS Workshop on Private AI Governance, where: "Copenhagen, Denmark", note: December 2025 }
+  - { name: EurIPS 2025 Workshop on Private AI Governance, where: "Copenhagen, Denmark", note: "spotlight talk; December 2025" }
   - { name: MICCAI 2025 Workshop, where: "Daejeon, South Korea" }
   - { name: ICML 2025, where: "Vancouver, Canada" }
   - { name: ICLR 2025, where: Singapore }
@@ -108,7 +108,7 @@ talks:
 industry:
   - date: "2026.11"
     text: "**Lexsi Hackathon:** ran the technical side of the hackathon (October–November 2026, 55+ submissions)."
-  - date: "2026"
+  - date: "2026.10"
     text: "**Hindustan Times Brunch:** shared perspectives with [Vinay Kumar Sankarapu](https://www.linkedin.com/in/vinaykumar123/) on AI sycophancy and why chatbots can sound confident even when they are wrong, in [Taranna Khetpal's feature](https://www.hindustantimes.com/lifestyle/brunch/too-chatty-gpt-why-ai-should-talk-less-and-just-give-us-the-info-we-need-101791477133262.html)."
   - date: "2026.02"
     text: "**India AI Impact Summit 2026**, Bharat Mandapam, New Delhi, representing Lexsi Labs. Attended AI Safety Connect Day (International Association for Safe and Ethical AI); joined The Dialogue's closed-door roundtable *Powering the AI Frontier: Building India's Compute, Infrastructure, and Trust Backbone for Inclusive AI Growth*; presented Lexsi Labs' work on alignment, interpretability-driven safety and open-source toolkits."

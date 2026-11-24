@@ -27,6 +27,8 @@ const publications = defineCollection({
     code: z.url().optional(),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
+    // Label for the text tile shown when a paper has no figure
+    short: z.string().optional(),
     notes: z.array(z.string()).optional(),
     featured: z.boolean().optional(),
   }),

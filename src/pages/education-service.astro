@@ -48,7 +48,7 @@ const ROLE_TAG: Record<string, string | undefined> = { manager: 'Manager', mento
   <section class="section container" id="academic-service" aria-labelledby="service-title">
     <div class="section__head"><h2 id="service-title">Academic service</h2></div>
     <ul class="timeline">
-      {education.service.mentoring.map((m) => <li><span class="timeline__date">Mentoring</span><span set:html={inline(m)} /></li>)}
+      {education.service.mentoring.map((m) => <li><span class="timeline__date">{m.includes('Session Chair') ? 'Chairing' : 'Mentoring'}</span><span set:html={inline(m)} /></li>)}
       <li><span class="timeline__date">Reviewing</span><span><strong>Main conferences:</strong> {education.service.mainConference}</span></li>
     </ul>
     <div class="areas" style="margin-top:var(--space-5)">
