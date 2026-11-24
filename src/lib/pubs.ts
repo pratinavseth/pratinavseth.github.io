@@ -218,3 +218,9 @@ export function bibtex(p: Pub): string {
     .join(',\n');
   return `@${kind}{${bibKey(p)},\n${body}\n}`;
 }
+
+/** Page <title> for a paper: the full title if it fits a search result, else cut at a word boundary. */
+export function seoTitle(title: string, max = 58): string {
+  if (title.length <= max) return title;
+  return title.slice(0, max - 1).replace(/[\s:,;-]+\S*$/, '') + '…';
+}
