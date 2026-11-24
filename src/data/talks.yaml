@@ -73,9 +73,39 @@ photos:
   - src: events/bosch-2023.jpg
     alt: Pratinav Seth outside the Bosch office in Bangalore during his 2023 internship
     caption: Bosch Research · Bangalore, 2023
+  - src: events/aaai-2023-manipal-friends.jpg
+    alt: Three students from Manipal in the AAAI 2023 conference hall in Washington D.C.
+    caption: AAAI 2023 · with friends from Manipal
+  - src: events/bosch-2023-campus.jpg
+    alt: In front of the "We are Bosch" sign on the Bosch campus in Bangalore, 2023
+    caption: Bosch Research · campus, Bangalore, 2023
+
+# Student communities at MIT Manipal: the Research Society and The Data Alchemists.
+community:
+  - src: events/rsm-board.jpg
+    alt: Group photo of Research Society MIT Manipal board members in formal wear in an auditorium
+    caption: Research Society MIT Manipal · the board
+  - src: events/rsm-board-transfer.jpg
+    alt: A speaker in a suit in front of a Research Society MIT slide at a board transfer
+    caption: Research Society MIT Manipal · board transfer
+  - src: events/rsm-investigar-panel.jpg
+    alt: A panel seated on stage in front of an Investigar slide at a Research Society MIT Manipal session during TechTatva
+    caption: Research Society MIT Manipal · Investigar panel, TechTatva
   - src: events/rsm-techtatva-panel.jpg
     alt: Research Society MIT Manipal members at a TechTatva session
     caption: Research Society MIT Manipal · TechTatva
+  - src: events/rsm-stall.jpg
+    alt: Research Society MIT Manipal members around their stall with posters and laptops at a campus event
+    caption: Research Society MIT Manipal · campus stall
+  - src: events/rsm-publicity-stall.jpg
+    alt: Research Society MIT Manipal members at an evening publicity stall with laptops and a Research Society banner
+    caption: Research Society MIT Manipal · publicity stall
+  - src: events/tda-ai-ml-head.jpg
+    alt: A staff member presents a certificate on stage beside a slide naming Pratinav Seth, Artificial Intelligence and Machine Learning Head, The Data Alchemists
+    caption: The Data Alchemists · AI and ML Head
+  - src: events/tda-team.jpg
+    alt: Group photo of The Data Alchemists team in formal wear on stage at MIT Manipal
+    caption: The Data Alchemists · the team
   - src: events/data-alchemists-event.jpg
     alt: Members of The Data Alchemists club at an event at MIT Manipal
     caption: The Data Alchemists · MIT Manipal

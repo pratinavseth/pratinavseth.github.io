@@ -68,6 +68,7 @@ export const talks = load(
     upcoming: z.array(z.object({ name: z.string(), where: z.string(), when: z.string(), note: z.string() })).default([]),
     conferences: z.array(z.object({ name: z.string(), where: z.string(), note: z.string().optional() })),
     photos: z.array(photo),
+    community: z.array(photo).default([]),
     talks: z.array(z.object({ year: z.number(), items: z.array(dated) })),
     industry: z.array(dated),
   }),

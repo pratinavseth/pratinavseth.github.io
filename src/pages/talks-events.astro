@@ -40,6 +40,21 @@ import { img } from '../lib/images';
     </div>
   </section>
 
+  {talks.community.length > 0 && (
+    <section class="section container" aria-labelledby="community-title">
+      <div class="section__head"><h2 id="community-title">Student communities</h2></div>
+      <p class="muted" style="max-width:62ch;margin:0 0 var(--space-5)">Before research was a job, it was clubs: the Research Society MIT Manipal and The Data Alchemists, where I helped run programmes, events and mentoring.</p>
+      <div class="photos">
+        {talks.community.map((ph) => (
+          <figure>
+            <Image src={img(ph.src)} alt={ph.alt} widths={[360, 560, 800]} sizes="(min-width: 72rem) 17rem, (min-width: 40rem) 33vw, 92vw" quality={68} />
+            <figcaption>{ph.caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+    </section>
+  )}
+
   <section class="section container" aria-labelledby="talks-title">
     <div class="section__head"><h2 id="talks-title">Talks &amp; presentations</h2></div>
     {talks.talks.map((y) => (
