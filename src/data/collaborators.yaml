@@ -2,8 +2,8 @@
 # from publications.yaml at build time; only the relationship and institution live here.
 # role: manager | mentor | mentee | collaborator
 
-Vinay Kumar Sankarapu: { institution: Lexsi Labs / AryaXAI Alignment Labs, role: manager }
-Chintan Chitroda: { institution: AryaXAI Alignment Labs, role: manager }
+Vinay Kumar Sankarapu: { institution: Lexsi Labs, role: manager }
+Chintan Chitroda: { institution: Lexsi Labs, role: manager }
 David Rolnick: { institution: Mila / McGill, role: mentor }
 Abhilash K Pai: { institution: MIT MAHE, role: mentor }
 Ujjwal Verma: { institution: MIT MAHE, role: mentor }
@@ -36,8 +36,8 @@ Yash Desai: { institution: "Lexsi Labs", role: collaborator }
 Deeraj S K: { institution: "Lexsi Labs", role: mentee }
 Ashim Dhor: { institution: "Lexsi Labs", role: mentee }
 Aryan Singh: { institution: "Lexsi Labs", role: collaborator }
-Yashwardhan Rathore: { institution: AryaXAI Alignment Labs, role: collaborator }
-Neeraj Kumar Singh: { institution: AryaXAI Alignment Labs, role: collaborator }
+Yashwardhan Rathore: { institution: Lexsi Labs, role: collaborator }
+Neeraj Kumar Singh: { institution: Lexsi Labs, role: collaborator }
 Akshat Bhandari: { institution: Mars Rover Manipal, role: collaborator }
 Sriya Rallabandi: { institution: Mars Rover Manipal, role: collaborator }
 Sanchit Singhal: { institution: Mars Rover Manipal, role: collaborator }

@@ -44,7 +44,7 @@
       papers: [interpretability-aware-pruning, interpretability-as-alignment, tabtune, orion-msp, orion-bix, exploring-fine-tuning-for-tabular-foundation-models]
     - date: "2024.07 – 2025.06"
       theme: "Explainability methods and XAI evaluation"
-      role: "**Research Scientist** at [AryaXAI Alignment Labs](https://www.aryaxai.com/) *(rebranded to Lexsi Labs in 2025)*, Remote / Mumbai, India"
+      role: "**Research Scientist** at [Lexsi Labs, Lexsi.ai](https://lexsi.ai/) *(then AryaXAI Alignment Labs; renamed in 2025)*, Remote / Mumbai, India"
       points:
         - label: "Focus"
           text: "Interpreted black-box models and measured how reliable XAI methods are for high-stakes uses such as fraud detection; started the lab's work on tabular foundation models."
@@ -55,7 +55,7 @@
         - label: "Leadership"
           text: "Mentored two research interns, led hiring of interns and full-time scientists, wrote technical documentation for stakeholders, and started proof-of-concept projects for the lab's methods."
         - label: "Representation"
-          text: "Represented R&D in client engagements and presented AryaXAI's work at industry forums, including the 5th MLOps Conference."
+          text: "Represented R&D in client engagements and presented the lab's work, then under the AryaXAI name, at industry forums, including the 5th MLOps Conference."
       papers: [dlbacktrace, xai-evals, bridging-the-gap-in-xai]
     - date: "2024.01 – 2024.06"
       theme: "Climate AI: finding oil and gas wells from satellites (ICML 2025)"

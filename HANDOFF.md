@@ -62,6 +62,9 @@ The Overleaf CV project (`bib/*.bib`, `notes/papers-status.md`, `notes/website-u
 
 ## Owner instructions applied on 24 Nov 2026 (keep them)
 
+- AryaXAI and Lexsi Labs are the same organisation: never present them as two employers. Write "Lexsi Labs (then AryaXAI Alignment Labs)" for 2024-25 (affiliation labels all say Lexsi Labs).
+- Profile photo: the whole of IMG_1974 at 3:4 (`public/images/profile.jpg`, 720x960), not a crop; favicons and app icons are a tight face crop of the same photo. The owner dislikes close-ups.
+- Thank-you list on the journey post is the owner's own list (students and mentors: Ujjwal Verma, David Rolnick, Abhilash Pai, Rakshith Satish, Koustav Mullick, Amit Kale, Vidya Rao, Poornima P.K., Ananta Mahapatra, Vijay Kumar B.R.; then Mars Rover Manipal, the Research Society, The Data Alchemists, Vinay Kumar Sankarapu and everyone at Lexsi Labs). Do not add names.
 - No mention of Paris anywhere (his location is "India (remote)"; co-author affiliations no longer say Paris).
 - Group size: "15+ people today (30 at its peak)"; the 8 researchers and 16 interns of the AI Safety & Alignment team are cumulative ("so far"). Do not write "30+".
 - Do not name the WWW 2027 submissions: those papers show plain "Under Review". Preprints and other venues (ICLR 2027, AAAI-27) may be named.

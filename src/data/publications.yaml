@@ -141,6 +141,8 @@
   arxiv: "2608.16852"
   image: compliance-detectors-fig.png
   imageAlt: "Pipeline for auditing compliance detectors: offline calibration of activation probes, online inference, and the decision rule"
+  notes:
+    - "I will not be attending NeurIPS 2026 in person. Please get in touch by email to discuss this paper."
 
 - id: cited-but-not-consulted
   title: "Cited but Not Consulted: A Counterfactual Audit of Legal Chain-of-Thought Faithfulness"
@@ -159,6 +161,7 @@
   image: cited-but-not-consulted-fig.png
   imageAlt: "Architecture of the counterfactual audit: case facts, authority-swap prompts, internal commitment tracking with logit lens, and behavioral and mechanistic faithfulness metrics"
   notes:
+    - "I will not be attending NeurIPS 2026 in person. Please get in touch by email to discuss this paper."
     - "Also on [OpenReview](https://openreview.net/forum?id=25nCvWm2yy)."
 
 - id: verdict-without-the-rule
@@ -233,6 +236,8 @@
   myRole: lead
   image: drift-then-repair-fig.png
   imageAlt: "Evaluation pipeline: aligned base model, benign LoRA fine-tuning, drifted checkpoint, then harden, recover or unlearn repairs and safety-capability evaluation"
+  notes:
+    - "I will not be attending NeurIPS 2026 in person. Please get in touch by email to discuss this paper."
 
 - id: self-calibrating-safety-drift-repair
   title: Self-Calibrating Weight-Arithmetic Safety-Drift Repair
@@ -258,6 +263,8 @@
   year: 2026
   area: "Safety Post-Training & Alignment"
   myRole: lead
+  notes:
+    - "I will not be attending NeurIPS 2026 in person. Please get in touch by email to discuss this paper."
 
 - id: curatorkit
   title: "CuratorKIT: Data Curation and Synthetic Data Generation for LLM Post-Training"
@@ -506,6 +513,7 @@
   area: "Mechanistic Interpretability & XAI"
   myRole: senior
   notes:
+    - "I will not be attending NeurIPS 2026 in person. Please get in touch by email to discuss this paper."
     - "Also under review at ICLR 2027."
 
 - id: dlbacktrace-v2

@@ -2,7 +2,7 @@
 // data as the site, so its numbers and paper list can never drift from the pages.
 import type { APIRoute } from 'astro';
 import { site } from '../config/site';
-import { experience, libraries } from '../lib/data';
+import { experience, libraries, talks } from '../lib/data';
 import { getPubs, getStats, getAreas, isMine, isPeerReviewed, authorsOf, pageOf, fill, plainOf, ROLE_LABEL, type Pub } from '../lib/pubs';
 import { getStars } from '../lib/remote';
 
@@ -33,6 +33,7 @@ export const GET: APIRoute = async () => {
     '',
     'Role labels below: "led" means first, co-first or main hands-on author; "senior author" means he mentored the first author or led the design.',
     '',
+    ...(talks.notice ? ['## Notice', '', talks.notice, ''] : []),
     '## Pages',
     '',
     `- [Home](${u('/')}): bio, research threads, selected work, citations, news, contact.`,

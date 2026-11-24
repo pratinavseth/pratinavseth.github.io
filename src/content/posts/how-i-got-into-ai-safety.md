@@ -35,7 +35,7 @@ I got into each opportunity differently, and most of them were unpaid at first:
 - Bosch Research in 2023, from a cold email: my first paid role.
 - An AgriLLM collaboration with Wells Fargo, through peers and LinkedIn.
 - Mila in 2024, in David Rolnick's lab, from a cold email, for my bachelor's thesis.
-- AryaXAI in July 2024, now Lexsi Labs: my first job, where I applied directly.
+- Lexsi Labs, then called AryaXAI, in July 2024: my first job, where I applied directly.
 
 Two of those cold emails mattered most. At Bosch I used diffusion models to generate the hard, misclassified examples that a self-driving perception model rarely sees. At Mila my thesis became the Alberta Wells Dataset for finding abandoned oil and gas wells from satellite images, published at ICML 2025. Both started as a short email to someone whose work I had read. It took more than 50 cold emails before my first yes.
 
@@ -51,7 +51,7 @@ There was no single moment when I decided to work on AI safety. Each project mad
 
 In 2021 the question was uncertainty: how sure is the model? In 2023 it was fairness: who does it fail? One of those projects asked whether pre-training makes skin-lesion models work worse on darker skin tones, funded by a ₹10,000 undergraduate research grant and published at a WACV 2024 workshop with Dr Abhilash Pai. In 2024 it was explanation: why did it decide that? That one started at KLIV in 2022 and 2023, where I ran sanity checks on class activation maps and first asked whether an explanation can be trusted. In 2025 it was interpretability: what inside drives it? In 2026 it became safety: can we find the unsafe part and fix it?
 
-At AryaXAI I worked on DL-Backtrace, a model-agnostic way to explain any network's decision, and xai_evals, a benchmark for checking whether explanations are any good. What I learned there is that explaining a model is not the same as fixing it. An explanation tells you why a model refused or misbehaved. It does not change what it does next time.
+At Lexsi Labs, then called AryaXAI, I worked on DL-Backtrace, a model-agnostic way to explain any network's decision, and xai_evals, a benchmark for checking whether explanations are any good. What I learned there is that explaining a model is not the same as fixing it. An explanation tells you why a model refused or misbehaved. It does not change what it does next time.
 
 ## From explaining models to fixing them
 
@@ -90,4 +90,4 @@ At Lexsi Labs there are research internships, open issues on our six libraries, 
 
 ## Thank you
 
-None of this was solo work: 70 co-authors across my papers, 12 mentors in labs and internships, and two advisors at AryaXAI and Lexsi Labs. Thank you to the people who took a chance on a student: Ujjwal Verma, Debdoot Sheet, Rakshith Satish, Abhilash Pai, Vidya Rao, Poornima P.K., Ananta Mahapatra, Vijay Kumar B.R., Koustav Mullick, Amit Kale, Amit Agarwal, David Rolnick, Vinay Kumar Sankarapu and Chintan Chitroda, and everyone at Mars Rover Manipal, the Research Society, The Data Alchemists, AryaXAI and Lexsi Labs.
+None of this was solo work: 70 co-authors across my papers, and mentors who took a chance on a student: Ujjwal Verma, David Rolnick, Abhilash Pai, Rakshith Satish, Koustav Mullick, Amit Kale, Vidya Rao, Poornima P.K., Ananta Mahapatra and Vijay Kumar B.R. Thank you to everyone at Mars Rover Manipal, the Research Society and The Data Alchemists, and at Lexsi Labs to Vinay Kumar Sankarapu and everyone there, including all of AryaXAI, which is now Lexsi Labs.

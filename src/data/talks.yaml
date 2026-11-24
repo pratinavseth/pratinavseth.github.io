@@ -61,7 +61,7 @@ photos:
     alt: Pratinav Seth at the India AI Impact Summit 2026, Bharat Mandapam, New Delhi
     caption: India AI Impact Summit 2026 · New Delhi
   - src: events/mlops-conf-2024-sf-booth.jpg
-    alt: Pratinav Seth at the AryaXAI booth, MLOps Conference 2024, San Francisco
+    alt: Pratinav Seth at the AryaXAI booth (now Lexsi Labs), MLOps Conference 2024, San Francisco
     caption: MLOps Conference 2024 · San Francisco
   - src: events/aaai-uc-2023.jpg
     alt: Pratinav Seth in Washington D.C. for the AAAI Undergraduate Consortium 2023
@@ -121,8 +121,8 @@ talks:
     items:
       - date: "2025.12"
         text: "**EurIPS Spotlight Talk:** *Interpretability as Alignment: Making Internal Understanding a Design Principle*, EurIPS Workshop on Private AI Governance, Copenhagen, with Aadit Sengupta"
-      - text: "**AryaXAI Alignment Lab webinar:** *Inside the Black Box: Interpreting LLMs with DL-Backtrace*"
-      - text: "**AryaXAI Alignment Lab webinar:** *Beyond Explainability: Evaluating XAI Methods with Confidence Using xai_evals*"
+      - text: "**Lexsi Labs webinar (then AryaXAI Alignment Lab):** *Inside the Black Box: Interpreting LLMs with DL-Backtrace*"
+      - text: "**Lexsi Labs webinar (then AryaXAI Alignment Lab):** *Beyond Explainability: Evaluating XAI Methods with Confidence Using xai_evals*"
       - text: "**Paper podcast:** *Interpretability-Aware Pruning in Medical Imagery*"
   - year: 2024
     items:
@@ -149,4 +149,4 @@ industry:
   - date: "2025.12"
     text: "**AurionAI Launch Event**, India, representing Lexsi Labs"
   - date: "2024"
-    text: "**MLOps Conference**, San Francisco, representing AryaXAI"
+    text: "**MLOps Conference**, San Francisco, representing Lexsi Labs (then AryaXAI)"

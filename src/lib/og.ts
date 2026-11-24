@@ -64,9 +64,10 @@ export async function paperOg(opts: { title: string; venue: string; year: number
 }
 
 export async function homeOg(opts: { thesis: string; stats: string }): Promise<Buffer> {
-  const photoSize = 400;
+  const photoW = 330;
+  const photoH = 440; // the whole portrait, 3:4
   const photo = await sharp(await readFile(join(process.cwd(), 'public', site.avatar)))
-    .resize(photoSize, photoSize, { fit: 'cover', position: 'top' })
+    .resize(photoW, photoH, { fit: 'cover', position: 'top' })
     .toBuffer();
   const thesis = wrap(opts.thesis, 38, 4);
   const inner = `
@@ -75,9 +76,9 @@ export async function homeOg(opts: { thesis: string; stats: string }): Promise<B
     <rect x="64" y="272" width="120" height="10" fill="${RED}"/>
     ${thesis.map((l, i) => `<text x="64" y="${330 + i * 38}" font-family="${SANS}" font-size="29" fill="${INK}">${esc(l)}</text>`).join('')}
     <text x="64" y="${H - 140}" font-family="${MONO}" font-size="22" fill="#3d3d3d">${esc(opts.stats)}</text>
-    <rect x="${W - 64 - photoSize - 4}" y="62" width="${photoSize + 8}" height="${photoSize + 8}" fill="${INK}"/>`;
-  return sharp(Buffer.from(frame(inner, photoSize + 24)))
-    .composite([{ input: photo, left: W - 64 - photoSize, top: 66 }])
+    <rect x="${W - 64 - photoW - 4}" y="91" width="${photoW + 8}" height="${photoH + 8}" fill="${INK}"/>`;
+  return sharp(Buffer.from(frame(inner, photoW + 24)))
+    .composite([{ input: photo, left: W - 64 - photoW, top: 95 }])
     .png()
     .toBuffer();
 }
