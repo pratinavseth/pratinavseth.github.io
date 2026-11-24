@@ -3,6 +3,10 @@ import '@fontsource/archivo-black/400.css';
 import '@fontsource-variable/ibm-plex-sans/wght.css';
 import '@fontsource-variable/jetbrains-mono/wght.css';
 import '../styles/global.css';
+// Preload the latin files so the real fonts are ready at first paint (fewer layout shifts).
+import archivoLatin from '@fontsource/archivo-black/files/archivo-black-latin-400-normal.woff2?url';
+import plexLatin from '@fontsource-variable/ibm-plex-sans/files/ibm-plex-sans-latin-wght-normal.woff2?url';
+import monoLatin from '@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2?url';
 import { site, nav } from '../config/site';
 import { getPosts } from '../lib/posts';
 
@@ -37,6 +41,7 @@ const isCurrent = (href: string) => (href === '/' ? path === '/' : path.startsWi
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {[archivoLatin, plexLatin, monoLatin].map((href) => <link rel="preload" as="font" type="font/woff2" href={href} crossorigin />)}
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
