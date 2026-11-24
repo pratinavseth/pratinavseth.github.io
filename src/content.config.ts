@@ -29,6 +29,8 @@ const publications = defineCollection({
     imageAlt: z.string().optional(),
     // Label for the text tile shown when a paper has no figure
     short: z.string().optional(),
+    // Mark papers that introduce a dataset; adds schema.org Dataset markup for Google Dataset Search
+    dataset: z.boolean().optional(),
     notes: z.array(z.string()).optional(),
     featured: z.boolean().optional(),
   }),

@@ -793,6 +793,7 @@
   imageAlt: Credit default prediction under severe class imbalance pipeline
 
 - id: alberta-wells-dataset
+  dataset: true
   title: "Alberta Wells Dataset: Pinpointing Oil and Gas Wells from Satellite Imagery"
   authors:
     - "Pratinav Seth"

@@ -69,6 +69,20 @@ const articleLd = {
   ...(d.arxiv ? { sameAs: [`https://arxiv.org/abs/${d.arxiv}`], identifier: `arXiv:${d.arxiv}` } : d.url ? { sameAs: [d.url] } : {}),
   keywords: d.area,
 };
+const datasetLd = d.dataset
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'Dataset',
+      name: d.title.split(':')[0],
+      description: plainWords ?? abstract,
+      url,
+      creator: authors.map((a) => ({ '@type': 'Person', name: a.name })),
+      citation: d.arxiv ? `https://arxiv.org/abs/${d.arxiv}` : undefined,
+      measurementTechnique: 'Medium-resolution multi-spectral satellite imagery (Planet Labs)',
+      spatialCoverage: 'Alberta, Canada',
+      keywords: ['abandoned oil and gas wells', 'satellite imagery', 'remote sensing', 'segmentation', 'climate'],
+    }
+  : null;
 const crumbsLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -80,7 +94,7 @@ const crumbsLd = {
 const bib = bibtex(pub);
 ---
 
-<Base title={seoTitle(d.title)} description={description} type="article" image={`/og/papers/${pub.id}.png`} imageAlt={d.title} meta={meta} jsonLd={[articleLd, crumbsLd]}>
+<Base title={seoTitle(d.title)} description={description} type="article" image={`/og/papers/${pub.id}.png`} imageAlt={d.title} meta={meta} jsonLd={[articleLd, crumbsLd, ...(datasetLd ? [datasetLd] : [])]}>
   <article class="container" style="padding-block:var(--space-7)">
     <p class="mono" style="font-size:var(--step--1);text-transform:uppercase;letter-spacing:.05em;margin-bottom:var(--space-4)">
       <a href="/publications/">← Publications</a> / {d.area}

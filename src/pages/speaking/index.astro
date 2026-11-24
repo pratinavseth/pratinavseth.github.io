@@ -1,0 +1,109 @@
+---
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import Base from '../../layouts/Base.astro';
+import Contact from '../../components/Contact.astro';
+import { site } from '../../config/site';
+import { talks } from '../../lib/data';
+import { fill } from '../../lib/pubs';
+import { block, inline } from '../../lib/md';
+
+const bioFile = (n: string) => readFileSync(join(process.cwd(), 'src/data/bio', `${n}.md`), 'utf8');
+const intro = block(await fill(bioFile('third')));
+const full = block(await fill(bioFile('full')));
+
+// Each topic points at the papers and libraries it draws on.
+const topics = [
+  {
+    title: 'What survives post-training?',
+    text: 'Models are fine-tuned, quantized and updated long after the safety evaluation. What happens to refusal, unlearning and alignment along the way, and how do you repair it in the weights?',
+    links: [['SafeTune', '/publications/safetune/'], ['Drift, Then Repair', '/publications/drift-then-repair/'], ['C-ΔΘ', '/publications/c-delta-theta/']],
+  },
+  {
+    title: 'Interpretability as infrastructure',
+    text: 'Audits, certification and governance need evidence about a model’s insides, not only its outputs. Why behavioural tests alone cannot carry strong safety claims, and what interpretability can add.',
+    links: [['Interpretability as Alignment', '/publications/interpretability-as-alignment/'], ['Behavioural assurance position paper', '/publications/position/']],
+  },
+  {
+    title: 'Designing an alignment and safety stack',
+    text: 'Single-purpose libraries for data curation, post-training, interpretability, repair, compression and evaluation that write to one shared evaluation record. The design choices and what they bought.',
+    links: [['Experience: systems', '/experience/#systems'], ['AlignTune', '/publications/aligntune/'], ['AuditKIT', '/publications/auditkit/']],
+  },
+  {
+    title: 'Trustworthy agents',
+    text: 'Training tool-using agents, evaluating them with auditable records, and checking that safety claims survive the move from model to agent.',
+    links: [['AgentTune', '/publications/agenttune/'], ['AuditKIT', '/publications/auditkit/'], ['The Off-Switch Failure', '/publications/the-off-switch-failure/']],
+  },
+  {
+    title: 'How I got into AI safety research',
+    text: 'The path from an undergraduate research club to leading a safety and alignment team, for students deciding where to start.',
+    links: [['Talks & events', '/talks-events/']],
+  },
+];
+
+const recent = talks.talks.flatMap((y) => y.items.map((i) => ({ ...i, year: y.year }))).slice(0, 6);
+const formats = ['Invited talk or guest lecture', 'Panel or fireside chat', 'Workshop or reading-group session', 'Advising sessions for students'];
+---
+
+<Base
+  title="Speaking"
+  description="Invite Pratinav Seth to speak: talk topics on post-training safety, interpretability and trustworthy agents, bios in three lengths, and a downloadable headshot."
+>
+  <header class="page-head container">
+    <h1>Speaking</h1>
+    <p>I give talks and join panels on post-training safety, interpretability and trustworthy agents. This page has what an organiser needs: topics, bios and a photo.</p>
+  </header>
+
+  <section class="section container" aria-labelledby="topics-title">
+    <div class="section__head"><h2 id="topics-title">Talk topics</h2></div>
+    <div class="topics">
+      {topics.map((t) => (
+        <div class="topic">
+          <h3>{t.title}</h3>
+          <p>{t.text}</p>
+          <p class="muted" style="font-size:var(--step--1);margin:0">{t.links.map(([label, href], i) => <><a href={href}>{label}</a>{i < t.links.length - 1 ? ' · ' : ''}</>)}</p>
+        </div>
+      ))}
+    </div>
+    <p class="muted" style="margin-top:var(--space-5)">Formats: {formats.join(', ')}. Talks can be given in person or online.</p>
+  </section>
+
+  <section class="section container" aria-labelledby="bio-title">
+    <div class="section__head"><h2 id="bio-title">Bio for introductions</h2></div>
+    <div class="prose" id="speaker-bio" set:html={intro} />
+    <div class="btn-row" style="margin-top:var(--space-4)">
+      <button class="btn bio__copy" type="button" data-copy="speaker-bio">Copy bio</button>
+      <a class="btn" href="/files/pratinav-seth-headshot.jpg" download>Download headshot</a>
+    </div>
+    <details style="margin-top:var(--space-5)">
+      <summary class="mono" style="cursor:pointer">LONGER BIO</summary>
+      <div class="prose" set:html={full} />
+    </details>
+    <p class="muted" style="margin-top:var(--space-4);font-size:var(--step--1)">Name: Pratinav Seth. Title: {site.role}, {site.org}. Please use these as written; for a different length, ask.</p>
+  </section>
+
+  <section class="section container" aria-labelledby="recent-title">
+    <div class="section__head"><h2 id="recent-title">Recent talks</h2><a class="section__more" href="/talks-events/">All talks and events →</a></div>
+    <ul class="timeline">
+      {recent.map((t) => <li><span class="timeline__date">{t.date ?? t.year}</span><span set:html={inline(t.text)} /></li>)}
+    </ul>
+  </section>
+
+  <Contact />
+</Base>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const panel = document.getElementById(btn.dataset.copy!);
+      const text = [...(panel?.querySelectorAll('p') ?? [])].map((p) => p.textContent?.trim()).join('\n\n');
+      try {
+        await navigator.clipboard.writeText(text);
+        btn.textContent = 'Copied';
+      } catch {
+        btn.textContent = 'Select and copy manually';
+      }
+      setTimeout(() => (btn.textContent = 'Copy bio'), 2000);
+    });
+  });
+</script>

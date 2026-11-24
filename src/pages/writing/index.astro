@@ -5,21 +5,29 @@ import { getPubs, isMine, pageOf, plainOf } from '../../lib/pubs';
 
 const posts = await getPosts();
 const notes = (await getPubs()).filter((p) => isMine(p) && plainOf(p));
+const tags = [...new Set(posts.flatMap((p) => p.data.tags ?? []))].sort((a, b) => a.localeCompare(b));
 ---
 
 <Base title="Writing" description="Notes by Pratinav Seth on post-training safety, mechanistic interpretability and the research behind his papers.">
   <header class="page-head container">
     <h1>Writing</h1>
-    <p>Notes on the research: the question behind each paper, what didn’t make the final version, and what comes next.</p>
+    <p>Notes from my work and my path: how I got into AI safety, what I learn running a research group and events, and the thinking behind the papers.</p>
   </header>
 
   <section class="container" style="padding-bottom:var(--space-8)">
     {posts.length === 0 ? (
       <p class="muted">Longer posts are on the way; follow the <a href="/rss.xml">RSS feed</a> to get them. Until then, every paper is below in plain words, or start with the <a href="/publications/">full list</a>.</p>
     ) : (
-      <ul class="paper-list">
+      <>
+      {tags.length > 1 && (
+        <div class="filter-row" role="group" aria-label="Filter posts by topic" style="margin-bottom:var(--space-5)">
+          <button type="button" class="chip" data-tag="" aria-pressed="true">All</button>
+          {tags.map((t) => <button type="button" class="chip" data-tag={t} aria-pressed="false">{t}</button>)}
+        </div>
+      )}
+      <ul class="paper-list" data-posts>
         {posts.map((p) => (
-          <li class="paper">
+          <li class="paper" data-tags={(p.data.tags ?? []).join('|')}>
             <div class="paper__year">{p.data.date.getUTCFullYear()}</div>
             <div>
               <div class="paper__title" style="font-size:var(--step-1)">
@@ -27,11 +35,12 @@ const notes = (await getPubs()).filter((p) => isMine(p) && plainOf(p));
                 {p.data.draft && <span class="tag tag--accent" style="margin-left:.5rem">Draft</span>}
               </div>
               <p class="paper__authors" style="margin:var(--space-1) 0 0">{p.data.description}</p>
-              <p class="mono muted" style="font-size:.75rem;margin:var(--space-2) 0 0">{fmtDate(p.data.date)}</p>
+              <p class="mono muted" style="font-size:.75rem;margin:var(--space-2) 0 0">{fmtDate(p.data.date)}{(p.data.tags ?? []).length > 0 && ` · ${(p.data.tags ?? []).join(', ')}`}</p>
             </div>
           </li>
         ))}
       </ul>
+      </>
     )}
   </section>
 
@@ -52,3 +61,17 @@ const notes = (await getPubs()).filter((p) => isMine(p) && plainOf(p));
     </ul>
   </section>
 </Base>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.filter-row').forEach((row) => {
+    const items = [...document.querySelectorAll<HTMLElement>('[data-posts] > li')];
+    row.querySelectorAll<HTMLButtonElement>('.chip').forEach((chip) => {
+      chip.addEventListener('click', () => {
+        row.querySelectorAll('.chip').forEach((c) => c.setAttribute('aria-pressed', String(c === chip)));
+        items.forEach((li) => {
+          li.hidden = !!chip.dataset.tag && !(li.dataset.tags ?? '').split('|').includes(chip.dataset.tag);
+        });
+      });
+    });
+  });
+</script>

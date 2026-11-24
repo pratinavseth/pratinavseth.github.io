@@ -8,7 +8,6 @@ import archivoLatin from '@fontsource/archivo-black/files/archivo-black-latin-40
 import plexLatin from '@fontsource-variable/ibm-plex-sans/files/ibm-plex-sans-latin-wght-normal.woff2?url';
 import monoLatin from '@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2?url';
 import { site, nav } from '../config/site';
-import { getPosts } from '../lib/posts';
 
 interface Props {
   title: string;
@@ -31,8 +30,7 @@ const fullTitle =
   title === site.name ? `${site.name} · ${site.tagline}` : title.length > 45 ? title : `${title} · ${site.name}`;
 const path = Astro.url.pathname;
 // Writing appears in the menu once there is at least one published post.
-const hasPosts = (await getPosts()).some((p) => !p.data.draft);
-const menu = nav.filter((item) => item.href !== '/writing/' || hasPosts);
+const menu = nav;
 const isCurrent = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
 ---
 
@@ -70,6 +68,7 @@ const isCurrent = (href: string) => (href === '/' ? path === '/' : path.startsWi
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="alternate" type="application/rss+xml" title={`${site.name}: Writing`} href="/rss.xml" />
+    <link rel="alternate" type="application/rss+xml" title={`${site.name}: Paper notes`} href="/papers.xml" />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
     {jsonLd.map((obj) => <script type="application/ld+json" set:html={JSON.stringify(obj)} />)}
