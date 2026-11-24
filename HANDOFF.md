@@ -5,9 +5,10 @@ State as of 19 Oct 2026. Live at https://pratinavseth.github.io, built from `dev
 ## Current state
 
 - The site is an **Astro 7 + TypeScript** rebuild of the old Jekyll site, live since 19 Oct 2026.
-- `astro` and `dev-stable` point at the same commit. `main` is the stale February 2025 Jekyll version and is still the repository's **default branch** (see Open items).
+- `astro` and `dev-stable` point at the same commit and are what is live. `dev-stable` is now the repository's **default branch** (changed 24 Nov 2026), so the daily Scholar crawler and site rebuild run. `main` is the stale February 2025 Jekyll version.
+- 24 Nov 2026: the work on branch `polish-local` (headshot on the home page and share card, shorter paper `<title>` tags) is **local only until the owner approves**; do not push it without that.
 - GitHub Pages source is **GitHub Actions** (`.github/workflows/deploy.yml`). Every push to `dev-stable` or `main` deploys in about 2 minutes.
-- Last full check: 0 type errors, 61 pages, no layout overflow at 1366px or 390px, 0 axe (WCAG A/AA) violations, every meta description 160 characters or fewer.
+- Last full check (24 Nov 2026): 0 type errors, 69 pages built, 22 rendered checks clean, no layout overflow at 1366px or 390px, 0 axe (WCAG A/AA) violations, every meta description 160 characters or fewer.
 
 ## How it works
 
@@ -61,17 +62,18 @@ The Overleaf CV project (`bib/*.bib`, `notes/papers-status.md`, `notes/website-u
 
 ## Open items
 
-1. **Make `dev-stable` the default branch** (Settings → General). Scheduled workflows only run on the default branch, so the Scholar crawler and the daily rebuild are idle and citations are frozen at 2026-09-01.
-2. **Papers without figures** (placeholders): the-off-switch-failure, document-as-function, brief, sailing-through-spectra and the seven under-review papers added from the CV. Save the PDFs and crop Figure 1.
-3. **Draft post** `what-survives-post-training.md` needs the owner's edit before setting `draft: false`.
-4. **GoatCounter:** set `goatcounter` in `site.ts` once the owner signs up.
-5. **Search consoles:** verify in Google Search Console and Bing Webmaster Tools, submit `sitemap-index.xml`, and link the site from Scholar, LinkedIn, GitHub, ORCID and X.
-6. **Scholar crawler** has been failing intermittently since August, probably because Google Scholar blocks GitHub's runners. Check the Actions logs after item 1.
+1. **Papers without figures** (text tiles): the-off-switch-failure, document-as-function, brief, sailing-through-spectra, legalsearchgym, policy-grounded-insurance-agents, wording-risk-underwriting, evaluating-rule-adherence, directional-heterogeneity-multilingual-safety, mechanistic-flinch, three-steps-to-no. Needs the PDFs (none are on arXiv, and OpenReview blocks automation). Crop the main figure to `src/assets/images/<id>-fig.png` and set `image` and `imageAlt`. A figure-less paper can set `short:` for its tile label.
+2. **Draft post** `what-survives-post-training.md` needs the owner's edit before setting `draft: false`. The Writing page is empty until then.
+3. **GoatCounter:** set `goatcounter` in `site.ts` once the owner signs up.
+4. **Search consoles:** verify in Google Search Console, submit `sitemap-index.xml`. Bing was pinged through IndexNow on 24 Nov (key file `public/da6fc9e7656707d8213521d90c4cb207.txt`); Bing Webmaster Tools verification is still open. Older profiles (ResearchGate, Linktree, alphaXiv, Stackforce, Scholar affiliation) still show old numbers and titles.
+5. **Scholar crawler:** fixed on 15 Nov (`bibtexparser` pinned below 2, Python 3.12, 20-minute cap), but Google blocks GitHub's runners, so it mostly times out. Refresh `src/data/scholar-snapshot.json` from a local machine every month or so (`scholarly`, see `google_scholar_crawler/main.py`).
+6. **Overleaf CV:** `resume.tex` line 138 still says "55+ submissions" for the Lexsi Hackathon; the site and the kit PDFs say 400+ (the owner's figure; the official hackathon page shows placeholder counters). The Overleaf git token in the owner's notes was rejected on 24 Nov (rotated); pull a fresh ZIP before the next sync.
+7. **Not used from the media kit on purpose:** hiring and promo posters, QR codes, alternate logo crops, near-duplicate event photos, and the alignment-and-safety-stack diagram (it labels AlignTune "ICLR 2026 SPOT workshop", which is wrong; fix the label, then it can go on Experience).
 
 ## Outside this repo
 
-- `Downloads\claude-resume-kit\MASTER-PROFILE.md` is the resume source of truth, generated from this repo's data. Regenerate it after data changes.
-- `Downloads\claude-resume-kit\output\` holds the research and tech-lead resumes (2-page LaTeX and PDF) and `CRITIQUE.md`, which lists the evidence to add before sending.
+- `Downloads\claude-resume-kit\MASTER-PROFILE.md` is the resume source of truth, generated from this repo's data. Regenerate it after data changes: `python regen_master_profile.py <repo path>` (in the same folder; regenerated 24 Nov 2026).
+- `Downloads\claude-resume-kit\output\` holds `pratinav_seth_cv_full.pdf` (9 pages) and `pratinav_seth_cv_condensed.pdf` (2 pages), built from the Overleaf CV of 15 Nov 2026 (sources in `overleaf-2026-11-15\`). `website-copy\` is the same CV with the internal interpretability-library name replaced, and is what `public/files/` serves. The October resumes and `CRITIQUE.md` are in `archive-2026-10-19\`.
 - Skills installed in `~/.claude/skills`: resume-tailoring, resume-tailoring-rs, resume-tailor-master-profile, humanizer, detect/remove/score-ai-slop, scientific-deslop, write-content, plus the earlier resume, SEO and GEO sets. `Downloads\resume-toolkit` and `Downloads\claude-resume-kit` are workspace kits; open Claude Code inside them to use their skills.
 
 ## Gotchas
@@ -81,3 +83,5 @@ The Overleaf CV project (`bib/*.bib`, `notes/papers-status.md`, `notes/website-u
 - **OpenReview requires a human browser check**, even in a headed Playwright browser.
 - **Port 4321 may be taken** by another local Astro preview (the banquet site), so preview may land on 4322.
 - **The antislop skills** need `skills/remove-ai-slop/references/` inside each installed skill folder, or the counter silently finds nothing.
+- **The portable Node folder in a session scratchpad can be cleaned mid-session** (npm's files disappear, `node.exe` stays). `node node_modules/astro/bin/astro.mjs build` still works without npm.
+- **`bibtex` must run on every multibib group** (`for a in $(grep -l bibdata *.aux)`), not just `resume.aux`, or the full CV builds with 60+ undefined citations.
