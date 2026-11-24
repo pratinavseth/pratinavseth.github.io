@@ -12,7 +12,7 @@ export const site = {
   description:
     'Pratinav Seth leads the Model Science group at Lexsi Labs, working on trustworthy AI: post-training, alignment, interpretability, safety repair and agents.',
   email: 'seth.pratinav@gmail.com',
-  avatar: '/images/profile-summit.jpg',
+  avatar: '/images/profile.jpg',
   cv: '/files/pratinav-seth-cv-full.pdf',
   resume: '/files/pratinav-seth-cv.pdf',
   scholarUser: 'DwBn1fcAAAAJ',
