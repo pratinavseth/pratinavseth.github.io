@@ -33,7 +33,7 @@ Editing mechanisms only works if the mechanism you found is real. A lot of my re
 
 ## Why this matters beyond the lab
 
-Governance frameworks increasingly ask for evidence about properties like hidden objectives or bounded capabilities. Behavioral evaluations and red-teaming only see outputs, so they cannot verify those claims. That is the argument of my [position paper on behavioural assurance](/publications/position/), a pre-print,, and the reason I think of interpretability as infrastructure rather than a post-hoc explanation tool ([Interpretability as Alignment](/publications/interpretability-as-alignment/)).
+Governance frameworks increasingly ask for evidence about properties like hidden objectives or bounded capabilities. Behavioral evaluations and red-teaming only see outputs, so they cannot verify those claims. That is the argument of our [position paper on behavioural assurance](/publications/position/) (a pre-print), and the reason I think of interpretability as infrastructure rather than a post-hoc explanation tool ([Interpretability as Alignment](/publications/interpretability-as-alignment/)).
 
 ## What's next
 
