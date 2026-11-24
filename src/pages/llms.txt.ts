@@ -21,7 +21,7 @@ export const GET: APIRoute = async () => {
   const lines = [
     `# ${site.name}`,
     '',
-    `> ${site.role} at ${site.org}, leading the Model Science group. Works on post-training safety, alignment and mechanistic interpretability for language models; earlier work on tabular foundation models, climate AI, medical imaging and NLP. ${s.papers} papers (${s.peerReviewed} peer-reviewed), ${s.citationsRounded} Google Scholar citations, h-index ${s.hIndex}. B.Tech Data Science & Engineering, Manipal Institute of Technology (2024). AAAI Undergraduate Consortium Scholar (2023) and Mentor (2026).`,
+    `> ${site.role} at ${site.org}, leading the Model Science group. Works on post-training safety, alignment and mechanistic interpretability for language models; earlier work on tabular foundation models, climate AI, medical imaging and NLP. ${s.papersLabel} papers (${s.peerReviewed} peer-reviewed), ${s.citationsRounded} Google Scholar citations, h-index ${s.hIndex}. B.Tech Data Science & Engineering, Manipal Institute of Technology (2024). AAAI Undergraduate Consortium Scholar (2023) and Mentor (2026).`,
     '',
     `Research question: ${site.thesis}`,
     '',
@@ -37,7 +37,7 @@ export const GET: APIRoute = async () => {
     '## Pages',
     '',
     `- [Home](${u('/')}): bio, research threads, selected work, citations, news, contact.`,
-    `- [Publications](${u('/publications/')}): all ${s.papers} papers by area, each with its own page (abstract, BibTeX, links).`,
+    `- [Publications](${u('/publications/')}): all ${s.papersLabel} papers by area, each with its own page (abstract, BibTeX, links).`,
     `- [Experience](${u('/experience/')}): Lexsi Labs, Mila Quebec AI Institute, Bosch Research, IIT Kharagpur, and earlier roles.`,
     `- [Talks & Events](${u('/talks-events/')}): talks, posters and conferences.`,
     `- [Writing](${u('/writing/')}): notes on the research.`,

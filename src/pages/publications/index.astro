@@ -32,12 +32,12 @@ const libs = await Promise.all(libraries.map(async (l) => ({ ...l, liveStars: aw
 <Base
   title="Publications"
   jsonLd={[collectionLd]}
-  description={`${stats.papers} papers by ${site.name} (${stats.peerReviewed} peer-reviewed) on LLM post-training, AI safety, interpretability and foundation models.`}
+  description={`${stats.papersLabel} papers by ${site.name} (${stats.peerReviewed} peer-reviewed) on LLM post-training, AI safety, interpretability and foundation models.`}
 >
   <header class="page-head container">
     <h1>Publications</h1>
     <p>
-      {stats.papers} papers, {stats.peerReviewed} of them peer-reviewed, with {stats.citationsRounded} citations on{" "}
+      {stats.papersLabel} papers, {stats.peerReviewed} of them peer-reviewed, with {stats.citationsRounded} citations on{" "}
       <a href={site.links.scholar}>Google Scholar</a>. I led {countBy((p) => p.data.myRole, 'lead')} of them as first, co-first or main hands-on author, and was
       senior author on {countBy((p) => p.data.myRole, 'senior')}, where I mentored the first author or led the design.
       Each title opens a page with the abstract, links and BibTeX.

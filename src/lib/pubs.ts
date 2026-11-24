@@ -104,6 +104,8 @@ export async function getAreas(): Promise<string[]> {
 
 export interface Stats {
   papers: number;
+  /** Public wording of the paper count: rounded down to the ten, with a plus (owner's choice: "60+"). Exact counts stay on filters. */
+  papersLabel: string;
   peerReviewed: number;
   citations: number;
   citationsRounded: string;
@@ -128,6 +130,7 @@ export function getStats(): Promise<Stats> {
     const stars = (await Promise.all(oss.map((l) => getStars(l.repo, l.stars)))).reduce((a, b) => a + b, 0);
     return {
       papers: pubs.length,
+      papersLabel: `${Math.floor(pubs.length / 10) * 10}+`,
       peerReviewed: pubs.filter(isPeerReviewed).length,
       citations: scholar.citedby,
       citationsRounded: roundDown(scholar.citedby, 10),
@@ -150,7 +153,7 @@ export async function fill(text: string): Promise<string> {
   const word = (n: number) => words[n] ?? String(n);
   const cap = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
   const map: Record<string, string> = {
-    papers: String(s.papers),
+    papers: s.papersLabel,
     // {ossLibrariesWord} → "seven", {OssLibrariesWord} → "Seven" (for the start of a sentence)
     ossLibrariesWord: word(s.ossLibraries),
     OssLibrariesWord: cap(word(s.ossLibraries)),

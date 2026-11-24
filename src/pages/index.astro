@@ -157,7 +157,7 @@ const faqs = [
   },
   {
     q: 'Where has he published?',
-    a: `${stats.papers} papers, ${stats.peerReviewed} of them peer-reviewed, at venues including ICML, ACL, EMNLP, WWW, MIDL and Nature Scientific Reports, with ${stats.citationsRounded} citations on Google Scholar.`,
+    a: `${stats.papersLabel} papers, ${stats.peerReviewed} of them peer-reviewed, at venues including ICML, ACL, EMNLP, WWW, MIDL and Nature Scientific Reports, with ${stats.citationsRounded} citations on Google Scholar.`,
   },
   {
     q: 'How can I contact him?',
@@ -274,9 +274,9 @@ const personLd = {
   </section>
 
   <section class="section container" aria-labelledby="research-title">
-    <div class="section__head"><h2 id="research-title">Research</h2><a class="section__more" href="/publications/">All {stats.papers} papers →</a></div>
+    <div class="section__head"><h2 id="research-title">Research</h2><a class="section__more" href="/publications/">All {stats.papersLabel} papers →</a></div>
     <div class="focus">
-      <span class="area__n">{focus.count} papers · {focus.peer} peer-reviewed · {stats.ossLibraries} libraries</span>
+      <span class="area__n">{stats.papersLabel} papers · {focus.peer} peer-reviewed · {stats.ossLibraries} libraries</span>
       <h3 class="focus__title">Trustworthy AI, from the data to the deployed agent</h3>
       <p class="focus__pitch">
         A model passes through many hands before anyone relies on it: someone curates its data, trains and aligns it,
