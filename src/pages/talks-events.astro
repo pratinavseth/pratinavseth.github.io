@@ -33,7 +33,7 @@ import { img } from '../lib/images';
     <div class="photos">
       {talks.photos.map((ph) => (
         <figure>
-          <Image src={img(ph.src)} alt={ph.alt} widths={[360, 560, 800]} sizes="(min-width: 60rem) 23rem, 92vw" />
+          <Image src={img(ph.src)} alt={ph.alt} widths={[360, 560, 800]} sizes="(min-width: 72rem) 17rem, (min-width: 40rem) 33vw, 92vw" quality={68} />
           <figcaption>{ph.caption}</figcaption>
         </figure>
       ))}
