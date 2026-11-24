@@ -24,6 +24,7 @@ export const site = {
     orcid: 'https://orcid.org/0009-0001-4525-4464',
     dblp: 'https://dblp.org/pid/305/7312',
     researchgate: 'https://www.researchgate.net/profile/Pratinav_Seth',
+    openreview: 'https://openreview.net/profile?id=~Pratinav_Seth1',
   },
   // What people can openly reach out about (shown in the hero and contact block).
   openTo: ['Research collaborations', 'Talks & panels'],
