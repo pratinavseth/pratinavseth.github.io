@@ -2,7 +2,7 @@
 # Items dated within the last ~6 months show by default; older ones fold into "Earlier".
 
 - date: "2026.11"
-  text: "Spoke at the AI Safety India Spotlight: *How I Got Into AI Safety Research*. [Read the written version with the slides](/writing/how-i-got-into-ai-safety/)."
+  text: "Spoke at the AI Safety India Spotlight: *How I Got Into AI Safety Research*. [Read the written version](/writing/how-i-got-into-ai-safety/) or [download the slides](/files/how-i-got-into-ai-safety-slides.pdf)."
 - date: "2026.10"
   text: "At [EMNLP 2026](https://2026.emnlp.org/) in Budapest: with the team at the posters for [ALIGNBEAM](/publications/alignbeam/), [SafeTune](/publications/safetune/) and [Provenance-Grounded Gating](/publications/provenance-grounded-gating/), and chaired the *LLM Agents 1* oral session."
 - date: "2026.11"

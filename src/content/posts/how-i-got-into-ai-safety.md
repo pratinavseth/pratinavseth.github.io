@@ -6,7 +6,7 @@ draft: false
 tags: [journey, AI safety, career, talks]
 ---
 
-On 15 November 2026 I gave a spotlight talk at AI Safety India with this title. This is the written version, with the slides that carry the story. It has four parts: how I started doing research as a student, how I got into AI safety research, the open-source safety tools my team built, and how you can get started.
+On 15 November 2026 I gave a spotlight talk at AI Safety India with this title. This is the written version, with the slides that carry the story. It has four parts: how I started doing research as a student, how I got into AI safety research, the open-source safety tools my team built, and how you can get started. You can [download the full slides as a PDF](/files/how-i-got-into-ai-safety-slides.pdf) (51 slides, 7 MB), including the reference list.
 
 ![Six years on one line, from joining Mars Rover Manipal as a trainee in 2020 to leading the AI Safety & Alignment team in 2026](../../assets/images/talks/ai-safety-india-03-six-years.jpg)
 
