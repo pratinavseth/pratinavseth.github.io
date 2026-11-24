@@ -1,7 +1,7 @@
 // Plain-text fact sheet for AI assistants (https://llmstxt.org). Generated from the same
 // data as the site, so its numbers and paper list can never drift from the pages.
 import type { APIRoute } from 'astro';
-import { site } from '../config/site';
+import { site, emailText } from '../config/site';
 import { experience, libraries, talks } from '../lib/data';
 import { getPubs, getStats, getAreas, isMine, isPeerReviewed, authorsOf, pageOf, fill, plainOf, ROLE_LABEL, type Pub } from '../lib/pubs';
 import { getStars } from '../lib/remote';
@@ -45,7 +45,7 @@ export const GET: APIRoute = async () => {
     '',
     '## Contact',
     '',
-    `- Email: ${site.email}`,
+    `- Email (written to avoid spam harvesting; replace [at] with @ and [dot] with .): ${emailText}`,
     `- Open to: ${site.openTo.join(', ')}`,
     ...Object.entries(site.links).map(([k, v]) => `- ${k}: ${v}`),
     '',

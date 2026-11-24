@@ -7,7 +7,7 @@ import '../styles/global.css';
 import archivoLatin from '@fontsource/archivo-black/files/archivo-black-latin-400-normal.woff2?url';
 import plexLatin from '@fontsource-variable/ibm-plex-sans/files/ibm-plex-sans-latin-wght-normal.woff2?url';
 import monoLatin from '@fontsource-variable/jetbrains-mono/files/jetbrains-mono-latin-wght-normal.woff2?url';
-import { site, nav } from '../config/site';
+import { site, nav, emailParts } from '../config/site';
 
 interface Props {
   title: string;
@@ -101,7 +101,7 @@ const isCurrent = (href: string) => (href === '/' ? path === '/' : path.startsWi
       <div class="container site-footer__grid">
         <p class="muted" style="margin:0">© {new Date().getFullYear()} {site.name}. {site.role}, {site.org}.</p>
         <ul aria-label="Profiles">
-          <li><a href={`mailto:${site.email}`}>Email</a></li>
+          <li><a href="/#contact" data-email data-u={emailParts.user} data-d={emailParts.domain}>Email</a></li>
           <li><a href={site.links.linkedin} rel="me">LinkedIn</a></li>
           <li><a href={site.links.scholar} rel="me">Scholar</a></li>
           <li><a href={site.links.github} rel="me">GitHub</a></li>
@@ -114,6 +114,15 @@ const isCurrent = (href: string) => (href === '/' ? path === '/' : path.startsWi
     </footer>
 
     <script>
+      // Build mailto: links in the browser, so the address is not sitting in the page source as a link.
+      document.querySelectorAll<HTMLAnchorElement>('a[data-email]').forEach((a) => {
+        const subject = a.dataset.subject ? `?subject=${encodeURIComponent(a.dataset.subject)}` : '';
+        const set = () => { a.href = `mailto:${a.dataset.u}@${a.dataset.d}${subject}`; };
+        a.addEventListener('pointerenter', set, { once: true });
+        a.addEventListener('focus', set, { once: true });
+        a.addEventListener('touchstart', set, { once: true, passive: true });
+        a.addEventListener('click', set, { once: true });
+      });
       const toggle = document.querySelector<HTMLButtonElement>('.nav-toggle');
       const menu = document.getElementById('site-nav');
       toggle?.addEventListener('click', () => {

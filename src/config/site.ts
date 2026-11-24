@@ -38,6 +38,11 @@ export const site = {
   ],
 } as const;
 
+/** The address, written so people and language models can read it but simple harvesting scripts (which match user@host) do not. */
+export const emailText = site.email.replace('@', ' [at] ').replace(/\.([a-z]+)$/, ' [dot] $1');
+/** The two halves, joined only in the browser to build the mailto: link. */
+export const emailParts = { user: site.email.split('@')[0], domain: site.email.split('@')[1] };
+
 export const nav = [
   { href: '/', label: 'About' },
   { href: '/publications/', label: 'Publications' },

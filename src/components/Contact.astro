@@ -1,7 +1,7 @@
 ---
-import { site } from '../config/site';
+import { site, emailText, emailParts } from '../config/site';
 
-const subject = encodeURIComponent('Hello from your website');
+const subject = 'Hello from your website';
 ---
 
 <section class="contact" id="contact" aria-labelledby="contact-title">
@@ -16,10 +16,11 @@ const subject = encodeURIComponent('Hello from your website');
         Open to: {site.openTo.join(' · ')}
       </p>
       <div class="btn-row" style="margin-top:var(--space-5)">
-        <a class="btn btn--primary" href={`mailto:${site.email}?subject=${subject}`}>Email me</a>
+        <a class="btn btn--primary" href="#contact" data-email data-u={emailParts.user} data-d={emailParts.domain} data-subject={subject}>Email me</a>
         <a class="btn" href={site.links.linkedin}>LinkedIn</a>
         <a class="btn" href={site.cv}>CV (PDF)</a>
       </div>
+      <p class="mono" style="font-size:var(--step--1);margin-top:var(--space-4);color:var(--paper)">Or write to {emailText}</p>
     </div>
     <div>
       <p class="contact__note">

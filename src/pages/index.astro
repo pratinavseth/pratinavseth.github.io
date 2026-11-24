@@ -5,7 +5,7 @@ import Base from '../layouts/Base.astro';
 import PaperCard from '../components/PaperCard.astro';
 import CitationsChart from '../components/CitationsChart.astro';
 import Contact from '../components/Contact.astro';
-import { site } from '../config/site';
+import { site, emailText } from '../config/site';
 import { news, libraries } from '../lib/data';
 import { getPubs, getStats, isMine, isPeerReviewed, fill, pageOf } from '../lib/pubs';
 import { getStars } from '../lib/remote';
@@ -161,7 +161,7 @@ const faqs = [
   },
   {
     q: 'How can I contact him?',
-    a: `By email at ${site.email} or on LinkedIn. He is open to research collaborations and talks.`,
+    a: `Through the contact section of his website (${emailText}) or on LinkedIn. He is open to research collaborations and talks.`,
   },
 ];
 const faqLd = {
@@ -194,7 +194,7 @@ const personLd = {
     ],
     url: site.url,
     image: new URL(site.avatar, site.url).href,
-    email: `mailto:${site.email}`,
+    contactPoint: { '@type': 'ContactPoint', contactType: 'research collaboration and speaking enquiries', url: `${site.url}/#contact`, availableLanguage: 'English' },
     description: site.description,
     knowsAbout: ['Post-training alignment', 'AI safety', 'Mechanistic interpretability', 'Large language models', 'Tabular foundation models'],
     sameAs: Object.values(site.links),
