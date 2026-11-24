@@ -6,7 +6,7 @@
   logo: logos/tabtune.png
   repo: Lexsi-Labs/TabTune
   paper: tabtune
-  stars: 137
+  stars: 146
   oss: true
   role: Designed & built v1, then mentored
   description: Unified inference, fine-tuning and benchmarking for tabular foundation models (21 models in 7 architecture families).
@@ -14,7 +14,7 @@
   logo: logos/aligntune.png
   repo: Lexsi-Labs/aligntune
   paper: aligntune
-  stars: 44
+  stars: 49
   oss: true
   role: Led & built; design lead & mentor
   description: Modular post-training toolkit for SFT, DPO, GRPO and RLHF with interchangeable backends; runs production alignment work in BFSI, legal and healthcare.
@@ -22,7 +22,7 @@
   logo: logos/curatorkit.png
   repo: Lexsi-Labs/CuratorKIT
   paper: curatorkit
-  stars: 30
+  stars: 38
   oss: true
   role: Designed & mentored
   description: Provenance-grounded data curation and synthetic generation for LLM post-training.
@@ -37,7 +37,7 @@
   logo: logos/circuitkit.png
   repo: Lexsi-Labs/CircuitKIT
   paper: circuitkit
-  stars: 26
+  stars: 32
   oss: true
   role: Led & built
   description: Circuit discovery, evaluation and application toolkit for mechanistic interpretability.
@@ -45,7 +45,7 @@
   logo: logos/safetune.png
   repo: Lexsi-Labs/SafeTune
   paper: safetune
-  stars: 19
+  stars: 24
   oss: true
   role: Led & built
   description: Audits and repairs safety drift in fine-tuned LLMs.
@@ -61,13 +61,13 @@
   repo: Lexsi-Labs/AuditKIT
   url: https://auditkit.lexsi.ai/
   paper: auditkit
-  stars: 12
+  stars: 20
   role: Team lead & contributor
   description: Source-available evaluation library for benchmarks, LLM-as-judge, RAG, model comparison, cost metrics and experiment tracking.
 - name: AgentTune
   logo: logos/agenttune.png
   repo: Lexsi-Labs/AgentTune
   paper: agenttune
-  stars: 10
+  stars: 15
   role: Designed, led & mentored
   description: Source-available training lifecycle for building, training, evaluating and maintaining tool-using LLM agents.
