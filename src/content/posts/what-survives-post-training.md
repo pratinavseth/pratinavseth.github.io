@@ -1,12 +1,12 @@
 ---
 title: What survives post-training?
 description: The question that connects my work on circuit-level refusal, safety drift, unlearning under quantization and interpretability-first governance.
-date: 2026-10-19
+date: 2026-11-24
 draft: true
 tags: [post-training, safety, mechanistic interpretability]
 ---
 
-<!-- DRAFT for Pratinav to edit. Every claim below is taken from the linked papers; check the framing is yours before setting draft: false. -->
+<!-- DRAFT for Pratinav to edit. Every claim below is taken from the linked papers; papers still under review or pre-print are labelled as such (statuses checked 24 Nov 2026). Check the framing is yours before setting draft: false. -->
 
 Most safety work evaluates a model at one moment: full precision, right after training, on a benchmark. Almost no deployed model stays in that state. It gets fine-tuned on a customer's domain, quantized to fit the hardware, wrapped in a serving stack, and updated again a few months later. The question I keep coming back to is simple to state and hard to answer: **which properties of a model survive all of that, and how would we know?**
 
@@ -14,7 +14,7 @@ Most safety work evaluates a model at one moment: full precision, right after tr
 
 Domain fine-tuning quietly erodes safety. A model tuned on legal or financial text will often comply with harmful requests as long as they are phrased in that domain's language. We built [SafeTune](/publications/safetune/) to audit and repair that drift, and [Drift, Then Repair](/publications/drift-then-repair/) to measure it across fine-tuning paradigms. When you can't touch the weights at all, [ALIGNBEAM](/publications/alignbeam/) transfers safety at inference time from an aligned anchor model, even across model families with different vocabularies.
 
-Compression has the same problem in a sharper form. In [Forgetting That Sticks](/publications/forgetting-that-sticks/) we found that most unlearning methods either forget the target knowledge and then lose that forgetting once the model is quantized to 4 bits, or survive quantization because they barely changed the model. The cause is mundane: the per-parameter updates are tens to hundreds of times smaller than a quantization bin, so they round away. The fix was to concentrate the update on the circuit that actually stores the knowledge, so each change is big enough to persist.
+Compression has the same problem in a sharper form. In [Forgetting That Sticks](/publications/forgetting-that-sticks/) (under review) we found that most unlearning methods either forget the target knowledge and then lose that forgetting once the model is quantized to 4 bits, or survive quantization because they barely changed the model. The cause is mundane: the per-parameter updates are tens to hundreds of times smaller than a quantization bin, so they round away. The fix was to concentrate the update on the circuit that actually stores the knowledge, so each change is big enough to persist.
 
 ## Edit the mechanism, not the output
 
@@ -26,14 +26,14 @@ The same audit, correct, re-verify loop is what we applied to [Gemma 4 31B](/pub
 
 Editing mechanisms only works if the mechanism you found is real. A lot of my recent work is about checking that:
 
-- [Faithfulness to Refusal](/publications/faithfulness-to-refusal/) tests whether attribution methods pick out causally important neurons. Some of the most stable selectors turned out to be among the least causally valid, and refusal lives in a redundant subspace that different methods reach through largely different neurons.
-- [Faithfulness Is Not Actionability](/publications/faithfulness-is-not-actionability/) asks whether a circuit that scores well on faithfulness is actually useful when you prune with it.
-- [Every Ablation Is a Dose](/publications/every-ablation-is-a-dose/) argues that "self-repair" after ablation follows a simple law once you treat an ablation as one point on a continuous intervention axis.
+- [Faithfulness to Refusal](/publications/faithfulness-to-refusal/) (under review) tests whether attribution methods pick out causally important neurons. Some of the most stable selectors turned out to be among the least causally valid, and refusal lives in a redundant subspace that different methods reach through largely different neurons.
+- [Faithfulness Is Not Actionability](/publications/faithfulness-is-not-actionability/) (under review) asks whether a circuit that scores well on faithfulness is actually useful when you prune with it.
+- [Every Ablation Is a Dose](/publications/every-ablation-is-a-dose/) (under review) argues that "self-repair" after ablation follows a simple law once you treat an ablation as one point on a continuous intervention axis.
 - [The Off-Switch Failure](/publications/the-off-switch-failure/) shows how safety-repair evaluations can reward a model that has simply collapsed.
 
 ## Why this matters beyond the lab
 
-Governance frameworks increasingly ask for evidence about properties like hidden objectives or bounded capabilities. Behavioral evaluations and red-teaming only see outputs, so they cannot verify those claims. That is the argument of our [position paper on behavioural assurance](/publications/position/), and the reason I think of interpretability as infrastructure rather than a post-hoc explanation tool ([Interpretability as Alignment](/publications/interpretability-as-alignment/)).
+Governance frameworks increasingly ask for evidence about properties like hidden objectives or bounded capabilities. Behavioral evaluations and red-teaming only see outputs, so they cannot verify those claims. That is the argument of my [position paper on behavioural assurance](/publications/position/), a pre-print,, and the reason I think of interpretability as infrastructure rather than a post-hoc explanation tool ([Interpretability as Alignment](/publications/interpretability-as-alignment/)).
 
 ## What's next
 
