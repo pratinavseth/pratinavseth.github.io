@@ -64,7 +64,7 @@ async function viaPages() {
     if (existing[id] && !refetchAll) continue;
     for (const wait of [0, 20, 60]) {
       if (wait) await sleep(wait);
-      const res = await fetch(`https://arxiv.org/abs/${id}`, { headers: { 'User-Agent': 'pratinavseth.github.io abstract fetcher (mailto:seth.pratinav@gmail.com)' } });
+      const res = await fetch(`https://arxiv.org/abs/${id}`, { headers: { 'User-Agent': 'pratinavseth.github.io abstract fetcher' } });
       if (res.status === 429 || res.status === 503) continue;
       if (!res.ok) break;
       const html = await res.text();

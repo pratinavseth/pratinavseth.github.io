@@ -199,6 +199,7 @@
   imageAlt: "Interventions as doses on a signed axis from clean to inverted, with the affine repair response on the true and false sides"
 
 - id: safetune
+  arxiv: "2609.22153"
   title: "SafeTune: A Unified Faithful Library for Auditing and Repairing Safety Drift in Fine-Tuned LLMs"
   authors:
     - "Pratinav Seth*"
@@ -277,6 +278,7 @@
   imageAlt: "CuratorKIT pipeline from data sources through ingestion, hygiene, synthetic generation, quality filtering and dataset export"
 
 - id: provenance-grounded-gating
+  arxiv: "2606.11127"
   title: Provenance-Grounded Gating and Adaptive Recovery in Synthetic Post-Training Data Curation
   authors:
     - Soham Bhattacharjee
@@ -666,6 +668,7 @@
   area: "Tabular Foundation Models & Distillation"
   myRole: senior
   url: "https://huggingface.co/Lexsi/Orion-BiX"
+  arxiv: "2512.00181"
   scholarId: "aqlVkmm33-oC"
   image: orionbix.png
   imageAlt: "Orion-BiX: bi-axial attention for tabular in-context learning, architecture diagram"
@@ -975,6 +978,7 @@
   imageAlt: Sample low-fidelity synthetic training image
 
 - id: self-percept
+  arxiv: "2505.20679"
   title: "SELF-PERCEPT: Introspection Improves Large Language Models' Detection of Multi-Person Mental Manipulation in Conversations"
   authors:
     - Danush Khanna
@@ -1017,6 +1021,7 @@
   imageAlt: AgriLLM transformer pipeline for farmer query handling
 
 - id: sss-semeval-2023
+  arxiv: "2304.03518"
   title: "SSS at SemEval-2023 Task 10: Explainable Detection of Online Sexism using Majority Voted Fine-Tuned Transformers"
   authors:
     - Sriya Rallabandi
@@ -1034,6 +1039,7 @@
   imageAlt: Frequency distribution of sexism labels in the SemEval-2023 Task 10 dataset
 
 - id: rsm-nlp-blp-2023
+  arxiv: "2310.14261"
   title: "RSM-NLP at BLP-2023 Task 2: Bangla Sentiment Analysis using Weighted and Majority Voted Fine-Tuned Transformers"
   authors:
     - Pratinav Seth
@@ -1082,6 +1088,7 @@
   area: "Vision & Super-Resolution"
   myRole: senior
   url: "https://openaccess.thecvf.com/content/CVPR2023W/PBVS/html/Kasliwal_CoReFusion_Contrastive_Regularized_Fusion_for_Guided_Thermal_Super-Resolution_CVPRW_2023_paper.html"
+  arxiv: "2304.01243"
   scholarId: "UeHWp8X0CEIC"
   image: unet-f.png
   imageAlt: CoReFusion contrastive regularized fusion architecture for thermal super-resolution
@@ -1106,6 +1113,7 @@
   imageAlt: LaMAR Laplacian pyramid architecture for multimodal adaptive super resolution
 
 - id: lapgsr
+  arxiv: "2411.07750"
   title: Laplacian reconstructive network for guided thermal super-resolution
   authors:
     - "Aditya Kasliwal*"
