@@ -1,7 +1,7 @@
 // Everything derived from publications.yaml: counts, collaborator lists, BibTeX, labels.
 // Pages never hand-type a number; they read it from here.
 import { getCollection, type CollectionEntry } from 'astro:content';
-import { collaborators as collabMeta, libraries } from './data';
+import { collaborators as collabMeta, libraries, plain } from './data';
 import { getScholar, getStars } from './remote';
 import { site } from '../config/site';
 import abstractsJson from '../data/abstracts.json';
@@ -61,6 +61,7 @@ export const ROLE_HINT: Record<'lead' | 'senior' | 'coauthor', string> = {
   coauthor: 'Co-author',
 };
 
+export const plainOf = (p: Pub): string | undefined => plain[p.id];
 export const abstractOf = (p: Pub) => (p.data.arxiv ? abstracts[p.data.arxiv]?.abstract : undefined);
 
 export function pdfOf(p: Pub): string | undefined {

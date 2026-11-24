@@ -3,7 +3,7 @@
 import type { APIRoute } from 'astro';
 import { site } from '../config/site';
 import { experience, libraries } from '../lib/data';
-import { getPubs, getStats, getAreas, isMine, isPeerReviewed, authorsOf, pageOf, fill, ROLE_LABEL, type Pub } from '../lib/pubs';
+import { getPubs, getStats, getAreas, isMine, isPeerReviewed, authorsOf, pageOf, fill, plainOf, ROLE_LABEL, type Pub } from '../lib/pubs';
 import { getStars } from '../lib/remote';
 
 export const GET: APIRoute = async () => {
@@ -13,6 +13,7 @@ export const GET: APIRoute = async () => {
   const libs = await Promise.all(libraries.map(async (l) => ({ ...l, n: await getStars(l.repo, l.stars) })));
   const u = (p: string) => new URL(p, site.url).href;
   const plain = (t: string) => t.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*+/g, '');
+  const gist = (p: Pub) => (plainOf(p) ? ` In plain words: ${plainOf(p)}` : '');
   const role = (p: Pub) => (p.data.myRole ? ` His role: ${ROLE_LABEL[p.data.myRole].toLowerCase()}.` : '');
   const current = experience[0].roles[0];
   const currentPoints = await Promise.all(current.points.map(async (pt) => `- ${pt.label ? pt.label + ': ' : ''}${plain(await fill(pt.text))}`));
@@ -52,12 +53,12 @@ export const GET: APIRoute = async () => {
     ...areas.flatMap((area) => {
       const list = pubs.filter((p) => p.data.area === area && isPeerReviewed(p));
       return list.length
-        ? [`### ${area}`, ...list.map((p) => `- [${p.data.title}](${u(pageOf(p))}): ${authorsOf(p).map((a) => a.name).join(', ')}. ${p.data.venue}, ${p.data.year}.${role(p)}`), '']
+        ? [`### ${area}`, ...list.map((p) => `- [${p.data.title}](${u(pageOf(p))}): ${authorsOf(p).map((a) => a.name).join(', ')}. ${p.data.venue}, ${p.data.year}.${role(p)}${gist(p)}`), '']
         : [];
     }),
     '## Pre-prints and work under review',
     '',
-    ...pubs.filter((p) => !isPeerReviewed(p)).map((p) => `- [${p.data.title}](${u(pageOf(p))}): ${p.data.venue}, ${p.data.year}.${role(p)}`),
+    ...pubs.filter((p) => !isPeerReviewed(p)).map((p) => `- [${p.data.title}](${u(pageOf(p))}): ${p.data.venue}, ${p.data.year}.${role(p)}${gist(p)}`),
     '',
     '## Libraries & tools',
     '',

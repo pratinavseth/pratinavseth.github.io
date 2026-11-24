@@ -7,7 +7,7 @@ import { site } from '../../config/site';
 import { img, hasImg } from '../../lib/images';
 import { inline } from '../../lib/md';
 import {
-  abstractOf, authorsOf, bibtex, citationsOf, getPubs, isMine, pageOf, pdfOf,
+  abstractOf, authorsOf, bibtex, citationsOf, getPubs, isMine, pageOf, pdfOf, plainOf,
   ROLE_HINT, ROLE_LABEL, seoTitle, STATUS_LABEL, TYPE_LABEL, type Pub,
 } from '../../lib/pubs';
 
@@ -21,6 +21,7 @@ const { pub } = Astro.props;
 const d = pub.data;
 const authors = authorsOf(pub);
 const abstract = abstractOf(pub);
+const plainWords = plainOf(pub);
 const cites = await citationsOf(pub);
 const pdf = pdfOf(pub);
 const url = new URL(pageOf(pub), site.url).href;
@@ -28,7 +29,9 @@ const related = (await getPubs())
   .filter((p) => p.id !== pub.id && isMine(p) && p.data.area === d.area)
   .slice(0, 4);
 
-const description = abstract
+const description = plainWords
+  ? plainWords.slice(0, 155).replace(/\s+\S*$/, '') + '…'
+  : abstract
   ? abstract.slice(0, 155).replace(/\s+\S*$/, '') + '…'
   : (() => {
       const t = `${d.title}. ${d.venue}, ${d.year}. ${authors.map((a) => a.name).join(', ')}.`;
@@ -120,6 +123,13 @@ const bib = bibtex(pub);
           <Image src={img(d.image!)} alt={d.imageAlt ?? `Figure from ${d.title}`} widths={[480, 800, 1200]} sizes="(min-width: 60rem) 54rem, 92vw" loading="eager" />
         </figure>
       ) : null}
+
+      {plainWords && (
+        <section class="prose" aria-labelledby="plain-title" style="max-width:56rem">
+          <h2 id="plain-title" style="font-size:var(--step-2);margin-top:0">In plain words</h2>
+          <p style="font-size:var(--step-1);line-height:1.5">{plainWords}</p>
+        </section>
+      )}
 
       {abstract && (
         <section class="prose" aria-labelledby="abstract-title">

@@ -22,10 +22,10 @@ Anshul Kaushal: { institution: Lexsi Labs, role: mentee }
 Karun Sharma: { institution: Lexsi Labs, role: mentee }
 Omkar Kakade: { institution: Lexsi Labs, role: mentee }
 Mitul Solanki: { institution: Lexsi Labs, role: mentee }
-Areeb Ahmad: { institution: Lexsi Labs, role: collaborator }
-Shreeyans Arora: { institution: Lexsi Labs, role: collaborator }
-Aryan Sood: { institution: Lexsi Labs, role: collaborator }
-Abhivansh Gupta: { institution: Lexsi Labs, role: collaborator }
+Areeb Ahmad: { institution: Lexsi Labs, role: mentee }
+Shreeyans Arora: { institution: Lexsi Labs, role: mentee }
+Aryan Sood: { institution: Lexsi Labs, role: mentee }
+Abhivansh Gupta: { institution: Lexsi Labs, role: mentee }
 Vidushee Vats: { institution: Lexsi Labs, role: collaborator }
 Ram Mohan Rao Kadiyala: { institution: Lexsi Labs, role: collaborator }
 Mohamed Bouadi: { institution: "Lexsi Labs, Paris", role: collaborator }
@@ -33,8 +33,8 @@ Nassim Bouarour: { institution: "Lexsi Labs, Paris", role: collaborator }
 Mykola Khandoga: { institution: "Lexsi Labs, Paris", role: collaborator }
 Rui Yuan: { institution: "Lexsi Labs, Paris", role: collaborator }
 Yash Desai: { institution: "Lexsi Labs, Paris", role: collaborator }
-Deeraj S K: { institution: "Lexsi Labs", role: collaborator }
-Ashim Dhor: { institution: "Lexsi Labs", role: collaborator }
+Deeraj S K: { institution: "Lexsi Labs", role: mentee }
+Ashim Dhor: { institution: "Lexsi Labs", role: mentee }
 Aryan Singh: { institution: "Lexsi Labs", role: collaborator }
 Yashwardhan Rathore: { institution: AryaXAI Alignment Labs, role: collaborator }
 Neeraj Kumar Singh: { institution: AryaXAI Alignment Labs, role: collaborator }

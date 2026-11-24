@@ -1,8 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getPosts, fmtDate } from '../../lib/posts';
+import { getPubs, isMine, pageOf, plainOf } from '../../lib/pubs';
 
 const posts = await getPosts();
+const notes = (await getPubs()).filter((p) => isMine(p) && plainOf(p));
 ---
 
 <Base title="Writing" description="Notes by Pratinav Seth on post-training safety, mechanistic interpretability and the research behind his papers.">
@@ -13,7 +15,7 @@ const posts = await getPosts();
 
   <section class="container" style="padding-bottom:var(--space-8)">
     {posts.length === 0 ? (
-      <p class="muted">The first post is in progress. Until then, start with the <a href="/publications/">papers</a>, or follow the <a href="/rss.xml">RSS feed</a> to get new posts.</p>
+      <p class="muted">Longer posts are on the way; follow the <a href="/rss.xml">RSS feed</a> to get them. Until then, every paper is below in plain words, or start with the <a href="/publications/">full list</a>.</p>
     ) : (
       <ul class="paper-list">
         {posts.map((p) => (
@@ -31,5 +33,22 @@ const posts = await getPosts();
         ))}
       </ul>
     )}
+  </section>
+
+  <section class="container" style="padding-bottom:var(--space-8)" aria-labelledby="notes-title">
+    <div class="section__head"><h2 id="notes-title">Paper notes</h2><span class="muted mono" style="font-size:var(--step--1)">{notes.length} papers in plain words</span></div>
+    <p class="muted" style="max-width:60ch;margin:0 0 var(--space-5)">Each paper in two or three sentences, without the jargon. Every title opens the full page with the abstract, figures and BibTeX.</p>
+    <ul class="paper-list">
+      {notes.map((p) => (
+        <li class="paper">
+          <div class="paper__year">{p.data.year}</div>
+          <div>
+            <div class="paper__title"><a href={pageOf(p)}>{p.data.title}</a></div>
+            <p style="margin:var(--space-2) 0 0;max-width:68ch">{plainOf(p)}</p>
+            <p class="mono muted" style="font-size:.75rem;margin:var(--space-2) 0 0">{p.data.venue}</p>
+          </div>
+        </li>
+      ))}
+    </ul>
   </section>
 </Base>

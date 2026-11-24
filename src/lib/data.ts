@@ -114,3 +114,6 @@ export const systems = load(
     keywords: z.array(z.string()),
   }),
 );
+
+// Plain-language summary per paper id (see src/data/plain.yaml).
+export const plain = load('plain.yaml', z.record(z.string(), z.string()));
